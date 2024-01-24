@@ -52,7 +52,7 @@ https://www.nexusmods.com/users/2432271
 
 https://www.nexusmods.com/newvegas/mods/62698
 
-Brayduck - Adobe and Shack Buildings & Gas Station & Community Center From No Sleep Till Goodsprings:
+Brayduck - Adobe and Shack Buildings & No Sleep Till Goodsprings:
 
 https://www.nexusmods.com/users/29452275
 
@@ -66,7 +66,7 @@ https://www.nexusmods.com/users/98667098
 
 https://www.nexusmods.com/newvegas/mods/77882
 
-CIB - Radhorner Mesh From Monster Mod - Additions:
+CIB - Radhorner Mesh from Monster Mod - Additions:
 
 https://www.nexusmods.com/users/48927
 
@@ -80,7 +80,7 @@ https://www.nexusmods.com/newvegas/mods/56986
 
 GSC Game World - Various Meshes and Textures From S.T.A.L.K.E.R. (Hoover Dam Rest Stop Restrooms & Solitare Statue & Gates)
 
-Harryluck - Tailer Park Meshes:
+Harryluck - Tailer Park Trailer, Trailer Park Trailer Battered, & Trailer Park Trailer Destroyed:
 
 https://www.nexusmods.com/users/1285368
 
@@ -104,7 +104,7 @@ https://www.nexusmods.com/users/2543917
 
 https://www.nexusmods.com/newvegas/mods/56009
 
-Kangaroovindaloo - Esperance Wind Farm Sound Effect:
+Kangaroovindaloo - Esperance Wind Farm:
 
 https://freesound.org/people/kangaroovindaloo/
 
@@ -116,7 +116,7 @@ https://www.nexusmods.com/newvegas/users/62263291
 
 https://www.nexusmods.com/newvegas/mods/75555
 
-Momo - Cactus & Fishery Resources:
+Momo - Momo's Cactus Resource & Momo's Fishery Resource for Oblivion:
 
 https://www.nexusmods.com/users/1522419
 
@@ -130,7 +130,7 @@ https://www.nexusmods.com/users/88085788
 
 https://www.nexusmods.com/newvegas/mods/75934
 
-Quetzlsacatanango - Packhorner & Packrat Meshes From Monster Mod - Additions:
+Quetzlsacatanango - Packhorner & Packrat meshes from Monster Mod - Additions:
 
 https://www.nexusmods.com/users/1316332
 
@@ -154,7 +154,7 @@ https://www.nexusmods.com/users/1949349
 
 https://www.nexusmods.com/newvegas/mods/48139
 
-TrickyVein,  AnaCostia Crossing, DogtoothCG, Gribbleshnibit8, Pintocat, Puppetron, RoyBatty, Thauxian, and Xilandro - San Fran:
+TrickyVein, AnaCostia Crossing, DogtoothCG, Gribbleshnibit8, Pintocat, Puppetron, RoyBatty, Thauxian, and Xilandro - San Fran:
 
 https://www.nexusmods.com/users/1949349
 
@@ -180,7 +180,7 @@ https://www.nexusmods.com/newvegas/mods/40808
 
 https://www.nexusmods.com/fallout3/mods/14676
 
-WebbProductions - Super Mutant Meshes From Classic Super Mutant Style Armor:
+WebbProductions - Classic Super Mutant Style Armor:
 
 https://www.nexusmods.com/users/63424201
 
