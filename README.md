@@ -4,6 +4,8 @@
 
 AnturyChiro - GECK Assistance, Environmental Design, 3D Asset Creation, Conceptualization
 
+ArizonaDev - Team Lead
+
 Dark Sun Cedric - Conceptualization
 
 DiZco - Playtesting
