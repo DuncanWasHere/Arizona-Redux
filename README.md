@@ -144,7 +144,7 @@ https://www.nexusmods.com/fallout3/mods/22533
 
 
 
-[ Special Thanks to The Following Guides ]
+[ Special Thanks to the Following Guides ]
 
 Pixelhate - Bits of NifSkopery:
 https://www.nexusmods.com/newvegas/mods/76374
