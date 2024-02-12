@@ -46,6 +46,12 @@ Vladek - 3D Asset Creation, Conceptualization
 
 [ Resources Used ]
 
+AgentFuse - Interiors Improved - Vault 21
+
+https://www.nexusmods.com/newvegas/users/24278354
+
+https://www.nexusmods.com/newvegas/mods/84082
+
 Bobio567 - Old Western Buildings:
 
 https://www.nexusmods.com/users/2432271
@@ -116,11 +122,13 @@ https://www.nexusmods.com/newvegas/users/62263291
 
 https://www.nexusmods.com/newvegas/mods/75555
 
-Momo - Momo's Cactus Resource & Momo's Fishery Resource for Oblivion:
+Momo - Momo's Cactus Resource, Momo's Crane Resource, & Momo's Fishery Resource for Oblivion:
 
 https://www.nexusmods.com/users/1522419
 
 https://www.nexusmods.com/oblivion/mods/31684
+
+https://www.nexusmods.com/oblivion/mods/37192
 
 https://www.nexusmods.com/oblivion/mods/39274
 
