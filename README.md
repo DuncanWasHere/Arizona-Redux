@@ -48,7 +48,7 @@ Vladek - 3D Asset Creation, Conceptualization
 
 AgentFuse - Interiors Improved - Vault 21
 
-https://www.nexusmods.com/newvegas/users/24278354
+https://www.nexusmods.com/users/24278354
 
 https://www.nexusmods.com/newvegas/mods/84082
 
