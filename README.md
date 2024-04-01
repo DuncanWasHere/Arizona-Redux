@@ -7,7 +7,11 @@ AnturyChiro - GECK Assistance, Environmental Design, 3D Asset Creation, Conceptu
 
 ArizonaDev - Team Lead
 
+AsianInvasionofAlaska2077 - GECK Assistance, Writing, Quest Implementation, Conceptualization
+
 Dark Sun Cedric - Conceptualization
+
+DarthDrogo - GECK Assistance, Interior Design, Loot Passes, Conceptualization
 
 DiZco - Playtesting
 
@@ -34,6 +38,8 @@ SM/FOREVERMK1 - GECK Assistance, Conceptualization, Environmental Design, Navmes
 StealthDick - GECK Assistance
 
 StreikingVenom - Conceptualization
+
+Taylor - Writing, Conceptualization
 
 Ted505 - Conceptualization
 
