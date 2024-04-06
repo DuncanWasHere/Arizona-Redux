@@ -1,4 +1,4 @@
-**[ CREDITS ]**
+  **[ CREDITS ]**
 
 
 [ Development Team & Contributors ]
@@ -7,7 +7,11 @@ AnturyChiro - GECK Assistance, Environmental Design, 3D Asset Creation, Conceptu
 
 ArizonaDev - Team Lead
 
+AsianInvasionofAlaska2077 - GECK Assistance, Writing, Quest Implementation, Conceptualization
+
 Dark Sun Cedric - Conceptualization
+
+DarthDrongo - GECK Assistance, Interior Design, Loot Passes, Conceptualization
 
 DiZco - Playtesting
 
@@ -34,6 +38,8 @@ SM/FOREVERMK1 - GECK Assistance, Conceptualization, Environmental Design, Navmes
 StealthDick - GECK Assistance
 
 StreikingVenom - Conceptualization
+
+Taylor - Writing, Conceptualization
 
 Ted505 - Conceptualization
 
@@ -143,6 +149,10 @@ Quetzlsacatanango - Packhorner & Packrat meshes from Monster Mod - Additions:
 https://www.nexusmods.com/users/1316332
 
 https://www.nexusmods.com/newvegas/mods/56256
+
+Raw Catalog - Various Substance Painter materials used for textures:
+
+https://rawcatalog.com
 
 SpeedyB64 - Speedy Resources:
 
