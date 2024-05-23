@@ -1,15 +1,14 @@
   **[ CREDITS ]**
 
-
-[ Development Team & Contributors ]
-
 AnturyChiro - GECK Assistance, Environmental Design, 3D Asset Creation, Conceptualization
-
-ArizonaDev - Team Lead
 
 AsianInvasionofAlaska2077 - GECK Assistance, Writing, Quest Implementation, Conceptualization
 
-Dark Sun Cedric - Conceptualization
+Ashfalldude - GECK Assistance, Conceptualization
+
+Battenburga - GECK assistance, conceptualization
+
+Cedric Karter - Conceptualization
 
 DarthDrongo - GECK Assistance, Interior Design, Loot Passes, Conceptualization
 
@@ -21,6 +20,8 @@ DuncanWasHere - Playtesting, GECK Assistance, Environmental Design, Interior Des
 
 FaithfulCringe - GECK Assistance, Navmeshing
 
+Fusion Prime - Conceptualization, 3D Asset Creation, Weapon Implementation
+
 FreshYoMama - GECK Assistance, Navmeshing
 
 Graham - Conceptualization
@@ -31,13 +32,15 @@ KRONOS - 2D Asset Creation, Conceptualization
 
 Moloc - Writing, Conceputalization
 
+Muggzie - Navmeshing, Conceptualization
+
 PottoSquares - 3-Some Caravan Company Logo Design, Conceptualization
 
 SM/FOREVERMK1 - GECK Assistance, Conceptualization, Environmental Design, Navmeshing
 
 StealthDick - GECK Assistance
 
-StreikingVenom - Conceptualization
+StreikingVenom - Conceptualization, 3D Asset Creation
 
 Taylor - Writing, Conceptualization
 
@@ -46,9 +49,6 @@ Ted505 - Conceptualization
 TheGreatBhan - Legion Outfits, Conceptualization
 
 Vladek - 3D Asset Creation, Conceptualization
-
-
-
 
 [ Resources Used ]
 
@@ -89,6 +89,10 @@ Deedes - Gallows and Nooses Resource:
 https://www.nexusmods.com/users/2023841
 
 https://www.nexusmods.com/newvegas/mods/56986
+
+GloomyJZ - MODDER'S RESOURCE - Vehicles (Deprecated)
+
+https://www.nexusmods.com/newvegas/mods/83599
 
 GSC Game World - Various Meshes and Textures From S.T.A.L.K.E.R. (Hoover Dam Rest Stop Restrooms & Solitare Statue & Gates)
 
@@ -137,6 +141,10 @@ https://www.nexusmods.com/oblivion/mods/31684
 https://www.nexusmods.com/oblivion/mods/37192
 
 https://www.nexusmods.com/oblivion/mods/39274
+
+Nobody's Nail Machine - Tracks from Fallout Sonora:
+
+https://nobodysnailmachine.bandcamp.com/
 
 Nuke 4 Duke and Pixelhate - Crashed Plane Collision:
 
@@ -216,9 +224,6 @@ https://www.nexusmods.com/users/99671
 
 https://www.nexusmods.com/fallout3/mods/22533
 
-
-
-
 [ Special Thanks to the Following Guides ]
 
 Pixelhate - Bits of NifSkopery:
@@ -232,3 +237,4 @@ https://www.nexusmods.com/newvegas/mods/56203
 Pixelhate - Object Animation in NifSkope:
 
 https://www.nexusmods.com/newvegas/mods/80933
+
