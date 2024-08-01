@@ -1,240 +1,320 @@
-  **[ CREDITS ]**
+[ DEVELOPERS ]
 
-AnturyChiro - GECK Assistance, Environmental Design, 3D Asset Creation, Conceptualization
 
-AsianInvasionofAlaska2077 - GECK Assistance, Writing, Quest Implementation, Conceptualization
+	Project Lead: ArizonaDev
 
-Ashfalldude - GECK Assistance, Conceptualization
 
-Battenburga - GECK assistance, conceptualization
+	Team Leads/Area Designers
+	=========================
 
-Cedric Karter - Conceptualization
+		Lead 3D Artist: StreikingVenom
 
-DarthDrongo - GECK Assistance, Interior Design, Loot Passes, Conceptualization
+		Lead Environment Artist: SM/FOREVERMK1
 
-DiZco - Playtesting
+		Lead Creative Designer: Dreysam
 
-Dreysam - Playtesting, GECK Assistance, Environmental Design, Interior Design, Navmeshing, 3D Asset Creation, Writing, Conceptualization
+		Lead Writer: AsianInvasionofAlaska2077
 
-DuncanWasHere - Playtesting, GECK Assistance, Environmental Design, Interior Design, Navmeshing, 3D Asset Creation, Writing, Conceptualization
+		QA Lead: DuncanWasHere
 
-FaithfulCringe - GECK Assistance, Navmeshing
 
-Fusion Prime - Conceptualization, 3D Asset Creation, Weapon Implementation
+	3D Artists
+	==========
 
-FreshYoMama - GECK Assistance, Navmeshing
+		DraxTemSklounts
 
-Graham - Conceptualization
+		DuncanWasHere
+		
+		FusionPrime
 
-Kepi - 3D Asset Creation, Conceptualization
+		Kepi
 
-KRONOS - 2D Asset Creation, Conceptualization
+		Puddlepond
 
-Moloc - Writing, Conceputalization
+		StreikingVenom
 
-Muggzie - Navmeshing, Conceptualization
+		Vladek
 
-PottoSquares - 3-Some Caravan Company Logo Design, Conceptualization
 
-SM/FOREVERMK1 - GECK Assistance, Conceptualization, Environmental Design, Navmeshing
+	Additional Art
+	==============
 
-StealthDick - GECK Assistance
+		AnturyChiro
 
-StreikingVenom - Conceptualization, 3D Asset Creation
+		ArizonaDev
 
-Taylor - Writing, Conceptualization
+		Dreysam
 
-Ted505 - Conceptualization
+		FreshYoMama
 
-TheGreatBhan - Legion Outfits, Conceptualization
+		Pottosquares
 
-Vladek - 3D Asset Creation, Conceptualization
 
-[ Resources Used ]
+	Writers
+	=======
 
-AgentFuse - Interiors Improved - Vault 21
+		ArizonaDev
 
-https://www.nexusmods.com/users/24278354
+		AsianInvasionofAlaska2077
 
-https://www.nexusmods.com/newvegas/mods/84082
+		Dreysam
 
-Bobio567 - Old Western Buildings:
+		DuncanWasHere
 
-https://www.nexusmods.com/users/2432271
+		StreikingVenom
 
-https://www.nexusmods.com/newvegas/mods/62698
+		Taylor
 
-Brayduck - Adobe and Shack Buildings & No Sleep Till Goodsprings:
 
-https://www.nexusmods.com/users/29452275
+	Additional Writing
+	==================
 
-https://www.nexusmods.com/newvegas/mods/76575
+		Anon2971
 
-https://www.nexusmods.com/newvegas/mods/76574
+		FusionPrime
 
-CarlZee - Fallout 3 Idle Animation Restoration Pack - Modder's Resource:
+		Maximal
 
-https://www.nexusmods.com/users/98667098
 
-https://www.nexusmods.com/newvegas/mods/77882
+	Environment Artists/Level Designers
+	===================================
 
-CIB - Radhorner Mesh from Monster Mod - Additions:
+		AnturyChiro
 
-https://www.nexusmods.com/users/48927
+		ArizonaDev
 
-https://www.nexusmods.com/newvegas/mods/56256
+		Battenburga
 
-Deedes - Gallows and Nooses Resource:
+		DarthDrongo
 
-https://www.nexusmods.com/users/2023841
+		Dreysam
 
-https://www.nexusmods.com/newvegas/mods/56986
+		DuncanWasHere
 
-GloomyJZ - MODDER'S RESOURCE - Vehicles (Deprecated)
+		FreshYoMama
 
-https://www.nexusmods.com/newvegas/mods/83599
+		SM/FOREVERMK1
 
-GSC Game World - Various Meshes and Textures From S.T.A.L.K.E.R. (Hoover Dam Rest Stop Restrooms & Solitare Statue & Gates)
+		StreikingVenom
 
-Harryluck - Tailer Park Trailer, Trailer Park Trailer Battered, & Trailer Park Trailer Destroyed:
 
-https://www.nexusmods.com/users/1285368
+	Additional GECK Assistance
+	==========================
 
-https://www.nexusmods.com/fallout3/mods/6903
+		AnturyChiro
 
-https://www.nexusmods.com/fallout3/mods/6970
+		ArizonaDev
 
-https://www.nexusmods.com/fallout3/mods/6969
+		Ashfalldude
 
-Hopper31 and MadAce - Lit Office Windows Modder's Resource:
+		AsianInvasionofAlaska2077
 
-https://www.nexusmods.com/users/1139885
+		Christixn
 
-https://www.nexusmods.com/users/1151770
+		DarthDrongo
 
-https://www.nexusmods.com/newvegas/mods/72202
+		DuncanWasHere
 
-Jokerine - Jokerine's Misc Resources and Tutorials - FNV:
+		FaithfulCringe
 
-https://www.nexusmods.com/users/2543917
+		FreshYoMama
 
-https://www.nexusmods.com/newvegas/mods/56009
+		FusionPrime
 
-Kangaroovindaloo - Esperance Wind Farm:
+		GreatBhan
 
-https://freesound.org/people/kangaroovindaloo/
+		Mugsie
 
-https://freesound.org/people/kangaroovindaloo/sounds/180025/
+		Puddlepond
 
-LawDog_Gav - Trapper Leathers:
+		SM/ForeverMK1
 
-https://www.nexusmods.com/newvegas/users/62263291
+		Stealthdick
 
-https://www.nexusmods.com/newvegas/mods/75555
+		StreikingVenom
 
-Momo - Momo's Cactus Resource, Momo's Crane Resource, & Momo's Fishery Resource for Oblivion:
 
-https://www.nexusmods.com/users/1522419
+	Special Thanks
+	==============
+		
+		Anachorite
 
-https://www.nexusmods.com/oblivion/mods/31684
+		Cedric Karter
 
-https://www.nexusmods.com/oblivion/mods/37192
+		Clanker707
 
-https://www.nexusmods.com/oblivion/mods/39274
+		Graham
 
-Nobody's Nail Machine - Tracks from Fallout Sonora:
+		InTheGrave
 
-https://nobodysnailmachine.bandcamp.com/
+		Mannley
 
-Nuke 4 Duke and Pixelhate - Crashed Plane Collision:
+		Moloc
 
-https://www.nexusmods.com/users/88085788
+		Nehred
 
-https://www.nexusmods.com/newvegas/mods/75934
+		Patchier
 
-Quetzlsacatanango - Packhorner & Packrat meshes from Monster Mod - Additions:
+		Pixelhate
 
-https://www.nexusmods.com/users/1316332
+		Ted505
 
-https://www.nexusmods.com/newvegas/mods/56256
+		ToxicWhiteout
 
-Raw Catalog - Various Substance Painter materials used for textures:
+		UserKN
 
-https://rawcatalog.com
+		VictoriaMFD
 
-SpeedyB64 - Speedy Resources:
 
-https://www.nexusmods.com/users/848517
 
-https://www.nexusmods.com/newvegas/mods/39551
 
-Spifferino - Decal Billboards Resource:
+[ ASSETS USED ]
 
-https://www.nexusmods.com/users/13490405
 
-https://www.nexusmods.com/newvegas/mods/80209
+	Bobio567 - Old Western Buildings (Elephant Hill buildings):
 
-TrickyVein - Sandcrete Architecture - A Resource for Modders:
+		https://www.nexusmods.com/users/2432271
+		https://www.nexusmods.com/newvegas/mods/62698
 
-https://www.nexusmods.com/users/1949349
 
-https://www.nexusmods.com/newvegas/mods/48139
+	Brayduck - Adobe and Shack Buildings & No Sleep Till Goodsprings (Newt houses):
 
-TrickyVein, AnaCostia Crossing, DogtoothCG, Gribbleshnibit8, Pintocat, Puppetron, RoyBatty, Thauxian, and Xilandro - San Fran:
+		https://www.nexusmods.com/users/29452275
+		https://www.nexusmods.com/newvegas/mods/76575
+		https://www.nexusmods.com/newvegas/mods/76574
 
-https://www.nexusmods.com/users/1949349
 
-https://www.nexusmods.com/users/575069
+	CarlZee - Fallout 3 Idle Animation Restoration Pack - Modder's Resource:
 
-https://www.nexusmods.com/users/1536975
+		https://www.nexusmods.com/users/98667098
+		https://www.nexusmods.com/newvegas/mods/77882
 
-https://www.nexusmods.com/users/140729
 
-https://www.nexusmods.com/users/5070725
+	CIB - Radhorner Mesh from Monster Mod - Additions:
 
-https://www.nexusmods.com/users/7481963
+		https://www.nexusmods.com/users/48927
+		https://www.nexusmods.com/newvegas/mods/56256
 
-https://www.nexusmods.com/users/1417653
 
-https://www.nexusmods.com/mods/70128
+	DarthFANT0M - Wasteland Phone Booth Modders Resource:
 
-TumbaJamba - Cyber Arm Vault Suit & Tactical Gear:
+		https://next.nexusmods.com/profile/DarthFANt0M/about-me
+		https://www.nexusmods.com/newvegas/mods/85160
 
-https://www.nexusmods.com/users/1196961
+	Deedes - Gallows and Nooses Resource:
 
-https://www.nexusmods.com/newvegas/mods/40808
+		https://www.nexusmods.com/users/2023841
+		https://www.nexusmods.com/newvegas/mods/56986
 
-https://www.nexusmods.com/fallout3/mods/14676
 
-WebbProductions - Classic Super Mutant Style Armor:
+	GloomyJZ - MODDER'S RESOURCE - Vehicles (Deprecated)
 
-https://www.nexusmods.com/users/63424201
+		https://www.nexusmods.com/newvegas/mods/83599
 
-https://www.nexusmods.com/newvegas/mods/82224
 
-YanL - The BLACKJACK pack - Tons of armors for VANILLA bodys:
+	GSC Game World - Various Meshes and Textures From S.T.A.L.K.E.R. (Hoover Dam Rest Stop restrooms & Solitare statue)
 
-https://www.nexusmods.com/users/26836414
+		https://www.gsc-game.com/
 
-https://www.nexusmods.com/newvegas/mods/63745
 
-Yossarian - Various Meshes Resources:
+	Harryluck - Tailer Park Trailer & Trailer Park Trailer Destroyed:
 
-https://www.nexusmods.com/users/99671
+		https://www.nexusmods.com/users/1285368
+		https://www.nexusmods.com/fallout3/mods/6903
+		https://www.nexusmods.com/fallout3/mods/6969
 
-https://www.nexusmods.com/fallout3/mods/22533
 
-[ Special Thanks to the Following Guides ]
+	Hopper31 and MadAce - Lit Office Windows Modder's Resource:
 
-Pixelhate - Bits of NifSkopery:
+		https://www.nexusmods.com/users/1139885
+		https://www.nexusmods.com/users/1151770
+		https://www.nexusmods.com/newvegas/mods/72202
 
-https://www.nexusmods.com/newvegas/mods/76374
 
-Pixelhate - Material and Texture Animations in NifSkope:
+	Jokerine - Jokerine's Misc Resources and Tutorials - FNV (medals plaque, eagle statue, & magazine rack):
 
-https://www.nexusmods.com/newvegas/mods/56203
+		https://www.nexusmods.com/users/2543917
+		https://www.nexusmods.com/newvegas/mods/56009
 
-Pixelhate - Object Animation in NifSkope:
 
-https://www.nexusmods.com/newvegas/mods/80933
+	Kangaroovindaloo - Esperance Wind Farm (wind turbine SFX):
 
+		https://freesound.org/people/kangaroovindaloo/
+		https://freesound.org/people/kangaroovindaloo/sounds/180025/
+
+
+	Momo - Momo's Cactus Resource, Momo's Crane Resource, & Momo's Fishery Resource for Oblivion:
+
+		https://www.nexusmods.com/users/1522419
+		https://www.nexusmods.com/oblivion/mods/31684
+		https://www.nexusmods.com/oblivion/mods/37192
+		https://www.nexusmods.com/oblivion/mods/39274
+
+
+	Nobody's Nail Machine - Tracks from Fallout Sonora:
+
+		https://nobodysnailmachine.bandcamp.com/
+
+
+	Pixelhate - Animated Flowing River and Waterfall Resource:
+
+		https://next.nexusmods.com/profile/Pixelhate/about-me
+		https://www.nexusmods.com/fallout3/mods/22071
+
+
+	Quetzlsacatanango - Packhorner mesh from Monster Mod - Additions:
+
+		https://www.nexusmods.com/users/1316332
+		https://www.nexusmods.com/newvegas/mods/56256
+
+
+	Raw Catalog - Various Substance 3D materials used to make custom textures:
+
+		https://rawcatalog.com
+
+
+	Renafox - Pump Jack:
+
+		https://sketchfab.com/3d-models/pump-jack-021faf828156426bb99a1cf87b5cefad
+
+
+	SpeedyB64 - Speedy Resources (neon letters, hazard stripes decal, road barrier, wire hangers, & shower head):
+
+		https://www.nexusmods.com/users/848517
+		https://www.nexusmods.com/newvegas/mods/39551
+
+
+	Spifferino - Decal Billboards Resource:
+
+		https://www.nexusmods.com/users/13490405
+		https://www.nexusmods.com/newvegas/mods/80209
+
+
+	TrickyVein - Sandcrete Architecture - A Resource for Modders (wooden ladder):
+
+		https://www.nexusmods.com/users/1949349
+		https://www.nexusmods.com/newvegas/mods/48139
+
+
+	TrickyVein, AnaCostia Crossing, DogtoothCG, Gribbleshnibit8, Pintocat, Puppetron, RoyBatty, Thauxian, and Xilandro - San Fran (hanging corpses and skull pikes):
+
+		https://www.nexusmods.com/users/1949349
+		https://www.nexusmods.com/users/575069
+		https://www.nexusmods.com/users/1536975
+		https://www.nexusmods.com/users/140729
+		https://www.nexusmods.com/users/5070725
+		https://www.nexusmods.com/users/7481963
+		https://www.nexusmods.com/users/1417653
+		https://www.nexusmods.com/mods/70128
+
+
+	WebbProductions - Classic Super Mutant Style Armor (Bear outfit & hair):
+
+		https://www.nexusmods.com/users/63424201
+		https://www.nexusmods.com/newvegas/mods/82224
+
+
+	Yossarian - Various Meshes Resources (Newt furniture & Tall Pines tents):
+
+		https://www.nexusmods.com/users/99671
+		https://www.nexusmods.com/fallout3/mods/22533
