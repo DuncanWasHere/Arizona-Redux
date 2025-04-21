@@ -1,23 +1,16 @@
 ; DO NOT EDIT OR DELETE THIS SCRIPT
-; IT PREVENTS YOUR GAME FROM BREAKING
+; IT PREVENTS THE MOD FROM BREAKING
 ; DO NOT IGNORE THE WARNINGS
 
 int iWinningModIndex
 string_var sWinningMod
 
-iWinningModIndex = GetFormOverrideIndex WastelandNV
-sWinningMod = GetNthModName iWinningModIndex
-
-; Catch map offset
-if eval ((Sv_Find "Nova Arizona", sWinningMod) == -1)
-	MessageBoxEx "NOVA ARIZONA - CRITICAL ERROR! NOT A BUG!%rNova Arizona's worldspace edits are being overwritten by %z!%rMove Nova Arizona - Map Add-On.esp to the bottom of your load order.%rMove all NA patches below the map addon." (sWinningMod)
-endif
+SetWorldspaceMapBounds WastelandNV -20 5 10 -2
 
 iWinningModIndex = GetFormOverrideIndex NVCCLucullus
 sWinningMod = GetNthModName iWinningModIndex
 
 ; Catch Lucullus
-if eval ((Sv_Find "Nova", sWinningMod) == -1)
+if eval ((Sv_Find "Arizona", sWinningMod) == -1)
 	MessageBoxEx "NOVA ARIZONA - CRITICAL ERROR! NOT A BUG!%rNova Arizona's Lucullus edits are being overwritten by %z!%rIf possible, move NovaArizona.esm below the conflicting plugin.%rOtherwise, a patch is needed." (sWinningMod)
 endif
-
