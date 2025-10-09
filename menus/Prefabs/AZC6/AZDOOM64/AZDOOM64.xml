@@ -1,0 +1,24 @@
+<rect name="doomMainRect">
+	<locus> &true; </locus>
+	<visible> &false; </visible>
+	<text name="mainText">
+		<font> 5 </font>
+		<x> -70 </x>
+		<y> 50 </y>
+		<string> DOOM64 </string>
+		<depth> 2 </depth>
+		<zoom>80</zoom>
+	</text>
+	<image name="computers_background">
+		<target> &true; </target>
+		<filename> Interface\Shared\Background\pipboy.dds </filename>
+		<width> <copy src="parent()" trait="width"/> </width>
+		<height> <copy src="parent()" trait="height"/> </height>
+		<x> 10 </x>
+		<zoom> &scale; </zoom>
+		<depth> 1 </depth>
+		<alpha> 255 </alpha>
+		<brightness> 90 </brightness>
+		<xdefault>&true;</xdefault>
+	</image>
+</rect>
