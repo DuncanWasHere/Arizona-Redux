@@ -1,0 +1,428 @@
+<rect name="AZBBSThreadWindow">
+    <visible> 0 </visible>
+    <locus> 1 </locus>
+
+    <!-- Active board name (for header) -->
+    <_board_name></_board_name>
+
+    <!-- Scroll bar -->
+    <_scrolldelta_controller> 3 </_scrolldelta_controller>
+    <_scrolldelta>
+        <copy> 0 </copy>
+        <add>
+            <copy> 36 </copy>
+            <onlyifnot src="globals()" trait="_Has360Controller"/>
+        </add>
+        <add>
+            <copy src="me()" trait="_scrolldelta_controller"/>
+            <onlyif src="globals()" trait="_Has360Controller"/>
+        </add>
+        <max> 0.1 </max>
+    </_scrolldelta>
+    <_list_height_extra> 17 </_list_height_extra>
+
+    <depth> 3 </depth>
+    <height>
+        <copy src="screen()" trait="height"/>
+        <mult> 0.75 </mult>
+    </height>
+    <width>
+        <copy src="me()" trait="height"/>
+        <mult> 4 </mult>
+        <div> 3 </div>
+    </width>
+
+    <!-- Board name header -->
+    <text name="HeaderText">
+        <x>
+            <copy src="parent()" trait="width"/>
+            <div> 2 </div>
+            <sub>
+                <copy src="me()" trait="width"/>
+                <div> 2 </div>
+            </sub>
+        </x>
+        <y> 30 </y>
+        <align> center </align>
+
+        <font> 5 </font>
+        <string> <copy src="parent()" trait="_board_name"/> </string>
+
+        <brightness> <copy src="ComputersMenu" trait="brightness"/> </brightness>
+    </text>
+
+    <!-- Scrollable container -->
+    <hotrect name="ScrollContainer">
+        <locus> 1 </locus>
+        <clipwindow> 1 </clipwindow>
+
+        <!-- Total height of the thread (for scrollbar) -->
+        <_thread_height> 0 </_thread_height>
+        <_scroll_delta> 30 </_scroll_delta>
+
+        <x> 40 </x>
+        <y>
+            <copy src="sibling(HeaderText)" trait="y"/>
+            <add src="sibling(HeaderText)" trait="height"/>
+            <add> 12 </add>
+        </y>
+
+        <height>
+            <copy src="parent()" trait="height"/>
+            <sub src="me()" trait="y"/>
+            <sub> 30 </sub>
+        </height>
+        <width>
+            <copy src="parent()" trait="width"/>
+            <sub src="me()" trait="x"/>
+            <sub> 40 </sub>
+        </width>
+
+        <!-- Container for posts -->
+        <rect name="PostContainer">
+            <locus> 1 </locus>
+            <clipwindow> 0 </clipwindow>
+
+            <y>
+                <copy> 0 </copy>
+                <sub>
+                    <copy src="sibling(Scrollbar)" trait="_current_value"/>
+                    <mul src="sibling(Scrollbar)" trait="_scrolldelta"/>
+                </sub>
+                <add> 5 </add>
+            </y>
+            <width>
+                <copy src="sibling(Scrollbar)" trait="x"/>
+                <sub> 12 </sub>
+            </width>
+
+            <!-- Original post -->
+            <hotrect name="originalPost">
+                <locus> 1 </locus>
+                <clips> 1 </clips>
+
+                <!-- Data fields -->
+                <_title></_title>
+                <_user></_user>
+                <_time></_time>
+                <_body></_body>
+                <_replies></_replies>
+
+                <width>
+                    <copy src="parent()" trait="width"/>
+                    <sub>10</sub>
+                </width>
+                <height>
+                    <copy src="child(postBody)" trait="height"/>
+                    <add src="child(postBody)" trait="y"/>
+                    <add>10</add>
+                </height>
+
+                <!-- Title -->
+                <text name="postTitle">
+                    <font>5</font>
+                    <x>10</x>
+                    <y>10</y>
+                    <string>
+                        <copy src="parent()" trait="_title"/>
+                    </string>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>40</add>
+                    </brightness>
+                </text>
+
+                <!-- Username -->
+                <text name="postUsername">
+                    <font>5</font>
+                    <x>10</x>
+                    <y>
+                        <copy src="sibling(postTitle)" trait="y"/>
+                        <add src="sibling(postTitle)" trait="height"/>
+                        <add>6</add>
+                    </y>
+                    <string>
+                        <copy src="parent()" trait="_user"/>
+                    </string>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>-40</add>
+                    </brightness>
+                </text>
+
+                <!-- Timestamp -->
+                <text name="postTime">
+                    <font>5</font>
+                    <x>
+                        <copy src="sibling(postUsername)" trait="x"/>
+                        <add src="sibling(postUsername)" trait="width"/>
+                        <add>25</add>
+                    </x>
+                    <y>
+                        <copy src="sibling(postUsername)" trait="y"/>
+                    </y>
+                    <string>
+                        <copy src="parent()" trait="_time"/>
+                    </string>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>-70</add>
+                    </brightness>
+                </text>
+
+                <!-- Body -->
+                <text name="postBody">
+                    <font>5</font>
+                    <x>10</x>
+                    <y>
+                        <copy src="sibling(postUsername)" trait="y"/>
+                        <add src="sibling(postUsername)" trait="height"/>
+                        <add>8</add>
+                    </y>
+                    <wrapwidth> 600 </wrapwidth>
+                    <string>
+                        <copy src="parent()" trait="_body"/>
+                    </string>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                    </brightness>
+                </text>
+
+                <!-- Outline -->
+                <image name="postOutlineTop">
+                    <filename>Interface\Shared\solid.dds</filename>
+                    <x>0</x>
+                    <y>0</y>
+                    <width><copy src="parent()" trait="width"/></width>
+                    <height>2</height>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>-80</add>
+                    </brightness>
+                </image>
+
+                <image name="postOutlineBottom">
+                    <filename>Interface\Shared\solid.dds</filename>
+                    <x>0</x>
+                    <y>
+                        <copy src="parent()" trait="height"/>
+                        <sub>2</sub>
+                    </y>
+                    <width><copy src="parent()" trait="width"/></width>
+                    <height>2</height>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>-80</add>
+                    </brightness>
+                </image>
+
+                <image name="postOutlineLeft">
+                    <filename>Interface\Shared\solid.dds</filename>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>2</width>
+                    <height><copy src="parent()" trait="height"/></height>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>-80</add>
+                    </brightness>
+                </image>
+
+                <image name="postOutlineRight">
+                    <filename>Interface\Shared\solid.dds</filename>
+                    <x>
+                        <copy src="parent()" trait="width"/>
+                        <sub>2</sub>
+                    </x>
+                    <y>0</y>
+                    <width>2</width>
+                    <height><copy src="parent()" trait="height"/></height>
+                    <brightness>
+                        <copy src="ComputersMenu" trait="brightness"/>
+                        <add>-80</add>
+                    </brightness>
+                </image>
+            </hotrect>
+        </rect>
+
+        <hotrect name="Scrollbar">
+            <include src="scrollbar_vert.xml"/>
+            <_x>
+                <copy src="parent()" trait="width"/>
+                <sub> 11 </sub>
+            </_x>
+            <_y>
+                <copy> 80 </copy>
+                <sub src="parent()" trait="y" />
+            </_y>
+            <_height>
+                <copy src="parent()" trait="height" />
+                <sub> 10 </sub>
+            </_height>
+            <_scrolldelta> <copy src="grandparent()" trait="_scrolldelta"/> </_scrolldelta>
+            <_number_of_items>
+                <copy src="parent()" trait="_thread_height"/>
+                <add src="grandparent()" trait="_list_height_extra"/>
+                <div src="me()" trait="_scrolldelta" />
+            </_number_of_items>
+            <_number_of_visible_items>
+                <copy src="parent()" trait="height"/>
+                <div src="me()" trait="_scrolldelta" />
+            </_number_of_visible_items>
+            <_show_always> 1 </_show_always>
+        </hotrect>
+    </hotrect> 
+
+    <image name="computers_background">
+        <filename> Interface\Shared\Background\pipboy.dds </filename>
+        <width> <copy src="parent()" trait="width"/> </width>
+        <height> <copy src="parent()" trait="height"/> </height>
+        <x> 10 </x>
+        <zoom> &scale; </zoom>
+        <depth> -3 </depth>
+        <alpha> 255 </alpha>
+        <brightness> 90 </brightness>
+    </image>
+</rect>
+
+<!-- Template for reply posts -->
+<template name="bbsPostTemplate">
+    <hotrect name="bbsPost">
+        <locus> 1 </locus>
+        <depth> 10 </depth>
+        <clips> 1 </clips>
+
+        <!-- Data fields -->
+        <_user></_user>
+        <_time></_time>
+        <_body></_body>
+
+        <y>
+            <copy src="sibling()" trait="y" />
+            <add src="sibling()" trait="height" />
+            <max src="custom(ComputersMenu/AZBBSThreadWindow/ScrollContainer/PostContainer/originalPost)" trait="height"/>
+            <add> 12 </add>
+        </y>
+        <width>
+            <copy src="child(postBody)" trait="width"/>
+            <add src="child(postBody)" trait="x"/>
+            <max>
+                <copy src="child(postTime)" trait="width"/>
+                <add src="child(postTime)" trait="x"/>
+            </max>
+            <add>10</add>
+        </width>
+        <height>
+            <copy src="child(postBody)" trait="height"/>
+            <add src="child(postBody)" trait="y"/>
+            <add>10</add>
+        </height>
+
+        <!-- Username -->
+        <text name="postUsername">
+            <font>5</font>
+            <x>10</x>
+            <y>10</y>
+            <string>
+                <copy src="parent()" trait="_user"/>
+            </string>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+                <add>-40</add>
+            </brightness>
+        </text>
+
+        <!-- Timestamp -->
+        <text name="postTime">
+            <font>5</font>
+            <x>
+                <copy src="sibling(postUsername)" trait="x"/>
+                <add src="sibling(postUsername)" trait="width"/>
+                <add>25</add>
+            </x>
+            <y>
+                <copy src="sibling(postUsername)" trait="y"/>
+            </y>
+            <string>
+                <copy src="parent()" trait="_time"/>
+            </string>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+                <add>-70</add>
+            </brightness>
+        </text>
+
+        <!-- Body -->
+        <text name="postBody">
+            <font>5</font>
+            <x>10</x>
+            <y>
+                <copy src="sibling(postUsername)" trait="y"/>
+                <add src="sibling(postUsername)" trait="height"/>
+                <add>8</add>
+            </y>
+            <wrapwidth> 600 </wrapwidth>
+            <string>
+                <copy src="parent()" trait="_body"/>
+            </string>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+            </brightness>
+        </text>
+
+        <!-- Outline -->
+        <image name="postOutlineTop">
+            <filename>Interface\Shared\solid.dds</filename>
+            <x> 0 </x>
+            <y> 0 </y>
+            <width><copy src="parent()" trait="width"/></width>
+            <height>2</height>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+                <add>-80</add>
+            </brightness>
+        </image>
+
+        <image name="postOutlineBottom">
+            <filename>Interface\Shared\solid.dds</filename>
+            <x>0</x>
+            <y>
+                <copy src="parent()" trait="height"/>
+                <sub>2</sub>
+            </y>
+            <width><copy src="parent()" trait="width"/></width>
+            <height>2</height>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+                <add>-80</add>
+            </brightness>
+        </image>
+
+        <image name="postOutlineLeft">
+            <filename>Interface\Shared\solid.dds</filename>
+            <x>0</x>
+            <y>0</y>
+            <width>2</width>
+            <height><copy src="parent()" trait="height"/></height>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+                <add>-80</add>
+            </brightness>
+        </image>
+
+        <image name="postOutlineRight">
+            <filename>Interface\Shared\solid.dds</filename>
+            <x>
+                <copy src="parent()" trait="width"/>
+                <sub>2</sub>
+            </x>
+            <y>0</y>
+            <width>2</width>
+            <height><copy src="parent()" trait="height"/></height>
+            <brightness>
+                <copy src="ComputersMenu" trait="brightness"/>
+                <add>-80</add>
+            </brightness>
+        </image>
+    </hotrect>
+</template>
