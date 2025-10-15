@@ -2,6 +2,11 @@
 ; IT PREVENTS THE MOD FROM BREAKING
 ; DO NOT IGNORE THE WARNINGS
 
+if GetPluginVersion "hNVSE" < 1.2
+	printc "Missing hVNSE plugin version >12. Installed version: %g This is not a bug" (GetPluginVersion "hNVSE")
+	MessageBoxEx "Missing hVNSE plugin version >12. Installed version: %g This is not a bug" (GetPluginVersion "hNVSE")
+endif
+
 int iWinningModIndex
 string_var sWinningMod
 
