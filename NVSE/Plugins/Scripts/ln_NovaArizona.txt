@@ -12,10 +12,10 @@ string_var sWinningMod
 
 SetWorldspaceMapBounds WastelandNV -34 41 38 -31
 
-iWinningModIndex = GetFormOverrideIndex NVCCLucullus
-sWinningMod = GetNthModName iWinningModIndex
-
-; Catch Lucullus
-if eval ((Sv_Find "Arizona", sWinningMod) == -1)
-	MessageBoxEx "NOVA ARIZONA - CRITICAL ERROR! NOT A BUG!%rNova Arizona's Lucullus edits are being overwritten by %z!%rIf possible, move NovaArizona.esm below the conflicting plugin.%rOtherwise, a patch is needed." (sWinningMod)
-endif
+; iWinningModIndex = GetFormOverrideIndex NVCCLucullus
+; sWinningMod = GetNthModName iWinningModIndex
+; 
+; ; Catch Lucullus
+; if eval ((Sv_Find "Arizona", sWinningMod) == -1)
+; 	MessageBoxEx "NOVA ARIZONA - CRITICAL ERROR! NOT A BUG!%rNova Arizona's Lucullus edits are being overwritten by %z!%rIf possible, move NovaArizona.esm below the conflicting ; plugin.%rOtherwise, a patch is needed." (sWinningMod)
+; endif
