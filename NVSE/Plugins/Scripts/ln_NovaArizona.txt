@@ -1,21 +1,29 @@
-; DO NOT EDIT OR DELETE THIS SCRIPT
-; IT PREVENTS THE MOD FROM BREAKING
-; DO NOT IGNORE THE WARNINGS
+; DO NOT EDIT OR DELETE THIS SCRIPT TO CIRCUMVENT WARNINGS
+; THINGS WILL BREAK DOWN IF YOU DO NOT INSTALL ALL OF THE REQUIREMENTS
+; DO NOT ASSUME THAT IT IS FINE JUST BECAUSE YOUR GAME DOES NOT IMMEDIATELY CRASH
 
-if GetPluginVersion "hNVSE" < 1.2
-	printc "Missing hVNSE plugin version >12. Installed version: %g This is not a bug" (GetPluginVersion "hNVSE")
-	MessageBoxEx "Missing hVNSE plugin version >12. Installed version: %g This is not a bug" (GetPluginVersion "hNVSE")
+; NVSE Plugin Checks
+if GetPluginVersion "hNVSE" < 1.20
+	MessageBoxEx "Missing hVNSE plugin version >=1.20. Installed version: %g This is not a bug" (GetPluginVersion "hNVSE")
 endif
 
-int iWinningModIndex
-string_var sWinningMod
+if GetPluginVersion "AnhNVSE" < 1.31
+	MessageBoxEx "Missing AnhNVSE plugin version >=1.31. Installed version: %g This is not a bug" (GetPluginVersion "AnhNVSE")
+endif
 
+if GetPluginVersion "JIP LN NVSE" < 57.30
+	MessageBoxEx "Missing JIP LN NVSE plugin version >=57.30. Installed version: %g This is not a bug" (GetPluginVersion "JIP LN NVSE")
+endif
+
+if GetPluginVersion "JohnnyGuitarNVSE" < 5.19
+	MessageBoxEx "Missing JohnnyGuitarNVSE plugin version >=5.19. Installed version: %g This is not a bug" (GetPluginVersion "JohnnyGuitarNVSE")
+endif
+
+if GetPluginVersion "ShowOffNVSE Plugin" < 1.81
+	MessageBoxEx "Missing ShowOffNVSE plugin version >=1.81. Installed version: %g This is not a bug" (GetPluginVersion "ShowOffNVSE Plugin")
+endif
+
+; Vanilla Form Patches
 SetWorldspaceMapBounds WastelandNV -34 41 38 -31
-
-; iWinningModIndex = GetFormOverrideIndex NVCCLucullus
-; sWinningMod = GetNthModName iWinningModIndex
-; 
-; ; Catch Lucullus
-; if eval ((Sv_Find "Arizona", sWinningMod) == -1)
-; 	MessageBoxEx "NOVA ARIZONA - CRITICAL ERROR! NOT A BUG!%rNova Arizona's Lucullus edits are being overwritten by %z!%rIf possible, move NovaArizona.esm below the conflicting ; plugin.%rOtherwise, a patch is needed." (sWinningMod)
-; endif
+SetAlly OmertaFaction AZGOMChickHadleyFaction
+GenericAddForm 1 Ghoul AZEyeGhoulBlind -2
