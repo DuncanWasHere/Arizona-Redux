@@ -367,6 +367,14 @@ https://rawcatalog.com
 
 ---
 
+## Razzvio - Welding Torch.wav (replacement for missing Pitt welding sound B):
+
+https://freesound.org/people/Razzvio/
+
+https://freesound.org/people/Razzvio/sounds/79577/
+
+---
+
 ## Renafox - Pump Jack:
 
 https://sketchfab.com/3d-models/pump-jack-021faf828156426bb99a1cf87b5cefad
@@ -422,6 +430,14 @@ https://www.nexusmods.com/users/7481963
 https://www.nexusmods.com/users/1417653
 
 https://www.nexusmods.com/mods/70128
+
+---
+
+## weaveofkev - Welding_Electric Sparks.wav (replacement for missing Pitt welding sound A):
+
+https://freesound.org/people/weaveofkev/
+
+https://freesound.org/people/weaveofkev/sounds/396240/
 
 ---
 
