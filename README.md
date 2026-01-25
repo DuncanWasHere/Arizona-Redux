@@ -9,15 +9,15 @@
 
 ## Team Leads & Area Designers
 
+Creative Design Lead: Dreysam
+
 Lead 3D Artist: StreikingVenom
 
 Lead Environment Artist: SM/FOREVERMK1
 
-Lead Creative Designer: Dreysam
-
 Lead Writer: AsianInvasionofAlaska2077
 
-QA Lead: DuncanWasHere
+Technical Design Lead: DuncanWasHere
 
 ---
 
@@ -35,7 +35,11 @@ FusionPrime
 
 Kepi
 
+Kungkobra
+
 Lazarus
+
+PaperWyvern
 
 Puddlepond
 
