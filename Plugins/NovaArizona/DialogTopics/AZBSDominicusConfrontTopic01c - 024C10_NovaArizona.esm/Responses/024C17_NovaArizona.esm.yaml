@@ -1,0 +1,57 @@
+FormKey: 024C17:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 024C16:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: I see. Perhaps, his emotions got the better of him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: You may go. We will carry out our own investigation. In the future, we may not be so lenient.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E0F0000006E0100000039100A0002007201006E19000000
+  SourceCode: >-
+    SetObjectiveCompleted AZBigStopAhigaQuest01 15 1
+
+    SetStage AZBigStopAhigaQuest01 25
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: So, I was investigating who might have been responsible and he accused me.

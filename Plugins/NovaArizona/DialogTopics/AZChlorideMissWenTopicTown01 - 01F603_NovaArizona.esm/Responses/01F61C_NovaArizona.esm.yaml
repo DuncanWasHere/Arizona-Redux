@@ -1,0 +1,55 @@
+FormKey: 01F61C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is Chloride, hun. It's a mining town, and has been for over 400 years. My 10th great grandparents served the miners here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: These days, it's more of the same. We'll be long dead by the time they stop pulling silver out of these hills.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Is there anything in particular you'd like to know about?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797368
+Choices:
+- 01F604:NovaArizona.esm
+- 01F605:NovaArizona.esm
+- 01F606:NovaArizona.esm
+- 01F607:NovaArizona.esm
+- 01F608:NovaArizona.esm
+- 01F60E:NovaArizona.esm
+- 01F619:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can you give me a quick rundown on the town?

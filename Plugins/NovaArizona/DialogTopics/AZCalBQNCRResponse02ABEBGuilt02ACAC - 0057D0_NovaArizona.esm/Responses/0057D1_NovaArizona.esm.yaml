@@ -1,0 +1,39 @@
+FormKey: 0057D1:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I did.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x140006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I think I lost the last of it once I started this conversation.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 0057D5:NovaArizona.esm
+- 0057DA:NovaArizona.esm
+- 0057DD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Don't you have any respect for yourself? Any integrity at all?

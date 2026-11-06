@@ -1,0 +1,32 @@
+FormKey: 01BB4A:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 01BB49:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nothing, thanks to you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 01BA93:NovaArizona.esm
+- 01BA99:NovaArizona.esm
+- 01BAC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's rough right now?

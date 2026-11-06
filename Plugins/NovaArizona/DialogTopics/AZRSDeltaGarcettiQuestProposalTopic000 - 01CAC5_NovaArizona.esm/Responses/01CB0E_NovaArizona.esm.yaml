@@ -1,0 +1,29 @@
+FormKey: 01CB0E:NovaArizona.esm
+FormVersion: 15
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Maybe I had friends at Willow. Maybe I want to even the score a little.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+Choices:
+- 01CAC6:NovaArizona.esm
+- 01CAC7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: This sounds personal.

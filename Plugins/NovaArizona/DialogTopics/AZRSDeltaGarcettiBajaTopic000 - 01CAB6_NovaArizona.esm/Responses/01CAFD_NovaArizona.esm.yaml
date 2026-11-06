@@ -1,0 +1,35 @@
+FormKey: 01CAFD:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Just like here, but people don't bother crying when they're shot.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+Choices:
+- 01CAB6:NovaArizona.esm
+- 01CAB7:NovaArizona.esm
+- 01CAB8:NovaArizona.esm
+- 01CAB9:NovaArizona.esm
+- 01CABA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What was it like down there?

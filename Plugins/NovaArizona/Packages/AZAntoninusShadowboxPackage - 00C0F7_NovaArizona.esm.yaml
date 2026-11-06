@@ -1,0 +1,46 @@
+FormKey: 00C0F7:NovaArizona.esm
+EditorID: AZAntoninusShadowboxPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageUseWeapon
+Unused2: 11
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 12
+Duration: 1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetObjectType
+    ObjectType: WeaponsRanged
+WeaponData:
+  WeaponFlags:
+  - DoNoDamage
+  - CrouchToReload
+  - HoldFireWhenBlocked
+  FireRate: VolleyFire
+  FireCount: RepeatFire
+  NumberOfBursts: 1
+  ShootsPerVolleyMin: 1
+  ShootsPerVolleyMax: 6
+  PauseBetweenVolleysMin: 1
+  PauseBetweenVolleysMax: 2
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

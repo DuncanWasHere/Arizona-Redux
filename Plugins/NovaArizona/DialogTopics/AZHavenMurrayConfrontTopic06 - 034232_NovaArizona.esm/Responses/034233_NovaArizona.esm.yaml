@@ -1,0 +1,50 @@
+FormKey: 034233:NovaArizona.esm
+FormVersion: 15
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: What happens now is... {thinking}you're going to help us figure out how to move forward.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: Looking here, we have an intruder with no attachment to this place, and a dead body here everyone here's attached to.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: So, listen up, everyone! This person here's going to help figure out what to with Job here!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 034234:NovaArizona.esm
+- 034235:NovaArizona.esm
+- 034236:NovaArizona.esm
+- 034237:NovaArizona.esm
+- 03423C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, what happens now?

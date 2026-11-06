@@ -1,0 +1,36 @@
+FormKey: 013F17:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 01343A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hey. You new in town? Welcome to Solitare. What can I get ya?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744965
+Choices:
+- 013F09:NovaArizona.esm
+- 013F13:NovaArizona.esm
+- 013F0B:NovaArizona.esm
+- 013F0C:NovaArizona.esm
+- 013F0D:NovaArizona.esm
+- 013F12:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

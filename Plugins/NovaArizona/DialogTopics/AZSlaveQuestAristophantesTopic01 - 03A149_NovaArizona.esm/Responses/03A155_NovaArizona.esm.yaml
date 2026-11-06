@@ -1,0 +1,30 @@
+FormKey: 03A155:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A14A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: I do not need to hear this, return when you've done as I've asked.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 110
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm still working on the issues with the Rusty Hooks.

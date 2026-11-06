@@ -1,0 +1,58 @@
+FormKey: 004948:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: A lot of the ones from outside Arizona did, yeah. It's one thing to be able to fight like a lion against certain doom.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: It's another to do that for five straight days.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: One of the people I trained failed 15 times due to bad luck. The last time was very nearly fatal, and I forbade him from trying again.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: He was so upset. I made him an honorary Ranger to try and calm him down, but I don't think it helped.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004947:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do Rangers fail the test a lot?

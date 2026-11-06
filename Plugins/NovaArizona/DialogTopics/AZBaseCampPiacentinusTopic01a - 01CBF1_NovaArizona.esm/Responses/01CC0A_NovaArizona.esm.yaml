@@ -1,0 +1,60 @@
+FormKey: 01CC0A:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Eighteen years ago, Caesar decreed that we bring the three great cities of Arizona into the 23rd century.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The great cities were to become capitals of industry, culture and administration.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He sent out missives to all of the great architects of Arizona. A competition was held. Caesar demanded that we design the perfect cathedral for the Martian Cult in Two-Sun.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I won handily.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780946
+Choices:
+- 01CBF1:NovaArizona.esm
+- 01CBF2:NovaArizona.esm
+- 01CBF3:NovaArizona.esm
+- 01CBF4:NovaArizona.esm
+- 01CC02:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How did you become his architect?

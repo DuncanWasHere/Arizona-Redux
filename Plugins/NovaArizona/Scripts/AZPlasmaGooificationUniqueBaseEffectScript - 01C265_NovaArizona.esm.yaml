@@ -1,0 +1,62 @@
+FormKey: 01C265:NovaArizona.esm
+EditorID: AZPlasmaGooificationUniqueBaseEffectScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    VariableCount: 2
+    Type: MagicEffect
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C621600001000060011006C00000080161B0002130058000048100B000100FFFF05005201001507004CA70000001212040001000100231109000100FFFF0500520200231109000100FFFF0500520300391513000112005600000001005A666666666666F63F0039150C00010B00560100000200420000110000001000060013006C000000801611000209005601000002001507004C1D01000080161300020B0056000000010042000907004C06010000402809000100FFFF0500520400121204000100020039150C00010B0056010000020042010039151300011200560000000100580000BA10040000002011000000
+  SourceCode: >-
+    name AZPlasmaGooificationUniqueBaseEffectScript;
+
+
+    float fTimer;
+
+    int bDoOnce;
+
+
+    ScriptEffectStart {
+        if (!GetIsID(NVCrMrHouse)) {
+            SetCriticalStage(GooStart);
+            PMS(AZPlasmaGooificationUniqueEffectShader01);
+            PMS(AZPlasmaGooificationUniqueEffectShader02);
+            fTimer = 1.4;
+            bDoOnce = 0;
+        }
+    }
+
+
+    ScriptEffectUpdate {
+        if (!bDoOnce) {
+            if (fTimer <= 0) {
+                AttachAshPileEX(AZPlasmaGooPileUnique);
+                SetCriticalStage(GooEnd);
+                bDoOnce = 1;
+            }
+            fTimer -= ScriptEffectElapsedSeconds();
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1376D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C269:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C26A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C266:NovaArizona.esm

@@ -1,0 +1,39 @@
+FormKey: 01751E:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 01751D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sorry, amicus, but now isn't the time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+Choices:
+- 01751C:NovaArizona.esm
+- 017600:NovaArizona.esm
+- 020866:NovaArizona.esm
+- 020868:NovaArizona.esm
+- 020867:NovaArizona.esm
+- 020869:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

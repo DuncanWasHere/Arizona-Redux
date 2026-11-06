@@ -1,0 +1,40 @@
+FormKey: 01758A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 017589:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742066
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E61
+  ResponseText: I am fully aware that it was you who informed the NCR that the Legion will be using the spillway tunnels. Speak to me again and you will die.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100758634
+  SecondParameter: 120
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

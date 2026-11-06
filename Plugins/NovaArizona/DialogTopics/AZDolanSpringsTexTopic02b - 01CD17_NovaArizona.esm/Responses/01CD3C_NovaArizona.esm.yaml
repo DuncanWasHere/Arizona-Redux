@@ -1,0 +1,31 @@
+FormKey: 01CD3C:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There is more to it than that. You will understand in time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 01CD16:NovaArizona.esm
+- 01CD17:NovaArizona.esm
+- 01CD18:NovaArizona.esm
+- 01CD22:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It isn't that special. I got my Mark just for meeting with the head of a casino.

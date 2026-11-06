@@ -1,0 +1,33 @@
+FormKey: 01F57D:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The weaklings die and the strong survive. That's the way it's always been.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718660
+Choices:
+- 01F54B:NovaArizona.esm
+- 01F54C:NovaArizona.esm
+- 01F54D:NovaArizona.esm
+- 01F54E:NovaArizona.esm
+- 01F54F:NovaArizona.esm
+- 01F550:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How does the Legion function if nobody is allowed to use real medicine?

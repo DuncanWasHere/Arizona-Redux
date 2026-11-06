@@ -1,0 +1,46 @@
+FormKey: 01FB1A:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{taking a deep breath}So, I did it. Put a pillow on his face.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It was early in the morning, and I couldn't bring myself to sleep next to him, so I waited until sunrise and then found an Omerta.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The guy came and looked at Chick. He looked at me. Then he went and got backup. They rolled Chick up in something and carried him out.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792071
+Choices:
+- 01FAED:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Slow down. Tell me exactly what happened.

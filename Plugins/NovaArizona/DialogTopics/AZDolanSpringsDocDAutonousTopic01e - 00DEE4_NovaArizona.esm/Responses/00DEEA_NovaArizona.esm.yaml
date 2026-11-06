@@ -1,0 +1,31 @@
+FormKey: 00DEEA:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Pretty far, to be honest. None of the supplies taken need to be refrigerated. You could walk all the way back to Two-Sun with that stuff.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+Choices:
+- 00DEDA:NovaArizona.esm
+- 00DEE3:NovaArizona.esm
+- 00DEE4:NovaArizona.esm
+- 00DEEB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you have any idea were they could have gone?

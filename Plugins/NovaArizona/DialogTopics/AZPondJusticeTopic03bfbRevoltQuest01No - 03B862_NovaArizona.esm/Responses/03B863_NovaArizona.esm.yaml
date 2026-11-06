@@ -1,0 +1,76 @@
+FormKey: 03B863:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: The forces of satan put me in here because I was singing songs of holy freedom.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: They fear a rebellion.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Most of them are not even proper Legionaries. Contractors, believe it or not. So as not to deprive the front of manpower.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Even the town below. Narry a Legionary in sight.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: The traders will flee, the Legion only allows the meek to be mercatores.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: We need only take the town hall and the wardens office up the hill. With the right weapons we could do it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B862:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: No

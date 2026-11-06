@@ -1,0 +1,46 @@
+FormKey: 0101C7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 0101C6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656D20
+    UseEmotionAnimation: True
+    Unused3: 0x752E20
+  ResponseText: "[FAILED] Yeah? Well, I'm not going down without a fight."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x161005000100720100
+  SourceCode: StartCombat Player
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: Look, I have no problem killing you, too.
+ActorValuePerk: 0004BB:FalloutNV.esm

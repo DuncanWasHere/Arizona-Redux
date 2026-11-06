@@ -1,0 +1,68 @@
+FormKey: 020D9F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wow, you know your stuff.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: Hey, have some extra as thanks.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766367
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 44
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730100020020331C00010002100A0002007203006E070000001C0001007711070001006E14000000
+  SourceCode: >-
+    Set AZBaseCampHardTackQuest.HardTackRecipe to 3
+
+    Player.AddItem AZHardTack 7
+
+    Player.RewardXP 20
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C446:NovaArizona.esm
+Prompt: I know hardtack. You don't need to use salt, and it's a 2:1 ratio of water to flour.
+ActorValuePerk: 0004BC:FalloutNV.esm

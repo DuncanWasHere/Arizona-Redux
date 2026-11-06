@@ -1,0 +1,55 @@
+FormKey: 0210A4:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I see... Well I am a purveyor of the esoteric sciences.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I suppose that's why you came to me? If you know where to look, the happenings of the undead are as commonplace as they are fascinating!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: 'But I am curious: what makes you think this device is haunted?'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100759283
+  RunOnType: Target
+Choices:
+- 02109D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm looking for someone who can certify that this object is haunted by spirits <Show phonautograph.>

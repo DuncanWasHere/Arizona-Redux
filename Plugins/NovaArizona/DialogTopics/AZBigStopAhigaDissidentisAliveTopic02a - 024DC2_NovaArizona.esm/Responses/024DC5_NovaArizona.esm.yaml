@@ -1,0 +1,55 @@
+FormKey: 024DC5:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: You have ruined everything, and you're going to make it right. If the timetable needs to be advanced, then you're going to help advance it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Confederacy will need additional stockpiles of guns and explosives. Normally, we'd make them, but if we increase production too quickly, the Legion will notice.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: So, we need to outsource some of that procurement elsewhere. I've already spoken to other Talkers in the field.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: Presently, I need someone who's able to make these kinds of deals away from the prying eyes of the rest of the Frumentarii.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 010048:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, we've come this far. What's next?

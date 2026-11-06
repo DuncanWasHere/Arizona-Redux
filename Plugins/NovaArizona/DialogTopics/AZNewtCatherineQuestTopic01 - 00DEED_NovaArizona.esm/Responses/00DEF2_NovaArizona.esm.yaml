@@ -1,0 +1,50 @@
+FormKey: 00DEF2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 00DEEE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: "{Utter disbelief}I what?! No, I promise I didn't know, but I think it's obvious why the Legion was searching my house over and over."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 2
+Choices:
+- 00DF41:NovaArizona.esm
+- 00DF42:NovaArizona.esm
+- 00DF43:NovaArizona.esm
+- 00DF48:NovaArizona.esm
+- 00DF49:NovaArizona.esm
+- 00DF81:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730D0002002031
+  SourceCode: Set AZStatioFindFriendQuest.CatherineTalk to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+Prompt: Did you know that you have a Legionary in your basement?

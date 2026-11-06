@@ -1,0 +1,32 @@
+FormKey: 01040B:NovaArizona.esm
+EditorID: AZBigStopAhigaQuest02HelperQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000820000008016100002080047010042020407004C76000000A21115000300FFFF0500520200FFFF04004206FFFF04004201A31115000300FFFF0500520200FFFF04004214FFFF04004201371009000100FFFF050052030080161A0002120058000022120B000100FFFF050052020007004CA1000000371009000100FFFF050052030011000000
+  SourceCode: >-
+    name AZBigStopAhigaQuest02HelperQuestScript;
+
+
+    GameMode {
+        if (VStoryEventBoomers == 2) {
+            SetObjectiveCompleted(AZBigStopAhigaQuest02, 6, 1);
+            SetObjectiveDisplayed(AZBigStopAhigaQuest02, 20, 1);
+            StopQuest(AZBigStopAhigaQuest02HelperQuest);
+        }
+
+        if (GetQuestCompleted(AZBigStopAhigaQuest02)) {
+            StopQuest(AZBigStopAhigaQuest02HelperQuest);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 132F38:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010020:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01040A:NovaArizona.esm

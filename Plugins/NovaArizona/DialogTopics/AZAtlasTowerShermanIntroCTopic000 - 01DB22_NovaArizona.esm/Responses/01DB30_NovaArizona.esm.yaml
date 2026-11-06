@@ -1,0 +1,50 @@
+FormKey: 01DB30:NovaArizona.esm
+FormVersion: 15
+Quest: 00DBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Right, I almost forgot that we had the lights working again.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, I'm sorry to disappoint you, but you've seen pretty much all there is to this operation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The tower is damaged, so it's useless for transmitting anything.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100748893
+Choices:
+- 01DB24:NovaArizona.esm
+- 01DB25:NovaArizona.esm
+- 01DB26:NovaArizona.esm
+- 01DB27:NovaArizona.esm
+- 01DB28:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I only came to see what the giant brightly-lit tower was all about.

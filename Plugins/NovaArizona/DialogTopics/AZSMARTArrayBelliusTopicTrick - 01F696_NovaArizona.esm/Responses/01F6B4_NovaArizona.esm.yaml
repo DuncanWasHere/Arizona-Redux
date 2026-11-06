@@ -1,0 +1,96 @@
+FormKey: 01F6B4:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEDED] Truly? Fine. I'll tell Spirit Chaser, and we'll be off. Behave yourself in the meantime."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780947
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 5
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 4
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 3
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: GetActorValue
+  FirstParameter: 8
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100791693
+  SecondParameter: 8
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100791693
+  SecondParameter: 10
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 8
+    Enabled: 1
+  CompiledScript: 0x15000A00720700730300020020311C0001008011050001007208001C0002008011050001007208001C0003008011050001007208001C0004008011050001007208001C0005005E1000001C0006005E100000A2110F0003007207006E090000006E01000000
+  SourceCode: >-
+    set AZChlorideAntibioticsQuest.bDistractedFrumentarii to 1
+
+    AZSmartArrayLegionCaravanGuardREF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArrayLegionCaravanGuardBackupREF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArrayLegionCaravanGuardBackup03REF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArrayLegionCaravanGuardBackup02REF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArraySpiritChaserREF.evp
+
+    AZSmartArrayBelliusREF.evp
+
+    setobjectivecompleted AZChlorideAntibioticsQuest 9 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5C0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5C2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5FD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5FB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC20:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC1F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+Prompt: <Lie.> The Maiden at the gas station north of here wanted to speak to you. You should go talk to her.
+ActorValuePerk: 0003EB:FalloutNV.esm

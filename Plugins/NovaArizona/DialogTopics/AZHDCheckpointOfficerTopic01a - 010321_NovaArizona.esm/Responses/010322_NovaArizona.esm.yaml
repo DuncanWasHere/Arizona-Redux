@@ -1,0 +1,60 @@
+FormKey: 010322:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: He hasn't been well since Omar's band of scumbags came through. He had to man the post all by himself because we were on a one-week fundraising tour.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: "He let the bodies lie there for days and hasn't been right since. He's buried himself deep in Tragic: The Garnering."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Didn't even show interest in hitting Gomorrah.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: And we like him, don't get me wrong. But he's probably a bleeding heart at his core. He should go back home.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729694
+Choices:
+- 010323:NovaArizona.esm
+- 010327:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why not?

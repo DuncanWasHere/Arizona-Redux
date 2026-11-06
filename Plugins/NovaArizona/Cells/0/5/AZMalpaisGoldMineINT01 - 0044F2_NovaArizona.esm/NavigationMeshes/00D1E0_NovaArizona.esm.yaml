@@ -1,0 +1,40 @@
+FormKey: 00D1E0:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0044F2:NovaArizona.esm
+  VertexCount: 4
+  TriangleCount: 2
+  DoorLinkCount: 1
+Vertices:
+- 3048.2412, 7049.9185, 5653.7163
+- 3162.3726, 6932.88, 5653.9663
+- 3179.9075, 7064.98, 5650.22
+- 3024.1204, 6931.0195, 5643.8057
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 1, 0, 3
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Door
+  - Found
+DoorLinks:
+- DoorReference: 004F11:NovaArizona.esm
+  Triangle: 1
+  Unused: 3254
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 155.78711
+  MaxDistanceY: 133.96045
+  Min: 3024.1204, 6931.0195, 5643.8057
+  Max: 3179.9075, 7064.98, 5653.9663
+  Cells:
+  - Triangles:
+    - 0
+    - 1

@@ -1,0 +1,49 @@
+FormKey: 01F4E7:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F4E6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Certainly! I studied in the Southwest Confederacy under the guidance of the Navajo medicine men. Alchemy, and herbalism.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In the time since, I have also become quite adept at the arts of divination, chiropractic, hypnosis, and bloodletting.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I quickly found that people need a more robust system of treatment that no individual discipline can provide.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718668
+Choices:
+- 01F4B4:NovaArizona.esm
+- 01F4B5:NovaArizona.esm
+- 01F4B6:NovaArizona.esm
+- 01F4E3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about your practice.

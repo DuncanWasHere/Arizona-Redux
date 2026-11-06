@@ -1,0 +1,32 @@
+FormKey: 018D26:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: Yeah, fuck you, too.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Not my problem.

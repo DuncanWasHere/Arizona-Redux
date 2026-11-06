@@ -1,0 +1,40 @@
+FormKey: 038085:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You think he's strong? He's a weak old man who can only feel powerful by hurting people who aren't allowed to stand up to him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Noctis is the only one who's strong here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FB3:NovaArizona.esm
+- 038084:NovaArizona.esm
+- 038088:NovaArizona.esm
+- 038089:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He's just exercising his right as a Legionary. The strong rule the weak.

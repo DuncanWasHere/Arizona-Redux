@@ -1,0 +1,39 @@
+FormKey: 01F602:NovaArizona.esm
+EditorID: AZChlorideAntibioticsBlueSassDrinkScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Type: MagicEffect
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060011001F01000080162000021800580000A41111000200FFFF0500520100FFFF0400420507004C3E010000801621000219005202007800002F100B000100FFFF05005203002842010407004C3E010000A21115000300FFFF0500520100FFFF04004205FFFF04004200A31115000300FFFF0500520100FFFF04004205FFFF04004200A31115000300FFFF0500520100FFFF04004205FFFF0400420180161F000217005202007800002F100B000100FFFF0500520400281507004C3E010000A31115000300FFFF0500520100FFFF0400420EFFFF04004200A21115000300FFFF0500520100FFFF04004200FFFF04004200A31115000300FFFF0500520100FFFF04004200FFFF04004200A31115000300FFFF0500520100FFFF04004200FFFF0400420111000000
+  SourceCode: >-
+    name AZChlorideAntibioticsBlueSassDrinkScript;
+
+
+    ScriptEffectStart {
+        if (GetObjectiveCompleted(AZChlorideAntibioticsQuest, 5)) {
+            if (player.GetItemCount(AZBlueSassBottle) == 1) {
+                SetObjectiveCompleted(AZChlorideAntibioticsQuest, 5, 0);
+                SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 5, 0);
+                SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 5, 1);
+
+                if (!player.GetItemCount(AZChlorideAntibioticsItem)) {
+                    SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 14, 0);
+                    SetObjectiveCompleted(AZChlorideAntibioticsQuest, 0, 0);
+                    SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 0, 0);
+                    SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 0, 1);
+                }
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5DA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F600:NovaArizona.esm

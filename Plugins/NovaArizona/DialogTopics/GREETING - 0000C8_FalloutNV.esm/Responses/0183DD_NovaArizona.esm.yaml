@@ -1,0 +1,29 @@
+FormKey: 0183DD:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 0183DE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Can I help you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100702075
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,39 @@
+FormKey: 020ED9:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020ED8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You fuckers cheated us. Me and Tillis were winning big, like crazy style, just raking in the money.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That was until you and your asshole friend came along, talking shit, winning over and over. We know you cheated!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100798155
+Choices:
+- 020ECD:NovaArizona.esm
+- 020ECE:NovaArizona.esm
+- 020ECF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Stolen caps? What are you talking about?

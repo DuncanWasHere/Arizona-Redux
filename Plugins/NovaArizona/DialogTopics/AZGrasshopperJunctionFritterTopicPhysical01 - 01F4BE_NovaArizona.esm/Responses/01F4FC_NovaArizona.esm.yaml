@@ -1,0 +1,37 @@
+FormKey: 01F4FC:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F4FB:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You're quite unremarkable. A perfect, shining example of 'average'.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Clearly, you've managed to overcome this mediocrity. You made it this far, after all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718668
+Choices:
+- 01F4BF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is it?

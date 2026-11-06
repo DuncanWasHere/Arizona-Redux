@@ -1,0 +1,38 @@
+FormKey: 0101F2:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x006E01
+    UseEmotionAnimation: True
+    Unused3: 0x0F0003
+  ResponseText: Why on Earth would we grant that? As a sympathizer of the slaves, he is a known subversive element.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: Omar can either take his chances in the NCR or die with the Dissolute.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+Choices:
+- 0101ED:NovaArizona.esm
+- 0101F1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Omar is seeking passage back into Legion territory.

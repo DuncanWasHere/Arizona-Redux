@@ -1,0 +1,42 @@
+FormKey: 00CC63:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Slaves. It's our big contract with the Legion.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I must confess that that I have a distaste for slavery, but it's necessary in this day and age, especially until we can break back into our old markets.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+Choices:
+- 00C757:NovaArizona.esm
+- 00C758:NovaArizona.esm
+- 00C75C:NovaArizona.esm
+- 00C85E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What does White Sands primarily trade in?

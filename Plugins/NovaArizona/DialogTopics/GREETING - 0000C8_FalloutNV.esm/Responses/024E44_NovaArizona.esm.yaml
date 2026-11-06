@@ -1,0 +1,29 @@
+FormKey: 024E44:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 024E3C:NovaArizona.esm
+PreviousInfo: 024E3F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Knees giving me a fit lately.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100814391
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

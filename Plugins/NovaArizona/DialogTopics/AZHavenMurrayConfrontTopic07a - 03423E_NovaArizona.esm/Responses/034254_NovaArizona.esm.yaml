@@ -1,0 +1,47 @@
+FormKey: 034254:NovaArizona.esm
+FormVersion: 15
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: No, we know who did it. It's Job here. It's what comes next is the issue.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: See, we've never had a murder here before. The no-killing rule was the most important rule, and it's been broken.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: So, the question is what do we do with him, so I'm giving you the power to go ahead, meet the people here and get a consensus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 034240:NovaArizona.esm
+- 034241:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: And you need me to solve it, right?

@@ -1,0 +1,33 @@
+FormKey: 02CD12:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's catchy and reminds people of Sarsaparilla. That's all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CD01:NovaArizona.esm
+- 02CCEE:NovaArizona.esm
+- 02CCF5:NovaArizona.esm
+- 02CCFE:NovaArizona.esm
+- 02CCF9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, you're sassy. And I'd guess that your name is Sally.

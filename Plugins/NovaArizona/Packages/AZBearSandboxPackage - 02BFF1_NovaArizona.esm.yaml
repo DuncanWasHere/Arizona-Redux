@@ -1,0 +1,35 @@
+FormKey: 02BFF1:NovaArizona.esm
+EditorID: AZBearSandboxPackage
+FormVersion: 15
+Unused: 209
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 21699
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 02BFF2:NovaArizona.esm
+  Radius: 2048
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100741293
+  SecondParameter: 20
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

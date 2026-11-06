@@ -1,0 +1,48 @@
+FormKey: 00F536:NovaArizona.esm
+FormVersion: 15
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nosey, nosey.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x40172D
+    UseEmotionAnimation: True
+    Unused3: 0x53172D
+  ResponseText: You don't need to know. We're not going to be here very long anyway.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x40172D
+    UseEmotionAnimation: True
+    Unused3: 0x53172D
+  ResponseText: Just forget you ever saw us.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100711888
+Choices:
+- 00F535:NovaArizona.esm
+- 00F54D:NovaArizona.esm
+- 00F559:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is this place?

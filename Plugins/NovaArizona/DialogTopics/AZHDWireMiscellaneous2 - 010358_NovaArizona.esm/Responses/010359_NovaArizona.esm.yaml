@@ -1,0 +1,76 @@
+FormKey: 010359:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Oh, he is so screwed. You know he actually gave a speech saying "We've got the bull by the horns, and he can't escape" two days before news about Bullhead broke?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x736372
+    UseEmotionAnimation: True
+    Unused3: 0x20596F
+  ResponseText: If the midterms are anything to go by, Congress is going to revoke his funding. Vice President also wants to pivot back to Bullhead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x736372
+    UseEmotionAnimation: True
+    Unused3: 0x20596F
+  ResponseText: On the other hand, the peace party sort of imploded after that scandal with the Stockmen's Association, so who knows?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x736372
+    UseEmotionAnimation: True
+    Unused3: 0x20596F
+  ResponseText: That said, whoever wins the Redding senate election will probably be the next leader of that party. War's really unpopular there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: Regardless of what happens here, I'm not voting for him. He'll probably fuck up this speech, too.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 1253128
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1253128
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are your thoughts on President Kimball?

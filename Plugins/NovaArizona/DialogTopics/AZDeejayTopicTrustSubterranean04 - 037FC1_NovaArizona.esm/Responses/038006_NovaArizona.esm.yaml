@@ -1,0 +1,31 @@
+FormKey: 038006:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nah, not really. But I guess there are a lot of caves out there. Who knows which ones could have people hiding inside?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FBF:NovaArizona.esm
+- 037FC0:NovaArizona.esm
+- 037FC1:NovaArizona.esm
+- 037FC2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is this a common thing in Legion territory?

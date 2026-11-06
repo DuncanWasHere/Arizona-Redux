@@ -1,0 +1,30 @@
+FormKey: 03A8FA:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 03A8F9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Don't go northeast of Dolan Springs, if you can help it. Radio signals can't get through, and brahmin keep turning up mutilated.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Heard any good rumors lately?

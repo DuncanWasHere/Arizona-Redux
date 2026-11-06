@@ -1,0 +1,57 @@
+FormKey: 01EF1F:NovaArizona.esm
+EditorID: AZSedonusDrinksSasparillaPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- OncePerDay
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 4045
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01EEA3:NovaArizona.esm
+  Radius: 64
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 18
+Duration: 14
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100789367
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100789923
+  SecondParameter: 3
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 3
+      Enabled: 1
+    CompiledScript: 0x1600100002000C00207202007303002031203D3D15000A00720300730200020020311C0001008B100200000019000000
+    SourceCode: >+
+      if AZMalpaisSedonusSunsetSasparillaREF.SasSpiked == 1
+      	Set AZMalpaisAbuseQuest.MarcellusSedonusPoisoned to 1
+      	AZMarcellusSedonusREF.killactor
+      endif
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008D04:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01EEA3:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01EC77:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

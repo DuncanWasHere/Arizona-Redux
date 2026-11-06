@@ -1,0 +1,57 @@
+FormKey: 00E61C:NovaArizona.esm
+EditorID: AZLGVCampfireActivatorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 4
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B00020013000000010072010059100B000100720200000000000000110000001000060000006B00000015000B00730100060020581F10000016000D0005000900207301002031203D3D160017000100130020720100580E10040001002C00203530203E3D59100B00010072030000000000000017000200010059100B000100720400000000000000190000001900000011000000
+  SourceCode: >-
+    scn AZLGVCampfireActivatorScript
+
+
+    int Button
+
+
+    BEGIN OnActivate player
+
+
+    ShowMessage AZLGVHMPActivator02
+
+
+    END
+
+
+    BEGIN GameMode
+
+
+    Set Button to GetButtonPressed
+
+
+    if Button == 1
+    	if Player.GetAV Survival >= 50
+    		ShowMessage AZLGVHMPActivator02b
+    	else
+    		ShowMessage AZLGVHMPActivator02a
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x80DA29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x2F203137322E30
+    Name: Button
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5DF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE20:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5D6:NovaArizona.esm

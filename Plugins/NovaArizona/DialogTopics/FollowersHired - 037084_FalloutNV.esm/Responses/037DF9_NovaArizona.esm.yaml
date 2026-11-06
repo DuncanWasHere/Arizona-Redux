@@ -1,0 +1,105 @@
+FormKey: 037DF9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037E74:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Double trouble.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 47
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 16
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 12
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    RefCount: 8
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730B000200203015000A007201007310000200203115000A007201007308000200203115000A007201007309000200203015000A007201007306000200203115000A007201007307000200203015000A00720100730C000200203115000A00720100730D000200203015000A00720100730F00020020301C0001007611050001007203001C00020076110500010072040059100B0001007205000000000000001C000100C511070001006E010000001C0001005111070001006E010000001C0001007F110A0002007206006E010000001C00010089100A0002007207006E0100000015000A00720800732F000200203115000A0072080073120002002031150013007208007313000B00207208007313002031202B1C0001005E100000
+  SourceCode: >-
+    Set AZDeejayREF.Waiting to 0
+
+    set AZDeejayREF.bCanBeHired to 1
+
+    Set AZDeejayREF.IsFollowingDefault to 1
+
+    Set AZDeejayREF.IsFollowingLong to 0
+
+    Set AZDeejayREF.CombatStyleRanged to 1
+
+    Set AZDeejayREF.CombatStyleMelee to 0
+
+    Set AZDeejayREF.bCurrentlyHired to 1
+
+    Set AZDeejayREF.bSentToLucky38 to 0
+
+    Set AZDeejayREF.bSentToAerotech to 0
+
+    AZDeejayREF.AddPerk CompanionSuite
+
+    player.addperk AZBitterWater
+
+    showmessage AZFollowerMessagePerkDeejayAdd
+
+
+    AZDeejayREF.SetPlayerTeammate 1
+
+    AZDeejayREF.SetIgnoreFriendlyHits 1
+
+    AZDeejayREF.AddToFaction FollowerFaction 1
+
+    AZDeejayREF.SetFactionRank TeammateFaction 1
+
+    set VNPCFollowers.bHumanoidInParty to 1
+
+    set VNPCFollowers.bPlayerHasFollower to 1
+
+    set VNPCFollowers.nCurrentFollowers to (VNPCFollowers.nCurrentFollowers + 1)
+
+    AZDeejayREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C571:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037EFF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F00:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037136:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 046312:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I think we should travel together.

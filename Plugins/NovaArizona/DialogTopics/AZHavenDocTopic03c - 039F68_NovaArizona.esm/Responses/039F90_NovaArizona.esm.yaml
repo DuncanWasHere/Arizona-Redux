@@ -1,0 +1,63 @@
+FormKey: 039F90:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He's depressed, with an extremely pessimistic view of basically everything.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Physically, though, he's in surprisingly good health. Must have been through a lot to have all those healed-up broken bones.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: He has a lot of them, like a bunch of Rangers kicked the shit out of him or something.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100876902
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 3
+Choices:
+- 039F66:NovaArizona.esm
+- 039F67:NovaArizona.esm
+- 039F68:NovaArizona.esm
+- 039F69:NovaArizona.esm
+- 039F6A:NovaArizona.esm
+- 039F6B:NovaArizona.esm
+- 039F6C:NovaArizona.esm
+- 039F6D:NovaArizona.esm
+- 039F6E:NovaArizona.esm
+- 039F6F:NovaArizona.esm
+- 039F70:NovaArizona.esm
+- 039F71:NovaArizona.esm
+- 039F75:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Cal.

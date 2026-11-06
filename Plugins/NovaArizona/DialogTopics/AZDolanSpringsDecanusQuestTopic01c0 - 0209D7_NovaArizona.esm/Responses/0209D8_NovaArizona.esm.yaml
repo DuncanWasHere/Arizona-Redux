@@ -1,0 +1,30 @@
+FormKey: 0209D8:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Callum? He was on a scavenging mission, but he has since gone missing. Should you find him, come back to me so that he may be executed.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+Choices:
+- 0209D7:NovaArizona.esm
+- 020983:NovaArizona.esm
+- 020984:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about Callum.

@@ -1,0 +1,57 @@
+FormKey: 028ED6:NovaArizona.esm
+EditorID: AZBigStopSolitareOfficeTerminal01
+FormVersion: 15
+ObjectBounds:
+  First: -18, -20, 0
+  Second: 24, 20, 37
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >-
+  S.T.A.R. File Management Software
+
+
+  Solitare. Red White and Blue.
+
+
+  Welcome back, Hiram!
+
+  2 files saved locally
+PasswordNote: 029127:NovaArizona.esm
+BaseHackingDifficulty: Average
+MenuItems:
+- ItemText: View saved outbox message
+  ResultText: ''
+  DisplayNote: 028F5E:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: View holodisk upload
+  ResultText: ''
+  DisplayNote: 028F5F:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Unlock hatch
+  ResultText: Courtesy of Softlock Solutions, Inc...
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    SourceCode: >-
+      ref mylink
+
+      set mylink to getlinkedref
+
+      mylink.unlock
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x80BB27440000000000000000
+        Unknown2: 0x6D706C6F796565
+      Name: mylink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1

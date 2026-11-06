@@ -1,0 +1,33 @@
+FormKey: 021091:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 021090:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A trophy animal? Maybe I have, maybe I haven't. What's it worth to you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100749084
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPCIsSex
+Choices:
+- 021088:NovaArizona.esm
+- 02108A:NovaArizona.esm
+- 02108B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you know where I could find taxidermies?

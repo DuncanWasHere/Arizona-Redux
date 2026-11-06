@@ -1,0 +1,70 @@
+FormKey: 01CD78:NovaArizona.esm
+EditorID: AZElephantHillBrahmin
+FormVersion: 15
+ObjectBounds:
+  First: -40, -80, 0
+  Second: 40, 80, 80
+Name: Brahmin
+Model:
+  File: Creatures\Brahmin\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- brahmin.nif
+ModelListTextures: 0x0100000006EEE90762B99810766E690762BE9810766E691A743E856656EEDF0962FE7809476E5F0962037909476E691A743E856656F3DF0962FE780947735F0962037909476E691A743E856656B1B00D6DFA4C094631300D6DFF4C094665720D74387A3871EEDF0F6D7B0EB15D6E5F0F6D800EB15D65720D74387A3871F3DF0F6D7B0EB15D735F0F6D800EB15D65720D74387A3871
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 021472:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E268:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 004360:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 09D413:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Script: 038705:FalloutNV.esm
+AIData:
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 1679847168
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 018E6A:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 25
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 40
+  Damage: 8
+  Strength: 5
+  Perception: 3
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+CombatStyle: 03A371:FalloutNV.esm
+BodyPartData: 015833:FalloutNV.esm
+TurningSpeed: 30
+BaseScale: 1.25
+FootWeight: 20
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 028047:FalloutNV.esm
+ImpactDataset: 07DB64:FalloutNV.esm

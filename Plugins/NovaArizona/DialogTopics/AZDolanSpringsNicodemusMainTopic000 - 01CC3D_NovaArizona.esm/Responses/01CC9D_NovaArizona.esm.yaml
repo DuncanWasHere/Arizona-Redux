@@ -1,0 +1,40 @@
+FormKey: 01CC9D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - InfoRefusal
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 01CC9C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ooh, what have you got for me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestRunning
+  FirstParameter: 100781095
+Choices:
+- 01CC7C:NovaArizona.esm
+- 01CC7D:NovaArizona.esm
+- 01CC7E:NovaArizona.esm
+- 01CC7F:NovaArizona.esm
+- 01CC80:NovaArizona.esm
+- 01CC81:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: About the curios you requested...

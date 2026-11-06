@@ -1,0 +1,39 @@
+FormKey: 024C51:NovaArizona.esm
+EditorID: AZRangerContactPackage02
+FormVersion: 15
+Unused: 251
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 21515
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 62
+  Function: GetStage
+  FirstParameter: 100698646
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100698646
+  SecondParameter: 22
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

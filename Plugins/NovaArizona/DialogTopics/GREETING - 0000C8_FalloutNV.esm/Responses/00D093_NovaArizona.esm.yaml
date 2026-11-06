@@ -1,0 +1,37 @@
+FormKey: 00D093:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: 00D092:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x617665
+    UseEmotionAnimation: True
+    Unused3: 0x756768
+  ResponseText: You again, the boss is in the back.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100716610
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100716686
+Choices:
+- 00D096:NovaArizona.esm
+- 00D094:NovaArizona.esm
+- 00D099:NovaArizona.esm
+- 00D095:NovaArizona.esm
+- 00D097:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

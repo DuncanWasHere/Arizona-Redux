@@ -1,0 +1,44 @@
+FormKey: 016262:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652773
+    UseEmotionAnimation: True
+    Unused3: 0x206775
+  ResponseText: This is the Tres Leches Caravan company.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fastest growing caravan this side of the Colorado.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717599
+Choices:
+- 01625B:NovaArizona.esm
+- 01625C:NovaArizona.esm
+- 01625D:NovaArizona.esm
+- 01625E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is this place?

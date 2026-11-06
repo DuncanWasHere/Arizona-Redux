@@ -1,0 +1,34 @@
+FormKey: 019C62:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I can't. I promised that I wouldn't.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768682
+Choices:
+- 019C4F:NovaArizona.esm
+- 019C50:NovaArizona.esm
+- 019C51:NovaArizona.esm
+- 019C52:NovaArizona.esm
+- 019C57:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I can't know that they're not hurting anybody if you won't tell me what's going on.

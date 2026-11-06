@@ -1,0 +1,48 @@
+FormKey: 01F048:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01DDE2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E7420
+    UseEmotionAnimation: True
+    Unused3: 0x207269
+  ResponseText: Well, look at you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E7420
+    UseEmotionAnimation: True
+    Unused3: 0x207269
+  ResponseText: Do me a favor, you won't regret it. Mention my name to the Skirt in charge of the road repair. Tell him I'm ready to take over the Chainway construction. Fully.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fixing his main supply route is a surefire way to get the big man's attention.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717599
+Choices:
+- 01F04B:NovaArizona.esm
+- 01F04C:NovaArizona.esm
+- 01F04F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Show Mark of Caesar> I can help you with that.

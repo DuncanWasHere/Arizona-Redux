@@ -1,0 +1,44 @@
+FormKey: 01BBC3:NovaArizona.esm
+FormVersion: 15
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Everything from cultivating their eggs to raising pupae.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: It was a great pleasure of mine. Ants are rewarding livestock to work.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: I believe they're being culled right now. A shame.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What sort of work did you do at the Ant Farm?

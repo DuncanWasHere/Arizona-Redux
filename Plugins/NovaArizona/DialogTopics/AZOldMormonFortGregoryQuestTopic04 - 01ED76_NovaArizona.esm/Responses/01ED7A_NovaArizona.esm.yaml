@@ -1,0 +1,52 @@
+FormKey: 01ED7A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x672061
+  ResponseText: Just because you can apparently walk around freely in Legion territory doesn't mean anyone else can.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x672061
+  ResponseText: I'm not going, and that's final.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01EEC0:NovaArizona.esm
+- 01EEC1:NovaArizona.esm
+- 01EEC2:NovaArizona.esm
+- 01EEC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006EA50000006E00000000A3110F0003007201006EA60000006E01000000
+  SourceCode: >-
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 165 0
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 166 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: I can't change your mind?

@@ -1,0 +1,63 @@
+FormKey: 00D79C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...Motherfucker!'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xB8241A
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Alright, you can take a rest now. I won't be writing a reply.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x63616E
+    UseEmotionAnimation: True
+    Unused3: 0x206120
+  ResponseText: Here's uh... a good pencil for your trouble.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718308
+Choices:
+- 00D724:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x7D1105000100720100
+  SourceCode: RemoveNote AZCampWillowPrentusNote04
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D6E9:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E01000000
+  SourceCode: PlayerREF.AddItem Pencil01 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 05B63C:FalloutNV.esm
+Prompt: Here you go.

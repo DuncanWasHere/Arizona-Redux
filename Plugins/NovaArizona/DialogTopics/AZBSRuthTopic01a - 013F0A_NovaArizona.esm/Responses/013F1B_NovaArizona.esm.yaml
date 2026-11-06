@@ -1,0 +1,67 @@
+FormKey: 013F1B:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He went missing.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Kissed me on the forehead and said 'See you in a little while, ma.' That was the last time I saw him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fuck, I'm sorry, I don't like to get emotional like this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: <Clears throat.> We have menus. If you want to eat something.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744965
+Choices:
+- 013F09:NovaArizona.esm
+- 013F13:NovaArizona.esm
+- 013F0B:NovaArizona.esm
+- 013F0C:NovaArizona.esm
+- 013F0D:NovaArizona.esm
+- 013F12:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What happened to your son?

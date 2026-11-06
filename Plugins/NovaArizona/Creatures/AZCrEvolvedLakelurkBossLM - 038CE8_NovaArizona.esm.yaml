@@ -1,0 +1,76 @@
+FormKey: 038CE8:NovaArizona.esm
+EditorID: AZCrEvolvedLakelurkBossLM
+FormVersion: 15
+Name: Lakelurk Overlord
+Model:
+  File: AZNovaArizona\Creatures\LakelurkEvolved\skeleton.nif
+ActorEffects:
+- 14F448:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- lakelurkking.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - AllowPickpocket
+  Fatigue: 50
+  Level: 15
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 1466BD:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 1449CB:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Script: 00EAFF:NovaArizona.esm
+Items:
+- Item:
+    Item: 1267A0:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 136E13:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 14F449:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 14F44A:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2163298048
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 100
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 500
+  Damage: 5
+  Strength: 5
+  Perception: 7
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 165
+CombatStyle: 01D541:FalloutNV.esm
+BodyPartData: 05362D:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 1.2
+FootWeight: 8
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 148431:FalloutNV.esm
+MeleeWeaponList: 03A15E:FalloutNV.esm

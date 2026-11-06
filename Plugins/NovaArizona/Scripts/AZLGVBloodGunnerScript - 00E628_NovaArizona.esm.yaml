@@ -1,0 +1,75 @@
+FormKey: 00E628:NovaArizona.esm
+EditorID: AZLGVBloodGunnerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B00020013000000010072010059100B00010072020000000000000011000000100006000000F600000015000B00730100060020581F10000016000D0009000900207301002031203D3D160016000100120020720100580E10040001002500203230203C59100B00010072030000000000000018002C000100280020720100580E10040001002500203230203E3D20720100580E10040001002500203630203C20262659100B000100720400000000000000180017000300130020720100580E10040001002500203630203E3D59100B000100720500000000000000A3110F0003007206006E1E0000006E0000000015000A00720600730700020020311900000018000D0001000900207301002032203D3D0D10020000001900000011000000
+  SourceCode: >-
+    scn AZLGVBloodGunnerScript
+
+
+    int Button
+
+    int Evaluated
+
+
+    BEGIN OnActivate Player
+
+
+    ShowMessage AZLGVAircraftActivator02
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+
+    Set Button to GetButtonPressed
+
+    if Button == 1
+    	if Player.GetAV Medicine < 20
+    		ShowMessage AZLGVAircraftActivator02c
+    	elseif Player.GetAV Medicine >= 20 && Player.GetAV Medicine < 60
+    		ShowMessage AZLGVAircraftActivator02a
+    	elseif Player.GetAV Medicine >= 60
+    		ShowMessage AZLGVAircraftActivator02b
+    		SetObjectiveDisplayed AZStatioFindFriendQuest 30 0
+    		Set AZStatioFindFriendQuest.BloodGunnerClue to 1
+    	endif
+    elseif Button == 2
+    	Activate
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x604A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000B1010000
+    Name: Button
+  - Data:
+      Index: 2
+      Unknown: 0x80DA29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x66D5005466D500
+    Name: Evaluated
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E609:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5E1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5D7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE21:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm

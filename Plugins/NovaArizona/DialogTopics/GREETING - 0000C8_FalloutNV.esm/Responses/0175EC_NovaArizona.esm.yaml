@@ -1,0 +1,61 @@
+FormKey: 0175EC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 01752E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x626565
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: Oh, okay. That just about concludes the interview. Wow! An absolutely thrilling story full of intrigue, twists and revenge. It's almost unbelievable.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x626565
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: I, uh, probably won't be able to publish this for a while, given the strict censorship going on, but when I do, you'll be as famous as Mr. New Vegas.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 22
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 3
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1474319
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174C3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

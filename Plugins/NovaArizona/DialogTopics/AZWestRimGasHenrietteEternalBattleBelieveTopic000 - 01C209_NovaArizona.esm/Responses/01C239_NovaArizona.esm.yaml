@@ -1,0 +1,41 @@
+FormKey: 01C239:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm glad you are faithful. Keep it up!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+Choices:
+- 01C200:NovaArizona.esm
+- 01C201:NovaArizona.esm
+- 01C202:NovaArizona.esm
+- 01C203:NovaArizona.esm
+- 01C204:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39120F0003007201006E010000006E01000000
+  SourceCode: AddReputation RepNVCaesarsLegion 1 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: I sure do!

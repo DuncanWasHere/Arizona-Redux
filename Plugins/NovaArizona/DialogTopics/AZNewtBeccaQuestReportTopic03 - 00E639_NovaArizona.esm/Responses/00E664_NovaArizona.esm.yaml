@@ -1,0 +1,72 @@
+FormKey: 00E664:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: 3,000 will hurt the bank, but we can do that, if that's what it takes. Hopefully, this will appease them enough that they'll drop the raids for a while, but I doubt it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, thank you for getting it done. You probably got a better deal than I would have gotten.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, hey, you should come back in a couple days. Depending on how this goes, I might have some more work for you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+- Fluff: 0x000000
+  ComparisonValue: 4
+  Function: GetQuestVariable
+  FirstParameter: 100874950
+  SecondParameter: 6
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E060000006E00000000A3110F0003007201006E070000006E00000000A3110F0003007201006E0A0000006E00000000
+  SourceCode: >-
+    SetObjectiveDisplayed AZNewtFishingQuest 6 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 7 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 10 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E14000000
+  SourceCode: SetStage AZNewtFishingQuest 20
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+Prompt: The Ahuate up north agreed to supply you with dynamite for 3,000 caps.

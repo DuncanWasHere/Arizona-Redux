@@ -1,0 +1,38 @@
+FormKey: 01CD3F:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 01CD3E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Dissolute, not Profligate.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We are all born Dissolute sinners. If we were not wicked, the Lord God wouldn't have had to send us His son a second time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 01CD1A:NovaArizona.esm
+- 01CD1B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You believe in Mars? But you're a Profligate.

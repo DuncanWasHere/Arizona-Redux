@@ -1,0 +1,57 @@
+FormKey: 00D552:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D474:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You mean Postumus? A good slave. Honest, hard worker that one.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Why? He didn't give you any trouble, did he?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717682
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDeadCount
+  FirstParameter: 100710244
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100717684
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 00B76F:NovaArizona.esm
+Choices:
+- 00D499:NovaArizona.esm
+- 00D49A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the deal with that slave with the hammer?

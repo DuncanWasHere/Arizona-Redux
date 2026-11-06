@@ -1,0 +1,46 @@
+FormKey: 01F6A1:NovaArizona.esm
+FormVersion: 15
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I understand. Just this one shipment, yes? Nothing more, nothing less?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Very well. We shall rob the caravan together.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+Choices:
+- 01F689:NovaArizona.esm
+- 01F68A:NovaArizona.esm
+- 01F68D:NovaArizona.esm
+- 01F68E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Someone is very sick in Chloride. I need the medicine on that caravan.

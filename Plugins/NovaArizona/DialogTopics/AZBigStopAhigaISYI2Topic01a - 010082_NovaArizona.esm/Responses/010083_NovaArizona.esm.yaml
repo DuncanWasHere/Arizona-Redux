@@ -1,0 +1,65 @@
+FormKey: 010083:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll have to send in disguised Boomers and prospecting teams. That is doable but not ideal.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: Still, it means we're not at their whims, so perhaps a better solution than outright negotiation. Good work.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetGlobalValue
+  FirstParameter: 1257272
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100728864
+  SecondParameter: 1
+Choices:
+- 010082:NovaArizona.esm
+- 010094:NovaArizona.esm
+- 01009C:NovaArizona.esm
+- 01009B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E140000006E01000000
+  SourceCode: SetObjectiveCompleted AZBigStopAhigaQuest02 20 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010020:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002033
+  SourceCode: Set AZBigStopAhigaQuest02.ExplosivesObtained to 3
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010020:NovaArizona.esm
+Prompt: I wiped out the Boomers' leadership. You can just scavenge the ruins of Nellis.

@@ -1,0 +1,83 @@
+FormKey: 01F519:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F518:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Of course. Your second card is...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Legion}The Emperor. A very powerful card, for better or worse.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It represents structure and discipline. The Emperor himself can also represent a sort of father figure. Is seeking a father figure a common theme in your life?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You must continue to pursue your goals with strength and conviction. Perhaps you, too, can become an Emperor.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: One last card. Are you ready?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 1219860
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 110
+  Function: GetStage
+  FirstParameter: 1219860
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 1474319
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetGlobalValue
+  FirstParameter: 1273806
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718668
+Choices:
+- 01F4CD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm ready.

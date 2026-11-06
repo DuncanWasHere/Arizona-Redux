@@ -1,0 +1,43 @@
+FormKey: 013B62:NovaArizona.esm
+FormVersion: 15
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Are you stupid? Why have any Legion camps at all?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is a supply base so that the Fort and the Legate's Camp aren't overwhelmed by the burdens of logistics.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 013B37:NovaArizona.esm
+- 013B38:NovaArizona.esm
+- 013B39:NovaArizona.esm
+- 013B3A:NovaArizona.esm
+- 013B43:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why have another Legion camp so close to the Fort?

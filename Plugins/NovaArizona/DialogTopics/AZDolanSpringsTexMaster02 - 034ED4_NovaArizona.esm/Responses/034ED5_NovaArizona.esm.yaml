@@ -1,0 +1,37 @@
+FormKey: 034ED5:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As I'm sure you know, to sacrifice a brahmin is a holy ceremony of great importance. The throat is cut, field sanctified, so on, so forth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sister Calventia does not believe these mutilations to be worth her time, but I cannot disagree more strongly. This is an insult to Mars.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 034ED6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why are you interested in this?

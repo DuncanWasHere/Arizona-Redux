@@ -1,0 +1,40 @@
+FormKey: 014F27:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 0330A6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Woah, you're a woman? The fuck is the Legion doing letting a bitch walk around free?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsSex
+  FirstParameter: 1
+  RunOnType: Target
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100749084
+Choices:
+- 021082:NovaArizona.esm
+- 014F1E:NovaArizona.esm
+- 014F20:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

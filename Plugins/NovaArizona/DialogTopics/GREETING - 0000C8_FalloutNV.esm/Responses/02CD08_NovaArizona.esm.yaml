@@ -1,0 +1,41 @@
+FormKey: 02CD08:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 00DF24:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh joy. Another dead-eyed slack-jawed alcoholic coming to beg Ricamore for 'just one more shot, maaaan.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The bar is closed. The road is closed. Go home.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CCEB:NovaArizona.esm
+- 02CCEC:NovaArizona.esm
+- 02CCED:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

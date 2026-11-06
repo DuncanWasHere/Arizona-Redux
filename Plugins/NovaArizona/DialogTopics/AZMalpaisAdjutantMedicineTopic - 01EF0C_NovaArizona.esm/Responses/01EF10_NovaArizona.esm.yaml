@@ -1,0 +1,63 @@
+FormKey: 01EF10:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: 01EF0F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8F0005
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Caesar's vision for the Wasteland cannot come out of thin air. He needs warriors to carry it out, imperfect as they may be.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Sedonus is one of those warriors, no matter how flawed he might appear to you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x65206F
+    UseEmotionAnimation: True
+    Unused3: 0x736520
+  ResponseText: That's all that needs to be said.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 17
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 1187823
+Choices:
+- 01ED3C:NovaArizona.esm
+- 01ED2C:NovaArizona.esm
+- 035106:NovaArizona.esm
+- 01ED3E:NovaArizona.esm
+- 01ED3F:NovaArizona.esm
+- 01ED40:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why hasn't Caesar done anything about it yet?

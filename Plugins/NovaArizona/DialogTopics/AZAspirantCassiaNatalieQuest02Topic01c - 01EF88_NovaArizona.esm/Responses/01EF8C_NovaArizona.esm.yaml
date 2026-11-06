@@ -1,0 +1,78 @@
+FormKey: 01EF8C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Maybe, you're right. I've been aiming for the stars, but the risk of failure really might be too high to pay.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Maybe, it's better to abandon these plans. Focus on helping individual soldiers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696620
+    UseEmotionAnimation: True
+    Unused3: 0x776172
+  ResponseText: Fine, you can tell his Optio that I'll be treating him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EF86:NovaArizona.esm
+- 01EF87:NovaArizona.esm
+- 01EF88:NovaArizona.esm
+- 01EF89:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006EFF000000A2110F0003007202006EA00000006E01000000A3110F0003007202006E9B0000006E00000000A3110F0003007202006E9C0000006E00000000A3110F0003007202006EA10000006E0100000015000A00720200730D0002002031
+  SourceCode: >-
+    SetStage AZBigStopChildSoldierQuest 255
+
+    SetObjectiveCompleted AZMalpaisAbuseQuest 160 1
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 155 0
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 156 0
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 161 1
+
+    Set AZMalpaisAbuseQuest.NoctisTreatment to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: Taking children from Malpais is high-risk. You should focus on helping Legionaries.
+ActorValuePerk: 0004BB:FalloutNV.esm

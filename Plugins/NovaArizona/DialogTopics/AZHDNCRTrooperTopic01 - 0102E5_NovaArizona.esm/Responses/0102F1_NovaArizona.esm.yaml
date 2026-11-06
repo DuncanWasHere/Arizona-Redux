@@ -1,0 +1,58 @@
+FormKey: 0102F1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: Okay, tourist. Here's the rules. Don't start fights, don't steal shit, don't bother the brass and stay away from the checkpoint.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: You approach that checkpoint, and people are gonna start shooting. Doesn't matter who you are. You could be Kimball himself.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: Door doesn't even work from this side anyway. It auto-bolts. Anyways, enjoy your visit to the Dam.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729572
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730A0002002032
+  SourceCode: >+
+    set AZDamNQuest3.bWarningWest to 2
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm
+Prompt: Something like that.

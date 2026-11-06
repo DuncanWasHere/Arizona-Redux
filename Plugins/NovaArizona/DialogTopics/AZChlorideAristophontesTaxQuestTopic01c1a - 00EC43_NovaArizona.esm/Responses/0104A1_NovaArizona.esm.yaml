@@ -1,0 +1,86 @@
+FormKey: 0104A1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: 00ED5F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I see the validity of that argument. Very well.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In my generosity, owing to legal ambiguity, I hereby waive the remainder of her payment.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Do not forget this next time you meet with Caesar.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Whoever the new one ends up being.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetStage
+  FirstParameter: 1219860
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 110
+  Function: GetStage
+  FirstParameter: 1219860
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 121FF0:FalloutNV.esm
+- Fluff: 0x000000
+  Function: GetQuestFailed
+  FirstParameter: 1474319
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007309000200203239100A0002007201006E07000000
+  SourceCode: >-
+    Set AZChlorideTaxQuest.SandyWaiveStatus to 2
+
+    SetStage AZChlorideTaxQuest 7
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC1C:NovaArizona.esm
+Prompt: I have the ears of the highest Legion authorities. Waive it, and you'll go farther.

@@ -1,0 +1,47 @@
+FormKey: 016AF1:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Good day. If you are here concerning a legal dispute, please speak to my Centurion.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If you are here on business, you should seek out one of my Scribonii to schedule a meeting.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B00:NovaArizona.esm
+- 016B02:NovaArizona.esm
+- 016B05:NovaArizona.esm
+- 016B0F:NovaArizona.esm
+- 016B19:NovaArizona.esm
+- 016B0C:NovaArizona.esm
+- 03B808:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

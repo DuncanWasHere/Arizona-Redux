@@ -1,0 +1,35 @@
+FormKey: 007426:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 007425:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xB91F1E
+    UseEmotionAnimation: True
+    Unused3: 0xB81F1E
+  ResponseText: Come back when you do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't have that much.

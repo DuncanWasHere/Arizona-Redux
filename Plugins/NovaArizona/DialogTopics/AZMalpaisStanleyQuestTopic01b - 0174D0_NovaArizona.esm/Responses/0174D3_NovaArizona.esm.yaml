@@ -1,0 +1,39 @@
+FormKey: 0174D3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x79732E
+    UseEmotionAnimation: True
+    Unused3: 0x6C6579
+  ResponseText: Then finish it so I can pay you. You're my eyes and ears.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100758634
+  SecondParameter: 20
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Not yet.

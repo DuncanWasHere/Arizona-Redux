@@ -1,0 +1,25 @@
+FormKey: 010401:NovaArizona.esm
+EditorID: AZMcCarranBarryScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A009B0000000000801631000229005800003A100B000100FFFF05005201004205085800003A100B000100FFFF05005201004264070207004CBC00000080161300020B0056010100020042030707004CBC000000A31115000300FFFF0500520100FFFF0400420AFFFF04004200A31115000300FFFF0500520100FFFF0400421EFFFF04004201A31115000300FFFF0500520100FFFF04004219FFFF0400420011000000
+  SourceCode: >-
+    name AZMcCarranBarryScript;
+
+
+    OnDeath {
+        if (GetStage(AZBigStopAhigaQuest02) >= 5 && GetStage(AZBigStopAhigaQuest02) < 100) {
+            if (AZBigStopAhigaQuest02.GunsObtained < 3) {
+                SetObjectiveDisplayed(AZBigStopAhigaQuest02, 10, 0);
+                SetObjectiveDisplayed(AZBigStopAhigaQuest02, 30, 1);
+                SetObjectiveDisplayed(AZBigStopAhigaQuest02, 25, 0);
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010020:NovaArizona.esm

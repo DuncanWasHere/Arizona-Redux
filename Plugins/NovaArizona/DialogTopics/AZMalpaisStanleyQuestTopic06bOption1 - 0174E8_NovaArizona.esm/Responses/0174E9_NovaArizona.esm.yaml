@@ -1,0 +1,84 @@
+FormKey: 0174E9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x747920
+    UseEmotionAnimation: True
+    Unused3: 0x726570
+  ResponseText: '[SUCCEEDED] Such a way with words. Maybe you should be the journalist here.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20676F
+    UseEmotionAnimation: True
+    Unused3: 0x6F2064
+  ResponseText: But, you're right. To yearn for freedom is the most human thing there is. I need to show people that not even the Legion can crush that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x207465
+    UseEmotionAnimation: True
+    Unused3: 0x652062
+  ResponseText: Actually, I don't even think I need to write anything else. See you later.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 75
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E3C00000015000C0072020073070004002031303015000A00720200730D00020020311C0001007711070001006E4B0000001600100001000C00207202007313002031203D3D1C00010002100A0002007203006E6E000000190000001600100001000C00207202007313002030203D3D1C00010002100A0002007203006E6400000019000000
+  SourceCode: >-
+    SetStage AZMalpaisJournalistQuest 60
+
+    Set AZMalpaisJournalistQuest.bStanleyLegionDisapproval to 100
+
+    Set AZMalpaisJournalistQuest.bStanleyIsDoomed to 1
+
+    Player.RewardXP 75
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 1)
+    	player.additem caps001 110
+    endif
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 0)
+    	player.additem caps001 100
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: Freedom is the ultimate truth. We must print it. To do otherwise would be perpetuate a lie.
+ActorValuePerk: 0004BB:FalloutNV.esm

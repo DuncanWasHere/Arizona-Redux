@@ -1,0 +1,68 @@
+FormKey: 0130D7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Jesus Christ. Fine. Alright. I'll do it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We'll do it in my shop.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702071
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100741293
+  SecondParameter: 37
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39150C00010B0056010100230042030039150C00010B0056010100150042010039100A0002007202006E1E000000A2110F0003007202006E0B0000006E01000000A3110F0003007202006E0A0000006E000000000412070001006EE7FFFFFF
+  SourceCode: >-
+    AZRustyHooksDialogueQuest.iJillianHelpingBearState = 3
+
+    AZRustyHooksDialogueQuest.bBearBombDisarmed = 1
+
+
+    SetStage AZRustyHooksPackFightQuest 30
+
+    SetObjectiveCompleted AZRustyHooksPackFightQuest 11 1
+
+    SetObjectiveDisplayed AZRustyHooksPackFightQuest 10 0
+
+
+    RewardKarma -25
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0130AD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022FA3:NovaArizona.esm
+Prompt: <Lie> Bear won't hurt Kyle.

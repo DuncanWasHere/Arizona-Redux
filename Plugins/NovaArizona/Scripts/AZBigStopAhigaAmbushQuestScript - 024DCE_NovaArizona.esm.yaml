@@ -1,0 +1,48 @@
+FormKey: 024DCE:NovaArizona.esm
+EditorID: AZBigStopAhigaAmbushQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000004C01000080163B0002330056010100190042020452020052030078000013150400000028040252030078000043100B000100FFFF050052040028150207004C7D0000003A15170001160052030078000097100B000100FFFF05005202002880161E0002160052030078000043100B000100FFFF05005204002807004C4001000080161F0002170052050078000043100B000100FFFF0500520400281507004CF60000003A151000010F00520300780000221004000000283A151000010F0052060078000021100400000028811608000107004C4001000080161E0002160052050078000043100B000100FFFF05005204002807004C400100003A15170001160052060078000056100B000100FFFF050052050028371009000100FFFF050052070080161A0002120058000022120B000100FFFF050052010007004C6B010000371009000100FFFF050052070011000000
+  SourceCode: >-
+    name AZBigStopAhigaAmbushQuestScript;
+
+
+    GameMode {
+        if (AZBigStopAhigaQuest01.AhigaMeeting == 2 && AZBigStopAhigaTravelPackage02 == AZBigStopAhigaREF.GetCurrentPackage() && !AZBigStopAhigaREF.GetInCell(AZBigStopPawnShopINT)) {
+            AZBigStopAhigaREF.AddScriptPackage(AZBigStopAhigaTravelPackage02);
+        }
+
+        if (AZBigStopAhigaREF.GetInCell(AZBigStopPawnShopINT)) {
+            if (!Player.GetInCell(AZBigStopPawnShopINT)) {
+                AZBigStopAhigaREF.Disable();
+                AZAhigaAmbushTalkingActivatorREF.Enable();
+            } else if (Player.GetInCell(AZBigStopPawnShopINT)) {
+                AZAhigaAmbushTalkingActivatorREF.StartConversation(Player);
+                StopQuest(AZBigStopAhigaAmbushQuest);
+            }
+        }
+
+        if (GetQuestCompleted(AZBigStopAhigaQuest01)) {
+            StopQuest(AZBigStopAhigaAmbushQuest);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024D84:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A66:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E689:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024DCD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024DCF:NovaArizona.esm

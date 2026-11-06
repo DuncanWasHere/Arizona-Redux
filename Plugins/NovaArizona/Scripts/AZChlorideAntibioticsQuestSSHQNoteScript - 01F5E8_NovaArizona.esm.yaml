@@ -1,0 +1,32 @@
+FormKey: 01F5E8:NovaArizona.esm
+EditorID: AZChlorideAntibioticsQuestSSHQNoteScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0003007800000001007201003A151D00011C00520100780000521011000200FFFF0500520200FFFF04004201287C1109000100FFFF05005203003A151000010F0052040078000021100400000028A21115000300FFFF0500520500FFFF04004204FFFF04004201A31115000300FFFF0500520500FFFF04004205FFFF0400420111000000
+  SourceCode: >-
+    name AZChlorideAntibioticsQuestSSHQNoteScript;
+
+
+    OnAdd::Player {
+        player.RemoveItem(AZChlorideAntibioticsQuestSSHQNoteObject, 1);
+        AddNote(AZChlorideAntibioticsQuestSSHQNote);
+        AZChlorideAntibioticsQuestSSHQMarkerREF.Enable();
+
+        SetObjectiveCompleted(AZChlorideAntibioticsQuest, 4, 1);
+        SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 5, 1);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5E7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5E1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5DF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm

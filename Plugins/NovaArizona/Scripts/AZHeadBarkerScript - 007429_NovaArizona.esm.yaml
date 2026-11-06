@@ -1,0 +1,46 @@
+FormKey: 007429:NovaArizona.esm
+EditorID: AZHeadBarkerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0003009D01000001007201003A151D00011C005202007800008B1011000200FFFF0500520100FFFF040042012880162300021B00580000A51111000200FFFF0500520300FFFF0400422842010407004CAE000000A21115000300FFFF0500520300FFFF04004228FFFF04004201A31115000300FFFF0500520300FFFF04004228FFFF04004201811608000107004C0701000080162300021B00580000A51111000200FFFF0500520300FFFF0400422942010407004C07010000A21115000300FFFF0500520300FFFF04004229FFFF04004201A31115000300FFFF0500520300FFFF0400422DFFFF0400420180162300021B005800003B1011000200FFFF0500520300FFFF040042FF42000407004CC1010000801619000211005800008E110A000100FFFF0400420107004C6A01000002100F000200FFFF0500520400FFFF04004201811608000107004CC101000080162100021900580000131206000100020058000013120600010004000107004CAE01000002100F000200FFFF0500520400FFFF04004201811608000107004CC101000002100F000200FFFF0500520500FFFF0400420111000000
+  SourceCode: >-
+    name AZHeadBarkerScript;
+
+
+    OnAdd::Player {
+        // Explode Barker's head
+        AZSUHBarkerREF.Kill(player, 1);
+
+        if (GetObjectiveDisplayed(AZMalpaisBountyQuest, 40) == 1) {
+            SetObjectiveCompleted(AZMalpaisBountyQuest, 40, 1);
+            SetObjectiveDisplayed(AZMalpaisBountyQuest, 40, 1);
+        } else if (GetObjectiveDisplayed(AZMalpaisBountyQuest, 41) == 1) {
+            SetObjectiveCompleted(AZMalpaisBountyQuest, 41, 1);
+            SetObjectiveDisplayed(AZMalpaisBountyQuest, 45, 1);
+        }
+
+        if (GetStageDone(AZMalpaisBountyQuest, 255) == 0) {
+            if (IsLimbGone(1)) {
+                AddItem(AZBarkerHeadMangled, 1);
+            } else if (IsInCriticalStage(GooEnd) || IsInCriticalStage(DisintegrateEnd)) {
+                AddItem(AZBarkerHeadMangled, 1);
+            } else {
+                AddItem(AZBarkerHead, 1);
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F6A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 007428:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 007427:NovaArizona.esm

@@ -1,0 +1,47 @@
+FormKey: 0174AD:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 017478:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: We can't report this. The Legion will kill us if we do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100758634
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 2
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1474319
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0175AB:NovaArizona.esm
+- 0175AC:NovaArizona.esm
+- 0175AD:NovaArizona.esm
+- 0175AE:NovaArizona.esm
+- 0175AF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,50 @@
+FormKey: 017629:NovaArizona.esm
+EditorID: AZStanleyPostInterviewPackage
+FormVersion: 15
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0175E4:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 200
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100758634
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 0000C8:FalloutNV.esm
+  DialogueFlags:
+  - DontControlTargetMovement
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0175E4:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,33 @@
+FormKey: 03809F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206C69
+    UseEmotionAnimation: True
+    Unused3: 0x6F7270
+  ResponseText: I don't know. That's the thing with these stupid little tribes - there's always a problem child, always someone who doesn't fit in.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 03809E:NovaArizona.esm
+- 0380A0:NovaArizona.esm
+- 0380A3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What should the Khans do instead?

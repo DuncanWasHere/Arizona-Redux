@@ -1,0 +1,61 @@
+FormKey: 020EB2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020EB1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ough. Oh my god. I think I'm gonna be sick.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetActorValue
+  FirstParameter: 7
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C000100211002000000
+  SourceCode: AZGOMAssassinationPollockEnableMarker.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020F17:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C0001009E1005000100720200611002000000911105000100720300
+  SourceCode: >-
+    player.moveto AZGOMAssassinationQuestPlayerTeleportPollockMarker
+
+    disableplayercontrols
+
+    imod Addiction01ISFX
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020F18:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 058677:FalloutNV.esm
+Prompt: I'm more alhacol than human, mohterfucker! Just! Keep! Dirnking!
+ActorValuePerk: 0003EA:FalloutNV.esm

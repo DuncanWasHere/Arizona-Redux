@@ -1,0 +1,56 @@
+FormKey: 013267:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 013266:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: All of our caravans pass through this town on their way to the Fort. Presently, you could say its importance is in flux.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Our best Scribonii have moved here from Malpais so as to monitor transport along the highway more closely, though our regional command still resides in Malpais.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm of the opinion that we should abandon Malpais altogether in favor of Solitare. Malpais brings us bad luck.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100758634
+  SecondParameter: 120
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 01325C:NovaArizona.esm
+- 01325D:NovaArizona.esm
+- 01325E:NovaArizona.esm
+- 013262:NovaArizona.esm
+- 013263:NovaArizona.esm
+- 013264:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does Solitare play a big role in the Legion's war effort?

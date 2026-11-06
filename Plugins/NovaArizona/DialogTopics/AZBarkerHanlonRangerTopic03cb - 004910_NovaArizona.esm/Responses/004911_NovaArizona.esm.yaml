@@ -1,0 +1,56 @@
+FormKey: 004911:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: The NCR was supposed to help us fight the Legion if we integrated and bolstered their armed forces. We upheld our end of the bargain. The NCR didn't.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: The NCR promised us specifically that they would help us hold Hoover Dam and would station more troops at Fort Aradesh for anti-Legion operations.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: But, the NCR refused to make a deal with the Tall Pines that they didn't involve leaving them the hell alone.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: They did the bare minimum at Fort Aradesh and only moved once the Legion attacked in public.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004912:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How did the NCR leave you out to dry?

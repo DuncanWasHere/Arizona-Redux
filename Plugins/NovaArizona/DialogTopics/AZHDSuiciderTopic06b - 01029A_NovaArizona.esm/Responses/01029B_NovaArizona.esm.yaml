@@ -1,0 +1,40 @@
+FormKey: 01029B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hey, um, look, if it isn't too much to ask.... I know my place, but can you promise to look after my family? Tell them I love them? They're in Solitaire.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+Choices:
+- 01029C:NovaArizona.esm
+- 01029D:NovaArizona.esm
+- 01029E:NovaArizona.esm
+- 01029F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x551005000100720100
+  SourceCode: ShowMap AZSolitareBigStopMapMarkerREF
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0044DD:NovaArizona.esm
+Prompt: I see.

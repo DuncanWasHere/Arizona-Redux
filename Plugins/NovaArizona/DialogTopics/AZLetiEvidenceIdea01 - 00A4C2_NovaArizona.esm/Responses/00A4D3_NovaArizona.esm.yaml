@@ -1,0 +1,71 @@
+FormKey: 00A4D3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 00A4C8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E73
+    UseEmotionAnimation: True
+    Unused3: 0x433033
+  ResponseText: You will fall before you do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100699722
+  SecondParameter: 30
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100699722
+  SecondParameter: 30
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100705443
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x160014000100100020720100588E11070001006E010000001C00010002100A0002007202006E0100000018001B00010017002058131204000100020020581312040001000400207C7C1C00010002100A0002007202006E010000001700020001001C00010002100A0002007203006E0100000019000000
+  SourceCode: >-
+    if AZTribalRaiderBossREF.islimbgone 1
+
+    AZTribalRaiderBossREF.additem AZWakeemHeadMangled 1
+
+    elseif (IsInCriticalStage GooEnd) || (IsInCriticalStage DisintegrateEnd)
+
+    AZTribalRaiderBossREF.additem AZWakeemHeadMangled 1
+
+    else
+
+    AZTribalRaiderBossREF.additem AZWakeemHead 1
+
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 005F98:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014F37:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014F36:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x161005000100720100
+  SourceCode: startcombat player
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: I was asked to bring back a head, and that's what I'm going to do.

@@ -1,0 +1,58 @@
+FormKey: 01EF0A:NovaArizona.esm
+EditorID: AZMalpaisLegatusAdjutantScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967290
+    RefCount: 8
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A0062010000000080162100021900580000A51111000200FFFF0500520100FFFF0400423C1507004C7D00000039100F000200FFFF0500520100FFFF040042FF781010000200FFFF0500520200FFFF0500520300811608000107004C8301000080162000021800580000A51111000200FFFF0500520100FFFF0400423C07004C8301000080161B0002130058000022120B000100FFFF05005201001507004C52010000A21115000300FFFF0500520100FFFF0400423CFFFF0400420178101C000400FFFF0500520200FFFF0500520300FFFF04004201FFFF0400420178101C000400FFFF0500520200FFFF0500520400FFFF04004201FFFF0400420139150C00010B0056010500020042000039150C00010B00560106000F00420000361009000100FFFF0500520500811608000107004C8301000080161A0002120058000022120B000100FFFF050052010007004C8301000039100F000200FFFF0500520700FFFF040042051100000010000B00190050000000010072080080162100021900580000A51111000200FFFF0500520100FFFF0400423C1507004CE201000039100F000200FFFF0500520100FFFF040042FF781010000200FFFF0500520200FFFF050052030011000000
+  SourceCode: >-
+    name AZMalpaisLegatusAdjutantScript;
+
+
+    OnDeath {
+        if (!GetObjectiveDisplayed(AZMalpaisAbuserQuest, 60)) {
+            SetStage(AZMalpaisAbuserQuest, 255);
+            SetEnemy(PlayerFaction, AZMalpaisLegionFaction);
+        } else if (GetObjectiveDisplayed(AZMalpaisAbuserQuest, 60)) {
+            if (!GetQuestCompleted(AZMalpaisAbuserQuest)) {
+                SetObjectiveCompleted(AZMalpaisAbuserQuest, 60, 1);
+
+                SetEnemy(PlayerFaction, AZMalpaisLegionFaction, 1, 1);
+                SetEnemy(PlayerFaction, VCaesarsLegionFaction, 1, 1);
+
+                AZMalpaisEquipmentConfiscationQuest.bHoldout = 0;
+                AZFreeformMalpais.bNotGoingIntoCamp = 0;
+
+                StartQuest(AZMalpaisEquipmentConfiscationQuest);
+            } else if (GetQuestCompleted(AZMalpaisAbuserQuest)) {
+                SetStage(VMQCaesarFail, 5);
+            }
+        }
+    }
+
+
+    OnStartCombat::player {
+        if (!GetObjectiveDisplayed(AZMalpaisAbuserQuest, 60)) {
+            SetStage(AZMalpaisAbuserQuest, 255);
+            SetEnemy(PlayerFaction, AZMalpaisLegionFaction);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008DC4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

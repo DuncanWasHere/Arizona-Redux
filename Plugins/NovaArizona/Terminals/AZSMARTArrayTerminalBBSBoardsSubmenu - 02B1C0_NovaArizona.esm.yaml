@@ -1,0 +1,160 @@
+FormKey: 02B1C0:NovaArizona.esm
+MajorRecordFlagsRaw: 1024
+EditorID: AZSMARTArrayTerminalBBSBoardsSubmenu
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+ObjectBounds: {}
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >-
+  [ --  Springboards -- ]
+
+  !! UNABLE TO CONNECT TO SERVER. LOADING FROM CACHE !!
+Flags:
+- Unlocked
+ServerType: Server9
+MenuItems:
+- ItemText: /ART - Arts and Crafts
+  ResultText: ''
+  SubMenu: 02B1B5:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D002B000000010000391523000122005602010006005316002F415254202D204172747320616E64204372616674730011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/ART - Arts and Crafts";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+- ItemText: /ENT - Culture and Entertainment
+  ResultText: ''
+  SubMenu: 02B1BA:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D003500000001000039152D00012C005602010006005320002F454E54202D2043756C7475726520616E6420456E7465727461696E6D656E740011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/ENT - Culture and Entertainment";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+- ItemText: /HUM - Philosophy and History
+  ResultText: ''
+  SubMenu: 02B1BF:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D003200000001000039152A00012900560201000600531D002F48554D202D205068696C6F736F70687920616E6420486973746F72790011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/HUM - Philosophy and History";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+- ItemText: /MUS - Music
+  ResultText: ''
+  SubMenu: 02B1B9:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D002100000001000039151900011800560201000600530C002F4D5553202D204D757369630011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/MUS - Music";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+- ItemText: /NEW - News and Politics
+  ResultText: ''
+  SubMenu: 02B1B6:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D002D000000010000391525000124005602010006005318002F4E4557202D204E65777320616E6420506F6C69746963730011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/NEW - News and Politics";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+- ItemText: /RND - Random
+  ResultText: ''
+  SubMenu: 02B1B8:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D002200000001000039151A00011900560201000600530D002F524E44202D2052616E646F6D0011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/RND - Random";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+- ItemText: /TEK - Science and Technology
+  ResultText: ''
+  SubMenu: 02B1B7:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100009000D003200000001000039152A00012900560201000600531D002F54454B202D20536369656E636520616E6420546563686E6F6C6F67790011000000
+    SourceCode: >-
+      name poop;
+
+
+      fn() {
+
+      AZBBSQuest.sBoardName = "/TEK - Science and Technology";
+
+      }
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02B1BC:NovaArizona.esm
+MajorFlags:
+- QuestItem

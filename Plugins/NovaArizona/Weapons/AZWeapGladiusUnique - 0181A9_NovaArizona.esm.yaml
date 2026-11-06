@@ -1,0 +1,58 @@
+FormKey: 0181A9:NovaArizona.esm
+EditorID: AZWeapGladiusUnique
+FormVersion: 15
+ObjectBounds: {}
+Name: Blade of Sedona
+Model:
+  File: AZNovaArizona\Weapons\AZGladiusUnique.nif
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_machete_gladius.dds
+Script: 0181AB:NovaArizona.esm
+ObjectEffect: 0181AD:NovaArizona.esm
+RepairList: 0CEAF5:FalloutNV.esm
+EquipmentType: MeleeWeapons
+PickUpSound: 0854E0:FalloutNV.esm
+DropSound: 0854DF:FalloutNV.esm
+VatsAttackName: Back Slash
+ImpactDataSet: 060A0F:FalloutNV.esm
+FirstPersonModel: 0181AA:NovaArizona.esm
+SoundBlock: 0BF0EF:FalloutNV.esm
+SoundEquip: 08B5B2:FalloutNV.esm
+SoundUnequip: 08B5B3:FalloutNV.esm
+Value: 2000
+Health: 100
+Weight: 2
+BaseDamage: 31
+ClipSize: 1
+AnimationType: Melee1Hand
+AnimationMultiplier: 1
+Reach: 0.8
+Flags:
+- NpcsUseAmmo
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+BaseVatsToHitChance: 10
+AttackAnimation: Default
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 2000
+OnHit: DismemberOnly
+AnimationAttackMultiplier: 1.4
+OverrideActionPoints: 17
+AttackShotsPerSec: 3.230769
+Skill: 38
+LimbDamageMult: 2
+ResistType: -1
+PowerAttackAnimationOverride: AttackCustom3Power
+StrengthReq: 4
+KillImpulse: 15
+SkillReq: 30
+CriticalDamage: 31
+CriticalPercentMult: 1.5
+CriticalOnDeath: True
+Vats:
+  VatsSkill: 50
+  VatsDamageMult: 0.7
+  VatsAp: 14
+  VatsSilent: True
+SoundLevel: Silent

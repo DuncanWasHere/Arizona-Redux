@@ -1,0 +1,55 @@
+FormKey: 01EF51:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Refusing means your death! Legionaries, kill this Profligate and my adjutant!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0500000039100A0002007202006E05000000781008000200720300720400781008000200720300720500
+  SourceCode: >-
+    SetStage VMQCaesarFail 5
+
+    SetStage AZMalpaisAbuserQuest 5
+
+    SetEnemy PlayerFaction AZMalpaisLegionFaction
+
+    SetEnemy PlayerFaction AZMalpaisAdjutantFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF78:NovaArizona.esm
+Prompt: No, I refuse.

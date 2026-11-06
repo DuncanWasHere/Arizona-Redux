@@ -1,0 +1,32 @@
+FormKey: 00E65F:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: At least 100 sticks. I'm hoping the battle at Hoover Dam will come before we run out.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+Choices:
+- 00E635:NovaArizona.esm
+- 00E636:NovaArizona.esm
+- 00E63A:NovaArizona.esm
+- 00E63B:NovaArizona.esm
+- 00E63C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How much dynamite?

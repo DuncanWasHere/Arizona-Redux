@@ -1,0 +1,79 @@
+FormKey: 01D51D:NovaArizona.esm
+EditorID: AZDolanSpringsBrahminWhiteSands
+FormVersion: 15
+ObjectBounds:
+  First: -40, -80, 0
+  Second: 40, 80, 80
+Name: Brahmin
+Model:
+  File: Creatures\Brahmin\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- brahminpack.nif
+ModelListTextures: 0x0100000009EEE90762B99810766E690762BE9810766E691A743E856656EEDF0962FE7809476E5F0962037909476E691A743E856656F3DF0962FE780947735F0962037909476E691A743E856656EEE90B70B23168576E690B70B73168576E691E7445F82314EEDF0D707725B2406E5F0D707C25B2406E691E7445F82314F3DF0D707725B240735F0D707C25B2406E691E7445F82314B1B00D6DFA4C094631300D6DFF4C094665720D74387A3871EEDF0F6D7B0EB15D6E5F0F6D800EB15D65720D74387A3871F3DF0F6D7B0EB15D735F0F6D800EB15D65720D74387A3871
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+Factions:
+- Faction: 021472:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E268:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 004363:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 09D413:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 01CFA2:FalloutNV.esm
+Script: 038705:FalloutNV.esm
+AIData:
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2162871552
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 0200D5:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 25
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 40
+  Damage: 8
+  Strength: 5
+  Perception: 3
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+CombatStyle: 03A371:FalloutNV.esm
+BodyPartData: 015833:FalloutNV.esm
+TurningSpeed: 30
+BaseScale: 1.25
+FootWeight: 20
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 0A9268:FalloutNV.esm
+ImpactDataset: 07DB64:FalloutNV.esm

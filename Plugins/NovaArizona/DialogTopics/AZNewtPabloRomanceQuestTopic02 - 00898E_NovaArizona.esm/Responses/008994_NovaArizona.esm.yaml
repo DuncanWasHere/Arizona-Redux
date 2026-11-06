@@ -1,0 +1,48 @@
+FormKey: 008994:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x46656D
+    UseEmotionAnimation: True
+    Unused3: 0x3D2031
+  ResponseText: He's my friend. We used to play together, but he's busy being a soldier. He's so cool.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100768688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744515
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E1E0000006E01000000
+  SourceCode: SetObjectiveDisplayed AZBaseCampRomanceQuest 30 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Who's Tix?

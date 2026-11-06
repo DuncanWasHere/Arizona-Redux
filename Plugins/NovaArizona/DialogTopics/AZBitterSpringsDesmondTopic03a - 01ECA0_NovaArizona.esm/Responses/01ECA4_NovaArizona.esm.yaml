@@ -1,0 +1,39 @@
+FormKey: 01ECA4:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79696D
+  ResponseText: Mostly, I work on nutrition. If people eat too much after they've eaten too little, their bodies can't handle it, and they die.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: The children also need psychological trauma treatment, but I'm no good with that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01ECA0:NovaArizona.esm
+- 01ECA1:NovaArizona.esm
+- 01EC8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How do you help?

@@ -1,0 +1,30 @@
+FormKey: 01C229:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Thank you, amicus. I do not have much to spare, but I'll try to make it worth your time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'll get to looking for those armor plates, then.

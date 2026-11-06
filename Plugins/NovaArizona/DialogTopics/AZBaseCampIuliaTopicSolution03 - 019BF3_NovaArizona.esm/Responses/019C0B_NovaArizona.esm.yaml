@@ -1,0 +1,52 @@
+FormKey: 019C0B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I will.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, regardless, thank you for bringing this to my attention. The Legion will be so much stronger with those two gone.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768679
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006EBE00000015000A00720100731E0002002031
+  SourceCode: >-
+    setstage AZBaseCampRomanceQuest 190
+
+    set AZBaseCampRomanceQuest.ArceusPunishmentTimer to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Do whatever you want. It's not my business.

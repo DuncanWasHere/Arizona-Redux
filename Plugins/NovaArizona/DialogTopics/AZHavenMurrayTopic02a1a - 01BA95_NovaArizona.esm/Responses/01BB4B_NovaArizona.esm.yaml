@@ -1,0 +1,64 @@
+FormKey: 01BB4B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He managed to find this place just before the Chainway collapsed. He must not have told his Frumentarii buddies because no one's come looking for him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wierzbowski knocked him and convinced us to spare the guy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wierzbowski's a cool dude, but I'm not really sure that was the best option.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 01BA95:NovaArizona.esm
+- 01BA96:NovaArizona.esm
+- 01BA97:NovaArizona.esm
+- 01BA98:NovaArizona.esm
+- 01BAC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007304000200203115000A00720100730E0002002031
+  SourceCode: >-
+    Set AZFreeformHaven.CorvusMentioned to 1
+
+    Set AZFreeformHaven.WierzbowskiMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+Prompt: What's the deal with the Frumentarius?

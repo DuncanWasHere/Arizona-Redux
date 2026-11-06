@@ -1,0 +1,43 @@
+FormKey: 0199ED:NovaArizona.esm
+FormVersion: 15
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You have unwittingly stepped into the Deathclaw's den.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is the War Room, where our most cunning plan operations against the Profligates to the West.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+Choices:
+- 02EF05:NovaArizona.esm
+- 0199E7:NovaArizona.esm
+- 00862A:NovaArizona.esm
+- 020DA5:NovaArizona.esm
+- 0199DA:NovaArizona.esm
+- 0199DB:NovaArizona.esm
+- 0199E8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is this place?

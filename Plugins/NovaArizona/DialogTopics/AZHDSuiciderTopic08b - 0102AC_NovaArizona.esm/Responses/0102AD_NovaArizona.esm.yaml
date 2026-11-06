@@ -1,0 +1,47 @@
+FormKey: 0102AD:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204920
+    UseEmotionAnimation: True
+    Unused3: 0x207072
+  ResponseText: I keep thinking that this is my punishment. But I don't know what I'm being punished for. Did I do something wrong?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x204920
+    UseEmotionAnimation: True
+    Unused3: 0x207072
+  ResponseText: I wish I knew what I could've done differently. I don't know if it's because I was a rat in Solitaire or because I couldn't save anyone.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x204920
+    UseEmotionAnimation: True
+    Unused3: 0x207072
+  ResponseText: If you're with the Legion, can you tell me what I did wrong?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+Choices:
+- 0102AE:NovaArizona.esm
+- 0102AF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, sure, we'll talk for a bit. What do you want to talk about?

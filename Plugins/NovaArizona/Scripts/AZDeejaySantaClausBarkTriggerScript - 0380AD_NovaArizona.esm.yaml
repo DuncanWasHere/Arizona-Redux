@@ -1,0 +1,38 @@
+FormKey: 0380AD:NovaArizona.esm
+EditorID: AZDeejaySantaClausBarkTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B001A004C00000001007202001600100001000C0020720100730C00203120213D1E00000018000D0002000900207301002030203D3D1C00010034100800020072020072030015000700730100020020311900000011000000
+  SourceCode: >-
+    scn AZDeejaySantaClausBarkTriggerScript
+
+
+    short doonce
+
+
+    begin ontriggerenter player
+    	If AZDeejayREF.bCurrentlyHired != 1
+    		Return
+    	elseif doonce == 0 
+    		AZDeejayREF.sayto player AZDeejayTopicxBarkSantaClaws
+    		set doonce to 1
+    	endif
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0D329120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x727469636C6573
+    Name: doonce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 038093:NovaArizona.esm

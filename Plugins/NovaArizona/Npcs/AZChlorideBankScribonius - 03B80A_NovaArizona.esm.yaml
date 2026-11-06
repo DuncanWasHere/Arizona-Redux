@@ -1,0 +1,158 @@
+FormKey: 03B80A:NovaArizona.esm
+EditorID: AZChlorideBankScribonius
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Legion Scribonius
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 5
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - BaseData
+  - Inventory
+  - Script
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0043EA:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 00002D:FalloutNV.esm
+Template: 037901:NovaArizona.esm
+Race: 000019:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 03A8BE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A5FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165747:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165748:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575F:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165760:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165761:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FF:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 037902:NovaArizona.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Cautious
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 10E197:FalloutNV.esm
+Class: 015674:FalloutNV.esm
+BaseHealth: 50
+Strength: 3
+Perception: 5
+Endurance: 4
+Charisma: 6
+Intelligence: 7
+Agility: 4
+Luck: 6
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 17
+  - Key: BigGuns
+    Value: 13
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 51
+  - Key: MeleeWeapons
+    Value: 11
+  - Key: Repair
+    Value: 19
+  - Key: Science
+    Value: 51
+  - Key: SmallGuns
+    Value: 13
+  - Key: Sneak
+    Value: 13
+  - Key: Speech
+    Value: 49
+  - Key: Survival
+    Value: 13
+  - Key: Unarmed
+    Value: 13
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 0306BE:FalloutNV.esm
+HairLength: 0.4421041
+Eyes: 004255:FalloutNV.esm
+HairColor: '#00150E06'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x30B0B9BF663C953F4030F1BB9BD2BABF1EF57F3F9FA4D9BFF6E877BFA83BCD3F6AA7CEBF38525E3F7683993FC9B62A3FB5D29CBFE48A32C06C336DBFE3A8243ED8AAB23F187A2ABF7D4CC1BE0C7A073FF9AD1E3F8006433DC41F113FF6CE1040A2CA723E008A16BC62C498BFDCC4D0BED869813E1CF22BBE20798F3ED09E8B3EE0294D3E4246E03F783A2D3FA034813F7F0CA4BF4C12D13F20F81E3F940F0C40C9BF863F36D7ABBF6CAF08BFD2AD283F6B9330C0C0646DBEB03A89BE7490723F38F5ADBE3E6982BF
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x6703DCBE1BF903C030C6C9BE49D46D3F1455EE3E66B9CF3E714A2240962551BF6C45F23E6492903EBD38853E00B04C3A3098A5BDE0D67BBD04328DBF86C088BEEC5F8D3FE7AA74BFAA65F63E98351CBF28D7F23F2077003E57BC153FE6FA1F3EC0F1173DD0A5CA3D584591BEEC69A4BEA78CB03E6D1088BF825512400852FFBDD2CA8EBE10DC473F006E003D69401ABFCC84143FB8CBBD3F76432F3F148E06BFD81D773F01BB1C4028284D3DF1CF483E4A2C42BF80641DBF082D42BF7563B23E64CBF83D38376F3E
+NAM5: 255
+DATADataTypeState:
+- Break0

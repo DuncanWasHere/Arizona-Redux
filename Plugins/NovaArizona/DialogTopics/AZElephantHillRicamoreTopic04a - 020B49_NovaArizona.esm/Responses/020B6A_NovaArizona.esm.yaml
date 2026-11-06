@@ -1,0 +1,52 @@
+FormKey: 020B6A:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Just a humble highway stopover, this is. A place to rest your weary head on the way to somewhere else.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: The Chainway, that big ol' highway goin' north, fell down some time back. Most folk don't feel like bravin' the canyons, so they either stay here or turn back.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Back before Legion came, I used to mix drinks. Can't do that no more, but folks still come. Maybe it's 'cause I'm handsome.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 03A8E6:NovaArizona.esm
+- 03A8EF:NovaArizona.esm
+- 03A8E9:NovaArizona.esm
+- 03A911:NovaArizona.esm
+- 020B49:NovaArizona.esm
+- 020B4A:NovaArizona.esm
+- 020B4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about what Elephant Hill is like these days.

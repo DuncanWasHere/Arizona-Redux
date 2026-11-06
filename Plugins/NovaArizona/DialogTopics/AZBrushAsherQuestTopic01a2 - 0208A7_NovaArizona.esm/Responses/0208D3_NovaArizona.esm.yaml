@@ -1,0 +1,37 @@
+FormKey: 0208D3:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I feel more dumb when I'm off the Brush than when I'm on it. I'm usually angry all the time. That's why Ficus gave me some.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It helps me calm down, helps me focus. It's just like that disgusting packed tobacco chew Quintus sucks on when he wakes up.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+Choices:
+- 0208A8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Decanus Quintus is having me look for evidence that Brush makes you dumb.

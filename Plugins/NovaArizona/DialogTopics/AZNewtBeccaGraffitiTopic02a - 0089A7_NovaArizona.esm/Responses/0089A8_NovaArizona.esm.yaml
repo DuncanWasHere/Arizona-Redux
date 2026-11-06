@@ -1,0 +1,76 @@
+FormKey: 0089A8:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x207573
+    UseEmotionAnimation: True
+    Unused3: 0x206265
+  ResponseText: Not much to say. Legion came in and demanded soldiers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: Promised they would take care of the kids' families. Tix volunteered.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: His mother died a month ago of heat stroke.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61792E
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E20
+  ResponseText: When I told him, he only looked sad for a minute before he said that he would kill as many Profligates as he could for her.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x61792E
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E20
+  ResponseText: I really don't want to know about the Legion did to him to make him that way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100744496
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100744496
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+Choices:
+- 0089A7:NovaArizona.esm
+- 0089A9:NovaArizona.esm
+- 0089B0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about Tix.

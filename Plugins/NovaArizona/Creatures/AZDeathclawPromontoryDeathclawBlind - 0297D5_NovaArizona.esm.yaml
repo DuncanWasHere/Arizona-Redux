@@ -1,0 +1,78 @@
+FormKey: 0297D5:NovaArizona.esm
+EditorID: AZDeathclawPromontoryDeathclawBlind
+FormVersion: 15
+ObjectBounds:
+  First: -50, -95, 0
+  Second: 50, 95, 152
+Name: Blind Deathclaw
+Model:
+  File: Creatures\DeathClaw\Skeleton.nif
+ActorEffects:
+- 12B892:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- deathclaw.nif
+ModelListTextures: 0x0100000005F7E10964BE029E5277610964C3029E5277611C7445474FD8EEDF0B64942EF0E16E5F0B64992EF0E177611C7445474FD8B1B00D6DFA4C094631300D6DFF4C094665720D74387A3871EEDF0F6D7B0EB15D6E5F0F6D800EB15D65720D74387A3871F3DF0F6D7B0EB15D735F0F6D800EB15D65720D74387A3871
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  Fatigue: 650
+  Level: 20
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - ActorEffectList
+  - ModelAnimation
+  - BaseData
+  - Inventory
+Factions:
+- Faction: 021474:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E274:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 05329F:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 15C642:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 2
+  Responsibility: 50
+  Mood: 842272000
+  Teaches: Barter
+  AggroRadiusBehavior: True
+  AggroRadius: 340
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: Abomination
+  CombatSkill: 85
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 500
+  Damage: 125
+  Strength: 7
+  Perception: 8
+  Endurance: 7
+  Charisma: 4
+  Intelligence: 4
+  Agility: 7
+  Luck: 10
+AttackReach: 192
+CombatStyle: 03BC67:FalloutNV.esm
+BodyPartData: 02026E:FalloutNV.esm
+TurningSpeed: 75
+BaseScale: 1
+FootWeight: 15
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 0A5D40:FalloutNV.esm
+ImpactDataset: 0553E0:FalloutNV.esm

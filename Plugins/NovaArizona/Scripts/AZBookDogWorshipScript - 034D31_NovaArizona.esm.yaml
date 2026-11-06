@@ -1,0 +1,19 @@
+FormKey: 034D31:NovaArizona.esm
+EditorID: AZBookDogWorshipScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000080003001100000000007C1109000100FFFF050052010011000000
+  SourceCode: >-
+    name AZBookDogWorshipScript;
+
+
+    OnAdd {
+        AddNote(AZBookDogWorshipNote);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034D32:NovaArizona.esm

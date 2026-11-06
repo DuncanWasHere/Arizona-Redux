@@ -1,0 +1,72 @@
+FormKey: 033AF8:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: 033AF7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I finished my meeting with the raiders. They'll give away the dynamite in exchange for 3,000 caps.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You can return to Newt and inform them of the deal. Good doing business with you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100874950
+  SecondParameter: 9
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 19
+  Function: GetStage
+  FirstParameter: 100874950
+- Fluff: 0x000000
+  Function: IsActorTalkingThroughActivator
+Choices:
+- 033AD6:NovaArizona.esm
+- 033ADD:NovaArizona.esm
+- 033AE3:NovaArizona.esm
+- 033AEC:NovaArizona.esm
+- 033AED:NovaArizona.esm
+- 033AEE:NovaArizona.esm
+- 033AEF:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073060002002034A2110F0003007201006E0E0000006E01000000A3110F0003007201006E0F0000006E01000000
+  SourceCode: >-
+    Set AZNewtFishingQuest.DynamiteMethod to 4
+
+    SetObjectiveCompleted AZNewtFishingQuest 14 1
+
+    SetObjectiveDisplayed AZNewtFishingQuest 15 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm

@@ -1,0 +1,50 @@
+FormKey: 020EA6:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I guess I'd have to fuck Kimball. He's a hard man, a tough man. No-nonsense. He probably just does his business and rolls over, right?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But House is absolutely loaded. You'd have to marry him to get that sweet inheritance.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Which means I'd have to kill Caesar. You're welcome, Hanlon. I'll take my thanks in cash, Mr. Oliver. Shake hands with the president. Put my face on a dollar bill.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 01FF70:NovaArizona.esm
+- 01FF6E:NovaArizona.esm
+- 0203FD:NovaArizona.esm
+- 01FF6F:NovaArizona.esm
+- 020E98:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Distract Chick.> Okay. Marry, fuck, kill - Caesar, Kimball, and Mr. House. Go.

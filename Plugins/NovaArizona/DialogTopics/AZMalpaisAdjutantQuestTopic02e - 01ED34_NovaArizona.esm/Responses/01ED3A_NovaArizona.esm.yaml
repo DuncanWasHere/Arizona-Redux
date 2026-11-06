@@ -1,0 +1,56 @@
+FormKey: 01ED3A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No one deserves anything. The only people who can't get by in this world are those who are too weak to take it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Too weak to deal with it. It's pathetic for a Legionary to go crying to some Dissolute for help. He'd be a disgrace on the battlefield.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x74682C
+    UseEmotionAnimation: True
+    Unused3: 0x69656E
+  ResponseText: We're done here. I wouldn't bother talking to anyone else about this.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E250000006E01000000
+  SourceCode: SetObjectiveCompleted AZMalpaisAbuseQuest 37 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: He doesn't deserve this.

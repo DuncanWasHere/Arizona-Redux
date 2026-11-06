@@ -1,0 +1,70 @@
+FormKey: 01CD4B:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ha! He was but a false prophet, but one with a very enduring myth. You'll find many of his acolytes out in Colorado.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, I am speaking of Christ.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Lord God sent us His son once as a messenger, many years ago. The Profligates of that time turned on God's messenger and crucified him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This time, God is not so merciful. As Mars, He sent us the holy Caesar. It is Caesar's job to bring humanity to salvation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And then you get to trinitary theory, which is the idea that Jesus Christ *is* Mars, just as Caesar is the second coming of Jesus. But I won't bore you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 01CD28:NovaArizona.esm
+- 01CD29:NovaArizona.esm
+- 01CD2A:NovaArizona.esm
+- 01CD2B:NovaArizona.esm
+- 01CD2C:NovaArizona.esm
+- 01CD2D:NovaArizona.esm
+- 01CD2E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Joseph Smith.

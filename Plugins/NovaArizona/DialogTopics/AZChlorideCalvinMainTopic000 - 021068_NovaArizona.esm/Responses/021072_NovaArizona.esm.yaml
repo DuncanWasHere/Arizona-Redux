@@ -1,0 +1,50 @@
+FormKey: 021072:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Customer service isn't exactly my department, but sure, I can put in an invoice for you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What do you need hauled?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 25
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 26
+Choices:
+- 021069:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There's an item I need shipped to Dolan Springs. Can I hire your caravan service?

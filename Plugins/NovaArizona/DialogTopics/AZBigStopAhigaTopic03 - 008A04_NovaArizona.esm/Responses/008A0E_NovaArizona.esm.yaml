@@ -1,0 +1,48 @@
+FormKey: 008A0E:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I do not consider myself to have come from a tribe. Certainly not the sort of Profligate so-called tribal you see out here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My people were a small nation that joined the Great Southwest Confederacy. I was conscripted into the Legion after the Treaty of Window Rock.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 010081:NovaArizona.esm
+- 024DCA:NovaArizona.esm
+- 024D6C:NovaArizona.esm
+- 008A09:NovaArizona.esm
+- 024B1A:NovaArizona.esm
+- 008A05:NovaArizona.esm
+- 024B33:NovaArizona.esm
+- 024D68:NovaArizona.esm
+- 008A02:NovaArizona.esm
+- 008A03:NovaArizona.esm
+- 008A04:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What tribe are you from originally?

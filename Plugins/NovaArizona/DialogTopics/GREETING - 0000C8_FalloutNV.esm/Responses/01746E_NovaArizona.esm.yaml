@@ -1,0 +1,66 @@
+FormKey: 01746E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 01746F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Well, well, well. If it isn't the Legion's favorite celebrity. So, what went down? What was Caesar like? I have so many questions.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 34
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 3
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1474319
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174BE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C000100221002000000
+  SourceCode: AZMalpaisChildGreeterREF.disable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020880:NovaArizona.esm

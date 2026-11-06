@@ -1,0 +1,87 @@
+FormKey: 03A12A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A12B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] Okay okay! There's no need to talk tough, I get it. Goddamn..."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6B6179
+    UseEmotionAnimation: True
+    Unused3: 0x212054
+  ResponseText: It was only a matter of time before that fucking moron did something that brought us heat, anyways. But shit, you know what? I've said too much.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6B6179
+    UseEmotionAnimation: True
+    Unused3: 0x212054
+  ResponseText: I'm not trying to wrap myself up in this any more than I already am as a Hook. So why don't you talk to someone else. You know what? Talk to Bear.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6B6179
+    UseEmotionAnimation: True
+    Unused3: 0x212054
+  ResponseText: He's the mutant. Looks a little like your drawing there, actually. He's always watching us, always suspecting shit. Serves us right I guess...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x6B6179
+    UseEmotionAnimation: True
+    Unused3: 0x212054
+  ResponseText: Anyways, go see him. Tell him Sid said you're cool. I'm done talking to you about this.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 45
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702085
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x7711070001006E3200000015000A0072010073080002002031
+  SourceCode: >-
+    rewardxp 50
+
+    set AZMalpaisMarketSlaveQuest.iSidSpill to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E420000006E01000000
+  SourceCode: setobjectivedisplayed AZMalpaisMarketSlaveQuest 66 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+Prompt: How many blows to the skull do you think you could take before you change your mind?
+ActorValuePerk: 0004BD:FalloutNV.esm

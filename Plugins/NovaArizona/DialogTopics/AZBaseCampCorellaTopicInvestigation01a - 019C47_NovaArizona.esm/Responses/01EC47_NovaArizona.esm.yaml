@@ -1,0 +1,58 @@
+FormKey: 01EC47:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 019C5C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We're not supposed to... become intimate.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It would only create problems. You can't take care of a baby here, it's not safe or clean, and we don't have the supplies.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x206372
+    UseEmotionAnimation: True
+    Unused3: 0x70726F
+  ResponseText: Usually, pregnant maids are sent back to rest camps or creation centers with the first available caravan. But that means the soldiers lose their maid.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Arceus isn't like that though. He's more understanding than the other men.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768682
+Choices:
+- 019C47:NovaArizona.esm
+- 019C49:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Take it further? What do you mean?

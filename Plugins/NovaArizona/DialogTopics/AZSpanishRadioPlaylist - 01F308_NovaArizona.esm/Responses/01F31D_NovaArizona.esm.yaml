@@ -1,0 +1,67 @@
+FormKey: 01F31D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Type: Radio
+  Flags:
+  - Random
+  - RunImmediately
+Quest: 01F2F9:NovaArizona.esm
+PreviousInfo: 01F31C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696162
+    ResponseSound: 01F302:NovaArizona.esm
+    UseEmotionAnimation: True
+    Unused3: 0x526164
+  ResponseText: '{Cien Anos}'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetQuestVariable
+  FirstParameter: 100791033
+  SecondParameter: 1
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetQuestVariable
+  FirstParameter: 100791033
+  SecondParameter: 2
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetQuestVariable
+  FirstParameter: 100791033
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791032
+Choices:
+- 01F308:NovaArizona.esm
+LinkFrom:
+- 0000D3:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000F0072010073030007002072010073020015000F0072010073020007002072010073010015000A0072010073010002002037
+  SourceCode: >-
+    set AZRadioquest.iLastSong3 to AZRadioquest.iLastSong2
+
+    set AZRadioquest.iLastSong2 to AZRadioquest.iLastSong1
+
+    set AZRadioquest.iLastSong1 to 7
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F2F9:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1

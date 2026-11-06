@@ -1,0 +1,45 @@
+FormKey: 008A41:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes, it would.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's why we're not meant to spend much time over here. Certainly not spend that time talking to the rank and file.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+Choices:
+- 01EFBD:NovaArizona.esm
+- 024C2C:NovaArizona.esm
+- 024C5C:NovaArizona.esm
+- 008A27:NovaArizona.esm
+- 008A28:NovaArizona.esm
+- 008A2A:NovaArizona.esm
+- 008A2C:NovaArizona.esm
+- 008A2D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Wouldn't it threaten the Legion's power to introduce Dissolute ideas into its soldiers?

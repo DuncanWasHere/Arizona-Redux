@@ -1,0 +1,34 @@
+FormKey: 013271:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 013270:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, it doesn't interest me. It can tell us nothing of strategy, only that the man with the best cards wins.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 01325C:NovaArizona.esm
+- 01325D:NovaArizona.esm
+- 01325E:NovaArizona.esm
+- 013262:NovaArizona.esm
+- 013263:NovaArizona.esm
+- 013264:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you play caravan?

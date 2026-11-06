@@ -1,0 +1,38 @@
+FormKey: 035115:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's the will of the Great Mars. He sees all, knows all, commands all. Or so I've heard.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is what we tell our boys. Wherever, however they should end up, it is His will that the honorable die honorably, the dishonorable die dishonorably.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 0350FE:NovaArizona.esm
+- 0350FF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you think he deserves to be ridiculed for not fitting in?

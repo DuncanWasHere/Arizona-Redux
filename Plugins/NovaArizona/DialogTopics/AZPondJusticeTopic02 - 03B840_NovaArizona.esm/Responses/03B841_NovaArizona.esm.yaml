@@ -1,0 +1,31 @@
+FormKey: 03B841:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D626C
+    UseEmotionAnimation: True
+    Unused3: 0x766520
+  ResponseText: I am shackled here. The Legion has set my collar to go off if I leave these barracks.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B83E:NovaArizona.esm
+- 03B843:NovaArizona.esm
+- 03B845:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you doing here?

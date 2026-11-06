@@ -1,0 +1,43 @@
+FormKey: 02097B:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Every man has his price, even Legionaries. And Niemann is a master at learning that price.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You'd have to ask him how he does it, because I don't know and I don't care.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100786001
+Choices:
+- 020932:NovaArizona.esm
+- 020933:NovaArizona.esm
+- 020934:NovaArizona.esm
+- 020937:NovaArizona.esm
+- 020938:NovaArizona.esm
+- 020939:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Did you say you paid off Legion scouts?

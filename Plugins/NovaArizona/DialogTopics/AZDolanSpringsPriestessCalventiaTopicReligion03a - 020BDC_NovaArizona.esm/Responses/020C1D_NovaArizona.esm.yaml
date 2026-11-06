@@ -1,0 +1,49 @@
+FormKey: 020C1D:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He is the Father of War and of Creation. War and Creation are one in the same.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Conflict, death, change - this is the nature of the world. It is only through war that anything new can be born.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 028BFA:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Since Mars is the Father, men are made in His image. Masculinity is a divine virtue. Feminity is the Venusian counterpart.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 020BDD:NovaArizona.esm
+- 020BDE:NovaArizona.esm
+- 020BEE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: From your perspective, what is Mars?

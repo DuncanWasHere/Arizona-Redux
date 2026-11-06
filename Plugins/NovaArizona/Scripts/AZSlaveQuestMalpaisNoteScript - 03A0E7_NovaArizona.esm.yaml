@@ -1,0 +1,38 @@
+FormKey: 03A0E7:NovaArizona.esm
+EditorID: AZSlaveQuestMalpaisNoteScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B0003004C01000001007201007C110500010072020016001900010015002058A4110A0002007203006E0A0000002030203D3DA3110F0003007203006E0A0000006E000000001900000016001900010015002058A4110A0002007203006E140000002030203D3DA3110F0003007203006E140000006E00000000190000001600310001002D002058A4110A0002007203006E0F0000002030203D3D2058A5110A0002007203006E0F0000002031203D3D202626A3110F0003007203006E0F0000006E00000000190000001600310001002D002058A4110A0002007203006E150000002030203D3D2058A5110A0002007203006E150000002031203D3D202626A3110F0003007203006E150000006E0000000019000000A2110F0003007203006E190000006E01000000A2110F0003007203006E320000006E01000000A3110F0003007203006E3C0000006E01000000A5100200000011000000
+  SourceCode: >-
+    scn AZSlaveQuestMalpaisNoteScript
+
+
+    begin OnAdd Player
+    	AddNote AZSlaveQuestMalpaisNote
+    	if getobjectivecompleted AZMalpaisMarketSlaveQuest 10 == 0
+    		setobjectivedisplayed AZMalpaisMarketSlaveQuest 10 0
+    	endif
+    	if getobjectivecompleted AZMalpaisMarketSlaveQuest 20 == 0
+    		setobjectivedisplayed AZMalpaisMarketSlaveQuest 20 0
+    	endif
+    	if getobjectivecompleted AZMalpaisMarketSlaveQuest 15 == 0 && getobjectivedisplayed AZMalpaisMarketSlaveQuest 15 == 1
+    		setobjectivedisplayed AZMalpaisMarketSlaveQuest 15 0
+    	endif
+    	if getobjectivecompleted AZMalpaisMarketSlaveQuest 21 == 0 && getobjectivedisplayed AZMalpaisMarketSlaveQuest 21 == 1
+    		setobjectivedisplayed AZMalpaisMarketSlaveQuest 21 0
+    	endif
+    	setobjectivecompleted AZMalpaisMarketSlaveQuest 25 1
+    	setobjectivecompleted AZMalpaisMarketSlaveQuest 50 1
+    	setobjectivedisplayed AZMalpaisMarketSlaveQuest 60 1
+    	RemoveMe
+    end
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0E4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm

@@ -1,0 +1,49 @@
+FormKey: 00CCA6:NovaArizona.esm
+EditorID: AZMalpaisGoldMinePostumusHammerWeaponPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Unused: 158
+Flags:
+  MutagenObjectType: PackageUseWeapon
+Unused2: 4847
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetObjectId
+    Reference: 004351:FalloutNV.esm
+WeaponData:
+  WeaponFlags:
+  - DoNoDamage
+  - HoldFireWhenBlocked
+  FireCount: RepeatFire
+  NumberOfBursts: 1
+  ShootsPerVolleyMin: 1
+  ShootsPerVolleyMax: 6
+  PauseBetweenVolleysMin: 1
+  PauseBetweenVolleysMax: 2
+Target2:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 00D1DE:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

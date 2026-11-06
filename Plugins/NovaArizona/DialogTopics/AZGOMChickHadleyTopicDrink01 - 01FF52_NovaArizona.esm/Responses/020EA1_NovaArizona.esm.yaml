@@ -1,0 +1,55 @@
+FormKey: 020EA1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020EA0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ahh excelente! Here, have a sip. Open your mouth, I'll pour it in.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 207988
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 01FF68:NovaArizona.esm
+- 01FF6D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000
+  SourceCode: player.removeitem vodka 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 032C74:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002031
+  SourceCode: set AZGOMAssassinationQuest.bBoughtChickDrink to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+Prompt: I've got your vodka.

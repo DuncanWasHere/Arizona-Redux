@@ -1,0 +1,37 @@
+FormKey: 01ED6B:NovaArizona.esm
+FormVersion: 15
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4C6F74
+    UseEmotionAnimation: True
+    Unused3: 0x67616E
+  ResponseText: What, the fort? The Mormons told us about this place when the NCR was expanding into the Mojave. Gave us maps and everything.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x4C6F74
+    UseEmotionAnimation: True
+    Unused3: 0x67616E
+  ResponseText: Used to be one of their old waypoints, before the Great War.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED68:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can you tell me about this place?

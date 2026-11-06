@@ -1,0 +1,75 @@
+FormKey: 00DB04:NovaArizona.esm
+FormVersion: 15
+Quest: 00D8C1:NovaArizona.esm
+PreviousInfo: 00D8C4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Caesar relieved me of my degenerate name.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He gave me a civilized name for every skull I pierced the day he visited my Centurion's camp during the Colorado Campaign.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x64696E
+    UseEmotionAnimation: True
+    Unused3: 0x657468
+  ResponseText: 'My full name is: Quintus Pompeius Senecio Roscius...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...Murena Coelius Sextus Iulius Frontinus Silius Decianus Gaius Iulius Eurycles Herculaneus Lucius Vibullius Pius Augustanus...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x6E616D
+    UseEmotionAnimation: True
+    Unused3: 0x206576
+  ResponseText: '...Alpinus Bellicius Sollers Iulius Aper Ducenius Proculus Rutilianus Rufinus Silius Valens Valerius Niger Claudius Fuscus Saxa Amyntianus Sosius...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x6E616D
+    UseEmotionAnimation: True
+    Unused3: 0x206576
+  ResponseText: '...Priscus.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718783
+Choices:
+- 00D8C3:NovaArizona.esm
+- 00D8C5:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: That's quite the name.

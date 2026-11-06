@@ -1,0 +1,39 @@
+FormKey: 03B873:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x72742C
+    UseEmotionAnimation: True
+    Unused3: 0x726573
+  ResponseText: I do not know his name. A feisty slave boy came through camp not long ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206869
+    UseEmotionAnimation: True
+    Unused3: 0x652E20
+  ResponseText: If they have not killed him yet, perhaps he may be suitable?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B866:NovaArizona.esm
+- 03B879:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Any suggestions for your Spartacus?

@@ -1,0 +1,39 @@
+FormKey: 0300FF:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Type: Conversation
+  Flags:
+  - Goodbye
+  - Random
+  - SayOnceADay
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    ResponseSound: 03013D:NovaArizona.esm
+    UseEmotionAnimation: True
+    Unused3: 0x00803F
+  ResponseText: '{Playing Hualapai}'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 137B98:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100860224
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x243902000000
+  SourceCode: ForceStopIdle
+Speaker: 030140:NovaArizona.esm

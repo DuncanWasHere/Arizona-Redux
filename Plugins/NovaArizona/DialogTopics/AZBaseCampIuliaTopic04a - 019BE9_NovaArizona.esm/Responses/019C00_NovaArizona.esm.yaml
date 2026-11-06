@@ -1,0 +1,76 @@
+FormKey: 019C00:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, I don't mean to start rumors.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's just that there are some people here who seem more concerned with their own secrets than doing their jobs.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Like Flemus. Always sneaking away at night. Him and Arceus always seem to go missing at the same time. It spells trouble.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I hope they're not doing something bad. Chems, do you think? Gosh, I hope not.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768679
+Choices:
+- 020DA9:NovaArizona.esm
+- 019BEE:NovaArizona.esm
+- 019BED:NovaArizona.esm
+- 00874F:NovaArizona.esm
+- 019BEA:NovaArizona.esm
+- 019BE4:NovaArizona.esm
+- 019BE5:NovaArizona.esm
+- 019BE7:NovaArizona.esm
+- 019BE8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073040002002031
+  SourceCode: set AZBaseCampRomanceQuest.IuliaRevealedSuspicions to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: What do you mean?

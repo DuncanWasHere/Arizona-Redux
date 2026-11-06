@@ -1,0 +1,49 @@
+FormKey: 007193:NovaArizona.esm
+EditorID: AZBarkerForceGreetTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00AF0000000100720100801611000209005601020001001507004C680000003A15170001160052030078000097100B000100FFFF05005204002839150C00010B0056010000010042010080161A000212005601020001004200065601000001000207004CA10000003A15170001160052030078000098100B000100FFFF05005204002880161300020B0056010200010042010607004CD30000003A15170001160052030078000097100B000100FFFF05005205002811000000
+  SourceCode: >-
+    name AZBarkerForceGreetTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (!AZBarkerDialogue.iBarkerCaveAcceptance) {
+            AZSUHBarkerREF.AddScriptPackage(AZBarkerCaveForceGreetPackage);
+            DoOnce = 1;
+        }
+
+        if (AZBarkerDialogue.iBarkerCaveAcceptance > 0 && DoOnce) {
+            AZSUHBarkerREF.RemoveScriptPackage(AZBarkerCaveForceGreetPackage);
+        }
+
+        if (AZBarkerDialogue.iBarkerCaveAcceptance > 1) {
+            AZSUHBarkerREF.AddScriptPackage(AZBarkerMoveAwayFromDoorPackage);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F6A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F6C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00720B:NovaArizona.esm

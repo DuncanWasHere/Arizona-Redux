@@ -1,0 +1,66 @@
+FormKey: 00490F:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: When I was talking with my brothers and sisters at Camp Golf in '76, they were so upset with him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: They told me how he kept ordering us to help fight the Brotherhood, Baja, protests in Vault City, tribals in Oregon.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: Then, I talked to Hanlon, and he seemed just as upset as them. I could tell that he fought for us at every opportunity.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: He just kept failing to stop his bosses from leaving us out to dry. I almost pity him. To answer your question, I don't know if he's a good man.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: I think he tries to be, though. Maybe that's all that matters.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004910:NovaArizona.esm
+- 004914:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you think Hanlon was a good man?

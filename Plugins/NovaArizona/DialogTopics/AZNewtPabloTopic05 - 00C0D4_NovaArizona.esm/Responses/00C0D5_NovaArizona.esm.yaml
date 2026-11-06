@@ -1,0 +1,49 @@
+FormKey: 00C0D5:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Uh....
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C6574
+    UseEmotionAnimation: True
+    Unused3: 0x4E6577
+  ResponseText: Are people upset by it? I liked it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100744496
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100744550
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744515
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100744496
+Choices:
+- 00C0D6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Looky here. I've found your paint gun. I think the person leaving the graffiti is you.

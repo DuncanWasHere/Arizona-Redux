@@ -1,0 +1,37 @@
+FormKey: 004851:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x2C0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Let's assume that you're not Legion for the moment. You didn't have to come to Arizona, so why did you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004A93:NovaArizona.esm
+- 00484F:NovaArizona.esm
+- 004A97:NovaArizona.esm
+- 00492E:NovaArizona.esm
+- 004AEB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I got it after visiting the Strip. He had business to discuss.

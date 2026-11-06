@@ -1,0 +1,56 @@
+FormKey: 024D8B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: A bribe? That's all? That's nothing.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: I suppose that's easy enough. 200 Legion denarii, good bit of silver for you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: Our business is done, now leave me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E50000000
+  SourceCode: SetStage AZBigStopAhigaQuest01 80
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: I'm less interested in the truth and more interested in a bribe.

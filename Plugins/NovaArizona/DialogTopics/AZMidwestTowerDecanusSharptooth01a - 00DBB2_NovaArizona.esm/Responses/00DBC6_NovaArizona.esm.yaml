@@ -1,0 +1,30 @@
+FormKey: 00DBC6:NovaArizona.esm
+FormVersion: 15
+Quest: 00DBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm talking about your sexual proclivities. And I'm talking about the tower.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100748900
+Choices:
+- 00DBB4:NovaArizona.esm
+- 00DBB5:NovaArizona.esm
+- 00DBB1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What the hell are you talking about?

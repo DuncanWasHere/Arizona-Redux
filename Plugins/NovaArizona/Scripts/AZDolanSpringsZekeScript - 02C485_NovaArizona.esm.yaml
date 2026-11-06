@@ -1,0 +1,145 @@
+FormKey: 02C485:NovaArizona.esm
+EditorID: AZDolanSpringsZekeScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 13
+    VariableCount: 9
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000930000008016100002080056010000010007004CCE000000391513000112005604000009005800005727040000000080161700020F005604000009005604000004000407004CCE00000080161F0002170047070042080847070042140702560100000300150207004CCE000000BB1012000200FFFF0800560400000500FFFF0400420039150C00010B005601000003004201001100000010000B001A0073000000010072080039150D00010C005604000004005209000039150D00010C00560400000500520A000039150D00010C00560400000600520B000039150D00010C00560400000700520C000039150C00010B005601000001004201003A151700011600520800780000BA110B000100FFFF0500520D002811000000
+  SourceCode: >-
+    name AZDolanSpringsZekeScript;
+
+
+    // Door Locking Stuff
+
+    int bInit;
+
+
+    int bLocked;
+
+    int bGetOut;
+
+
+    ref rPackage;
+
+    ref rCell;
+
+    ref rDoorREF;
+
+
+    ref rKey;
+
+
+    GameMode {
+        // Door Locking Stuff
+        if (bInit) {
+            ref rCurrentPackage = GetCurrentStablePackage();
+
+            if (rCurrentPackage == rPackage) {
+                // Have actor try to kick player out if they need to leave.
+                if ((GameHour >= 8 && GameHour < 20) && !bGetOut) {
+                    SetPublic(rCell, 0);
+                    bGetOut = 1;
+                }
+            }
+        }
+    }
+
+
+    // This is only triggered by the door locking activator during initialization
+
+    OnTriggerEnter::AZDolanSpringsActivatorZekeDoorLockerREF {
+        rPackage = AZDolanSpringsZekeHousePackage;
+        rCell = AZDolanSpringsHomeINT05;
+        rDoorREF = AZDolanSpringsZekeHouseDoorREF;
+
+        rKey = AZKeyDolanSpringsZeke;
+
+        bInit = 1;
+
+        AZDolanSpringsActivatorZekeDoorLockerREF.EnterTrigger(PlayerREF);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInit
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLocked
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGetOut
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rPackage
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCell
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rDoorREF
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rKey
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCurrentPackage
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rCurrentPackage_1
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 5
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 6
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 8
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000038:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02C481:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01D515:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014528:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010DBC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02C484:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

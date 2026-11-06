@@ -1,0 +1,37 @@
+FormKey: 006E2B:NovaArizona.esm
+EditorID: AZHeadSerratusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C9000040676161800021000530B006A6970206C6E206E76736507004C6216000010000B0003001601000001007201003A151D00011C005202007800008B1011000200FFFF0500520100FFFF040042012880162300021B00580000A51111000200FFFF0500520300FFFF0400421542010407004CCA000000A21115000300FFFF0500520300FFFF04004215FFFF04004201A31115000300FFFF0500520300FFFF04004219FFFF04004201811608000107004C2301000080162300021B00580000A51111000200FFFF0500520300FFFF0400421642010407004C23010000A21115000300FFFF0500520300FFFF04004216FFFF04004201A31115000300FFFF0500520300FFFF04004219FFFF0400420139150C00010B005601030007004201003A151F00011E00520400780000A52713000100FFFF0D0053080053657272617475732811000000
+  SourceCode: >-
+    name AZHeadSerratusScript;
+
+
+    OnAdd::Player {
+        // Explode Serratus's head
+        AZSerratusREF01.Kill(Player, 1);
+
+        if (GetObjectiveDisplayed(AZMalpaisBountyQuest, 21) == 1) {
+            SetObjectiveCompleted(AZMalpaisBountyQuest, 21, 1);
+            SetObjectiveDisplayed(AZMalpaisBountyQuest, 25, 1);
+        } else if (GetObjectiveDisplayed(AZMalpaisBountyQuest, 22) == 1) {
+            SetObjectiveCompleted(AZMalpaisBountyQuest, 22, 1);
+            SetObjectiveDisplayed(AZMalpaisBountyQuest, 25, 1);
+        }
+
+        AZMalpaisBountyQuest.iSerratusDead = 1;
+        AZSerratusREF.SetFullNameAlt("Serratus");
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02F085:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006E1C:NovaArizona.esm

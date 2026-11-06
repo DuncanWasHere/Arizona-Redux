@@ -1,0 +1,69 @@
+FormKey: 01BB37:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He was a difficult person to work with even before Wally was killed.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He is trying to be a good person, but trying might not be enough for anybody here anymore.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't hate him, though. He tried his damnedest to keep his temper when near Evelina. He hates when she cries.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776317
+Choices:
+- 01BA81:NovaArizona.esm
+- 01BA82:NovaArizona.esm
+- 01BA83:NovaArizona.esm
+- 01BA84:NovaArizona.esm
+- 01BA85:NovaArizona.esm
+- 01BA86:NovaArizona.esm
+- 01BA87:NovaArizona.esm
+- 01BA88:NovaArizona.esm
+- 01BA89:NovaArizona.esm
+- 01BA8A:NovaArizona.esm
+- 01BA8B:NovaArizona.esm
+- 01BA8C:NovaArizona.esm
+- 01BA8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073060002002031
+  SourceCode: Set AZFreeformHaven.EvelinaMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+Prompt: Job.

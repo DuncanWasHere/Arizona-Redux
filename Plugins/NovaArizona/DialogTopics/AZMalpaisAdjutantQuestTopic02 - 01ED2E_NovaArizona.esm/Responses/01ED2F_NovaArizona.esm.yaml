@@ -1,0 +1,51 @@
+FormKey: 01ED2F:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616B20
+    UseEmotionAnimation: True
+    Unused3: 0x752061
+  ResponseText: No, that's not how it works. Sedonus is a legate. Noctis is a prime, not even a decanus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616B20
+    UseEmotionAnimation: True
+    Unused3: 0x752061
+  ResponseText: Sedonus can do anything he wants, and if he decides that some Legionary or slave or Liberti needs to be broken, then it's their time to be broken.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616B20
+    UseEmotionAnimation: True
+    Unused3: 0x752061
+  ResponseText: That is the only law that matters.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+Choices:
+- 01ED30:NovaArizona.esm
+- 01ED31:NovaArizona.esm
+- 01ED32:NovaArizona.esm
+- 01ED33:NovaArizona.esm
+- 01ED34:NovaArizona.esm
+- 01ED35:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You are aware that Noctis is a man, right?

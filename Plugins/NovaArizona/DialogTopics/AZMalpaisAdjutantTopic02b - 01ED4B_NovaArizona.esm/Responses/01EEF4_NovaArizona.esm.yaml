@@ -1,0 +1,39 @@
+FormKey: 01EEF4:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: 01ED4D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He is a violent and brutal man. I met him once, in the Utah.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He is what Legion commanders aspire to be, and I have no dobut that he will lead us to victory at the Dam.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+Choices:
+- 01ED4A:NovaArizona.esm
+- 01ED4B:NovaArizona.esm
+- 01ED41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Yes, Lanius.

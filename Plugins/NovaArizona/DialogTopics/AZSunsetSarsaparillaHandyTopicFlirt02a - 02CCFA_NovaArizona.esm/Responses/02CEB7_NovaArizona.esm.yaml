@@ -1,0 +1,42 @@
+FormKey: 02CEB7:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 02CD1E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{genuinely surprised and flattered}Really? You mean..? I guess I hadn't even considered..."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{sheepish}Ahem. I know I don't look it, but I'm quite old. I could be your great great great great grandmother. I really doubt you want that."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsSex
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CCFC:NovaArizona.esm
+- 02CCFD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Stimulation and pleasure isn't just about having the right tool. You need a man who knows how to use it. I'm very, very knowledgable.

@@ -1,0 +1,62 @@
+FormKey: 033B59:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know, and I don't want to know. Nothing good can come from digging into this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: All I know is that he's gone, we're down another pair of hands, and we have no one who can leave town anymore.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If he comes back, I'm going to slap him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But he won't.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+Choices:
+- 00DEED:NovaArizona.esm
+- 033B40:NovaArizona.esm
+- 00EBA4:NovaArizona.esm
+- 033B3D:NovaArizona.esm
+- 033B3E:NovaArizona.esm
+- 033B3F:NovaArizona.esm
+- 033B44:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why would the Frumentarii want your brother dead?

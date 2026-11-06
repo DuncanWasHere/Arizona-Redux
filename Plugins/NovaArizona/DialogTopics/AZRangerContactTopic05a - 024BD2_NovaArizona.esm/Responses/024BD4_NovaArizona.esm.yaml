@@ -1,0 +1,36 @@
+FormKey: 024BD4:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: 024BD3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fine. Talk.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 45
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+Choices:
+- 024BD8:NovaArizona.esm
+- 024BDB:NovaArizona.esm
+- 024BDD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You could track me down and kill me even if you let me go. Give me a chance to say my piece.

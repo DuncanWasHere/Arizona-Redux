@@ -1,0 +1,55 @@
+FormKey: 013F1D:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Does that put you off? You must not be from around here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legionaries are some of my most consistent customers. Sure, they're rude, they have no manners, but they always pay. That's good enough for me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Besides, those boys stop being scary once you've seen one with his mask off, gorging himself on pie.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744965
+Choices:
+- 013F09:NovaArizona.esm
+- 013F13:NovaArizona.esm
+- 013F0B:NovaArizona.esm
+- 013F0C:NovaArizona.esm
+- 013F0D:NovaArizona.esm
+- 013F12:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you serve Legionaries here?

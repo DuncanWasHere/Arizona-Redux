@@ -1,0 +1,47 @@
+FormKey: 0175B2:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You want me to uncritically take Dominicus's word for it? I mean, did you see the dead bodies?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Jesus, I can still smell the corpses. Did you see the mass grave at the south end of town?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: The Legion butchered this place, and for what? Two Rangers launching a rebellion? That can't be justified at all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0175B6:NovaArizona.esm
+- 0175B7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Dominicus was right, and he deserves credit for rooting out subversion and restoring order.

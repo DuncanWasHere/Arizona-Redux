@@ -1,0 +1,42 @@
+FormKey: 01ED48:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They're Caesar's chosen, those loyal and skilled enough to operate outside the hierarchia. They report only to him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I can't say I like the fact that they aren't subject to the powers of a legate, but they're useful at least.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+Choices:
+- 01ED45:NovaArizona.esm
+- 01ED46:NovaArizona.esm
+- 01ED41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the Frumentarii.

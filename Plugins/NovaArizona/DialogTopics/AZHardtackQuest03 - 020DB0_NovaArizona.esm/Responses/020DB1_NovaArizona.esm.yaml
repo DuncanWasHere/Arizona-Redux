@@ -1,0 +1,42 @@
+FormKey: 020DB1:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You do? That's great! Let's hear it!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766367
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 1
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 1
+Choices:
+- 020DB2:NovaArizona.esm
+- 020DB4:NovaArizona.esm
+- 020DB6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've got that recipe for you.

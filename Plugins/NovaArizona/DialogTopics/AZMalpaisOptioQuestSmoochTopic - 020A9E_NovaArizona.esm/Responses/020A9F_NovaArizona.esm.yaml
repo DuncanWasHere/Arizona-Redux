@@ -1,0 +1,86 @@
+FormKey: 020A9F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x706F72
+    UseEmotionAnimation: True
+    Unused3: 0x6D616E
+  ResponseText: Give me that!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x706F72
+    UseEmotionAnimation: True
+    Unused3: 0x6D616E
+  ResponseText: You've done well to bring this to my attention. I'll contact the garrison and have the cave expunged.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This, of course, deserves some compensation.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100797085
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000A2110F0003007203006E3E0000006E01000000
+  SourceCode: >-
+    Player.RemoveItem AZSmoochCannister 1
+
+    SetObjectiveCompleted AZBrushQuest02 62 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020A9D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E500000001C00010002100A0002007203006E3C0000003B12130003007204006E010000007A0000000000001040
+  SourceCode: >-
+    SetStage AZBrushQuest02 80
+
+    Player.AddItem MoneyLegion1 60
+
+    AddReputationExact RepNVCaesarsLegion 1 4
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: A drug cartel to the south of here at Mount Tipton gave me this to poison Malpais.

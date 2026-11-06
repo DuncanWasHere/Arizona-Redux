@@ -1,0 +1,41 @@
+FormKey: 020BAC:NovaArizona.esm
+EditorID: AZDolanSpringsNicodemusDogPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 229
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+- AllowIdleChatter
+Flags:
+  MutagenObjectType: PackageTravel
+  UnusedFlags: 5
+Unused2: 37250
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+IdleAnimations:
+  AnimationCount: 0x01
+  Animations:
+  - 16AEA8:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

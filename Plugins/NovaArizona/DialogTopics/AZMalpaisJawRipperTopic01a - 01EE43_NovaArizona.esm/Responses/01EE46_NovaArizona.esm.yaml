@@ -1,0 +1,31 @@
+FormKey: 01EE46:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: The children will hunt a Brahmin. They'll starve themselves for three days and then butcher it in the name of Mars.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01EE43:NovaArizona.esm
+- 01EE44:NovaArizona.esm
+- 01EE45:NovaArizona.esm
+- 01EE41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's a rite of Mars?

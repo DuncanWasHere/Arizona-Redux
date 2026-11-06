@@ -1,0 +1,33 @@
+FormKey: 00FE6C:NovaArizona.esm
+FormVersion: 15
+Quest: 00F50D:NovaArizona.esm
+PreviousInfo: 00FE6B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I need no help, Profligate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724241
+Choices:
+- 00F563:NovaArizona.esm
+- 00F564:NovaArizona.esm
+- 00F565:NovaArizona.esm
+- 00F566:NovaArizona.esm
+- 00F567:NovaArizona.esm
+- 00F568:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you want help being freed?

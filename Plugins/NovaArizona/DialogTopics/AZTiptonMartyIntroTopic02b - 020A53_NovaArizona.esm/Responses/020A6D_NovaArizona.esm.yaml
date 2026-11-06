@@ -1,0 +1,51 @@
+FormKey: 020A6D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In testing, well over 90% by the third use. Very high addiction rate. Niemann was also interested in the rate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785997
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+Choices:
+- 020A52:NovaArizona.esm
+- 020A53:NovaArizona.esm
+- 020A54:NovaArizona.esm
+- 020A55:NovaArizona.esm
+- 020A56:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E41000000
+  SourceCode: Player.RewardXP 65
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the addiction rate for this on humans? Must be high. In the 90 percent range.
+ActorValuePerk: 0004B5:FalloutNV.esm

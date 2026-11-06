@@ -1,0 +1,40 @@
+FormKey: 00E0FF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: 00E0FE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes, although he could have been a spirit and not a man. But he seemed familiar somehow.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720528
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 6
+  RunOnType: Target
+Choices:
+- 00E0CB:NovaArizona.esm
+- 00E0CC:NovaArizona.esm
+- 00E0CD:NovaArizona.esm
+- 00E0D2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There was someone following you?

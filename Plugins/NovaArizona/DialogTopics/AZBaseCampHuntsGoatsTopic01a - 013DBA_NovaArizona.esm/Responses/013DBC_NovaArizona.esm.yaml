@@ -1,0 +1,49 @@
+FormKey: 013DBC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Beauty is appreciated by Mars. It abates his desire for destruction to see works of art in his name.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: A much-needed boon ahead of our march on Hoover Dam.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Plus, the other Legionaries think they're neat, and if Caesar doesn't care, neither do I.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744517
+Choices:
+- 013DBB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: But, it's anti-Legion graffiti.

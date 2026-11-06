@@ -1,0 +1,37 @@
+FormKey: 00D0A8:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x3E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I won't begin to speculate on the matter of his current predicament, though it is likely well deserved. Addicts are slothful and unreliable.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x3E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I assume that you at least have the package that we agreed to?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721587
+Choices:
+- 00D0A9:NovaArizona.esm
+- 00D0AA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

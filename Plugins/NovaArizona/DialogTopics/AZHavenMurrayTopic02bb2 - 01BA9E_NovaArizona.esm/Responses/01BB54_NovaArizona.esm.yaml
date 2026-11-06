@@ -1,0 +1,50 @@
+FormKey: 01BB54:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm trying, I am. I'm not really as political as Ripley wants me to be. It's hard for me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No one's a cog in the machine and everyone's free to be as they are, I know that, but I don't understand what he wants to do beyond that. Sorry.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 01BA93:NovaArizona.esm
+- 01BA99:NovaArizona.esm
+- 01BAC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073090002002031
+  SourceCode: Set AZFreeformHaven.RipleyMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+Prompt: I don't think you've answered my question yet.

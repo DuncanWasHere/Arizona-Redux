@@ -1,0 +1,47 @@
+FormKey: 01CB47:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x79626F
+    UseEmotionAnimation: True
+    Unused3: 0x742061
+  ResponseText: You would like to venture back across the river and slaughter the Profligates that harass us? Fine by me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x79626F
+    UseEmotionAnimation: True
+    Unused3: 0x742061
+  ResponseText: Not that you needed my permission, Dissolute. Go take your shot. Come back when you've made your kill.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688606
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0A000000
+  SourceCode: SetStage AZCampWillowRangerStationQuest 10
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA9A:NovaArizona.esm
+Prompt: I could deal with them for you.

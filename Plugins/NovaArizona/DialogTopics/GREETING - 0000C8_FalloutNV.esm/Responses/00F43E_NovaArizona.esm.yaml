@@ -1,0 +1,32 @@
+FormKey: 00F43E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sorry, I can't talk right now. I'm on the clock. Maybe come back in a week?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768140
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInCell
+  FirstParameter: 100780144
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,18 @@
+FormKey: 0199C9:NovaArizona.esm
+EditorID: AZGreenwayRepair02Message
+FormVersion: 15
+Description: The junction box is largely intact, and repairing it shouldn't be too hard as long as you have a significant amount of technological know-how. (Repair 75 or higher required)
+Name: Greenway Junction Box
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Leave It Alone
+- Text: Run the Repair
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 75
+    Function: GetActorValue
+    FirstParameter: 39
+- Text: Repair With Parts
+- Text: Try to Bypass the Junction Box (Science)

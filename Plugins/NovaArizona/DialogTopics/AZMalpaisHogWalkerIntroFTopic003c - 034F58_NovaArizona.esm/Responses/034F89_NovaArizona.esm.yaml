@@ -1,0 +1,47 @@
+FormKey: 034F89:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah, well, I am. Screw you!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Actually, not many around here see it that way. They say that killing from a distance, or by surprise, is cowardly. Effeminate even.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 034F59:NovaArizona.esm
+- 034F5A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000100420120
+  SourceCode: AZMalpaisSniperQuest.iEsteemCounter -= 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+Prompt: I see. A very *special* rank for a very *special* Legionary!

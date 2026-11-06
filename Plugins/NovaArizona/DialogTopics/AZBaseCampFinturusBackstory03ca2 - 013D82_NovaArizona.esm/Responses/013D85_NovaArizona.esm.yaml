@@ -1,0 +1,30 @@
+FormKey: 013D85:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x732072
+    UseEmotionAnimation: True
+    Unused3: 0x207765
+  ResponseText: I do. And so does Caesar. And soon, we will not have to say it. Everyone will know it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D78:NovaArizona.esm
+- 013D7B:NovaArizona.esm
+- 013D86:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: If you say so.

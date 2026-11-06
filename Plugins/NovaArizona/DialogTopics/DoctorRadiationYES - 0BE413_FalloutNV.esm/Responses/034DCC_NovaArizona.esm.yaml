@@ -1,0 +1,50 @@
+FormKey: 034DCC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x736372
+    UseEmotionAnimation: True
+    Unused3: 0x206974
+  ResponseText: Make a fist for me while I find a vein.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E1E0000001C00010052100A0002007203006E19000000
+  SourceCode: >-
+    setstage VDoctors 30
+
+    Player.RemoveItem MoneyLegion1 25
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CE959:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm

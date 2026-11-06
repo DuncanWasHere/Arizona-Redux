@@ -1,0 +1,29 @@
+FormKey: 0294D7:NovaArizona.esm
+EditorID: AZGOMMinnieScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00AD000000000080163800023000580000A51111000200FFFF0500520100FFFF04004202580000A41111000200FFFF0500520100FFFF04004202150207004C7A000000A31115000300FFFF0500520100FFFF04004202FFFF0400420080161300020B0056010100090042010407004CCE00000039150C00010B00560101000A00420000A31115000300FFFF0500520100FFFF04004208FFFF040042003A151000010F005202007800002110040000002811000000
+  SourceCode: >-
+    name AZGOMMinnieScript;
+
+
+    OnDeath {
+        if (GetObjectiveDisplayed(AZGOMAssassinationQuest, 2) && !GetObjectiveCompleted(AZGOMAssassinationQuest, 2)) {
+            SetObjectiveDisplayed(AZGOMAssassinationQuest, 2, 0);
+        }
+
+        if (AZGOMAssassinationQuest.bDoOnce == 1) {
+            AZGOMAssassinationQuest.bMinnieMurder = 0;
+            SetObjectiveDisplayed(AZGOMAssassinationQuest, 8, 0);
+            AZGOMChickHadleyREF.Enable();
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F702:NovaArizona.esm

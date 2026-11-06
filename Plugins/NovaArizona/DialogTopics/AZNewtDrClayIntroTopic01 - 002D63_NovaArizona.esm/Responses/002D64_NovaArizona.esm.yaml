@@ -1,0 +1,50 @@
+FormKey: 002D64:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x63746F
+    UseEmotionAnimation: True
+    Unused3: 0x65204C
+  ResponseText: Just an old saying.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: Enough about that. What do you want, Come-from-away?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x746861
+    UseEmotionAnimation: True
+    Unused3: 0x617427
+  ResponseText: I'm a bit busy at the moment.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 002D65:NovaArizona.esm
+- 00918C:NovaArizona.esm
+- 00918E:NovaArizona.esm
+- 0091B1:NovaArizona.esm
+- 0050EC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: '"Gum... You?" What does that mean?'

@@ -1,0 +1,42 @@
+FormKey: 01B9EB:NovaArizona.esm
+FormVersion: 15
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There is a colony beneath us that went hostile five years ago. I'm not sure why, but the ants have been particularly aggressive for the past two months.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Perhaps, it has something to do with the Chainway's collapse.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B988:NovaArizona.esm
+- 01B989:NovaArizona.esm
+- 01B98A:NovaArizona.esm
+- 01B98C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Ant attacks?

@@ -1,0 +1,56 @@
+FormKey: 024B2B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: All available evidence indicates that Alba Nox is responsible for tampering with the weapons. To what end, I'm not sure.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: It's possible that he is acting out of some misguided desire to force a conflict between the Legion and the Confederacy, but I cannot be sure.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Look through his quarters, find evidence, and return to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0F000000
+  SourceCode: SetStage AZBigStopAhigaQuest01 15
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: I'm interested. What do you need me to do?

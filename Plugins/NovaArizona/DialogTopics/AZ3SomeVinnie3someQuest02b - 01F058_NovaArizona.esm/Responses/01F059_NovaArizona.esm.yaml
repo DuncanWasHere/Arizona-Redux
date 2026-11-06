@@ -1,0 +1,40 @@
+FormKey: 01F059:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x7C2049
+    UseEmotionAnimation: True
+    Unused3: 0x727072
+  ResponseText: Heh, you're a smart one.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x7C2049
+    UseEmotionAnimation: True
+    Unused3: 0x727072
+  ResponseText: I want the company to get into the people business. Enzo fights me on it every time I bring it up, the prick.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 01F058:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I wanted to hear out your idea.

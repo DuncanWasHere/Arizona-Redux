@@ -1,0 +1,45 @@
+FormKey: 01B9F7:NovaArizona.esm
+FormVersion: 15
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Terrorism? How can the cause of freedom and liberation be terrorism?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I can tell you that none of the people in Big Stop felt terror at what we did.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B98F:NovaArizona.esm
+- 01B990:NovaArizona.esm
+- 01B993:NovaArizona.esm
+- 01B994:NovaArizona.esm
+- 01B995:NovaArizona.esm
+- 01B997:NovaArizona.esm
+- 01B98C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Just because the Legion is brutal doesn't mean you should resort to terrorism.

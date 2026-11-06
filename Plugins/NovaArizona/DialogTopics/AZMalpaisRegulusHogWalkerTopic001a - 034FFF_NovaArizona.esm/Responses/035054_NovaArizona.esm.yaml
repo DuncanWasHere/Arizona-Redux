@@ -1,0 +1,60 @@
+FormKey: 035054:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You mean like when I do my impression of him squealing like a little pig?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Pig sounds}Weee! Weeeee! Hahahaha!'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He's not fit to be a legionary. He shouldn't even fucking be alive.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You think you can barge into our camp and tell us what to do with him? My ass.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+Choices:
+- 034FFE:NovaArizona.esm
+- 034FFF:NovaArizona.esm
+- 035000:NovaArizona.esm
+- 035002:NovaArizona.esm
+- 035003:NovaArizona.esm
+- 035009:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, it really hurts his feelings. So if you could just stop, please, that'd be great.

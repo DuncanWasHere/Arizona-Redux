@@ -1,0 +1,38 @@
+FormKey: 01D79F:NovaArizona.esm
+MajorRecordFlagsRaw: 536870912
+EditorID: AZFiltrum
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x20000000
+ObjectBounds:
+  First: -3, -3, 0
+  Second: 3, 3, 13
+Name:
+  TargetLanguage: English
+  Value: Filtrum
+Model:
+  File: AZNovaArizona\Clutter\Health\AZAphrodisiac.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_mother_darkness.dds
+EquipmentType: Chems
+Flags:
+- Medicine
+ConsumeSound: 07DD2B:FalloutNV.esm
+Effects:
+- BaseEffect: 01515F:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 120
+    ActorValue: Charisma
+- BaseEffect: 015162:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 120
+    ActorValue: Luck
+- BaseEffect: 032DE5:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 120
+    ActorValue: Strength
+MajorFlags:
+- 0x20000000

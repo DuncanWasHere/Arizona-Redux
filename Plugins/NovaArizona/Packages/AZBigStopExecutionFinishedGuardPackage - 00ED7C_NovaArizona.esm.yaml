@@ -1,0 +1,45 @@
+FormKey: 00ED7C:NovaArizona.esm
+EditorID: AZBigStopExecutionFinishedGuardPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- DefensiveCombat
+- NoWarnAttackBehavior
+Unused: 105
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 25970
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 008F22:NovaArizona.esm
+  CountOrDistance: 128
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100789369
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100700034
+  SecondParameter: 7
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

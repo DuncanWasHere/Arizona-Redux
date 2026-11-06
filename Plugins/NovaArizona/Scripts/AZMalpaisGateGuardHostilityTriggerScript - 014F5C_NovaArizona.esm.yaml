@@ -1,0 +1,33 @@
+FormKey: 014F5C:NovaArizona.esm
+EditorID: AZMalpaisGateGuardHostilityTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A006C000000010072010080161D0002150058000038100B000100FFFF050052020042000407004C66000000361009000100FFFF050052020039150C00010B0056010300140042010080161A000212005204007800002E10040000002842010407004C90000000221002000000BB110200000011000000
+  SourceCode: >-
+    name AZMalpaisGateGuardHostilityTriggerScript;
+
+
+    OnTriggerEnter::Player {
+    	if (GetQuestRunning(AZMalpaisSecurity) == 0) {
+    		StartQuest(AZMalpaisSecurity);
+    		AZFreeformMalpais.InCamp = 1;
+    	}
+
+    	if (AZMalpaisOptioREF.GetDead() == 1) {
+    		Disable();
+    		MarkForDelete();
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341E5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004BC2:NovaArizona.esm

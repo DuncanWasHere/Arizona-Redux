@@ -1,0 +1,42 @@
+FormKey: 008636:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: 008635:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206E6F
+    UseEmotionAnimation: True
+    Unused3: 0x65206D
+  ResponseText: Well, then, come back when you do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 3200
+  Function: GetItemCount
+  FirstParameter: 15
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 020DBF:NovaArizona.esm
+- 00875A:NovaArizona.esm
+- 00875B:NovaArizona.esm
+- 00B3CC:NovaArizona.esm
+- 008632:NovaArizona.esm
+- 008624:NovaArizona.esm
+- 008662:NovaArizona.esm
+- 00B3BF:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I am interested, but I don't have the money.

@@ -1,0 +1,50 @@
+FormKey: 020A7B:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Albuquerque. Ol' ABQ. Grew up among some gangs on the north side of the the Rio Grande.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Spent a little too long too close to some radiation barrels. Woke up as a ghoul the next day.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That sucked. Couldn't get high anymore, so I spent a decade learning how to fix that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785997
+Choices:
+- 024D53:NovaArizona.esm
+- 020A60:NovaArizona.esm
+- 020A61:NovaArizona.esm
+- 020A62:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where are you from?

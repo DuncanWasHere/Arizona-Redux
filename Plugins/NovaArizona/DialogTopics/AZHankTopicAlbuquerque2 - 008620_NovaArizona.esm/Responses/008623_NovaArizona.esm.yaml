@@ -1,0 +1,42 @@
+FormKey: 008623:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: 008622:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204F6E
+    UseEmotionAnimation: True
+    Unused3: 0x696E67
+  ResponseText: Yeah, it isn't. Maybe, you're one of the good ones.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 020DBF:NovaArizona.esm
+- 00875A:NovaArizona.esm
+- 00875B:NovaArizona.esm
+- 00B3CC:NovaArizona.esm
+- 008632:NovaArizona.esm
+- 008624:NovaArizona.esm
+- 008662:NovaArizona.esm
+- 00B3BF:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Makes sense to me. Albuquerque isn't that hard to say once you know how.

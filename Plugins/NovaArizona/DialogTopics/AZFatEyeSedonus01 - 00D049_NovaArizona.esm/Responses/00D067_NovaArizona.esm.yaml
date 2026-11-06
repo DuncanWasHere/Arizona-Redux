@@ -1,0 +1,40 @@
+FormKey: 00D067:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Jesus, keep your voice down. Why is she naming me in all of this?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100716610
+  SecondParameter: 4
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D04A:NovaArizona.esm
+- 00D04B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Jem sent me, it's about Sedonus.

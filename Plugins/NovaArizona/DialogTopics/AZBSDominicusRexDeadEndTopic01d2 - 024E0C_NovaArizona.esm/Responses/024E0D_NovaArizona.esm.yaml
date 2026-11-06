@@ -1,0 +1,31 @@
+FormKey: 024E0D:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x642069
+    UseEmotionAnimation: True
+    Unused3: 0x27742E
+  ResponseText: I'm not a patient man.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 024DF1:NovaArizona.esm
+- 024DF3:NovaArizona.esm
+- 024DF4:NovaArizona.esm
+- 024DF7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: My mistake.

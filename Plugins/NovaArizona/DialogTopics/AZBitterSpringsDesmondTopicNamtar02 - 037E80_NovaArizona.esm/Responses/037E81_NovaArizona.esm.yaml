@@ -1,0 +1,39 @@
+FormKey: 037E81:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x75276C
+    UseEmotionAnimation: True
+    Unused3: 0x642074
+  ResponseText: The only people who come here are the lost and searching.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You'll find the cemetary in the passage just west of here. My condolences. That massacre was a tragedy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 037E82:NovaArizona.esm
+- 037E83:NovaArizona.esm
+- 037E84:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What gave it away?

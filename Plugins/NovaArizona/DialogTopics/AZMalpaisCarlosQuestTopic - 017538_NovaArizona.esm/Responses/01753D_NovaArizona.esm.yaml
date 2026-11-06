@@ -1,0 +1,58 @@
+FormKey: 01753D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 01753C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666679
+    UseEmotionAnimation: True
+    Unused3: 0x735C41
+  ResponseText: Family business. My dad was a slaver, pulled me into it too. Been doing the job for 15 years.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: We weren't cut out for living in Two-Sun. Shit's too boring, too easy. No way to get rich.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: Abuelo always said Two-Sun used to be a shithole, but I never saw it. Place is nothing but traders and wannabes.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758839
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100758634
+  SecondParameter: 40
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100758634
+  SecondParameter: 40
+Choices:
+- 017538:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How did you become a slaver?

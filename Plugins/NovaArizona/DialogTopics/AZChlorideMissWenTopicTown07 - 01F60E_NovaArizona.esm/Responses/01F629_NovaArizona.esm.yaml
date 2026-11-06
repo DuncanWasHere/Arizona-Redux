@@ -1,0 +1,68 @@
+FormKey: 01F629:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F628:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My family's lived here forever. At one point, a great great great great grandmother of mine ran the town's Historical Society.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's not to say everyone stayed here. It's a small town. Some of 'em got bored and left. I can't blame them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know one of them hit it big in Vegas, before the war. Another got arrested in Kingman - I'd rather not talk about him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A great uncle of mine actually started a raider band around here. I heard he got killed by the Legion, or maybe it was Rangers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sorry, I'm sure this is all strange to you. It's just our tradition. My pa kept a book that tracked our family history.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797368
+Choices:
+- 01F60F:NovaArizona.esm
+- 01F610:NovaArizona.esm
+- 01F611:NovaArizona.esm
+- 01F612:NovaArizona.esm
+- 01F613:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How do you know so much about this town's history?

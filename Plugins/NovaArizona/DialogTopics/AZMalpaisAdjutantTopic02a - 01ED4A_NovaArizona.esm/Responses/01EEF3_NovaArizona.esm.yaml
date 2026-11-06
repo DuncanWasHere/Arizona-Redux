@@ -1,0 +1,42 @@
+FormKey: 01EEF3:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: 01ED4C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He is the greatest man to ever emerge from the Seven Tribes.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He has borne witness to Caesar's divine vision and is more committed to it than anyone else in the whole of the Legion.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+Choices:
+- 01ED4A:NovaArizona.esm
+- 01ED4B:NovaArizona.esm
+- 01ED41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Sedonus.

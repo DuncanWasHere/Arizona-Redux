@@ -1,0 +1,28 @@
+FormKey: 00F05B:NovaArizona.esm
+FormVersion: 15
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: 31 denarii? That isn't right. I am a responsible citizen, and I paid my tribute previously.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+Choices:
+- 00EC6C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You owe 31 denarii in back taxes to the provincial government.

@@ -1,0 +1,47 @@
+FormKey: 01EDB8:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: I took a boat to Newt about three months ago. That was before the Cult started recruiting in Newt.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: They were looking for voluntaria. I told them that I truly believed in Caesar's light and was made and Aspirant.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They asked what I was best suited for, so I told them a woman's place was in the home. They had me teach the children.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EDB9:NovaArizona.esm
+- 01EDBB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How did you find yourself in this position?

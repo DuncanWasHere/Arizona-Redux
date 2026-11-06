@@ -1,0 +1,38 @@
+FormKey: 036E8A:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Man, don't bullshit me. I know the Mark of Fucking Caesar when I see it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C7368
+    UseEmotionAnimation: True
+    Unused3: 0x2E2054
+  ResponseText: Tell me where you got it from.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+Choices:
+- 0130E0:NovaArizona.esm
+- 036E8B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What, this old thang? It's just jewelry.

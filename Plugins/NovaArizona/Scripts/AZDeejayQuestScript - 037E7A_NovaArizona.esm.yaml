@@ -1,0 +1,200 @@
+FormKey: 037E7A:NovaArizona.esm
+EditorID: AZDeejayQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 24
+    VariableCount: 15
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000002D020000E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452020024E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452030024E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452040024E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452050024E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452060024E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452070024E9152300030F00530A004F6E416374697661746505005201000E00530500466972737452080024FC270D0003007209006E01000000720A00FC270D0003007209006E01000000720B00FC270D0003007209006E01000000720C00FC270D0003007209006E01000000720D00FC270D0003007209006E01000000720E007C31120004006E01000000720F006E00000000721000E9152500021F00531A0053686F774F66663A4F6E446973706C61794F626A6563746976650500521100F727120004007212006E010000007213006E64000000F727120004007212006E010000007214006E64000000F727120004007212006E010000007215006E0A000000F727120004007212006E010000007216006E1E000000F727120004007212006E010000007217006E64000000F727120004007212006E010000007218006E5F00000011000000
+  SourceCode: >-
+    scn AZDeejayQuestScript
+
+
+    short bHooverDamSoldierSpoken
+
+    short bGarcettiSpoken
+
+
+    int bNotoriety
+
+    int bTrust
+
+
+    short bBackstory1Started 
+
+    short bBackstory1Heard	;Deejay revealed she's a Twin Mother
+
+    short bBackstory2Setup
+
+    short bBackstory2FactionChecked
+
+    short bBackstory2SafetyAsked
+
+    short bBackstory2Heard	;Deejay revealed Dog Town past
+
+    short bBackstory3	;Deejay revealed her betrayal
+
+
+    begin gamemode
+
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( NVCCPlayerStorageActivatorREF )
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( VFSSilverRushFriskingTriggerREF )
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( TopsFriskingTriggerREF )
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( TopsFriskingHoldoutTriggerREF )
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( VUltraLuxeFriskingTriggerREF )
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( VUltraLuxeFriskingHoldoutTriggerREF )
+
+    SetEventHandler "OnActivate" AZDeejayOnActivateUDF "First" :: ( GomorrahCasinoEnterTriggerREF )
+
+    SetOnDialogTopicEventHandler AZDeejayOnDialogTopicUDF 1 RazzArmy
+
+    SetOnDialogTopicEventHandler AZDeejayOnDialogTopicUDF 1 AZMalpaisNoctisQuestTopic04a
+
+    SetOnDialogTopicEventHandler AZDeejayOnDialogTopicUDF 1 AZMidwestTowerDecanusSharptooth02
+
+    SetOnDialogTopicEventHandler AZDeejayOnDialogTopicUDF 1 AZHavenMurrayConfrontTopic08a
+
+    SetOnDialogTopicEventHandler AZDeejayOnDialogTopicUDF 1 AndersFree
+
+    SetOnCompleteQuestEventHandler 1 AZDeejayOnCompleteQuestUDF 0 VMS47
+
+    SetEventHandler "ShowOff:OnDisplayObjective" AZDeejayOnDisplayObjectiveUDF
+
+    SetOnQuestStageEventHandler AZDeejayOnquestStageUDF 1 VMS56 100
+
+    SetOnQuestStageEventHandler AZDeejayOnquestStageUDF 1 VMS13 100
+
+    SetOnQuestStageEventHandler AZDeejayOnquestStageUDF 1 AZChlorideAntibioticsQuest 10
+
+    SetOnQuestStageEventHandler AZDeejayOnquestStageUDF 1 VMS21a 30
+
+    SetOnQuestStageEventHandler AZDeejayOnquestStageUDF 1 VDialogueVegasNorth 100
+
+    SetOnQuestStageEventHandler AZDeejayOnquestStageUDF 1 AZWhiteHillsMineDialogue 95
+
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0CE20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x4F626A65637469
+    Name: bHooverDamSoldierSpoken
+  - Data:
+      Index: 2
+      Unknown: 0xA0CE20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C617444697374
+    Name: bGarcettiSpoken
+  - Data:
+      Index: 5
+      Unknown: 0x40D629120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x73746167676572
+    Name: bBackstory3
+  - Data:
+      Index: 6
+      Unknown: 0x40D529120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F777570000000
+    Name: bNotoriety
+  - Data:
+      Index: 7
+      Unknown: 0x80D529120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x75737465723031
+    Name: bBackstory1Started
+  - Data:
+      Index: 8
+      Unknown: 0xA0D529120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x75737465723031
+    Name: bBackstory1Heard
+  - Data:
+      Index: 10
+      Unknown: 0x60D529120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x75737465723031
+    Name: bTrust
+  - Data:
+      Index: 11
+      Unknown: 0xE0D529120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x79656C6C6F7774
+    Name: bBackstory2FactionChecked
+  - Data:
+      Index: 13
+      Unknown: 0x00D629120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x79656C6C6F7761
+    Name: bBackstory2SafetyAsked
+  - Data:
+      Index: 14
+      Unknown: 0xC0D529120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x79656C6C6F7766
+    Name: bBackstory2Setup
+  - Data:
+      Index: 15
+      Unknown: 0x20D629120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x79656C6C6F7761
+    Name: bBackstory2Heard
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03801E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 139B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1715B6:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1287E8:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1287E9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16569A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16569B:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 127953:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F40:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1042E3:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01ECDF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DBB6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034240:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 142A8A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F51:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 140C3C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F6E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F41:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15E480:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F8892:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 110A65:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F2429:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm

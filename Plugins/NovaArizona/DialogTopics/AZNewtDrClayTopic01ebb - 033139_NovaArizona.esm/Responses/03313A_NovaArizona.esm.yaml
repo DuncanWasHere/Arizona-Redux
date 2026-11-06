@@ -1,0 +1,47 @@
+FormKey: 03313A:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He's fine as he is. Let him come to. I can't risk the Legion asking questions about how he made such a miraculous recovery.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I appreciate the offer though. You look competent. I need you to run an errand for me, think you can do that?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100797750
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 839410
+  RunOnType: Target
+Choices:
+- 020D37:NovaArizona.esm
+- 009298:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: (Show Super Stimpack) Give him one of these, it'll wake him up.

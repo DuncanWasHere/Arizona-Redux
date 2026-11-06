@@ -1,0 +1,57 @@
+FormKey: 0062B6:NovaArizona.esm
+EditorID: AZWeapBaseballBatUnique
+FormVersion: 15
+ObjectBounds:
+  First: -3, -18, -4
+  Second: 3, 58, 4
+Name: Razorclub
+Model:
+  File: AZNovaArizona\Weapons\AZBaseballbatUnique.nif
+LargeIconFilename: Interface\Icons\PipBoyImages\Weapons\weapons_razorclub.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_baseballbat.dds
+ObjectEffect: 0062B7:NovaArizona.esm
+RepairList: 047FC3:FalloutNV.esm
+EquipmentType: MeleeWeapons
+VatsAttackName: Mauler
+ImpactDataSet: 05FD3E:FalloutNV.esm
+FirstPersonModel: 01EB38:NovaArizona.esm
+SoundBlock: 0BE3E8:FalloutNV.esm
+SoundEquip: 04451F:FalloutNV.esm
+SoundUnequip: 044520:FalloutNV.esm
+Value: 375
+Health: 400
+Weight: 3
+BaseDamage: 32
+ClipSize: 12
+AnimationType: Melee2Hand
+AnimationMultiplier: 1
+Reach: 0.6
+Flags:
+- NpcsUseAmmo
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+BaseVatsToHitChance: 30
+AttackAnimation: Default
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 2000
+OnHit: DismemberOnly
+AnimationAttackMultiplier: 1.3
+OverrideActionPoints: 25
+AttackShotsPerSec: 2.0526
+Skill: 38
+LimbDamageMult: 1
+ResistType: -1
+PowerAttackAnimationOverride: AttackCustom3Power
+StrengthReq: 4
+SkillReq: 75
+CriticalDamage: 32
+CriticalPercentMult: 1.5
+CriticalOnDeath: True
+Vats:
+  VatsSkill: 75
+  VatsDamageMult: 2.5
+  VatsAp: 35
+  VatsSilent: True
+SoundLevel: Silent

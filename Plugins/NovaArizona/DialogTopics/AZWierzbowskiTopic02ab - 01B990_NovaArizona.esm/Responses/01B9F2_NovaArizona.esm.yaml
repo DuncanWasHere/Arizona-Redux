@@ -1,0 +1,49 @@
+FormKey: 01B9F2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They were supposed to be. Cal and I chose these people to make up the unit with another Ranger.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The founding members of this community had helped us in the past. Bombs, smuggling, hiding, healing. But, only two of them chose to join, neither of whom are here anymore.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B991:NovaArizona.esm
+- 01B992:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073030002002031
+  SourceCode: Set AZFreeformHaven.CalMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+Prompt: You're the only member? Isn't the rest of this place Support Unit Hoover?

@@ -1,0 +1,43 @@
+FormKey: 00D06E:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No guts, no glory. People want to get fucked up. Hell, now that the Legion's here people are trying to get twice as high just to escape.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's good money, the war's been good for business too. With Caesar all tied up with the dam it's given us some breathing room down here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D04F:NovaArizona.esm
+- 00D050:NovaArizona.esm
+- 00D051:NovaArizona.esm
+- 00D052:NovaArizona.esm
+- 00D05F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You live like this on Legion lands?

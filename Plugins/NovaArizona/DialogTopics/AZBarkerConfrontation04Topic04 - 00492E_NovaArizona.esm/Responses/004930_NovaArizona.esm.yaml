@@ -1,0 +1,39 @@
+FormKey: 004930:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652056
+    UseEmotionAnimation: True
+    Unused3: 0x203720
+  ResponseText: The Legion are scum. The NCR might have fucked over the Rangers, but the Legion put us in that position.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Let me clear, if you're entertaining any notions of the Legion as equal to the NCR, dispel them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00494E:NovaArizona.esm
+- 00494F:NovaArizona.esm
+- 004952:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I wanted to see both sides of the issue.

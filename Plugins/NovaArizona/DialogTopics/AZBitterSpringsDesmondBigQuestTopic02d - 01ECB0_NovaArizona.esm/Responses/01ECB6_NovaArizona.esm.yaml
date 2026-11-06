@@ -1,0 +1,41 @@
+FormKey: 01ECB6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6E7443
+  ResponseText: Great! If you see her, tell her that 'No good water comes from Oak Creek'.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01ECAC:NovaArizona.esm
+- 01ECB8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0500000015000A0072010073030002002031
+  SourceCode: >-
+    SetStage AZBigStopChildSoldierQuest 5
+
+    Set AZBigStopChildSoldierQuest.LookingforNatalie to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: Okay, I'll do it.

@@ -1,0 +1,33 @@
+FormKey: 01F674:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01F58D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wife? Caesar has no wife. There is no woman who can match him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791743
+Choices:
+- 01F65A:NovaArizona.esm
+- 01F65B:NovaArizona.esm
+- 01F65C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie.> Caesar's wife is in Kingman and she's fallen ill. We're to deliver the medicine to her.

@@ -1,0 +1,47 @@
+FormKey: 024C14:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: Legionaries!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C000100161005000100720200781008000200720300720400
+  SourceCode: >-
+    AZBigStopDominicusRexREF.StartCombat player
+
+    SetEnemy PlayerFaction AZBigStopLegionFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00901D:NovaArizona.esm
+Prompt: <Attack.> I'm liberating Big Stop, right here, right now.

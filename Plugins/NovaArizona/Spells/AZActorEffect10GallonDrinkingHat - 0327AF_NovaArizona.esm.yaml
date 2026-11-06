@@ -1,0 +1,16 @@
+FormKey: 0327AF:NovaArizona.esm
+EditorID: AZActorEffect10GallonDrinkingHat
+FormVersion: 15
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 15
+    ActorValue: Health
+- BaseEffect: 161F36:FalloutNV.esm
+  Data:
+    Magnitude: 25
+    ActorValue: Dehydration
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586

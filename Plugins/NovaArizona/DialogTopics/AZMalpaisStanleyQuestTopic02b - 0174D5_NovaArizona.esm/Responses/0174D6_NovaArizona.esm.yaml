@@ -1,0 +1,47 @@
+FormKey: 0174D6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x792E20
+  ResponseText: I guess if we want to light a fire under the Legion's ass, that's the way to do it. Maybe the higher-ups will like that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x792E20
+  ResponseText: Can't imagine that the Legionaries living here are going to like that, though. What about the slaves?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174D7:NovaArizona.esm
+- 0174D8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073070002002031
+  SourceCode: set AZMalpaisJournalistQuest.bStanleyLegionDisapproval to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: The Legion's progress on rebuilding the Chainway is slow. We should focus on that.

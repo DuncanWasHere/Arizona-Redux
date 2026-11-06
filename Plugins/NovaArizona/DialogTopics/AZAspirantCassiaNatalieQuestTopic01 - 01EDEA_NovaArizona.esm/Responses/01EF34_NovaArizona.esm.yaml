@@ -1,0 +1,68 @@
+FormKey: 01EF34:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EDEC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: Well, that is a good start, but it's going to be difficult to convince the children to leave without their own cooperation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x706C65
+    UseEmotionAnimation: True
+    Unused3: 0x5A4269
+  ResponseText: The Legion's been indoctrinating these kids for years to follow authority figures.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x706C65
+    UseEmotionAnimation: True
+    Unused3: 0x5A4269
+  ResponseText: If we can get Agu to tell the children to leave, then we'll be able to get everyone out alive.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789369
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100789369
+  SecondParameter: 10
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100789369
+  SecondParameter: 20
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 15
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 20
+Choices:
+- 01EF35:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've talked to Desmond and repaired the rafts. I think we should be good.

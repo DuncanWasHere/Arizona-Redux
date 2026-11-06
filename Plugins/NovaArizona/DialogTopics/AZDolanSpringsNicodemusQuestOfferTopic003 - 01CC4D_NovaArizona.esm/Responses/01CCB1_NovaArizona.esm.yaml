@@ -1,0 +1,41 @@
+FormKey: 01CCB1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Good to hear. I hope you're ready for the dumpster dive of a lifetime!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100781095
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E01000000
+  SourceCode: SetStage AZDolanSpringsNicodemusQuest 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC27:NovaArizona.esm
+Prompt: I'll hunt down those knickknacks for you, Nic.

@@ -1,0 +1,39 @@
+FormKey: 00D196:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E5468
+    UseEmotionAnimation: True
+    Unused3: 0x6C6420
+  ResponseText: I don't know what that is, but fine. Just be quick.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721594
+Choices:
+- 00D195:NovaArizona.esm
+- 00789D:NovaArizona.esm
+- 00789F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x731102000000
+  SourceCode: showbartermenu
+Prompt: <Show Mark of Caesar.> Look, I'm not some wasteland nobody. I'll pay. Now, show me what's on the menu.

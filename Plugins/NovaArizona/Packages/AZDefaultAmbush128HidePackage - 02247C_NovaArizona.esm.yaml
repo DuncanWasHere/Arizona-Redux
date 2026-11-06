@@ -1,0 +1,42 @@
+FormKey: 02247C:NovaArizona.esm
+EditorID: AZDefaultAmbush128HidePackage
+FormVersion: 15
+Version2: 1
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageAmbush
+  Flags:
+  - HideWhileAmbushing
+Unused2: 32927
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 256
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+  Radius: 128
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+IsAmbush: True
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+  Radius: 128
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

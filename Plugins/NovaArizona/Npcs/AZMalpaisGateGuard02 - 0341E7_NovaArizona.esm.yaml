@@ -1,0 +1,167 @@
+FormKey: 0341E7:NovaArizona.esm
+EditorID: AZMalpaisGateGuard02
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Malpais Gate Guard
+Model:
+  File: marker_creature.nif
+Configuration:
+  Flags:
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1252C7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1425A7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 008C8F:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 0341E6:NovaArizona.esm
+Template: 013B79:NovaArizona.esm
+Race: 0038E5:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 01EFA7:NovaArizona.esm
+Items:
+- Item:
+    Item: 0F26ED:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0F52B6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1252C6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165748:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165760:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+Packages:
+- 014F4C:NovaArizona.esm
+Class: 127736:FalloutNV.esm
+BaseHealth: 50
+Strength: 5
+Perception: 5
+Endurance: 5
+Charisma: 5
+Intelligence: 5
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 5
+  - Key: BigGuns
+    Value: 5
+  - Key: EnergyWeapons
+    Value: 5
+  - Key: Explosives
+    Value: 5
+  - Key: Lockpick
+    Value: 5
+  - Key: Medicine
+    Value: 5
+  - Key: MeleeWeapons
+    Value: 5
+  - Key: Repair
+    Value: 5
+  - Key: Science
+    Value: 5
+  - Key: SmallGuns
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Survival
+    Value: 5
+  - Key: Unarmed
+    Value: 5
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 02242B:FalloutNV.esm
+HairLength: 0.47207862
+Eyes: 004255:FalloutNV.esm
+HairColor: '#00150E06'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x3926FD3E6DB9D53FC6E2A3BE002BA9BEDE8CCEBE09BD21C064F4FE3E98887EBE540656BF661E043F11D6553FECF666BF4C959ABF028741C0049FD03E6F9F113FD24334C048588ABEB88A19BEB3F959BF68901140B69712C0E72807409894533FAC181640AD393340B6616740CE3BA13FD07C8BC0EA93CEBFC0ADAEBFA06A63BF27BBD83FA5242D4024F0DB3F14E516C084E9CC3E18CA3AC0082CB13DF6423C40BBD73FC01CFC12C0C22449C01A1657C09D6AAD3E6A0059C01F53F7404F4213C08095E23F51988840
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+NAM5: 255
+Height: 1
+Weight: 1
+DATADataTypeState:
+- Break0

@@ -1,0 +1,41 @@
+FormKey: 01C23B:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That is natural for the Dissolute mind. I urge you to vanquish any doubts and continue your service to Caesar.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Mars's gift will make itself clear in due time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+Choices:
+- 01C200:NovaArizona.esm
+- 01C201:NovaArizona.esm
+- 01C202:NovaArizona.esm
+- 01C203:NovaArizona.esm
+- 01C204:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Maybe? I'm finding some of the concepts a little hard to grasp.

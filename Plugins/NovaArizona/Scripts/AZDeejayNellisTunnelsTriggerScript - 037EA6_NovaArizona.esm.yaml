@@ -1,0 +1,43 @@
+FormKey: 037EA6:NovaArizona.esm
+EditorID: AZDeejayNellisTunnelsTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B001A004C00000001007202001600120003000E002072020058211100002030203D3D16001900010015002058A4110A0002007203006E010000002030203D3D1C00010056100500010072020019000000190000001100000010000B001B004C00000001007202001600120003000E002072020058211100002030203D3D16001900010015002058A4110A0002007203006E010000002030203D3D1C000100561005000100720200190000001900000011000000
+  SourceCode: >-
+    scn AZDeejayNellisTunnelsTriggerScript
+
+
+    begin ontriggerenter player
+
+
+    if player.isincombat == 0
+
+    	if GetObjectiveCompleted AZDeejayQuest 1 == 0
+    		AZDeejayREF.startconversation player
+    	endif
+    endif
+
+    end
+
+
+    begin ontriggerleave player
+
+
+    if player.isincombat == 0
+
+    	if GetObjectiveCompleted AZDeejayQuest 1 == 0
+    		AZDeejayREF.startconversation player
+    	endif
+    endif
+
+    end
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E6B:NovaArizona.esm

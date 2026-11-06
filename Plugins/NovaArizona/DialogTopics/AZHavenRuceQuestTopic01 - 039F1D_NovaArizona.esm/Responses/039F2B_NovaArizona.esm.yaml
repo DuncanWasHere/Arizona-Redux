@@ -1,0 +1,44 @@
+FormKey: 039F2B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4D616C
+    UseEmotionAnimation: True
+    Unused3: 0x312E30
+  ResponseText: We can't have a loose cannon down here. That's half of the population already, so one less of those is going to be good for everyone.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x4D616C
+    UseEmotionAnimation: True
+    Unused3: 0x312E30
+  ResponseText: He has to go.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776315
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100812870
+  SecondParameter: 18
+Choices:
+- 039F1D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think we should do with Job?

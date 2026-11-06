@@ -1,0 +1,39 @@
+FormKey: 01EC7E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: 037E7D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x490F16
+    UseEmotionAnimation: True
+    Unused3: 0x930F16
+  ResponseText: Hey, there. Look, I'm pretty busy. If you're here to help, go to Gilles.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 1257541
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01EC85:NovaArizona.esm
+- 037EC7:NovaArizona.esm
+- 01EC8B:NovaArizona.esm
+- 01EC87:NovaArizona.esm
+- 01EC88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,1087 @@
+FormKey: 008A16:NovaArizona.esm
+EditorID: AZBigStopAhigaQuest01
+FormVersion: 15
+Script: 008A7D:NovaArizona.esm
+Name: Is You Is or Is You Ain't?
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Quest start
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E010000006E010000001C000100211002000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 1 1
+
+        AZAhigaWeaponShipmentREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A6A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 6
+  LogEntries:
+  - Flags: []
+    Entry: Weapons delivered
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Red Rivers section complete
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Ahiga wants help taking out Alba Nox.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007206006E080000006E01000000A3110F0003007206006E090000006E01000000A3110F0003007206006E0A0000006E010000001C0001002110020000001C0002002110020000001C0003002110020000001C0004002110020000001C000500211002000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 8 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 9 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 10 1
+
+        AZAhigaLogbookREF.enable
+
+        AZAhigaKeyREF.enable
+
+        AZAhigaToolboxREF.enable
+
+        AZAhigaScrewdriverREF.enable
+
+        AZAhigaAlbaNoxDeskREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C26:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C28:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 16
+  LogEntries:
+  - Flags: []
+    Entry: Ahiga is ready for you to go to Dominicus Rex
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0x16001900010015002058A4110A0002007206006E090000002030203D3DA3110F0003007206006E090000006E000000001900000016001900010015002058A4110A0002007206006E0A0000002030203D3DA3110F0003007206006E0A0000006E0000000019000000A3110F0003007206006E0D0000006E010000001C0001002210020000001C0002002210020000001C0003002210020000001C0004002210020000001C000500221002000000
+      SourceCode: >-
+        if GetObjectiveCompleted AZBigStopAhigaQuest01 9 == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 9 0
+        endif
+
+        if GetObjectiveCompleted AZBigStopAhigaQuest01 10 == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 10 0
+        endif
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 13 1
+
+        AZAhigaLogbookREF.disable
+
+        AZAhigaKeyREF.disable
+
+        AZAhigaToolboxREF.disable
+
+        AZAhigaScrewdriverREF.disable
+
+        AZAhigaAlbaNoxDeskREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C26:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C28:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 17
+  LogEntries:
+  - Flags: []
+    Entry: Player survived confrontation with Dominicus. Return to Ahiga.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 20
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Alba Nox has been dealt with.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 10
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EC80000001C0002002210020000001C0003002210020000001C0004002210020000001C0005002210020000001C0006002210020000001C00010052100A0002007207006E640000001C00010052100A0002007208006E64000000160014000800100020582212050001007209002030203D3D16001900040015002058A5110A0002007209006E080000002031203D3DA2110F0003007209006E020000006E01000000A3110F0003007209006E030000006E00000000A3110F0003007209006E040000006E00000000A3110F0003007209006E050000006E0000000018001900010015002058A5110A0002007209006E080000002030203D3D39100A0002007209006EFF000000190000001900000015000A007209007303000200203015000A00720A0073030002002031
+      SourceCode: >-
+        Player.RewardXP 200
+
+        AZAhigaLogbookREF.disable
+
+        AZAhigaKeyREF.disable
+
+        AZAhigaToolboxREF.disable
+
+        AZAhigaScrewdriverREF.disable
+
+        AZAhigaAlbaNoxDeskREF.disable
+
+        Player.RemoveItem AZAhigaScrewdriver 100
+
+        Player.RemoveItem AZAlbaNoxGunParts 100
+
+        if GetQuestCompleted AZBigStopAugustQuest == 0
+        	if GetObjectiveDisplayed AZBigStopAugustQuest 8 == 1
+        		SetObjectiveCompleted AZBigStopAugustQuest 2 1
+        		SetObjectiveDisplayed AZBigStopAugustQuest 3 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 4 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 5 0
+        	elseif GetObjectiveDisplayed AZBigStopAugustQuest 8 == 0
+        		SetStage AZBigStopAugustQuest 255
+        	endif
+        endif
+
+        Set AZBigStopAugustQuest.NoxHasTarget to 0
+
+        Set AZFreeformBigStop.bAlbaNoInfoGiven to 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C26:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C28:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C1E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A17:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 017560:NovaArizona.esm
+- Index: 23
+  LogEntries:
+  - Flags: []
+    Entry: Alba Nox wants you to go to Dominicus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E110000006E01000000A3110F0003007201006E100000006E01000000A3110F0003007201006E120000006E00000000A3110F0003007201006E150000006E0100000016001900010015002058A4110A0002007201006E140000002030203D3DA3110F0003007201006E140000006E0000000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBigStopAhigaQuest01 17 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 16 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 18 0
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 21 1
+
+        if GetObjectiveCompleted AZBigStopAhigaQuest01 20 == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 20 0
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 24
+  LogEntries:
+  - Flags: []
+    Entry: Dominicus Rex wants you to deal with Ahiga.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E100000006E01000000A3110F0003007201006E110000006E00000000A3110F0003007201006E120000006E00000000A3110F0003007201006E150000006E0100000016001900010015002058A4110A0002007201006E140000002030203D3DA3110F0003007201006E140000006E0000000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBigStopAhigaQuest01 16 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 17 0
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 18 0
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 21 1
+
+        if GetObjectiveCompleted AZBigStopAhigaQuest01 20 == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 20 0
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Ahiga has been dealt with.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 9
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EC80000001C0002002210020000001C0003002210020000001C0004002210020000001C0005002210020000001C0006002210020000001C00010052100A0002007207006E640000001C00010052100A0002007208006E64000000160014000E00100020582212050001007209002030203D3D16001900050015002058A5110A0002007209006E080000002031203D3DA2110F0003007209006E020000006E01000000A3110F0003007209006E030000006E00000000A3110F0003007209006E040000006E00000000A3110F0003007209006E050000006E00000000A3110F0003007209006E070000006E0000000018001900060015002058A5110A0002007209006E080000002030203D3DA2110F0003007209006E020000006E01000000A3110F0003007209006E030000006E00000000A3110F0003007209006E040000006E00000000A3110F0003007209006E050000006E00000000A3110F0003007209006E070000006E00000000A3110F0003007209006E080000006E01000000190000001900000015000A007209007303000200203015000A0072090073040002002030
+      SourceCode: >-
+        Player.RewardXP 200
+
+        AZAhigaLogbookREF.disable
+
+        AZAhigaKeyREF.disable
+
+        AZAhigaToolboxREF.disable
+
+        AZAhigaScrewdriverREF.disable
+
+        AZAhigaAlbaNoxDeskREF.disable
+
+        Player.RemoveItem AZAhigaScrewdriver 100
+
+        Player.RemoveItem AZAlbaNoxGunParts 100
+
+        if GetQuestCompleted AZBigStopAugustQuest == 0
+        	if GetObjectiveDisplayed AZBigStopAugustQuest 8 == 1
+        		SetObjectiveCompleted AZBigStopAugustQuest 2 1
+        		SetObjectiveDisplayed AZBigStopAugustQuest 3 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 4 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 5 0
+                                        SetObjectiveDisplayed AZBigStopAugustQuest 7 0
+        	elseif GetObjectiveDisplayed AZBigStopAugustQuest 8 == 0
+        		SetObjectiveCompleted AZBigStopAugustQuest 2 1
+        		SetObjectiveDisplayed AZBigStopAugustQuest 3 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 4 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 5 0
+                                        SetObjectiveDisplayed AZBigStopAugustQuest 7 0
+        		SetObjectiveDisplayed AZBigStopAugustQuest 8 1
+        	endif
+        endif
+
+        Set AZBigStopAugustQuest.NoxHasTarget to 0
+
+        Set AZBigStopAugustQuest.AhigaHasTarget to 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C26:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C28:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C1E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A17:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Waiting for Ahiga to give you new work.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E190000006E01000000
+      SourceCode: SetObjectiveDisplayed AZBigStopAhigaQuest01 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 55
+  LogEntries:
+  - Flags: []
+    Entry: The courier has arrived
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000
+      SourceCode: AZSearchlightAhigaRangerContactREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008B57:NovaArizona.esm
+- Index: 56
+  LogEntries:
+  - Flags: []
+    Entry: Ranger is ready.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E1E0000006E01000000A3110F0003007203006E1F0000006E010000005510050001007204001C00010002100A0002007205006E010000001C000200211002000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBigStopAhigaQuest01 30 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 31 1
+
+        ShowMap 0013E74E
+
+        Player.AddItem AZAhigaRangerHolotape 1
+
+        AZBigStopDeadDropREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C6D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13E74E:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C6C:NovaArizona.esm
+- Index: 57
+  LogEntries:
+  - Flags: []
+    Entry: Dead drop delivered
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 60
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Ranger section complete, Ahiga's job complete, no lead
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000
+      SourceCode: Player.RewardXP 250
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 62
+  LogEntries:
+  - Flags: []
+    Entry: Ranger option proposed, intel needed.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000A3110F0003007202006E230000006E01000000
+      SourceCode: >-
+        AZParkerWarPlansItemREF.enable
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 35 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C57:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 63
+  LogEntries:
+  - Flags: []
+    Entry: Ranger option proposed, intel got.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E230000006E01000000A3110F0003007201006E240000006E01000000A3110F0003007201006E250000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBigStopAhigaQuest01 35 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 36 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 37 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 64
+  LogEntries:
+  - Flags: []
+    Entry: Ranger proposal, assassination.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E260000006E01000000
+      SourceCode: SetObjectiveDisplayed AZBigStopAhigaQuest01 38 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 65
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Ranger section complete, Ranger option. Ahiga assassinated
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000
+      SourceCode: Player.RewardXP 250
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 66
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Ranger section complete, Ranger option. Assassination rejected.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000
+      SourceCode: Player.RewardXP 250
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry: Ranger operation, Ahiga option, lead
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E280000006E01000000
+      SourceCode: SetObjectiveDisplayed AZBigStopAhigaQuest01 40 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 75
+  LogEntries:
+  - Flags: []
+    Entry: Lead found. Find Ahiga.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E280000006E01000000160014000100100020586531050001007202002030203D3DA3110F0003007201006E2D0000006E01000000180014000100100020586531050001007202002031203D3DA3110F0003007201006E2E0000006E0100000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBigStopAhigaQuest01 40 1
+
+        if GetQuestFailed VMQCaesarFail == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 45 1
+        elseif GetQuestFailed VMQCaesarFail == 1
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 46 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 167F0F:FalloutNV.esm
+- Index: 76
+  LogEntries:
+  - Flags: []
+    Entry: Ahiga in the building
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 80
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Ahiga confronted, big old bribe
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C0100001C00010002100A0002007202006EC8000000
+      SourceCode: >-
+        Player.RewardXP 300
+
+        Player.AddItem MoneyLegion1 200
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 81
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Ahiga was confronted, but he went hostile.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C010000
+      SourceCode: Player.RewardXP 300
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 85
+  LogEntries:
+  - Flags: []
+    Entry: Find Haven.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E320000006E01000000A3110F0003007201006E330000006E0100000016000D0001000900204702002031203D3DA2110F0003007201006E320000006E0100000019000000160014000100100020583A10050001007203002030203D3DA3110F0003007201006E370000006E0100000019000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 50 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 51 1
+
+        if AZStoryEventHavenFound == 1
+        	SetObjectiveCompleted AZBigStopAhigaQuest01 50 1
+        endif
+
+        if GetStage VMQCaesarFail == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest01 55 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024B9B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 167F0F:FalloutNV.esm
+- Index: 90
+  LogEntries:
+  - Flags: []
+    Entry: Ahote let go.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E330000006E00000000A2110F0003007201006E340000006E01000000A3110F0003007201006E350000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 51 0
+
+        SetObjectiveCompleted AZBigStopAhigaQuest01 52 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 53 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 91
+  LogEntries:
+  - Flags: []
+    Entry: Ahote killed.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E330000006E01000000A3110F0003007201006E340000006E00000000A3110F0003007201006E3C0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBigStopAhigaQuest01 51 1
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 52 0
+
+        SetObjectiveDisplayed AZBigStopAhigaQuest01 60 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A16:NovaArizona.esm
+- Index: 94
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Legion informed of Ahiga's treachery.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C0100001C00010002100A0002007203006E1E0000001C000200221002000000
+      SourceCode: >-
+        Player.RewardXP 300
+
+        Player.AddItem MoneyLegion1 30
+
+        AZBigStopAhigaREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A66:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 95
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: ; Do not use
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C0100001C00010002100A0002007202006E1E000000
+      SourceCode: >-
+        Player.RewardXP 300
+
+        Player.AddItem MoneyLegion1 30
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 99
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Quest complete, dissident killed.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C0100003B12130003007202006E010000007A0000000000000840
+      SourceCode: >-
+        Player.RewardXP 300
+
+        AddReputationExact RepNVCaesarsLegion 1 3
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0F43DD:FalloutNV.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Quest complete, dissident let go.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C010000
+      SourceCode: Player.RewardXP 300
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 16
+        Enabled: 1
+      CompiledScript: 0x1C0001002210020000001C00020052100A000200720B006E640000001C00020052100A000200720C006E640000001C00020052100A000200720D006E640000001C00020052100A000200720E006E640000001C00020052100A000200720F006E640000001C0003002210020000001C0004002210020000001C0005002210020000001C0006002210020000001C0007002210020000001C0008002210020000001C0009002210020000001600120001000E0020720A00582E1000002030203D3D1C000A002210020000001900000015000A0072100073040002002030
+      SourceCode: >-
+        AZAhigaWeaponShipmentREF.disable
+
+        Player.RemoveItem AZAhigaWeaponShipmentItem 100
+
+        Player.RemoveItem AZAhigaScrewdriver 100
+
+        Player.RemoveItem AZAlbaNoxGunParts 100
+
+        Player.RemoveItem AZAhigaQuestHolotape 100
+
+        Player.RemoveItem AZAhigaRangerHolotape 100
+
+        AZAhigaLogbookREF.disable
+
+        AZAhigaKeyREF.disable
+
+        AZAhigaToolboxREF.disable
+
+        AZAhigaScrewdriverREF.disable
+
+        AZAhigaAlbaNoxDeskREF.disable
+
+        AZParkerWarPlansItemREF.disable
+
+        AZ188CourierREF.disable
+
+        if AZSearchlightAhigaRangerContactREF.GetDead == 0
+        	AZSearchlightAhigaRangerContactREF.disable
+        endif
+
+        Set AZBigStopAugustQuest.AhigaHasTarget to 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A6A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C26:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C28:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C2A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C57:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C45:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008B57:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A71:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C1E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008B96:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024C6C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A17:NovaArizona.esm
+Objectives:
+- Index: 1
+  Description: Pick up the shipment of weapon parts.
+  Targets:
+  - Target: 008A6A:NovaArizona.esm
+    Unused: 0xBC1527
+- Index: 2
+  Description: (Optional) Have the Base Camp blacksmith check the quality of the weapons.
+  Targets:
+  - Target: 008A53:NovaArizona.esm
+    Unused: 0x30042F
+- Index: 6
+  Description: Tell Ahiga you've delivered the weapon parts.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x1D2529
+- Index: 3
+  Description: Deliver the weapon parts to Red Rivers.
+  Targets:
+  - Target: 013565:NovaArizona.esm
+    Unused: 0xBC1527
+- Index: 4
+  Description: (Optional) Don't tell Red Rivers that the weapon parts are broken.
+- Index: 5
+  Description: (Optional) Tell Red Rivers that the weapon parts are broken.
+- Index: 8
+  Description: Help Ahiga investigate Alba Nox.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x711D26
+  - Target: 024C28:NovaArizona.esm
+    Unused: 0x711D26
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100698646
+      SecondParameter: 21
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 024C28:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100698175
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 16
+      Function: GetStage
+      FirstParameter: 100698646
+  - Target: 024C27:NovaArizona.esm
+    Unused: 0x711D26
+    Conditions:
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 2
+      Function: GetQuestVariable
+      FirstParameter: 100698646
+      SecondParameter: 19
+    - CompareOperator: GreaterThanOrEqualTo
+      Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetItemCount
+      FirstParameter: 100813861
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100683070
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 16
+      Function: GetStage
+      FirstParameter: 100698646
+  - Target: 024C26:NovaArizona.esm
+    Unused: 0x711D26
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetItemCount
+      FirstParameter: 100813861
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100698079
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 16
+      Function: GetStage
+      FirstParameter: 100698646
+  - Target: 024C2B:NovaArizona.esm
+    Unused: 0x711D26
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100698646
+      SecondParameter: 18
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100729023
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 16
+      Function: GetStage
+      FirstParameter: 100698646
+  - Target: 024C2A:NovaArizona.esm
+    Unused: 0x711D26
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100698646
+      SecondParameter: 16
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100729023
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 16
+      Function: GetStage
+      FirstParameter: 100698646
+- Index: 9
+  Description: (Optional) Confront Alba Nox with Ahiga's accusations.
+  Targets:
+  - Target: 008A67:NovaArizona.esm
+    Unused: 0x10102B
+- Index: 7
+  Description: (Optional) Press Ahiga on the broken weapon parts.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x69102A
+- Index: 10
+  Description: (Optional) Cross-examine Ahiga's accusations.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x1C2529
+- Index: 11
+  Description: Help Ahiga deal with Alba Nox.
+- Index: 12
+  Description: Sneak individual gun parts into Alba Nox's bedroom.
+  Targets:
+  - Target: 024E16:NovaArizona.esm
+    Unused: 0x68102A
+- Index: 13
+  Description: (Optional) Inform Dominicus Rex of Alba Nox's "treachery".
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x686D2C
+- Index: 14
+  Description: Return to Ahiga for your reward.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x701D26
+- Index: 15
+  Description: Defuse the situation with Dominicus Rex.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x1F1428
+- Index: 16
+  Description: (Optional) Inform Dominicus Rex of Ahiga's allegations.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x10102B
+- Index: 17
+  Description: (Optional) Inform Alba Nox of Ahiga's allegations.
+  Targets:
+  - Target: 008A67:NovaArizona.esm
+    Unused: 0x68102A
+- Index: 18
+  Description: (Optional) Agree to walk away from Ahiga's allegations.
+- Index: 20
+  Description: (Optional) Bring evidence to Dominicus Rex of Ahiga's machinations.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x662F30
+- Index: 21
+  Description: Confront Ahiga with Dominicus Rex.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x8F1D26
+- Index: 25
+  Description: Wait at the 188 for Ahiga to contact you for more work.
+  Targets:
+  - Target: 024C50:NovaArizona.esm
+    Unused: 0x2F102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 024C45:NovaArizona.esm
+  - Target: 024C45:NovaArizona.esm
+    Unused: 0x2F102B
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 024C45:NovaArizona.esm
+- Index: 30
+  Description: Speak to Ahiga's contact near Searchlight.
+  Targets:
+  - Target: 008B57:NovaArizona.esm
+    Unused: 0x1F1428
+- Index: 33
+  Description: Return to Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x272F22
+- Index: 34
+  Description: Deliver Ahiga's holotape to the contact near Searchlight.
+  Targets:
+  - Target: 008B57:NovaArizona.esm
+    Unused: 0x686D2C
+- Index: 35
+  Description: (Optional) Find proof that Ahiga's allies in the Confederacy are backstabbing the NCR.
+  Targets:
+  - Target: 024C57:NovaArizona.esm
+    Unused: 0xDF3B32
+  - Target: 00DDA0:NovaArizona.esm
+    Unused: 0xDF3B32
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100698646
+      SecondParameter: 23
+- Index: 36
+  Description: (Optional) Lie to the Ranger and state that there is no proof that the Confederacy is backstabbing the NCR.
+  Targets:
+  - Target: 008B57:NovaArizona.esm
+    Unused: 0x832D9C
+- Index: 37
+  Description: (Optional) Return to the Ranger with proof of the Confederacy's treachery.
+  Targets:
+  - Target: 008B57:NovaArizona.esm
+    Unused: 0x30042F
+- Index: 38
+  Description: Kill Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x374B0F
+- Index: 39
+  Description: Return to the Ranger with news of Ahiga's death.
+  Targets:
+  - Target: 008B57:NovaArizona.esm
+    Unused: 0x68102A
+- Index: 40
+  Description: Figure out who the Diné are, probably from anti-Legion sources.
+- Index: 45
+  Description: Confront Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0xEC5221
+- Index: 46
+  Description: Leave a message for Ahiga to meet you in the Solitare Gun Store.
+  Targets:
+  - Target: 024DBD:NovaArizona.esm
+    Unused: 0x652F30
+- Index: 50
+  Description: Find Haven.
+- Index: 51
+  Description: Kill the Confederate dissident.
+  Targets:
+  - Target: 024BB0:NovaArizona.esm
+    Unused: 0x152925
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetInCell
+      FirstParameter: 100697413
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+- Index: 52
+  Description: (Optional) Let Ahote escape.
+  Targets:
+  - Target: 024BB0:NovaArizona.esm
+    Unused: 0x152925
+- Index: 53
+  Description: Return to Ahiga with news of your failure.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x1F1428
+- Index: 55
+  Description: (Optional) Inform the Legion of Ahiga's treachery.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x68102A
+- Index: 56
+  Description: Kill Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x364B0F
+- Index: 57
+  Description: Return to Rex.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0xEC5221
+- Index: 60
+  Description: Return to Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x262F22
+- Index: 31
+  Description: Deposit the contact's note in the dead drop.
+  Targets:
+  - Target: 024C6D:NovaArizona.esm
+    Unused: 0x1C2529
+- Index: 47
+  Description: Confront Ahiga in private.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x844C24
+- Index: 41
+  Description: Return to Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x262F22
+- Index: 61
+  Description: Inform Ahiga that the contact is dead.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0xBC1527
+- Index: 62
+  Description: Place the holotape on the contact's body.
+  Targets:
+  - Target: 008B57:NovaArizona.esm
+    Unused: 0x1E1428
+- Index: 63
+  Description: Return to Ahiga.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x252F22

@@ -1,0 +1,60 @@
+FormKey: 00EFBE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That would be Colonel Hsu.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is technically supposed to be his office, but he took mercy on me and lets me work out of a room with a view.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I mean, this used to be the general's office, it's Hsu's by right.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0EEA78:FalloutNV.esm
+Choices:
+- 00EE9E:NovaArizona.esm
+- 00EEAF:NovaArizona.esm
+- 00EE48:NovaArizona.esm
+- 00EE4C:NovaArizona.esm
+- 00EE6E:NovaArizona.esm
+- 00EE6F:NovaArizona.esm
+- 00EE8D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who's in charge at McCarran?

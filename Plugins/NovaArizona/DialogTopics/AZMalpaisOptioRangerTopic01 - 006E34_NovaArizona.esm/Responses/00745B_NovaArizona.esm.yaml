@@ -1,0 +1,63 @@
+FormKey: 00745B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 006E37:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is his head? Difficult to say if you're telling the truth, but if you are, you show far more initiative than the average mercenary.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In the interest of continued use of your services, I will dispense the full bounty anyways.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100693032
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E640000001C00010052100A0002007203006E010000001C00010002100A0002007204006E64000000
+  SourceCode: >-
+    SetStage AZMalpaisBountyQuest 100
+
+    Player.RemoveItem AZBarkerHeadMangled 1
+
+    Player.AddItem MoneyLegion1 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 007428:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+Prompt: He's already dead.

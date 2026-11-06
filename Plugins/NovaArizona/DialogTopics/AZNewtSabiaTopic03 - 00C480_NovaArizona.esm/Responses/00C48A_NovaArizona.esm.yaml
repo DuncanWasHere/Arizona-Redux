@@ -1,0 +1,43 @@
+FormKey: 00C48A:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Because we know the lake better than they do.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Miss Oria says its our duty to make the Legion big and strong, so they can protect us.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713584
+Choices:
+- 00C47B:NovaArizona.esm
+- 00C47C:NovaArizona.esm
+- 00C47D:NovaArizona.esm
+- 00C480:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why is the Legion making Newt fish for them?

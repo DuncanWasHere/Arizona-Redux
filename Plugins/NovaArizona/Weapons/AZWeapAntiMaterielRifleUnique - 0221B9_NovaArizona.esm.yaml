@@ -1,0 +1,83 @@
+FormKey: 0221B9:NovaArizona.esm
+EditorID: AZWeapAntiMaterielRifleUnique
+FormVersion: 15
+ObjectBounds:
+  First: -4, -5, -2
+  Second: 49, 9, 3
+Name: Coat Gun
+Model:
+  File: AZNovaArizona\Weapons\AZAntiMaterialRifleUnique.nif
+  AlternateTextures:
+  - Name: AntiMaterialRifle:0
+    NewTexture: 129A3C:FalloutNV.esm
+  - Name: '##TurnLever:0'
+    NewTexture: 129A3C:FalloutNV.esm
+    Index: 3
+  - Name: Suppressor
+    NewTexture: 129A3C:FalloutNV.esm
+    Index: 1
+  - Name: '##SRTrigger:0'
+    NewTexture: 129A3C:FalloutNV.esm
+    Index: 4
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_anti_material_rifle.dds
+ObjectEffect: 162C8F:FalloutNV.esm
+Ammo: 1537E8:FalloutNV.esm
+RepairList: 106FEE:FalloutNV.esm
+EquipmentType: SmallGuns
+ShellCasingModel:
+  File: projectiles\762mmcasing.nif
+ImpactDataSet: 019083:FalloutNV.esm
+SoundGunShoot3D: 13307A:FalloutNV.esm
+SoundGunShootDist: 12B886:FalloutNV.esm
+SoundGunShoot2D: 133079:FalloutNV.esm
+SoundMeleeSwingGunNoAmmo: 01F21C:FalloutNV.esm
+SoundEquip: 01CCC7:FalloutNV.esm
+SoundUnequip: 01D4BE:FalloutNV.esm
+Value: 5600
+Health: 65
+Weight: 13
+BaseDamage: 110
+ClipSize: 8
+AnimationType: RifleBallistic2Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+ReloadAnimation: ReloadO
+MinSpread: 0.2
+Spread: 2.5
+DnamUnused1: 1065353216
+SightFov: 54
+Projectile: 107811:FalloutNV.esm
+BaseVatsToHitChance: 40
+AttackAnimation: Attack9
+ProjectileCount: 1
+MinRange: 256
+MaxRange: 3548
+OnHit: ExplodeOnly
+AnimationAttackMultiplier: 1
+FireRate: 5
+OverrideActionPoints: 45
+RumbleLeftMotorStrength: 0.9
+RumbleRightMotorStrength: 0.9
+RumbleDuration: 0.25
+AttackShotsPerSec: 0.447761
+ReloadTime: 2.5
+JamTime: 1.6667
+Skill: 41
+LimbDamageMult: 3
+ResistType: -1
+SemiAutomaticFireDelayMax: 0.3
+StrengthReq: 10
+ReloadAnimationMod: ReloadO
+KillImpulse: 45
+SkillReq: 100
+CriticalDamage: 115
+CrdtUnused1: 818
+CriticalPercentMult: 2
+CriticalOnDeath: True
+Vats:
+  VatsSilent: True
+SoundLevel: Normal

@@ -1,0 +1,120 @@
+FormKey: 01EF98:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x5CBA1F
+    UseEmotionAnimation: True
+    Unused3: 0xFABF1F
+  ResponseText: '[SUCCEEDED] Noctis will get his transfer, then. Your friend will agree to follow all Legion laws. If he fails to do so, for any reason, he will be quartered.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007202006EBF0000006E0100000039100A0002007202006EC80000001C0001007711070001006E3C000000
+  SourceCode: >-
+    SetObjectiveCompleted AZMalpaisAbuseQuest 191 1
+
+    SetStage AZMalpaisAbuseQuest 200
+
+    Player.RewardXP 60
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 11
+    Enabled: 1
+  CompiledScript: 0x36100500010072040015000A00720500731100020020321C00010022100200000015001000720400730100080020582F280200000015000A007202007301000200203015000A00720600730C000200203015000A00720600730E000200203115000A007206007338000200203015001300720600732F000B0020720600732F002031202D1C0002008011050001007207001C0002000F100900020039006E000000001C000200C511070001006E000000001C000200A811050001007208001C000300A8110500010072090059100B000100720A00000000000000150013007206007313000B00207206007313002031202D1600100001000C00207206007313002030203D3D15000A0072060073120002002030190000001C0002002210020000001C000200FA1100001C0002004F1205000100720B00
+  SourceCode: >-
+    StartQuest AZArcadeDisableQuest
+
+    Set AZMalpaisAbuseQuest.ArcadeAccepted to 2
+
+    AZMalpaisNoctisREF.disable
+
+    Set AZArcadeDisableQuest.ArcadeTreatment to GetGameDaysPassed
+
+
+    Set ArcadeREF.Waiting to 0
+
+    Set VNPCFollowers.ArcadeHired to 0
+
+    Set VNPCFollowers.ArcadeFired to 1
+
+    Set VNPCFollowers.bArcadeL38 to 0
+
+    Set VNPCFollowers.bHumanoidInParty to (VNPCFollowers.bHumanoidInParty - 1)
+
+    ArcadeREF.RemoveFromFaction FollowerFaction
+
+    ArcadeREF.SetAV Assistance 0
+
+    ArcadeREF.SetPlayerTeammate 0
+
+    ArcadeREF.removeperk CompanionSuite
+
+    Player.RemovePerk BetterHealing
+
+    ShowMessage FollowerMessagePerkArcadeRemove
+
+    Set VNPCFollowers.nCurrentFollowers to (VNPCFollowers.nCurrentFollowers - 1)
+
+    if VNPCFollowers.nCurrentFollowers == 0
+    	Set VNPCFollowers.bPlayerHasFollower to 0
+    endif
+
+    ArcadeREF.disable
+
+    ArcadeREF.ResetAI
+
+    ArcadeREF.MoveToMarkerWithFade ArcadeHomeMarker
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE07:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8EB:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF9D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037136:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C571:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C60B:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C61D:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10EB41:FalloutNV.esm
+Prompt: Arcade will only treat Noctis, then Noctis can be transferred to another front.
+ActorValuePerk: 0004BB:FalloutNV.esm

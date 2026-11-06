@@ -1,0 +1,33 @@
+FormKey: 01BB2D:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 01BB2C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nein, tue ich nicht, I told you to not bring it up again. {Muttering} Arschloch!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776317
+Choices:
+- 01BA7D:NovaArizona.esm
+- 01BA7E:NovaArizona.esm
+- 01BA7F:NovaArizona.esm
+- 01BA8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you blame her for your wife's death?

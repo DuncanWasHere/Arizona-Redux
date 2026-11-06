@@ -1,0 +1,42 @@
+FormKey: 01119A:NovaArizona.esm
+EditorID: AZMagnumChasmaGatekeeperForceGreetPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 1024
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100730123
+  SecondParameter: 8
+DialogueData:
+  DialogueFOV: 100
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

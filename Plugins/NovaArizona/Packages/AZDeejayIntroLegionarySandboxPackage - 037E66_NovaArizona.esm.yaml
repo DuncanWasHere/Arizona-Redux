@@ -1,0 +1,41 @@
+FormKey: 037E66:NovaArizona.esm
+EditorID: AZDeejayIntroLegionarySandboxPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 1
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoSleeping
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01580C:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100892092
+  SecondParameter: 4
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

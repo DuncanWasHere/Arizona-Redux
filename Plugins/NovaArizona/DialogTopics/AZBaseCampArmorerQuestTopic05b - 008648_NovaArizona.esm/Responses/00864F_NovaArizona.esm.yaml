@@ -1,0 +1,36 @@
+FormKey: 00864F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: 00864E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: "[FAILED] We're not in Santa Fe, and if it's such a great deal, then why haven't they sold it already? Not interested."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It's a great deal. Best in Santa Fe.
+ActorValuePerk: 0004B0:FalloutNV.esm

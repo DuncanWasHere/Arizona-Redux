@@ -1,0 +1,52 @@
+FormKey: 01BA07:NovaArizona.esm
+FormVersion: 15
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He made the Legion. He cracked Arizona to his will.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He believes himself to be, or at least requires others to believe, that he is a god among men, sent down from Mars to give gifts of knowledge.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He's a man, and his time on Earth grows short. He will not live to see his Legion crumble, and that is a most horrendous injustice he has inflicted on the world.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B9A6:NovaArizona.esm
+- 01B9A7:NovaArizona.esm
+- 01B9AA:NovaArizona.esm
+- 01B9AF:NovaArizona.esm
+- 01B9C3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think of Caesar?

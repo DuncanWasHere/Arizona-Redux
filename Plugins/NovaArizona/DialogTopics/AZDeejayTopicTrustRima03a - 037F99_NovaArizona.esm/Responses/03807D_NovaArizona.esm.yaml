@@ -1,0 +1,33 @@
+FormKey: 03807D:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037FDD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Who said I give a shit?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're a slaver. Why do you give a shit?
+ActorValuePerk: 0004BB:FalloutNV.esm

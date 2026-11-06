@@ -1,0 +1,54 @@
+FormKey: 01EF6A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: 01EF69:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x74696F
+    UseEmotionAnimation: True
+    Unused3: 0x652063
+  ResponseText: '[FAILED] My adjutant warned me of some loose ends. An irritating merchant in Solitare and a chem dealer in Elephant Hill.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x74696F
+    UseEmotionAnimation: True
+    Unused3: 0x652063
+  ResponseText: Loose lips should have their tongues cut out. Kill them, and return to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E3C000000
+  SourceCode: SetStage AZMalpaisAbuserQuest 60
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+Prompt: Some guy.
+ActorValuePerk: 0004BB:FalloutNV.esm

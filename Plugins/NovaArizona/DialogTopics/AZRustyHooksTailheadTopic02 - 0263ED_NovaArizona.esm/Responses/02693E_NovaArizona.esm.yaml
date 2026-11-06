@@ -1,0 +1,70 @@
+FormKey: 02693E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, you wanna ask me my whole life story? {sarcastically, taunting, fake crying}Mi mamÃ¡ was so mean to me, man. That's why I did all those chems.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: See the chain on my neck? Nice piece of pre-war bling, right? Should've blown my head clean off, except I'm too lucky.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I ran, but I couldn't hold a gun because that big green fucker broke my hand when he grabbed me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So I ran and ignored the fact that I couldn't hold a gun. Ran for a while. Then - and this is the funny part - I sprained my ankle. Pretty bad, I guess.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So here I am, man. The last Dog of Guadalupe hiding up in a tree. You gonna kill me or what?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100814745
+Choices:
+- 0263ED:NovaArizona.esm
+- 0263EE:NovaArizona.esm
+- 0263EF:NovaArizona.esm
+- 0263F0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why are you here?

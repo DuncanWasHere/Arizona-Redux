@@ -1,0 +1,39 @@
+FormKey: 01C270:NovaArizona.esm
+EditorID: AZSMARTMultiTerminal
+FormVersion: 15
+ObjectBounds: {}
+Name: '[PH] Unkown Researcher Terminal'
+Model:
+  File: Terminals\TerminalDesk01.NIF
+Description: >-
+  >\ Welcome, Researcher John Doe.
+
+  Warning. Files on your terminal appear to be corrupted. Pulling up all uncorrupted files now.
+LoopingSound: 018EC0:FalloutNV.esm
+BaseHackingDifficulty: Hard
+ServerType: Server6
+MenuItems:
+- ItemText: 'Progress Report #5'
+  ResultText: Displaying Message...
+  MenuItemFlags:
+  - ForceRedraw
+  DisplayNote: 01C26C:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: 'Progress Report #6'
+  ResultText: Displaying Message...
+  MenuItemFlags:
+  - ForceRedraw
+  DisplayNote: 01C26E:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: 'Progress Report #7'
+  ResultText: Displaying Message...
+  MenuItemFlags:
+  - ForceRedraw
+  DisplayNote: 01C26D:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

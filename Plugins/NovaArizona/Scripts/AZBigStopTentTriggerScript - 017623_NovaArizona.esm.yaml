@@ -1,0 +1,21 @@
+FormKey: 017623:NovaArizona.esm
+EditorID: AZBigStopTentTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A001800000001007201003A151000010F005202007800005E10040000002811000000
+  SourceCode: >-
+    name AZBigStopTentTriggerScript;
+
+
+    OnTriggerEnter::Player {
+    	AZStanleyHartfordREF.Evp();
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm

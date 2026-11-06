@@ -1,0 +1,33 @@
+FormKey: 017615:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 018090:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742066
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E61
+  ResponseText: I am busy. Leave at once.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

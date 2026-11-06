@@ -1,0 +1,56 @@
+FormKey: 024B79:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697420
+    UseEmotionAnimation: True
+    Unused3: 0x742070
+  ResponseText: Why not do it myself, you mean? Because you have the Mark and Caesar's me, and I needed to weaken Cato's unit.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697420
+    UseEmotionAnimation: True
+    Unused3: 0x742070
+  ResponseText: If Caesar's chosen mercenary indicated that one of the best Frumentarii cells was compromised in some way, well...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697420
+    UseEmotionAnimation: True
+    Unused3: 0x742070
+  ResponseText: It would lend credibility to my claims to Dominicus Rex that something was rotten in that unit.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B53:NovaArizona.esm
+- 024B5A:NovaArizona.esm
+- 024B72:NovaArizona.esm
+- 024B74:NovaArizona.esm
+- 024B63:NovaArizona.esm
+- 024B62:NovaArizona.esm
+- 024B64:NovaArizona.esm
+- 024B66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why did you involve me in this?

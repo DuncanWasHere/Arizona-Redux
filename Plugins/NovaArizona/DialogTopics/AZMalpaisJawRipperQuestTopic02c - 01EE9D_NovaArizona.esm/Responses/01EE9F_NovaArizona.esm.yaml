@@ -1,0 +1,53 @@
+FormKey: 01EE9F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657268
+    UseEmotionAnimation: True
+    Unused3: 0x652063
+  ResponseText: Given your past service to the Legion, this is noted. In future, I will not be so lenient.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x3B12130003007201006E000000007A000000000000184016001900020015002058A5110A0002007202006E280000002031203D3DA2110F0003007202006E280000006E0100000039100A0002007202006EC800000019000000
+  SourceCode: >-
+    AddReputationExact RepNVCaesarsLegion 0 6
+
+
+    if GetObjectiveDisplayed AZBigStopChildSoldierQuest 40 == 1
+    	SetObjectiveCompleted AZBigStopChildSoldierQuest 40 1
+    	SetStage AZBigStopChildSoldierQuest 200
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: I apologize. I was ignorant of the law.

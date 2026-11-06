@@ -1,0 +1,42 @@
+FormKey: 019C99:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes. Unless you have a better idea.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+Choices:
+- 019C80:NovaArizona.esm
+- 019C81:NovaArizona.esm
+- 019C84:NovaArizona.esm
+- 019C7F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073090002002031
+  SourceCode: set AZBaseCampRomanceQuest.killherMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: You want to beat her to death?

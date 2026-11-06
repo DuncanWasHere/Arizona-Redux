@@ -1,0 +1,52 @@
+FormKey: 01CE3B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's fine. I don't need you to save me. I'm figuring shit out on my own. Still, it was nice seeing you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Maybe next time we meet, I'll have enough caps to pay you back and still get out of this desert.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100719760
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730D00020020311C000100211002000000
+  SourceCode: >-
+    set AZBigStopClariceQuest.bPostSteffieTravel to 1
+
+    AZFiendSteffieREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CE3D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm
+Prompt: Actually, I don't care. Keep robbing people.

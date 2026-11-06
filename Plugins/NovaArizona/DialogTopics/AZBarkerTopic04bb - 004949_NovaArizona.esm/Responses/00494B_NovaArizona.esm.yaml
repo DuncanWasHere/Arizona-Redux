@@ -1,0 +1,64 @@
+FormKey: 00494B:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: If you're interested, sure. When I was 21, I came of age and was given my first assignment as a Ranger.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: The village of Hogup was being terrorized by a great beast called "King Komodo". It looked like a giant gecko the size of two or three school buses.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: It breathed fire and had spikes all over its back. When I saw it in person, I was so scared. I froze in fear, and for some reason, it turned away.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: Everyone hailed me as a hero, and I couldn't just abandon them. So, I stayed there for four years.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: I was convinced that the only reason that the beast hadn't destroyed the village because it didn't feel like it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00494C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about becoming a Utah Ranger.

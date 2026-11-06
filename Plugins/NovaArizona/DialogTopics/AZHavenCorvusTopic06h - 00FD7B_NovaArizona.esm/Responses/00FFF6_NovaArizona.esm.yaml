@@ -1,0 +1,70 @@
+FormKey: 00FFF6:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00F50D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: An ancient corpse of the Old World that refuses to die. He bears of a woman, and he might as well be with his love of the word.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He is one of the few who dared speak to me, their superior. He told me that he could disarm the collar, but that he never would.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He told me that I would die with this contraption around my neck like any other Legion slave.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But he did nothing even as I insulted him. The coward can only use his explosives when he is far away. Weak.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724241
+Choices:
+- 00FA40:NovaArizona.esm
+- 00FA8B:NovaArizona.esm
+- 00FAAA:NovaArizona.esm
+- 00FCD2:NovaArizona.esm
+- 00FD64:NovaArizona.esm
+- 00FD6A:NovaArizona.esm
+- 00FD7A:NovaArizona.esm
+- 00FD7B:NovaArizona.esm
+- 00FD94:NovaArizona.esm
+- 00FD95:NovaArizona.esm
+- 00FDC8:NovaArizona.esm
+- 00FDCD:NovaArizona.esm
+- 00FDE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Ripley.

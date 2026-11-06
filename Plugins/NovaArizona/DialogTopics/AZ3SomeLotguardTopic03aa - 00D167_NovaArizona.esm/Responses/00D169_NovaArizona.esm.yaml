@@ -1,0 +1,31 @@
+FormKey: 00D169:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 00D168:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696D70
+    UseEmotionAnimation: True
+    Unused3: 0x6F7374
+  ResponseText: That's not your business, pal. Ever hear of client confidentiality?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D167:NovaArizona.esm
+- 00D16A:NovaArizona.esm
+- 00D16E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What sort of things do you ship to The Fort?

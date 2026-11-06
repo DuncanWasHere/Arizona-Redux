@@ -1,0 +1,30 @@
+FormKey: 00DC2C:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm not a slave yet, asshole. See this collar around my neck? I'm just a capture.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 089444:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723849
+Choices:
+- 00DC1D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't talk to slaves.

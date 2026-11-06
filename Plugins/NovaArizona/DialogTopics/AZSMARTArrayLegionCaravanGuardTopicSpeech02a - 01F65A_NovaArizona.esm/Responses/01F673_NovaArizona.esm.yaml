@@ -1,0 +1,45 @@
+FormKey: 01F673:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01F58D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I see. Very well. Take the medicine and begone.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791743
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007203006E010000001C00020002100A0002007203006E01000000
+  SourceCode: >-
+    AZSmartArrayLegionCaravanGuardREF.removeitem AZChlorideAntibioticsItem 1
+
+    player.additem AZChlorideAntibioticsItem 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5C0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F600:NovaArizona.esm
+Prompt: <Lie.> As I understand it, someone very important is sick, and it's imperative that it be kept under wraps.

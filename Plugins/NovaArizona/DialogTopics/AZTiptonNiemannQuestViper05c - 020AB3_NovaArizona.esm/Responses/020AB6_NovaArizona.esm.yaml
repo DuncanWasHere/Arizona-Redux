@@ -1,0 +1,85 @@
+FormKey: 020AB6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: I see. I'll tell you what. I have no further use for your services, but I can direct you to people who do.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's got a lot of names. Haven, Freihafen, Moletown, Easytown, Hideaway.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Right now, it's dormant, but you might be just what's needed to get the spark running again.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Go to the White Hills. Search the caves. You'll find it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x746520
+    UseEmotionAnimation: True
+    Unused3: 0x2E2053
+  ResponseText: Oh, and take some spending money with you anyways.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x55100500010072020039100A0002007203006E640000001C00010002100A0002007204006EC8000000
+  SourceCode: >-
+    ShowMap AZWhiteHillsMarkerREF
+
+    SetStage AZBrushQuest02 100
+
+    Player.AddItem Caps001 200
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0098C8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: In the interest of proving that I am loyal, I am willing to forgo payment.

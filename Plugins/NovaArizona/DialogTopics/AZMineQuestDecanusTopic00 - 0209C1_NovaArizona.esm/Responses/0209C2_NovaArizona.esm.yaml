@@ -1,0 +1,69 @@
+FormKey: 0209C2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Then, he will be accordingly punished. Chems, chems everywhere. I'll ban Brush. Better safe than sorry.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, you want a reward, yes? You get to choose how he dies.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100707312
+  SecondParameter: 2
+  RunOnType: Reference
+  Reference: 00ABF0:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+- Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetStage
+  FirstParameter: 100796570
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100796570
+- Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100699722
+Choices:
+- 00C2FB:NovaArizona.esm
+- 00C2FC:NovaArizona.esm
+- 00C2FD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007302000200203139100A0002007201006E64000000
+  SourceCode: >-
+    Set AZBrushQuest01.BrushBanned to 1
+
+    SetStage AZBrushQuest01 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+Prompt: <Lie.> I found him hiding a stash of drugs in Big Spar Mine.

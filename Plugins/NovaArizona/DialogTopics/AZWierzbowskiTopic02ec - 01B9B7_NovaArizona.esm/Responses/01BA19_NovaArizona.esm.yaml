@@ -1,0 +1,59 @@
+FormKey: 01BA19:NovaArizona.esm
+FormVersion: 15
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It is not avoidable to do otherwise as long as I live. That is a simple, unavoidable truth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Until I receive my rightful execution at the hands of more civilized societies, the best I can do is to follow in the wake of my own disaster.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I resolved long ago to do go ten acts of good for every act of evil I did.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6E4469
+  ResponseText: I wish to reach that threshold in which I've repaired the world more than broken it, but I have no expectation I ever will.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B9B6:NovaArizona.esm
+- 01B9B8:NovaArizona.esm
+- 01B9B9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How do you live with yourself?

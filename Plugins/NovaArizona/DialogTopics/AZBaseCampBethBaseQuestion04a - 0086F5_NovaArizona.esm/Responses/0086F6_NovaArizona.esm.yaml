@@ -1,0 +1,49 @@
+FormKey: 0086F6:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20415A
+    UseEmotionAnimation: True
+    Unused3: 0x616D70
+  ResponseText: Obviously not.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x732061
+  ResponseText: If you don't know how, it's because you're a smoothbrain and a smoothskin. Actually, that's redundant.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6B6E6F
+    UseEmotionAnimation: True
+    Unused3: 0x2C2069
+  ResponseText: Any other stupid questions?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+Choices:
+- 00B3F0:NovaArizona.esm
+- 00B3F2:NovaArizona.esm
+- 0086F3:NovaArizona.esm
+- 00B3FA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Aren't Bighorners impossible to tame for caravan work?

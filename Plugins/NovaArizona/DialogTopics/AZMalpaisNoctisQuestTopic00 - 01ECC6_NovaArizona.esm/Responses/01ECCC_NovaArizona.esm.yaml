@@ -1,0 +1,66 @@
+FormKey: 01ECCC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC77:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: Well, I hope that will be the case some day. I'm required to be at Malpais for right now, though.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789440
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100789367
+  SecondParameter: 5
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100789367
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100789367
+  SecondParameter: 19
+Choices:
+- 01ECCD:NovaArizona.esm
+- 01ECCE:NovaArizona.esm
+- 01ECCF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073130002002031
+  SourceCode: Set AZMalpaisAbuseQuest.NoctisLock to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: You strike me as an excellent Legionary. Why aren't you on the frontlines?

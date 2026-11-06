@@ -1,0 +1,59 @@
+FormKey: 00EC01:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 033B56:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Sudden anger}You think I'd open up to you like those fucking mussels just because you bring me gifts? Fuck off!{Goodbye}"
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 2
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 30
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 4
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073030002002031361005000100720200
+  SourceCode: >-
+    Set AZFreeformNewt.CatherinePissed to 1
+
+    StartQuest AZNewtCatherineTimer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033B5F:NovaArizona.esm
+Prompt: Look, after all I pearls I brought you....

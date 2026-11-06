@@ -1,0 +1,58 @@
+FormKey: 01BBBF:NovaArizona.esm
+FormVersion: 15
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Untrue. Ants are excellent. I lived among them for years after the death of the Master.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: So long as the queen is not threatened, the ants tend to themselves, scavenging the walls for fungus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: The ants bring in bodies, and the bodies bring in fungus. A circle of life based on death. It's a beautiful thing.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: And ant farmers may not be Brahmin Barons, but make the do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+Choices:
+- 01BBBB:NovaArizona.esm
+- 01BBBA:NovaArizona.esm
+- 01BBBE:NovaArizona.esm
+- 01BBC0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I can't imagine ants make good livestock.

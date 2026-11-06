@@ -1,0 +1,35 @@
+FormKey: 034F6F:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ew! What the M is wrong with you? Can we change the subject?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1099469
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 034F43:NovaArizona.esm
+- 034F4A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I understand. I used to hunt rats with a nail gun and leave them pinned to the floor for days.
+ActorValuePerk: 10C6CD:FalloutNV.esm

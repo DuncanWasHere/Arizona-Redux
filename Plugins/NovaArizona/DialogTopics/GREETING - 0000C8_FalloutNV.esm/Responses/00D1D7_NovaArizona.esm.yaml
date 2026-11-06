@@ -1,0 +1,39 @@
+FormKey: 00D1D7:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 039FCF:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x620105
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hi there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm afraid I can't let you in here. Private property.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D158:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

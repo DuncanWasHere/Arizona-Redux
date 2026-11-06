@@ -1,0 +1,31 @@
+FormKey: 01FAF9:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 01FAF7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{frantic, scared}Oh, thank God. You're back. I don't know what to do. I did it, but I think they know it was me."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792071
+Choices:
+- 01FACC:NovaArizona.esm
+- 01FAEC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

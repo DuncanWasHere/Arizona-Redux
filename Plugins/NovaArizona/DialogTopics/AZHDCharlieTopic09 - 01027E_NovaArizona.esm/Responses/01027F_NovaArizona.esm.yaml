@@ -1,0 +1,57 @@
+FormKey: 01027F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8A083D
+    UseEmotionAnimation: True
+    Unused3: 0x99993E
+  ResponseText: Yeah, it does. Not like I'm getting much action on leave, either. Not even old enough to buy a drink at the Gomorrah.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x8A083D
+    UseEmotionAnimation: True
+    Unused3: 0x99993E
+  ResponseText: So, you want to go Legionary-style, huh? You are pretty good-looking. Sure. Give us a couple of rounds, and I'll wave Omar through.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1270196
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729235
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x91110500010072010039100A0002007202006E14000000
+  SourceCode: >-
+    ApplyImageSpaceModifier FadeToBlackAndBackISFX
+
+    SetStage AZDamNQuest1 20
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08F0BC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018D:NovaArizona.esm
+Prompt: It's a been a while since you've had your needs met, hasn't it? Let me show you a good time.
+ActorValuePerk: 1361B4:FalloutNV.esm

@@ -1,0 +1,25 @@
+FormKey: 00D6D0:NovaArizona.esm
+EditorID: AZMalpaisGoldMinePostumusPostalQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000002C0000003A15170001160052010078000016100B000100FFFF050052020028371009000100FFFF050052030011000000
+  SourceCode: >-
+    name AZMalpaisGoldMinePostumusPostalQuestScript;
+
+
+    GameMode {
+    	AZMalpaisGoldMinePostumusREF.StartCombat(AZMalpaisGoldMineManiusCastulusREF);
+    	StopQuest(AZMalpaisGoldMinePostumusPostalQuest);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B76F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D473:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D484:NovaArizona.esm

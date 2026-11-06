@@ -1,0 +1,59 @@
+FormKey: 01DB35:NovaArizona.esm
+FormVersion: 15
+Quest: 00DBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Isn't it obvious? The Atlas Tower was built for long-distance military communications.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's a repeater station, so it can receive a signal from, for example Phoenix, and re-broadcast it across the entire globe if needed.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Stations of this size were strategic targets during the Great War. It's remarkable that the Atlas went more or less unscathed.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm sure it wasn't the only one that did, but I haven't heard of any others that can match its range.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100748893
+Choices:
+- 01DB24:NovaArizona.esm
+- 01DB25:NovaArizona.esm
+- 01DB26:NovaArizona.esm
+- 01DB27:NovaArizona.esm
+- 01DB28:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What makes the Legion so interested in this place?

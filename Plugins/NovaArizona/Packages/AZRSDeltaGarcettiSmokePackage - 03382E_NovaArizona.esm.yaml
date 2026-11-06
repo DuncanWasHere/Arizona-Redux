@@ -1,0 +1,42 @@
+FormKey: 03382E:NovaArizona.esm
+EditorID: AZRSDeltaGarcettiSmokePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- HeadTrackingOff
+- WeaponsUnequipped
+BehaviorFlags:
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoSleeping
+  - NoConversation
+  - NoFurniture
+  - NoWandering
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 03382C:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 16
+Duration: 3
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

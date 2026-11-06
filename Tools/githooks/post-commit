@@ -1,0 +1,4 @@
+#!/bin/sh
+[ -n "$FOGIT_NOHOOK" ] && exit 0
+ROOT="$(git rev-parse --show-toplevel)"
+"$ROOT/Tools/fo-git.exe" hook post-commit "$@" || true

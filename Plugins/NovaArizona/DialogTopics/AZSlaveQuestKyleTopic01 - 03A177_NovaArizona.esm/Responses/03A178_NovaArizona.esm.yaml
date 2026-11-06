@@ -1,0 +1,30 @@
+FormKey: 03A178:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204927
+    UseEmotionAnimation: True
+    Unused3: 0x207375
+  ResponseText: Get this ugly ass shit out of my fucking face, you think I have time for this? Consider it your only warning.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Show Discarded Sketch> Does this look familiar to you?

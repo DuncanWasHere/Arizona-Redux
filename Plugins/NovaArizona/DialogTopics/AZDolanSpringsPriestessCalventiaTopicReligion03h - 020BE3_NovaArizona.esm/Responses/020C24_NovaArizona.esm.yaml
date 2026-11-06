@@ -1,0 +1,39 @@
+FormKey: 020C24:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What does it mean for something to be literal? The only things that are literal are fire and blood.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 020BC7:NovaArizona.esm
+- 020BCC:NovaArizona.esm
+- 020BDC:NovaArizona.esm
+- 020BE4:NovaArizona.esm
+- 020BE5:NovaArizona.esm
+- 020BE6:NovaArizona.esm
+- 020BE7:NovaArizona.esm
+- 020BE8:NovaArizona.esm
+- 020BE9:NovaArizona.esm
+- 020BEB:NovaArizona.esm
+- 020BF3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: And you believe all of this literally happened?

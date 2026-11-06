@@ -1,0 +1,46 @@
+FormKey: 024D8F:NovaArizona.esm
+EditorID: AZHavenAhoteTimerQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    VariableCount: 1
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000D2000000801611000209005601000001001507004C61000000911109000100FFFF050052010039150C00010B00560100000100420100811608000107004CF100000080161300020B0056010000010042010407004CA80000003A151000010F005202007800002210040000002839150C00010B00560100000100420200811608000107004CF100000080161300020B0056010000010042020407004CF100000080161B0002130058000032120B000100FFFF05005201001507004CF1000000601002000000371009000100FFFF050052030011000000
+  SourceCode: >-
+    name AZHavenAhoteTimerQuestScript;
+
+
+    int DoOnce;
+
+
+    GameMode {
+        if (!DoOnce) {
+            IMod(FadeToBlack5sISFX);
+            DoOnce = 1;
+        } else if (DoOnce == 1) {
+            AZHavenAhoteREF.Disable();
+            DoOnce = 2;
+        } else if (DoOnce == 2) {
+            if (!IsImageSpaceActive(FadeToBlack5sISFX)) {
+                EnablePlayerControls();
+                StopQuest(AZHavenAhoteTimerQuest);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11ECFF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024BB0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024D8E:NovaArizona.esm

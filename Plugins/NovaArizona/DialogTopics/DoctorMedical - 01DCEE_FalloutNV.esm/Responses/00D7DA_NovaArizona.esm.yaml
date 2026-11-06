@@ -1,0 +1,70 @@
+FormKey: 00D7DA:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x63746F
+    UseEmotionAnimation: True
+    Unused3: 0x652052
+  ResponseText: Um, you look fine to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742750
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHealthPercentage
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 25
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 26
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 28
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 30
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 27
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 29
+  RunOnType: Target
+Choices:
+- 024E46:NovaArizona.esm
+- 0089D9:NovaArizona.esm
+- 01DCEE:FalloutNV.esm
+- 0089DD:NovaArizona.esm
+- 0089D4:NovaArizona.esm
+- 0089D1:NovaArizona.esm
+- 0089D2:NovaArizona.esm
+- 0089D3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How much to heal my wounds?

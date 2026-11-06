@@ -1,0 +1,55 @@
+FormKey: 00E67C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] Fine. I could pull some strings with the Legion and get them to support the town's endeavor."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Kinda passive-aggressive}You can return to Becca and tell her that the Cult will be getting her what she needs to run her town.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713546
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 35
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0A000000
+  SourceCode: SetStage AZNewtFishingQuest 10
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+Prompt: Those old grandmas couldn't throw a stick of dynamite far enough to hit a bloatfly five feet in front of them.
+ActorValuePerk: 0004B3:FalloutNV.esm

@@ -1,0 +1,34 @@
+FormKey: 00E60C:NovaArizona.esm
+EditorID: AZLGVSantaClausUpdateTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B001A0080000000010072030016002C000500280020583B100A0002007204006E230000002031203D3D20582212050001007204002030203D3D202626A2110F0003007204006E230000006E01000000A3110F0003007204006E320000006E0100000015000A00720400730200020020331C0001002210020000001C0002002210020000001900000011000000
+  SourceCode: >-
+    scn AZLGVSantaClausUpdateTriggerScript
+
+
+    BEGIN OnTriggerEnter player
+
+
+    if GetStageDone AZStatioFindFriendQuest 35 == 1 && GetQuestCompleted AZStatioFindFriendQuest == 0
+    	SetObjectiveCompleted AZStatioFindFriendQuest 35 1
+    	SetObjectiveDisplayed AZStatioFindFriendQuest 50 1
+    	Set AZStatioFindFriendQuest.AutonousSearchStatus to 3
+    	AZLGVDolanNoteREF.disable
+    	AZLGVDolanBasketREF.disable
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E6B6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E6B5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm

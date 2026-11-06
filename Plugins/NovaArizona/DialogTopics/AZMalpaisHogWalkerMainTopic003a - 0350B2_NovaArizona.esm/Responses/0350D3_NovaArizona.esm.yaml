@@ -1,0 +1,36 @@
+FormKey: 0350D3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 0350D2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is hopeless. What else is there to try?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 0350BD:NovaArizona.esm
+- 0350C6:NovaArizona.esm
+- 0350C7:NovaArizona.esm
+- 0350C8:NovaArizona.esm
+- 0350C9:NovaArizona.esm
+- 0350CD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Okay, I guess self-acceptance doesn't start from within after all. But I'm not giving up on you yet!

@@ -1,0 +1,40 @@
+FormKey: 03807B:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 038057:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656C20
+    UseEmotionAnimation: True
+    Unused3: 0x6E673F
+  ResponseText: Whatever.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 038053:NovaArizona.esm
+- 038054:NovaArizona.esm
+- 038055:NovaArizona.esm
+- 03805A:NovaArizona.esm
+- 03807A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Haven't you heard of the golden rule? Treat others the way you want to be treated.
+ActorValuePerk: 0004BB:FalloutNV.esm

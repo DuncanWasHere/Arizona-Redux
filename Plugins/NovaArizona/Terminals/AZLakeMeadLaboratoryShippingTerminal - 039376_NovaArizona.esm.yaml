@@ -1,0 +1,36 @@
+FormKey: 039376:NovaArizona.esm
+EditorID: AZLakeMeadLaboratoryShippingTerminal
+FormVersion: 15
+ObjectBounds:
+  First: -12, -18, -23
+  Second: 52, 22, 19
+Name: Shipping Bay Terminal
+Model:
+  File: Terminals\Terminal01.NIF
+Description: Development of Enhanced Ecological Protections 1
+LoopingSound: 018EC0:FalloutNV.esm
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: Shipping Manifest
+  ResultText: <ERROR> Data Corrupt
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Security Incidents Log
+  ResultText: Some incidents hidden due to permissions
+  DisplayNote: 039378:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Override Door Lock
+  ResultText: <ERROR> Red Access Key required
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetItemCount
+    FirstParameter: 100896657
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm

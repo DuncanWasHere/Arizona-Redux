@@ -1,0 +1,103 @@
+FormKey: 0175B3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20415A
+    UseEmotionAnimation: True
+    Unused3: 0x69734A
+  ResponseText: Yeah. I guess we can do that. Feels like a compromise that will still piss the Legion off. Publish that, then see how they react.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Either way, I don't want to stick around here. Things are getting too hot. I can't take the stress. Maybe I'm not cut out for journalism anymore.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: You, though... you've got moxie. You make yourself worthy of that Mark you're wearing, and maybe one day I'll be writing your biography.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: Good luck out there. You'll need it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E780000001C0001004F12050001007204001111070001006E01000000911105000100720500150013007203007307000B00207203007307002031202B15000A00720300731A00020020311600100001000C00207203007313002031203D3D1C00020002100A0002007206006E6E000000190000001600100001000C00207203007313002030203D3D1C00020002100A0002007206006E6400000019000000
+  SourceCode: >-
+    Setstage AZMalpaisJournalistQuest 120
+
+    AZStanleyHartfordREF.MovetoMarkerwithFade AZMalpaisRoadhouseXMarkerREF
+
+    EnableFastTravel 1
+
+    ApplyImageSpaceModifier FadeToBlackAndBackISFX
+
+
+    Set AZMalpaisJournalistQuest.bStanleyLegionDisapproval to AZMalpaisJournalistQuest.bStanleyLegionDisapproval + 1
+
+    set AZMalpaisJournalistQuest.bDominicusInterviewNotPositive to 1
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 1)
+    	player.additem caps001 110
+    endif
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 0)
+    	player.additem caps001 100
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006435:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08F0BC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: We don't have to print the spillway thing, but we should print the brutality of the situation.

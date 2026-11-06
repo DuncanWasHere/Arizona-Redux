@@ -1,0 +1,46 @@
+FormKey: 010270:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01026F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8A083D
+    UseEmotionAnimation: True
+    Unused3: 0x99993E
+  ResponseText: Told you. Talk to Wire.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 10
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 100729236
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729235
+Choices:
+- 010272:NovaArizona.esm
+- 010274:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm here to negotiate the passage of Omar and the refugees.

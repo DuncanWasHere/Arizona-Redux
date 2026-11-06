@@ -1,0 +1,104 @@
+FormKey: 020B75:NovaArizona.esm
+EditorID: AZGhostVenomJalapenoSpirit
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Ghost Venom Jalapeno Spirit
+Model:
+  File: Clutter\LiquorBottles\WhiskeyBottle01.NIF
+Icons:
+  LargeIconFilename: Interface\Icons\PipboyImages\Items\items_whiskey.dds
+PickUpSound: 0864D3:FalloutNV.esm
+DropSound: 0864D4:FalloutNV.esm
+EquipmentType: Alcohol
+Weight: 1
+Value: 10
+Flags:
+- NoAutoCalc
+- FoodItem
+- 0x100
+- 0x400
+- 0x800
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+- 0x80000000
+- 0x0
+WithdrawalEffect: 06698C:FalloutNV.esm
+AddictionChance: 0.1
+ConsumeSound: 026138:FalloutNV.esm
+Effects:
+- BaseEffect: 066988:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Strength
+- BaseEffect: 066989:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Intelligence
+  Conditions:
+  - CompareOperator: NotEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: HasPerk
+    FirstParameter: 1426957
+- BaseEffect: 066EB2:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Charisma
+- BaseEffect: 1630EF:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 240
+    ActorValue: DamageThreshold
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetIsID
+    FirstParameter: 1261533
+- BaseEffect: 1630EF:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 240
+    ActorValue: DamageThreshold
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: HasPerk
+    FirstParameter: 1426957
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetIsReference
+    FirstParameter: 20
+- BaseEffect: 162BCB:FalloutNV.esm
+  Data:
+    Magnitude: 25
+    ActorValue: Dehydration
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 033595:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 5
+    ActorValue: Health
+- BaseEffect: 031D79:FalloutNV.esm
+  Data:
+    Magnitude: 25
+    Duration: 120
+    ActorValue: PoisonResistance
+- BaseEffect: 0E2C6D:FalloutNV.esm
+  Data:
+    ActorValue: None

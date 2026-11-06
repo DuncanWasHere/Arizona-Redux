@@ -1,0 +1,49 @@
+FormKey: 020BAD:NovaArizona.esm
+EditorID: AZDolanSpringsNicodemusGlassesTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00930000000100720100801611000209005601000002001507004CB100000080161E00021600520100780000C1110B000100FFFF05005202002807004CB10000003A151D00011C00520300780000021011000200FFFF0500520400FFFF04004201283A151D00011C00520300780000EE1011000200FFFF0500520400FFFF040042012839150C00010B0056010000020042010022100200000011000000
+  SourceCode: >-
+    name AZDolanSpringsNicodemusGlassesTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (!DoOnce) {
+            if (Player.HasPerk(WildWasteland)) {
+                AZDolanSpringsNicodemusREF.AddItem(AZOutfitUniqueNicodemusGlasses, 1);
+                AZDolanSpringsNicodemusREF.EquipItem(AZOutfitUniqueNicodemusGlasses, 1);
+                DoOnce = 1;
+            }
+        }
+        Disable();
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: doonce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0ED568:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000805:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000804:NovaArizona.esm

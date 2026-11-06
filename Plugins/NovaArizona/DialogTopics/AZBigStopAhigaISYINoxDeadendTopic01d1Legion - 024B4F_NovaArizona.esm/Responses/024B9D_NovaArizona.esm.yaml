@@ -1,0 +1,48 @@
+FormKey: 024B9D:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: Evidence points that way, but I've been holding back.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: I don't want to be on the wrong end of Cato if he decides the reputation of his unit is more important than stopping a traitor.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: This latest debacle with the weapons, I mean, Nox must be stopped. Will you help me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024DDA:NovaArizona.esm
+- 024DDB:NovaArizona.esm
+- 024DDC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're saying that Nox helped the Legion blow up the Chainway?

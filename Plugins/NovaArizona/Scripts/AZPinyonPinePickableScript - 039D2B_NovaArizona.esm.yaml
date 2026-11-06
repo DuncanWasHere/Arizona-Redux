@@ -1,0 +1,55 @@
+FormKey: 039D2B:NovaArizona.esm
+EditorID: AZPinyonPinePickableScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D0000001000080002005E000000000016001D0004001900207301002030203D3D2058CD100000205A0100203D3D2026261C00010002100A0002007202006E01000000150007007301000200203113100900020003006E01000000CC10070001006E0100000019000000110000001000060015004400000016000D0001000900207301002030203D3D13100900020004006E0100000018000D0001000900207301002031203D3D13100900020003006E010000001900000011000000100006001E003C00000016000D0003000900207301002031203D3D13100900020004006E010000001500070073010002002030CC10070001006E000000001900000011000000
+  SourceCode: >-
+    scn AZPinyonPinePickableScript
+
+
+    int State
+
+
+
+    begin onActivate
+    	if State == 0 && GetActionRef == player
+    		player.additem NVPinyonNuts 1
+    		set State to 1
+    		playGroup Forward 1
+    		setdestroyed 1
+    	endif
+    end
+
+
+    begin onLoad
+    	if State == 0
+    		playGroup Backward 1
+    	elseif State == 1
+    		playGroup Forward 1		
+    	endif
+    end
+
+
+    begin onReset
+    	if State == 1
+    		playgroup Backward 1
+    		set State to 0
+    		setdestroyed 0
+    	endif
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0DE29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x75726974794865
+    Name: State
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0E2F67:FalloutNV.esm

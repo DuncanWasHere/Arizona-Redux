@@ -1,0 +1,37 @@
+FormKey: 0209A4:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What did you think?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+Choices:
+- 020989:NovaArizona.esm
+- 02098A:NovaArizona.esm
+- 02098B:NovaArizona.esm
+- 02098C:NovaArizona.esm
+- 02098D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've tested Brush for myself with your other Legionaries.

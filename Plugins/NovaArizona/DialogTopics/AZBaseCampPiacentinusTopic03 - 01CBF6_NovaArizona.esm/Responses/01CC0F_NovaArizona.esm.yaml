@@ -1,0 +1,36 @@
+FormKey: 01CC0F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What nonsense are you speaking?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780946
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 11253F:FalloutNV.esm
+Choices:
+- 01CBF6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Michael Angelo? Like the Strip architect?

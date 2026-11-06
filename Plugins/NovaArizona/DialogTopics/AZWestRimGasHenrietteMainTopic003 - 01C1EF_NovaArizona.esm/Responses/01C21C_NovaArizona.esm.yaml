@@ -1,0 +1,91 @@
+FormKey: 01C21C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnceADay
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Pater Mars supernus, nomen tuum invoco ut tua filia ex utero Terrae nata, unde cuncta creata sunt...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...nox et dies, bonum et malum, lupus et bos, ex tuo semine minore genita...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...in humili devotione erga Caesarem magnum, ex tuo semine maiore genitum, quem iusto imperio omnium rerum benedixisti in perpetuum.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Pater Mars, precor ut huic filio minori suam debitam fortunam largiaris, nam et ipse devotionem suam tibi, atque Caesari, probavit.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Protege eum a scelere et morbo. Animum eius confirma, cum hostem in proelio iterum obiturus sit. Sapientiam novam ei tribue, eumque ad maiorem victoriam duc.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Pro his tibi laudes perpetuas gratiasque offerimus, Pater Mars. Sic fiat semper.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetQuestVariable
+  FirstParameter: 100730123
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C000100D91105000100720200
+  SourceCode: PlayerREF.CIOS AZMarsBlessingActorEffect
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C248:NovaArizona.esm
+Prompt: I would like to receive Mars's blessings.

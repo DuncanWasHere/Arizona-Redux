@@ -1,0 +1,41 @@
+FormKey: 037DD6:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037F39:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Can't help but respect Benny. Guy was pure ambition. Too bad he tried to cap the only person more ambitious than him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetGlobalValue
+  FirstParameter: 1149629
+- Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetGlobalValue
+  FirstParameter: 1149628
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 12
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

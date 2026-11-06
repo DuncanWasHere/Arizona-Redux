@@ -1,0 +1,38 @@
+FormKey: 01EE2A:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EE29:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616420
+    UseEmotionAnimation: True
+    Unused3: 0x61696E
+  ResponseText: Which one?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00C45B:NovaArizona.esm
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 01A658:NovaArizona.esm
+Choices:
+- 01EE31:NovaArizona.esm
+- 01EE32:NovaArizona.esm
+- 01EE35:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I want to know about the adults here.

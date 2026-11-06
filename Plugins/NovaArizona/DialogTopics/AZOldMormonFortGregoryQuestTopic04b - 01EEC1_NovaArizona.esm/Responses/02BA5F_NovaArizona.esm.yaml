@@ -1,0 +1,41 @@
+FormKey: 02BA5F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: "[FAILED] I did my residency in the Mar. This is not even the first time I've had guns pointed at me. Buzz off."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 166
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 41
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Point a gun at Gregory.>
+ActorValuePerk: 0004B9:FalloutNV.esm

@@ -1,0 +1,229 @@
+FormKey: 01019E:NovaArizona.esm
+EditorID: AZDamNQuest2Script
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 39
+    VariableCount: 10
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000E903000016000D0009000900207301002031203D3D160067000700630020720300582E1000002031203D3D20720400582E1000002031203D3D20262620720500582E1000002031203D3D20262620720600582E1000002031203D3D20262620720700582E1000002031203D3D20262620720800582E1000002031203D3D2026261600100003000C0020721D007308002030203D3D1600120001000E0020720200582E1000002031203D3D39100A000200721E006E0C000000190000001800100001000C0020721D007308002031203D3D39100A000200721E006E0C000000190000001900000019000000160025002000210020583A1005000100721F002030203E20583A10050001007220002030203E207C7C160014000200100020582212050001007221002030203D3D39100A0002007221006E6E0000001C0001008B10020000001900000016001400100010002058221205000100721E002030203D3D1600100001000C0020721D007308002030203D3D1C0002008B10020000001900000039100A000200721E006E3500000015000700730500020020311C0003008B10020000001C0004008B10020000001C0005008B10020000001C0006008B10020000001C0007008B10020000001C0008008B10020000001C0009002210020000001C000A002210020000001C000B008B10020000001C000C008B10020000001C000D0073100200000019000000160014000300100020582212050001007222002031203D3D1C000E002210020000001C000F002210020000001C0010009E1005000100722300190000001600120003000E0020720A00582E1000002030203D3D1C0011002110020000001C0012002110020000001C001300211002000000190000001900000016003F000C003B0020583B100A000200721E006E2D0000002031203D3D20582212050001007221002031203D3D2026262058221205000100721E002031203D3D202626160049000A00450020583A10050001007224002030203E20583A10050001007225002030203E207C7C20583A10050001007226002030203E207C7C20583A10050001007227002030203E207C7C1C0001002210020000001C0014002210020000001C0015002210020000001C0016002210020000001C0017002210020000001C0018002210020000001C0019002210020000001C001A002210020000001C001B002210020000001C001C0022100200000019000000190000001600310003002D0020583B100A000200721E006E160000002031203D3D20583B100A000200721E006E2D0000002031203D3D207C7C160019000100150020583B100A000200721D006E050000002030203D3D39100A000200721D006E0A000000190000001900000011000000
+  SourceCode: >-
+    scn AZDamNQuest2Script
+
+
+    short bAgreedtoKillRefugees
+
+    short bCeasefireinEffect
+
+    short bMetNerva
+
+    short bOnAnAssassinationMission
+
+    short bOnDuty
+
+    short bUnderFrumentariiProtection
+
+    short bWireTookAction
+
+
+
+    BEGIN GameMode
+
+
+    if bAgreedtoKillRefugees == 1
+    	if AZHHRefugee1aREF.GetDead == 1 && AZHHRefugee1bREF.GetDead == 1 && AZHHRefugee1cREF.GetDead == 1 && AZHHRefugee1dREF.GetDead == 1 && AZHHRefugee1eREF.GetDead == 1 && AZHHRefugee1fREF.GetDead == 1
+    		if AZBigStopClariceQuest.bPostSteffie == 0
+    			if AZHDSteffieREF.GetDead == 1
+    				SetStage AZDamNQuest2 12
+    			endif
+    		elseif AZBigStopClariceQuest.bPostSteffie == 1
+    			SetStage AZDamNQuest2 12
+    		endif
+    	endif
+    endif
+
+
+
+    if (GetStage VMQ03a > 0) || (GetStage VMQ03b > 0)
+    	if GetQuestCompleted AZDamNQuest1 == 0
+    		SetStage AZDamNQuest1 110
+    		AZOmarREF.KillActor
+    	endif
+    	if GetQuestCompleted AZDamNQuest2 == 0
+    		if AZBigStopClariceQuest.bPostSteffie == 0
+    			AZHDSteffieREF.KillActor
+    		endif
+    		SetStage AZDamNQuest2 53
+    		Set bWireTookAction to 1
+    		AZHHRefugee1aREF.KillActor
+    		AZHHRefugee1bREF.KillActor
+    		AZHHRefugee1cREF.KillActor
+    		AZHHRefugee1dREF.KillActor
+    		AZHHRefugee1eREF.KillActor
+    		AZHHRefugee1fREF.KillActor
+    		AZCastraFrumentariusREF.disable
+    		AZCastraNervaREF.disable
+    		AZHDRSAntoninusREF.killactor
+    		AZHDRSFlaminiusREF.killactor
+    		VHDCheckpointEastDoorREF.unlock
+    	endif
+    	if GetQuestCompleted AZDamnQuest3 == 1
+    		AZHHRefugee2aaREF.disable
+    		AZHHRefugee2baREF.disable
+    		AZHDWireREF.moveto AZHDWireMarkerREF
+    	endif
+    	if AZCastraNervaREF.GetDead == 0
+    		AZCastraNervaDeadREF.enable
+    		AZHDRSSuicideBloodREF.enable
+    		AZHDRSMacheteGladiusREF.enable
+    	endif
+    endif
+
+
+    if (GetStageDone AZDamNQuest2 45 == 1) && (GetQuestCompleted AZDamNQuest1 == 1) && (GetQuestCompleted AZDamNQuest2 == 1)
+    	if (GetStage VHDBattleController > 0) || (GetStage VHDLegionBattle > 0) || (GetStage VHDHouseBattle > 0) || (GetStage VHDIndependentBattle > 0) 
+    		AZOmarREF.Disable
+    		AZHHRefugee3aREF.Disable
+    		AZHHRefugee3bREF.Disable
+    		AZHHRefugee3cREF.Disable
+    		AZCharlieREF.Disable
+    		AZHDCheckpointOfficerREF.Disable
+    		AZHDNCRTrooper02REF.Disable
+    		AZHDNCRTrooper02bREF.Disable
+    		AZHDNCRTrooper03aREF.Disable
+    		AZHDNCRTrooper03bREF.Disable
+    	endif
+    endif
+
+
+    if GetStageDone AZDamNQuest2 22 == 1  || GetStageDone AZDamNQuest2 45 == 1
+            if GetStageDone AZBigStopClariceQuest 5 ==0
+                SetStage AZBigStopClariceQuest 10
+            endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xE04120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bAgreedtoKillRefugees
+  - Data:
+      Index: 3
+      Unknown: 0x004220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bCeasefireinEffect
+  - Data:
+      Index: 5
+      Unknown: 0x40D129120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bWireTookAction
+  - Data:
+      Index: 6
+      Unknown: 0x804220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bUnderFrumentariiProtection
+  - Data:
+      Index: 7
+      Unknown: 0x404220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bOnAnAssassinationMission
+  - Data:
+      Index: 8
+      Unknown: 0x604220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bOnDuty
+  - Data:
+      Index: 9
+      Unknown: 0x204220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bMetNerva
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0101C9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC90:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010367:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01030C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01030E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13C8C9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102DA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010370:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010372:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01036F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102F5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102F6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102F7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01035F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010304:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010309:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010308:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01030A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 131F08:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 131F09:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102FE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 133075:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 137AB9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 154234:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 154233:FalloutNV.esm

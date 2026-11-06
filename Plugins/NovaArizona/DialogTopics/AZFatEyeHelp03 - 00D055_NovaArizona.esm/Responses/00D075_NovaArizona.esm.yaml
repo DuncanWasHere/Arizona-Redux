@@ -1,0 +1,70 @@
+FormKey: 00D075:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Version2: 1
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] Fuck. It's that obvious, huh? I have enough supplies to cook up one last batch but then I'm dead in the water. Alright listen up."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I sometimes work with these guys from down south, they're trying to make a name for themselves out here. Professionals.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I have an order from them that I've been sitting on, and I need someone to run it down to Chloride before their patience runs dry.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's a simple delivery job. You show up, you give the guy the stuff, end of story. You and me split the pay 50/50. So are we in on this?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D059:NovaArizona.esm
+- 00D05B:NovaArizona.esm
+- 00D05A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x7711070001006E19000000
+  SourceCode: rewardxp 25
+Prompt: Because you're going through chem withdrawal, you aren't in shape to move your product yourself.
+ActorValuePerk: 0004B5:FalloutNV.esm

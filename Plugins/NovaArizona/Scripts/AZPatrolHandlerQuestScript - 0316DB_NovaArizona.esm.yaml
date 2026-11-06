@@ -1,0 +1,71 @@
+FormKey: 0316DB:NovaArizona.esm
+EditorID: AZPatrolHandlerQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D00000010000600000028010000160017001600130020582F2802000000206601002031202B203E3D160012000E000E002072050058231000002031203D3D1500170073070012002058DE280C0002006E010000006E0400000016000D0003000900207307002031203D3D1C0001002110020000001C0002002210020000001C00030022100200000018000D0003000900207307002032203D3D1C0001002210020000001C0002002110020000001C00030022100200000018000D0003000900207307002033203D3D1C0001002210020000001C0002002210020000001C000300211002000000190000001700020004001C0004002110020000001C0001002210020000001C0002002210020000001C0003002210020000001900000015000D00660100080020582F28020000001900000011000000
+  SourceCode: >-
+    scn AZPatrolHandlerQuestScript
+
+
+    float fDaysPassed
+
+    int iNumber
+
+
+    begin gamemode
+
+    		if GetGameDaysPassed >= (fDaysPassed + 1)	;swaps to new patrol every day
+
+    			if AZLegionaryVeteranEnableMarkerREF.getdisabled == 1
+    				set iNumber to GetRandomInRange 1 4
+    				if iNumber == 1
+    					AZSCtoMlpSlaveCaravanGuardREF.enable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeREF.disable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeSlaverREF.disable
+    				elseif iNumber == 2
+    					AZSCtoMlpSlaveCaravanGuardREF.disable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeREF.enable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeSlaverREF.disable
+    				elseif iNumber == 3
+    					AZSCtoMlpSlaveCaravanGuardREF.disable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeREF.disable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeSlaverREF.enable
+    				endif
+    			else  AZLegionaryVeteranEnableMarkerREF.getdisabled == 0
+    					AZSCtoMlpLegionaryPatrolDecanusVeteranREF.enable
+    					AZSCtoMlpSlaveCaravanGuardREF.disable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeREF.disable
+    					AZSCtoMlpLegionaryPatrolDecanusPrimeSlaverREF.disable
+    			endif
+    			set fDaysPassed to GetGameDaysPassed
+    		endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x00DE29120000000000000000
+      Unknown2: 0x1F0106AA1F0106
+    Name: fDaysPassed
+  - Data:
+      Index: 7
+      Unknown: 0xE0DD29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iNumber
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02CEFF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0316DD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0316E1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0316E5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019081:NovaArizona.esm

@@ -1,0 +1,32 @@
+FormKey: 035015:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 035014:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Slightly more winded}You aren't my superior. If you got something to say, wait until I'm done."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsCurrentPackage
+  FirstParameter: 100880491
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

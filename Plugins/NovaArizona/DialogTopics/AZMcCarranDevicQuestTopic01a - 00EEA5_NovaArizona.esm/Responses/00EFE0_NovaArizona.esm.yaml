@@ -1,0 +1,49 @@
+FormKey: 00EFE0:NovaArizona.esm
+FormVersion: 15
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What do you mean Sutter told you? He wouldn't lock me out of the loop on this, would he?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There's got to be some report here somewhere. I'll look for it later and give Hoover Dam a call.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, your reward.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+Choices:
+- 00EEA4:NovaArizona.esm
+- 00EEA6:NovaArizona.esm
+- 00EEAD:NovaArizona.esm
+- 00EEAE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Three weeks ago. Sutter told me while he was asking for bounties.

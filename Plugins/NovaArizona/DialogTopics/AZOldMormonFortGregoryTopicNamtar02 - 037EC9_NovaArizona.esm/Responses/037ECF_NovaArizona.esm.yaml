@@ -1,0 +1,33 @@
+FormKey: 037ECF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: 037ECE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My impression was that he needed to go north, and it didn't matter what the reason was.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 037EC9:NovaArizona.esm
+- 037ECA:NovaArizona.esm
+- 037ECB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What interest could he possibly have in a place like that?

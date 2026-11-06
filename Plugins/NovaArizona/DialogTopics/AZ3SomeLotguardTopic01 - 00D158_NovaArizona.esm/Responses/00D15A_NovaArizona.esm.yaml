@@ -1,0 +1,54 @@
+FormKey: 00D15A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Version2: 1
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 00D159:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Right it does. Still, I can't be letting just anyone in; Caesar's orders.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x504349
+    UseEmotionAnimation: True
+    Unused3: 0x696F6E
+  ResponseText: Go talk to Caius Drusus if you're looking for something in the storage lot. He's got the key.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 1264494
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D15B:NovaArizona.esm
+- 00D15C:NovaArizona.esm
+- 00D15D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x551005000100720100
+  SourceCode: ShowMap AZ3SomeCaravanMapMarkerREF
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00568D:NovaArizona.esm
+Prompt: Last time I checked, everything is property of Caesar, Profligate.

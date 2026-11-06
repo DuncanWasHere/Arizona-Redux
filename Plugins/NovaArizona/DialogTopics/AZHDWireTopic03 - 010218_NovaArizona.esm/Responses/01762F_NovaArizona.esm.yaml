@@ -1,0 +1,61 @@
+FormKey: 01762F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010219:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Actually, yes. The Legion doesn't take action against those refugees because they think it demoralizes the troops.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You know, seeing the victims of Legion oppression just wither away and die? Sadly, the Legion's right. Our troops don't really have the stomach for that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So, if the refugees were to be...removed, then morale would improve. Do you understand what I'm saying?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100729230
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+Choices:
+- 01021B:NovaArizona.esm
+- 01021D:NovaArizona.esm
+- 01021F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  SourceCode: ;
+Prompt: Is there some sort of deal we could work out?

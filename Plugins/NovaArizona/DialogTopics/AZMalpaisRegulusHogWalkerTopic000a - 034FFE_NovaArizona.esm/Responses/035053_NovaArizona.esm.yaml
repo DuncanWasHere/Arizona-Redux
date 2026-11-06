@@ -1,0 +1,33 @@
+FormKey: 035053:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hahaha! What the hell are you, his concubine?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+Choices:
+- 034FFE:NovaArizona.esm
+- 034FFF:NovaArizona.esm
+- 035000:NovaArizona.esm
+- 035002:NovaArizona.esm
+- 035003:NovaArizona.esm
+- 035009:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He's not a freak! He's a kind and vulnerable soul.

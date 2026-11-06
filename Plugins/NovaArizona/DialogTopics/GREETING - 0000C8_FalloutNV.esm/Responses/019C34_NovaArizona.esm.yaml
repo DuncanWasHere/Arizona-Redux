@@ -1,0 +1,46 @@
+FormKey: 019C34:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 019C35:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Howdy. Keep your hands to yourself while you're in Newt.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsSex
+  RunOnType: Target
+Choices:
+- 019C2E:NovaArizona.esm
+- 0089A2:NovaArizona.esm
+- 00E637:NovaArizona.esm
+- 00E638:NovaArizona.esm
+- 00E639:NovaArizona.esm
+- 00E643:NovaArizona.esm
+- 00E644:NovaArizona.esm
+- 00E62A:NovaArizona.esm
+- 019C2B:NovaArizona.esm
+- 019C2C:NovaArizona.esm
+- 019C2D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

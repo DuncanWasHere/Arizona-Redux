@@ -1,0 +1,36 @@
+FormKey: 00864D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: 00864C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Spoken as a man who has never been in close-quarters combat. Not interested.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 45
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Look, you run up to the enemy and punch them. Not hard.
+ActorValuePerk: 0004BD:FalloutNV.esm

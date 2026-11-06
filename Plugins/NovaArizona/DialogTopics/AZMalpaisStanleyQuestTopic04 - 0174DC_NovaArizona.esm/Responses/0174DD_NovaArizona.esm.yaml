@@ -1,0 +1,82 @@
+FormKey: 0174DD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x792E20
+  ResponseText: "Alright. Now for the real meat: the slave trade. I'll come clean right out the gate and say that I have been trying to make headway on this story myself for a while."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x792E20
+  ResponseText: My grand vision is a profile of the inner-workings of the Legion slave economy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x206B69
+    UseEmotionAnimation: True
+    Unused3: 0x2E2059
+  ResponseText: I think it'll play well to Vegas, maybe even give the NCR socialites something to chew on.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x750105
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Here's a foreign empire, a great big boogeyman. But in the heart of the Legion is an economy not unlike what we have back home.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: Just with people, instead of land and stocks.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: I've done some preliminary work on this story, but I'd love to see what you find. Your energy, and that Mark you have, may get you some very interesting answers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174DE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E28000000
+  SourceCode: setstage AZMalpaisJournalistQuest 40
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: What's next?

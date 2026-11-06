@@ -1,0 +1,98 @@
+FormKey: 01AAD9:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65436F
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: What gives you the gall to ask me personal questions?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I will answer only because you bear Caesar's Mark.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x65436F
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: I am from a vault. I was a little girl when we received the All-Clear Signal. With my family, we stepped out into the wastes. I remember feeling hope.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x65436F
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: But there is no hope in the wasteland. Raiders found my people.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I cried tears of joy when the Legion finally came and butchered my captors. I thought the Legion would take me. I hoped for it. I had no one left.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x752074
+    UseEmotionAnimation: True
+    Unused3: 0x6C6C20
+  ResponseText: The Decanus only looked me in the eye and told me to "remember the justice" he had delivered.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x6C6566
+    UseEmotionAnimation: True
+    Unused3: 0x74686F
+  ResponseText: Perhaps he thought I would be worthless to the Legion.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 8
+    Unused2: 0x752074
+    UseEmotionAnimation: True
+    Unused3: 0x6C6C20
+  ResponseText: He was wrong.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713546
+Choices:
+- 00E648:NovaArizona.esm
+- 00E650:NovaArizona.esm
+- 03A0C7:NovaArizona.esm
+- 00C44C:NovaArizona.esm
+- 00C44E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's your story?

@@ -1,0 +1,38 @@
+FormKey: 00ED40:NovaArizona.esm
+EditorID: AZBigStopCurfewTalkPackage
+FormVersion: 15
+GeneralFlags:
+- OncePerDay
+- AlwaysRun
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 21076
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 21
+Duration: 9
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 1024
+DialogueData:
+  DialogueFOV: 100
+  DialogueFlags:
+  - DontControlTargetMovement
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

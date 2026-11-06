@@ -1,0 +1,48 @@
+FormKey: 0101E5:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: His demotion from Centurion to Optio was terrible. Withdrew from the Spillway to prevent attacks from NCR snipers on Lanius's orders.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He was punished by Caesar for obeying them. Now, he probably won't get to see action. Word is he'll be shipped back east just ahead of the battle.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100729630
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+Choices:
+- 0101DC:NovaArizona.esm
+- 0101DE:NovaArizona.esm
+- 0101E0:NovaArizona.esm
+- 0101E2:NovaArizona.esm
+- 0101E4:NovaArizona.esm
+- 0101E6:NovaArizona.esm
+- 01031C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about this Nerva.

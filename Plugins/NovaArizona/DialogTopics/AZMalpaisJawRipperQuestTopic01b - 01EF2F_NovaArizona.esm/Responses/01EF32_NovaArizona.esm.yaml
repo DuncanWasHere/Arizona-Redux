@@ -1,0 +1,55 @@
+FormKey: 01EF32:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: A Follower? Corrupting the Legion's youth? This... by Mars, I trusted her.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: She dies tonight. Thank you, amicus. This deserves a reward.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHasNote
+  FirstParameter: 100789881
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E150000006E0100000039100A0002007201006E64000000
+  SourceCode: >-
+    SetObjectiveCompleted AZBigStopChildSoldierQuest 21 1
+
+    SetStage AZBigStopChildSoldierQuest 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: Read this. <Show him Natalie's note.>

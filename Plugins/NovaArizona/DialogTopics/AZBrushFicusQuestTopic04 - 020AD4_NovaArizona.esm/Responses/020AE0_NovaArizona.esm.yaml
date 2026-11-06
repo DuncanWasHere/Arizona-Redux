@@ -1,0 +1,39 @@
+FormKey: 020AE0:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: 020AD5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: This again?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100796571
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetStage
+  FirstParameter: 100796571
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+Choices:
+- 020AD8:NovaArizona.esm
+- 020ADB:NovaArizona.esm
+- 020ADD:NovaArizona.esm
+- 020AEF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Have you considered taking out our Decanus?

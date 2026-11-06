@@ -1,0 +1,58 @@
+FormKey: 034242:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: Just talk to people. And just talk to people until we're all friendly and all on the page, about you and Job.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: Some people here want to kill him, eye-for-an-eye, y'know? Some people want to spare him. And there's fence-sitters.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: We need to have some sort of majority here to figure out what we're going to do here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 034240:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E05000000
+  SourceCode: SetStage AZHavenMurderQuest 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024846:NovaArizona.esm
+Prompt: Just talk to people?

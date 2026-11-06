@@ -1,0 +1,41 @@
+FormKey: 02BA5E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: 01EEC5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: "[FAILED] Yeah, I'm not going anywhere with you."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 166
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 5
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: If you don't come with me, I'm going to get my dad to beat you up!
+ActorValuePerk: 0003E8:FalloutNV.esm

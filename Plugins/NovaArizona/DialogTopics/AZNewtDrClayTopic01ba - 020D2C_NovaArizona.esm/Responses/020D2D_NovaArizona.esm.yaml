@@ -1,0 +1,60 @@
+FormKey: 020D2D:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+AddTopics:
+- 009298:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: That's right. Peach Springs was a pretty isolated community for quite some time. My Grandmother told me it's been inhabited since long before the War.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x204974
+    UseEmotionAnimation: True
+    Unused3: 0x746865
+  ResponseText: After a few generations of that, folks get restless.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6B6964
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: I was just a kid back then. I up and left home without saying a word. Joined the caravan and whisked myself westward.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617951
+  ResponseText: Everyone had their own reasons for leaving. I don't even remember mine.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The first expedition?

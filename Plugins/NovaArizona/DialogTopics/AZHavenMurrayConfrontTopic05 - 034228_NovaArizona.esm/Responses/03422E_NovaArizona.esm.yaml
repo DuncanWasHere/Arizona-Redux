@@ -1,0 +1,35 @@
+FormKey: 03422E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: 03422D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: Hey, look, everyone's on edge. If you stay quiet, I cannot defuse the situation.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 034224:NovaArizona.esm
+- 034225:NovaArizona.esm
+- 034226:NovaArizona.esm
+- 034227:NovaArizona.esm
+- 034228:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Remain silent.>

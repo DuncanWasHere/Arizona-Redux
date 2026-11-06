@@ -1,0 +1,28 @@
+FormKey: 020839:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EEA6:NovaArizona.esm
+PreviousInfo: 020838:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x95500C
+    UseEmotionAnimation: True
+    Unused3: 0x4AF408
+  ResponseText: '{Rex cured, return}<pant pant pant>'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796471
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

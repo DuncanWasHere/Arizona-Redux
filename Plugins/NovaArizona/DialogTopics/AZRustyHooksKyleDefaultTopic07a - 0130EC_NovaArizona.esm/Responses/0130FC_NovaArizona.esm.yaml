@@ -1,0 +1,54 @@
+FormKey: 0130FC:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Legion killed him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's actually funny in hindsight, because I was gonna kill him myself. I had it all planned out. Bear was going to back me up and everything.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: When the Legion cornered us, they covered Byrd in gasoline and burned him. They asked the rest of us why we shouldn't get the same treatment.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I was the only one who spoke up. I don't even remember what I said, but they seemed pleased. I guess that's why we're alive.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What happened to Byrd?

@@ -1,0 +1,51 @@
+FormKey: 017563:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am aware that the people of the Mojave have such a shallow view of the Legion. They do not understand us properly.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They do not understand that our brutality, although unfortunate, is necessary to bring civilization to these savage lands.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They do not understand the great difficulties involved in bringing order to our chaotic world. But, with this interview, they will.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 017566:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you hope to achieve with this interview?

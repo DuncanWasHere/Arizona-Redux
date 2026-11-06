@@ -1,0 +1,54 @@
+FormKey: 008A20:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x43466F
+  ResponseText: Why should I know?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A good man in Legion lands - what do {emphasis}you think happens to a man like that?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I apologize. I know you're only trying to help. <Sigh.> I've got no clue. Wish I did.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744967
+Choices:
+- 008A1A:NovaArizona.esm
+- 008A1B:NovaArizona.esm
+- 008A1C:NovaArizona.esm
+- 008A1D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you have any idea where he might've gone?

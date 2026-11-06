@@ -1,0 +1,47 @@
+FormKey: 00490B:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: It's the treaty. The Ranger Unification Treaty. The blackest day in the history of the Rangers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: When our Rangers unified with the NCR's, Hanlon became our handler. Chief of the Bureau of Ranger Affairs. We all had to take orders from him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: And that bastard kept sending us to fight NCR fires instead of them helping us fight our own.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00490C:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You said Hanlon was a good friend. What happened?

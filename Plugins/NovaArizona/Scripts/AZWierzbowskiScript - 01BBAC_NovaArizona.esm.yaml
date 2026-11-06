@@ -1,0 +1,33 @@
+FormKey: 01BBAC:NovaArizona.esm
+EditorID: AZWierzbowskiScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00750000000000781010000200FFFF0500520100FFFF05005202008016100002080056010300050007004C680000003A15170001160052040078000004120B000100FFFF0500426414288016100002080056010300060007004C960000003A15160001150052040078000004120A000100FFFF040042642811000000
+  SourceCode: >-
+    name AZWierzbowskiScript;
+
+
+    OnDeath {
+        SetEnemy(PlayerFaction, AZHavenFaction);
+
+        if (AZWierzbowskiDialogue.JudgementPassedGood) {
+            Player.RewardKarma(-100);
+        }
+
+        if (AZWierzbowskiDialogue.JudgementPassedBad) {
+            Player.RewardKarma(100);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004361:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B981:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

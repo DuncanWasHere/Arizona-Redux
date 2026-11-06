@@ -1,0 +1,40 @@
+FormKey: 00C309:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 020AE6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You are the one Callum spoke of. Where did you find my Legionary?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 006D93:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+Choices:
+- 0209C1:NovaArizona.esm
+- 00C2F9:NovaArizona.esm
+- 00C2FA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

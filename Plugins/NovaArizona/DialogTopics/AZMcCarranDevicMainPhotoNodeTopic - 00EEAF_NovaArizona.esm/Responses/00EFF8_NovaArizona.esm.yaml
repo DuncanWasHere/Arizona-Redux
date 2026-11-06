@@ -1,0 +1,34 @@
+FormKey: 00EFF8:NovaArizona.esm
+FormVersion: 15
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Really? Of what?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+Choices:
+- 00EEB0:NovaArizona.esm
+- 00EEB1:NovaArizona.esm
+- 00EEB2:NovaArizona.esm
+- 00EEB3:NovaArizona.esm
+- 00EEB4:NovaArizona.esm
+- 00EEB9:NovaArizona.esm
+- 00EECB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have photographs.

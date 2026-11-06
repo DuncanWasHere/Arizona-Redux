@@ -1,0 +1,92 @@
+FormKey: 01B9FA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That is correct. I was found by Cal in the year 2265. He and a few other Rangers managed to subdue me in the Corridor of the Sun, near old Casa Grande.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They took me to their headquarters in Quartz Site, seeking information that only a Frumentarius like myself would possess.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I tried to kill myself many times but was thwarted each attempt. For the next three weeks, I screamed at my captors, hurling insult upon insult.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: After that, I went quiet. For the next four months, Cal administered his knowledge to me. His knowledge of morality, of Caesar, of justice.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "It took another week before I asked a single question: 'How can a civilization built on a lie have done so much good for the Wasteland, then?'"
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That was the beginning of my enlightenment.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B99A:NovaArizona.esm
+- 01B99B:NovaArizona.esm
+- 01B99F:NovaArizona.esm
+- 01B9C3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A007201007303000200203115000A0072020073020002002031
+  SourceCode: >-
+    Set AZFreeformHaven.CalMentioned to 1
+
+    Set AZWierzbowskiDialogue.FrumentariusMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B981:NovaArizona.esm
+Prompt: You're a Ranger?

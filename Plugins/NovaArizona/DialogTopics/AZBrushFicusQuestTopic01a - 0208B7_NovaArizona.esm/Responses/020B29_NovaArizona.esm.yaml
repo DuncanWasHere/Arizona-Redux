@@ -1,0 +1,39 @@
+FormKey: 020B29:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: 020B28:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: Get that gun away from your mouth! You don't even know if it's loaded!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetActorValue
+  FirstParameter: 41
+  RunOnType: Target
+Choices:
+- 020B2A:NovaArizona.esm
+- 020B2B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Okay, check this out!
+ActorValuePerk: 0004B9:FalloutNV.esm

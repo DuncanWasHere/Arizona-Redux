@@ -1,0 +1,24 @@
+FormKey: 00DF96:NovaArizona.esm
+EditorID: AZQuartusStatioPhylacusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A002E0000000000160014000100100020582212050001007201002030203D3D39100A0002007201006EFF0000001900000011000000
+  SourceCode: >-
+    scn AZQuartusStatioPhylacusScript
+
+
+    BEGIN OnDeath
+
+
+    if GetQuestCompleted AZStatioFindFriendQuest == 0
+    	SetStage AZStatioFindFriendQuest 255
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm

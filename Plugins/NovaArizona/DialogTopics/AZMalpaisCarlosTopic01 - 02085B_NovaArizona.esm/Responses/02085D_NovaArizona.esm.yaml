@@ -1,0 +1,46 @@
+FormKey: 02085D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 02085C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: All out right now. But even if I did have any, I'm under contract to send them over to White Sands.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And White Sands only sells to the Legion, per our 2281 contract. You'd have to try some of the larger contracts in Kingman or Phoenix.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758839
+Choices:
+- 017538:NovaArizona.esm
+- 00DDF7:NovaArizona.esm
+- 02085B:NovaArizona.esm
+- 02085E:NovaArizona.esm
+- 020860:NovaArizona.esm
+- 020862:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can I buy a slave?

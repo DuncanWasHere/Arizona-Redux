@@ -1,0 +1,99 @@
+FormKey: 008768:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: 008675:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: Better than I could have asked for. I was right about you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x746E65
+    UseEmotionAnimation: True
+    Unused3: 0x207269
+  ResponseText: I'll let my partner know. Maybe, smoothskins aren't so bad.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x617274
+    UseEmotionAnimation: True
+    Unused3: 0x6E6F77
+  ResponseText: If you ever become a ghoul, look us up at The Reservation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: We'll be coming back and forth. You might see us at the old checkpoint to Kingman.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: Oh, and about the graffiti artist, you can find him at the Legion camp near the billboard at night.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100744496
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100744496
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100744496
+  SecondParameter: 17
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100697662
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E5802000039100A0002007203006E64000000
+  SourceCode: >-
+    Player.AddItem Caps001 600
+
+    Setstage AZBaseCampReservationQuest 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00863E:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He agreed to purchase the whole lot.

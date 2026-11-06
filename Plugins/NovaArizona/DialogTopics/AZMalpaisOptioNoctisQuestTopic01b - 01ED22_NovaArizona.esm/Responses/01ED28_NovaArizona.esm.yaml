@@ -1,0 +1,73 @@
+FormKey: 01ED28:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x326A1D
+    UseEmotionAnimation: True
+    Unused3: 0xFDF61F
+  ResponseText: Noctis did not request anything. You did, and you have the Mark of Caesar that gives you leave to make such requests, even if I cannot grant them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: I pity Noctis, I do, but as long as the legate is here, I can do nothing. Vale.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E050000006E0100000039100A0002007201006E190000001600120001000E0020720200582E1000002030203D3DA3110F0003007201006E250000006E01000000190000001600100001000C00207203007304002031203D3DA3110F0003007201006E230000006E01000000190000001600120001000E0020720400582E1000002031203D3DA3110F0003007201006E240000006E010000001800120001000E0020720400582E1000002030203D3DA3110F0003007201006E1E0000006E0100000019000000
+  SourceCode: >-
+    SetObjectiveCompleted AZMalpaisAbuseQuest 5 1
+
+    SetStage AZMalpaisAbuseQuest 25
+
+
+    if AZMalpaisAdjutantREF.GetDead == 0
+    	SetObjectiveDisplayed AZMalpaisAbuseQuest 37 1
+    endif
+
+
+    if AZElephantHillFatEyeQuest.FatEyeJem == 1
+    	SetObjectiveDisplayed AZMalpaisAbuseQuest 35 1
+    endif
+
+
+    if FortCaesarREF.GetDead == 1
+    	SetObjectiveDisplayed AZMalpaisAbuseQuest 36 1
+    elseif FortCaesarREF.GetDead == 0
+    	SetObjectiveDisplayed AZMalpaisAbuseQuest 30 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B71:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 121FF0:FalloutNV.esm
+Prompt: Can I ask that you not tell the legate that Noctis requested this?

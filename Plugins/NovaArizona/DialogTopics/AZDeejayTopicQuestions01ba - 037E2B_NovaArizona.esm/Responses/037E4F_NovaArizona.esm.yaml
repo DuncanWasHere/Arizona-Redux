@@ -1,0 +1,47 @@
+FormKey: 037E4F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037E4E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{genuinely surprised, unsettled by the implications}Fuck....'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You're right. That's probably not a coincidence.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 8
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: And you said his name is Namtar? Like the demon of disease? That'd be a hell of a coincidence.
+ActorValuePerk: 0003EC:FalloutNV.esm

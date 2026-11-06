@@ -1,0 +1,77 @@
+FormKey: 004C99:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legion guards and caravaneers have been removed in the area around Elephant Hill for the past three weeks.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: All reports indicate that it is a black demon, a Ranger.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100681665
+  SecondParameter: 40
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100681665
+  SecondParameter: 41
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100681665
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 006E34:NovaArizona.esm
+- 006E35:NovaArizona.esm
+- 006E36:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E32000000
+  SourceCode: SetStage AZMalpaisBountyQuest 50
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+Prompt: Okay, I've completed the initial three bounties. What was the fourth one?

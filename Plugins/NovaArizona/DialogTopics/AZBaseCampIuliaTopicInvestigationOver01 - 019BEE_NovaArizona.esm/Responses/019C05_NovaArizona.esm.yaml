@@ -1,0 +1,65 @@
+FormKey: 019C05:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, that's wonderful!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You must tell the Legionary's Decanus. They'll probably be beaten. Serves them right!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 150
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100768688
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768679
+Choices:
+- 019BEF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E2D000000A3110F0003007201006E8C0000006E01000000A3110F0003007201006E910000006E01000000
+  SourceCode: >-
+    setstage AZBaseCampRomanceQuest 45
+
+    setobjectivedisplayed AZBaseCampRomanceQuest 140 1
+
+    setobjectivedisplayed AZBaseCampRomanceQuest 145 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Arceus and Flemus are in love. They're sneaking out for some privacy.

@@ -1,0 +1,43 @@
+FormKey: 0208FC:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: 0208FB:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know what happened there. We must have pissed off Mars somehow. Probably all those fake Veterans and Centurions.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: When we kick the NCR off our throats and purge the Mojave of all these Profligates, it's their turn next.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetGlobalValue
+  FirstParameter: 1198877
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+Choices:
+- 0208C4:NovaArizona.esm
+- 0208C5:NovaArizona.esm
+- 0208CB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Caesar was over thirty.

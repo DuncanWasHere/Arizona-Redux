@@ -1,0 +1,64 @@
+FormKey: 01F6CF:NovaArizona.esm
+EditorID: AZSMARTArrayMedicineRobberyAutotalkPackage
+FormVersion: 15
+Unused: 84
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 20588
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 256
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 6
+DialogueData:
+  DialogueFOV: 100
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1C000100AC27070001006EC8000000
+    SourceCode: AZSMARTArraySpiritChaserREF.setspeedmult 200
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01CC20:NovaArizona.esm
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x1C000100AC27070001006E8200000015000A0072020073070002002031
+    SourceCode: >-
+      AZSMARTArraySpiritChaserREF.setspeedmult 130
+
+      set AZChlorideAntibioticsQuest.bSpiritChaserDebrief to 1
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01CC20:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01F58D:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

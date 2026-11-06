@@ -1,0 +1,35 @@
+FormKey: 010293:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010292:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x303020
+    UseEmotionAnimation: True
+    Unused3: 0x0E0080
+  ResponseText: Well, it's hot out. It's always hot in the Mojave. Please, I don't want any trouble.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetActorValue
+  FirstParameter: 6
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You seem to be sweating quite a bit. Anything to hide?

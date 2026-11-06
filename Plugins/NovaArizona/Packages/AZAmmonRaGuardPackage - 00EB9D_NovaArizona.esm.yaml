@@ -1,0 +1,46 @@
+FormKey: 00EB9D:NovaArizona.esm
+EditorID: AZAmmonRaGuardPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageGuard
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00EB04:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 00EB04:NovaArizona.esm
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100874956
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetOpenState
+  RunOnType: Reference
+  Reference: 036592:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

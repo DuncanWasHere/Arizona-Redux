@@ -1,0 +1,56 @@
+FormKey: 019CF0:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Textile work and dyeing, mostly. Those flags you see out there? Some of them are mine.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's actually very relaxing work. The red pigment comes from these little bugs you can find on cacti.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There's a small farm for them in Two-Sun, but out here, you have to search for them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768684
+Choices:
+- 020DBB:NovaArizona.esm
+- 008999:NovaArizona.esm
+- 019CDB:NovaArizona.esm
+- 019CD8:NovaArizona.esm
+- 019CDA:NovaArizona.esm
+- 019CD5:NovaArizona.esm
+- 019CD6:NovaArizona.esm
+- 019CD7:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you do around here?

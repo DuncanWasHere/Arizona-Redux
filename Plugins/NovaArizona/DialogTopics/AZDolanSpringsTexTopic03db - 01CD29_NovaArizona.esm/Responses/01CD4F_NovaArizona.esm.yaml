@@ -1,0 +1,64 @@
+FormKey: 01CD4F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't think anything. The Holy Bible has predicted everything that has come to pass. Every event is written in ink on those pages.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Bible warned us of the end of the world. The Tribulations and the End Times are the prerequisite to Christ's Second Coming.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Have you heard of the Seventy Weeks of Daniel? It's a prophecy that there will be a span of seventy 'sevens' in which sinners can repent.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: At the end of those seventy sevens, the Tribulations will commence and the world will end. You'll notice that the world ended in the year 2077.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 01CD28:NovaArizona.esm
+- 01CD29:NovaArizona.esm
+- 01CD2A:NovaArizona.esm
+- 01CD2B:NovaArizona.esm
+- 01CD2C:NovaArizona.esm
+- 01CD2D:NovaArizona.esm
+- 01CD2E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So you think Caesar is Jesus Christ?

@@ -1,0 +1,29 @@
+FormKey: 01F6A2:NovaArizona.esm
+FormVersion: 15
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: 01F6A1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fascinating. You're full of surprises. And you thought it would be a good idea to tell me about this?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+Choices:
+- 01F688:NovaArizona.esm
+- 01F68E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Someone is very sick in Chloride. I need the medicine on that caravan.

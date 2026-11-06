@@ -1,0 +1,48 @@
+FormKey: 010313:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: No. Nerva is currently drilling the first batch of the Red Okie Centuria at the Castra Legatus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100729230
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 40
+Choices:
+- 010314:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073060002002031
+  SourceCode: set AZDamNQuestMiscDialogue.NervaMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01031E:NovaArizona.esm
+Prompt: May I speak with Nerva?

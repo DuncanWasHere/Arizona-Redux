@@ -1,0 +1,39 @@
+FormKey: 00DFFA:NovaArizona.esm
+FormVersion: 15
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The NCR, of course, arch-Profligates and degenerates.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I pity their lack of courage. They should attack us and die with honor instead of when we find them under their beds.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720529
+Choices:
+- 00DF98:NovaArizona.esm
+- 00DF99:NovaArizona.esm
+- 00DFE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What threats do you guard from?

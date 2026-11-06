@@ -1,0 +1,36 @@
+FormKey: 03A901:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x205643
+    UseEmotionAnimation: True
+    Unused3: 0x436173
+  ResponseText: Sure thing, but I should warn you that the conversion rate is pretty steep. Ten caps would get you one denarius.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100811912
+Choices:
+- 03A902:NovaArizona.esm
+- 03A904:NovaArizona.esm
+- 03A906:NovaArizona.esm
+- 03A907:NovaArizona.esm
+- 03A90B:NovaArizona.esm
+- 03A90F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I want to exchange caps for Legion money.

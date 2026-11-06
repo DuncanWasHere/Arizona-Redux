@@ -1,0 +1,48 @@
+FormKey: 0101D8:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 0101D7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x006E01
+    UseEmotionAnimation: True
+    Unused3: 0x0F0003
+  ResponseText: If you're here as an applicant for concubine to a Centurion, I'm not processing them there. You have to go to Malpais for that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: If you are not, then you must have business here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPCIsSex
+  FirstParameter: 1
+Choices:
+- 018CF7:NovaArizona.esm
+- 0101DA:NovaArizona.esm
+- 0101E8:NovaArizona.esm
+- 0101EE:NovaArizona.esm
+- 00C6C9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

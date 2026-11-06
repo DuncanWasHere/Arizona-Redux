@@ -1,0 +1,30 @@
+FormKey: 01EE98:NovaArizona.esm
+EditorID: AZJawRipperScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0019004C00000001007201008016310002290058000022120B000100FFFF05005202004200045800003A100B000100FFFF05005202004246050207004C7000000039100F000200FFFF0500520200FFFF040042FF11000000100008000A004C00000000008016310002290058000022120B000100FFFF05005202004200045800003A100B000100FFFF05005202004246050207004CC800000039100F000200FFFF0500520200FFFF040042FF11000000
+  SourceCode: >-
+    name AZJawRipperScript;
+
+
+    OnStartCombat::PlayerRef {
+        if ((GetQuestCompleted(AZBigStopChildSoldierQuest) == 0) && (GetStage(AZBigStopChildSoldierQuest) != 70)) {
+            SetStage(AZBigStopChildSoldierQuest, 255);
+        }
+    }
+
+
+    OnDeath {
+        if ((GetQuestCompleted(AZBigStopChildSoldierQuest) == 0) && (GetStage(AZBigStopChildSoldierQuest) != 70)) {
+            SetStage(AZBigStopChildSoldierQuest, 255);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm

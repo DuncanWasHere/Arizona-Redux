@@ -1,0 +1,48 @@
+FormKey: 01ED88:NovaArizona.esm
+FormVersion: 15
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: Awful? Like, what type of question is that?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: You shouldn't have to give therapy while troops point a gun at your head, and I had to be careful not to say anything that would piss the Legion off.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: Still, I managed to give Noctis the tools to begin the healing process.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED89:NovaArizona.esm
+- 01ED8B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How was it?

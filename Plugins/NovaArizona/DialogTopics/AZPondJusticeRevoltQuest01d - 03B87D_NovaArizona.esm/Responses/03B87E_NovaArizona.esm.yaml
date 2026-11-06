@@ -1,0 +1,39 @@
+FormKey: 03B87E:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll need my neck free of this collars. It strangles my every twitch.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x747261
+    UseEmotionAnimation: True
+    Unused3: 0x2E2041
+  ResponseText: If you can provide us a way of disabling them, you will be of great service to the rebellion.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B866:NovaArizona.esm
+- 03B879:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Anything else?

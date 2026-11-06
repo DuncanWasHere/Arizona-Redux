@@ -1,0 +1,50 @@
+FormKey: 01ED69:NovaArizona.esm
+FormVersion: 15
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657375
+    UseEmotionAnimation: True
+    Unused3: 0x697320
+  ResponseText: Inventory. It's boring and thankless, but it needs to be done.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657375
+    UseEmotionAnimation: True
+    Unused3: 0x697320
+  ResponseText: Occasionally, I go to Crimson Caravans to procure additional supplies. Or, really, I go to other smaller caravans because Crimson is too expensive.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x672061
+  ResponseText: Other than that, I occasionally do therapy and basic medicine.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED67:NovaArizona.esm
+- 01ED64:NovaArizona.esm
+- 01ED65:NovaArizona.esm
+- 01ED66:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you here?

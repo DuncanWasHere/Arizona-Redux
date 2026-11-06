@@ -1,0 +1,82 @@
+FormKey: 017526:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I have an invoice that needs to be delivered to the Tres Leches Caravan. Please deliver this to Enzo if you are able.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000300
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They're in a shack on top of the Chainway. Just follow the overpass south.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 18
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100758634
+  SecondParameter: 20
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 17
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E0100000015000A0072030073110002002031551005000100720400160019000100150020583B100A0002007203006E140000002031203D3DA3110F0003007203006E150000006E0100000019000000
+  SourceCode: >-
+    player.additem AZMalpaisInvoice 1
+
+    set AZMalpaisJournalistQuest.bChainwayForemanTask to 1
+
+    ShowMap AZ3SomeCaravanMapMarkerREF
+
+
+    if (GetStageDone AZMalpaisJournalistQuest 20 == 1)
+    	setobjectivedisplayed AZMalpaisJournalistQuest 21 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175EA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00568D:NovaArizona.esm
+Prompt: Well, what needs doing around here?

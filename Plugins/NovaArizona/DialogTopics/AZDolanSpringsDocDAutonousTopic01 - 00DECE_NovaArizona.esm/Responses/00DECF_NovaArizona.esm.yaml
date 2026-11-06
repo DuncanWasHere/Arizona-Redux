@@ -1,0 +1,41 @@
+FormKey: 00DECF:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 00DED0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's an odd question. Are you with the Frumentarii?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100720154
+  SecondParameter: 25
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100720154
+  SecondParameter: 26
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100720154
+Choices:
+- 00DED1:NovaArizona.esm
+- 00DED2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Anyone coming in looking for medical supplies recently?

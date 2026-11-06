@@ -1,0 +1,77 @@
+FormKey: 01EBE4:NovaArizona.esm
+EditorID: AZSteffieGiveFoodQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    VariableCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000002D01000080161E000216005202007800002F100B000100FFFF05005203002807004C3F01000039151D00011C005601000003005800003F140B000100FFFF050052030042010F0039150C00010B00560100000100420000801611000209005601000001001507004C3F01000039152300012200560100000200580000D51414000200FFFF04004200FFFF08005601000003000039152400012300560400000400580000401415000200FFFF0500520300FFFF080056010000020000801621000219005202007800002F100E000100FFFF08005604000004002807004C330100003A152000011F00520200780000521014000200FFFF0800560400000400FFFF040042012839150C00010B00560100000100420100811608000107004C76000000371009000100FFFF050052040011000000
+  SourceCode: >-
+    name AZSteffieGiveFoodQuestScript;
+
+
+    int bFoodFound;
+
+    int iListIndex;
+
+    int iListIndexMax;
+
+
+    ref rFormToRemove;
+
+
+    GameMode {
+        if (PlayerREF.GetItemCount(NVDLC03PerkRelatedAllFoodLIST)) {
+            iListIndexMax = ListGetCount(NVDLC03PerkRelatedAllFoodLIST) - 1;
+            bFoodFound = 0;
+
+            while (!bFoodFound) {
+                iListIndex = Rand(0, iListIndexMax);
+                rFormToRemove = ListGetNthForm(NVDLC03PerkRelatedAllFoodLIST, iListIndex);
+
+                if (PlayerREF.GetItemCount(rFormToRemove)) {
+                    PlayerREF.RemoveItem(rFormToRemove, 1);
+                    bFoodFound = 1;
+                }
+            }
+        }
+
+        StopQuest(AZSteffieGiveFoodQuest);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bFoodFound
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iListIndex
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iListIndexMax
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rFormToRemove
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0152F6:OldWorldBlues.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EBE3:NovaArizona.esm

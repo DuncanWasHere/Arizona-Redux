@@ -1,0 +1,61 @@
+FormKey: 01EE4A:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: I understand children who grow up West of the Colorado only have one father and one mother.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: It's no wonder that the NCR turned out as Profligate as they did.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: But, here in the Legion, all of the Legion takes care of all its children. All are fathers, and all are mothers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: It is a superior way of preparing the children for the hardships of this world.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01EE3A:NovaArizona.esm
+- 01EE3B:NovaArizona.esm
+- 0350FD:NovaArizona.esm
+- 01EE37:NovaArizona.esm
+- 01EE38:NovaArizona.esm
+- 01EE39:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What does that mean?

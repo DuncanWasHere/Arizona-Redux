@@ -1,0 +1,72 @@
+FormKey: 00ABE9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hot darn, that's not good. That's not good at all. You and I can get in big trouble getting seen with that around these parts.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: How about you hold onto those, I ain't too keen on spending my twilight years on a cross overlooking the Colorado.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 100707312
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100707312
+  SecondParameter: 1
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+Choices:
+- 00ABD7:NovaArizona.esm
+- 00ABCD:NovaArizona.esm
+- 00ABCE:NovaArizona.esm
+- 00ABCF:NovaArizona.esm
+- 00ABD6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000
+  SourceCode: Player.RemoveItem AZMineQuestMap 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ABF1:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E070000006E0100000015000A0072010073090002002031
+  SourceCode: >-
+    setobjectivecompleted AZWhiteHillsMineDialogue 7 1
+
+    Set AZWhiteHillsMineDialogue.SlipperyWillComplete to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+Prompt: I found the treasure, but your dying friend was mistaken about the silver. It's all chems.

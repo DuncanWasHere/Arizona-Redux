@@ -1,0 +1,291 @@
+FormKey: 01EF28:NovaArizona.esm
+EditorID: AZBigStopJemScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967285
+    RefCount: 23
+    VariableCount: 15
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000410300008016100002080056010000030007004C3E01000039151300011200560400000F005800005727040000000080161700020F00560400000F005604000007000407004CDA00000080161F00021700470A00421708470A0042060701560100000600150207004CCE000000BB1012000200FFFF0800560400000800FFFF0400420039150C00010B00560100000600420100811608000107004C3E01000080161700020F00560400000F00560400000A000407004C3E01000080161F00021700470A00420608470A0042170702560100000600150207004C3E010000BB1012000200FFFF0800560400000B00FFFF0400420039150C00010B00560100000600420100801618000210005800000E10060001003E0042010407004C5D020000801611000209005601000001001507004C9B01000061100200000039150C00010B0056000000020042080039150C00010B00560100000100420100FA110200000039151A000119005600000002005600000002005800000C10040000000F0080161D000215005600000002004206095601000001004201040207004CF7010000911109000100FFFF0500520B0039150C00010B0056010000010042020080162500021D0056000000020042000958000032120B000100FFFF0500520B00150207004C5D02000039100F000200FFFF0500520C00FFFF0400420A6010020000000F100A0002003E00FFFF04004203FA110200000039150C00010B00560100000100420000801618000210005800000E10060001003E0042020407004C7C030000801611000209005601000001001507004CBA02000061100200000039150C00010B00560000000200420A0039150C00010B00560100000100420100FA110200000039151A000119005600000002005600000002005800000C10040000000F0080161D000215005600000002004206095601000001004201040207004C16030000911109000100FFFF0500520B0039150C00010B0056010000010042020080162500021D0056000000020042000958000032120B000100FFFF0500520B00150207004C7C03000039100F000200FFFF0500520C00FFFF040042146010020000000F100A0002003E00FFFF04004203FA110200000039150C00010B0056010000010042000011000000100008000A00E6000000000039100F000200FFFF0500520D00FFFF040042FF80163800023000580000A41111000200FFFF0500520E00FFFF0400423815580000A51111000200FFFF0500520E00FFFF040042380207004CF4030000A31115000300FFFF0500520E00FFFF04004238FFFF0400420080162000021800580000A51111000200FFFF0500520E00FFFF0400424607004C6E04000080162000021800580000A41111000200FFFF0500520E00FFFF0400424707004C55040000A31115000300FFFF0500520E00FFFF04004248FFFF04004201A21115000300FFFF0500520E00FFFF04004246FFFF040042011100000010000B001A00A60000000100720F0039150D00010C005604000007005210000039150D00010C005604000008005211000039150D00010C005604000009005212000039150D00010C00560400000A005213000039150D00010C00560400000B005214000039150D00010C00560400000C005215000039150D00010C00560400000D005216000039150C00010B005601000003004201003A151700011600520F00780000BA110B000100FFFF05005217002811000000
+  SourceCode: >-
+    name AZBigStopJemScript;
+
+
+    int DoOnce; // Script blocker
+
+    float Timer; // Timer used for animation control
+
+
+    // Door Locking Stuff
+
+    int bInit;
+
+
+    int bLockedStore;
+
+    int bLockedHouse;
+
+    int bGetOut;
+
+
+    ref rStorePackage;
+
+    ref rStoreCell;
+
+    ref rStoreDoorREF;
+
+
+    ref rHousePackage;
+
+    ref rHouseCell;
+
+    ref rHouseDoorREF;
+
+
+    ref rKey;
+
+
+    GameMode {
+        // Door Locking Stuff
+        if (bInit) {
+            ref rCurrentPackage = GetCurrentStablePackage();
+
+            if (rCurrentPackage == rStorePackage) {
+                // Have actor try to kick player out if it's past closing time
+                if ((GameHour >= 23 || GameHour < 6) && !bGetOut) {
+                    SetPublic(rStoreCell, 0);
+                    bGetOut = 1;
+                }
+
+            } else if (rCurrentPackage == rHousePackage) {
+                // Have actor try to kick player out if they're late for work
+                if ((GameHour >= 6 && GameHour < 23) && !bGetOut) {
+                    SetPublic(rHouseCell, 0);
+                    bGetOut = 1;
+                }
+            }
+        }
+
+        // When set to 1, plays medical animations for eight seconds then restarts conversation with the player
+        if (GetAV(Variable01) == 1) {
+            if (!DoOnce) {
+                DisablePlayerControls();
+                Timer = 8;
+                DoOnce = 1;
+                ResetAI();
+            }
+
+            Timer = Timer - GetSecondsPassed();
+
+            if (Timer <= 6 && DoOnce == 1) {
+                IMod(FadeToBlackISFX);
+                DoOnce = 2;
+            }
+
+            if (Timer <= 0 && !IsImagespaceActive(FadeToBlackISFX)) {
+                SetStage(VDoctors, 10);
+                EnablePlayerControls();
+                SetAV(Variable01, 3); 
+                ResetAI();
+                DoOnce = 0;
+            }
+        }
+
+        // When set to 2, plays medical animations for ten seconds then restarts conversation with the player
+        if (GetAV(Variable01) == 2) {
+            if (!DoOnce) {
+                DisablePlayerControls();
+                Timer = 10;
+                DoOnce = 1;
+                ResetAI();
+            }
+
+            Timer = Timer - GetSecondsPassed();
+
+            if (Timer <= 6 && DoOnce == 1) {
+                IMod(FadeToBlackISFX);
+                DoOnce = 2;
+            }
+
+            if (Timer <= 0 && !IsImagespaceActive(FadeToBlackISFX)) {
+                SetStage(VDoctors, 20);
+                EnablePlayerControls();
+                SetAV(Variable01, 3); 
+                ResetAI();
+                DoOnce = 0;
+            }
+        }
+    }
+
+
+    OnDeath {
+        SetStage(AZBigStopAugustQuest, 255);
+
+        if (!GetObjectiveCompleted(AZMalpaisAbuserQuest, 56) && GetObjectiveDisplayed(AZMalpaisAbuserQuest, 56)) {
+            SetObjectiveDisplayed(AZMalpaisAbuserQuest, 56, 0);
+        }
+
+        if (GetObjectiveDisplayed(AZMalpaisAbuserQuest, 70)) {
+            if (GetObjectiveCompleted(AZMalpaisAbuserQuest, 71)) {
+                SetObjectiveDisplayed(AZMalpaisAbuserQuest, 72, 1);
+            }
+            SetObjectiveCompleted(AZMalpaisAbuserQuest, 70, 1);
+        }
+    }
+
+
+    // This is only triggered by the door locking activator during initialization
+
+    OnTriggerEnter::AZBigStopActivatorJemDoorLockerREF {
+        rStorePackage = AZBigStopJemStorePackage;
+        rStoreCell = AZBigStopJemsGoodsAndServicesINT;
+        rStoreDoorREF = AZBigStopJemStoreDoorREF;
+
+        rHousePackage = AZBigStopJemHousePackage;
+        rHouseCell = AZBigStopMotelRoomINT05;
+        rHouseDoorREF = AZBigStopJemHouseDoorREF;
+
+        rKey = AZKeyBigStopJem;
+
+        bInit = 1;
+
+        AZBigStopActivatorJemDoorLockerREF.EnterTrigger(PlayerREF);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: Timer
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInit
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLockedStore
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLockedHouse
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGetOut
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStorePackage
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStoreCell
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStoreDoorREF
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHousePackage
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHouseCell
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHouseDoorREF
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rKey
+  - Data:
+      Index: 14
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCurrentPackage
+  - Data:
+      Index: 15
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rCurrentPackage_1
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 8
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 10
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 11
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 12
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 13
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 14
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 15
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000038:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0269C4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CE959:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B75E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ED22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0135FE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013626:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EDCE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ED7E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004687:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B6FF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

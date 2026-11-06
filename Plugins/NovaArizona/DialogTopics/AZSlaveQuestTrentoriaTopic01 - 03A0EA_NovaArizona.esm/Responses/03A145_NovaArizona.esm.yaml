@@ -1,0 +1,41 @@
+FormKey: 03A145:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A0F0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: I understand now why the beast looked so familiar to me. It was right under my nose! Was the creature there when my slave was taken?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 85
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestRunning
+  FirstParameter: 100901046
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756608
+Choices:
+- 03A101:NovaArizona.esm
+- 03A144:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've identified the mutant from the drawing by your slave's corpse. He's Bear, a Rusty Hook.

@@ -1,0 +1,62 @@
+FormKey: 009294:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0B41E7
+    UseEmotionAnimation: True
+    Unused3: 0xAA3E22
+  ResponseText: Let me break it down for you then.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x0B41E7
+    UseEmotionAnimation: True
+    Unused3: 0xAA3E22
+  ResponseText: His commander wants him alive, and he doesn't like being told no.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x0B41E7
+    UseEmotionAnimation: True
+    Unused3: 0xAA3E22
+  ResponseText: Meaning, if this idiot succumbs to his injuries, I'm going to be put on a cross or worse.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x0B41E7
+    UseEmotionAnimation: True
+    Unused3: 0xAA3E22
+  ResponseText: I can't risk some two-bit Wasteland surgeon infecting him with who knows what.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 0091B4:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+- 009295:NovaArizona.esm
+- 009298:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't understand you.

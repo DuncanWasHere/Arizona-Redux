@@ -1,0 +1,60 @@
+FormKey: 02CDA1:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 02CD17:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My programming requires me to ingratiate myself to the clientele. The clientele has been rowdy, loud, and violent. I acclimated.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I've learned that I'm good at gunspinning, and that flushing my RAM feels similar to how alcohol has been described to me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Since I loosened my parameters, I've received more tips and suffered less damages, which is good enough for me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Don't like it? Get lost.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CD01:NovaArizona.esm
+- 02CCEE:NovaArizona.esm
+- 02CCF5:NovaArizona.esm
+- 02CCFE:NovaArizona.esm
+- 02CCF9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: For a robot, you've got a serious attitude.

@@ -1,0 +1,47 @@
+FormKey: 034ECE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206E6F
+    UseEmotionAnimation: True
+    Unused3: 0x736964
+  ResponseText: If you wish. You may speak to the Maiden stationed near the gate to the Magnum Chasma. Her name is Henriette.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0xE51901
+  ResponseText: But first, speak to Tex. He's usually inside the Temple. He was very interested in this matter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E000000006E01000000
+  SourceCode: setobjectivedisplayed AZCowMutilationsQuest 0 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034EC6:NovaArizona.esm
+Prompt: I'm interested. I'll look into these cattle mutilations for you.

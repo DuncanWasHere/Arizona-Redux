@@ -1,0 +1,88 @@
+FormKey: 02DDDF:NovaArizona.esm
+EditorID: AZWeapHuntingRifleUnique
+FormVersion: 15
+ObjectBounds: {}
+Name: Mourning Star
+Model:
+  File: AZNovaArizona\Weapons\AZHuntingRifleUnique.nif
+LargeIconFilename: Interface\Icons\PipboyImages\Weapons\weapons_hunting_rifle.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_hunting_rifle.dds
+ObjectEffect: 162C8F:FalloutNV.esm
+Ammo: 1537E9:FalloutNV.esm
+RepairList: 02262C:FalloutNV.esm
+EquipmentType: SmallGuns
+PickUpSound: 087D63:FalloutNV.esm
+DropSound: 087D62:FalloutNV.esm
+ShellCasingModel:
+  File: Weapons\2HandAutomatic\AssaultRifleShellCasing.NIF
+ScopeModel:
+  File: interface\hud\scope01.nif
+ModelMod1: weapons\2handrifle\huntingrifleExtMag.nif
+ModelMod2: weapons\2handrifle\huntingrifleScope.nif
+ModelMod1And2: weapons\2handrifle\huntingrifleScopeExtMag.NIF
+ModelMod3: weapons\2handrifle\huntingrifleCustomAction.nif
+ModelMod1And3: weapons\2handrifle\huntingrifleExtMagCustAction.nif
+ModelMod2And3: weapons\2handrifle\huntingrifleScopeCustAction.nif
+ModelMod1And2And3: weapons\2handrifle\huntingrifleAllMods.NIF
+ImpactDataSet: 019083:FalloutNV.esm
+FirstPersonModel: 02DDDE:NovaArizona.esm
+FirstPersonModelMod1: 121FE4:FalloutNV.esm
+FirstPersonModelMod2: 12114A:FalloutNV.esm
+FirstPersonModelMod1And2: 121FE9:FalloutNV.esm
+FirstPersonModelMod3: 121FE5:FalloutNV.esm
+FirstPersonModelMod1And3: 121FEA:FalloutNV.esm
+FirstPersonModelMod2And3: 121FE8:FalloutNV.esm
+FirstPersonModelMod1And2And3: 121FEB:FalloutNV.esm
+SoundGunShoot3D: 13307D:FalloutNV.esm
+SoundGunShootDist: 13307C:FalloutNV.esm
+SoundGunShoot2D: 13307B:FalloutNV.esm
+SoundMeleeSwingGunNoAmmo: 01F21C:FalloutNV.esm
+SoundEquip: 01CCC7:FalloutNV.esm
+SoundUnequip: 01D4BE:FalloutNV.esm
+Value: 5200
+Health: 450
+Weight: 8
+BaseDamage: 60
+ClipSize: 7
+AnimationType: RifleBallistic2Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- HasScope
+- NoJamAfterReload
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+MinSpread: 0.01
+SightFov: 25
+Projectile: 08F20A:FalloutNV.esm
+BaseVatsToHitChance: 42
+AttackAnimation: Attack3
+ProjectileCount: 1
+MinRange: 768
+MaxRange: 3548
+OnHit: ExplodeOnly
+AnimationAttackMultiplier: 1.25
+FireRate: 1
+OverrideActionPoints: 40
+RumbleLeftMotorStrength: 0.7
+RumbleRightMotorStrength: 0.9
+RumbleDuration: 0.2
+AttackShotsPerSec: 0.9868423
+ReloadTime: 1.9667
+JamTime: 1.3333
+Skill: 41
+RumblePattern: Square
+RumbleWavelength: 0.2
+LimbDamageMult: 1
+ResistType: -1
+SightUsage: 1.5
+SemiAutomaticFireDelayMax: 0.3
+StrengthReq: 6
+KillImpulse: 26
+SkillReq: 50
+CriticalDamage: 60
+CriticalPercentMult: 2
+CriticalOnDeath: True
+Vats:
+  VatsSilent: True

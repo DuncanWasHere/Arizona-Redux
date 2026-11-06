@@ -1,0 +1,49 @@
+FormKey: 00D165:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6F6D65
+  ResponseText: Hey pal, aren't we all?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6F6D65
+  ResponseText: Mostly they make their money subcontracting independent traders to make dealing with the Legion a bit easier.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x75706C
+    UseEmotionAnimation: True
+    Unused3: 0x6E756D
+  ResponseText: Problem is, not much trade going on around here. Our guys are too ill-equiped to take any of the other routes to The Fort.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D164:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: They're war profiteers?

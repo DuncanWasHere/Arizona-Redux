@@ -1,0 +1,60 @@
+FormKey: 00E2BE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[SUCCESS] Truly? I had no idea. Then I thank you. You did a brave thing. Here, take this as my thanks.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 85
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+Choices:
+- 00E282:NovaArizona.esm
+- 00E288:NovaArizona.esm
+- 00E28A:NovaArizona.esm
+- 00E28B:NovaArizona.esm
+- 00E290:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007202006E050000006E0100000039100A0002007202006E050000007711070001006EFA0000001C00010002100A0002007203006E23000000
+  SourceCode: >-
+    setobjectivecompleted AZBigStopFindDogQuest 5 1
+
+    setstage AZBigStopFindDogQuest 5
+
+    RewardXP 250
+
+    player.additem moneylegion1 35
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C449:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+Prompt: <Lie.> He was suffering. You put him under too much stress. It broke him.
+ActorValuePerk: 0004BB:FalloutNV.esm

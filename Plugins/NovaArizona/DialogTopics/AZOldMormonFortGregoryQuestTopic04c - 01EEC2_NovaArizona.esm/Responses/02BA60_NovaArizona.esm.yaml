@@ -1,0 +1,41 @@
+FormKey: 02BA60:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: 01EEC7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: '[FAILED] Hey, knock that off.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 166
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetActorValue
+  FirstParameter: 42
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Attempt and fail to sneak up behind Gregory.>
+ActorValuePerk: 0004BA:FalloutNV.esm

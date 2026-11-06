@@ -1,0 +1,52 @@
+FormKey: 01BB0C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's nice of you to say. I came to peace with that a long time ago. Every day, ich bin dankbar that I knew Marguerite. Uh, 'I'm thankful', sorry.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I owe it to her to raise Serwa right and to make as many new memories with her as possible before I meet her in the great hereafter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776317
+Choices:
+- 01BA5A:NovaArizona.esm
+- 01BA5B:NovaArizona.esm
+- 01BA5C:NovaArizona.esm
+- 01BA61:NovaArizona.esm
+- 01BA66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730B0002002031
+  SourceCode: Set AZFreeformHaven.SerwaMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+Prompt: I'm sorry to hear that.

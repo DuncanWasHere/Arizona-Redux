@@ -1,0 +1,47 @@
+FormKey: 026A8F:NovaArizona.esm
+EditorID: AZBaseCampCestusOvidTrainingPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageUseWeapon
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 12
+Duration: 7
+Target:
+  Target:
+    MutagenObjectType: PackageTargetObjectType
+    ObjectType: WeaponsRanged
+WeaponData:
+  WeaponFlags:
+  - CrouchToReload
+  - HoldFireWhenBlocked
+  NumberOfBursts: 1
+  ShootsPerVolleyMin: 1
+  ShootsPerVolleyMax: 6
+  PauseBetweenVolleysMin: 1
+  PauseBetweenVolleysMax: 2
+Target2:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 026A8D:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

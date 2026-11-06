@@ -1,0 +1,66 @@
+FormKey: 02CD24:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fine. Here's your caps.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 1063707
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100730779
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CCFF:NovaArizona.esm
+- 02CD00:NovaArizona.esm
+- 02CD07:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x150016007202007307000E0020720100582F10050001007203001500180072020073050010002072020073050020720200730700202B1600110002000D0020720200730500203230203E3D150014007202007306000C0020720200730500203230202F150014007202007308000C00207202007305002032302025190000001C00010052100B0002007203007202007307001C00010002100B000200720400720200730700
+  SourceCode: >-
+    set AZFreeformElephantHill.iBottles to player.getitemcount SSBottleEmpty
+
+    set AZFreeformElephantHill.iBottleCounter to AZFreeformElephantHill.iBottleCounter + AZFreeformElephantHill.iBottles
+         if AZFreeformElephantHill.iBottleCounter >= 20
+         set AZFreeformElephantHill.iStarCapTracker to AZFreeformElephantHill.iBottleCounter / 20
+         set AZFreeformElephantHill.iExcessBottles to AZFreeformElephantHill.iBottleCounter % 20
+    endif
+
+    player.removeitem SSBottleEmpty AZFreeformElephantHill.iBottles
+
+    player.additem 0000000F AZFreeformElephantHill.iBottles
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01079B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 103B1B:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: I have empty bottles for you.

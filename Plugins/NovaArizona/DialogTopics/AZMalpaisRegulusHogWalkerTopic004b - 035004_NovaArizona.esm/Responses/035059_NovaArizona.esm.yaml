@@ -1,0 +1,33 @@
+FormKey: 035059:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So what? If the hog goes feral, we'll just have to put it down.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+Choices:
+- 035005:NovaArizona.esm
+- 035006:NovaArizona.esm
+- 034FE1:NovaArizona.esm
+- 034FE2:NovaArizona.esm
+- 035008:NovaArizona.esm
+- 035009:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He's fucking crazy! Who knows what he might do if you push him too far?

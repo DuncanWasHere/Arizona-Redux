@@ -1,0 +1,30 @@
+FormKey: 01ED09:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC77:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Is it? I guess I survived, but.... The Optio will probably see this soldier's heart as a fictum, a cheap excuse to get a massage.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789440
+Choices:
+- 01ED05:NovaArizona.esm
+- 01ED0D:NovaArizona.esm
+- 01ED06:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What you went through with Sedonus is like a battle.

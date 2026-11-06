@@ -1,0 +1,33 @@
+FormKey: 037EEB:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037DDD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Booze - nah, never. I had a little Med-X habit for a while but I kicked that real quick. Didn't really have a choice, with the Legion coming.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037DC1:NovaArizona.esm
+- 037DC2:NovaArizona.esm
+- 037DD5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What about vices? Chems, booze, anything?

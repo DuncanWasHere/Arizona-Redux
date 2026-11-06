@@ -1,0 +1,54 @@
+FormKey: 01EFA3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: "[SUCCEEDED] I am a legate, that is true. It's time for me to start acting like it again."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: I will steel myself for the coming trial. Tell me, amicus, what do you think the Legion values more? Obedience or servitude?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 01EF62:NovaArizona.esm
+- 01EF63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E41000000
+  SourceCode: Player.RewardXP 65
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: You are a legate! You are the master of your own fate. You don't need Fixer at all!
+ActorValuePerk: 0004BB:FalloutNV.esm

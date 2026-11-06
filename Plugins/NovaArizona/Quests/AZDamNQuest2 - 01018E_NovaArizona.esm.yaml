@@ -1,0 +1,679 @@
+FormKey: 01018E:NovaArizona.esm
+EditorID: AZDamNQuest2
+FormVersion: 15
+Script: 01019E:NovaArizona.esm
+Name: "...But You Can't Come In"
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 6783
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Talk to Captain Wire about the refugees.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000
+      SourceCode: setobjectivedisplayed AZDamNQuest2 5 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Captain Wire has requested that I kill the refugees.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E0A0000006E01000000A3110F0003007201006E0B0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 5 1
+
+        setobjectivedisplayed AZDamNQuest2 10 1
+
+        setobjectivedisplayed AZDamNQuest2 11 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 11
+  LogEntries:
+  - Flags: []
+    Entry: Inform Omar that Captain Wire's deal to let Omar pass.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0B0000006E01000000
+      SourceCode: setobjectivedisplayed AZDamNQuest2 11 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 12
+  LogEntries:
+  - Flags: []
+    Entry: The refugees are dead. Return to Captain Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E0A0000006E01000000A3110F0003007202006E0C0000006E010000001C0001000412070001006E9CFFFFFFA3110F0003007202006E280000006E00000000A3110F0003007202006E290000006E00000000A3110F0003007202006E2A0000006E00000000A3110F0003007202006E2B0000006E00000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 10 1
+
+        setobjectivedisplayed AZDamNQuest2 12 1
+
+        Player.RewardKarma -100
+
+        SetObjectiveDisplayed AZDamNQuest2 40 0
+
+        SetObjectiveDisplayed AZDamNQuest2 41 0
+
+        SetObjectiveDisplayed AZDamNQuest2 42 0
+
+        SetObjectiveDisplayed AZDamNQuest2 43 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Captain Wire has been informed that the refugees are dead.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E0C0000006E01000000A3110F0003007202006E0F0000006E010000001C0001007711070001006EFA000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 12 1
+
+        setobjectivedisplayed AZDamNQuest2 15 1
+
+
+        player.rewardxp 250
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: 'The NCR has agreed to let Omar and the refugees pass. Inform Omar. '
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E140000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 5 1
+
+        setobjectivedisplayed AZDamNQuest2 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 21
+  LogEntries:
+  - Flags: []
+    Entry: Omar has informed that the NCR will let the refugees pass. Return to Captain Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E140000006E01000000A3110F0003007201006E150000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 20 1
+
+        setobjectivedisplayed AZDamNQuest2 21 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 22
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: The NCR has agreed to let the refugees pass.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 13
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000A2110F000300720C006E150000006E01000000A3110F000300720C006E160000006E010000001111110003006E000000006E000000006E010000001C00020022100200000015000A00720D00730800020020311C0003002110020000001C0004002110020000001C0005002110020000001C0006002110020000001C0007002110020000001C0008002110020000001C0009002110020000001C000A002110020000001C000B00211002000000
+      SourceCode: >-
+        player.rewardxp 250
+
+
+        setobjectivecompleted AZDamNQuest2 21 1
+
+        setobjectivedisplayed AZDamNQuest2 22 1
+
+
+        EnableFastTravel 0 0 1
+
+
+        AZHooversHopeRefugee1MarkerREF.disable
+
+        Set AZBigStopClariceQuest.bPostSteffie to 1
+
+
+        AZSuiciderREF.Enable
+
+        AZHHRefugee2aaREF.Enable
+
+        AZHHRefugee2baREF.Enable
+
+        AZSuicideFamily01REF.enable
+
+        AZSuicideFamily02REF.enable
+
+        AZSuicideFamily03REF.enable
+
+        AZSuicideFamily04REF.enable
+
+        AZSuicideFamily05REF.enable
+
+        AZBSFrumentariusSuicideREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008004:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102CA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102DA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E792:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E793:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E794:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E795:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E796:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E798:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DC3D:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: The NCR has agreed to allow some of its food to be sent to the refugees. Inform Omar.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E1E0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 5 1
+
+        setobjectivedisplayed AZDamNQuest2 30 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 31
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: The NCR has agreed to send food to the refugees.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000A3110F0003007202006E1F0000006E01000000
+      SourceCode: >+
+        player.rewardxp 250
+
+
+        setobjectivedisplayed AZDamNQuest2 31 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: The NCR has proposed negotiating a three-day ceasefire to allow refugees through the checkpoint.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E280000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 5 1
+
+        setobjectivedisplayed AZDamNQuest2 40 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 41
+  LogEntries:
+  - Flags: []
+    Entry: Nerva has agreed to enact a ceasefire for three days. Take his proposal back to Wire for counter-signature.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E280000006E01000000A3110F0003007201006E290000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 40 1
+
+        setobjectivedisplayed AZDamNQuest2 41 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 42
+  LogEntries:
+  - Flags: []
+    Entry: Wire has agreed to the ceasefire. Return to Nerva.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E290000006E01000000A3110F0003007201006E2A0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 41 1
+
+        setobjectivedisplayed AZDamNQuest2 42 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 43
+  LogEntries:
+  - Flags: []
+    Entry: Nerva agrees to Wire's counterdemands. Inform Omar.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2A0000006E01000000A3110F0003007201006E2B0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 42 1
+
+        setobjectivedisplayed AZDamNQuest2 43 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 44
+  LogEntries:
+  - Flags: []
+    Entry: 'Return to Wire to inform him of the ceasefire. '
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2A0000006E01000000A2110F0003007201006E2B0000006E01000000A3110F0003007201006E2C0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 42 1
+
+        setobjectivecompleted AZDamNQuest2 43 1
+
+        setobjectivedisplayed AZDamNQuest2 44 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 45
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: 'The ceasefire is in effect. '
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 22
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000A2110F0003007215006E2C0000006E01000000A2110F0003007215006E2E0000006E01000000A3110F0003007215006E2D0000006E010000001111110003006E000000006E000000006E010000001C0002002210020000001C0003002210020000001C0004002210020000001C0005002210020000001C0006002210020000001C0007002210020000001C00080022100200000015000A00721600730800020020311C0009002110020000001C000A002110020000001C000B002110020000001C000C002110020000001C000D002110020000001C000E002110020000001C000F002110020000001C0010002110020000001C0011002110020000001C0012002110020000001C0013002110020000001C001400211002000000
+      SourceCode: >-
+        player.rewardxp 250
+
+
+        setobjectivecompleted AZDamNQuest2 44 1
+
+        setobjectivecompleted AZDamNQuest2 46 1
+
+        setobjectivedisplayed AZDamNQuest2 45 1
+
+
+        EnableFastTravel 0 0 1
+
+
+        AZNCRTrooper01DEAD01REF.disable
+
+        AZNCRTrooper01DEAD02REF.disable
+
+        AZNCRTrooper01DEAD03REF.disable
+
+        AZNCRTrooper01DEAD04REF.disable
+
+        AZNCRTrooper01DEAD05REF.disable
+
+        AZNCRTrooper01DEAD06REF.disable
+
+        AZHooversHopeRefugee1MarkerREF.Disable
+
+        Set AZBigStopClariceQuest.bPostSteffie to 1
+
+
+        AZSuiciderREF.Enable
+
+        AZHHRefugee2aaREF.Enable
+
+        AZHHRefugee2baREF.Enable
+
+        AZHHRefugee3aREF.Enable
+
+        AZHHRefugee3bREF.Enable
+
+        AZHHRefugee3cREF.Enable
+
+        AZSuicideFamily01REF.enable
+
+        AZSuicideFamily02REF.enable
+
+        AZSuicideFamily03REF.enable
+
+        AZSuicideFamily04REF.enable
+
+        AZSuicideFamily05REF.enable
+
+        AZBSFrumentariusSuicideREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004EA4:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004F55:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 005D01:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004F4B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004F50:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004F51:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008004:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102CA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102DA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102F5:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102F6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102F7:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E792:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E793:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E794:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E795:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E796:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E798:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DC3D:NovaArizona.esm
+- Index: 46
+  LogEntries:
+  - Flags: []
+    Entry: Nerva agrees to Wire's counterdemands. Return to Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2A0000006E01000000A3110F0003007201006E2E0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 42 1
+
+        setobjectivedisplayed AZDamNQuest2 46 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Nerva has rejected the ceasefire proposal. Find some other solution.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E280000006E01000000A3110F0003007201006E320000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 40 1
+
+        setobjectivedisplayed AZDamNQuest2 50 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 51
+  LogEntries:
+  - Flags: []
+    Entry: Wire has rejected the ceasefire proposal. Find some other solution.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2A0000006E01000000A3110F0003007201006E330000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest2 42 1
+
+        setobjectivedisplayed AZDamNQuest2 51 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 52
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Wire is dead.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 53
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: The refugees are dead.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 54
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Did nothing
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0x15000A00720700730500020020311C0001008B10020000001C0002008B10020000001C0003008B10020000001C0004008B10020000001C0005008B10020000001C0006008B1002000000
+      SourceCode: >-
+        set AZDamNQuest2.bWireTookAction to 1
+
+
+        AZHHRefugee1aREF.KillActor
+
+        AZHHRefugee1bREF.KillActor
+
+        AZHHRefugee1cREF.KillActor
+
+        AZHHRefugee1dREF.KillActor
+
+        AZHHRefugee1eREF.KillActor
+
+        AZHHRefugee1fREF.KillActor
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D4:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D5:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D7:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102D8:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Talk to Captain Wire about the refugees.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x1C1428
+- Index: 10
+  Description: Captain Wire has requested that I kill the refugees.
+  Targets:
+  - Target: 0102D5:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D5:NovaArizona.esm
+  - Target: 00EC90:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 00EC90:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100719677
+      SecondParameter: 8
+  - Target: 0102D6:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D6:NovaArizona.esm
+  - Target: 0102D7:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D7:NovaArizona.esm
+  - Target: 0102D8:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D8:NovaArizona.esm
+  - Target: 0102D4:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D4:NovaArizona.esm
+  - Target: 0102D3:NovaArizona.esm
+    Unused: 0x2C102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D3:NovaArizona.esm
+- Index: 11
+  Description: Inform Omar of Captain Wire's deal to let Omar pass.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x2B102B
+- Index: 12
+  Description: The refugees are dead. Return to Captain Wire.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x182529
+- Index: 15
+  Description: Captain Wire has been informed that the refugees are dead.
+- Index: 20
+  Description: 'The NCR has agreed to let Omar and the refugees pass. Inform Omar. '
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x612F30
+- Index: 21
+  Description: Omar has been informed that the NCR will let the refugees pass. Return to Captain Wire.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0xD73B32
+- Index: 22
+  Description: The NCR has agreed to let the refugees pass.
+- Index: 30
+  Description: The NCR has agreed to allow some of its food to be sent to the refugees. Inform Omar.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0xD73B32
+- Index: 31
+  Description: The NCR has agreed to send food to the refugees.
+- Index: 40
+  Description: The NCR has proposed negotiating a three-day ceasefire to allow refugees through the checkpoint.
+  Targets:
+  - Target: 007411:NovaArizona.esm
+    Unused: 0x0D0434
+- Index: 41
+  Description: Veranus has agreed to enact a ceasefire for three days. Take his proposal back to Wire for counter-signature.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x95299C
+- Index: 42
+  Description: Wire has agreed to the ceasefire. Return to Veranus.
+  Targets:
+  - Target: 0102CC:NovaArizona.esm
+    Unused: 0x2B102B
+- Index: 43
+  Description: Veranus agrees to Wire's counterdemands. Inform Omar.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x2B102B
+- Index: 44
+  Description: 'Return to Wire to inform him of the ceasefire. '
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x172529
+- Index: 45
+  Description: The ceasefire is in effect.
+- Index: 46
+  Description: Veranus has agreed to Wire's counterdemands. Return to Wire.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x616D2C
+- Index: 50
+  Description: Veranus has rejected the ceasefire proposal. Find some other solution.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x71052D
+- Index: 51
+  Description: Wire has rejected the ceasefire proposal. Find some other solution.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x602F30
+- Index: 52
+  Description: Wire is dead.
+- Index: 53
+  Description: The refugees are dead.

@@ -1,0 +1,27 @@
+FormKey: 02085A:NovaArizona.esm
+EditorID: AZBigStopLaertesScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A0068000000000080161B0002130058000022120B000100FFFF05005201001507004C5700000039100F000200FFFF0500520100FFFF0400420A80161B0002130058000022120B000100FFFF05005202001507004C8900000039100F000200FFFF0500520200FFFF040042FF11000000
+  SourceCode: >-
+    name AZBigStopLaertesScript;
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZBigStopFindDogQuest)) {
+            SetStage(AZBigStopFindDogQuest, 10);
+        }
+
+        if (!GetQuestCompleted(AZLaertesSellDogQuest)) {
+            SetStage(AZLaertesSellDogQuest, 255);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C449:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083D:NovaArizona.esm

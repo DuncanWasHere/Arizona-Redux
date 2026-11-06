@@ -1,0 +1,29 @@
+FormKey: 006F63:NovaArizona.esm
+FormVersion: 15
+Quest: 006E3E:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x690006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am. If my absence from Malpais was unwarranted, I would be willing to return.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688719
+Choices:
+- 006F5D:NovaArizona.esm
+- 006F5E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You seem like a loyal Legionary.

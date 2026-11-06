@@ -1,0 +1,310 @@
+FormKey: 019D06:NovaArizona.esm
+EditorID: AZBaseCampRomanceQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 33
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000D1010000160014000300100020583A1005000100720400203430203C1600120001000E0020720500587E110500010072060039100A0002007204006E280000001900000019000000160019000200150020731A002031203D3D20731C002030203D3D20262615000700731C000200203115000D00731A00080020582F280200000019000000160016000600120020583A100500010072040020313630203D3D16001E0001001A002066190020731A002031202B203C20731C002031203D3D202626391513000112005600000019005800002F28040000000017000200020015000700731C000200203239100A0002007204006EA50000001900000019000000160019000200150020731E002031203D3D20731D002030203D3D20262615000700731D000200203115000D00731E00080020582F280200000019000000160016000900120020583A100500010072040020313930203D3D16001E0001001A002066190020731E002031202B203C20731D002031203D3D202626391513000112005600000019005800002F28040000000017000200050015000700731D000200203215000700731F00020020311C0001002210020000001C0002002210020000001C000300221002000000190000001900000011000000
+  SourceCode: >-
+    scn AZBaseCampRomanceQuestScript
+
+
+    short DoOnce1
+
+    short DoOnce2
+
+    float iTimer
+
+
+    short bitchmouth
+
+
+    short askedFlemusAboutArceus
+
+    short askedArceusAboutFlemus
+
+
+    short IuliaRevealedSuspicions
+
+
+    short SecretIsOut
+
+
+    short toldAboutCorella
+
+
+    short reassignedMentioned
+
+    short killherMentioned
+
+
+    short IuliaWantsCaps
+
+    short IuliaWantsDenarius
+
+
+    short reassignmentChosen
+
+    short beatingChosen
+
+
+    short IuliaIsGettingBeaten
+
+
+    short beatingAftermathDialogue
+
+
+    short IuliaWasKilledByArceus
+
+    short ArceusWasReassignedForTheft
+
+    short ArceusWasReassignedAsFavor
+
+    short IuliaSnitchedOnThem
+
+
+    short youDealtWithIulia
+
+    short youKilledIulia
+
+    short youWillSnitch
+
+
+    short ArceusIsLeaving
+
+
+    short ArceusReassignmentTimer
+
+    short ArceusPunishmentTimer
+
+    short PunishmentDelivered
+
+
+    begin gamemode
+
+
+    if getstage AZBaseCampRomanceQuest < 40
+    	if player.gethasnote AZBaseCampArceusLetter
+    	setstage AZBaseCampRomanceQuest 40
+    endif
+
+    endif
+
+
+    if ArceusReassignmentTimer == 1 && DoOnce1 == 0
+    		Set DoOnce1 to 1
+    		Set ArceusReassignmentTimer to GetGameDaysPassed
+    	endif
+    	
+    	if GetStage AZBaseCampRomanceQuest == 160
+    		if iTimer < ArceusReassignmentTimer + 1 && DoOnce1 == 1
+    			iTimer = GetGameDaysPassed
+    		else
+    			Set DoOnce1 to 2
+    			SetStage AZBaseCampRomanceQuest 165
+    		endif
+    	endif
+
+
+    if ArceusPunishmentTimer == 1 && DoOnce2 == 0
+    		Set DoOnce2 to 1
+    		Set ArceusPunishmentTimer to GetGameDaysPassed
+    	endif
+    	
+    	if GetStage AZBaseCampRomanceQuest == 190
+    	if iTimer < ArceusPunishmentTimer + 1 && DoOnce2 == 1
+    			iTimer = GetGameDaysPassed
+    		else
+    			Set DoOnce2 to 2
+    			Set PunishmentDelivered to 1
+    			AZBaseCampArceusREF.disable
+    			AZBaseCampFlemusREF.disable
+    			AZBaseCampIuliaREF.disable
+    		endif
+    		endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x006120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bitchmouth
+  - Data:
+      Index: 2
+      Unknown: 0x206120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: askedFlemusAboutArceus
+  - Data:
+      Index: 3
+      Unknown: 0x406120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: askedArceusAboutFlemus
+  - Data:
+      Index: 4
+      Unknown: 0x606120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IuliaRevealedSuspicions
+  - Data:
+      Index: 5
+      Unknown: 0x806120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: SecretIsOut
+  - Data:
+      Index: 7
+      Unknown: 0xA06120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: toldAboutCorella
+  - Data:
+      Index: 8
+      Unknown: 0xC06120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: reassignedMentioned
+  - Data:
+      Index: 9
+      Unknown: 0xE06120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: killherMentioned
+  - Data:
+      Index: 10
+      Unknown: 0x006220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IuliaWantsCaps
+  - Data:
+      Index: 11
+      Unknown: 0x206220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IuliaWantsDenarius
+  - Data:
+      Index: 12
+      Unknown: 0x406220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: reassignmentChosen
+  - Data:
+      Index: 13
+      Unknown: 0x606220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: beatingChosen
+  - Data:
+      Index: 15
+      Unknown: 0xA06220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: beatingAftermathDialogue
+  - Data:
+      Index: 16
+      Unknown: 0xC06220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IuliaWasKilledByArceus
+  - Data:
+      Index: 17
+      Unknown: 0xE06220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ArceusWasReassignedForTheft
+  - Data:
+      Index: 18
+      Unknown: 0x006320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ArceusWasReassignedAsFavor
+  - Data:
+      Index: 20
+      Unknown: 0x206320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IuliaSnitchedOnThem
+  - Data:
+      Index: 22
+      Unknown: 0x406320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: youDealtWithIulia
+  - Data:
+      Index: 23
+      Unknown: 0x606320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: youKilledIulia
+  - Data:
+      Index: 25
+      Unknown: 0xE06020120000000000000000
+      Unknown2: 0x00000000000000
+    Name: iTimer
+  - Data:
+      Index: 26
+      Unknown: 0xC06320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ArceusReassignmentTimer
+  - Data:
+      Index: 27
+      Unknown: 0x806320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: youWillSnitch
+  - Data:
+      Index: 28
+      Unknown: 0xA06020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce1
+  - Data:
+      Index: 29
+      Unknown: 0xC06020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce2
+  - Data:
+      Index: 30
+      Unknown: 0xE06320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ArceusPunishmentTimer
+  - Data:
+      Index: 31
+      Unknown: 0x00EC29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: PunishmentDelivered
+  - Data:
+      Index: 32
+      Unknown: 0xA06320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ArceusIsLeaving
+  - Data:
+      Index: 33
+      Unknown: 0x806220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IuliaIsGettingBeaten
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BAF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BAE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BA8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D46:NovaArizona.esm

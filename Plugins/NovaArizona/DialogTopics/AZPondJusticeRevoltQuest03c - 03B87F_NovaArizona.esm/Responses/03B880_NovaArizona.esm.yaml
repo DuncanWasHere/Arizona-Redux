@@ -1,0 +1,46 @@
+FormKey: 03B880:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: They may not be Legionaries, but they are allies of Satan all the same.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: We cannot work with them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 43
+Choices:
+- 03B866:NovaArizona.esm
+- 03B87B:NovaArizona.esm
+- 03B877:NovaArizona.esm
+- 03B87F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You said the guards aren't Legion, right? What if you joined with them to overthrow the Legion?

@@ -1,0 +1,45 @@
+FormKey: 016CC5:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 017510:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: It's amazing that you've gotten out alive after speaking with the Butcher of Big Stop.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: He was sent in by Legate Lanius to manage the Frumentarii and to stamp out any chance of a second revolt. Say what you will, but he's been very successful.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 00B13D:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 01750F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who's that?

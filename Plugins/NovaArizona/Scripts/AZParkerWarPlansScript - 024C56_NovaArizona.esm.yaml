@@ -1,0 +1,32 @@
+FormKey: 024C56:NovaArizona.esm
+EditorID: AZParkerWarPlansScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000B00030071000000010072010059100B00010072020000000000000080161E000216005800004A2704000000420106560103001700150207004C8E0000003B1215000300FFFF0500520400FFFF04004200FFFF0400420C39100F000200FFFF0500520300FFFF0400423F39150C00010B0056010300180042010011000000
+  SourceCode: >-
+    name AZParkerWarPlansScript;
+
+
+    OnAdd::Player {
+        ShowMessage(AZParkerWarPlansMessage);
+
+        if (GetPCDetectionState() > 1 && !AZBigStopAhigaQuest01.ParkerPlansPermission) {
+            AddReputationExact(RepNVCaesarsLegion, 0, 12);
+        }
+
+        SetStage(AZBigStopAhigaQuest01, 63);
+        AZBigStopAhigaQuest01.ParkerIntel = 1;
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024C65:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm

@@ -1,0 +1,33 @@
+FormKey: 004955:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746F20
+    UseEmotionAnimation: True
+    Unused3: 0x646F77
+  ResponseText: Sure.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 0048B9:NovaArizona.esm
+- 004908:NovaArizona.esm
+- 0048FB:NovaArizona.esm
+- 004919:NovaArizona.esm
+- 00491F:NovaArizona.esm
+- 004B11:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have other questions about the Rangers.

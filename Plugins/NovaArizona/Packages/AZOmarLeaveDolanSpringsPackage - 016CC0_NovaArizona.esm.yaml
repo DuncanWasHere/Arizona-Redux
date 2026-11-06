@@ -1,0 +1,46 @@
+FormKey: 016CC0:NovaArizona.esm
+EditorID: AZOmarLeaveDolanSpringsPackage
+FormVersion: 15
+Unused: 101
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 29281
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 016CC2:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 55
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x1C0001002210020000001C0001004F1205000100720200
+    SourceCode: >-
+      AZOmarREF.disable
+
+      AZOmarREF.MovetoMarkerwithFade AZOmarDolanSpringsMarker
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0101C9:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01025F:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

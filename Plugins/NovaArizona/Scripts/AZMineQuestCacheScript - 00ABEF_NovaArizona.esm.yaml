@@ -1,0 +1,65 @@
+FormKey: 00ABEF:NovaArizona.esm
+EditorID: AZMineQuestCacheScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 6
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000080002005B010000000080161A0002120058000069100B000100FFFF050052010007004C7C0100008016100002080056010000010007004C690000000D1002000000811608000107004C7C010000801621000219005201007800002F100B000100FFFF05005202002842010807004C6D0100000D100200000039150C00010B005601000001004201003A151000010F005203007800002110040000002880162100021900580000A51111000200FFFF0500520400FFFF040042051507004CF900000039150C00010B00560100000200420100811608000107004C6101000080163200022A00580000A51111000200FFFF0500520400FFFF0400420558000054100B000100FFFF0500520500150207004C61010000A21115000300FFFF0500520400FFFF04004205FFFF04004201A31115000300FFFF0500520400FFFF04004207FFFF04004201811608000107004C7C01000059100B00010072060000000000000011000000
+  SourceCode: >-
+    name AZMineQuestCacheScript;
+
+
+    int Opened;
+
+    int PlayerFinds;
+
+
+    OnActivate {
+        if (IsActionRef(Player)) {
+            if (Opened) {
+                Activate();
+            } else if (Player.GetItemCount(WeapShovel) >= 1) {
+                Activate();
+                Opened = 1;
+                AZBigSparMineCallumREF.Enable();
+
+                if (!GetObjectiveDisplayed(AZWhiteHillsMineDialogue, 5)) {
+                    PlayerFinds = 1;
+                } else if (GetObjectiveDisplayed(AZWhiteHillsMineDialogue, 5) && !GetDeadCount(AZElephantHillSlipperyWill)) {
+                    SetObjectiveCompleted(AZWhiteHillsMineDialogue, 5, 1);
+                    SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 7, 1);
+                }
+            } else {
+                ShowMessage(NoShovelMsg);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Opened
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: PlayerFinds
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11E46F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006D93:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ABCA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11E46E:FalloutNV.esm

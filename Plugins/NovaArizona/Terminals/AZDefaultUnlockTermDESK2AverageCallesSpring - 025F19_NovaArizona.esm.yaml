@@ -1,0 +1,49 @@
+FormKey: 025F19:NovaArizona.esm
+EditorID: AZDefaultUnlockTermDESK2AverageCallesSpring
+FormVersion: 15
+ObjectBounds:
+  First: -18, -20, 0
+  Second: 24, 20, 37
+Name: Manager's Terminal
+Model:
+  File: Terminals\TerminalDesk01.NIF
+Description: >2+
+        SoftLock Solutions, Inc
+  "Your Security is Our Security"
+
+  >\ Welcome, MANAGER!
+LoopingSound: 018EC0:FalloutNV.esm
+BaseHackingDifficulty: Average
+ServerType: Server6
+MenuItems:
+- ItemText: Disengage Lock
+  ResultText: Clearance granted, Unlocking...
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.unlock
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x807E2A430000000000000000
+        Unknown2: 0xEC4C0C68C44C0C
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+- ItemText: 'Saved E-Mail: 10/16/2077 -- REDACTED'
+  ResultText: Opening...
+  DisplayNote: 02BF5A:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

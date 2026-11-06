@@ -1,0 +1,39 @@
+FormKey: 00E0E1:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: 00E0E0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They say a doctor killed Caesar. Why would Caesar need a doctor?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720528
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetGlobalValue
+  FirstParameter: 1198877
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,82 @@
+FormKey: 037E61:NovaArizona.esm
+EditorID: AZDeejayDialogueScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000002F00000016000D000200090020730300203120213D150007007302000200203115000700730300020020311900000011000000
+  SourceCode: >-
+    scn AZDeejayDialogueScript
+
+
+    short bIntroDialogue
+
+    short bIntroLegionaryDone
+
+
+    short bDeejayHireable
+
+    short bDeejayHireDoOnce
+
+
+    short bSelf01
+
+    short bSelf02
+
+    short bQuestions03
+
+
+
+    Begin GameMode
+    	if (bDeejayHireDoOnce != 1)
+    		Set bDeejayHireable to 1
+    		Set bDeejayHireDoOnce to 1
+    	EndIf
+    	
+
+    End
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0B020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x696D466C617444
+    Name: bIntroDialogue
+  - Data:
+      Index: 2
+      Unknown: 0x60B020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x324C151C5B4C15
+    Name: bDeejayHireable
+  - Data:
+      Index: 3
+      Unknown: 0x40B020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x696D466C617447
+    Name: bDeejayHireDoOnce
+  - Data:
+      Index: 4
+      Unknown: 0x80B020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x696D466C617453
+    Name: bIntroLegionaryDone
+  - Data:
+      Index: 5
+      Unknown: 0x20B020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x31000000000000
+    Name: bSelf01
+  - Data:
+      Index: 6
+      Unknown: 0x00B020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000F82A0000
+    Name: bSelf02
+  - Data:
+      Index: 7
+      Unknown: 0xA0D129120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x5F4C15785F4C15
+    Name: bQuestions03

@@ -1,0 +1,29 @@
+FormKey: 01CD69:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - RandomEnd
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01CD6A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Watch your step.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100781428
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

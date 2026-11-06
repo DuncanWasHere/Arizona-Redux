@@ -1,0 +1,54 @@
+FormKey: 016243:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: I do. You will hear rumors of Ranger sabotage or unholy curses or traitors or slaves.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: But the truth is far simpler. It was these fools here, these fools I am forced to guard.  Do not trust them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712373
+Choices:
+- 016232:NovaArizona.esm
+- 016240:NovaArizona.esm
+- 016242:NovaArizona.esm
+- 016244:NovaArizona.esm
+- 01623C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073020002002031
+  SourceCode: Set AZFreeform3Some.FalcariusSuspicion to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175F7:NovaArizona.esm
+Prompt: Do you know what caused the Chainway to collapse?

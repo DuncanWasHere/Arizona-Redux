@@ -1,0 +1,44 @@
+FormKey: 013DDC:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Not much. I've managed to secure his freedom from the Legion. Not old enough for conscription, not young enough for indoctrination.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: I am so happy that he won't have to be a Legionary. He'll have a normal childhood.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100744496
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744513
+Choices:
+- 013DD5:NovaArizona.esm
+- 013DD6:NovaArizona.esm
+- 013DD7:NovaArizona.esm
+- 013DD8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's your son do?

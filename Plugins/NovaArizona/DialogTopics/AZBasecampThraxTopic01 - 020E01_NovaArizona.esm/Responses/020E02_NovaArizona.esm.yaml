@@ -1,0 +1,42 @@
+FormKey: 020E02:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x200006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You are not aware of me already? Fascinating.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x5C0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Surely, you've heard of Caesar's mighty colossus. I am Thrax, senior Centurion of the Base Camp.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+Choices:
+- 024D91:NovaArizona.esm
+- 024D92:NovaArizona.esm
+- 024D96:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are you?

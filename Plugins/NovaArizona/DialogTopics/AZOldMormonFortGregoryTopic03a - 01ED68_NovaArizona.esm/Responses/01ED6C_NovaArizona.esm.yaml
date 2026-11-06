@@ -1,0 +1,41 @@
+FormKey: 01ED6C:NovaArizona.esm
+FormVersion: 15
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4C6F74
+    UseEmotionAnimation: True
+    Unused3: 0x67616E
+  ResponseText: Religious missionaries from New Canaan in Utah. They sometimes came into the cities to preach about God or to offer trade with their caravans.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x73696F
+    UseEmotionAnimation: True
+    Unused3: 0x732066
+  ResponseText: I met one of their members, a missionary named Bert. He seemed nice enough, but I don't particularly care for organized religion.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED67:NovaArizona.esm
+- 01ED64:NovaArizona.esm
+- 01ED65:NovaArizona.esm
+- 01ED66:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Mormons?

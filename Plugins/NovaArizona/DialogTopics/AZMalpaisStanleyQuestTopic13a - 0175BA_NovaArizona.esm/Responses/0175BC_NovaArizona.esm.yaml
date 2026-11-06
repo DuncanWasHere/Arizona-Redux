@@ -1,0 +1,107 @@
+FormKey: 0175BC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You better be right about this. Can't believe I'm going to abandon my last report.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x207269
+    UseEmotionAnimation: True
+    Unused3: 0x626F75
+  ResponseText: I don't think I can do this anymore. Things are getting too hot.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: If men like Rex and Lanius are the future of the Legion, I can't keep risking my neck to report on them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Maybe I'll write about you instead. The Mark of Caesar is a high honor, after all. If you make yourself worthy of a biography, I promise I'll be the first guy on it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: In the meantime, come find me in the roadhouse. I doubt the Legion will let me leave anytime soon.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: Be seeing you, kid. Good luck out there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E780000001C0001004F1205000100720400150013007203007307000B00207203007307002032202B15000A00720300731B00020020311111070001006E010000009111050001007205001C00020002100A0002007206006E64000000
+  SourceCode: >-
+    setstage AZMalpaisJournalistQuest 120
+
+    AZStanleyHartfordREF.MovetoMarkerwithFade AZMalpaisRoadhouseXMarkerREF
+
+    Set AZMalpaisJournalistQuest.bStanleyLegionDisapproval to AZMalpaisJournalistQuest.bStanleyLegionDisapproval + 2
+
+    set AZMalpaisJournalistQuest.bDominicusInterviewNoInterview to 1
+
+    EnableFastTravel 1
+
+    ApplyImageSpaceModifier FadeToBlackAndBackISFX
+
+
+    player.additem caps001 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006435:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08F0BC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: But it might not.

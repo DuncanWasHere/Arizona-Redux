@@ -1,0 +1,38 @@
+FormKey: 024EF7:NovaArizona.esm
+EditorID: AZBigStopAhigaQuest01HelperQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000C900000080161F00021700520100780000A1100B000100FFFF0500520200281507004C660000003A151000010F005201007800005E100400000028811608000107004C9500000080161E00021600520100780000A1100B000100FFFF05005202002807004C95000000371009000100FFFF050052030080161700020F005201007800002E10040000002807004CBD000000371009000100FFFF050052030080161A0002120058000022120B000100FFFF050052040007004CE8000000371009000100FFFF050052030011000000
+  SourceCode: >-
+    name AZBigStopAhigaQuest01HelperQuestScript;
+
+
+    GameMode {
+        if (!AZBigStopAhigaREF.GetIsCurrentPackage(AZBigStopAhigaTravelPackage02)) {
+            AZBigStopAhigaREF.EVP();
+        } else if (AZBigStopAhigaREF.GetIsCurrentPackage(AZBigStopAhigaTravelPackage02)) {
+            StopQuest(AZBigStopAhigaQuest01HelperQuest);
+        }
+
+        if (AZBigStopAhigaREF.GetDead()) {
+            StopQuest(AZBigStopAhigaQuest01HelperQuest);
+        }
+
+        if (GetQuestCompleted(AZBigStopAhigaQuest01)) {
+            StopQuest(AZBigStopAhigaQuest01HelperQuest);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A66:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024D84:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024EF8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm

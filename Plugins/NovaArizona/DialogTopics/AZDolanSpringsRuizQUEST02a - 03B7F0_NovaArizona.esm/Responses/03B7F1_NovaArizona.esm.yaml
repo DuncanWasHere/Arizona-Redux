@@ -1,0 +1,65 @@
+FormKey: 03B7F1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x5C4475
+    UseEmotionAnimation: True
+    Unused3: 0x735C44
+  ResponseText: Please don't hurt me...
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1099469
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007203006E010000001C00010052100A0002007204006E010000001C00010052100A0002007205006E010000001C00020002100A0002007203006E010000001C00020002100A0002007204006E010000001C00020002100A0002007205006E0100000039100A0002007206006E0A000000
+  SourceCode: >-
+    AZDolanSpringsRuizREF.Removeitem Glassesblackrimmed 1;
+
+    AZDolanSpringsRuizREF.Removeitem OutfitPrewarBusinesswearDirty 1;
+
+    AZDolanSpringsRuizREF.Removeitem AZChlorideRevoltQuestRuizDeed 1;
+
+    Player.additem Glassesblackrimmed 1;
+
+    Player.additem OutfitPrewarBusinesswearDirty 1;
+
+    Player.additem AZChlorideRevoltQuestRuizDeed 1;
+
+    setstage AZNeverbeFree 10;
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DF4D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0340FD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 05C682:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03B807:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0331D3:NovaArizona.esm
+Prompt: Give me everything you have. Right now

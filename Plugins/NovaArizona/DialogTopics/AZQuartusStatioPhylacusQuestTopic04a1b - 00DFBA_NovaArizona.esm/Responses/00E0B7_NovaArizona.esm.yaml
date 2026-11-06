@@ -1,0 +1,45 @@
+FormKey: 00E0B7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And you obeyed him? Don't think I will give you a payment for this. Leave me!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720529
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A007201007308000200203139100A0002007201006E640000003B12130003007202006E000000007A0000000000000040
+  SourceCode: >-
+    Set AZStatioFindFriendQuest.PhylacusAngry to 1
+
+    SetStage AZStatioFindFriendQuest 100
+
+    AddReputationExact RepNVCaesarsLegion 0 2
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: He asked me to.

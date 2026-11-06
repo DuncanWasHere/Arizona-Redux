@@ -1,0 +1,42 @@
+FormKey: 020B8B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 00D194:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: Oooh! Hello, hello, hello! Lookie here, Nixon. We've got a visitor!
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 08747D:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "You look like you've a discerning eye, so tell me, customer: what think you of Nicodemus' collection?"
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 06B8FA:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+Choices:
+- 020B77:NovaArizona.esm
+- 020B78:NovaArizona.esm
+- 020B79:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

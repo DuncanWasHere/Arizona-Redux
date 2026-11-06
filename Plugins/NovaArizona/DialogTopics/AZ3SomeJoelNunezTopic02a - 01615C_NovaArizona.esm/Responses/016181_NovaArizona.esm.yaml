@@ -1,0 +1,41 @@
+FormKey: 016181:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x617665
+    UseEmotionAnimation: True
+    Unused3: 0x73736F
+  ResponseText: Yeah, I'm the cook, the maid, the muscle, the mail man, and more. I do it all.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20636F
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: You hungry?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 016182:NovaArizona.esm
+- 016183:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, you're the cook around here?

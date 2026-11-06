@@ -1,0 +1,38 @@
+FormKey: 024B8A:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 024B89:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206372
+    UseEmotionAnimation: True
+    Unused3: 0x6C6974
+  ResponseText: There is a Confederate dissident that has discovered my organization's plans.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206372
+    UseEmotionAnimation: True
+    Unused3: 0x6C6974
+  ResponseText: She has successfully avoided my agents and has hidden herself away somewhere in the Mojave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B66:NovaArizona.esm
+- 024B95:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the job?

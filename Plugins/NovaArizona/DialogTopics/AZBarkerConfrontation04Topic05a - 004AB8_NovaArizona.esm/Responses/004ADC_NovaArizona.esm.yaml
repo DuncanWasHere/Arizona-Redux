@@ -1,0 +1,47 @@
+FormKey: 004ADC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x28470E
+    UseEmotionAnimation: True
+    Unused3: 0x28470E
+  ResponseText: If you're smart enough to get one over on Caesar, I guess you can stick around. Stay away from the gated section. I've rigged it with traps.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetGlobalValue
+  FirstParameter: 1257276
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730100020020331C0001005E100000
+  SourceCode: >-
+    Set AZBarkerDialogue.iBarkerCaveAcceptance to 3
+
+    AZSUHBarkerREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F6A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C2:NovaArizona.esm
+Prompt: He thinks I did.

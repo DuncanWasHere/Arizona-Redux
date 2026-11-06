@@ -1,0 +1,49 @@
+FormKey: 113C64:FalloutNV.esm
+EditorID: 2ENCREmbassy02
+FormVersion: 15
+Name: NCR Military Police HQ
+Flags:
+- IsInteriorCell
+- PublicPlace
+Lighting:
+  AmbientColor: '#00545870'
+  DirectionalColor: '#00182B32'
+  FogColor: '#0011132F'
+  FogNear: 3000
+  FogFar: 2995
+  DirectionalRotationXY: 150
+  DirectionalRotationZ: 325
+  DirectionalFade: 1
+  FogClipDistance: 10100
+  FogPower: 0.85
+LightTemplate: 08F58B:FalloutNV.esm
+LightInheritFlags: []
+WaterHeight: -2.1474836E+09
+WaterNoiseTexture: ''
+ImageSpace: 065334:FalloutNV.esm
+Owner: 0A46E7:FalloutNV.esm
+AcousticSpace: 1405B7:FalloutNV.esm
+MusicType: 08A6D4:FalloutNV.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 115D27:FalloutNV.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 003F0F:FalloutNV.esm
+  IsIgnoredBySandbox: True
+  Placement:
+    Position: 3529.924, 800.9457, 6178.6484
+    Rotation: 0, 0, 1.1920929E-06
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedNpc
+  FormKey: 01FF09:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 01FF08:NovaArizona.esm
+  LinkedReference: 115D27:FalloutNV.esm
+  Position: 3546.5254, 738.9886, 6144

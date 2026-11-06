@@ -1,0 +1,47 @@
+FormKey: 00C312:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So be it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+Choices:
+- 00C302:NovaArizona.esm
+- 00C303:NovaArizona.esm
+- 00ABFA:NovaArizona.esm
+- 02097F:NovaArizona.esm
+- 020991:NovaArizona.esm
+- 020995:NovaArizona.esm
+- 020996:NovaArizona.esm
+- 020997:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E1E000000
+  SourceCode: setstage AZWhiteHillsMineDialogue 30
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+Prompt: I'll bring back proof that Callum was captured by raiders.

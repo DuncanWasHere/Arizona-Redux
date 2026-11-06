@@ -1,0 +1,39 @@
+FormKey: 0208DC:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Their meat is needed for soldiers fighting on the frontlines. The Dissolute Ranchers can't be trusted to guard their own damn cows from the wildlife, it's infuriating.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 10
+Choices:
+- 020ACB:NovaArizona.esm
+- 0208A5:NovaArizona.esm
+- 0208AD:NovaArizona.esm
+- 0208B0:NovaArizona.esm
+- 0208B1:NovaArizona.esm
+- 0208B2:NovaArizona.esm
+- 0208B3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you doing watching these cows?

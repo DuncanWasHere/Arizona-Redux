@@ -1,0 +1,47 @@
+FormKey: 020EB4:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] Nah, I think I'll pass."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100792073
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100792073
+  SecondParameter: 4
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 0207EC:NovaArizona.esm
+- 01FF52:NovaArizona.esm
+- 0207F0:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Hey, let's go to Freeside together, man. Let's just go. Right now. It'll be fun.
+ActorValuePerk: 0004BB:FalloutNV.esm

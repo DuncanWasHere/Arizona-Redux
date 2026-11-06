@@ -1,0 +1,67 @@
+FormKey: 013B4F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Look at you! Such an eager little tent servant. Yes, there is something.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Find Malachi. He should be in the market just south of camp. Give him this invoice.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100789368
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 100729754
+Choices:
+- 013B26:NovaArizona.esm
+- 013B27:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A007201007305000200203139100A0002007202006E05000000A3110F0003007202006E190000006E01000000551005000100720300
+  SourceCode: >-
+    Set AZMalpaisSedonusDialogueQuest.MalachiJobTaken to 1
+
+    SetStage AZMalpaisAbuserQuest 5
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 25 1
+
+    ShowMap AZMalpaisMarketMapMarkerREF
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A2AF:NovaArizona.esm
+Prompt: Is there anything else you need done?

@@ -1,0 +1,61 @@
+FormKey: 01312A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's... unfortunate.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x0D0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Leaving Kyle alive is not an option. As long as he's alive, he'll be able to detonate the bomb in my heart.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x737479
+  ResponseText: If I'm ever to be free, Kyle needs to die. He dies during the pack fight, while the bomb is disarmed. I won't accept anything else.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100741293
+  SecondParameter: 35
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101002500420100
+  SourceCode: AZRustyHooksDialogueQuest.bBearWillKillKyle = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0130AD:NovaArizona.esm
+Prompt: Jillian won't disarm the bomb unless you promise not to kill Kyle.

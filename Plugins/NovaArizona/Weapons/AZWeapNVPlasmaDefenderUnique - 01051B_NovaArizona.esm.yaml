@@ -1,0 +1,82 @@
+FormKey: 01051B:NovaArizona.esm
+EditorID: AZWeapNVPlasmaDefenderUnique
+FormVersion: 15
+ObjectBounds:
+  First: -6, -7, -2
+  Second: 22, 12, 2
+Name: Plasma Desolator
+Model:
+  File: AZNovaArizona\Weapons\AZplasmadefenderUnique.nif
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_plasma_defender.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_32_snub_nose.dds
+ObjectEffect: 162C8F:FalloutNV.esm
+Ammo: 158319:FalloutNV.esm
+RepairList: 000AB3:GunRunnersArsenal.esm
+EquipmentType: EnergyWeapons
+PickUpSound: 0864D5:FalloutNV.esm
+DropSound: 0864D6:FalloutNV.esm
+ScopeModel:
+  File: interface\HUD\laserScope.NIF
+ModelMod1: NVDLC05\Weapons\1handpistol\plasmadefender1.NIF
+ModelMod2: NVDLC05\Weapons\1handpistol\plasmadefender3.NIF
+ModelMod1And2: NVDLC05\Weapons\1handpistol\plasmadefender13.NIF
+ModelMod3: NVDLC05\Weapons\1handpistol\plasmadefender2.NIF
+ModelMod1And3: NVDLC05\Weapons\1handpistol\plasmadefender12.NIF
+ModelMod2And3: NVDLC05\Weapons\1handpistol\plasmadefender23.NIF
+ModelMod1And2And3: NVDLC05\Weapons\1handpistol\plasmadefender123.NIF
+ImpactDataSet: 09BA4D:FalloutNV.esm
+FirstPersonModel: 010564:NovaArizona.esm
+SoundGunShoot3D: 000A2A:GunRunnersArsenal.esm
+SoundGunShootDist: 13010E:FalloutNV.esm
+SoundGunShoot2D: 000A29:GunRunnersArsenal.esm
+SoundMeleeSwingGunNoAmmo: 01F21C:FalloutNV.esm
+SoundEquip: 021E6E:FalloutNV.esm
+SoundUnequip: 021E6F:FalloutNV.esm
+Value: 9000
+Health: 90
+Weight: 2
+BaseDamage: 45
+ClipSize: 32
+AnimationType: PistolEnergy1Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- HasScope
+- NoJamAfterReload
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 2
+ReloadAnimation: ReloadH
+MinSpread: 0.2
+Spread: 2
+SightFov: 50
+Projectile: 01C25D:NovaArizona.esm
+BaseVatsToHitChance: 15
+AttackAnimation: AttackRight
+ProjectileCount: 1
+MinRange: 256
+MaxRange: 768
+AnimationAttackMultiplier: 1
+FireRate: 1
+OverrideActionPoints: 19
+RumbleLeftMotorStrength: 0.4
+RumbleRightMotorStrength: 0.2
+RumbleDuration: 0.25
+AttackShotsPerSec: 2.4999995
+ReloadTime: 2
+JamTime: 1.3333
+Skill: 34
+LimbDamageMult: 1
+ResistType: -1
+SightUsage: 1
+SemiAutomaticFireDelayMax: 0.3
+StrengthReq: 2
+ReloadAnimationMod: ReloadH
+SkillReq: 50
+CriticalDamage: 45
+CriticalPercentMult: 1.5
+CriticalOnDeath: True
+CriticalEffect: 01C26B:NovaArizona.esm
+Vats:
+  VatsSilent: True
+SoundLevel: Normal

@@ -1,0 +1,63 @@
+FormKey: 020FD3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 02100C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Shit, you'd have to go back to Flagstaff for that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Actually, you're from out west, aren't you? If Vegas is like what they say on the radio, maybe you'll find a clinic out there. Worth a try, I guess.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+Choices:
+- 01F59E:NovaArizona.esm
+- 01F59F:NovaArizona.esm
+- 01F5A1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007202006E060000006E010000001C000100211002000000
+  SourceCode: >-
+    setobjectivedisplayed AZChlorideAntibioticsQuest 6 1
+
+    AZChlorideAntibioticsQuestUsanagiContainerREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F6CE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+Prompt: You said penicillin can be synthesized? Who might have the capability to do that? I could purchase from them.
+ActorValuePerk: 0004B0:FalloutNV.esm

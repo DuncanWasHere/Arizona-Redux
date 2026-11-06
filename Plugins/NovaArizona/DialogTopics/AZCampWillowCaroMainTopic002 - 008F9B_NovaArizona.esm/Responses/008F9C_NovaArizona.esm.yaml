@@ -1,0 +1,28 @@
+FormKey: 008F9C:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: We coordinate supplies coming up and down the river.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688606
+Choices:
+- 008F9D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you do here?

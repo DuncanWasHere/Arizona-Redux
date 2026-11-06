@@ -1,0 +1,77 @@
+FormKey: 12D94E:FalloutNV.esm
+EditorID: FreesideFortWorld
+FormVersion: 15
+Name: Old Mormon Fort
+Parent:
+  Worldspace: 0DA726:FalloutNV.esm
+  Flags:
+  - UseMapData
+Climate: 174006:FalloutNV.esm
+Water: 030009:FalloutNV.esm
+LodWater: 030009:FalloutNV.esm
+LodWaterHeight: 0
+LandData:
+  DefaultLandHeight: 1000
+WorldMapScale: 0.7
+CellXOffset: -16000
+CellYOffset: 103000
+ImageSpace: 08809D:FalloutNV.esm
+Flags:
+- SmallWorld
+ObjectBoundsMin: -36864, -28672
+ObjectBoundsMax: 24576, 53248
+Music: 119D2E:FalloutNV.esm
+CanopyShadow: ''
+WaterNoiseTexture: Data\Textures\Water\wastelandwaterpotomac.dds
+TopCell:
+  FormKey: 12D9E4:FalloutNV.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Flags:
+  - HasWater
+  Grid:
+    LandFlags:
+    - 0x100
+    - 0x4000
+    - 0x40000
+    - 0x80000
+    - 0x100000
+    - 0x200000
+    - 0x400000
+    - 0x2000000
+    - 0x4000000
+    - 0x10000000
+  LightTemplate: Null
+  LightInheritFlags:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  WaterHeight: 3.4028235E+38
+  WaterNoiseTexture: ''
+  Persistent:
+  - MutagenObjectType: PlacedObject
+    FormKey: 037EBA:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 037EB9:NovaArizona.esm
+    Primitive:
+      Bounds: 103.05065, 166.13074, 179.20398
+      Color: '#00CC4C33'
+      Unknown: 0.14901961
+      PrimitiveType: Box
+    BoundHalfExtents: 103.05065, 166.13074, 179.20398
+    Placement:
+      Position: 6592.888, 3068.4468, 1124.7958
+      Rotation: 0, 0, 0.70000196
+    MajorFlags:
+    - Persistent
+  MajorFlags:
+  - Persistent
+SubCellsUnknownGroupData: -2141294536

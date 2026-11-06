@@ -1,0 +1,39 @@
+FormKey: 00BEC5:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x736F6D
+    UseEmotionAnimation: True
+    Unused3: 0x6F7068
+  ResponseText: What are you? Frumentarii?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20686F
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: Ask a few more questions, and see what happens.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 00BECA:NovaArizona.esm
+- 00BECC:NovaArizona.esm
+- 00BECE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you mean by you've "been there, done that?"

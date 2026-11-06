@@ -1,0 +1,40 @@
+FormKey: 021015:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes. From those towers, to the entrance of the facility in the south. That is where the problem is the worst.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That stretch is like a wall of silence. No radio can get out. Nothing.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100781638
+Choices:
+- 02100E:NovaArizona.esm
+- 02100F:NovaArizona.esm
+- 021011:NovaArizona.esm
+- 01CE58:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The transmission towers?

@@ -1,0 +1,32 @@
+FormKey: 00D07C:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Because I don't feel up to it, okay? I'm not spelling it out for you. Just know that I'll be in good shape in a few days if you don't fuck this up.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D059:NovaArizona.esm
+- 00D05B:NovaArizona.esm
+- 00D05A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Remind me why you can't do this yourself, again?

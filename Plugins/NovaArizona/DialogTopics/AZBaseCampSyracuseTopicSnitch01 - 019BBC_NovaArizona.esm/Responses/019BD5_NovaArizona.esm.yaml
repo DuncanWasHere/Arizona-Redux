@@ -1,0 +1,49 @@
+FormKey: 019BD5:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And? Why are you telling me this?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 150
+  Function: GetStage
+  FirstParameter: 100768688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 45
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100768688
+  SecondParameter: 12
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100768688
+  SecondParameter: 13
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768678
+Choices:
+- 019BBD:NovaArizona.esm
+- 019BBE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Arceus is in a relationship with one of the slaves.

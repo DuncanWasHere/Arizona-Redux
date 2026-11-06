@@ -1,0 +1,26 @@
+FormKey: 02EAD8:NovaArizona.esm
+EditorID: AZHDSteffieScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A008A000000000080161D0002150058000022120B000100FFFF050052010042000407004C5900000039100F000200FFFF0500520100FFFF0400420F781010000200FFFF0500520200FFFF050052030080162300021B005800003B1011000200FFFF0500520400FFFF0400420A42010507004CA700000039100F000200FFFF0500520400FFFF040042351E00000011000000
+  SourceCode: >-
+    name AZHDSteffieScript;
+
+
+    OnDeath {
+
+        if (GetQuestCompleted(AZBigStopClariceQuest) == 0) {
+            SetStage(AZBigStopClariceQuest, 15);
+        }
+
+        SetEnemy(AZHHRCFaction, PlayerFaction);
+
+        if (GetStageDone(AZHooverDamRefugeeQuest, 10) != 1) {
+            SetStage(AZHooverDamRefugeeQuest, 53);
+        }
+
+        return;
+
+    }

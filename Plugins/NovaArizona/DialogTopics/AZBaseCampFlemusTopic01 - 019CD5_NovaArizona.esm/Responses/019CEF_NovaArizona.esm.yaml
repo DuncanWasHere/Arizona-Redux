@@ -1,0 +1,56 @@
+FormKey: 019CEF:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 019CEE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I wasn't physically fit enough for it. My joints are... wrong, somehow.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know why, but they hurt often, and every once and a while, something will dislocate.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Maidens say it's abnormal. They had never seen a kid hurt himself so badly playing stickball. My shoulder popped right out of the socket.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768684
+Choices:
+- 020DBB:NovaArizona.esm
+- 008999:NovaArizona.esm
+- 019CDB:NovaArizona.esm
+- 019CD8:NovaArizona.esm
+- 019CDA:NovaArizona.esm
+- 019CD5:NovaArizona.esm
+- 019CD6:NovaArizona.esm
+- 019CD7:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Aren't all male slaves supposed to become Legionaries?

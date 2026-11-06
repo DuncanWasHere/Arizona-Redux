@@ -1,0 +1,64 @@
+FormKey: 01ED6F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: 01ED6E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x672061
+  ResponseText: Malpais, in Arizona? You want me to provide treatment to an organization that kills Followers on sight? Is this some kind of joke?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x656769
+    UseEmotionAnimation: True
+    Unused3: 0x206973
+  ResponseText: You think Caesar or Lanius are going to let me walk into their camps and tell their Legionaries that it's okay for them to be feeling guilt for their actions?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x672061
+  ResponseText: That they didn't know any better? I'd be crucified in a heartbeat!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x672061
+  ResponseText: So, please tell me, what trauma could he have possibly experienced that makes him different than any other Legionary?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 150
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED70:NovaArizona.esm
+- 01ED71:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Noctis. He is a Legionary in Malpais, so he is not likely to be able to come here.

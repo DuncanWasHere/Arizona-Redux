@@ -1,0 +1,45 @@
+FormKey: 016CAB:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: 016C18:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Nonsense. The front has stalled for far longer than anybody had anticipated, and the consequences of that are far beyond my control.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am still officially the governor of this entire region, and I am doing everything in my power to hold it together.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetActorValue
+  FirstParameter: 6
+  RunOnType: Target
+Choices:
+- 016B74:NovaArizona.esm
+- 016B1E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The way you describe your territory sounds to me like you barely govern it at all.
+ActorValuePerk: 0003E9:FalloutNV.esm

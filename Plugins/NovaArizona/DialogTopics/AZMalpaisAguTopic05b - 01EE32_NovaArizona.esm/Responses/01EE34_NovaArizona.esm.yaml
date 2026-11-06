@@ -1,0 +1,48 @@
+FormKey: 01EE34:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x642069
+    UseEmotionAnimation: True
+    Unused3: 0x63746F
+  ResponseText: She's our Aspirant. She taught us how to write Latin and treat wounds and stuff.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x642069
+    UseEmotionAnimation: True
+    Unused3: 0x63746F
+  ResponseText: She's nice, I guess. Gives us treats from time to time. But, she's kind of annoying, talking about how we shouldn't enjoy killing so much.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x642069
+    UseEmotionAnimation: True
+    Unused3: 0x63746F
+  ResponseText: I guess, maybe, I dunno.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+Choices:
+- 01EE31:NovaArizona.esm
+- 01EE32:NovaArizona.esm
+- 01EE35:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about Cassia.

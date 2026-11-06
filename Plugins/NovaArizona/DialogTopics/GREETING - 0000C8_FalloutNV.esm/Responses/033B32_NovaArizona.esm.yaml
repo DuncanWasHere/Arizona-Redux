@@ -1,0 +1,35 @@
+FormKey: 033B32:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: 033B31:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Told you, put the weapons away.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsActorTalkingThroughActivator
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100874956
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

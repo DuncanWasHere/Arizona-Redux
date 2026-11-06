@@ -1,0 +1,37 @@
+FormKey: 019D43:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 019C87:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ah, hello, amicus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 165
+  Function: GetStage
+  FirstParameter: 100768688
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+Choices:
+- 019D3F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

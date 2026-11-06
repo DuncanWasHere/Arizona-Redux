@@ -1,0 +1,46 @@
+FormKey: 01CE27:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: 01CE10:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hands up! Hands in the fucking air, or I'll blow your brains out.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100719760
+Choices:
+- 01CE16:NovaArizona.esm
+- 01CE17:NovaArizona.esm
+- 01CE18:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730C00020020301C000100AC27070001006E6E000000
+  SourceCode: >-
+    set AZBigStopClariceQuest.bRaiderSteffieAutotalk to 0
+
+    AZRaiderSteffieREF.setspeedmult 110
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDF8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm

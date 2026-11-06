@@ -1,0 +1,31 @@
+FormKey: 0210D9:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Data:
+  Type: Radio
+  Flags:
+  - RunImmediately
+Quest: 0210F3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697370
+    ResponseSound: 08F05B:FalloutNV.esm
+    UseEmotionAnimation: True
+    Unused3: 0x20564D
+  ResponseText: '{SMART Radio Broadcast Signal}'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100799013
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

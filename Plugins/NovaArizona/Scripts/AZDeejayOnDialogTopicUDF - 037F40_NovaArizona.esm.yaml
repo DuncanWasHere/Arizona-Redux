@@ -1,0 +1,74 @@
+FormKey: 037F40:NovaArizona.esm
+EditorID: AZDeejayOnDialogTopicUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 12
+    VariableCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D00000010000C000D00A60000000101040004001600100001000C0020720100730C00203120213D1E00000018000F0001000B0020660400205A0400203D3D1C00010056100800020072050072060018000F0001000B0020660400205A0700203D3D1C00010033100500010072080018000F0001000B0020660400205A0900203D3D1C000100561008000200720500720A0018000F0001000B0020660400205A0B00203D3D1C000100331005000100720C001900000011000000
+  SourceCode: >-
+    scn AZDeejayOnDialogTopicUDF
+
+
+
+    ref    rTopicOrInfo
+
+    ref    rSpeaker
+
+
+    begin Function {rTopicOrInfo}
+    	If AZDeejayREF.bCurrentlyHired != 1
+    		Return
+
+    	elseif (rTopicOrInfo == AZMalpaisNoctisQuestTopic04a)
+    		AZDeejayREF.startconversation player AZDeejayTopicTrustNoctis01
+
+    	elseif (rTopicOrInfo == AZMidwestTowerDecanusSharptooth02)
+    		AZDeejayREF.say AZDeejayTopicTrustSharptooth
+
+    	elseif (rTopicOrInfo == AZHavenMurrayConfrontTopic08a)
+    		AZDeejayREF.startconversation player AZDeejayTopicTrustHaven01
+
+    	elseif (rTopicOrInfo == AndersFree)
+    		AZDeejayREF.say AZDeejayTopicTrustAnders
+
+    	endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0x20D329120000000000000000
+      Unknown2: 0x6C667669733030
+    Name: rSpeaker
+  - Data:
+      Index: 4
+      Unknown: 0x00D329120000000000000000
+      Unknown2: 0x6E673030303000
+    Name: rTopicOrInfo
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01ECDF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037FB2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DBB6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037FC3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034240:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037FB6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 142A8A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0380B7:NovaArizona.esm

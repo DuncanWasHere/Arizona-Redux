@@ -1,0 +1,58 @@
+FormKey: 01313B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There were two people in this camp who would have known how to disarm the bomb. They're both dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x737479
+  ResponseText: If you don't think you could manage it yourself, maybe you can find someone else, but I'm not getting my hopes up.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x737479
+  ResponseText: Oh, and thank you. I appreciate it. Truly.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 016811:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 016810:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So we just need to disarm the bomb long enough for the pack fight. How do we do that?

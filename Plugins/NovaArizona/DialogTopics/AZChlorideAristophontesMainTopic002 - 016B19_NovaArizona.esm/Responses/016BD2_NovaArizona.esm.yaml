@@ -1,0 +1,38 @@
+FormKey: 016BD2:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - AlwaysDarken
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: 016BCC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Can you be more specific?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B87:NovaArizona.esm
+- 016B89:NovaArizona.esm
+- 016B8A:NovaArizona.esm
+- 016B8B:NovaArizona.esm
+- 016B86:NovaArizona.esm
+- 152CCA:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I could use some more directions.

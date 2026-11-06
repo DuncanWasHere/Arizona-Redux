@@ -1,0 +1,142 @@
+FormKey: 00588A:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 005879:NovaArizona.esm
+  VertexCount: 17
+  TriangleCount: 15
+  DoorLinkCount: 1
+Vertices:
+- -645.2155, 1026.7345, 6094.569
+- -566.2553, 942.1494, 6095.1177
+- -729.0267, 953.3709, 6094.569
+- -646.9126, 870.99524, 6093.679
+- -694.1661, 1065.0625, 6095.1177
+- -755.9227, 981.8584, 6094.349
+- -631.4579, 1048.1909, 6095.052
+- -672.06226, 1092.175, 6095.1177
+- -525.07434, 869.41254, 6093.679
+- -493.6256, 899.3783, 6099.8525
+- -545.6734, 956.06384, 6094.185
+- -592.4094, 801.492, 6093.679
+- -875.702, 874.22205, 6094.349
+- -779.2439, 903.4125, 6094.569
+- -847.6833, 838.51227, 6094.569
+- -747.2162, 737.3911, 6093.679
+- -679.65326, 803.33636, 6094.185
+Triangles:
+- Vertices: 0, 2, 1
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - Door
+  - Found
+- Vertices: 1, 2, 3
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 6
+  Flags:
+  - Found
+- Vertices: 0, 4, 2
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 3
+  Flags:
+  - Found
+- Vertices: 2, 4, 5
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 10
+  Flags:
+  - Found
+- Vertices: 0, 6, 4
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 5
+  EdgeLink_2_0: 2
+  Flags:
+  - Found
+- Vertices: 4, 6, 7
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 3, 8, 1
+  EdgeLink_0_1: 9
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: 1
+  Flags:
+  - Found
+- Vertices: 1, 8, 9
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 8
+  Flags:
+  - Found
+- Vertices: 9, 10, 1
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 7
+  Flags:
+  - Found
+- Vertices: 8, 3, 11
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 2, 5, 12
+  EdgeLink_0_1: 3
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 11
+  Flags:
+  - Found
+- Vertices: 2, 12, 13
+  EdgeLink_0_1: 10
+  EdgeLink_1_2: 12
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 12, 14, 13
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 13
+  EdgeLink_2_0: 11
+  Flags:
+  - Found
+- Vertices: 13, 14, 15
+  EdgeLink_0_1: 12
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 14
+  Flags:
+  - Found
+- Vertices: 13, 15, 16
+  EdgeLink_0_1: 13
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+DoorLinks:
+- DoorReference: 005883:NovaArizona.esm
+  Unused: 3254
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 382.07642
+  MaxDistanceY: 354.78394
+  Min: -875.702, 737.3911, 6093.679
+  Max: -493.6256, 1092.175, 6099.8525
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14

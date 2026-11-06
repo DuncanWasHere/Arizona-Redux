@@ -1,0 +1,47 @@
+FormKey: 016CC1:NovaArizona.esm
+EditorID: AZOmarLeaveBoulderCityPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 101
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 25957
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 13C8C9:FalloutNV.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100729229
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x1C0001004F12050001007202001C00010098100000
+    SourceCode: >-
+      AZOmarREF.MovetoMarkerwithFade AZOmarBoulderCityMarker
+
+      AZOmarREF.RemoveScriptPackage AZOmarLeavePackageBoulderCity
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0101C9:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0101C8:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

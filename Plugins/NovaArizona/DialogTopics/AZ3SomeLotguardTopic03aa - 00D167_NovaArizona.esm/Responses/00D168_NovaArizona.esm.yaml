@@ -1,0 +1,51 @@
+FormKey: 00D168:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnceADay
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696D70
+    UseEmotionAnimation: True
+    Unused3: 0x6F7374
+  ResponseText: Well, we store it here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6F6D65
+  ResponseText: Gustavo and Mr. G handle requests from the Legion. I pack it up, and we ship it up the road to The Fort.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6F6D65
+  ResponseText: '...or, we used to.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D167:NovaArizona.esm
+- 00D16A:NovaArizona.esm
+- 00D16E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What happens to the junk from there?

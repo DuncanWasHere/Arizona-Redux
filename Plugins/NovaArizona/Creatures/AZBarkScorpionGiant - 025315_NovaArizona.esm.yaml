@@ -1,0 +1,74 @@
+FormKey: 025315:NovaArizona.esm
+EditorID: AZBarkScorpionGiant
+FormVersion: 15
+ObjectBounds:
+  First: -70, -125, 0
+  Second: 70, 125, 141
+Name: Giant Bark Scorpion
+Model:
+  File: Creatures\Radscorpion\Skeleton.nif
+ActorEffects:
+- 12B890:FalloutNV.esm
+UnarmedAttackEffect: 0EB402:FalloutNV.esm
+UnarmedAttackAnimation: AttackForwardPower
+Models:
+- barkscorpion.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 70
+  Level: 15
+  SpeedMultiplier: 250
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 02147A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E276:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 13B2BF:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 90
+  Responsibility: 50
+  Mood: 2269224448
+  Teaches: Barter
+  Assistance: HelpsAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 500
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 75
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 120
+  Damage: 50
+  Strength: 5
+  Perception: 3
+  Endurance: 4
+  Charisma: 2
+  Intelligence: 4
+  Agility: 5
+  Luck: 6
+AttackReach: 64
+CombatStyle: 03A384:FalloutNV.esm
+BodyPartData: 03161D:FalloutNV.esm
+TurningSpeed: 90
+BaseScale: 0.9
+FootWeight: 10
+ImpactMaterialType: OrganicBug
+SoundLevel: Normal
+InheritsSoundFrom: 1598F4:FalloutNV.esm
+ImpactDataset: 07E684:FalloutNV.esm

@@ -1,0 +1,65 @@
+FormKey: 00EBF7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Alright.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetItemCount
+  FirstParameter: 100852412
+  RunOnType: Target
+Choices:
+- 00EBD7:NovaArizona.esm
+- 00EBD8:NovaArizona.esm
+- 00EBDB:NovaArizona.esm
+- 00EBDC:NovaArizona.esm
+- 00EBDD:NovaArizona.esm
+- 00EBDA:NovaArizona.esm
+- 00EBD9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E030000001C00010002100A0002007203006E0C000000150013007204007304000B00207204007304002033202B
+  SourceCode: >-
+    Player.RemoveItem AZQuaggaMusselMeat 3
+
+    Player.AddItem Caps001 12
+
+    Set AZFreeformNewt.MusselsGathered to (AZFreeformNewt.MusselsGathered + 3)
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02E2BC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+Prompt: Three pieces of meat.

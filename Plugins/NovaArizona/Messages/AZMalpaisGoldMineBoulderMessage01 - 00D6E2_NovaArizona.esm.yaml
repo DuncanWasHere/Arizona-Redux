@@ -1,0 +1,21 @@
+FormKey: 00D6E2:NovaArizona.esm
+EditorID: AZMalpaisGoldMineBoulderMessage01
+FormVersion: 15
+Description: It looks like you could rig some explosives to blast this boulder apart. (3 Dynamite and Explosives 35 or higher required)
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Demolish the boulder.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 35
+    Function: GetActorValue
+    FirstParameter: 35
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 3
+    Function: GetItemCount
+    FirstParameter: 762099
+    Reference: 000014:FalloutNV.esm
+- Text: Do nothing.

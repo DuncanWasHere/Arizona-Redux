@@ -1,0 +1,55 @@
+FormKey: 020ADE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0F0003
+    UseEmotionAnimation: True
+    Unused3: 0x010000
+  ResponseText: I believe you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Okay, get one of the others on board, and we'll launch the mutiny on your signal.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetGlobalValue
+  FirstParameter: 1210671
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007307000B00207201007307002031202B15000A00720100730A0002002031
+  SourceCode: >-
+    Set AZBrushQuest02.MutineersAssembled to AZBrushQuest02.MutineersAssembled + 1
+
+    Set AZBrushQuest02.FicusAccept to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+Prompt: Quintus would have been killed storming Forlorn Hope. I should know. He needs to go.

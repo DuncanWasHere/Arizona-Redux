@@ -1,0 +1,63 @@
+FormKey: 02494A:NovaArizona.esm
+EditorID: AZHavenAnt
+FormVersion: 15
+ObjectBounds:
+  First: -205, -269, 0
+  Second: 205, 269, 329
+Name: Giant Ant
+Model:
+  File: Creatures\GiantAnt\skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- giantant.nif
+ModelListTextures: 0x0100000008F4EE0867E87F8241746E0867ED7F8241746E1B7494B802D7EEDF0A67EEB921416E5F0A67F3B92141746E1B7494B802D7F3DF0A67EEB92141735F0A67F3B92141746E1B7494B802D7E5DF0B73621E25AD655F0B73671E25AD73741074B3E1C96DEDDF0A67EEB921416D5F0A67F3B92141746E1B7494B802D7F4E30D6D36DF99A274630D6D3BDF99A265720D74387A3871EEDF0F6D874FD7746E5F0F6D8C4FD77465720D74387A3871F3DF0F6D874FD774735F0F6D8C4FD77465720D74387A3871
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 130
+  Level: 6
+  SpeedMultiplier: 100
+  DispositionBase: 35
+DeathItem: 176850:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Confidence: Cautious
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2269198853
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadius: 2000
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 55
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 75
+  Damage: 30
+  Strength: 7
+  Perception: 3
+  Endurance: 6
+  Charisma: 2
+  Intelligence: 2
+  Agility: 4
+  Luck: 5
+AttackReach: 180
+CombatStyle: 03A446:FalloutNV.esm
+BodyPartData: 014C03:FalloutNV.esm
+TurningSpeed: 45
+BaseScale: 0.3
+FootWeight: 5
+ImpactMaterialType: OrganicBug
+SoundLevel: Normal
+InheritsSoundFrom: 027053:FalloutNV.esm
+ImpactDataset: 0754AB:FalloutNV.esm
+MeleeWeaponList: 080C27:FalloutNV.esm

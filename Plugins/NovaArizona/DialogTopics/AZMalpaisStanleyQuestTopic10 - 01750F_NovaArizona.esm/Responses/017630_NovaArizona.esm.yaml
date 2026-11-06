@@ -1,0 +1,41 @@
+FormKey: 017630:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 017512:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: Dominicus has requested that I call him on the radio prior to when we come. He says that he wants to show us how civilized the Legion can be.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x207265
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: Once I call him up on the radio, I think that's it. I really don't want to piss him off, so he schedules the interview, and we go, understand?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 017513:NovaArizona.esm
+- 017514:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: When's the interview?

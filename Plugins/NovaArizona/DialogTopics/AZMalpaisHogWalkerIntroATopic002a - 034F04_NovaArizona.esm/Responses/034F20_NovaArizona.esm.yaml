@@ -1,0 +1,34 @@
+FormKey: 034F20:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Nervous gulp}Fine. I'm fine."
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 01E60C:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 034EFD:NovaArizona.esm
+- 034F03:NovaArizona.esm
+- 034F04:NovaArizona.esm
+- 034F05:NovaArizona.esm
+- 034F06:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you okay?

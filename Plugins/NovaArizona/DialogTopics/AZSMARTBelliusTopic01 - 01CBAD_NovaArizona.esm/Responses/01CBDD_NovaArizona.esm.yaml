@@ -1,0 +1,46 @@
+FormKey: 01CBDD:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: 01CBDC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You'd have to speak to Alba Nox in Solitare. The SMART Array operation is more or less being run by him right now.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Neither me nor my partner have full knowledge of all the moving parts involved.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780947
+Choices:
+- 01CBAD:NovaArizona.esm
+- 01CBAE:NovaArizona.esm
+- 01CBAF:NovaArizona.esm
+- 01CBB0:NovaArizona.esm
+- 01CBB1:NovaArizona.esm
+- 01CBB2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can I help?

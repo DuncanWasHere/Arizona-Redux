@@ -1,0 +1,35 @@
+FormKey: 017515:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 01761D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Hey, are you ready to visit Dominicus Rex?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1474319
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 017513:NovaArizona.esm
+- 017514:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

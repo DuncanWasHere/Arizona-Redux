@@ -1,0 +1,44 @@
+FormKey: 00B3F3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0x00803F
+  ResponseText: Of course he did, he loves fratting with the unwashed masses.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x646964
+    UseEmotionAnimation: True
+    Unused3: 0x6C6F76
+  ResponseText: What does he want?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100697662
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+Choices:
+- 00B3F4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Hank sent me.

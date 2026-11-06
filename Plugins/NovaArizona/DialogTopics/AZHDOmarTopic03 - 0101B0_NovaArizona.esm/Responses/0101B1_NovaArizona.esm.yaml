@@ -1,0 +1,61 @@
+FormKey: 0101B1:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In a sense. Been stuck here for a while. About a week ago, I had a moment of weakness and decided to give these fuckers some food and supplies.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Figured that the NCR would let them through after some time passed. Well, the NCR's not letting them through. So, can't go west.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legion thinks I'm a subversive element. Viewed my moment of weakness as preparations for some slave rebellion, I guess. Can't go east.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So, I've got no place to go. It's hard to be a neutral these days.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+Choices:
+- 0101AB:NovaArizona.esm
+- 0101AE:NovaArizona.esm
+- 0101B2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you doing here? Are you a refugee?

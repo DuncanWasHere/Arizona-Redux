@@ -1,0 +1,10 @@
+Plugins/** text eol=lf
+Plugins/**/*.yaml merge=fo-git
+
+# Plugins are built locally
+*.esm binary
+*.esp binary
+
+Tools/*.exe binary
+Tools/githooks/* text eol=lf
+*.bat text eol=crlf

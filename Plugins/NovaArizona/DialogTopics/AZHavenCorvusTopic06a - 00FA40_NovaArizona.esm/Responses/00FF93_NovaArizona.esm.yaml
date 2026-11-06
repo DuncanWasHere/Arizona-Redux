@@ -1,0 +1,49 @@
+FormKey: 00FF93:NovaArizona.esm
+FormVersion: 15
+Quest: 00F50D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She has the air of a shadow walker. She looks over her shoulder like she is expecting a bullet behind every corner.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She would make a beautiful slave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724241
+Choices:
+- 00FA40:NovaArizona.esm
+- 00FA8B:NovaArizona.esm
+- 00FAAA:NovaArizona.esm
+- 00FCD2:NovaArizona.esm
+- 00FD64:NovaArizona.esm
+- 00FD6A:NovaArizona.esm
+- 00FD7A:NovaArizona.esm
+- 00FD7B:NovaArizona.esm
+- 00FD94:NovaArizona.esm
+- 00FD95:NovaArizona.esm
+- 00FDC8:NovaArizona.esm
+- 00FDCD:NovaArizona.esm
+- 00FDE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Ahote.

@@ -1,0 +1,52 @@
+FormKey: 00EAE8:NovaArizona.esm
+EditorID: AZAutonousGreetPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+- WeaponDrawn
+Unused: 107
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 13587
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 512
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 2
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInCell
+  FirstParameter: 100722694
+  RunOnType: Reference
+  Reference: 000014:FalloutNV.esm
+DialogueData:
+  DialogueFOV: 100
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

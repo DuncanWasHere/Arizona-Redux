@@ -1,0 +1,30 @@
+FormKey: 0059E3:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652062
+    UseEmotionAnimation: True
+    Unused3: 0x6F6620
+  ResponseText: You like it?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 0059E4:NovaArizona.esm
+- 0059EB:NovaArizona.esm
+- 0059ED:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: "\"The Velvet Ditch?\" That's quite a name"

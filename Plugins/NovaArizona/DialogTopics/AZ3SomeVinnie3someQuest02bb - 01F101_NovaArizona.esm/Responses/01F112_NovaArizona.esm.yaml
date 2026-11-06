@@ -1,0 +1,40 @@
+FormKey: 01F112:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01F102:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Try networking with some of the locals. I'd try the market up the road, personally.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61206D
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E6E
+  ResponseText: You could also try the work camp down past Chloride. That's where most able-bodied guys are sent to.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF20:NovaArizona.esm
+- 00BF1B:NovaArizona.esm
+- 01F052:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you need me to do?

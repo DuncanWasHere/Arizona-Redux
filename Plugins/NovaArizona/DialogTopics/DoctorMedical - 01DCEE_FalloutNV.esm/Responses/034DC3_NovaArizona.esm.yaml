@@ -1,0 +1,84 @@
+FormKey: 034DC3:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 034DC2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x63746F
+    UseEmotionAnimation: True
+    Unused3: 0x652052
+  ResponseText: That ain't too bad at all. 18 denarii, and I'll throw in a lollipop at the end.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+- CompareOperator: GreaterThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 0.66
+  Function: GetHealthPercentage
+  RunOnType: Target
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 25
+  RunOnType: Target
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 26
+  RunOnType: Target
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 28
+  RunOnType: Target
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 30
+  RunOnType: Target
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 27
+  RunOnType: Target
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 29
+  RunOnType: Target
+Choices:
+- 022853:FalloutNV.esm
+- 022852:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How much to heal my wounds?

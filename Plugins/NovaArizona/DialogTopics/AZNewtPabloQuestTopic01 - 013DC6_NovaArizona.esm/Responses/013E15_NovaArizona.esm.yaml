@@ -1,0 +1,38 @@
+FormKey: 013E15:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 013DCA:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x706C65
+    UseEmotionAnimation: True
+    Unused3: 0x5A4E65
+  ResponseText: I've never seen a lady Legionary before. I'm leaving some art for the Legionaries. Do you want to see?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPCIsSex
+  FirstParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetEquipped
+  FirstParameter: 976013
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744515
+Choices:
+- 013DC7:NovaArizona.esm
+- 013DCC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's going on here?

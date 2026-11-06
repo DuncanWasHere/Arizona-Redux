@@ -1,0 +1,88 @@
+FormKey: 024C47:NovaArizona.esm
+EditorID: AZ188ContactPackage01
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- ContinueDuringCombat
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 000014:FalloutNV.esm
+  Radius: 128
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100698646
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 11
+      Enabled: 1
+    CompiledScript: 0x39100A0002007202006E3700000059100B000100720300000000000000A2110F0003007202006E190000006E01000000A3110F0003007202006E1E0000006E01000000551005000100720400160014000100100020583A10050001007205002035203D3D1C00010002100A0002007206006E01000000180014000900100020583A10050001007205002030203D3D1600310001002D0020583F120A0002007207006E010000002034203E3D20583F120A0002007208006E010000002034203E3D2026261C00010002100A0002007209006E010000001800300001002C0020583F120A0002007207006E010000002034203E3D20583F120A0002007208006E010000002034203C2026261C00010002100A000200720A006E010000001800300001002C0020583F120A0002007207006E010000002034203C20583F120A0002007208006E010000002034203E3D2026261C00010002100A000200720B006E010000001700020001001C00010002100A0002007209006E0100000019000000190000005E100000
+    SourceCode: >-
+      SetStage AZBigStopAhigaQuest01 55
+
+      ShowMessage AZ188ContactMessage
+
+      SetObjectiveCompleted AZBigStopAhigaQuest01 25 1
+
+      SetObjectiveDisplayed AZBigStopAhigaQuest01 30 1
+
+      ShowMap 0013e74e
+
+      if GetStage VMQCaesarFail == 5
+      	Player.AddItem AZAhigaNote01 1
+      elseif GetStage VMQCaesarFail == 0
+      	if GetReputationThreshold RepNVNCR 1 >= 4 && GetReputationThreshold RepNVCaesarsLegion 1 >= 4
+      		Player.AddItem AZAhigaNote04 1
+      	elseif GetReputationThreshold RepNVNCR 1 >= 4 && GetReputationThreshold RepNVCaesarsLegion 1 < 4
+      		Player.AddItem AZAhigaNote02 1
+      	elseif GetReputationThreshold RepNVNCR 1 < 4 && GetReputationThreshold RepNVCaesarsLegion 1 >= 4
+      		Player.AddItem AZAhigaNote03 1
+      	else
+      		Player.AddItem AZAhigaNote04 1
+      	endif
+      endif
+
+      evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 000014:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008A16:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024C48:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 13E74E:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 167F0F:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024C49:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0F43DE:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0F43DD:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024C4C:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024C4A:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024C4B:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

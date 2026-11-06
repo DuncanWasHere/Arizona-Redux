@@ -1,0 +1,40 @@
+FormKey: 016C7B:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 016C7A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Tch. Degenerate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 90
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100760974
+Choices:
+- 016C6D:NovaArizona.esm
+- 016C71:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Wow. Legionaries sound like weak losers.
+ActorValuePerk: 0004B5:FalloutNV.esm

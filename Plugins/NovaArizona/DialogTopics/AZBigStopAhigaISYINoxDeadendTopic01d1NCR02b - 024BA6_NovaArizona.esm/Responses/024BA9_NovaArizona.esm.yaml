@@ -1,0 +1,56 @@
+FormKey: 024BA9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x207472
+    UseEmotionAnimation: True
+    Unused3: 0x746F20
+  ResponseText: Fine, then have no part in this and leave.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x204275
+    UseEmotionAnimation: True
+    Unused3: 0x646964
+  ResponseText: Take this currency for your service. Our business is at an end.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007202006E120000006E0100000039100A0002007202006E160000001C00010002100A0002007203006E0A000000
+  SourceCode: >-
+    SetObjectiveCompleted AZBigStopAhigaQuest01 18 1
+
+    SetStage AZBigStopAhigaQuest01 22
+
+    Player.AddItem MoneyLegion1 10
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+Prompt: I want no part of this.

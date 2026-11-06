@@ -1,0 +1,43 @@
+FormKey: 010396:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: You mean, outside of civilizing the world in the name of Mars? We watch the barges moving back and forth from Camp Willow.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: Whenever there aren't any Centurions here, that's about all there is to do. Flaminius plays caravan with Veranus, but I don't really understand the game.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729663
+Choices:
+- 010336:NovaArizona.esm
+- 010338:NovaArizona.esm
+- 01033A:NovaArizona.esm
+- 01033C:NovaArizona.esm
+- 010387:NovaArizona.esm
+- 010397:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you do for fun here?

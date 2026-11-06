@@ -1,0 +1,46 @@
+FormKey: 033B19:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - InfoRefusal
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100874950
+  SecondParameter: 12
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100874950
+  SecondParameter: 12
+Choices:
+- 033AE4:NovaArizona.esm
+- 033AE5:NovaArizona.esm
+- 033AE6:NovaArizona.esm
+- 033AE7:NovaArizona.esm
+- 033AE8:NovaArizona.esm
+- 033AE9:NovaArizona.esm
+- 033AEA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have your payment ready.

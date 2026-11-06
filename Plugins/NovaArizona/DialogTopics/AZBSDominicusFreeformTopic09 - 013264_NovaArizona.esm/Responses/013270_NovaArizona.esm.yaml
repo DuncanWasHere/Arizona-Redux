@@ -1,0 +1,46 @@
+FormKey: 013270:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: 'Fascinating question. I play chess with anyone who will have me: Decani, Frumentarii, our Optio.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: One can say what they will about the Frumentarii, but facing them in a game of strategy makes it clear that they operate on a level above most men.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 01325C:NovaArizona.esm
+- 01325D:NovaArizona.esm
+- 01325E:NovaArizona.esm
+- 013262:NovaArizona.esm
+- 013263:NovaArizona.esm
+- 013264:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you like to do for fun?

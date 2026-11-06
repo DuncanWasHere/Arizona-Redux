@@ -1,0 +1,49 @@
+FormKey: 020895:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: The Office of Logistics.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: I'm from its Phoenix office. The Chainway is a much more pressing issue than that factories.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+Choices:
+- 01751C:NovaArizona.esm
+- 017600:NovaArizona.esm
+- 020866:NovaArizona.esm
+- 020868:NovaArizona.esm
+- 020867:NovaArizona.esm
+- 020869:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Officiorum ab Logisticae?

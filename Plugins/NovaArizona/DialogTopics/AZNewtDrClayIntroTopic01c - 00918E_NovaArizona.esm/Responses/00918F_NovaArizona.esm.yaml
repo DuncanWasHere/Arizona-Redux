@@ -1,0 +1,38 @@
+FormKey: 00918F:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: You're the rude one. I'm busy and you're bothering me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: You see that I'm busy, right?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 00919C:NovaArizona.esm
+- 0091A7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: No need to be so rude.

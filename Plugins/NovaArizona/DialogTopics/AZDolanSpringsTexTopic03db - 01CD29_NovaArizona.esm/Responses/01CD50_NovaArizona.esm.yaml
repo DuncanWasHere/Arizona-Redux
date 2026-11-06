@@ -1,0 +1,52 @@
+FormKey: 01CD50:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 01CD4F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They began 200 years ago and are still happening now.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: All this worldly suffering is merely a test. Those who endure will live to see Caesar finally reclaim and rule over His kingdom.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And when Caesar sits on the throne of the Lord, He will pass judgment unto us all. Holy, or unholy? Pious, or Profligate?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 01CD28:NovaArizona.esm
+- 01CD29:NovaArizona.esm
+- 01CD2A:NovaArizona.esm
+- 01CD2B:NovaArizona.esm
+- 01CD2C:NovaArizona.esm
+- 01CD2D:NovaArizona.esm
+- 01CD2E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Alright, I'll hear you out. You're saying that these Tribulations already happened?

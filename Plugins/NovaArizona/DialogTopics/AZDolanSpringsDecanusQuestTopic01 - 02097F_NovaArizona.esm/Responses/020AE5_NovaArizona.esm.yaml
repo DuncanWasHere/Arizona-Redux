@@ -1,0 +1,70 @@
+FormKey: 020AE5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Version2: 1
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x23490B
+    UseEmotionAnimation: True
+    Unused3: 0x23490B
+  ResponseText: What the fuck?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100796571
+  SecondParameter: 16
+- Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetStage
+  FirstParameter: 100796571
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100796571
+  SecondParameter: 7
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C0001008011050001007202001C000100801105000100720300
+  SourceCode: >-
+    AZDolanSpringsQuintusREF.RemoveFromFaction ArmorVCaesarsLegionFaction
+
+    AZDolanSpringsQuintusREF.RemoveFromFaction VCaesarsLegionFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C2F8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x781008000200720100720200
+  SourceCode: SetEnemy VCaesarsLegionFaction AZDolanSpringsDecanusFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020AC2:NovaArizona.esm
+Prompt: You're being removed from command. Right now!

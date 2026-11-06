@@ -1,0 +1,52 @@
+FormKey: 024D98:NovaArizona.esm
+FormVersion: 15
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: 020E05:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x260006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It is a trophy and a warning. We Centurions are of a superior stock than the common Legionary. Otherwise, we would not be charge.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x260006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: These adornments keep the Legionaries in line and motivate them to advance. But, it is not just them I warn.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x260006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This helmet is a warning of all Rangers, Desert, Arizona, NCR, independent. Lake Mead is our domain. Newt is our meat. And the Dam will be ours.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+Choices:
+- 025065:NovaArizona.esm
+- 020DDC:NovaArizona.esm
+- 024DAF:NovaArizona.esm
+- 020E01:NovaArizona.esm
+- 020E04:NovaArizona.esm
+- 024D99:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why do you still wear the mask?

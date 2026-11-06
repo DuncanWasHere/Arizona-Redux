@@ -1,0 +1,49 @@
+FormKey: 00E7D1:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x207468
+    UseEmotionAnimation: True
+    Unused3: 0x206772
+  ResponseText: A brave soul who made impossible choices when the Legion came to Solitare. When the frumentarii came, they took him and tortured him for days on end.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x207468
+    UseEmotionAnimation: True
+    Unused3: 0x206772
+  ResponseText: They did unspeakable things to him.Not long ago, they let him visit us, and he told us that we would never see him again, and that it was okay because we would we safe.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x207468
+    UseEmotionAnimation: True
+    Unused3: 0x206772
+  ResponseText: His handler told us that he was going to attack the NCR checkpoint at Hoover Dam.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722571
+Choices:
+- 00E7D0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who was your husband?

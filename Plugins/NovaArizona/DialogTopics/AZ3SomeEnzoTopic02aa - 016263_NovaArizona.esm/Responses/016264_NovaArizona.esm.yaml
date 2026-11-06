@@ -1,0 +1,46 @@
+FormKey: 016264:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, with the road out I've had a lot of time to think.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We've got no idea how long this route's fucked; We need to maintain cashflow.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's time to diversify. Our time as junk dealers is over as far as I'm concerned.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717599
+Choices:
+- 01F044:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you mean?

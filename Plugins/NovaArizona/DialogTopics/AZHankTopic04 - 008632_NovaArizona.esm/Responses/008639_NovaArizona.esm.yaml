@@ -1,0 +1,38 @@
+FormKey: 008639:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: 008633:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Interested?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100697662
+  SecondParameter: 6
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100697662
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 008634:NovaArizona.esm
+- 008637:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I want to buy a Displacer Glove.

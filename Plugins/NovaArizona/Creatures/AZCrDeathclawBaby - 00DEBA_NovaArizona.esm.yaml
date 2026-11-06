@@ -1,0 +1,78 @@
+FormKey: 00DEBA:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZCrDeathclawBaby
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -50, -95, 0
+  Second: 50, 95, 152
+Name: Deathclaw Baby
+Model:
+  File: Creatures\DeathClaw\Skeleton.nif
+ActorEffects:
+- 12B893:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- deathclaw_Baby.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  Fatigue: 75
+  Level: 10
+  SpeedMultiplier: 200
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - BaseData
+  - Inventory
+Factions:
+- Faction: 148A5A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E274:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021474:FalloutNV.esm
+  Unused: 0x49465A
+Voice: 094EED:FalloutNV.esm
+Template: 0E601F:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 100
+  Responsibility: 100
+  Mood: 842278144
+  Teaches: Barter
+Packages:
+- 0E603B:FalloutNV.esm
+Data:
+  Type: Abomination
+  CombatSkill: 55
+  Health: 100
+  Damage: 40
+  Strength: 5
+  Perception: 6
+  Endurance: 5
+  Charisma: 3
+  Intelligence: 3
+  Agility: 5
+  Luck: 7
+AttackReach: 100
+CombatStyle: 03BC67:FalloutNV.esm
+BodyPartData: 02026E:FalloutNV.esm
+TurningSpeed: 75
+BaseScale: 0.5
+FootWeight: 15
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 16AC7A:FalloutNV.esm
+ImpactDataset: 0553E0:FalloutNV.esm
+MajorFlags:
+- 0x80000

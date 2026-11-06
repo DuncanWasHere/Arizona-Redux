@@ -1,0 +1,74 @@
+FormKey: 03B85A:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: He was a man in Caesar's servitude as a Legate. He believed he was Caesar's strongest soldier, and acted the part. Cruel and egotistical.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: He was cast out of Caesar's kingdom for failing in a war. Caesar stripped his rank, his possessions.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: He was set alight and thrown into Magna Chasma; the great womb of the world.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: On that day he was baptized. The holy waters of creation, Magna Chasma's rivers, broke his fall. He emerged reborn.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x652077
+    UseEmotionAnimation: True
+    Unused3: 0x707469
+  ResponseText: Officially, the Burned Man is a mortal. Soldiers insist he is dead. Yet they cower at his name.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: 'Join me. Say his name. Joshua Graham: the Malpais Legate. He walks the world to this day.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B859:NovaArizona.esm
+- 03B85B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me more about the Burned Man.

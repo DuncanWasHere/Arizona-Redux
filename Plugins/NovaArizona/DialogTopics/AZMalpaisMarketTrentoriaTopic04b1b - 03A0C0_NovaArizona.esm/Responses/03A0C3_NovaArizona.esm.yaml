@@ -1,0 +1,77 @@
+FormKey: 03A0C3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652041
+    UseEmotionAnimation: True
+    Unused3: 0x616973
+  ResponseText: Very well. No need to consider this official Legion business, by the way. Think of it more as a personal favor.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x652041
+    UseEmotionAnimation: True
+    Unused3: 0x616973
+  ResponseText: I had sent the slave south to Chloride but he should have returned by now. And it is a safe road, so banditry is out of the question.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As I said, I suspect escape. There’s no easy way across the Colorado for him, however. He is likely trying to hide in plain sight.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If I were trying to do this, I would seek out either the reprobates at Elephant Hill or the villagers at Newt. Start there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756608
+Choices:
+- 03A0B7:NovaArizona.esm
+- 016C82:NovaArizona.esm
+- 016C83:NovaArizona.esm
+- 016C85:NovaArizona.esm
+- 03A0C5:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x361005000100720100A3110F0003007201006E0A0000006E01000000A3110F0003007201006E140000006E01000000A3110F0003007201006E320000006E01000000
+  SourceCode: >-
+    startquest AZMalpaisMarketSlaveQuest
+
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 10 1
+
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 20 1
+
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 50 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm

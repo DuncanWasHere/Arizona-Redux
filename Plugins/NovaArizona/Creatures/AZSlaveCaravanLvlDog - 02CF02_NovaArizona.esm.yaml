@@ -1,0 +1,76 @@
+FormKey: 02CF02:NovaArizona.esm
+EditorID: AZSlaveCaravanLvlDog
+FormVersion: 15
+ObjectBounds:
+  First: -29, -62, 0
+  Second: 29, 62, 70
+Name: Slavehound
+Model:
+  File: Creatures\Dog\Skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- dogskin.nif
+- eyessetblue.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Swims
+  - Walks
+  - PCLevelMult
+  - CantOpenDoors
+  - TiltFrontBack
+  - AllowPickpocket
+  Fatigue: 180
+  Level: 1000
+  CalcMin: 1
+  CalcMax: 15
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021475:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E26A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 008C8E:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 1768B3:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 10
+  Responsibility: 50
+  Mood: 1035312384
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0E79BD:FalloutNV.esm
+- 02CF21:NovaArizona.esm
+Data:
+  CombatSkill: 40
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 45
+  Damage: 25
+  Strength: 5
+  Perception: 10
+  Endurance: 6
+  Charisma: 6
+  Intelligence: 6
+  Agility: 5
+  Luck: 2
+AttackReach: 48
+CombatStyle: 14F433:FalloutNV.esm
+BodyPartData: 02931E:FalloutNV.esm
+TurningSpeed: 150
+BaseScale: 1.1
+FootWeight: 1
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03E632:FalloutNV.esm
+ImpactDataset: 07E640:FalloutNV.esm

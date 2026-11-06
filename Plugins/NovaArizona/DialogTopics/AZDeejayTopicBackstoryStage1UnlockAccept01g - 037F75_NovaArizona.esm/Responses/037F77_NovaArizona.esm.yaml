@@ -1,0 +1,39 @@
+FormKey: 037F77:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Might've heard it off a caravan, or a doctor. The only thing we were good for was our medicines, but we were {emphasis}damn good at that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657273
+    UseEmotionAnimation: True
+    Unused3: 0x207377
+  ResponseText: Pretty funny to buy "genuine Twin Mother elixir" off some {term to describe foreigners who are not of your tribe}Sunkissed doctor. Well, it stops being funny pretty quickly, actually.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037F54:NovaArizona.esm
+- 037F75:NovaArizona.esm
+- 037F55:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Twin Mothers... I swear I've heard that name before.

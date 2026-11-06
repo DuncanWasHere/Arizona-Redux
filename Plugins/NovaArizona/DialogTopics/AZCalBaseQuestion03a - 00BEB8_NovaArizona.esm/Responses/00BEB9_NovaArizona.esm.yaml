@@ -1,0 +1,37 @@
+FormKey: 00BEB9:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x706963
+  ResponseText: I come and go.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x706963
+  ResponseText: Not as much as I used to, though.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 00BEBC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you live here?

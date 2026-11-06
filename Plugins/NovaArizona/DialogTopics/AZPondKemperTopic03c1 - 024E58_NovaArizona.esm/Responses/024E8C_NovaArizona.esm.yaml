@@ -1,0 +1,40 @@
+FormKey: 024E8C:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know, but I have to do it. Well, I have to make the slaves do it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's that fucking Legate's orders. He wants the Chainway repaired and he wants it done his way. Whatever. It's his time he's wasting.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708396
+Choices:
+- 024E53:NovaArizona.esm
+- 024E54:NovaArizona.esm
+- 024E57:NovaArizona.esm
+- 024E5B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the point of that? Why not just use the cement mixture you give them on site?

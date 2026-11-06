@@ -1,0 +1,41 @@
+FormKey: 017495:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x77616E
+    UseEmotionAnimation: True
+    Unused3: 0x752074
+  ResponseText: Well, he's a computer, for one. Surprised? Yup, it's true! He's all wires and cables. In our archive, there are a couple holodisks of his pre-war radio shows.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fascinating to hear him interview an old fart like Dean Domino, knowing that Dean was probably killed when the bombs started flying.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 01748D:NovaArizona.esm
+- 017490:NovaArizona.esm
+- 017491:NovaArizona.esm
+- 01748F:NovaArizona.esm
+- 01F4AE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about Mr. New Vegas.

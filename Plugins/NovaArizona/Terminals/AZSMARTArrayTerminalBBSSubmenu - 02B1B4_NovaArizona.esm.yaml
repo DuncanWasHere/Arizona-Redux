@@ -1,0 +1,28 @@
+FormKey: 02B1B4:NovaArizona.esm
+MajorRecordFlagsRaw: 1024
+EditorID: AZSMARTArrayTerminalBBSSubmenu
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+ObjectBounds: {}
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: "   _____            _                \r\n  / ___/____  _____(_____  ____ _    \r\n  \\__ \\/ __ \\/ ___/ / __ \\/ __ `/    \r\n ___/ / /_/ / /  / / / / / /_/ /     \r\n/____/ .___/_/  /_/_/ /_/\\__, /      \r\n    /_/_                /____/ __    \r\n   / __ )____  ____ __________/ _____\r\n  / __  / __ \\/ __ `/ ___/ __  / ___/\r\n / /_/ / /_/ / /_/ / /  / /_/ (__  ) \r\n/_____/\\____/\\__,_/_/   \\__,_/____/  \r\n                                     "
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: Show Boards
+  ResultText: ''
+  SubMenu: 02B1C0:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+    CompiledScript: 0x4115070001060053010066
+- ItemText: My Account
+  ResultText: Failed to connect to authenticator!
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+MajorFlags:
+- QuestItem

@@ -1,0 +1,47 @@
+FormKey: 00DF85:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fine. I have like 60 caps to my name. Just take them. Just don't tell anyone.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+Choices:
+- 00DF41:NovaArizona.esm
+- 00DF42:NovaArizona.esm
+- 00DF43:NovaArizona.esm
+- 00DF48:NovaArizona.esm
+- 00DF49:NovaArizona.esm
+- 00DF81:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E3C000000
+  SourceCode: Player.AddItem Caps001 60
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: I want cash. Now.

@@ -1,0 +1,41 @@
+FormKey: 033B8D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 033B8C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A field trip to Solitare. Jaw Ripper saw fit to give them a treat.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712253
+- Fluff: 0x000000
+  Function: GetInCell
+  FirstParameter: 100680534
+  RunOnType: Reference
+  Reference: 008FB9:NovaArizona.esm
+Choices:
+- 033B68:NovaArizona.esm
+- 033B6E:NovaArizona.esm
+- 033B71:NovaArizona.esm
+- 033B72:NovaArizona.esm
+- 033B73:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where are the children?

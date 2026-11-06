@@ -1,0 +1,63 @@
+FormKey: 01EEC5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: '[SUCCEEDED] Wait!'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 166
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 5
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C0001002210020000001C00020002100A0002007203006E01000000A2110F0003007204006E960000006E01000000A2110F0003007204006E9B0000006E01000000
+  SourceCode: >-
+    AZOldMormonFortGregoryREF.disable
+
+    Player.Additem AZOldMormonFortGregoryKidnapped 1
+
+    SetObjectiveCompleted AZMalpaisAbuseQuest 150 1
+
+    SetObjectiveCompleted AZMalpaisAbuseQuest 155 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE06:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEBE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: Alright, kicking and screaming, it is.
+ActorValuePerk: 0003E8:FalloutNV.esm

@@ -1,0 +1,34 @@
+FormKey: 008E54:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+AddTopics:
+- 008E59:NovaArizona.esm
+- 008E57:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Praise Mars! I'm just glad to see someone else alive down here. It's been days. I thought I'd be trapped here forever.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDeadCount
+  FirstParameter: 100687767
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: They're dead.

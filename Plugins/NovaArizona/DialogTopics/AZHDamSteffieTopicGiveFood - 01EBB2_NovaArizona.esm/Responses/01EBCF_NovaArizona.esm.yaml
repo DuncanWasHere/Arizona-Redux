@@ -1,0 +1,46 @@
+FormKey: 01EBCF:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01EBE5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Thanks. I'll eat slowly to savor it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 50418422
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723855
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x361005000100720100
+  SourceCode: startquest AZSteffieGiveFoodQuest
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EBE3:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x0412070001006E02000000
+  SourceCode: rewardkarma 2
+Prompt: I've got some food for you.

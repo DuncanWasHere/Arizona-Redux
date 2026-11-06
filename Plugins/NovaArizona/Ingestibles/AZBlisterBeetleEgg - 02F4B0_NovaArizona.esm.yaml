@@ -1,0 +1,51 @@
+FormKey: 02F4B0:NovaArizona.esm
+EditorID: AZBlisterBeetleEgg
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Blister Beetle Egg
+Model:
+  File: clutter\FireAntEgg.NIF
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_ant_egg.dds
+EquipmentType: Food
+Weight: 1
+Value: 4
+Flags:
+- NoAutoCalc
+- FoodItem
+- 0x100
+- 0x400
+- 0x800
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+- 0x80000000
+- 0x0
+ConsumeSound: 02D48D:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 5
+    ActorValue: Health
+- BaseEffect: 020516:FalloutNV.esm
+  Data:
+    Magnitude: 3
+    ActorValue: RadLevel
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 15
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586

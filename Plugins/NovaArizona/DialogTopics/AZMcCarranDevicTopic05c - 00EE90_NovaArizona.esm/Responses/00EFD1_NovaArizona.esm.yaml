@@ -1,0 +1,48 @@
+FormKey: 00EFD1:NovaArizona.esm
+FormVersion: 15
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She's right next door, actually. Interrogating a prisoner right now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0F0678:FalloutNV.esm
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0F2DEF:FalloutNV.esm
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 948499
+  SecondParameter: 31
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 948499
+  SecondParameter: 12
+Choices:
+- 00EE8E:NovaArizona.esm
+- 00EE8F:NovaArizona.esm
+- 00EE90:NovaArizona.esm
+- 00EE91:NovaArizona.esm
+- 00EED0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Lieutenant Boyd. Where's she?

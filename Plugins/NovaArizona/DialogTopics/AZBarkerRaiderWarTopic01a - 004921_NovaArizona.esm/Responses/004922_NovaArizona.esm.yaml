@@ -1,0 +1,41 @@
+FormKey: 004922:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x5A0280
+    UseEmotionAnimation: True
+    Unused3: 0x4B4B12
+  ResponseText: It was more like a spirit. We saw the NCR doing so well, and if the NCR could succeed, then so could we.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xFCBBAA
+    UseEmotionAnimation: True
+    Unused3: 0xFFBBAA
+  ResponseText: We thought that the NCR had got their shit together, and we felt we needed to the same.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004921:NovaArizona.esm
+- 004923:NovaArizona.esm
+- 004925:NovaArizona.esm
+- 004927:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, you just started a huge war just because of, what, a feeling?

@@ -1,0 +1,65 @@
+FormKey: 020DA2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: They're just simple wafers or something.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: I've never made them myself, but I imagine it's just water and flour?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 1
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768682
+Choices:
+- 020DA0:NovaArizona.esm
+- 019C4F:NovaArizona.esm
+- 019C50:NovaArizona.esm
+- 019C51:NovaArizona.esm
+- 019C52:NovaArizona.esm
+- 019C57:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E060000006E01000000A2110F0003007201006E050000006E0100000039100A0002007201006E06000000
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D97:NovaArizona.esm
+Prompt: Do you know the recipe for hardbread?

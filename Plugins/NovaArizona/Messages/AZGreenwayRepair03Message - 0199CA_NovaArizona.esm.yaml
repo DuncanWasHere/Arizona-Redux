@@ -1,0 +1,43 @@
+FormKey: 0199CA:NovaArizona.esm
+EditorID: AZGreenwayRepair03Message
+FormVersion: 15
+Description: It appears that the electric box has experienced significant wear and tear over the past two centuries. It is possible to repair it with parts. (Requires 2 Fission Batteries, 6 Scrap Metal, 6 Scrap Electronics, 2 Sensor Modules, 4 Duct Tape and 1 Conductor)
+Name: Greenway Junction Box
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Leave It Alone
+- Text: Repair With Parts
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetItemCount
+    FirstParameter: 139522
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 4
+    Function: GetItemCount
+    FirstParameter: 1290930
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 2
+    Function: GetItemCount
+    FirstParameter: 139529
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 6
+    Function: GetItemCount
+    FirstParameter: 1290929
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 6
+    Function: GetItemCount
+    FirstParameter: 203076
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 2
+    Function: GetItemCount
+    FirstParameter: 211910
+- Text: Try to Bypass the Junction Box (Science)
+- Text: Try to Fix It (Repair)

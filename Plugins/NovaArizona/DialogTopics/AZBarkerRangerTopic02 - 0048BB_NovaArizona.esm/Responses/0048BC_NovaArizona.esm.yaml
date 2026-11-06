@@ -1,0 +1,98 @@
+FormKey: 0048BC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Version2: 1
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: The Rangers were badly depleted as a result of the Great Raider War. Every victory against the raiders made us weaker.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Every victory the Legion had against the raiders made them stronger. They broke the tribes and absorbed them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Whenever things got too hot, they raided New Mexico for new slaves and new recruits. When they came back, they were stronger. And no one resisted them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: The raider alliances fought us instead of them, Flagstaff barely fought back, Two-Sun outright surrendered, and the Confederacy folded.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: In addition, we never held territory. Even if we could, it just wasn't our way.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Rangers don't form nations from the top-down, we let others build their own states.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Never seemed to work out that way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 0048B9:NovaArizona.esm
+- 0048BB:NovaArizona.esm
+- 0048F9:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007302000200203115000A0072010073050002002031
+  SourceCode: >-
+    Set AZBarkerDialogue.iRaiderWarMentioned to 1
+
+    Set AZBarkerDialogue.iWindowRockMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C2:NovaArizona.esm
+Prompt: How did the Rangers lose to the Legion?

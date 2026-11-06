@@ -1,0 +1,101 @@
+FormKey: 024B46:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 024B45:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204E43
+    UseEmotionAnimation: True
+    Unused3: 0x6E742C
+  ResponseText: Look, I know you're a devoted Legionary, so I'll tell you this. I've been keeping it a secret for now, but this is the truth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: Cato's unit, that is the cell Nox operates as a part of, has a rat known as Corvus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: Several months ago, he disappeared after warning the Chainway was doomed to collapse.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: Then, the Chainway collapsed. The connection is obvious between the two, but what is less obvious is the connections between Corvus and Nox.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: Nox was a friend of Corvus, a close confidant. And Nox, whose procurement speciality is somewhat legendary....
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x616964
+    UseEmotionAnimation: True
+    Unused3: 0x6F756C
+  ResponseText: Well, where could Corvus gotten his explosives from?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+Choices:
+- 024B4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073050002002033A2110F0003007201006E080000006E01000000A3110F0003007201006E120000006E01000000A3110F0003007201006E140000006E01000000
+  SourceCode: >-
+    Set AZBigStopAhigaQuest01.iAhigaAccused to 3
+
+    SetObjectiveCompleted AZBigStopAhigaQuest01 8 1
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 18 1
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 20 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: What is it?

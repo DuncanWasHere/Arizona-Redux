@@ -1,0 +1,48 @@
+FormKey: 01BBBC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Whatever riled them up sent them into a frenzy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: If they can't calm down, they're a threat to the community and need to be put down.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100813260
+Choices:
+- 01BBBB:NovaArizona.esm
+- 01BBBA:NovaArizona.esm
+- 01BBBE:NovaArizona.esm
+- 01BBC0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why do the ants need to be culled?

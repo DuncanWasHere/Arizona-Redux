@@ -1,0 +1,30 @@
+FormKey: 01EE4D:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: Of course not. The Wasteland is harsh, and it would be criminal to not prepare them early.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01EE4B:NovaArizona.esm
+- 01EE4C:NovaArizona.esm
+- 01EE41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does it bother you, using children as Legionaries?

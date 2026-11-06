@@ -1,0 +1,67 @@
+FormKey: 01CCE6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Jesus, what did you just call it? Keep your voice down! I don't think that's an appropriate title to use in a family establishment.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But yeah, man, you did good with this one.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not a lot of legs, though. Guess I'll have to make some personal modifications.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 26
+Choices:
+- 020B7A:NovaArizona.esm
+- 020B7E:NovaArizona.esm
+- 01CC3D:NovaArizona.esm
+- 01CC3E:NovaArizona.esm
+- 020B7F:NovaArizona.esm
+- 020B85:NovaArizona.esm
+- 020B88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E1B000000
+  SourceCode: SetStage AZDolanSpringsNicodemusQuest 27
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC27:NovaArizona.esm
+Prompt: I see the Pimp Guai made it here in one piece.

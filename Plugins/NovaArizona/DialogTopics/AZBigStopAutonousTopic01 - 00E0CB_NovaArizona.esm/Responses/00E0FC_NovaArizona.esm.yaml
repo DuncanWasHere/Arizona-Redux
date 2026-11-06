@@ -1,0 +1,49 @@
+FormKey: 00E0FC:NovaArizona.esm
+FormVersion: 15
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Profligates beat us, and they beat us badly. I wanted to learn. The Legion had lied once about them. I wanted to see the truth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But they rejected me. They dithered in indecision on what to do with me. The man from the cave rejected me, but the man from this town didn't. He hid me away.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: To let me think.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720528
+Choices:
+- 00E0CB:NovaArizona.esm
+- 00E0CC:NovaArizona.esm
+- 00E0CD:NovaArizona.esm
+- 00E0D2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why did you try to flee to Haven?

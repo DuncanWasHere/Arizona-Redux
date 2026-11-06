@@ -1,0 +1,72 @@
+FormKey: 01EEF9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: 01EEF8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: I need for him to fuck off.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6D6520
+    UseEmotionAnimation: True
+    Unused3: 0x49206E
+  ResponseText: Actually, didn't you beat him up earlier? I did ask you to do that, right?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: It doesn't matter. I'm telling you to go beat him up now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100789368
+  SecondParameter: 40
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789368
+  SecondParameter: 45
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C00010082110D00020016007A0000000000408F40
+  SourceCode: AZMalpaisAdjutantREF.RestoreAV Fatigue 1000
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B71:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E2D0000006E01000000
+  SourceCode: SetObjectiveDisplayed AZMalpaisAbuserQuest 45 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+Prompt: What do you need?

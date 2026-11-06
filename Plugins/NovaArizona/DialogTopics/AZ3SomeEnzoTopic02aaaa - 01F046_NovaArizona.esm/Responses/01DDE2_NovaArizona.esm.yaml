@@ -1,0 +1,49 @@
+FormKey: 01DDE2:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01F047:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sure did. It was a nice little arrangement. Big career-defining accomplishment for him, and steady money for us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But I think he's really failing to see the value in a real business relationship with the Jordanos. We're more than shipping mules.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'd go there myself, but it didn't go so well last time. The skirt sitting at my Receptionist's desk ain't interested in my business plans either.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717599
+Choices:
+- 01F046:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: '*You* sold the Legate on repairing the Chainway?'

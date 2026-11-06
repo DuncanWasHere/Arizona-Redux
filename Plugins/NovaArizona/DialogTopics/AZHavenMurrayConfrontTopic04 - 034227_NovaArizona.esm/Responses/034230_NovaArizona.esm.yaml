@@ -1,0 +1,41 @@
+FormKey: 034230:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: 03422F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: Okay, Ruce, I tried, but I think we have a problem..
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x781008000200720100720200
+  SourceCode: SetEnemy PlayerFaction AZHavenFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004361:NovaArizona.esm
+Prompt: I refuse to answer.

@@ -1,0 +1,154 @@
+FormKey: 008BC6:NovaArizona.esm
+EditorID: AZTravelingMerchant01
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Traveling Merchant
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  Fatigue: 50
+  Level: 7
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 000E21:NovaArizona.esm
+  Unused: 0x4F444C
+- Faction: 01839A:NovaArizona.esm
+  Unused: 0x4F444C
+- Faction: 01CD77:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 02AB62:FalloutNV.esm
+Race: 0038E6:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 00000F:FalloutNV.esm
+    Count: 150
+- Item:
+    Item: 015198:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0151A3:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 01D069:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0301DE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 096C90:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 09B189:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.4
+- Item:
+    Item: 11DDBC:FalloutNV.esm
+    Count: 2
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  BuySellServices:
+  - Weapons
+  - Armor
+  - Books
+  - Food
+  - Chems
+  - Miscellaneous
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 023619:FalloutNV.esm
+Class: 15C4D6:FalloutNV.esm
+BaseHealth: 50
+Strength: 6
+Perception: 6
+Endurance: 6
+Charisma: 4
+Intelligence: 6
+Agility: 4
+Luck: 6
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 54
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 17
+  - Key: Explosives
+    Value: 17
+  - Key: Lockpick
+    Value: 17
+  - Key: Medicine
+    Value: 17
+  - Key: MeleeWeapons
+    Value: 17
+  - Key: Repair
+    Value: 58
+  - Key: Science
+    Value: 17
+  - Key: SmallGuns
+    Value: 54
+  - Key: Sneak
+    Value: 13
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 17
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 066FD0:FalloutNV.esm
+Hair: 0306BE:FalloutNV.esm
+HairLength: 0.8673
+Eyes: 004256:FalloutNV.esm
+HairColor: '#00CAA368'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x309E5C3D60F2513DA29986BFBAE9BD3F82F0A7BFFA39803E0CCE913F60FFFA3FBE5371BD6F9783BFCA3F45BF501B783F09847D3FB899A8BF34A28DBD50AFA3BF44FFF33E31461BC018BC0D3E1C995E3E3A8541BF8CFC06C080DA813D8BAC8A3E3E8F06C0CB582540807DE1BE5D7F30BF0055D93B68AB973D58EFBABEBC27063F0B80E1BE9CB704BF4046F23EA780364027F7343F16C514BF8027093DA061A13FC01C523FD7F70740E44501C0F03DD1BE380BA4BF3C61B3BEA87D8BBFC49BB43FE0D68CBED3C50F40
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0xCE8DD9BE32E3C7BEBA5065BE7A68913EE881A5BE8804853F6F80A5BF241C5E3F3E0D8F3ED0B3FCBD7A7745BFFE5E5FBFE883AEBFBFB5CB3E0082883B9EC7C53FB9D709BFB051C3BE7FDB1BBF3AF2A3BF60DE29BE482A10BE4E36C13E8783493F36CDE9BEA66C17BF961354BFF8F4F9BE888C1140D8B1A6BDA489813FE499BA3F3C1D6EBED2580CBE5A31FBBE7FBB733F883A89BDB4B88D3FD5E0713FBEA014BF00B007BF925D693F3E335CBF3CF3083F061E12BF4E39813F3482F83D862D21BF00ECDB3E52619F3F
+NAM5: 255
+DATADataTypeState:
+- Break0

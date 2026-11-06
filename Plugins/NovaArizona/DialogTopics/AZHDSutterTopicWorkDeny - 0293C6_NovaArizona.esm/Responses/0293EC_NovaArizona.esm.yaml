@@ -1,0 +1,33 @@
+FormKey: 0293EC:NovaArizona.esm
+FormVersion: 15
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Serves me right for thinking a civvie could have what it takes.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293CA:NovaArizona.esm
+- 0293B6:NovaArizona.esm
+- 0293B7:NovaArizona.esm
+- 0293BB:NovaArizona.esm
+- 0293B8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'll have to think about it and get back to you.

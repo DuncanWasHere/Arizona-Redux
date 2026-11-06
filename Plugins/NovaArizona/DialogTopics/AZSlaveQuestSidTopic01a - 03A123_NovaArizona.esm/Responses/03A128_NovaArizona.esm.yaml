@@ -1,0 +1,37 @@
+FormKey: 03A128:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Oh yeah? Try me.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 5
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702085
+Choices:
+- 03A123:NovaArizona.esm
+- 03A124:NovaArizona.esm
+- 03A125:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't like people who lie. They make me super angry. You won't like that, I promise.
+ActorValuePerk: 0003E8:FalloutNV.esm

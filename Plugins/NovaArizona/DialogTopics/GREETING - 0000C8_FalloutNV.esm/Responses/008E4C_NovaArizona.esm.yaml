@@ -1,0 +1,34 @@
+FormKey: 008E4C:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 008E4B:NovaArizona.esm
+AddTopics:
+- 008E59:NovaArizona.esm
+- 008E57:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0E0113
+    UseEmotionAnimation: True
+    Unused3: 0xB50628
+  ResponseText: You're back.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

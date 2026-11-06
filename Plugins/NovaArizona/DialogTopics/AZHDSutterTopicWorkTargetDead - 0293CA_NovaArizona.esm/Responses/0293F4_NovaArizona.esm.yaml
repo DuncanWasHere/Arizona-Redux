@@ -1,0 +1,78 @@
+FormKey: 0293F4:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: 0293F3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Indeed it is. Impressive work. Very impressive. You're a natural killer.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Here, a little bonus for a job well done. You've earned it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100832181
+  SecondParameter: 13
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100832181
+  SecondParameter: 12
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100832181
+  SecondParameter: 11
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293CA:NovaArizona.esm
+- 0293B6:NovaArizona.esm
+- 0293B7:NovaArizona.esm
+- 0293BB:NovaArizona.esm
+- 0293B8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E030000007711070001006EF401000039100A0002007203006E05000000
+  SourceCode: >-
+    player.additem MoneyNCR100 3
+
+    rewardxp 500
+
+    setstage AZArizonaOpenSeason 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293B5:NovaArizona.esm
+Prompt: So that's all the scalps, right?

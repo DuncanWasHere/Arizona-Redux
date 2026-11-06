@@ -1,0 +1,311 @@
+FormKey: 01018F:NovaArizona.esm
+EditorID: AZDamNQuest3
+FormVersion: 15
+Script: 01019F:NovaArizona.esm
+Name: Barbarians at the Gates
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Help the NCR manage the refugees at the checkpoint.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000
+      SourceCode: setobjectivedisplayed AZDamNQuest3 5 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Deal with the suicide bomber.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E0F0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 5 1
+
+        setobjectivedisplayed AZDamNQuest3 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Suicide bomber has detonated. Report to Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E050000006E01000000A2110F0003007202006E0F0000006E01000000A3110F0003007202006E190000006E010000001C0001007210070001006EFF000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 5 1
+
+        setobjectivecompleted AZDamNQuest3 15 1
+
+        setobjectivedisplayed AZDamNQuest3 25 1
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: The suicide bomber has been disarmed. Report to Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E050000006E01000000A2110F0003007202006E0F0000006E01000000A3110F0003007202006E1E0000006E010000001C0001007210070001006EFF000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 5 1
+
+        setobjectivecompleted AZDamNQuest3 15 1
+
+        setobjectivedisplayed AZDamNQuest3 30 1
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 35
+  LogEntries:
+  - Flags: []
+    Entry: The suicide bomber has agreed to be disarmed. Report to Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E050000006E01000000A2110F0003007202006E0F0000006E01000000A3110F0003007202006E230000006E010000001C0001007210070001006EFF000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 5 1
+
+        setobjectivecompleted AZDamNQuest3 15 1
+
+        setobjectivedisplayed AZDamNQuest3 35 1
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 36
+  LogEntries:
+  - Flags: []
+    Entry: The suicide bomber has been killed. Report to Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E050000006E01000000A2110F0003007202006E0F0000006E01000000A3110F0003007202006E240000006E010000001C0001007210070001006EFF000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 5 1
+
+        setobjectivecompleted AZDamNQuest3 15 1
+
+        setobjectivedisplayed AZDamNQuest3 36 1
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 37
+  LogEntries:
+  - Flags: []
+    Entry: The suicide bomber has been knocked unconscious. Report to Wire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E050000006E01000000A2110F0003007202006E0F0000006E01000000A3110F0003007202006E250000006E010000001C0001007210070001006EFF000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 5 1
+
+        setobjectivecompleted AZDamNQuest3 15 1
+
+        setobjectivedisplayed AZDamNQuest3 37 1
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Wire has relieved you of duty.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E190000006E01000000A2110F0003007203006E1E0000006E01000000A2110F0003007203006E230000006E01000000A2110F0003007203006E240000006E01000000A2110F0003007203006E250000006E01000000A3110F0003007203006E280000006E010000001C0001007711070001006E9600000078100800020072040072050015000A00720600730800020020321C0002007210070001006EFF000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest3 25 1
+
+        setobjectivecompleted AZDamNQuest3 30 1
+
+        setobjectivecompleted AZDamNQuest3 35 1
+
+        setobjectivecompleted AZDamNQuest3 36 1
+
+        setobjectivecompleted AZDamNQuest3 37 1
+
+        setobjectivedisplayed AZDamNQuest3 40 1
+
+
+        player.rewardxp 150
+
+
+        setenemy NCRFactionNV AZHHRCFactionCheckpoint
+
+        set AZDamNQuest2.bOnDuty to 2
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0A46E7:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 010361:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: You left the Hoover Dam.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x15000A00720200730800020020321C0001007210070001006EFF000000
+      SourceCode: >-
+        set AZDamNQuest2.bOnDuty to 2
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Wire is dead.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x15000A00720200730800020020321C0001007210070001006EFF000000
+      SourceCode: >-
+        set AZDamNQuest2.bOnDuty to 2
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+- Index: 61
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Bomber exploded and you bolted.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x15000A00720200730800020020321C0001007210070001006EFF000000
+      SourceCode: >-
+        set AZDamNQuest2.bOnDuty to 2
+
+        VHDCheckpointEastDoorREF.lock 255
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13C8C9:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018E:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Help the NCR manage the refugees at the checkpoint.
+  Targets:
+  - Target: 0102CA:NovaArizona.esm
+    Unused: 0x62102A
+  - Target: 0102DA:NovaArizona.esm
+    Unused: 0x62102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetTalkedToPC
+      RunOnType: Reference
+      Reference: 0102DA:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102DA:NovaArizona.esm
+  - Target: 0102D9:NovaArizona.esm
+    Unused: 0x62102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetTalkedToPC
+      RunOnType: Reference
+      Reference: 0102D9:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0102D9:NovaArizona.esm
+- Index: 15
+  Description: Deal with the suicide bomber.
+- Index: 25
+  Description: The suicide bomber has detonated. Report to Wire up top in the tower.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x70052D
+- Index: 30
+  Description: The suicide bomber has been disarmed. Report to Wire up top in the tower.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x4D042F
+- Index: 35
+  Description: The suicide bomber has agreed to be disarmed. Report to Wire up top in the tower.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0xD73B32
+- Index: 36
+  Description: The suicide bomber has been killed. Report to Wire up top in the tower.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x70052D
+- Index: 37
+  Description: The suicide bomber has been knocked unconscious. Report to Wire.
+  Targets:
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x7F2F30
+- Index: 40
+  Description: Wire has relieved you of duty.
+- Index: 16
+  Description: The suicide bomber has agreed to let you leave the dam before he detonates. Walk away or jump off the Dam.

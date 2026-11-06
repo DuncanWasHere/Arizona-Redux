@@ -1,0 +1,54 @@
+FormKey: 01EE08:NovaArizona.esm
+EditorID: AZMalpaisSedonusSlaveTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 4
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00D8000000010072010080163200022A0058000022120B000100FFFF050052020015580000A51111000200FFFF0500520200FFFF040042230207004CFC00000080162400021C00580000D0110B000100FFFF05005203005601020009004200040207004CAD00000039150C00010B005601020009004201003915130001120056010200010056010200010042010E0080162400021C00580000D0110B000100FFFF0500520400560102000A004200040207004CFC00000039150C00010B00560102000A004201003915130001120056010200010056010200010042010E0011000000
+  SourceCode: >-
+    name AZMalpaisSedonusSlaveTriggerScript;
+
+
+    int Slave1DoOnce;
+
+    int Slave2DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (!GetQuestCompleted(AZMalpaisAbuserQuest) && GetObjectiveDisplayed(AZMalpaisAbuserQuest, 35)) {
+            if (IsPlayerGrabbedREF(AZSedonusSlave01REF) && AZMalpaisAbuserQuest.Slave1DoOnce == 0) {
+                AZMalpaisAbuserQuest.Slave1DoOnce = 1;
+                AZMalpaisAbuserQuest.SedonusSlavesMoved = AZMalpaisAbuserQuest.SedonusSlavesMoved + 1;
+            }
+
+            if (IsPlayerGrabbedREF(AZSedonusSlave02REF) && AZMalpaisAbuserQuest.Slave2DoOnce == 0) {
+                AZMalpaisAbuserQuest.Slave2DoOnce = 1;
+                AZMalpaisAbuserQuest.SedonusSlavesMoved = AZMalpaisAbuserQuest.SedonusSlavesMoved + 1;
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Slave1DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Slave2DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008D40:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008D41:NovaArizona.esm

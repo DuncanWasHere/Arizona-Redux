@@ -1,0 +1,42 @@
+FormKey: 03424B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: 03424A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: '{Lower volume, somewhat under his breath}Unbelievable. Stupid decision.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776315
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100876799
+  SecondParameter: 2
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007304000B00207201007304002031202B
+  SourceCode: Set AZHavenIntroQuest.BarksComplete to AZHavenIntroQuest.BarksComplete + 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341FF:NovaArizona.esm

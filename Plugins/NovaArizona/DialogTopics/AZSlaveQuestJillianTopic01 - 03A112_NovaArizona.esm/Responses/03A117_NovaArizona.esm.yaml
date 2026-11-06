@@ -1,0 +1,47 @@
+FormKey: 03A117:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A116:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm sure that you're about to be in trouble if you keep asking. What is this shit to you, anyways?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100901046
+  SecondParameter: 65
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 65
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 66
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702071
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100901046
+  SecondParameter: 7
+Choices:
+- 03A113:NovaArizona.esm
+- 03A114:NovaArizona.esm
+- 03A115:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Show Discarded Sketch> You sure you don't know anything about this?

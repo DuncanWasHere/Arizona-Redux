@@ -1,0 +1,44 @@
+FormKey: 024BE2:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657075
+    UseEmotionAnimation: True
+    Unused3: 0x6E5468
+  ResponseText: "[SUCCEEDED] Yeah, that's right. I'm a Ranger."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x526570
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E54
+  ResponseText: What's it to you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 44
+  RunOnType: Target
+Choices:
+- 024BCC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The way you carry yourself out here in the radiation. You're tough, Ranger tough.
+ActorValuePerk: 0004BC:FalloutNV.esm

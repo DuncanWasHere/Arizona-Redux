@@ -1,0 +1,45 @@
+FormKey: 00C331:NovaArizona.esm
+EditorID: AZWhiteHillsMineLegionaryEscapeWaitPackage
+FormVersion: 15
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100699722
+  SecondParameter: 1
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 00C332:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

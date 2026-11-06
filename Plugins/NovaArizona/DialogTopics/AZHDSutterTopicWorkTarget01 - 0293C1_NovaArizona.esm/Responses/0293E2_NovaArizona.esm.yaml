@@ -1,0 +1,60 @@
+FormKey: 0293E2:NovaArizona.esm
+FormVersion: 15
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: 0293E1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There were some rangers from Bullhead. Got separated during the Legion assault, stranded behind enemy lines.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They were working their way north to the dam, but they only ever made it to Big Stop. Stuck there, hiding in a damn basement.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Things turned out as you might expect. Don't have bodies to recover, just one charred corpse, and another in smithereens.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Now, Dominicus Rex is overseeing the torture of everyone who ever even smelled the rangers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293C1:NovaArizona.esm
+- 0293C2:NovaArizona.esm
+- 0293C3:NovaArizona.esm
+- 0293C4:NovaArizona.esm
+- 0293C5:NovaArizona.esm
+- 0293C6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's personal about killing Dominicus Rex?

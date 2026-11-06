@@ -1,0 +1,58 @@
+FormKey: 036E9D:NovaArizona.esm
+EditorID: AZWeapDetonatorKyle
+FormVersion: 15
+ObjectBounds: {}
+Name: Detonator
+Model:
+  File: weapons\1handminedrop\C4Detonator.NIF
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_C4_detonator.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_frag_grenade.dds
+Script: 036E9E:NovaArizona.esm
+EquipmentType: MeleeWeapons
+PickUpSound: 087D64:FalloutNV.esm
+DropSound: 087D65:FalloutNV.esm
+ShellCasingModel:
+  File: Weapons\1handGrenadeThrow\GrenadeFrag.NIF
+FirstPersonModel: 12516F:FalloutNV.esm
+SoundEquip: 003A03:FalloutNV.esm
+SoundUnequip: 003A04:FalloutNV.esm
+Value: 25
+Health: 10000
+Weight: 0.5
+ClipSize: 1
+AnimationType: PistolBallistic1Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- CantDrop
+- DontUse1stPersonISAnimations
+- NonPlayable
+- NpcsUseAmmo
+- OverrideActionPoints
+- NotUsedInNormalCombat
+- DontUse3rdPersonISAnimations
+GripAnimation: 255
+Spread: 5
+DnamUnused1: 1065353216
+SightFov: 65
+BaseVatsToHitChance: 50
+AttackAnimation: Default
+MinRange: 500
+MaxRange: 1024
+OnHit: NoDismemberExplode
+AnimationAttackMultiplier: 1
+FireRate: 1
+OverrideActionPoints: 24
+AttackShotsPerSec: 2.4999995
+ReloadTime: 1.3
+JamTime: 1.4
+Skill: 35
+LimbDamageMult: 1
+ResistType: -1
+SemiAutomaticFireDelayMin: 0.1
+SemiAutomaticFireDelayMax: 0.5
+DnamUnknownFloat: 0.1
+CriticalPercentMult: 1
+Vats:
+  VatsSilent: True
+SoundLevel: Silent

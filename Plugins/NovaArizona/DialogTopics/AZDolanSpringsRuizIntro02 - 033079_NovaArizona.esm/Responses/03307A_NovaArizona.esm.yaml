@@ -1,0 +1,29 @@
+FormKey: 03307A:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2041
+    UseEmotionAnimation: True
+    Unused3: 0x6E5370
+  ResponseText: You're just like everyone else. Callous. Selfish. I'm nothing to you. May as well spit on me at this point.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 03307B:NovaArizona.esm
+- 033088:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're right, I don't care about your problem.

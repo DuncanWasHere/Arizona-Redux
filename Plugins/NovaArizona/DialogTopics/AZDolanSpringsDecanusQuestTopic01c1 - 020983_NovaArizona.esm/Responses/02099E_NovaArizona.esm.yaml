@@ -1,0 +1,65 @@
+FormKey: 02099E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I need you to speak to my best Legionaries. Their names are Asher and Ficus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I've assigned them to the Cow Field up north to respond to an increase in cattle attacks, and to let me think on it in peace.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know they still have some. Investigate it and return to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0500000055100500010072020039150900010800470300420100
+  SourceCode: >-
+    SetStage AZBrushQuest01 5
+
+    ShowMap AZCowFieldMapMarkerREF
+
+    AZLearnedAboutBrush = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BC7C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039EF8:NovaArizona.esm
+Prompt: I can help you with that. What do you need me to do?

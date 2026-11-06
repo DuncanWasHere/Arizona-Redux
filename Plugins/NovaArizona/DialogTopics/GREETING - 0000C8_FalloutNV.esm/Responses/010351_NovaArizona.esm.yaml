@@ -1,0 +1,56 @@
+FormKey: 010351:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01035A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: It appears that I misunderstood my superior's feelings on Operation Colorado. He is not happy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: He claims that this will make infiltrating the dam much harder. He also states that this will interfere with Operation Lincoln.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Omar's protection shall remain, though. You have my word on that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestCompleted
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100729230
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729692
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,31 @@
+FormKey: 024CB7:NovaArizona.esm
+FormVersion: 15
+Quest: 024C73:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Any chance you've come to a decision yet?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100813743
+Choices:
+- 024C78:NovaArizona.esm
+- 024C7F:NovaArizona.esm
+- 024C87:NovaArizona.esm
+- 024C88:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: No more questions about that.

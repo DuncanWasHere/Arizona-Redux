@@ -1,0 +1,119 @@
+FormKey: 00DE1C:NovaArizona.esm
+EditorID: AZStatioFindFriendQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 13
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZStatioFindFriendQuestScript
+
+
+    short AutonousStatus ; 1 = Located, 2 = Dead, 3 = Fled, 4 = Back on Job
+
+    short AutonousSearchStatus ; 1 = Big Stop Search, 2 = Malpais Lead, 3 = Did Not Find, 4 = Haven Lead, 5 = Newt Lead, 6 = Newt Lead Pulled
+
+    short AutonousMentionPhylacus
+
+    short AutonousSuicide ; 1 = suicide, 2 = killed by player
+
+
+    short PhylacusDiscussedAutonous
+
+    short QuestInitialReject
+
+    short PhylacusAngry
+
+
+    short BloodGunnerClue
+
+    short CarlosClue
+
+    short HavenClueFound
+
+    short ShelfKnowledge
+
+    short CatherineDick
+
+    short CatherineTalk
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x804D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6730310000
+    Name: AutonousStatus
+  - Data:
+      Index: 2
+      Unknown: 0x604D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x0C1E2665644861
+    Name: AutonousSearchStatus
+  - Data:
+      Index: 3
+      Unknown: 0x004D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C617447656E00
+    Name: PhylacusDiscussedAutonous
+  - Data:
+      Index: 4
+      Unknown: 0xE04C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x64517565737453
+    Name: QuestInitialReject
+  - Data:
+      Index: 5
+      Unknown: 0x404D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x2F203137322E30
+    Name: AutonousMentionPhylacus
+  - Data:
+      Index: 6
+      Unknown: 0x204D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65736D6F756C64
+    Name: AutonousSuicide
+  - Data:
+      Index: 7
+      Unknown: 0xA04C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C6174426C7565
+    Name: BloodGunnerClue
+  - Data:
+      Index: 8
+      Unknown: 0xC04C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x696D466C617457
+    Name: PhylacusAngry
+  - Data:
+      Index: 9
+      Unknown: 0x804C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x31303030300000
+    Name: CarlosClue
+  - Data:
+      Index: 10
+      Unknown: 0x604C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734D616368696E
+    Name: HavenClueFound
+  - Data:
+      Index: 11
+      Unknown: 0x404C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x696D466C617447
+    Name: ShelfKnowledge
+  - Data:
+      Index: 12
+      Unknown: 0x204C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CatherineDick
+  - Data:
+      Index: 13
+      Unknown: 0x00DB29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CatherineTalk

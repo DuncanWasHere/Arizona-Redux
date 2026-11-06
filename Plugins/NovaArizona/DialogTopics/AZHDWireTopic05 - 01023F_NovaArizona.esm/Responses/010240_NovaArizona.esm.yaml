@@ -1,0 +1,41 @@
+FormKey: 010240:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Look, I'm not heartless, but our own stocks of food are low, and we really can't spare any for them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 30
+  Function: GetStage
+  FirstParameter: 100729230
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+Choices:
+- 010241:NovaArizona.esm
+- 010245:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Look, if you can't let them through, can't you just supply them some food?

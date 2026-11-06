@@ -1,0 +1,40 @@
+FormKey: 020AEC:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x686974
+  ResponseText: Well, I've been told that the raiders we killed were "Selig-Men". I thought we and the Twisted Hairs wiped them out years ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x686974
+  ResponseText: Just goes to show that the Twisted Hairs deserved what they got along the I-40.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+Choices:
+- 020AE7:NovaArizona.esm
+- 020AE8:NovaArizona.esm
+- 020AE9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What did command think of you wiping out those raiders?

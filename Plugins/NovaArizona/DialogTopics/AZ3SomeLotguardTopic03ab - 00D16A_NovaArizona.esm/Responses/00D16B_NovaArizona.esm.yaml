@@ -1,0 +1,39 @@
+FormKey: 00D16B:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696D70
+    UseEmotionAnimation: True
+    Unused3: 0x6F7374
+  ResponseText: Not really.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0xDD3430
+  ResponseText: Whatever can't seem to sell to the Legion is put up for sale at the Buy & Sell, which Vinnie runs.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D167:NovaArizona.esm
+- 00D16A:NovaArizona.esm
+- 00D16E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does Tres Leches do anything else?

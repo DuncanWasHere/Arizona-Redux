@@ -1,0 +1,33 @@
+FormKey: 00ED3F:NovaArizona.esm
+EditorID: AZBigStopCurfewPatrolPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Unused: 40
+Flags:
+  MutagenObjectType: PackagePatrol
+Unused2: 40287
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00ED2C:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 21
+Duration: 9
+IsRepeatable: True
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

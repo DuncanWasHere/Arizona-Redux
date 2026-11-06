@@ -1,0 +1,31 @@
+FormKey: 03425E:NovaArizona.esm
+EditorID: AZHavenJobIntroPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- ContinueDuringCombat
+- NoWarnAttackBehavior
+Flags:
+  MutagenObjectType: PackageGuard
+Unused2: 0
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 034269:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

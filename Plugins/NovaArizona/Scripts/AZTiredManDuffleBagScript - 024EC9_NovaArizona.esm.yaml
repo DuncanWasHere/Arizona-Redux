@@ -1,0 +1,41 @@
+FormKey: 024EC9:NovaArizona.esm
+EditorID: AZTiredManDuffleBagScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0002006B000000010072010080161300020B0056010000010042000407004C890000003A151000010F00520200780000211004000000283A151000010F00520300780000211004000000280D100200000039150C00010B00560100000100420100811608000107004C8F0000000D100200000011000000
+  SourceCode: >-
+    name AZTiredManDuffleBagScript;
+
+
+    int DoOnce;
+
+
+    OnActivate::Player {
+        if (DoOnce == 0) {
+            AZBoulderCityQuestAssassin01REF.Enable();
+            AZBoulderCityQuestAssassin02REF.Enable();
+            Activate();
+            DoOnce = 1;
+        } else {
+            Activate();
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024ED0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024ED1:NovaArizona.esm

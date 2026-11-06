@@ -1,0 +1,95 @@
+FormKey: 03A8E2:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 020B61:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: <Sigh.> Methanol.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: When the Legion first started rollin' through this neck of the woods, I had hoped they wouldn't make it up to Elephant Hill. For a while, they didn't.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The supply, though? Slowed down everywhere, even long before the Legion showed up. Customers wanted booze and I couldn't get my hands on any.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My supplier down in Kingman got killed. The ones in Bullhead? Ran back home to the NCR. I was screwed - mighty screwed. So I got creative.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Moonshine, kiddo. Sunset moonshine. And it shined like hell. I even indulged, myself. Maybe a little too much.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x64646F
+    UseEmotionAnimation: True
+    Unused3: 0x736574
+  ResponseText: Eventually it came to an end, like it had to. Methanol left me with a parting gift - poison in my blood and bad eyes.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's the story. If you ask me, the takeaway ought to be don't mess with methanol. Just ain't worth it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetActorValue
+  FirstParameter: 6
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 020B43:NovaArizona.esm
+- 03A8E3:NovaArizona.esm
+- 020B4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: That's an awfully short answer. Don't feel like sharing?
+ActorValuePerk: 0003E9:FalloutNV.esm

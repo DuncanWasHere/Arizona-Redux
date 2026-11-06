@@ -1,0 +1,36 @@
+FormKey: 024CAE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 024C73:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Agent provocateur for the Confederate government. They paid me to blow up some of our own facilities, a couple Legion ones too.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100813743
+Choices:
+- 024C79:NovaArizona.esm
+- 024C7A:NovaArizona.esm
+- 024C7B:NovaArizona.esm
+- 024C7C:NovaArizona.esm
+- 024C7D:NovaArizona.esm
+- 024C7E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What did you do before you came here?

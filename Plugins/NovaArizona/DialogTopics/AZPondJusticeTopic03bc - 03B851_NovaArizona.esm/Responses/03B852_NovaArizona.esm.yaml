@@ -1,0 +1,42 @@
+FormKey: 03B852:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616C72
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: Not all beliefs have a strict canon. Over time this results in great differences between community rituals.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616C72
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: We call these folk faiths.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B84D:NovaArizona.esm
+- 03B84F:NovaArizona.esm
+- 03B851:NovaArizona.esm
+- 03B853:NovaArizona.esm
+- 03B855:NovaArizona.esm
+- 03B857:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Folk faiths?

@@ -1,0 +1,25 @@
+FormKey: 008B54:NovaArizona.esm
+EditorID: AZSmartArrayTriggerMarkerSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A006D000000010072010080162000021800580000A51111000200FFFF0500520200FFFF0400420207004C91000000A21115000300FFFF0500520200FFFF04004202FFFF04004201A31115000300FFFF0500520200FFFF0400420AFFFF0400420139100F000200FFFF0500520200FFFF0400421E11000000
+  SourceCode: >-
+    name AZSmartArrayTriggerMarkerSCRIPT;
+
+
+    OnTriggerEnter::Player {
+        if (GetObjectiveDisplayed(AZSMARTArrayQuest, 2)) {
+            SetObjectiveCompleted(AZSMARTArrayQuest, 2, 1);
+            SetObjectiveDisplayed(AZSMARTArrayQuest, 10, 1); // Changed objective values to hopefully correct issues ~Drongo
+            SetStage(AZSMARTArrayQuest, 30); // Set quest stages to hopefully correct issues
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008B25:NovaArizona.esm

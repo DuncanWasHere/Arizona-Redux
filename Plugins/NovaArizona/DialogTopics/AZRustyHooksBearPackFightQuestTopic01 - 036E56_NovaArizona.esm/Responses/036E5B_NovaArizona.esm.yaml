@@ -1,0 +1,30 @@
+FormKey: 036E5B:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 013133:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I told you no.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100806563
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I *really* think you should reconsider challenging Kyle for control of the gang.

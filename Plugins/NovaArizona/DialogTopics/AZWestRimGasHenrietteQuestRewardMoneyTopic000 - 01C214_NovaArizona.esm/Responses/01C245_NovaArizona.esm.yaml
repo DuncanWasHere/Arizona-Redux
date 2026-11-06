@@ -1,0 +1,59 @@
+FormKey: 01C245:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: 01C244:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] You bastard! Don't you know it's forbidden to strike a Maiden? Lay a hand on me and Shadows Clouds will lash you to a cross."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't care who you think you are, you're henceforth persona non grata here. Go!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 8
+  Function: GetActorValue
+  FirstParameter: 5
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39150C00010B0056010100020042010039120F0003007202006E000000006E02000000
+  SourceCode: >-
+    AZFreeformWestRimGas.bHenriettePissed = 1
+
+    AddReputation RepNVCaesarsLegion 0 2
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01050B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: I want those coins. Give them to me or I'll hurt you, badly.
+ActorValuePerk: 0003E8:FalloutNV.esm

@@ -1,0 +1,87 @@
+FormKey: 00F55E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x150051
+    UseEmotionAnimation: True
+    Unused3: 0x855F14
+  ResponseText: You're telling me she's not coming?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x742068
+    UseEmotionAnimation: True
+    Unused3: 0x6E7920
+  ResponseText: "*sigh* of course she wouldn't show."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: Her name is Marcia. She's my sister.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: I was hoping to speak with her before we left. This was *supposed* to be the first time I spoke with her in decades.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x150051
+    UseEmotionAnimation: True
+    Unused3: 0x855F14
+  ResponseText: Just give her this, okay? She deserves to know even if she didn't have the decency to show up this time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetStage
+  FirstParameter: 100797750
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100711888
+Choices:
+- 020D55:NovaArizona.esm
+- 020D57:NovaArizona.esm
+- 020D59:NovaArizona.esm
+- 020D63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E0A0000001C00010002100A0002007203006E01000000
+  SourceCode: >-
+    setstage AZSmugglingquest 10;
+
+    Player.additem azlucillenote 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D36:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D66:NovaArizona.esm
+Prompt: I was told to speak with you. Did you have a message for Doctor Clay?

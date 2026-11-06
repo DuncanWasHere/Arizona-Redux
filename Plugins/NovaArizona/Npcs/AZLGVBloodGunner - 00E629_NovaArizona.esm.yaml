@@ -1,0 +1,172 @@
+FormKey: 00E629:NovaArizona.esm
+MajorRecordFlagsRaw: 525312
+EditorID: AZLGVBloodGunner
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Blood Gunner
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 10
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1252C7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 02AB62:FalloutNV.esm
+Template: 1252C4:FalloutNV.esm
+Race: 000019:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 00E628:NovaArizona.esm
+Items:
+- Item:
+    Item: 1252C6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165746:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165747:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575F:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165762:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165765:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 00DE6D:NovaArizona.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  BuySellServices:
+  - Weapons
+  - Armor
+  - Alcohol
+  - Books
+  - Food
+  - Chems
+  - Stimpaks
+  - Miscellaneous
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0E6677:FalloutNV.esm
+Class: 019461:FalloutNV.esm
+Strength: 4
+Perception: 5
+Endurance: 4
+Charisma: 7
+Intelligence: 5
+Agility: 6
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 70
+  - Key: BigGuns
+    Value: 13
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 15
+  - Key: MeleeWeapons
+    Value: 13
+  - Key: Repair
+    Value: 15
+  - Key: Science
+    Value: 15
+  - Key: SmallGuns
+    Value: 68
+  - Key: Sneak
+    Value: 17
+  - Key: Speech
+    Value: 70
+  - Key: Survival
+    Value: 13
+  - Key: Unarmed
+    Value: 13
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B22BF:FalloutNV.esm
+Hair: 033183:FalloutNV.esm
+HairLength: 0.77
+Eyes: 004253:FalloutNV.esm
+HairColor: '#00808080'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x972B6E3F61C2903F1E304A3FC6FBB0BFF87C7A3E389D4CBFEADEF53ED0F1F13F5462C2BE17F0DF3EE04B17BE55227E3E7C1AB2BDB01964BF9AE8B2BEF09807BE720A3F3F58E8883E7592203F52D7A1BEDB0DD9BEF60398BF60B7223E805329BC37B7CF3FE0852F3D1B6A393FA2EA16BFB050FA3EA0ECE5BE28DDDBBE18D9E3BED074EA3E62DC8CBD40DE653FE70DEC3E10072C3FE0C7573EF802263FB075923C7DCA3DBEFA38EDBF5034063E3C2B483FB2F98EBF3E9A8EBF04807B3F3431793E144DA9BF398960BF
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x0F7DB5BFF3511B3F4CADE83E4394003F7A908DBEE8DF81BF38B5D43F00E2643F6C4E4A3F25FE3F3E9631973F586448BE1BB6C33E683E8B3ECF402FBF45E95ABFE10FB1BF59214D3F7AA8B2BF7043EDBD00CBC6BE9802723FF9AAE93ED8A6383D00A381BC4D46993FAE82643F1067943EDADB223F38F53DBEECA6703E20AE183E56DB0BBE347FB23EB5F080BFD22BF43DF0DF9EBF188E42BF32AF55BE9D0DED3EBA6020C07DB829C02C0714BF5A15E53E70FD543E50142DBF0A5FB73E0EE4973F0C41423FB46B813E
+NAM5: 255
+Height: 1
+Weight: 1
+DATADataTypeState:
+- Break0
+MajorFlags:
+- QuestItem
+- 0x80000

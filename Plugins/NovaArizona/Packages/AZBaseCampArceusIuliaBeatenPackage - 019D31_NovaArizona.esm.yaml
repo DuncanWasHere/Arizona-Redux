@@ -1,0 +1,53 @@
+FormKey: 019D31:NovaArizona.esm
+EditorID: AZBaseCampArceusIuliaBeatenPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+Unused: 117
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 8295
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 180
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100768688
+  SecondParameter: 13
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100768688
+  SecondParameter: 15
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 019D39:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

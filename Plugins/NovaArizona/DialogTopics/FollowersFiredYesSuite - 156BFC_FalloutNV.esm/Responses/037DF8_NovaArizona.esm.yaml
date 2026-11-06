@@ -1,0 +1,97 @@
+FormKey: 037DF8:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Air conditioning and a bed sounds good to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 72
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730B000200203015000A00720100730C000200203015000A00720100730D000200203115000A00720100730F000200203015000A007201007308000200203015000A00720100730900020020301C000100A811050001007203001C000200A8110500010072040059100B0001007205000000000000001C000100C511070001006E0000000015000A00720600732F0002002030150013007206007313000B00207206007313002031202D1600100001000C00207206007313002030203D3D15000A0072060073120002002030190000001C0001005E100000
+  SourceCode: >-
+    Set AZDeejayREF.Waiting to 0
+
+    Set AZDeejayREF.bCurrentlyHired to 0
+
+    Set AZDeejayREF.bSentToLucky38 to 1
+
+    Set AZDeejayREF.bSentToAerotech to 0
+
+    Set AZDeejayREF.IsFollowingDefault to 0
+
+    Set AZDeejayREF.IsFollowingLong to 0
+
+    AZDeejayREF.removeperk CompanionSuite
+
+    player.removeperk AZBitterWater
+
+    showmessage AZFollowerMessagePerkDeejayRemove
+
+
+    AZDeejayREF.SetPlayerTeammate 0
+
+    set VNPCFollowers.bHumanoidInParty to 0;
+
+    set VNPCFollowers.nCurrentFollowers to (VNPCFollowers.nCurrentFollowers - 1)
+
+
+    if VNPCFollowers.nCurrentFollowers == 0
+         set VNPCFollowers.bPlayerHasFollower to 0
+    endif
+
+    AZDeejayREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C571:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037EFF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F01:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C0001004F120500010072020059100B000100720300000000000000
+  SourceCode: >-
+    AZDeejayREF.MoveToMarkerWithFade L38SuiteCompanionMarker01REF
+
+    ShowMessage AZDeejayGoneToLucky38Message
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15672F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E7B:NovaArizona.esm
+Prompt: I'd like you to go back to the Lucky 38 for now.

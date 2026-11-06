@@ -1,0 +1,40 @@
+FormKey: 00DC00:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 00DC2A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[Cerberus lowers his body. He bares his teeth but makes no sound. A threatening grin.]'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100713545
+  SecondParameter: 1
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100713545
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721254
+Choices:
+- 00DBEC:NovaArizona.esm
+- 00DBEE:NovaArizona.esm
+- 00DBF6:NovaArizona.esm
+- 00DBF0:NovaArizona.esm
+- 00DBF1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

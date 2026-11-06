@@ -1,0 +1,52 @@
+FormKey: 0210F9:NovaArizona.esm
+EditorID: AZSMARTArrayFlashlightTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 3
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000B001800A90000000100720100391513000112005600000001005800000C10040000001C801621000219005600000001005600000002000F5A000000000000F03F0807004CE900000080161300020B00580000AC280400000007004CBC000000AC2808000100FFFF04004200261009000100FFFF0500520200811608000107004CD5000000AC2808000100FFFF04004201261009000100FFFF050052030039151000010F005600000002005600000001000011000000
+  SourceCode: >-
+    name AZSMARTArrayFlashlightTriggerScript;
+
+
+    float fTimer;
+
+    float fLastToggleTime;
+
+
+    OnTrigger::PlayerREF {
+        fTimer += GetSecondsPassed();
+
+        if (fTimer - fLastToggleTime >= 1.0) {
+            if (TogglePipBoyLight()) {
+                TogglePipBoyLight(0);
+                PlaySound(UIPipBoyLightOff);
+            } else {
+                TogglePipBoyLight(1);
+                PlaySound(UIPipBoyLightOn);
+            }
+
+            fLastToggleTime = fTimer;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fLastToggleTime
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02596E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02596D:FalloutNV.esm

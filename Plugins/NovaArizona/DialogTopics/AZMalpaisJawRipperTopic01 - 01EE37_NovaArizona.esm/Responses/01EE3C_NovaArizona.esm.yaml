@@ -1,0 +1,49 @@
+FormKey: 01EE3C:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I instruct the children in the necessary arts. War, survival, strength. Soon, they'll be ready for battle.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: All that's left is completing their rite of Mars, fighting a Legionary and going on a raid to the north. They'll miss Hoover Dam, which is a shame.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: They will ready for the war with NCR at least.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01EE43:NovaArizona.esm
+- 01EE44:NovaArizona.esm
+- 01EE45:NovaArizona.esm
+- 01EE41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you here?

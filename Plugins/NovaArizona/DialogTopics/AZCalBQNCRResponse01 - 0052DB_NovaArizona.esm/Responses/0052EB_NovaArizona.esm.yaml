@@ -1,0 +1,41 @@
+FormKey: 0052EB:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 10
+    ResponseNumber: 1
+    Unused2: 0x747469
+    UseEmotionAnimation: True
+    Unused3: 0x737465
+  ResponseText: Clean water's a monopoly. Good harvests are for the Barons.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: For a mighty few, it's a paradise.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005340:NovaArizona.esm
+- 005354:NovaArizona.esm
+- 005341:NovaArizona.esm
+- 0052D1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: On the face of it?

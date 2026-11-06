@@ -1,0 +1,40 @@
+FormKey: 021073:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 021072:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Great! Like I said before, it's going to cost 300 Denarii.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 25
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 26
+Choices:
+- 02106A:NovaArizona.esm
+- 02106B:NovaArizona.esm
+- 02106C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm ready to hire your caravan now.

@@ -1,0 +1,43 @@
+FormKey: 034F1A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Heard it before; very irritated}Darkus. Destroyus!'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 075CE1:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 034EFF:NovaArizona.esm
+- 034F00:NovaArizona.esm
+- 034F01:NovaArizona.esm
+- 034F02:NovaArizona.esm
+- 034F06:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000100420120
+  SourceCode: AZMalpaisSniperQuest.iEsteemCounter -= 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+Prompt: I'm sorry, did you say 'Dorkus Doofus?'

@@ -1,0 +1,40 @@
+FormKey: 00A4A5:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 00A4A4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x72655C
+    UseEmotionAnimation: True
+    Unused3: 0x747269
+  ResponseText: What?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 30
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100705443
+Choices:
+- 00A4D4:NovaArizona.esm
+- 00A4D5:NovaArizona.esm
+- 00A770:NovaArizona.esm
+- 00A4C2:NovaArizona.esm
+- 00A4C5:NovaArizona.esm
+- 00A4C6:NovaArizona.esm
+- 00A4C7:NovaArizona.esm
+- 00A4CF:NovaArizona.esm
+- 00A4D0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

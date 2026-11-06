@@ -1,0 +1,34 @@
+FormKey: 020B25:NovaArizona.esm
+EditorID: AZTiptonJunkWallDoorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006001F007D000000801611000209005601010003001507004C9C0000003A15170001160052020078000016100B000100FFFF0500520300283A15170001160052040078000016100B000100FFFF0500520300283A15170001160052050078000016100B000100FFFF05005203002839100F000200FFFF0500520600FFFF040042FF11000000
+  SourceCode: >-
+    name AZTiptonJunkWallDoorScript;
+
+
+    OnOpen {
+        if (!AZFreeformTiptonCave.DoorOkay) {
+            AZMountTiptonCaveClarkREF.StartCombat(Player);
+            AZMountTiptonCaveJessREF.StartCombat(Player);
+            AZMountTiptonCaveNiemannREF.StartCombat(Player);
+            SetStage(AZBrushQuest02, 255);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0208A2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01DF52:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01DF50:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01DF4C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm

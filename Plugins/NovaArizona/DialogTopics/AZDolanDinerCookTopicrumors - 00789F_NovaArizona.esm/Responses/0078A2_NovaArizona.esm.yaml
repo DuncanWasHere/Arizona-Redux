@@ -1,0 +1,35 @@
+FormKey: 0078A2:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 0078A1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x657220
+  ResponseText: Head to the Big Dog if you're hungry. It's not as good as my food, but it's all you can buy in town.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721594
+Choices:
+- 00D195:NovaArizona.esm
+- 00789D:NovaArizona.esm
+- 00789F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Any rumors?

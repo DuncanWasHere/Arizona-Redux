@@ -1,0 +1,39 @@
+FormKey: 0208E3:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: 0208CF:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What's up, amicus?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+Choices:
+- 020AD4:NovaArizona.esm
+- 0208B6:NovaArizona.esm
+- 0208BB:NovaArizona.esm
+- 0208C1:NovaArizona.esm
+- 0208C2:NovaArizona.esm
+- 0208C3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

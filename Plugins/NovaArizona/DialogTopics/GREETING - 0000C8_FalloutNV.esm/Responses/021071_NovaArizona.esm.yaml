@@ -1,0 +1,56 @@
+FormKey: 021071:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F645:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "...And you're done. See, that wasn't so hard, was it?"
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Pleasure doing business with you. I'll get a caravan sent out there right away.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100718570
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E1A00000039150C00010B00560102000100420000
+  SourceCode: >-
+    SetStage AZDolanSpringsNicodemusQuest 26
+
+    AZFreeformChloride.bCalvinWritingCheck = 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC27:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D7EA:NovaArizona.esm

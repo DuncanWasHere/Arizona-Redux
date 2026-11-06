@@ -1,0 +1,51 @@
+FormKey: 004C5D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - InfoRefusal
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 004C5C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Which ones?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100681665
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100681665
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100681665
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 0056E0:NovaArizona.esm
+- 0056DF:NovaArizona.esm
+- 0056DB:NovaArizona.esm
+- 0071BB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have questions about my bounties.

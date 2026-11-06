@@ -1,0 +1,82 @@
+FormKey: 00C328:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Your world will end, you Profligate fuck. Your people will die screaming.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C0001008011050001007202001C000100801105000100720300
+  SourceCode: >-
+    AZBigSparMineCallumREF.RemoveFromFaction ArmorVCaesarsLegionFaction
+
+    AZBigSparMineCallumREF.RemoveFromFaction vCaesarsLegionFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006D93:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 8
+    Enabled: 1
+  CompiledScript: 0x1600100005000C0020720300730B002031203D3D1C0001008011050001007204001C000100801105000100720500781008000200720400720600781008000200720500720600781008000200720700720600190000001600100003000C0020720300730A002031203D3D9111050001007208001C0001002210020000001C00020021100200000019000000
+  SourceCode: >+
+    if AZWhiteHillsMineDialogue.CallumDecimated == 1
+    	AZBigSparMineCallumREF.RemoveFromFaction ArmorVCaesarsLegionFaction
+    	AZBigSparMineCallumREF.RemoveFromFaction vCaesarsLegionFaction
+    	SetEnemy ArmorVCaesarsLegionFaction AZWhiteHillsMineLegionFaction
+    	SetEnemy VCaesarsLegionFaction AZWhiteHillsMineLegionFaction
+    	SetEnemy vCaesarsLegionMilitaryDialogueFaction AZWhiteHillsMineLegionFaction
+    endif
+
+
+    if AZWhiteHillsMineDialogue.CallumCrucified == 1
+    	IMod FadeToBlack4sISFX
+    	AZBigSparMineCallumREF.disable
+    	AZCallcumCrucifixREF.enable
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006D93:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020A94:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E72:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 137BB7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 14DA81:FalloutNV.esm
+Prompt: The only good Legionary is a dead Legionary.

@@ -1,0 +1,54 @@
+FormKey: 02108C:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: See? Not a day goes by where a woman doesn't need a man to do something for her.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sure. I'm a gentlemanly motherfucker.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100749084
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestRunning
+  FirstParameter: 100781095
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100781095
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPCIsSex
+  FirstParameter: 1
+Choices:
+- 021083:NovaArizona.esm
+- 021084:NovaArizona.esm
+- 021085:NovaArizona.esm
+- 021086:NovaArizona.esm
+- 021087:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can you help me find something?

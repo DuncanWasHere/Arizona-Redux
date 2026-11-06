@@ -1,0 +1,195 @@
+FormKey: 036A64:NovaArizona.esm
+EditorID: AZBodyPartDataElectroBeetle
+FormVersion: 15
+Model:
+  File: Creatures\Radroach\skeleton.nif
+Parts:
+- Name: Torso
+  PartNode: Bip01
+  VatsTarget: Bip01 Spine
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 2.5
+  Flags:
+  - Explodable
+  - ToHitChanceAbsolute
+  HealthPercent: 0.29411764705882354
+  ActorValue: EnduranceCondition
+  ToHitChance: 0.8
+  ExplosionChance: 1
+  DebrisCount: 9
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 00D687:OldWorldBlues.esm
+  DebrisScale: 1
+  SeverableDebrisScale: 1
+  ExplodableImpactData: 036A65:NovaArizona.esm
+  ExplodableDecalCount: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 L Calf01
+  TextureFilesHashes: '[]'
+- Name: Left Legs
+  PartNode: Bip01 L Clavicle
+  VatsTarget: Bip01 L Clavicle
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 0.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: LeftLeg1
+  HealthPercent: 0.058823529411764705
+  ActorValue: LeftMobilityCondition
+  ToHitChance: 0.55
+  ExplosionChance: 0.3
+  DebrisCount: 3
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 L Forearm
+  TextureFilesHashes: '[]'
+- Name: Left Legs
+  PartNode: Bip01 L Thigh01
+  VatsTarget: Bip01 L Calf01
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 0.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: LeftLeg2
+  HealthPercent: 0.058823529411764705
+  ActorValue: LeftMobilityCondition
+  ToHitChance: 0.55
+  ExplosionChance: 0.3
+  DebrisCount: 2
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 L Calf01
+  TextureFilesHashes: '[]'
+- Name: Left Legs
+  PartNode: Bip01 L Thigh11
+  VatsTarget: Bip01 L Calf11
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 0.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: LeftLeg3
+  HealthPercent: 0.058823529411764705
+  ActorValue: LeftMobilityCondition
+  ToHitChance: 0.55
+  ExplosionChance: 0.3
+  DebrisCount: 3
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 L Calf11
+  TextureFilesHashes: '[]'
+- Name: Head
+  PartNode: Bip01 Neck
+  VatsTarget: Bip01 Head
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 1.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: Head1
+  HealthPercent: 0.11764705882352941
+  ActorValue: PerceptionCondition
+  ToHitChance: 0.25
+  ExplosionChance: 1
+  DebrisCount: 6
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  SeverableImpactData: 036A65:NovaArizona.esm
+  ExplodableImpactData: 036A65:NovaArizona.esm
+  SeverableDecalCount: 1
+  ExplodableDecalCount: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 Head
+  TextureFilesHashes: '[]'
+- Name: Right Legs
+  PartNode: Bip01 R Clavicle
+  VatsTarget: Bip01 R Clavicle
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 0.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: RightLeg1
+  HealthPercent: 0.058823529411764705
+  ActorValue: RightMobilityCondition
+  ToHitChance: 0.55
+  ExplosionChance: 0.3
+  DebrisCount: 4
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 R Forearm
+  TextureFilesHashes: '[]'
+- Name: Right Legs
+  PartNode: Bip01 R Thigh01
+  VatsTarget: Bip01 R Calf01
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 0.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: RightLeg2
+  HealthPercent: 0.058823529411764705
+  ActorValue: RightMobilityCondition
+  ToHitChance: 0.55
+  ExplosionChance: 0.3
+  DebrisCount: 2
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 R Calf01
+  TextureFilesHashes: '[]'
+- Name: Right Legs
+  PartNode: Bip01 R Thigh11
+  VatsTarget: Bip01 R Calf11
+  IkStartNode: Bip01 L Calf01
+  DamageMult: 0.5
+  Flags:
+  - Severable
+  - Explodable
+  Type: RightLeg3
+  HealthPercent: 0.058823529411764705
+  ActorValue: RightMobilityCondition
+  ToHitChance: 0.55
+  ExplosionChance: 0.3
+  DebrisCount: 2
+  Debris: 036A68:NovaArizona.esm
+  Explosion: 036A67:NovaArizona.esm
+  DebrisScale: 1
+  SeverableExplosion: 031CF9:FalloutNV.esm
+  SeverableDebrisScale: 1
+  LimbReplacementScale: 1
+  LimbReplacementModel: ''
+  GoreTargetBone: Bip01 R Thigh11
+  TextureFilesHashes: '[]'
+Ragdoll: 0658D5:FalloutNV.esm

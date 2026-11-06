@@ -1,0 +1,40 @@
+FormKey: 0175EB:NovaArizona.esm
+EditorID: AZBSTentGuardScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00520000000000781010000200FFFF0500520100FFFF050052020039100F000200FFFF0500520300FFFF040042963A152300012200520400780000491217000300FFFF0500520500FFFF04004201FFFF04004200281100000010000B0019002B0000000100720500781010000200FFFF0500520100FFFF050052020039100F000200FFFF0500520300FFFF0400429611000000
+  SourceCode: >-
+    name AZBSTentGuardScript;
+
+
+    OnDeath {
+        SetEnemy(PlayerFaction, AZDominicusRexFaction);
+        // TODO: what were these refs supposed to be? They no longer exist
+        // AZBigStopInterviewTent07REF.Disable();
+        // AZBigStopInterviewTent09REF.Disable();
+        SetStage(AZMalpaisJournalistQuest, 150);
+        AZBigStopInterviewWeaponsStorageREF.RemoveAllTypedItems(Player, 1, 0);
+    }
+
+
+    OnStartCombat::Player {
+        SetEnemy(PlayerFaction, AZDominicusRexFaction);
+        // AZBigStopInterviewTent07REF.Disable();
+        // AZBigStopInterviewTent09REF.Disable();
+        SetStage(AZMalpaisJournalistQuest, 150);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175DC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175E9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

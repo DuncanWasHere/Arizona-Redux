@@ -1,0 +1,27 @@
+FormKey: 01EF1A:NovaArizona.esm
+EditorID: AZSedonusSasparillaCrateScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B000300510000000100720100A21115000300FFFF0500520200FFFF04004237FFFF04004201A31115000300FFFF0500520200FFFF0400423BFFFF040042013A15170001160052030078000097100B000100FFFF05005204002811000000
+  SourceCode: >-
+    name AZSedonusSasparillaCrateScript;
+
+
+    OnAdd::player {
+        SetObjectiveCompleted(AZMalpaisAbuserQuest, 55, 1);
+        SetObjectiveDisplayed(AZMalpaisAbuserQuest, 59, 1);
+        AZMalpaisAdjutantREF.AddScriptPackage(AZLegatusAdjutantGuardPackage);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B71:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDDA:NovaArizona.esm

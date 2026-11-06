@@ -1,0 +1,32 @@
+FormKey: 020C4D:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Billing. Ding. Bill-ding.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789101
+Choices:
+- 020C38:NovaArizona.esm
+- 020C39:NovaArizona.esm
+- 020C3C:NovaArizona.esm
+- 020C41:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Building.

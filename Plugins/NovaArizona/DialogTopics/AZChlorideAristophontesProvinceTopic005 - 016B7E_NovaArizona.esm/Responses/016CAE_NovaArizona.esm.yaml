@@ -1,0 +1,49 @@
+FormKey: 016CAE:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I cannot give a definite answer. Our territory is constantly expanding and its vastness discourages correspondence over such trivial facts.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: 'I only know of a dozen provinces and fewer I can name:'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Mojave Orientum, Mojave Meridiem, Vallis Pacis, Yuma, Magna Chasma, Flagstaff, Phoenix, Two-Sun, Albus Quercus. There are surely many more.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B75:NovaArizona.esm
+- 016B7E:NovaArizona.esm
+- 016B74:NovaArizona.esm
+- 016B1E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How many provinces are there?

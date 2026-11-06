@@ -1,0 +1,32 @@
+FormKey: 020AB8:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: 020975:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657468
+    UseEmotionAnimation: True
+    Unused3: 0x6E206D
+  ResponseText: You weant to speak to Niemann first.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100796571
+  SecondParameter: 45
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785997
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,50 @@
+FormKey: 024B70:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The NCR is worse than the Legion. They have a more stable government, access to more resources and a larger population.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They are ambitious and greedy enough to not just send their soldiers to take what they want, but their civilians, too.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '"Settlers." "Prospectors."  All the way, they lull themselves into believing what they are doing is right.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B56:NovaArizona.esm
+- 024B57:NovaArizona.esm
+- 024B58:NovaArizona.esm
+- 024B59:NovaArizona.esm
+- 024B66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Elaborate.

@@ -1,0 +1,31 @@
+FormKey: 020B66:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: War is war. People are always gonna fight for one reason or another. Ain't my business. Just means that the customers will change.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 020B45:NovaArizona.esm
+- 020B46:NovaArizona.esm
+- 020B47:NovaArizona.esm
+- 020B4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are your thoughts on the war?

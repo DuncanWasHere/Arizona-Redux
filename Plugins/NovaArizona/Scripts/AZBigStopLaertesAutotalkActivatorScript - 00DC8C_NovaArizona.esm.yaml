@@ -1,0 +1,44 @@
+FormKey: 00DC8C:NovaArizona.esm
+EditorID: AZBigStopLaertesAutotalkActivatorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000B001A00670000000100720100801611000209005601000002001507004CA700000039150C00010B005601020002004201003A151600011500520300780000AC270A000100FFFF040042C82839150C00010B005601000002004201003A151000010F005203007800005E10040000002811000000
+  SourceCode: >-
+    name AZBigStopLaertesAutotalkActivatorScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (!DoOnce) {
+            AZFreeformBigStop.bLaertesAutotalk = 1;
+            AZBigStopLaertesREF.SetSpeedMult(200);
+            DoOnce = 1;
+            AZBigStopLaertesREF.Evp();
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: doonce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017560:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C448:NovaArizona.esm

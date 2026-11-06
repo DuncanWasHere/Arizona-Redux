@@ -1,0 +1,43 @@
+FormKey: 037E75:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037E3C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hm. I'm more of a lone wolf, but you make a good point. First, I need to make one thing clear.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If you lay a hand on me, I will kill you. If you try and sweet talk me, I'm gone. None of that shit. You get me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037E1E:NovaArizona.esm
+- 037E1F:NovaArizona.esm
+- 037E20:NovaArizona.esm
+- 037E21:NovaArizona.esm
+- 037E22:NovaArizona.esm
+- 037E23:NovaArizona.esm
+- 037E24:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Come with me. The Legion lets me cross the river freely. Might find your slave out West.

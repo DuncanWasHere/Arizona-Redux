@@ -1,0 +1,43 @@
+FormKey: 024C46:NovaArizona.esm
+EditorID: AZ188ContactPackage02
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- ContinueDuringCombat
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 14F532:FalloutNV.esm
+  Radius: 128
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 55
+  Function: GetStage
+  FirstParameter: 100698646
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+    CompiledScript: 0x2210070001006E03000000BB110000
+    SourceCode: >-
+      disable 3
+
+      markfordelete
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

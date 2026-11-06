@@ -1,0 +1,42 @@
+FormKey: 010334:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: It's a post along the Via Mojave Minor. Lanius allows any new Centurions on their way to the dam as a place of rest before they arrive at his camp.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: They usually pass through to Malpais for the baths, even after the Chainway collapsed. When they do arrive, we tend to their needs and their concubines.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729613
+Choices:
+- 01032C:NovaArizona.esm
+- 01032F:NovaArizona.esm
+- 010331:NovaArizona.esm
+- 010333:NovaArizona.esm
+- 01038A:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is this place?

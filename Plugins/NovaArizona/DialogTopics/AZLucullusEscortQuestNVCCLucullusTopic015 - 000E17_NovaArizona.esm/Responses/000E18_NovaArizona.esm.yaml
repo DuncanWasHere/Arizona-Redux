@@ -1,0 +1,29 @@
+FormKey: 000E18:NovaArizona.esm
+FormVersion: 15
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652068
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: Good. Are you ready to go now?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+Choices:
+- 000E12:NovaArizona.esm
+- 000E13:NovaArizona.esm
+- 000E16:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

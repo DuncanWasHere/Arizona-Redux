@@ -1,0 +1,54 @@
+FormKey: 01FAC8:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: Okay, okay. You really want to help this guy?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: I can do 500. We'll split it 50/50.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Deal?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 75
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+Choices:
+- 01FACA:NovaArizona.esm
+- 01FAE5:NovaArizona.esm
+- 00C9A3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You and I both know you absolutely have several times that amount of money.

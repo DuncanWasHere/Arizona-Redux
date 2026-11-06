@@ -1,0 +1,63 @@
+FormKey: 008E5B:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 15
+    ResponseNumber: 1
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We did. We do. Wherever we find them, we destroy them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 15
+    ResponseNumber: 2
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This group must be new. There were women. Perhaps they're Profligate tribals. They may be different stock from the usual chem-addict trash.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If my contubernium were here, we'd have these degenerates nailed to crosses.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 100
+    ResponseNumber: 4
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Worse than that! We'd break them and parade them all the way back to Flagstaff to show everyone what happens to the Profligates who resist Caesar's will.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 0CC827:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+Choices:
+- 008E58:NovaArizona.esm
+- 008E59:NovaArizona.esm
+- 008E7A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I thought the Legion got rid of all the raiders in its territory.

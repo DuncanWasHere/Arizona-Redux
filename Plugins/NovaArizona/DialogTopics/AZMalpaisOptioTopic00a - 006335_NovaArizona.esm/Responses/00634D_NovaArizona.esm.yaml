@@ -1,0 +1,66 @@
+FormKey: 00634D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 035DA2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: Ominous. Did you happen to recover their cargo?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100681665
+  SecondParameter: 35
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100681665
+  SecondParameter: 35
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 006E2E:NovaArizona.esm
+- 006E30:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x15000A0072020073020002002031A2110F0003007202006E230000006E010000001C00010002100A0002007203006E320000003B12130003007204006E010000007A0000000000000840
+  SourceCode: >-
+    set AZMalpaisBountyQuest.iCaravanComplete to 1
+
+    setobjectivecompleted AZMalpaisBountyQuest 35 1
+
+
+    Player.AddItem MoneyLegion1 50
+
+    AddReputationExact RepNVCaesarsLegion 1 3
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: I've dealt with the caravan. They've gone mad and were attacking other caravans.

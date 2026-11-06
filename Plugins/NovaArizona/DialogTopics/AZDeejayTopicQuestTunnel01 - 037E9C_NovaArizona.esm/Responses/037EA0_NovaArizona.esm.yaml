@@ -1,0 +1,40 @@
+FormKey: 037EA0:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: From the way that doctor said it, they sound pretty mean. But if you've got an in with them, it wouldn't hurt to try.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037E9C:NovaArizona.esm
+- 037E9D:NovaArizona.esm
+- 037E9E:NovaArizona.esm
+- 037E9F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E020000006E01000000
+  SourceCode: setobjectivedisplayed AZDeejayQuest 2 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E6B:NovaArizona.esm
+Prompt: The Boomers probably have a spotter. Maybe they saw something.

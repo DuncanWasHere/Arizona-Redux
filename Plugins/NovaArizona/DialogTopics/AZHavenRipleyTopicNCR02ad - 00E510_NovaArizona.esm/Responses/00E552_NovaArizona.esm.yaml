@@ -1,0 +1,35 @@
+FormKey: 00E552:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wow, you're feisty. I must've hit a nerve.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+Choices:
+- 00E50B:NovaArizona.esm
+- 00E50C:NovaArizona.esm
+- 00E50F:NovaArizona.esm
+- 00E510:NovaArizona.esm
+- 00E511:NovaArizona.esm
+- 00E534:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: They both breathe air and drink water. Your false equivalences aren't as smart as you think they are.

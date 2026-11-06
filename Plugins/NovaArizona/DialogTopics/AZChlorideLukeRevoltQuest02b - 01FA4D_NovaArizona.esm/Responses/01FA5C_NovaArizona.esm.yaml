@@ -1,0 +1,51 @@
+FormKey: 01FA5C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0x88883D
+  ResponseText: Yep. Legion'll do that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6E54
+    UseEmotionAnimation: True
+    Unused3: 0x6F6C64
+  ResponseText: Nothing unjust about it. They claim everything; everyone. He never owned that cargo to begin with.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6E54
+    UseEmotionAnimation: True
+    Unused3: 0x6F6C64
+  ResponseText: That cargo is as good as gone.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+Choices:
+- 01FA4D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: This poor man named Ruiz was unjustly molested by the Legion. They took everything.

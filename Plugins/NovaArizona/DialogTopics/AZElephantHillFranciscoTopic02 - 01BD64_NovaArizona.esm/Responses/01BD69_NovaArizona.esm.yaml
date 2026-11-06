@@ -1,0 +1,59 @@
+FormKey: 01BD69:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x642C20
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E27
+  ResponseText: No. Only the occasional traveler stopping by for a drink, and, of course, to buy some clothes from me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x4D6973
+  ResponseText: You'd be better off asking the ghoul next door. He's been around much longer than I.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79696D
+  ResponseText: I will say that it's kind of a good thing that not much happens. It means that the Legion is doing its job and keeping the roads clear of trouble.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79696D
+  ResponseText: Good for business. Good for me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100777324
+Choices:
+- 01BD61:NovaArizona.esm
+- 01BD63:NovaArizona.esm
+- 01BD64:NovaArizona.esm
+- 01BD65:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is there anything around Elephant Hill?

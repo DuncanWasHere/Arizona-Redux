@@ -1,0 +1,80 @@
+FormKey: 01CB2A:NovaArizona.esm
+EditorID: AZCampWillowRangerStationQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967287
+    RefCount: 9
+    VariableCount: 1
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000002903000039151A000119005601000001005800003A100B000100FFFF05005201000080161300020B00560100000100420A0907004C2E01000080162B0002230058000054100B000100FFFF0500520200520300780000231004000000284200040207004CA600000039100F000200FFFF0500520100FFFF04004232811608000107004C22010000801628000220005204007800002E100400000028520400780000231004000000284200040207004CF100000039100F000200FFFF0500520100FFFF04004232811608000107004C2201000080161A0002120058000054100B000100FFFF050052050007004C2201000039100F000200FFFF0500520100FFFF0400423C811608000107004C4803000080161300020B0056010000010042320407004C1B02000080162B0002230058000054100B000100FFFF0500520600520700780000231004000000284200040207004C9301000039100F000200FFFF0500520100FFFF04004246811608000107004C0F020000801628000220005208007800002E100400000028520800780000231004000000284200040207004CDE01000039100F000200FFFF0500520100FFFF04004246811608000107004C0F02000080161A0002120058000054100B000100FFFF050052050007004C0F02000039100F000200FFFF0500520100FFFF0400425A811608000107004C4803000080161300020B00560100000100423C0407004CAC02000080161A0002120058000054100B000100FFFF050052090007004C6F02000039100F000200FFFF0500520100FFFF04004250811608000107004CA002000080161A0002120058000054100B000100FFFF050052020007004CA002000039100F000200FFFF0500520100FFFF0400425A811608000107004C4803000080161300020B0056010000010042460407004C0003000080161A0002120058000054100B000100FFFF050052050007004CF402000039100F000200FFFF0500520100FFFF0400425A811608000107004C4803000080161300020B0056010000010042500407004C4803000080161A0002120058000054100B000100FFFF050052020007004C4803000039100F000200FFFF0500520100FFFF0400425A11000000
+  SourceCode: >-
+    name AZCampWillowRangerStationQuestScript;
+
+
+    GameMode {
+        int stage = GetStage(AZCampWillowRangerStationQuest);
+
+        if (stage <= 10) {
+            if (GetDeadCount(AZCampWillowCaro) && AZCampWillowCaroREF.GetDisabled() == 0) {
+                SetStage(AZCampWillowRangerStationQuest, 50);            // NCR branch
+            } else if (AZCampWillowDecanusREF.GetDead() && AZCampWillowDecanusREF.GetDisabled() == 0) {
+                SetStage(AZCampWillowRangerStationQuest, 50);            // NCR branch (Caro already dead)
+            } else if (GetDeadCount(AZRSDeltaGarcetti)) {
+                SetStage(AZCampWillowRangerStationQuest, 60);            // Legion branch
+            }
+
+        } else if (stage == 50) {                                         // Player must wipe out Camp Willow
+            if (GetDeadCount(AZCampWillowPrentus) && AZCampWillowPrentusREF.GetDisabled() == 0) {
+                SetStage(AZCampWillowRangerStationQuest, 70);
+            } else if (AZCampWillowScriboniusREF.GetDead() && AZCampWillowScriboniusREF.GetDisabled() == 0) {
+                SetStage(AZCampWillowRangerStationQuest, 70);
+            } else if (GetDeadCount(AZRSDeltaGarcetti)) {
+                SetStage(AZCampWillowRangerStationQuest, 90);            // Fail
+            }
+
+        } else if (stage == 60) {                                         // Player must wipe out RS Delta
+            if (GetDeadCount(RSDeltaPason)) {
+                SetStage(AZCampWillowRangerStationQuest, 80);
+            } else if (GetDeadCount(AZCampWillowCaro)) {
+                SetStage(AZCampWillowRangerStationQuest, 90);            // Fail
+            }
+
+        } else if (stage == 70) {                                         // Player returns to RS Delta
+            if (GetDeadCount(AZRSDeltaGarcetti)) {
+                SetStage(AZCampWillowRangerStationQuest, 90);            // Fail
+            }
+
+        } else if (stage == 80) {                                         // Player returns to Camp Willow
+            if (GetDeadCount(AZCampWillowCaro)) {
+                SetStage(AZCampWillowRangerStationQuest, 90);            // Fail
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_stage_1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA9A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0062DE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013931:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB38:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA98:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006DD3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01FD5A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB3F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11EBDD:FalloutNV.esm

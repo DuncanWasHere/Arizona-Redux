@@ -1,0 +1,51 @@
+FormKey: 034D9D:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legionaries eat human sometimes. Not in a freaky way, nothing like that. It's some sort of devotional Mars thing.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I had a Centurion come by looking for a fresh human heart. He would not take no for an answer. It was really scary, seriously. He said he'd take mine.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Anyway, the deputies escorted him out. Well, he killed one of them but then he was escorted out. That's the story.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718664
+Choices:
+- 024EB3:NovaArizona.esm
+- 024EB4:NovaArizona.esm
+- 024EB5:NovaArizona.esm
+- 024EB6:NovaArizona.esm
+- 024EB7:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Human meat? What's the story with that?

@@ -1,0 +1,44 @@
+FormKey: 019D1D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x7B7428
+    UseEmotionAnimation: True
+    Unused3: 0x7A7428
+  ResponseText: Good!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768679
+Choices:
+- 019BF4:NovaArizona.esm
+- 019BF5:NovaArizona.esm
+- 019BF6:NovaArizona.esm
+- 019BF7:NovaArizona.esm
+- 019BF8:NovaArizona.esm
+- 019BF0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730B0002002031
+  SourceCode: set AZBaseCampRomanceQuest.IuliaWantsDenarius to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Fine. 100 denarii.

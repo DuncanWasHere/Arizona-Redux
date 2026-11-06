@@ -1,0 +1,33 @@
+FormKey: 020AAF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: 02096B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657468
+    UseEmotionAnimation: True
+    Unused3: 0x6E206D
+  ResponseText: I believe Niemann made himself quite clear.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785999
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100796571
+  SecondParameter: 4
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

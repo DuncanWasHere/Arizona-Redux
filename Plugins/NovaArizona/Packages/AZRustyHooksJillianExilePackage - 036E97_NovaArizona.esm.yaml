@@ -1,0 +1,44 @@
+FormKey: 036E97:NovaArizona.esm
+EditorID: AZRustyHooksJillianExilePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 143
+BehaviorFlags:
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoConversation
+Unused2: 3414
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 036E96:NovaArizona.esm
+  Radius: 1024
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100741293
+  SecondParameter: 38
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

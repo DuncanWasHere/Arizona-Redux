@@ -1,0 +1,55 @@
+FormKey: 017497:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 017496:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x77616E
+    UseEmotionAnimation: True
+    Unused3: 0x752074
+  ResponseText: Ah, no. There is some censorship and, ah, body searches. I don't mind. Rather, I do mind, but I understand the necessity.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x77616E
+    UseEmotionAnimation: True
+    Unused3: 0x752074
+  ResponseText: It's lightened up since that centurion got removed. The new one even allowed me to have a beer. Haven't had one of those in forever.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x77616E
+    UseEmotionAnimation: True
+    Unused3: 0x752074
+  ResponseText: Even if it was almost entirely water.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDeadCount
+  FirstParameter: 100699395
+Choices:
+- 01748D:NovaArizona.esm
+- 017490:NovaArizona.esm
+- 017491:NovaArizona.esm
+- 01748F:NovaArizona.esm
+- 01F4AE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does the Legion allow you to print whatever you want?

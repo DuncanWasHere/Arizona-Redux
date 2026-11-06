@@ -1,0 +1,54 @@
+FormKey: 037E72:NovaArizona.esm
+EditorID: AZWeapDeejayBaseballBat
+FormVersion: 15
+ObjectBounds: {}
+Name: Baseball Bat
+Model:
+  File: Weapons\2HandMelee\BaseballBat.NIF
+LargeIconFilename: Interface\Icons\PipboyImages\Weapons\weapons_baseballbat.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_baseballbat.dds
+RepairList: 047FC3:FalloutNV.esm
+EquipmentType: MeleeWeapons
+VatsAttackName: Grand Slam
+ImpactDataSet: 05FD3E:FalloutNV.esm
+FirstPersonModel: 0274CF:FalloutNV.esm
+SoundBlock: 0BE3E8:FalloutNV.esm
+SoundEquip: 04451F:FalloutNV.esm
+SoundUnequip: 044520:FalloutNV.esm
+Value: 250
+Health: 1000
+Weight: 3
+BaseDamage: 22
+ClipSize: 12
+AnimationType: Melee2Hand
+AnimationMultiplier: 1
+Reach: 0.6
+Flags:
+- CantDrop
+- NonPlayable
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+BaseVatsToHitChance: 30
+AttackAnimation: Default
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 2000
+OnHit: NoDismemberExplode
+AnimationAttackMultiplier: 1.1
+OverrideActionPoints: 25
+AttackShotsPerSec: 1.6499993
+Skill: 38
+LimbDamageMult: 1
+ResistType: -1
+PowerAttackAnimationOverride: AttackCustom3Power
+StrengthReq: 4
+SkillReq: 25
+CriticalDamage: 22
+CriticalPercentMult: 1
+Vats:
+  VatsSkill: 50
+  VatsDamageMult: 2
+  VatsAp: 35
+  VatsSilent: True
+SoundLevel: Silent

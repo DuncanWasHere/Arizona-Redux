@@ -1,0 +1,39 @@
+FormKey: 01EE71:NovaArizona.esm
+EditorID: AZMalpaisOptioForceGreetPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+- AlwaysRun
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 21076
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789367
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 01ED96:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

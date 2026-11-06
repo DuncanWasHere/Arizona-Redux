@@ -1,0 +1,79 @@
+FormKey: 01EF74:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: The first decimation that Legion ever did was over chems.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: We rode the wave of unearned pride after defeating the army of King Devil. For hours, we celebrated in unholy degeneracy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696D61
+    UseEmotionAnimation: True
+    Unused3: 0x746861
+  ResponseText: We were so dulled that we did not notice the return of King Devil. His reinforcements swept over our camp.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696D61
+    UseEmotionAnimation: True
+    Unused3: 0x746861
+  ResponseText: The Malpais Legate, the man known as Graham, executed one-tenth of the Legion that one day.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x5AAE1C
+    UseEmotionAnimation: True
+    Unused3: 0x57AE1C
+  ResponseText: After that, Caesar arranged the very first crucifixions. A moment to Mars that we would never let something like that happen again.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x00C400
+    UseEmotionAnimation: True
+    Unused3: 0x00B400
+  ResponseText: Bah! I need to focus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 01EF73:NovaArizona.esm
+- 01EF75:NovaArizona.esm
+- 01EF76:NovaArizona.esm
+- 01EF77:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why is drug use so looked down upon in the Legion?

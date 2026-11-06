@@ -1,0 +1,117 @@
+FormKey: 0209FB:NovaArizona.esm
+EditorID: AZBrushQuest02Script
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 10
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000007800000016000D0006000900207307002032203E3D160014000400100020582212050001007202002030203D3D1C000100221002000000A2110F0003007202006E100000006E01000000A3110F0003007202006E130000006E01000000A3110F0003007202006E110000006E00000000190000001900000011000000
+  SourceCode: >-
+    scn AZBrushQuest02Script
+
+
+    short BrushTimer
+
+    short QuintusMutiny
+
+    short QuintusBlamed
+
+    short QuintusTampered
+
+    short WellPoisoned
+
+    short WellPoisonedDetected
+
+
+    short MutineersAssembled
+
+    short AsherAccept
+
+    short CallumAccept
+
+    short FicusAccept
+
+
+
+    BEGIN GameMode
+
+
+    if MutineersAssembled >= 2
+    	if GetQuestCompleted AZBrushQuest02 == 0
+    		AZDecanusQuintusSupplyLockerREF.disable
+    		SetObjectiveCompleted AZBrushQuest02 16 1
+    		SetObjectiveDisplayed AZBrushQuest02 19 1
+    		SetObjectiveDisplayed AZBrushQuest02 17 0
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xE09820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734D616368696E
+    Name: BrushTimer
+  - Data:
+      Index: 2
+      Unknown: 0x009920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D706C6548616C
+    Name: QuintusMutiny
+  - Data:
+      Index: 3
+      Unknown: 0x209920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D706C65517561
+    Name: QuintusBlamed
+  - Data:
+      Index: 4
+      Unknown: 0x609920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x25490BC42E490B
+    Name: WellPoisoned
+  - Data:
+      Index: 5
+      Unknown: 0x809920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xCB1A4460B31A44
+    Name: WellPoisonedDetected
+  - Data:
+      Index: 6
+      Unknown: 0x409920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734C6561766573
+    Name: QuintusTampered
+  - Data:
+      Index: 7
+      Unknown: 0xA09920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x64654165746975
+    Name: MutineersAssembled
+  - Data:
+      Index: 8
+      Unknown: 0xC09920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xCD1A44C8B41A44
+    Name: AsherAccept
+  - Data:
+      Index: 9
+      Unknown: 0xE0D029120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xA92444F4CB2444
+    Name: CallumAccept
+  - Data:
+      Index: 10
+      Unknown: 0x00D129120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x73743178313030
+    Name: FicusAccept
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020AC1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm

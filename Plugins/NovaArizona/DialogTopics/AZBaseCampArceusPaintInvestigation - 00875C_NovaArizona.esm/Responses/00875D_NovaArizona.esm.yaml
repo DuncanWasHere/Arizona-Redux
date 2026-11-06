@@ -1,0 +1,42 @@
+FormKey: 00875D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x060080
+  ResponseText: Oh, this is about Finturus, isn't it? I already told him that it was more likely for it to be one of the kids in Newt than one of the soldiers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100744496
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100744496
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+Choices:
+- 00875C:NovaArizona.esm
+- 00C0DD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm looking for information on someone leaving anti-Legion graffiti?

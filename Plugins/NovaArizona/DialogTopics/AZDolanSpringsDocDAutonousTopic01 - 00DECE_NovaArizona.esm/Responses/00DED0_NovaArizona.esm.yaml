@@ -1,0 +1,61 @@
+FormKey: 00DED0:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Look, I've already helped you with the poor girl over in Chloride, so I know you're on the level.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I did have a break-in recently. Some medical supplies went missing. Practical herbal remedies and not the Stimpaks I keep here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100791693
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100791693
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100720154
+  SecondParameter: 25
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100720154
+  SecondParameter: 26
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100720154
+Choices:
+- 00DEDA:NovaArizona.esm
+- 00DEE3:NovaArizona.esm
+- 00DEE4:NovaArizona.esm
+- 00DEEB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: '[Anyone coming in looking for medical supplies recently?'

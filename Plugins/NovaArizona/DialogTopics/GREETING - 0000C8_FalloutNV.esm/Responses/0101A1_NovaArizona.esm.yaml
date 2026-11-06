@@ -1,0 +1,42 @@
+FormKey: 0101A1:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 0101A0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E73
+    UseEmotionAnimation: True
+    Unused3: 0x63655C
+  ResponseText: Well, look who's here. Ever since I set up in Boulder City, trade's been good. Because of what you've done for me, I willing to offer you a discount.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 50
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 15
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+Choices:
+- 0101D2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

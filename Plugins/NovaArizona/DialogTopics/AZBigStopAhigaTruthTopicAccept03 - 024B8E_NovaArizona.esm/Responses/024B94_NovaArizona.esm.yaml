@@ -1,0 +1,70 @@
+FormKey: 024B94:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 024B93:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x636F75
+    UseEmotionAnimation: True
+    Unused3: 0x6D706C
+  ResponseText: No questions? Really?  Well, the name of your target is Bodaway, real name of Ahote Masayesva-Yatik.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x636F75
+    UseEmotionAnimation: True
+    Unused3: 0x6D706C
+  ResponseText: She's probably in Haven, so find it, find her, kill her and return.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: We don't know where Haven is, but intelligence indicates somewhere to the southeast.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: The Frumentarii believe it may be in the radio silence zone surrounding the SMART Array, so I'd start your search there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x55100500010072010039100A0002007202006E55000000
+  SourceCode: >+
+    ShowMap AZSMARTArrayResearchCenterMapMarkerREF
+
+    SetStage AZBigStopAhigaQuest01 85
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01AB2E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: Okay, I'm ready.

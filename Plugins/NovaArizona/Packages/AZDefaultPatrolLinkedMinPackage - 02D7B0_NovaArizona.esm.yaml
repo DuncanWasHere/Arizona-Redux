@@ -1,0 +1,36 @@
+FormKey: 02D7B0:NovaArizona.esm
+EditorID: AZDefaultPatrolLinkedMinPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 67
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackagePatrol
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+IsRepeatable: False
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

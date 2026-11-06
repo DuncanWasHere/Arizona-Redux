@@ -1,0 +1,43 @@
+FormKey: 01F61F:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, just about everywhere. You'd have a harder time avoiding them than finding them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Most of them are in Cyanide Springs, that little market at the east end of town. Otherwise, there's Ed Charles in the general store.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797368
+Choices:
+- 01F604:NovaArizona.esm
+- 01F605:NovaArizona.esm
+- 01F606:NovaArizona.esm
+- 01F607:NovaArizona.esm
+- 01F608:NovaArizona.esm
+- 01F60E:NovaArizona.esm
+- 01F619:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where can I find a trader?

@@ -1,0 +1,23 @@
+FormKey: 01EE93:NovaArizona.esm
+EditorID: AZSedonusSasparilla00a
+FormVersion: 15
+Description: This is Marcellus Sedonus's Sunset Sarsaparilla. It could be laced with 3 Ultrajet or 5 Psycho. That will probably be lethal.
+Name: Marcellus Sedonus's Sunset Sasparilla
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing.
+- Text: Lace the Sunset Sasparilla with 3 Ultrajet.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 3
+    Function: GetItemCount
+    FirstParameter: 826612
+- Text: Lace the Sunset Sasparilla with 5 Psycho.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 5
+    Function: GetItemCount
+    FirstParameter: 86374

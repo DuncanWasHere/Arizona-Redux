@@ -1,0 +1,80 @@
+FormKey: 024B6C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's simple. The longer the NCR and the Legion fight, the more time the Confederacy has to prepare, and the weaker the two become.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: To maintain this status quo, wherever the NCR and Legion are strong, they must become weak.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: An NCR too powerful would utterly crush the Legion, and a Legion too strong might force the NCR to surrender. These scenarios are not ideal for us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Big Stop is the nexus of the Legion's war effort of the north. Frumentarii operations and planning. Caesar's personal orders.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You couldn't ask for a better place to procure intelligence.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B56:NovaArizona.esm
+- 024B57:NovaArizona.esm
+- 024B58:NovaArizona.esm
+- 024B59:NovaArizona.esm
+- 024B66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007307000B00207201007307002031202B
+  SourceCode: Set AZBigStopAhigaQuest01.ConfederacyQuestioning to (AZBigStopAhigaQuest01.ConfederacyQuestioning + 1)
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you doing in Big Stop?

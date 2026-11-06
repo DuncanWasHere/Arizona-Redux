@@ -1,0 +1,78 @@
+FormKey: 020C0B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[SUCCEEDED] Perhaps.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I think fire is the closest we can get to Mars. He cleansed the Earth in fire, and so for us to wield fire, it's like we're wielding a part of Him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Before the Legion, I was a chem fiend. Only seventeen years old and already an addict.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Mars saved me. When I feel lost or confused, I use fire to remind myself of my devotion.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 020BC7:NovaArizona.esm
+- 020BCC:NovaArizona.esm
+- 020BDC:NovaArizona.esm
+- 020BE4:NovaArizona.esm
+- 020BE5:NovaArizona.esm
+- 020BE6:NovaArizona.esm
+- 020BE7:NovaArizona.esm
+- 020BE8:NovaArizona.esm
+- 020BE9:NovaArizona.esm
+- 020BEB:NovaArizona.esm
+- 020BF3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you feel that you need penance?
+ActorValuePerk: 0004BB:FalloutNV.esm

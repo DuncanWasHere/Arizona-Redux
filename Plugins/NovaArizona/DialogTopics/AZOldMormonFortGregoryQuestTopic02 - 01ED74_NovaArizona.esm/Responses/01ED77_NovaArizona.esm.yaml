@@ -1,0 +1,70 @@
+FormKey: 01ED77:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: No. No, you wouldn't. No one like you would just get a Follower killed for no reason.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x656769
+    UseEmotionAnimation: True
+    Unused3: 0x206973
+  ResponseText: Just tell me whenever you're ready to leave, and I guess we'll go.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 575
+  FirstParameter: 1198801
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1198801
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED91:NovaArizona.esm
+- 01ED92:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E960000006E01000000A3110F0003007201006EA50000006E01000000A2110F0003007201006E9B0000006E01000000A3110F0003007201006E9C0000006E00000000A3110F0003007201006EA00000006E0000000015000A007201007309000200203115000A00720100730D0002002031
+  SourceCode: >-
+    SetObjectiveCompleted AZMalpaisAbuseQuest 150 1
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 165 1
+
+    SetObjectiveCompleted AZMalpaisAbuseQuest 155 1
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 156 0
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 160 0
+
+    Set AZMalpaisAbuseQuest.GregoryAccepted to 1
+
+    Set AZMalpaisAbuseQuest.NoctisTreatment to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: '[Followers] Do you really think I would get a Follower killed for no reason?'

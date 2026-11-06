@@ -1,0 +1,43 @@
+FormKey: 016BBA:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: 016BB9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Is that so? I suppose I could make use of someone with your social standing. How does fifty Denarii sound?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100722316
+  SecondParameter: 17
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: 575
+  FirstParameter: 100680550
+  SecondParameter: 1
+Choices:
+- 016B91:NovaArizona.esm
+- 016B92:NovaArizona.esm
+- 016B93:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm looking for work.

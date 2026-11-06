@@ -1,0 +1,47 @@
+FormKey: 016CD5:NovaArizona.esm
+EditorID: AZFishSalted
+FormVersion: 15
+ObjectBounds:
+  First: -8, -22, -2
+  Second: 8, 25, 2
+Name:
+  TargetLanguage: English
+  Value: Salted Fish
+Model:
+  File: AZNovaArizona\Clutter\Food\AZFishSalted.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages_small\Weapons_Small\AZTommyTrout.dds
+  SmallIconFilename: interface\icons\pipboyimages_small\Weapons_Small\AZTommyTrout.dds
+EquipmentType: Food
+Weight: 0.5
+Value: 14
+Flags:
+- NoAutoCalc
+- 0x400
+- 0x800
+- 0x2000
+- 0x4000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x2000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+ConsumeSound: 02D48D:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 15
+    ActorValue: Health
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 75
+    ActorValue: Hunger
+- BaseEffect: 162BCB:FalloutNV.esm
+  Data:
+    Magnitude: 25
+    ActorValue: Dehydration

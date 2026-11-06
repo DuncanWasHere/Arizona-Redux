@@ -1,0 +1,44 @@
+FormKey: 03429B:NovaArizona.esm
+EditorID: AZHavenRuceNormalPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- WeaponDrawn
+- NoWarnAttackBehavior
+Unused: 251
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoSleeping
+  - NoConversation
+Unused2: 21535
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 019DA0:NovaArizona.esm
+  Radius: 128
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 16
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,43 @@
+FormKey: 0223AB:NovaArizona.esm
+EditorID: AZPondSlaveFollowPackage
+FormVersion: 15
+Version2: 1
+GeneralFlags:
+- SkipFalloutBehavior
+- DefensiveCombat
+- ContinueDuringCombat
+Unused: 101
+BehaviorFlags:
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 25973
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetLinkedReference
+  CountOrDistance: 400
+Conditions:
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: LinkedReference
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

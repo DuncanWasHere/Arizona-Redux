@@ -1,0 +1,37 @@
+FormKey: 00918D:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: Keeping this dummy alive. Tending to his burns, monitoring his pulse.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: He requires 24/7 care.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 0091CF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Busy with what?

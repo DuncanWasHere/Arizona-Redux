@@ -1,0 +1,31 @@
+FormKey: 008E4E:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204927
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F74
+  ResponseText: You’re one brave Dissolute, what about the raiders out there?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+Choices:
+- 008E51:NovaArizona.esm
+- 008E52:NovaArizona.esm
+- 008E53:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm just exploring.

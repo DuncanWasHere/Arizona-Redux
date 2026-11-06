@@ -1,0 +1,79 @@
+FormKey: 020D38:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x678A2C
+    UseEmotionAnimation: True
+    Unused3: 0x8C2F2E
+  ResponseText: Great.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x648A2C
+    UseEmotionAnimation: True
+    Unused3: 0xB93B7E
+  ResponseText: I've noticed the Legion lets you come and go as you please. That's a real benefit for someone like me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x648A2C
+    UseEmotionAnimation: True
+    Unused3: 0xB93B7E
+  ResponseText: I'm expecting a shipment. Don't worry about who it's from. It's our monthly medicine delivery, all contraband under the Legion, of course.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x648A2C
+    UseEmotionAnimation: True
+    Unused3: 0xB93B7E
+  ResponseText: Normally I'd go get it, but I'm stuck here until this asshole wakes up.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x678A2C
+    UseEmotionAnimation: True
+    Unused3: 0x8C2F2E
+  ResponseText: Be a dear and grab that for me. Okay?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E05000000A3110F0003007201006E0A0000006E01000000A3110F0003007201006E0B0000006E01000000
+  SourceCode: >+
+    setstage AZSmugglingquest 5;
+
+    SetObjectiveDisplayed AZSmugglingquest 10 1;
+
+    SetObjectiveDisplayed AZSmugglingquest 11 1;
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D36:NovaArizona.esm
+Prompt: Sure, I'll do it.

@@ -1,0 +1,32 @@
+FormKey: 008631:NovaArizona.esm
+FormVersion: 15
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: 00862B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This again?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100697662
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+Choices:
+- 00862C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Hank and Beth sent me.

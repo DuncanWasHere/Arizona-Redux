@@ -1,0 +1,46 @@
+FormKey: 01760C:NovaArizona.esm
+EditorID: AZBigStopStenographusPackage
+FormVersion: 15
+Flags:
+  MutagenObjectType: PackageUseItemAt
+  Flags:
+  - 0x2
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0175D5:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 0175D5:NovaArizona.esm
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100758634
+  SecondParameter: 70
+IsUseItem: True
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

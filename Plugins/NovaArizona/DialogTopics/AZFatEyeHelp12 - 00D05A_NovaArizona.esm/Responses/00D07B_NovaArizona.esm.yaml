@@ -1,0 +1,38 @@
+FormKey: 00D07B:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hey, you're the one that fucking asked! But if you want to leave me high and dry, I guess I can't stop you. I'll be around.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D05C:NovaArizona.esm
+- 00D05D:NovaArizona.esm
+- 00D049:NovaArizona.esm
+- 00D04E:NovaArizona.esm
+- 00D046:NovaArizona.esm
+- 00D047:NovaArizona.esm
+- 00D048:NovaArizona.esm
+- 00D05E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't have time for this right now.

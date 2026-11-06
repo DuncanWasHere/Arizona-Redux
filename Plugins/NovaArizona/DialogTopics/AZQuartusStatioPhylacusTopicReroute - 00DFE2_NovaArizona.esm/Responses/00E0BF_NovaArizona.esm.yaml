@@ -1,0 +1,35 @@
+FormKey: 00E0BF:NovaArizona.esm
+FormVersion: 15
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Very well.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720529
+Choices:
+- 00DFA6:NovaArizona.esm
+- 00DFA8:NovaArizona.esm
+- 00DFAF:NovaArizona.esm
+- 00DFB0:NovaArizona.esm
+- 00DFB1:NovaArizona.esm
+- 00DF97:NovaArizona.esm
+- 00DF9A:NovaArizona.esm
+- 0000D4:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Enough of that.

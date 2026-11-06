@@ -1,0 +1,25 @@
+FormKey: 03A17A:NovaArizona.esm
+EditorID: AZSlaveQuestRustyHooksAttackSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000004600000016001400020010002058A110050001007201002031203D3DA2110F0003007202006E640000006E01000000A3110F0003007202006E6E0000006E010000001900000011000000
+  SourceCode: >-
+    scn AZSlaveQuestRustyHooksAttackSCRIPT
+
+
+    Begin GameMode
+
+    	if GetIsCurrentPackage AZSlaveQuestAttack05Package == 1
+    		setobjectivecompleted AZMalpaisMarketSlaveQuest 100 1
+    		setobjectivedisplayed AZMalpaisMarketSlaveQuest 110 1
+    	endif
+
+    end
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A176:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm

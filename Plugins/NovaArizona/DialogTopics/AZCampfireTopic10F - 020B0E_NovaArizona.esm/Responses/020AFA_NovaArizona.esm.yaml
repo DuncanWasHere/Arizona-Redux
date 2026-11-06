@@ -1,0 +1,36 @@
+FormKey: 020AFA:NovaArizona.esm
+FormVersion: 15
+Data:
+  Type: Conversation
+Quest: 020AF1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x672076
+  ResponseText: And that's why it's sad.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+Choices:
+- 020B08:NovaArizona.esm
+LinkFrom:
+- 020B07:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

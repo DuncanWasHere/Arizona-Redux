@@ -1,0 +1,56 @@
+FormKey: 016D10:NovaArizona.esm
+EditorID: AZBlisterBeetleMeat
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Blister Beetle Flesh
+Model:
+  File: Clutter\Food\RoachMeat.NIF
+Icons:
+  LargeIconFilename: Interface\Icons\PipboyImages\Items\items_roach_meat.dds
+EquipmentType: Food
+Weight: 1
+Value: 2
+Flags:
+- NoAutoCalc
+- FoodItem
+- 0x100
+- 0x400
+- 0x800
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+- 0x80000000
+- 0x0
+ConsumeSound: 026EB6:FalloutNV.esm
+Effects:
+- BaseEffect: 020516:FalloutNV.esm
+  Data:
+    Magnitude: 10
+    ActorValue: RadLevel
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 25
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 033595:FalloutNV.esm
+  Data:
+    Magnitude: 3
+    Duration: 15
+    ActorValue: Health
+- BaseEffect: 032DE6:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 30
+    ActorValue: Endurance

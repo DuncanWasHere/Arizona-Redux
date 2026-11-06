@@ -1,0 +1,31 @@
+FormKey: 033078:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2041
+    UseEmotionAnimation: True
+    Unused3: 0x6E5370
+  ResponseText: Well, if you simply must know, I'm financially ruined.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 03307D:NovaArizona.esm
+- 03308A:NovaArizona.esm
+- 03B7F3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I care about everyone's problems. Tell me what's going on pal.

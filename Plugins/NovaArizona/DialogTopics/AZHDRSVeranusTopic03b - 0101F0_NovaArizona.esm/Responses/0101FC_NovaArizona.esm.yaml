@@ -1,0 +1,45 @@
+FormKey: 0101FC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 0101FB:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Right? Wrong? In war? Take your naivete someplace where they have time for it. There will be no ceasefire.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 90
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E32000000
+  SourceCode: SetStage AZDamNQuest2 50
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+Prompt: It's the right thing to do, and you know it.
+ActorValuePerk: 0004BB:FalloutNV.esm

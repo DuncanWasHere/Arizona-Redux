@@ -1,0 +1,50 @@
+FormKey: 010344:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Ah, the trader. I saw you talking to him. I know that Nerva and his subordinates are unlikely to provide him passage without some contract of supply.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Perhaps, you and I can make a deal.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729692
+Choices:
+- 010345:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Omar is seeking passage into Legion territory.

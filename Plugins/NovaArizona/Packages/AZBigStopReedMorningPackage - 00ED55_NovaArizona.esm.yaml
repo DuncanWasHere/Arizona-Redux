@@ -1,0 +1,37 @@
+FormKey: 00ED55:NovaArizona.esm
+EditorID: AZBigStopReedMorningPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 5
+BehaviorFlags:
+- HellosToPlayer
+- RandomConversations
+- AllowIdleChatter
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 4
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0090D7:NovaArizona.esm
+  Radius: 128
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 9
+Duration: 3
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

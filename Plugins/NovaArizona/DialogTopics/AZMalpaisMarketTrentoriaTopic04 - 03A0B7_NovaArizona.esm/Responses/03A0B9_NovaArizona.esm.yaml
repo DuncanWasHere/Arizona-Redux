@@ -1,0 +1,57 @@
+FormKey: 03A0B9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 03A0B8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652041
+    UseEmotionAnimation: True
+    Unused3: 0x616973
+  ResponseText: I have my own couriers, thank you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xDE510E
+    UseEmotionAnimation: True
+    Unused3: 0x5A0114
+  ResponseText: But if you are begging to make yourself of some use to me, I recently had a slave run off. Look into that, if you like.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 21
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756608
+Choices:
+- 03A0BF:NovaArizona.esm
+- 03A0C0:NovaArizona.esm
+- 03A0C1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073150002002031
+  SourceCode: set AZFreeformMalpais.iMentionedSlave to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+Prompt: You mentioned couriers earlier, I’m a courier.

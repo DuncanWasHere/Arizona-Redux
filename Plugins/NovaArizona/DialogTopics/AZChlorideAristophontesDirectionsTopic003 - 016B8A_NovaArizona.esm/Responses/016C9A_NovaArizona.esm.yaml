@@ -1,0 +1,35 @@
+FormKey: 016C9A:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You could try The Big Dog at the other end of town. There is also a diner just down the road, but it is for traders only.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B87:NovaArizona.esm
+- 016B89:NovaArizona.esm
+- 016B8A:NovaArizona.esm
+- 016B8B:NovaArizona.esm
+- 016B86:NovaArizona.esm
+- 152CCA:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where can I get a meal around here?

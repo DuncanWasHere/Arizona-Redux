@@ -1,0 +1,30 @@
+FormKey: 02CCAE:NovaArizona.esm
+EditorID: AZ10GallonDrinkingHatQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000005300000080162100021900520100780000B6100B000100FFFF05005202002842010407004C7200000059100B0001007203000000000000003A151700011600520100780000D9110B000100FFFF05005204002811000000
+  SourceCode: >-
+    name AZ10GallonDrinkingHatQuestScript;
+
+
+    GameMode {
+
+    if (PlayerREF.GetEquipped(AZHeadwear10GallonDrinkingHat) == 1) {
+    		ShowMessage(AZ10GallonDrinkingHatMessage);
+    		PlayerREF.CIOS(AZActorEffect10GallonDrinkingHat);
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02CCA9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02CCAF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0327AF:NovaArizona.esm

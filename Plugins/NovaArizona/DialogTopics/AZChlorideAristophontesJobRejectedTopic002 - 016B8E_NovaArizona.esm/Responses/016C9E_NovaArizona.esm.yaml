@@ -1,0 +1,54 @@
+FormKey: 016C9E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[SUCCEEDED] Well, I must admit you *do* have a certain charm about you.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Alright then, I suppose it would be foolish to pass you up for a job of this sort. How does fifty Denarii sound?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 8
+  RunOnType: Target
+Choices:
+- 016B91:NovaArizona.esm
+- 016B92:NovaArizona.esm
+- 016B93:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x7711070001006E46000000
+  SourceCode: RewardXP 70
+Prompt: You don't have to worry about that. People love me!
+ActorValuePerk: 0003EB:FalloutNV.esm

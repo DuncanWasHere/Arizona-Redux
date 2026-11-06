@@ -1,0 +1,67 @@
+FormKey: 004928:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: You have to understand that we were at war with every raider group in Arizona for over two decades before the Legion became the threat.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: The Legion was small potatoes compared to King Devil or the Blood Moons or the Army of Vengeance.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: It wasn't until the fall of Window Rock that the Legion became the primary target.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: By that time, our army had been reduced to 2,000 fighters.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004929:NovaArizona.esm
+- 00491F:NovaArizona.esm
+- 004925:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073050002002031
+  SourceCode: set AZBarkerDialogue.iWindowRockMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C2:NovaArizona.esm
+Prompt: Why didn't the Rangers stop the Legion instead of the raiders?

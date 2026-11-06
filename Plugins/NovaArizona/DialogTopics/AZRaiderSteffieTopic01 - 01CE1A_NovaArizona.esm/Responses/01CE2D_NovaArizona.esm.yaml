@@ -1,0 +1,36 @@
+FormKey: 01CE2D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, yeah, but it's only temporary. I just need enough caps to get out of here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100719760
+Choices:
+- 01CE1A:NovaArizona.esm
+- 01CE1B:NovaArizona.esm
+- 01CE1C:NovaArizona.esm
+- 01CE1D:NovaArizona.esm
+- 01CE1E:NovaArizona.esm
+- 01CE24:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is this what you're doing now? Robbing people?

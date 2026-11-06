@@ -1,0 +1,38 @@
+FormKey: 00E570:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wow, thanks. Nothing gets a guy going like racism.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 609976
+  RunOnType: Target
+Choices:
+- 00E52F:NovaArizona.esm
+- 00E530:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You know, you're pretty cute for a ghoul.
+ActorValuePerk: 094EB8:FalloutNV.esm

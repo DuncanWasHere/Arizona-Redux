@@ -1,0 +1,25 @@
+FormKey: 13F5A4:FalloutNV.esm
+EditorID: NVNPCDrunKWalk
+FormVersion: 15
+Model:
+  File: Characters\_Male\IdleAnims\SpecialIdle_NVDrunkWalk.kf
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetRandomPercent
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetFactionRank
+  FirstParameter: 1307665
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsMoving
+RelatedIdleAnimations:
+  Parent: 022C0F:FalloutNV.esm
+AnimationData:
+  AnimationGroupSection: SpecialIdle
+  MustReturnFile: True
+  LoopingMin: 2
+  LoopingMax: 4
+  Unused2: 97

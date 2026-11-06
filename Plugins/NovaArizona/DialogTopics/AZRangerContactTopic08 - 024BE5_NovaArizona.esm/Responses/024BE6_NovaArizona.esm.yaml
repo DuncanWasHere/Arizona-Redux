@@ -1,0 +1,33 @@
+FormKey: 024BE6:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x617965
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Layers upon layers. Someone's running their own game.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BE5:NovaArizona.esm
+- 024BE9:NovaArizona.esm
+- 024BEC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Now, why would the Frumentarii send someone to deliver intel to the NCR?

@@ -1,0 +1,37 @@
+FormKey: 024BDA:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: 024BD9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You aren't lying, I can tell you that. But you're an idiot.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E672C
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: The Frumentarii are gonna play you. They're playing you right now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BE3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, yeah, a Frumentarius sent me here. I do a job, he gives me information.

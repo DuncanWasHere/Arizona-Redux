@@ -1,0 +1,47 @@
+FormKey: 00E6F8:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 00DE0A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, thank god it was you who found this note. I meant to burn it, but a lot of circumstances made it impossible.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776317
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100720154
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100720154
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHasNote
+  FirstParameter: 100720274
+  RunOnType: Target
+Choices:
+- 00DE0B:NovaArizona.esm
+- 00DE0C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Show note from the aircraft refueling station.> What can you tell me about this note?

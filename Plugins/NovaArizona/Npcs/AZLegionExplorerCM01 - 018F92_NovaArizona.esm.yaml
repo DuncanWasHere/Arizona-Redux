@@ -1,0 +1,172 @@
+FormKey: 018F92:NovaArizona.esm
+EditorID: AZLegionExplorerCM01
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Legion Explorer
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 10
+  SpeedMultiplier: 130
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1252C7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1425A7:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 13C8D9:FalloutNV.esm
+Template: 018F8B:NovaArizona.esm
+Race: 000019:FalloutNV.esm
+ActorEffects:
+- 1267A8:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 168CF2:FalloutNV.esm
+Items:
+- Item:
+    Item: 0F26ED:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0F52B6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1252C6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 125EA4:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165748:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165760:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 13DBDB:FalloutNV.esm
+- 018E6A:FalloutNV.esm
+Class: 127736:FalloutNV.esm
+BaseHealth: 75
+Strength: 6
+Perception: 5
+Endurance: 6
+Charisma: 4
+Intelligence: 4
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 13
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 13
+  - Key: MeleeWeapons
+    Value: 68
+  - Key: Repair
+    Value: 13
+  - Key: Science
+    Value: 13
+  - Key: SmallGuns
+    Value: 66
+  - Key: Sneak
+    Value: 15
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 68
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Hair: 02BFDB:FalloutNV.esm
+HairLength: 0.01
+Eyes: 004255:FalloutNV.esm
+HairColor: '#00362410'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x5C6E8E3F18FB0940548400BE90E3233FC881A6BFB736B4BF09674A40CFAC2840418B503FB4AD533F6BF039401DC7A3BEA041383F7D322DC09C060440238601409E130040329588C07C4184C0F85EAF3D2C9A1DC05A4259BFA8DF38C0CA1872C012F538BFDC2787BEC0AA22C1B84E6BC05E6DEA3FD07BA440C0E62E3F00093EBD74AC5340BC8949C0E8599D3E3E1B89401A34AA407EC007C0BF4896BFC1FB57C066EC1140A8EC213FA69BA040CE03123F3D1346400528454050B67440CF9D1EBFB2910A40A25E9440
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x2F9E9CBF0E077ABF8C5C49BFF6CF684040DA09BDC26B923E3A0BDF3F10074B3D1855A3BFB20F663FD81D263F56D5B13ED06B4A3DEA0E73BE9398893FF0359ABFCC39F13E7609CBBEC2F2BBBF9925103F806DBB3DB4A8AA3EFF274DBF7CD7D63F005C8CBFBC38FDBEB24AA2BF6AA7363F507AA9BD364710BF9088ACBE5D62C3BE682A6F3FC284254038AB183F48E08FBD00E28BBF20C2E4BDE79D19BF15CEB53E4211863E00F84C3F404FEB3D746C81BE20E720BD1654753F8B0288BF2EAB95BF81B0CBBE1354DB3F
+NAM5: 255
+Height: 1.025
+DATADataTypeState:
+- Break0

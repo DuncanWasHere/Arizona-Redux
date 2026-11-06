@@ -1,0 +1,66 @@
+FormKey: 017611:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746573
+    UseEmotionAnimation: True
+    Unused3: 0x204974
+  ResponseText: I'm...impressed that Radio New Vegas understands the necessity of my work. In any event, I appreciate your...zeal.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Most people would flinch at being forced to watch an execution. You seem...different.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: We should probably start the interview now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1099469
+  RunOnType: Target
+Choices:
+- 017566:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073020002002031
+  SourceCode: set AZMalpaisJournalistQuest.bDominicusAngry to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: I'm a massive admirer of what you're doing with the place. After the interview, I could give tips.
+ActorValuePerk: 10C6CD:FalloutNV.esm

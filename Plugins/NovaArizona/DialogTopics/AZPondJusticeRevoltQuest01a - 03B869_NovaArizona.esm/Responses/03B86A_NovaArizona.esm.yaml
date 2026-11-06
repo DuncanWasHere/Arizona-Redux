@@ -1,0 +1,46 @@
+FormKey: 03B86A:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: 'Something discreet. Pistol would be best. Rumors say that the Burned Man uses the weapon of his tribe: A .45 Auto.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: It's only appropriate that we use his weapon to enact vengeance on the Legion once more.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: Find one. It shall be a great catalyst.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B86B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Guns?

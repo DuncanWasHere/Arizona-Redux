@@ -1,0 +1,51 @@
+FormKey: 008E5C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 15
+    ResponseNumber: 1
+    Unused2: 0xFF1500
+    UseEmotionAnimation: True
+    Unused3: 0x3328C7
+  ResponseText: Help? No, of course not.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 15
+    ResponseNumber: 2
+    Unused2: 0xFF1500
+    UseEmotionAnimation: True
+    Unused3: 0x3328C7
+  ResponseText: But if we were to fight our way out of here together, our chances of leaving in one piece would be much greater. What do you say?
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 0CC82A:FalloutNV.esm
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+Choices:
+- 008E5D:NovaArizona.esm
+- 008E5F:NovaArizona.esm
+- 008E60:NovaArizona.esm
+- 008E61:NovaArizona.esm
+- 008E73:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you need help getting out of here?

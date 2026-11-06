@@ -1,0 +1,47 @@
+FormKey: 039F0D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: 039F08:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Everyone has their demons. Job is far from the worst person here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F09:NovaArizona.esm
+- 039F0A:NovaArizona.esm
+- 039F0B:NovaArizona.esm
+- 039F0C:NovaArizona.esm
+- 039F0F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730E0002002031150013007201007303000B00207201007303002031202B
+  SourceCode: >-
+    Set AZHavenMurderQuest.CalDecision to 1
+
+    Set AZHavenMurderQuest.HavenJobSpareVote to AZHavenMurderQuest.HavenJobSpareVote + 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024846:NovaArizona.esm
+Prompt: Is that your final answer?

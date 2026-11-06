@@ -1,0 +1,47 @@
+FormKey: 00EEDD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Alright, pleasure doing business with you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724238
+Choices:
+- 00EE14:NovaArizona.esm
+- 00EE23:NovaArizona.esm
+- 00EE24:NovaArizona.esm
+- 00EE2F:NovaArizona.esm
+- 00EE34:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073020002002032A2110F0003007201006E0A0000006E01000000A3110F0003007201006E190000006E01000000
+  SourceCode: >-
+    Set AZBigStopAhigaQuest02.GunsObtained to 2
+
+    SetObjectiveCompleted AZBigStopAhigaQuest02 10 1
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest02 25 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010020:NovaArizona.esm
+Prompt: They have money.

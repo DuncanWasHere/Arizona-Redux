@@ -1,0 +1,152 @@
+FormKey: 039F61:NovaArizona.esm
+EditorID: AZHavenDocScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A0010000000000078100800020072010072020011000000100006000000A40300001600130016000F0020580E10040001003E002031203D3D16000D0006000900207301002030203D3DF310070001006E010000006110020000003410080002007203007204001500070066020002002038150007007301000200203190111900010015004C6F6F7365446F63746F724865616C506C6179657219000000150011006602000C002066020020580C100000202D1600190002001500206602002036203C3D207301002031203D3D2026269111050001007205001500070073010002002032190000001600200007001C00206602002030203C3D20583212050001007205002030203D3D20262639100A0002007206006E0A000000F310070001006E000000006010020000000F10090002003E006E0000000015000700730100020020301500070073030002002031561008000200720300720400190000001800130015000F0020580E10040001003E002032203D3D16000D0005000900207301002030203D3DF310070001006E010000006110020000001500070066020002002038150007007301000200203190111900010015004C6F6F7365446F63746F724865616C506C6179657219000000150011006602000C002066020020580C100000202D1600190002001500206602002036203C3D207301002031203D3D2026269111050001007205001500070073010002002032190000001600200007001C00206602002030203C3D20583212050001007205002030203D3D20262639100A0002007206006E14000000F310070001006E000000006010020000000F10090002003E006E0000000015000700730100020020301500070073030002002031561008000200720300720400190000001800130015000F0020580E10040001003E002033203D3D16000D0005000900207301002030203D3DF310070001006E010000006110020000001500070066020002002038150007007301000200203190111900010015004C6F6F7365446F63746F724865616C506C6179657219000000150011006602000C002066020020580C100000202D1600190002001500206602002036203C3D207301002031203D3D2026269111050001007205001500070073010002002032190000001600200007001C00206602002030203C3D20583212050001007205002030203D3D20262639100A0002007206006E1E000000F310070001006E000000006010020000000F10090002003E006E0000000015000700730100020020301500070073030002002031561008000200720300720400190000001900000011000000
+  SourceCode: >-
+    scn AZHavenDocScript
+
+
+    int	DoOnce								;Script blocker
+
+    float	Timer									;Timer used for animation control
+
+    int iHealed									;toggled when player healed to change greetings.
+
+
+
+    BEGIN OnDeath
+
+
+    SetEnemy PlayerFaction AZHavenFaction
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+
+    ;When Set to 1, plays medical animations for eight seconds then restarts conversation with the player
+
+    if ( GetAV Variable01 == 1 )
+    	if ( DoOnce == 0 )
+    		SetRestrained 1
+    		DisablePlayerControls
+    		SayTo player VFreeformMcCarranDoctorKempTopic001
+    		Set Timer to 8
+    		Set DoOnce to 1
+    		PlayIdle LooseDoctorHealPlayer
+    	endif
+
+    	Set Timer to ( Timer - GetSecondsPassed )
+
+    	if ( Timer <= 6 ) && ( DoOnce == 1 )
+    		IMod FadeToBlackISFX
+    		Set DoOnce to 2
+    	endif
+
+    	if ( Timer <= 0 ) &&  ( IsImagespaceActive FadeToBlackISFX == 0 )
+    		SetStage VDoctors 10
+    		SetRestrained 0
+    		EnablePlayerControls
+    		SetAv Variable01 0 
+    		;resetai
+    		Set DoOnce to 0
+    		Set iHealed to 1
+    		StartConversation player VFreeformMcCarranDoctorKempTopic001
+    	endif
+    ;When Set to 1, plays medical animations for eight seconds then restarts conversation with the player
+
+    elseif ( GetAV Variable01 == 2 )
+    	if ( DoOnce== 0 )
+    		SetRestrained 1
+    		DisablePlayerControls
+    		Set Timer to 8
+    		Set DoOnce to 1
+    		PlayIdle LooseDoctorHealPlayer
+    	endif
+
+    	Set Timer to ( Timer - GetSecondsPassed )
+
+    	if ( Timer <= 6 ) && ( DoOnce == 1 )
+    		IMod FadeToBlackISFX
+    		Set DoOnce to 2
+    	endif
+
+    	if ( Timer <= 0 ) && ( IsImagespaceActive FadeToBlackISFX == 0 )
+    		SetStage VDoctors 20
+    		SetRestrained 0
+    		EnablePlayerControls
+    		SetAv Variable01 0
+    		;resetai
+    		Set DoOnce to 0
+    		Set iHealed to 1
+    		StartConversation player VFreeformMcCarranDoctorKempTopic001
+    	endif
+    elseif ( GetAV Variable01 == 3 )
+    	if ( DoOnce== 0 )
+    		SetRestrained 1
+    		DisablePlayerControls
+    		Set Timer to 8
+    		Set DoOnce to 1
+    		PlayIdle LooseDoctorHealPlayer
+    	endif
+
+    	Set Timer to ( Timer - GetSecondsPassed )
+
+    	if ( Timer <= 6 ) && ( DoOnce == 1 )
+    		IMod FadeToBlackISFX
+    		Set DoOnce to 2
+    	endif
+
+    	if ( Timer <= 0 ) && ( IsImagespaceActive FadeToBlackISFX == 0 )
+    		SetStage VDoctors 30
+    		SetRestrained 0
+    		EnablePlayerControls
+    		SetAv Variable01 0
+    		;resetai
+    		Set DoOnce to 0
+    		Set iHealed to 1
+    		StartConversation player VFreeformMcCarranDoctorKempTopic001
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0C820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734C6561766573
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0xA0C820120000000000000000
+      Unknown2: 0x696D466C617457
+    Name: Timer
+  - Data:
+      Index: 3
+      Unknown: 0xA0D629120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x696D466C617453
+    Name: iHealed
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004361:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1253D4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0269C4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CE959:FalloutNV.esm

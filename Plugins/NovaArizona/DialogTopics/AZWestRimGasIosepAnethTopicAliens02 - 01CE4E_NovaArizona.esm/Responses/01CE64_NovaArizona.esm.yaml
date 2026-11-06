@@ -1,0 +1,51 @@
+FormKey: 01CE64:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There is not much more I can say. They were said to be from somewhere else. Another realm, maybe.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It is said that if you devote your life to Caesar and to the Legion, you will be exalted in death, and join Mars above in his celestial kingdom.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I believe these Ufo may come from this 'above'. I do not know for certain.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100781638
+Choices:
+- 01CE4F:NovaArizona.esm
+- 01CE4D:NovaArizona.esm
+- 01CE4E:NovaArizona.esm
+- 03A18A:NovaArizona.esm
+- 01CE50:NovaArizona.esm
+- 03A18B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me more about the Ufo.

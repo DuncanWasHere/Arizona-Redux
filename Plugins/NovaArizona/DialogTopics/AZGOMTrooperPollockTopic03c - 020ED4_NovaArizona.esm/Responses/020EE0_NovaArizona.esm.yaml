@@ -1,0 +1,49 @@
+FormKey: 020EE0:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Mistakes? Jesus Christ, man.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Okay, look. I have these brass knuckles on me. I snuck them in here. You take them. I can't get caught with a weapon.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100798155
+Choices:
+- 020ED5:NovaArizona.esm
+- 020ED6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E01000000
+  SourceCode: player.additem AZWeapBrassKnucklesUnique 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01FB20:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It's fine. Mistakes happen. He was an asshole anyway.

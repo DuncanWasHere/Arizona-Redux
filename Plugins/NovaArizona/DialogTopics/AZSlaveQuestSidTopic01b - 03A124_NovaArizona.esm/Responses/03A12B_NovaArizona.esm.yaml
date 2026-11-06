@@ -1,0 +1,37 @@
+FormKey: 03A12B:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6B6179
+    UseEmotionAnimation: True
+    Unused3: 0x212054
+  ResponseText: '[FAILED] Put those on me, see what happens.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 45
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702085
+Choices:
+- 03A123:NovaArizona.esm
+- 03A124:NovaArizona.esm
+- 03A125:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lift hands> Mr. and Mrs. Sid Pummeler aren't liking what they're hearing.
+ActorValuePerk: 0004BD:FalloutNV.esm

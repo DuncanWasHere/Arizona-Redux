@@ -1,0 +1,43 @@
+FormKey: 0091D1:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: 0091CD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: Born in Peach Springs, came here along with the first expedition in '51.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x205370
+    UseEmotionAnimation: True
+    Unused3: 0x2C2063
+  ResponseText: Been here ever since, basically.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 020D2C:NovaArizona.esm
+- 0091B4:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+- 009298:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's your story?

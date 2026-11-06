@@ -1,0 +1,29 @@
+FormKey: 00DC11:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[Cerberus turns and looks at one of the other dogs. The dog yawns. Cerberus yawns too, licking his nose. Then he looks back up at you.]'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721254
+Choices:
+- 00DBFC:NovaArizona.esm
+- 00DBFD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Actually, I don't care about Laertes. What do *you* want to do?

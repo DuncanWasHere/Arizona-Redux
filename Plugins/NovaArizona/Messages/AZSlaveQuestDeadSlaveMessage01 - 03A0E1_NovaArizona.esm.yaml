@@ -1,0 +1,26 @@
+FormKey: 03A0E1:NovaArizona.esm
+EditorID: AZSlaveQuestDeadSlaveMessage01
+FormVersion: 15
+Description: The dead man on the floor before you bears all the trappings of a Legion slave. His ragged tunic is soaked through with blood and sticks to his gaunt, wiry frame. Curiously, despite the amount of gore you see no visible wounds.
+Flags:
+- MessageBox
+MenuButtons:
+- Text: '[Medicine] Examine the body more closely.'
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 25
+    Function: GetActorValue
+    FirstParameter: 37
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: '[Medicine] Examine the body more closely.'
+  Conditions:
+  - CompareOperator: LessThan
+    Fluff: 0x000000
+    ComparisonValue: 25
+    Function: GetActorValue
+    FirstParameter: 37
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Leave the corpse for now.

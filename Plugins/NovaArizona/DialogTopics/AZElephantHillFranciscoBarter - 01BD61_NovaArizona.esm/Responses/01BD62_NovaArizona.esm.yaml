@@ -1,0 +1,40 @@
+FormKey: 01BD62:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x4D6973
+  ResponseText: Of course. Only the finest threads in the Wasteland.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100777324
+Choices:
+- 01BD61:NovaArizona.esm
+- 01BD63:NovaArizona.esm
+- 01BD64:NovaArizona.esm
+- 01BD65:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x731102000000
+  SourceCode: ShowBarterMenu
+Prompt: Let's see what you have for sale.

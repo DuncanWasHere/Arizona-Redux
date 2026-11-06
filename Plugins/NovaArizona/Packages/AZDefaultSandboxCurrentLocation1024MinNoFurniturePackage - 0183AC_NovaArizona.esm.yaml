@@ -1,0 +1,38 @@
+FormKey: 0183AC:NovaArizona.esm
+EditorID: AZDefaultSandboxCurrentLocation1024MinNoFurniturePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 48
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoFurniture
+Unused2: 17486
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 1024
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

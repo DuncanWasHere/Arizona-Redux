@@ -1,0 +1,53 @@
+FormKey: 039F52:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: 01BBBC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know. Ever since the fall of the Chainway, the ants have been angrier. More likely to attack.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know some here here believe that I riled them up. Maybe I did and just don't know it. Maybe it's coincidence.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I wish I could know for sure before I died.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100813260
+Choices:
+- 01BBBB:NovaArizona.esm
+- 01BBBA:NovaArizona.esm
+- 01BBBE:NovaArizona.esm
+- 01BBC0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think riled the ants up?

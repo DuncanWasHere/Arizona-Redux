@@ -1,0 +1,44 @@
+FormKey: 024A1E:NovaArizona.esm
+FormVersion: 15
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x76656E
+  ResponseText: Thank you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x642074
+    UseEmotionAnimation: True
+    Unused3: 0x702073
+  ResponseText: Take these, Ant pheromones. They will mask your scent among them for some time.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x642074
+    UseEmotionAnimation: True
+    Unused3: 0x702073
+  ResponseText: You should check on the Queen. I call her Amelie. Something must have happened to her to make them this disregulated.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'll help you.

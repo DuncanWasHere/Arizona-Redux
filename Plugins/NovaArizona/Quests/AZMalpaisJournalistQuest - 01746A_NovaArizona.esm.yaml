@@ -1,0 +1,343 @@
+FormKey: 01746A:NovaArizona.esm
+EditorID: AZMalpaisJournalistQuest
+FormVersion: 15
+Script: 01746B:NovaArizona.esm
+Name: A Little Bird Told Me
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: Interview people on the Chainway.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E140000006E010000001C000100211002000000
+      SourceCode: >-
+        setobjectivedisplayed AZMalpaisJournalistQuest 20 1
+
+
+        AZMalpaisNestorREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0175C6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Return to Stanley with your report on the Chainway.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E140000006E01000000A3110F0003007202006E190000006E0100000016001900010015002058A5110A0002007202006E160000002031203D3DA2110F0003007202006E160000006E01000000190000001600310002002D002058A5110A0002007202006E150000002031203D3D2058A4110A0002007202006E150000002030203D3D202626A2110F0003007202006E150000006E010000001C00010002100A0002007203006E0100000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZMalpaisJournalistQuest 20 1
+
+        SetObjectiveDisplayed AZMalpaisJournalistQuest 25 1
+
+
+        if GetObjectiveDisplayed AZMalpaisJournalistQuest 22 == 1
+        	SetObjectiveCompleted AZMalpaisJournalistQuest 22 1 
+        endif
+
+
+        if GetObjectiveDisplayed AZMalpaisJournalistQuest 21 == 1 && GetObjectiveCompleted AZMalpaisJournalistQuest 21 == 0
+        	SetObjectiveCompleted AZMalpaisJournalistQuest 21 1
+        	Player.AddItem AZReminder3SomeNote1 1 
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01763F:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: Interview slavers at the White Sands Trading Post.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E190000006E01000000A3110F0003007202006E280000006E01000000A3110F0003007202006E2D0000006E010000001C0001002110020000001600100001000C00207202007308002031203D3DA2110F0003007202006E2D0000006E0100000019000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 25 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 40 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 45 1
+
+
+        AZMalpaisCarlosREF.enable
+
+
+        if (AZMalpaisJournalistQuest.bKnowsAboutMalachi == 1)
+        	setobjectivecompleted AZMalpaisJournalistQuest 45 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0175C0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Return to Stanley with your report on the slavers.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E280000006E01000000A3110F0003007201006E320000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 40 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 50 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry: Wait three days. Stanley will either have more work or be dead.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E320000006E01000000A3110F0003007201006E3C0000006E0100000016001400010010002072010073070020720100730600203E15000A00720100730D00020020311900000015001000720100730F00080020582F280200000015001000720100661E00080020582F280200000015000A00720100731F0002002031
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 50 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 60 1
+
+
+        if AZMalpaisJournalistQuest.bStanleyLegionDisapproval > AZMalpaisJournalistQuest.bStanleyLegionApproval
+        	Set AZMalpaisJournalistQuest.bStanleyIsDoomed to 1
+        endif
+
+        Set AZMalpaisJournalistQuest.bStanleyFateHelper to GetGameDaysPassed
+
+        Set AZMalpaisJournalistQuest.iTimer to GetGameDaysPassed
+
+        Set AZMalpaisJournalistQuest.iDoOnce1 to 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 65
+  LogEntries:
+  - Flags: []
+    Entry: It's been three days. See if Stanley has work.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E3C0000006E01000000A3110F0003007201006E410000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 60 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 65 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry: Take Stanley to Big Stop to interview Dominicus Rex.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007204006E410000006E01000000A3110F0003007204006E460000006E010000001C0001009E10050001007205001C0002009E10050001007205001C0003002110020000001C00010052100A0002007206006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 65 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 70 1
+
+
+        AZBigStopDominicusRexREF.moveto AZBigStopInterviewChair01REF
+
+        AZBSStenographusREF.moveto AZBigStopInterviewChair01REF
+
+        AZBigStopInterviewTentEnablerMarkerREF.Enable
+
+
+        AZBigStopDominicusRexREF.removeitem WeapNVMachete 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00B13D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0175D8:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0187FF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0175D6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0CE569:FalloutNV.esm
+- Index: 80
+  LogEntries:
+  - Flags: []
+    Entry: Interview Dominicus Rex.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E460000006E01000000A3110F0003007201006E500000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 70 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 80 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags: []
+    Entry: Give the report on Dominicus Rex.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E500000006E01000000A3110F0003007201006E640000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 80 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 100 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+- Index: 120
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Stanley has no more work.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E640000006E01000000A3110F0003007203006E780000006E01000000A2110F0003007203006E780000006E010000001C0001007711070001006E900100001C00020002100A0002007204006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZMalpaisJournalistQuest 100 1
+
+        setobjectivedisplayed AZMalpaisJournalistQuest 120 1
+
+        setobjectivecompleted AZMalpaisJournalistQuest 120 1
+
+
+        player.rewardxp 400
+
+
+        AZBigStopDominicusRexREF.additem WeapNVMachete 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00B13D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01746A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0CE569:FalloutNV.esm
+- Index: 140
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: You were fired by Stanley.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 150
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Stanley or the interviewers are dead.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 160
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: The Legion hates you. It is not possible to interview anyone.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 170
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Lanius has arrived. With him, our doom approaches.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001008B1002000000
+      SourceCode: AZStanleyHartfordREF.killactor
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00B155:NovaArizona.esm
+Objectives:
+- Index: 20
+  Description: Interview people around the Chainway.
+  Targets:
+  - Target: 0175C5:NovaArizona.esm
+    Unused: 0xB51527
+- Index: 25
+  Description: Return to Stanley with your report around the Chainway.
+  Targets:
+  - Target: 00B155:NovaArizona.esm
+    Unused: 0x2A102B
+- Index: 40
+  Description: Interview the slavers at the Malpais Market.
+  Targets:
+  - Target: 0175C0:NovaArizona.esm
+    Unused: 0x172529
+- Index: 45
+  Description: (Optional) Interview Malachi.
+  Targets:
+  - Target: 01039B:NovaArizona.esm
+    Unused: 0x112925
+- Index: 50
+  Description: Return to Stanley with your report on the slavers.
+  Targets:
+  - Target: 00B155:NovaArizona.esm
+    Unused: 0x61102A
+- Index: 60
+  Description: Return to Stanley in three days for more work.
+- Index: 65
+  Description: It's been three days. Return to Stanley for work.
+  Targets:
+  - Target: 00B155:NovaArizona.esm
+    Unused: 0x61102A
+- Index: 80
+  Description: Interview Dominicus Rex.
+  Targets:
+  - Target: 00B13D:NovaArizona.esm
+    Unused: 0x9B4C24
+- Index: 100
+  Description: Decide what story to print about Dominicus Rex.
+  Targets:
+  - Target: 00B155:NovaArizona.esm
+    Unused: 0x162529
+- Index: 70
+  Description: Take Stanley to Solitare (Big Stop?) to interview Dominicus Rex.
+  Targets:
+  - Target: 0175DF:NovaArizona.esm
+    Unused: 0x7E2F30
+- Index: 21
+  Description: Deliver an invoice to Tres Leches Caravan.
+  Targets:
+  - Target: 00D420:NovaArizona.esm
+    Unused: 0x1C1428
+- Index: 22
+  Description: See if the Chainway foreman will grant you an interview.
+  Targets:
+  - Target: 0175C5:NovaArizona.esm
+    Unused: 0x7F6D2C

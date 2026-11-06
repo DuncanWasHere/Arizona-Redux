@@ -1,0 +1,57 @@
+FormKey: 01ED73:NovaArizona.esm
+FormVersion: 15
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656769
+    UseEmotionAnimation: True
+    Unused3: 0x206973
+  ResponseText: I....
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x656769
+    UseEmotionAnimation: True
+    Unused3: 0x206973
+  ResponseText: Okay, no, that is wrong. No one deserves that, not even a Legionary. I'm sorry for yelling.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x656769
+    UseEmotionAnimation: True
+    Unused3: 0x206973
+  ResponseText: But, I am not going to Arizona. Way too dangerous for a Follower. I can't help everyone, and I accepted that a long time ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x656769
+    UseEmotionAnimation: True
+    Unused3: 0x206973
+  ResponseText: I'm not about to throw it all away for some Legionary who probably wouldn't hesitate to return that favor to some slave girl.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED74:NovaArizona.esm
+- 01ED75:NovaArizona.esm
+- 01ED76:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He is the victim of one of those unspeakable things you mentioned. By a legate, no less.

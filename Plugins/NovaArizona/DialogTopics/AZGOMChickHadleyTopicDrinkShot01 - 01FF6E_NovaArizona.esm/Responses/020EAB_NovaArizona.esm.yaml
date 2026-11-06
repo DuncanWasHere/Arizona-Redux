@@ -1,0 +1,65 @@
+FormKey: 020EAB:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020EAA:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Jesus, you sure? Alright.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 7
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 01FF6E:NovaArizona.esm
+- 0203FD:NovaArizona.esm
+- 01FF6F:NovaArizona.esm
+- 020E98:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E01000000
+  SourceCode: player.additem vodka 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 032C74:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C000100EE100A0002007202006E0100000015000A0072030073020002002031
+  SourceCode: >-
+    player.equipitem vodka 1
+
+    set AZGOMAssassinationQuest.bChickIsDrunk to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 032C74:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+Prompt: Let's go, keep it up. Another!
+ActorValuePerk: 0003EA:FalloutNV.esm

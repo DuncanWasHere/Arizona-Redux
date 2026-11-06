@@ -1,0 +1,36 @@
+FormKey: 016BE8:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh for Mars's sake! I have neither the time nor the patience to converse with morons. Please leave me be or I will have you thrown out of town.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Um... I still don't get it... Is this Chlorine or Mohoffee Orectum?
+ActorValuePerk: 0003EC:FalloutNV.esm

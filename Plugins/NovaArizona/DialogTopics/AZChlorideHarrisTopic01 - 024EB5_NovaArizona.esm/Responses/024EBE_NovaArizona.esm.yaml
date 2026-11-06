@@ -1,0 +1,55 @@
+FormKey: 024EBE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: To keep things cool as a cucumber. Haha, it's a good one, right? It's usually wasted on some of the locals. They've never seen a cucumber.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Serious answer, though, the Legion loves meat, and you can salt meat, sure, but, uh, the Legion doesn't like the taste much.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So, this is basically gourmet food for the higher-ups.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718664
+Choices:
+- 03A0F8:NovaArizona.esm
+- 024EB3:NovaArizona.esm
+- 024EB4:NovaArizona.esm
+- 024EB5:NovaArizona.esm
+- 024EB6:NovaArizona.esm
+- 024EB7:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What does a town need with a refrigeration unit?

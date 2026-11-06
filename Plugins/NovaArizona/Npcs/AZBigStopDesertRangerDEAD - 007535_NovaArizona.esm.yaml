@@ -1,0 +1,154 @@
+FormKey: 007535:NovaArizona.esm
+MajorRecordFlagsRaw: 525312
+EditorID: AZBigStopDesertRangerDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Dead Desert Ranger
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - PCLevelMult
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1000
+  CalcMin: 10
+  CalcMax: 20
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+Factions:
+- Faction: 0A46E7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 12676F:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6C:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13ABDA:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13F8B7:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 00002D:FalloutNV.esm
+Template: 152CBE:FalloutNV.esm
+Race: 04BF70:FalloutNV.esm
+ActorEffects:
+- 10C0BD:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 096C90:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 123054:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A643:FalloutNV.esm
+    Count: 5
+- Item:
+    Item: 15441B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 007532:NovaArizona.esm
+    Count: 1
+- Item:
+    Item: 007533:NovaArizona.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 13DBDB:FalloutNV.esm
+- 018E6A:FalloutNV.esm
+Class: 08D424:FalloutNV.esm
+Strength: 5
+Perception: 6
+Endurance: 6
+Charisma: 4
+Intelligence: 5
+Agility: 6
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 13
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 17
+  - Key: Explosives
+    Value: 17
+  - Key: Lockpick
+    Value: 17
+  - Key: Medicine
+    Value: 15
+  - Key: MeleeWeapons
+    Value: 15
+  - Key: Repair
+    Value: 15
+  - Key: Science
+    Value: 15
+  - Key: SmallGuns
+    Value: 68
+  - Key: Sneak
+    Value: 68
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 68
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Eyes: 004256:FalloutNV.esm
+HairColor: '#001C1209'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xB9E76E3F77669640D3F59FBFE74DE8BD93E73E40CA2893C01435694041DFB53FCAC9D13FC019B0C0DE1F16C08AF654C0E0CC46C045F141C06B75D8BFC39B7040BA8AC4C077815DBF2EE22D3F8D8886407AC88FBF63FE0BC026E4ACC02CDA11C0FD958DBF8C7C6A3F8CEABABF8A34CABF683545C1A8C49CBF9F286140CAEA6D40D4B9EE3DC4F7B540F3BF91C0C8B3B4BE4645B7C0967D27409DDB0CBF824590C09213B9C0639960C0093B1EC0BBB6A24030A5D33EAFB300410E40F23F2B3586404A65A240769F803F
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0xF46BCAC097A00DC02681BA3EDC20843FA8BB35BED2DC5741DA7242BF04F3393F5A14C0C088CA1940B7F653406B4B2240627C3BC0147F57BEBB0DC0C0AE3C70C09E15ABC06E42A2407F97304088DD7740CCD6AF4053926D40500A4AC0B98C06C0199831BF50A1EA3FF0A39AC0067A7240F71BDA3F54E012C0E961CC3F82A4A6401C6D2AC0D0FE0FC123DCEF4073DD18C0DA4265405141D44099FC40407D17093F149820C14BCD3C4159B6C5C069259D4017EE0340909DC0C0B45E4340FCEA224014850CC0CE3A97BF
+NAM5: 255
+DATADataTypeState:
+- Break0
+MajorFlags:
+- QuestItem
+- 0x80000

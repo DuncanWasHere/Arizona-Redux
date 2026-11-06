@@ -1,0 +1,74 @@
+FormKey: 008A3E:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 008A3D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not to self-aggrandize, but it was quite ingenious. The Frumentarii's baby, though Caesar signed off and gave us free reign.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It took months for us to move all our men into place. It had to be done covertly, not as marching soldiers, but as drifters and travelers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Our most discreet Frumentarii filtered into the town undercover and established a presence as logistics leaders.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Outside the town, our men amassed in the mountains.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I returned to Caesar before the offensive was launched. A pyrrhic victory, perhaps, but for whom? It is not our supply lines that were crippled.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+Choices:
+- 01EFBD:NovaArizona.esm
+- 024C2C:NovaArizona.esm
+- 024C5C:NovaArizona.esm
+- 008A27:NovaArizona.esm
+- 008A28:NovaArizona.esm
+- 008A2A:NovaArizona.esm
+- 008A2C:NovaArizona.esm
+- 008A2D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the Legion's campaign in the Divide.

@@ -1,0 +1,54 @@
+FormKey: 008E4B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Fear
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x5E0213
+    UseEmotionAnimation: True
+    Unused3: 0x172628
+  ResponseText: Don't move or I'll shoot!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wait, you don't look like one of those wastrels. What are you doing here?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+Choices:
+- 008E4D:NovaArizona.esm
+- 008E4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007301000200203015000A0072010073020002002030
+  SourceCode: >-
+    set AZWhiteHillsMineDialogue.talking to 0
+
+    set AZWhiteHillsMineDialogue.callumrobbed to 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm

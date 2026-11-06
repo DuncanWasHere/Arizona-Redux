@@ -1,0 +1,46 @@
+FormKey: 00CB39:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Then, you're a worthless weakling that doesn't deserve anything more than the Legion boot clamped down on your neck.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If you're not taking what you want, then you will never get anywhere. Accept that, or accept your place at the bottom of the trash heap.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721589
+Choices:
+- 00C6F2:NovaArizona.esm
+- 00C6DA:NovaArizona.esm
+- 00C6DB:NovaArizona.esm
+- 00C6DC:NovaArizona.esm
+- 00C6F1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, I'm not a raider.

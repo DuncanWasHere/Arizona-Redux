@@ -1,0 +1,35 @@
+FormKey: 00AD5A:NovaArizona.esm
+MajorRecordFlagsRaw: 134217728
+EditorID: AZProjectileWWNukaYellow
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x8000000
+Name:
+  TargetLanguage: English
+  Value: Nuka Cola Yellow Projectile
+Model:
+  File: AZNovaArizona\Projectiles\AZProjectileWWNukaYellow.nif
+Destructible:
+  Data:
+    Health: 5
+    DESTCount: 1
+    VATSTargetable: True
+    Unused: 21572
+  Stages:
+  - Data:
+      Flags:
+      - Disable
+      Explosion: 0179DA:FalloutNV.esm
+Flags:
+- Explosion
+- Rotation
+Type: Missile
+Gravity: 1
+Speed: 1600
+Range: 6000
+Explosion: 00AD5B:NovaArizona.esm
+ImpactForce: 0.5
+Rotation: 15, 0, 0
+BouncyMult: 1
+MuzzleFlashModel: ''
+SoundLevel: Silent

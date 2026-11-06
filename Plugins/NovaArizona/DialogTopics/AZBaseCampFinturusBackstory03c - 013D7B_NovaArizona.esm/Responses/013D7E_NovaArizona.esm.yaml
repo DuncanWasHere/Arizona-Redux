@@ -1,0 +1,31 @@
+FormKey: 013D7E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20415A
+    UseEmotionAnimation: True
+    Unused3: 0x656769
+  ResponseText: A Legion victory. It forced the NCR to confront us as a major power and set the stage for a climactic battle in which justice will prevail.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D80:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The First Battle of Hoover Dam.

@@ -1,0 +1,30 @@
+FormKey: 03A917:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 03A916:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You heard of Tres Leches Caravan? They used to be called the Threesome Brothers, but the Legion made them change the name. Heard that order came from Caesar himself.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Heard any good rumors lately?

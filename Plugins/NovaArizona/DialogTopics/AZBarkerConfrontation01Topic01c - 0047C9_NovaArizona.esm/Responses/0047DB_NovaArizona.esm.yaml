@@ -1,0 +1,31 @@
+FormKey: 0047DB:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x640105
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Then talk.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 013B42:NovaArizona.esm
+- 0047DD:NovaArizona.esm
+- 0047DE:NovaArizona.esm
+- 0071C4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I just want to talk.

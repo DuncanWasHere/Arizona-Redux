@@ -1,0 +1,57 @@
+FormKey: 00E5FE:NovaArizona.esm
+EditorID: AZAutonousLeavePackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- SkipFalloutBehavior
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00E81E:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInCell
+  FirstParameter: 100722694
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x1600100001000C00207201007301002033203D3D2210070001006E030000001800100002000C00207201007301002034203D3D2210070001006E030000009E100500010072020019000000
+    SourceCode: >-
+      if AZStatioFindFriendQuest.AutonousStatus == 3
+      	disable 3
+      elseif AZStatioFindFriendQuest.AutonousStatus == 4
+      	disable 3
+      	MoveTo AZAutonousMoveMarkerREF
+      endif
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00DE1A:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00EAF5:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

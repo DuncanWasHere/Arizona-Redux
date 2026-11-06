@@ -1,0 +1,81 @@
+FormKey: 0209BE:NovaArizona.esm
+MajorRecordFlagsRaw: 525312
+EditorID: AZCowFieldBrushQuestGilaMonsterDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+- CantWait
+ObjectBounds:
+  First: -60, -95, 0
+  Second: 60, 94, 145
+Name: Gila Monster
+Model:
+  File: nvdlc02\Creatures\YaoGuai\skeleton.nif
+ActorEffects:
+- 005A4E:NovaArizona.esm
+- 00E733:NovaArizona.esm
+UnarmedAttackEffect: 005A4E:NovaArizona.esm
+UnarmedAttackAnimation: Any
+Models:
+- azgilamonster.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  Fatigue: 650
+  Level: 18
+  SpeedMultiplier: 110
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - ActorEffectList
+  - AIData
+  - ModelAnimation
+  - Inventory
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 003E33:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 015E7E:NovaArizona.esm
+Voice: 094EED:FalloutNV.esm
+Template: 005A4C:NovaArizona.esm
+Script: 0209D1:NovaArizona.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: 100
+  Mood: 2163704576
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 20
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 70
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 50
+  Strength: 7
+  Perception: 4
+  Endurance: 5
+  Charisma: 4
+  Intelligence: 4
+  Agility: 5
+  Luck: 10
+AttackReach: 140
+CombatStyle: 03A386:FalloutNV.esm
+BodyPartData: 009F6D:HonestHearts.esm
+TurningSpeed: 200
+BaseScale: 1
+FootWeight: 8
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 0A5D40:FalloutNV.esm
+ImpactDataset: 07E684:FalloutNV.esm
+MajorFlags:
+- QuestItem
+- 0x80000

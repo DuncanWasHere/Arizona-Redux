@@ -1,0 +1,218 @@
+FormKey: 00A60D:NovaArizona.esm
+EditorID: AZVideoQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 3
+    VariableCount: 11
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C621600001000060000000701000080161300020B00580000A8140400000007004C4201000039150C00010B0056010000010042000039150C00010B0056010000020042000039150C00010B0056010000030042000039150C00010B0056010000040042010039150C00010B0056010000090042000039150C00010B00560100000B00420000A51439000200FFFF2F00532A00436F6D7075746572734D656E752F636F6D7075746572735F64657074685F726563742F76697369626C65FFFF04004201A51431000200FFFF2700532200436F6D7075746572734D656E752F646F6F6D4D61696E526563742F76697369626C65FFFF040042009B2716000300FFFF0500520200FFFF04004201FFFF05004921041100000010000D0001006A04000001006E210400008016100002080056010000010007004CBD050000801611000209005601000002001507004C6A020000D02715000300FFFF0500520300FFFF04004201FFFF04004239A51439000200FFFF2F00532A00436F6D7075746572734D656E752F636F6D7075746572735F64657074685F726563742F76697369626C65FFFF04004200A51431000200FFFF2700532200436F6D7075746572734D656E752F646F6F6D4D61696E526563742F76697369626C65FFFF0400420139150C00010B0056010000020042010039150C00010B0056010000040042010041150A000109005602000007001B80161700020F00560400000A00560100000B000207004C6A020000261012000200FFFF0800560400000A00FFFF040042018016100002080056010000030007004C8D030000D02715000300FFFF0500520300FFFF04004200FFFF04004239A51439000200FFFF2F00532A00436F6D7075746572734D656E752F636F6D7075746572735F64657074685F726563742F76697369626C65FFFF04004201A51431000200FFFF2700532200436F6D7075746572734D656E752F646F6F6D4D61696E526563742F76697369626C65FFFF0400420039150C00010B0056010000010042000039150C00010B0056010000030042000039150C00010B0056010000020042000039150C00010B0056010000040042010039150C00010B0056010000090042000039150C00010B00560100000B0042000080161000020800560400000A0007004C8D03000061280C000100FFFF0800560400000A0080161700020F005601000004005601000008000807004CE80300008016100002080056010000090007004CD803000039150C00010B00560100000400420100811608000107004CE803000039150C00010B0056010000030042010080161300020B00560100000400420A0707004C42040000391533000132005602000006005602000007001B530E0041534349492D7468756D623030300E5601000004001B0E5304002E7478740E00811608000107004C3C05000080161D00021500560100000400420A085601000004004264070207004CA5040000391532000131005602000006005602000007001B530D0041534349492D7468756D6230300E5601000004001B0E5304002E7478740E00811608000107004C3C05000080161E0002160056010000040042640856010000040049E803070207004C08050000391531000130005602000006005602000007001B530C0041534349492D7468756D62300E5601000004001B0E5304002E7478740E00811608000107004C3C05000039153000012F005602000006005602000007001B530B0041534349492D7468756D620E5601000004001B0E5304002E7478740E00411517000116005800003B260F000100FFFF09005602000006001B21164B000200FFFF2F00532A00436F6D7075746572734D656E752F646F6F6D4D61696E526563742F6D61696E546578742F737472696E67FFFF16005800003B260F000100FFFF09005602000006001B3915130001120056010000040056010000040042010E0011000000
+  SourceCode: >-
+    name AZVideoQuestScript;
+
+
+    // Credit to C6 for the original script this is based on
+
+
+    // =====================
+
+    // State Control Variables
+
+    // =====================
+
+    int bSpacePressed;
+
+    int bPlaying;
+
+    int bInitialized;
+
+    int iCount;
+
+
+    // =====================
+
+    // External Configuration
+
+    // =====================
+
+    string sVideoFolder;        // Folder path of current video (set externally)
+
+    int iMaxFrameCount;         // Total number of frames (set externally)
+
+    int bShouldLoop;            // 1 = loop, 0 = stop after last frame (set externally)
+
+    int bPlaySound;             // 1 = play sound, 0 = no sound (set externally)
+
+    ref rVideoSoundForm;        // Sound form reference to play for this video (set externally)
+
+
+    // =====================
+
+    // Internal Temp Vars
+
+    // =====================
+
+    string sFileName;
+
+    string sText;
+
+
+    Gamemode {
+        if (GetGameRestarted()) {
+            bPlaying = 0;
+            bInitialized = 0;
+            bSpacePressed = 0;
+            iCount = 1;
+            bShouldLoop = 0;
+            bPlaySound = 0;
+
+            SetUIFloat("ComputersMenu/computers_depth_rect/visible", 1);
+            SetUIFloat("ComputersMenu/doomMainRect/visible", 0);
+            SetOnMenuCloseEventHandler(AZVideoOnMenuCloseUDF, 1, 1057);
+        }
+    }
+
+
+    MenuMode::1057 {
+        if (bPlaying) {
+
+            // =====================
+            // Initialization
+            // =====================
+            if (!bInitialized) {
+                SetOnKeyDownEventHandler(AZVideoKeyPressUDF, 1, 57);
+                SetUIFloat("ComputersMenu/computers_depth_rect/visible", 0);
+                SetUIFloat("ComputersMenu/doomMainRect/visible", 1);
+                bInitialized = 1;
+                iCount = 1;
+                print($sVideoFolder);
+
+                if (rVideoSoundForm && bPlaySound) {
+                    PlaySound(rVideoSoundForm, 1);
+                }
+            }
+
+            // =====================
+            // Space Pressed = Stop Playback
+            // =====================
+            if (bSpacePressed) {
+                SetOnKeyDownEventHandler(AZVideoKeyPressUDF, 0, 57);
+                SetUIFloat("ComputersMenu/computers_depth_rect/visible", 1);
+                SetUIFloat("ComputersMenu/doomMainRect/visible", 0);
+                bPlaying = 0;
+                bSpacePressed = 0;
+                bInitialized = 0;
+                iCount = 1;
+                bShouldLoop = 0;
+                bPlaySound = 0;
+
+                if (rVideoSoundForm) {
+                    StopSound(rVideoSoundForm);
+                }
+            }
+
+            // =====================
+            // Frame Logic
+            // =====================
+            if (iCount >= iMaxFrameCount) {
+                if (bShouldLoop) {
+                    iCount = 1;
+                } else {
+                    bSpacePressed = 1;
+                }
+            }
+
+            // =====================
+            // Filename
+            // =====================
+            if (iCount < 10) {
+                sFileName = ($sVideoFolder + "ASCII-thumb000" + $iCount + ".txt");
+            } else if ((iCount >= 10) && (iCount < 100)) {
+                sFileName = ($sVideoFolder + "ASCII-thumb00" + $iCount + ".txt");
+            } else if ((iCount >= 100) && (iCount < 1000)) {
+                sFileName = ($sVideoFolder + "ASCII-thumb0" + $iCount + ".txt");
+            } else {
+                sFileName = ($sVideoFolder + "ASCII-thumb" + $iCount + ".txt");
+            }
+
+            print(ReadStringFromFile($sFileName));
+            SetUIStringAlt("ComputersMenu/doomMainRect/mainText/string", ReadStringFromFile($sFileName));
+            iCount = (iCount + 1);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPlaying
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInitialized
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bSpacePressed
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iCount
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 2
+      Unknown2: 0x00000000000000
+    Name: sText
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 2
+      Unknown2: 0x00000000000000
+    Name: sFileName
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 2
+      Unknown2: 0x00000000000000
+    Name: sVideoFolder
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMaxFrameCount
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bShouldLoop
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rVideoSoundForm
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPlaySound
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 10
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A610:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A60E:NovaArizona.esm

@@ -1,0 +1,55 @@
+FormKey: 00C446:NovaArizona.esm
+EditorID: AZHardtack
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Hardbread Ration
+Model:
+  File: AZNovaArizona\Clutter\Food\AZHardtack.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\AZ_item_hardtack.dds
+EquipmentType: Food
+Weight: 0.8
+Value: 3
+Flags:
+- NoAutoCalc
+- FoodItem
+- 0x100
+- 0x400
+- 0x800
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+- 0x80000000
+- 0x0
+ConsumeSound: 026EB6:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 60
+    ActorValue: Health
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 150
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 162BCB:FalloutNV.esm
+  Data:
+    Magnitude: 30
+    ActorValue: Dehydration
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586

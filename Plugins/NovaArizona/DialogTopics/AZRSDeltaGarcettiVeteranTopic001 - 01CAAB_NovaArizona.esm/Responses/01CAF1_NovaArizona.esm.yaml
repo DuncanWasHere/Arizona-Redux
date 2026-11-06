@@ -1,0 +1,34 @@
+FormKey: 01CAF1:NovaArizona.esm
+FormVersion: 15
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{No hesitation}Fifty-five tribals, eight muties, a Steel Paladin and three initiates, eighteen red tribals, eleven unknown.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100780699
+  SecondParameter: 1
+Choices:
+- 01CAB1:NovaArizona.esm
+- 01CAB2:NovaArizona.esm
+- 01CAB3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How many confirmed kills do you have?

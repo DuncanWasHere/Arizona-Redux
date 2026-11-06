@@ -1,0 +1,29 @@
+FormKey: 024D4E:NovaArizona.esm
+FormVersion: 15
+Quest: 024CE4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I can debate the merits of Pre-War political platforms. For instance, the Rep-.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723482
+Choices:
+- 024D15:NovaArizona.esm
+- 024D16:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Okay, what politics do you know about?

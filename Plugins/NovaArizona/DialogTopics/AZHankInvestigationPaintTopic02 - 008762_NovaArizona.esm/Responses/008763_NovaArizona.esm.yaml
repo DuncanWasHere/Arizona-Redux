@@ -1,0 +1,38 @@
+FormKey: 008763:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x74656D
+    UseEmotionAnimation: True
+    Unused3: 0x204E56
+  ResponseText: Caps? No. The currency at The Reservation is the American dollar. Only valid form of currency, really.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x494E44
+    UseEmotionAnimation: True
+    Unused3: 0x515344
+  ResponseText: I'll tell you what you want to know for 250 fat stacks.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 008764:NovaArizona.esm
+- 008767:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How many caps do I need to rattle that information out of you?

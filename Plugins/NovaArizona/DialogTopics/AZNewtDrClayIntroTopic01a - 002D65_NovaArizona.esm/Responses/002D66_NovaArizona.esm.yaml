@@ -1,0 +1,77 @@
+FormKey: 002D66:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F636B
+    UseEmotionAnimation: True
+    Unused3: 0x656452
+  ResponseText: What did I just say? I'm busy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: See that human-shaped scab over there? Took the easy way out.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: Waited until the middle of the night, then tossed himself on the bonfire when he was on sentry duty.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: He survived. Barely.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: He's comatose, but the last few days have been promising. Motor response is good. Eyes are opening to speech. He's coming to.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: His Commander wants him alive. "To live a long and excrutiatingly painful life in the Legion", he said. Talk about irony.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 002D65:NovaArizona.esm
+- 00918C:NovaArizona.esm
+- 00918E:NovaArizona.esm
+- 0091B1:NovaArizona.esm
+- 0050EC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm hurt, can you heal me?

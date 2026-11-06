@@ -1,0 +1,43 @@
+FormKey: 0341FE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 0089ED:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, keep digging. Those guys are all about secrets. Whatever they've started to tell you, they're still hiding something.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742750
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100698647
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100698647
+  SecondParameter: 5
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100698647
+  SecondParameter: 5
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I managed to get the Frumentarii to start looking into records for who killed August.

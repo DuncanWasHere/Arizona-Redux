@@ -1,0 +1,39 @@
+FormKey: 0183C9:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 0183C6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x69726C
+    UseEmotionAnimation: True
+    Unused3: 0x20796F
+  ResponseText: Watch out for 'Lurks. It's spawning season.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 9
+  Function: GetGlobalValue
+  FirstParameter: 54
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 12
+  Function: GetGlobalValue
+  FirstParameter: 54
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100762539
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

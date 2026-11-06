@@ -1,0 +1,65 @@
+FormKey: 03A147:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Gristle? Sketch? I've come to despise raider names. But very well, just give me a moment to get this information down...
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 05DB25:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And here you are, you'll want to provide this to Aristophontes in Chloride. The seal of a Scribonius will be sure to get his attention.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I made sure to mention you. It's likely you'll be reporting to his office regarding matter from now on. That being said, I won't keep you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756608
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x7C1105000100720100A2110F0003007202006E550000006E01000000A3110F0003007202006E5A0000006E01000000
+  SourceCode: >-
+    addnote AZSlaveQuestSealedMissive
+
+    setobjectivecompleted AZMalpaisMarketSlaveQuest 85 1
+
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 90 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A148:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm

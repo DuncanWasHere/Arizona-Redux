@@ -1,0 +1,48 @@
+FormKey: 01EE3E:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x207468
+    UseEmotionAnimation: True
+    Unused3: 0x696F6E
+  ResponseText: Since birth. From the cradle to the grave.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: If you're asking when they begin practical training, it is the age of twelve, sometimes eleven if they show any particularly promise.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: Agu, for instance, he's one of those children who show particular promise. I've raised him since he was four because I knew he would turn out right.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01EE4B:NovaArizona.esm
+- 01EE4C:NovaArizona.esm
+- 01EE41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: When do children start training to become a Legionary?

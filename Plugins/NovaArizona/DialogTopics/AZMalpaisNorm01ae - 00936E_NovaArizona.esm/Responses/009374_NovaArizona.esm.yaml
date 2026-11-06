@@ -1,0 +1,41 @@
+FormKey: 009374:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x311826
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Really? That's pretty messed up to get my hopes up like that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x311826
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm starving, and you're acting like it's a game or something.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100700850
+Choices:
+- 00929F:NovaArizona.esm
+- 0092AD:NovaArizona.esm
+- 009318:NovaArizona.esm
+- 009359:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: On second thought, I can't spare any caps.

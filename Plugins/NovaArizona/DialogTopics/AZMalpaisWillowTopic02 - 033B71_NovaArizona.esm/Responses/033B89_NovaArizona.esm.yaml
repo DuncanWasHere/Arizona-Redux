@@ -1,0 +1,49 @@
+FormKey: 033B89:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 033B88:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Incredulous}You truly think the Legion makes all women slaves when Caesar himself lets you, a Profligate, walk around in His domain?'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What he sees in you I don't, but that is why a woman could never be Caesar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712253
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPCIsSex
+  FirstParameter: 1
+Choices:
+- 033B68:NovaArizona.esm
+- 033B6E:NovaArizona.esm
+- 033B71:NovaArizona.esm
+- 033B72:NovaArizona.esm
+- 033B73:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you a slave?

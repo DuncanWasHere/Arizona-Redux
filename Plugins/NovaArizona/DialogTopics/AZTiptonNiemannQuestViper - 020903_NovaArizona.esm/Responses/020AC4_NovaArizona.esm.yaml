@@ -1,0 +1,90 @@
+FormKey: 020AC4:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: 0209F7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x647661
+  ResponseText: Excellent.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x647661
+  ResponseText: The next step is to expand the Brush trade. The resident Centurion in Chloride is a bad-tempered man, but not unreasonable.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x647661
+  ResponseText: Speak to him, and we'll see about having the garrison as a whole adopt the use of Brush.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00C2F8:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 2
+BeginScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x15000A007202007302000200203015000A00720200730100020020311C00010002100A0002007203006E960000001C00010002100A0002007204006E0F000000A2110F0003007205006E190000006E01000000
+  SourceCode: >-
+    Set AZBrushQuest01.BrushBanned to 0
+
+    Set AZBrushQuest01.BrushAllowed to 1
+
+    Player.AddItem Caps001 150
+
+    Player.AddItem MoneyLegion1 15
+
+    SetObjectiveCompleted AZBrushQuest02 25 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E24000000
+  SourceCode: SetStage AZBrushQuest02 36
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+Prompt: Decanus Quintus has been removed from power.

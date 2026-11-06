@@ -1,0 +1,58 @@
+FormKey: 01EE77:NovaArizona.esm
+EditorID: AZMalpaisQuestNoteObjectScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967288
+    RefCount: 10
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0003009A01000001007201003A151D00011C00520100780000521011000200FFFF0500520200FFFF04004201283A151D00011C00520100780000021011000200FFFF0500520300FFFF040042012880163200022A00580000A51111000200FFFF0500520400FFFF0400423758000022120B000100FFFF0500520400150207004C2401000080162500021D0058000054100B000100FFFF0500520500155601060004004200040207004CE2000000A31115000300FFFF0500520400FFFF04004238FFFF0400420180162500021D0058000054100B000100FFFF0500520700155601060004004201040207004C24010000A31115000300FFFF0500520400FFFF04004239FFFF0400420180161D000215005800003A100B000100FFFF050052080042320407004CBE01000080162C000224005209007800002E100400000028155601060004004200040256010A0001004200040207004C8E010000A31115000300FFFF0500520800FFFF04004233FFFF0400420180161300020B0056010600040042010407004CBE010000A31115000300FFFF0500520800FFFF04004237FFFF0400420111000000
+  SourceCode: >-
+    name AZMalpaisQuestNoteObjectScript;
+
+
+    OnAdd::player {
+        Player.RemoveItem(AZMalpaisQuestNoteObject, 1);
+        Player.AddItem(AZMalpaisSedonusQuestNote, 1);
+
+        if (GetObjectiveDisplayed(AZMalpaisAbuserQuest, 55) && !GetQuestCompleted(AZMalpaisAbuserQuest)) {
+            if (!GetDeadCount(AZBigStopJem) && AZElephantHillFatEyeQuest.FatEyeJem == 0) {
+                SetObjectiveDisplayed(AZMalpaisAbuserQuest, 56, 1);
+            }
+
+            if (!GetDeadCount(AZElephantHillFatEye) && AZElephantHillFatEyeQuest.FatEyeJem == 1) {
+                SetObjectiveDisplayed(AZMalpaisAbuserQuest, 57, 1);
+            }
+        }
+
+        if (GetStage(AZMalpaisAbuseQuest) == 50) {
+            if (!AZBigStopJemREF.GetDead() && AZElephantHillFatEyeQuest.FatEyeJem == 0 && AZBigStopAugustQuest.GossipReject == 0) {
+                SetObjectiveDisplayed(AZMalpaisAbuseQuest, 51, 1);
+            }
+
+            if (AZElephantHillFatEyeQuest.FatEyeJem == 1) {
+                SetObjectiveDisplayed(AZMalpaisAbuseQuest, 55, 1);
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE76:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01365E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0089CF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01365F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm

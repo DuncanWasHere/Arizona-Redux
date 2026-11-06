@@ -1,0 +1,50 @@
+FormKey: 0209BC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not necessarily. Chems were everywhere in the Old World. It's one of the reasons Mars blasted it with the fire.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C792E
+    UseEmotionAnimation: True
+    Unused3: 0x732077
+  ResponseText: I'm only concerned about their current, confirmable Brush use.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+- Fluff: 0x000000
+  Function: GetLocked
+  RunOnType: Reference
+  Reference: 00C9DD:NovaArizona.esm
+Choices:
+- 018393:NovaArizona.esm
+- 020985:NovaArizona.esm
+- 020986:NovaArizona.esm
+- 020987:NovaArizona.esm
+- 020988:NovaArizona.esm
+- 0209BB:NovaArizona.esm
+- 018397:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I found an old ventbox with some chems in it nearby. Maybe they were using?

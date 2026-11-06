@@ -1,0 +1,111 @@
+FormKey: 0209F7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: 02093E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: That is a problem, but not an insurmountable one.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: Well, if speaking is no longer an option, the Decanus will have to go in a way that doesn't implicate us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x647661
+  ResponseText: It's important that he not just die. He must be seen to have betrayed the Legion in some form.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: My personal recommendation is inciting a mutiny against him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: But, if you're not skilled enough to do that, the alternative is to plant drugs on Quintus. Make his anti-chem rhetoric appear to be an attempt at misdirection.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: Return to me when you've completed your task.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And do not fail this time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100796571
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100796571
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 2
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E0C0000006E01000000
+  SourceCode: SetObjectiveCompleted AZBrushQuest02 12 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0F000000
+  SourceCode: SetStage AZBrushQuest02 15
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+Prompt: There's a problem. The Decanus banned Brush despite my best efforts.

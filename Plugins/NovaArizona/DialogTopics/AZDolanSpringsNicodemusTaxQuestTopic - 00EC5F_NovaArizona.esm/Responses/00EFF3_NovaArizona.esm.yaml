@@ -1,0 +1,54 @@
+FormKey: 00EFF3:NovaArizona.esm
+FormVersion: 15
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Absolutely not. I will not be paying a single denarius, cap or New Californian dollar to any cause, charity, church or charlatan.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's my 4 C's principle.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100723740
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100723740
+  SecondParameter: 5
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100723740
+  SecondParameter: 3
+Choices:
+- 00EC63:NovaArizona.esm
+- 00EC6A:NovaArizona.esm
+- 00EC6B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Nicodeumus, I have an official missive from...

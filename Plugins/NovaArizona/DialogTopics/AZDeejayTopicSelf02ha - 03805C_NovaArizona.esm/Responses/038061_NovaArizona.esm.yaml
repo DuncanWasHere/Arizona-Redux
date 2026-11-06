@@ -1,0 +1,38 @@
+FormKey: 038061:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 038060:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ugh.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 45
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 03805C:NovaArizona.esm
+- 03805D:NovaArizona.esm
+- 03805E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Have you tried deep breathing exercises?
+ActorValuePerk: 0004B5:FalloutNV.esm

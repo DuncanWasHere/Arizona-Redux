@@ -1,0 +1,72 @@
+FormKey: 01EE60:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 01EE5F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: '[FAILED] It is absolutely a problem. A legate dies in mysterious circumstances, and a member of the forsaken tribes comes here soon after?'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: No. This is clearly a test from Mars. Guards, execute the forsaken and Noctis! Spare the one with the Mark!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 95
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006EFF0000001C0001008B1002000000
+  SourceCode: >-
+    SetStage AZMalpaisAbuseQuest 255
+
+    AZMalpaisNoctisREF.killactor
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE07:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x781008000200720100720200781008000200720300720200
+  SourceCode: >-
+    SetEnemy AZMalpaisLegionFaction AZGregoryFaction
+
+    SetEnemy VCaesarsLegionFaction AZGregoryFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEAD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+Prompt: The legate's gone, so there shouldn't be a problem.
+ActorValuePerk: 0004BB:FalloutNV.esm

@@ -1,0 +1,78 @@
+FormKey: 0350F3:NovaArizona.esm
+EditorID: AZBrush
+FormVersion: 15
+ObjectBounds:
+  First: 0, 0, -3
+  Second: 0, 0, 3
+Name:
+  TargetLanguage: English
+  Value: Brush
+Model:
+  File: AZNovaArizona\Clutter\Chems\AZBrushBlunt.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_coyote_tobacco.dds
+EquipmentType: Chems
+Weight: 0.01
+Value: 1
+Flags:
+- NoAutoCalc
+- 0x100
+- 0x400
+- 0x800
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+- 0x80000000
+- 0x0
+AddictionChance: 0.1
+ConsumeSound: 08C77B:FalloutNV.esm
+Effects:
+- BaseEffect: 01515F:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Charisma
+- BaseEffect: 167480:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Agility
+- BaseEffect: 00014F:FalloutNV.esm
+  Data:
+    Magnitude: 30
+    Duration: 108000
+    ActorValue: None
+- BaseEffect: 162C8D:FalloutNV.esm
+  Data:
+    Magnitude: 80
+    ActorValue: SleepDeprivation
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 16747F:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Intelligence
+- BaseEffect: 015162:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 240
+    ActorValue: Luck
+- BaseEffect: 162BCD:FalloutNV.esm
+  Data:
+    Magnitude: 80
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586

@@ -1,0 +1,66 @@
+FormKey: 00513F:NovaArizona.esm
+FormVersion: 15
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7570
+    UseEmotionAnimation: True
+    Unused3: 0x656D6F
+  ResponseText: Every tribe from Arizona that you see in the Legion fought them at some point. Every Legionary fears them and rightly so.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7570
+    UseEmotionAnimation: True
+    Unused3: 0x656D6F
+  ResponseText: The most devoted Legionaries believe that they are Mars' fallen angels. Others believe that they are evil spirits from before the Great War.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F7570
+    UseEmotionAnimation: True
+    Unused3: 0x656D6F
+  ResponseText: The younger Legionaries view them as no different than the common NCR dregs. They are fools and will have to educated accordingly.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F7570
+    UseEmotionAnimation: True
+    Unused3: 0x656D6F
+  ResponseText: I confess that I have no desire to fight them again. I am not sure we will win, especially since they have stirred the NCR against us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: We must drill intensively and continuously to defeat these demons.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 0050A0:NovaArizona.esm
+- 0051A1:NovaArizona.esm
+- 0051A6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How do your Legionaries feel about the Rangers?

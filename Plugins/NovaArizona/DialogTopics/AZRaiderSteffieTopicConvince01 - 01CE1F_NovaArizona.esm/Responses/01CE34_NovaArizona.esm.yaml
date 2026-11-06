@@ -1,0 +1,40 @@
+FormKey: 01CE34:NovaArizona.esm
+FormVersion: 15
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: 01CE33:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Fuck yourself.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100719760
+Choices:
+- 01CE1A:NovaArizona.esm
+- 01CE1B:NovaArizona.esm
+- 01CE1C:NovaArizona.esm
+- 01CE1D:NovaArizona.esm
+- 01CE1E:NovaArizona.esm
+- 01CE24:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I actually knew her quite intimately and she would hate to see that you're a deadbeat thug now.
+ActorValuePerk: 0004BB:FalloutNV.esm

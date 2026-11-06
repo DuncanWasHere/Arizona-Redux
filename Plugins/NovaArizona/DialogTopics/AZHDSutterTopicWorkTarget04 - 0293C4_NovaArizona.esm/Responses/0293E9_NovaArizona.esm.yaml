@@ -1,0 +1,59 @@
+FormKey: 0293E9:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: 0293E8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It sounds to me like you already got him. Good work.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Now there's thousands of men itching to die killing for their martyred king, and Lanius is coming to lead the charge.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Seems like you owe it to us to clean up the mess you made. Besides, these guys should be easy marks compared to the head honcho.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetGlobalValue
+  FirstParameter: 1198877
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293C1:NovaArizona.esm
+- 0293C2:NovaArizona.esm
+- 0293C3:NovaArizona.esm
+- 0293C4:NovaArizona.esm
+- 0293C5:NovaArizona.esm
+- 0293C6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What about Caesar?

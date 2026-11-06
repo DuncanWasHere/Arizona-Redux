@@ -1,0 +1,68 @@
+FormKey: 016193:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D2063
+    UseEmotionAnimation: True
+    Unused3: 0x6E6C75
+  ResponseText: Mr. Jordano gave me the job after I came to him with my sob story.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: I walked up to his desk, hat in hand, with this big ol' tale about how the Republic screwed me over.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: "\"Government seized all my assets.\" \"No work anymore, it's all going to the big guys\" -- You know the deal."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: Mr. J accused me of plagiarism at first. He said I stole their story.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: We started talking, and it turns out the NCR screws over a lot of people.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 01615C:NovaArizona.esm
+- 016175:NovaArizona.esm
+- 01617E:NovaArizona.esm
+- 01617F:NovaArizona.esm
+- 016180:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How'd you end up working here?

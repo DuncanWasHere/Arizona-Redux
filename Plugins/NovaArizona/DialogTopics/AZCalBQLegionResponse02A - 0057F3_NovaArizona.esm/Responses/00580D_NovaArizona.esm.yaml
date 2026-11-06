@@ -1,0 +1,45 @@
+FormKey: 00580D:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x2E2041
+  ResponseText: You're not wrong.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 40
+    ResponseNumber: 2
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x2E2041
+  ResponseText: You got a reason you're reaming me out here?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F07:NovaArizona.esm
+- 0052BC:NovaArizona.esm
+- 0052C5:NovaArizona.esm
+- 0052C7:NovaArizona.esm
+- 0052CC:NovaArizona.esm
+- 0052CF:NovaArizona.esm
+- 0052D5:NovaArizona.esm
+- 0052D9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You live a pretty sad life.

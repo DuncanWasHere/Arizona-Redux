@@ -1,0 +1,41 @@
+FormKey: 01B7D4:NovaArizona.esm
+EditorID: AZChlorideAristophontesHousePackage
+FormVersion: 15
+GeneralFlags:
+- ContinueIfPcNear
+- SkipFalloutBehavior
+Unused: 105
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoConversation
+Unused2: 15677
+Location:
+  Location:
+    MutagenObjectType: PackageLocationCell
+    Cell: 01C873:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 18
+Duration: 12
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

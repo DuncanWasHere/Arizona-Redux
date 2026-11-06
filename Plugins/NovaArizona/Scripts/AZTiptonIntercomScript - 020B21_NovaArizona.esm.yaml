@@ -1,0 +1,30 @@
+FormKey: 020B21:NovaArizona.esm
+EditorID: AZTiptonIntercomScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000800020063000000000080161A0002120058000069100B000100FFFF050052010007004C8400000080161A000212005202007800000510040000002842000607004C80000000711109000100FFFF05005203000D1002000000811608000107004C840000001E00000011000000
+  SourceCode: >-
+    name AZTiptonIntercomScript;
+
+
+    OnActivate {
+        if (IsActionRef(Player)) {
+            if (AZMountTiptonDoorREF.GetLocked() > 0) {
+                SetTalkingActivatorActor(AZMountTiptonCaveClarkREF);
+                Activate();
+            } else {
+                return;
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01DF52:NovaArizona.esm

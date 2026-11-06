@@ -1,0 +1,57 @@
+FormKey: 0089E7:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, no. I'm from Nevada.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I came here to trade with some of the local caravans. By the time I got here, the local caravans had all pulled out and the NCR had gone home.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ah, well, water off a gecko's back. The Legion aren't so bad, as far as customers go.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742750
+Choices:
+- 024E46:NovaArizona.esm
+- 0089D9:NovaArizona.esm
+- 01DCEE:FalloutNV.esm
+- 0089DD:NovaArizona.esm
+- 0089D4:NovaArizona.esm
+- 0089D1:NovaArizona.esm
+- 0089D2:NovaArizona.esm
+- 0089D3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you from around here?

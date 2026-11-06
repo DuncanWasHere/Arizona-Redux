@@ -1,0 +1,37 @@
+FormKey: 039FA5:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 039FA4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I do not have the resources to treat that. Just outright. Don't ask.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100876902
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 0.33
+  Function: GetHealthPercentage
+  RunOnType: Target
+Choices:
+- 0B7615:FalloutNV.esm
+- 0963C4:FalloutNV.esm
+- 01DCEE:FalloutNV.esm
+- 0BE414:FalloutNV.esm
+- 039F75:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm hurt. I need help.

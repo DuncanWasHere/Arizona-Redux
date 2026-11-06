@@ -1,0 +1,52 @@
+FormKey: 00BF86:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: That's right.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But the deck was stacked against us. We had no chance against that giant.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Luckily the Legion'll make sure there's lots of room for a... "Company Expansion" pretty soon.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF17:NovaArizona.esm
+- 00BF48:NovaArizona.esm
+- 00BF5E:NovaArizona.esm
+- 00BF6A:NovaArizona.esm
+- 00BF6C:NovaArizona.esm
+- 00BF1B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You were competing with the Crimson Caravan Company?

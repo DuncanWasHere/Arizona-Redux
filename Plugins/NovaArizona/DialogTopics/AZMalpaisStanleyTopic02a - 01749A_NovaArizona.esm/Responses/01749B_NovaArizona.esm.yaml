@@ -1,0 +1,57 @@
+FormKey: 01749B:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They're a highly militarized society organized around some core ideals that may seem strange to you or me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Every individual seems to regard himself as a tool. They are for Caesar to wield in his construction of a new world.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: To this end, they don't care if they're injured, or even if they die. Sometimes, I'm not even convinced they were ever human.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They don't really have citizens, either. Not like the NCR. If you're not a soldier or a slave, you're a subject, and the Legion can order you around as they see fit.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 01749A:NovaArizona.esm
+- 01749C:NovaArizona.esm
+- 01F4AE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What can you tell me about the Legion?

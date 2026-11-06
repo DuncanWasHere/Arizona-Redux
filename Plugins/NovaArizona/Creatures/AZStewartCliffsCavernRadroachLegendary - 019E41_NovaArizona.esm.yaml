@@ -1,0 +1,92 @@
+FormKey: 019E41:NovaArizona.esm
+EditorID: AZStewartCliffsCavernRadroachLegendary
+FormVersion: 15
+ObjectBounds:
+  First: -16, -37, 0
+  Second: 16, 37, 27
+Name: Legendary Radroach
+Model:
+  File: Creatures\Radroach\skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- roach.nif
+ModelListTextures: 0x0100000008E8E30872E636A7AF68630872EB36A7AF68631B74479D0F39EEDF0A722BCF53F96E5F0A7230CF53F968631B74479D0F39F3DF0A722BCF53F9735F0A7230CF53F968631B74479D0F39E5DF0B73621E25AD655F0B73671E25AD73741074B3E1C96DEDDF0A722BCF53F96D5F0A7230CF53F968631B74479D0F39F4E30D6D36DF99A274630D6D3BDF99A265720D74387A3871EEDF0F6D874FD7746E5F0F6D8C4FD77465720D74387A3871F3DF0F6D874FD774735F0F6D8C4FD77465720D74387A3871
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 80
+  Level: 20
+  SpeedMultiplier: 110
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021478:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 09C959:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Items:
+- Item:
+    Item: 02FE02:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 02FE02:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0B7E7A:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 137B9E:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A5FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A5FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 168A6C:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 90
+  Responsibility: 50
+  Mood: 1057544960
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 55
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 400
+  Damage: 8
+  Strength: 6
+  Perception: 5
+  Endurance: 7
+  Charisma: 1
+  Intelligence: 2
+  Agility: 6
+  Luck: 1
+AttackReach: 64
+CombatStyle: 03A382:FalloutNV.esm
+BodyPartData: 014ACF:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 5
+FootWeight: 1
+ImpactMaterialType: OrganicBug
+SoundLevel: Normal
+InheritsSoundFrom: 03AEF7:FalloutNV.esm

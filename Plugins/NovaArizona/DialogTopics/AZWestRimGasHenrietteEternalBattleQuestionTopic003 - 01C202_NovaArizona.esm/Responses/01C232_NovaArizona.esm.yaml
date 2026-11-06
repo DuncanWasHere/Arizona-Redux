@@ -1,0 +1,37 @@
+FormKey: 01C232:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes. If you are devoted to Mars and Caesar, you will see this blessing for what it is. Otherwise, you will not receive it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100730123
+  SecondParameter: 6
+Choices:
+- 01C200:NovaArizona.esm
+- 01C201:NovaArizona.esm
+- 01C202:NovaArizona.esm
+- 01C203:NovaArizona.esm
+- 01C204:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So you just keep fighting the same enemies over and over again in slightly different places?

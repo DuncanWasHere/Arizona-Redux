@@ -1,0 +1,44 @@
+FormKey: 00D043:NovaArizona.esm
+EditorID: AZElephantHillFatEyeSitPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+Flags:
+  MutagenObjectType: PackageUseItemAt
+  Flags:
+  - 0x2
+Unused2: 16256
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 009E54:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 009E54:NovaArizona.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+IsUseItem: True
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

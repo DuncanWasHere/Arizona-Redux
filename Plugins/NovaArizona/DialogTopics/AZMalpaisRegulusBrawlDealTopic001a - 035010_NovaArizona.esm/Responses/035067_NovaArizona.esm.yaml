@@ -1,0 +1,81 @@
+FormKey: 035067:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Whisper}Thank you.'
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 0C0171:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 9
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560105000E0042010039150C00010B005601050015004203001C0001007F110A0002007206006E010000001C0001007F110A0002007207006E010000001C0001007F110A0002007208006E010000001C000200AD100F0003007201006E010000006E010000001C000300AD100F0003007204006E010000006E010000006010020000001C0001003731040001004C001C0004003731040001004C001C0001005E1000001C0001008A110A0002007204006E040000001C00040002100A0002007209006E08000000
+  SourceCode: >-
+    AZMalpaisSniperQuest.bDealWithRegulus = 1
+
+    AZMalpaisSniperQuest.iBrawlStage = 3
+
+    AZMalpaisRegulusREF.AddToFaction VCaesarsLegionFaction 1
+
+    AZMalpaisRegulusREF.AddToFaction ArmorVCaesarsLegionFaction 1
+
+    AZMalpaisRegulusREF.AddToFaction AZMalpaisLegionFaction 1
+
+    AZMalpaisBrawlStorageContainerRegulusREF.RemoveAllItems AZMalpaisRegulusREF 1 1
+
+    AZMalpaisBrawlStorageContainerPlayerREF.RemoveAllItems PlayerREF 1 1
+
+    EnablePlayerControls
+
+    AZMalpaisRegulusREF.UnSetAV DamageThreshold
+
+    PlayerREF.UnSetAV DamageThreshold
+
+    AZMalpaisRegulusREF.EVP
+
+    AZMalpaisRegulusREF.PushActorAway PlayerREF 4
+
+
+    PlayerREF.AddItem MoneyLegion1 8
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034F35:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 035074:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 035075:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+Prompt: <Let Regulus win.> Fine. You have a deal.

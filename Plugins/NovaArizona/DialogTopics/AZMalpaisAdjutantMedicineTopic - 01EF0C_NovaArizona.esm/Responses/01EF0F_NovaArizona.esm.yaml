@@ -1,0 +1,39 @@
+FormKey: 01EF0F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: 01EF0E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8F0005
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Caesar knows everything about everyone. Yes, he is aware.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 17
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 1187823
+Choices:
+- 01EF0C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does Caesar know?

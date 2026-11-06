@@ -1,0 +1,43 @@
+FormKey: 020EB9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020F0D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's been 15 years. Different war, different administration. Nobody cares anymore.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 0207FA:NovaArizona.esm
+- 0207FD:NovaArizona.esm
+- 020802:NovaArizona.esm
+- 020A05:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E030000006E01000000
+  SourceCode: setobjectivedisplayed AZGOMAssassinationQuest 3 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+Prompt: You aren't worried the NCR will come after you for deserting?

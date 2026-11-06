@@ -1,0 +1,41 @@
+FormKey: 008F99:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: It was easy. The river makes this position impossible to reinforce from the west. When we attacked, the men here were stranded on our side of the Colorado.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: Some threw themselves into the water. We shot them as they fled. The rest stayed and fought. They were braver, but they didn't last long.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688606
+Choices:
+- 008F95:NovaArizona.esm
+- 008F9B:NovaArizona.esm
+- 008F9F:NovaArizona.esm
+- 008FA4:NovaArizona.esm
+- 008FA6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How did you take Camp Willow?

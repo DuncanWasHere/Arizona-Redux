@@ -1,0 +1,45 @@
+FormKey: 00EBAF:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 00EC02:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: How many?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100852413
+  RunOnType: Target
+Choices:
+- 00EBB0:NovaArizona.esm
+- 00EBB2:NovaArizona.esm
+- 00EBB3:NovaArizona.esm
+- 00EBB4:NovaArizona.esm
+- 00EBB5:NovaArizona.esm
+- 00EBBC:NovaArizona.esm
+- 00EBC1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have pearls to turn in.

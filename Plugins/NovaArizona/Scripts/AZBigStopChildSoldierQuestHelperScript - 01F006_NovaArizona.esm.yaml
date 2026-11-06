@@ -1,0 +1,133 @@
+FormKey: 01F006:NovaArizona.esm
+EditorID: AZBigStopChildSoldierQuestHelperScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967277
+    RefCount: 19
+    VariableCount: 2
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000F7040000801611000209005601000001001507004C170100003A151D00011C005201007800007F1111000200FFFF0500520200FFFF04004201283A151D00011C005203007800007F1111000200FFFF0500520200FFFF04004201283A151D00011C005204007800007F1111000200FFFF0500520200FFFF04004201283A15170001160052050078000097100B000100FFFF0500520600283A15170001160052010078000097100B000100FFFF0500520700283A15170001160052030078000097100B000100FFFF0500520800283A15170001160052040078000097100B000100FFFF05005209002839150C00010B0056010000010042010080161300020B0056010A000C0042010407004CE9010000801611000209005601000002001507004CDD010000801641000239005205007800002E1004000000285201007800002E100400000028025203007800002E100400000028025204007800002E1004000000280207004CDD010000A21115000300FFFF0500520A00FFFF0400423CFFFF04004201A31115000300FFFF0500520A00FFFF04004246FFFF0400420139100F000200FFFF0500520A00FFFF0400425039150C00010B00560100000200420100811608000107004C1605000080161300020B0056010A000C0042020407004C7F0400003A151700011600520B0078000080110B000100FFFF0500520C00283A151700011600520B0078000080110B000100FFFF0500520D00283A151700011600520E0078000080110B000100FFFF0500520C00283A151700011600520E0078000080110B000100FFFF0500520D00283A151700011600520F0078000080110B000100FFFF0500520C00283A151700011600520F0078000080110B000100FFFF0500520D00283A15170001160052100078000080110B000100FFFF0500520C00283A15170001160052100078000080110B000100FFFF0500520D00283A151800011700520B007800000F100C0002000100FFFF04004204283A151800011700520E007800000F100C0002000100FFFF04004204283A151800011700520F007800000F100C0002000100FFFF04004204283A1518000117005210007800000F100C0002000100FFFF04004204283A151600011500520B0078000073120A000100FFFF04004201283A151600011500520E0078000073120A000100FFFF04004201283A151600011500520F0078000073120A000100FFFF04004201283A15160001150052100078000073120A000100FFFF0400420128781010000200FFFF0500521100FFFF0500520200801611000209005601000002001507004C73040000801641000239005205007800002E1004000000285201007800002E100400000028025203007800002E100400000028025204007800002E1004000000280207004C73040000A21115000300FFFF0500520A00FFFF0400423CFFFF04004201A31115000300FFFF0500520A00FFFF04004246FFFF0400420139100F000200FFFF0500520A00FFFF0400425039150C00010B00560100000200420100811608000107004C1605000080161300020B0056010A000C0042030407004C16050000791010000200FFFF0500521200FFFF05005202003A15170001160052050078000097100B000100FFFF0500521300283A15170001160052010078000097100B000100FFFF0500521300283A15170001160052030078000097100B000100FFFF0500521300283A15170001160052040078000097100B000100FFFF05005213002811000000
+  SourceCode: >-
+    name AZBigStopChildSoldierQuestHelperScript;
+
+
+    int DoOnce;
+
+    int DoOnce2;
+
+
+    GameMode {
+        if (!DoOnce) {
+            AZJawRipperFollower01REF.AddToFaction(AZJawRipperFaction, 1);
+            AZJawRipperFollower02REF.AddToFaction(AZJawRipperFaction, 1);
+            AZJawRipperFollower03REF.AddToFaction(AZJawRipperFaction, 1);
+
+            AZJawRipperREF.AddScriptPackage(AZJawRipperAmbushPackage01);
+            AZJawRipperFollower01REF.AddScriptPackage(AZTempleBarAmbushPackage01);
+            AZJawRipperFollower02REF.AddScriptPackage(AZTempleBarAmbushPackage02);
+            AZJawRipperFollower03REF.AddScriptPackage(AZTempleBarAmbushPackage03);
+
+            DoOnce = 1;
+        }
+
+        if (AZBigStopChildSoldierQuest.TempleBarConfrontation == 1) {
+            if (!DoOnce2) {
+                if (AZJawRipperREF.GetDead() && AZJawRipperFollower01REF.GetDead() && AZJawRipperFollower02REF.GetDead() && AZJawRipperFollower03REF.GetDead()) {
+                    SetObjectiveCompleted(AZBigStopChildSoldierQuest, 60, 1);
+                    SetObjectiveDisplayed(AZBigStopChildSoldierQuest, 70, 1);
+                    SetStage(AZBigStopChildSoldierQuest, 80);
+                    DoOnce2 = 1;
+                }
+            }
+        } else if (AZBigStopChildSoldierQuest.TempleBarConfrontation == 2) {
+            AZBigStopLegionExecutioner01Ref.RemoveFromFaction(TheFortChildFaction);
+            AZBigStopLegionExecutioner01Ref.RemoveFromFaction(ArmorVCaesarsLegionFaction);
+            AZBigStopLegionExecutioner02Ref.RemoveFromFaction(TheFortChildFaction);
+            AZBigStopLegionExecutioner02Ref.RemoveFromFaction(ArmorVCaesarsLegionFaction);
+            AZBigStopLegionExecutioner03Ref.RemoveFromFaction(TheFortChildFaction);
+            AZBigStopLegionExecutioner03Ref.RemoveFromFaction(ArmorVCaesarsLegionFaction);
+            AZBigStopLegionExecutioner04Ref.RemoveFromFaction(TheFortChildFaction);
+            AZBigStopLegionExecutioner04Ref.RemoveFromFaction(ArmorVCaesarsLegionFaction);
+
+            AZBigStopLegionExecutioner01Ref.SetAv(Confidence, 4);
+            AZBigStopLegionExecutioner02Ref.SetAv(Confidence, 4);
+            AZBigStopLegionExecutioner03Ref.SetAv(Confidence, 4);
+            AZBigStopLegionExecutioner04Ref.SetAv(Confidence, 4);
+
+            AZBigStopLegionExecutioner01Ref.SetActorRefEssential(1);
+            AZBigStopLegionExecutioner02Ref.SetActorRefEssential(1);
+            AZBigStopLegionExecutioner03Ref.SetActorRefEssential(1);
+            AZBigStopLegionExecutioner04Ref.SetActorRefEssential(1);
+
+            SetEnemy(AZBigStopExecutionFaction, AZJawRipperFaction);
+
+            if (!DoOnce2) {
+                if (AZJawRipperREF.GetDead() && AZJawRipperFollower01REF.GetDead() && AZJawRipperFollower02REF.GetDead() && AZJawRipperFollower03REF.GetDead()) {
+                    SetObjectiveCompleted(AZBigStopChildSoldierQuest, 60, 1);
+                    SetObjectiveDisplayed(AZBigStopChildSoldierQuest, 70, 1);
+                    SetStage(AZBigStopChildSoldierQuest, 80);
+                    DoOnce2 = 1;
+                }
+            }
+        } else if (AZBigStopChildSoldierQuest.TempleBarConfrontation == 3) {
+            SetAlly(PlayerFaction, AZJawRipperFaction);
+            AZJawRipperREF.AddScriptPackage(AZJawRipperFactionLeavePackage);
+            AZJawRipperFollower01REF.AddScriptPackage(AZJawRipperFactionLeavePackage);
+            AZJawRipperFollower02REF.AddScriptPackage(AZJawRipperFactionLeavePackage);
+            AZJawRipperFollower03REF.AddScriptPackage(AZJawRipperFactionLeavePackage);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce2
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F005:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EFF8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F004:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F007:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01A658:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F00F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F00C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F00D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F00E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008F22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134420:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008F86:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008FB9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008FBA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F018:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F02B:NovaArizona.esm

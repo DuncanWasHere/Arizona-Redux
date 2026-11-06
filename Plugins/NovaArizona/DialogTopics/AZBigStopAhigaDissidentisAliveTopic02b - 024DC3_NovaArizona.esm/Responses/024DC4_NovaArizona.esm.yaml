@@ -1,0 +1,29 @@
+FormKey: 024DC4:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: You have ruined everything, and you're going to make it right. If the timetable needs to be advanced, then you're going to help advance it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024DC2:NovaArizona.esm
+- 010038:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: My work here is done.

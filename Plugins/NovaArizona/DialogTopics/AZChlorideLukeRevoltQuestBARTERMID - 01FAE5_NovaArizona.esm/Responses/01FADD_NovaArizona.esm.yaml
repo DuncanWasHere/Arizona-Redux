@@ -1,0 +1,45 @@
+FormKey: 01FADD:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: I get it. You don't want to be holding the bag.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: Fair enough, fair enough. 80/20.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 90
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+Choices:
+- 01FAE1:NovaArizona.esm
+- 01FAE6:NovaArizona.esm
+- 00C9A3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have no reason to invest in his business. I don't even live here

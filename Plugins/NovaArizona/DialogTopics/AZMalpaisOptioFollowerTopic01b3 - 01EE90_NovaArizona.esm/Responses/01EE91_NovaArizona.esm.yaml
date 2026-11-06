@@ -1,0 +1,56 @@
+FormKey: 01EE91:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x43466F
+  ResponseText: Then, why did you lie? Guards, execute the forsaken.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006EFF0000001C000100221002000000
+  SourceCode: >-
+    SetStage AZMalpaisAbuseQuest 255
+
+    AZMalpaisNoctisREF.disable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE07:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x781008000200720100720200781008000200720300720200
+  SourceCode: >-
+    SetEnemy AZMalpaisLegionFaction AZGregoryFaction
+
+    SetEnemy VCaesarsLegionFaction AZGregoryFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEAD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+Prompt: Yes, I do.

@@ -1,0 +1,53 @@
+FormKey: 019995:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01998E:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah, I noticed. Here's your reward.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768140
+- Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetStage
+  FirstParameter: 100768142
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100723740
+  SecondParameter: 34
+Choices:
+- 00ECA6:NovaArizona.esm
+- 019991:NovaArizona.esm
+- 019992:NovaArizona.esm
+- 019993:NovaArizona.esm
+- 019994:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E64000000
+  SourceCode: SetStage AZGreenwayWindFarmQuest 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01998E:NovaArizona.esm
+Prompt: I've finished that job.

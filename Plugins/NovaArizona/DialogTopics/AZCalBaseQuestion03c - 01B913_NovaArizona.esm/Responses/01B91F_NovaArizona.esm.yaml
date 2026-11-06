@@ -1,0 +1,55 @@
+FormKey: 01B91F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: 01B921:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x776179
+  ResponseText: Watch out for scavengers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x776179
+  ResponseText: In these parts, people get territorial looking for scraps.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x732C20
+    UseEmotionAnimation: True
+    Unused3: 0x652067
+  ResponseText: The Legion don't care if they shoot you on-site. "Survival of the fittest."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F07:NovaArizona.esm
+- 0052BC:NovaArizona.esm
+- 0052C5:NovaArizona.esm
+- 0052C7:NovaArizona.esm
+- 0052CC:NovaArizona.esm
+- 0052CF:NovaArizona.esm
+- 0052D5:NovaArizona.esm
+- 0052D9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

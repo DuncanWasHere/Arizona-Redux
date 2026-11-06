@@ -1,0 +1,70 @@
+FormKey: 0101AC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legion territory. To the southwest of here. Before this war, I used to trade from there to Redding.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Last time I was able to get to the Mojave Post was a month ago. Now? I can't even make it past the dam.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's a load of crap. Everyone here knows me. I've been trading with Legion and NCR for years. I've been nothing but good, and now I'm treated like a damn thug.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetMapMarkerVisible
+  RunOnType: Reference
+  Reference: 00754F:NovaArizona.esm
+Choices:
+- 0101AE:NovaArizona.esm
+- 0101B0:NovaArizona.esm
+- 0101B2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x551005000100720100
+  SourceCode: ShowMap AZDolanSpringsMarkerREF
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00754F:NovaArizona.esm
+Prompt: Dolan Springs? Where's that?

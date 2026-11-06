@@ -1,0 +1,35 @@
+FormKey: 004E67:NovaArizona.esm
+FormVersion: 15
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No. Malpais is far from the frontlines. The only trades we shot are between NCR snipers from Camp Forlorn Hope.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetGlobalValue
+  FirstParameter: 1210671
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 004DF5:NovaArizona.esm
+- 004E4F:NovaArizona.esm
+- 004E57:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does Malpais see much combat?

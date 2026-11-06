@@ -1,0 +1,49 @@
+FormKey: 037FE1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The shit the Omertas do to their girls isn't even slavery. It's worse.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Keeping them all hopped up on chems so that they can't think straight, so that they'd die if they miss a dose - it's evil.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037F9F:NovaArizona.esm
+- 037FA0:NovaArizona.esm
+- 037FA1:NovaArizona.esm
+- 037FA2:NovaArizona.esm
+- 037FA4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000A0042011C
+  SourceCode: AZDeejayQuest.bTrust += 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E6B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1

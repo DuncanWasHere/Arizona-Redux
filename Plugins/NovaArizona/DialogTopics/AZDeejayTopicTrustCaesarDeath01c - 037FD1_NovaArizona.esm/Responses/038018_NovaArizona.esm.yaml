@@ -1,0 +1,35 @@
+FormKey: 038018:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{just now realizing how powerful and fickle the player is, kind of attracted to it}You're crazy."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FC6:NovaArizona.esm
+- 037FC7:NovaArizona.esm
+- 037FC8:NovaArizona.esm
+- 037FC9:NovaArizona.esm
+- 037FCA:NovaArizona.esm
+- 037FCB:NovaArizona.esm
+- 037FCC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Caesar pissed me off.

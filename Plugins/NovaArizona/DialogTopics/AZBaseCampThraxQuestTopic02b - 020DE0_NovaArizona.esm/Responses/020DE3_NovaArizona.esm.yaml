@@ -1,0 +1,39 @@
+FormKey: 020DE3:NovaArizona.esm
+FormVersion: 15
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x07A12B
+    UseEmotionAnimation: True
+    Unused3: 0x7FA12B
+  ResponseText: You think so? Logistics is the work of the elderly, the crippled, the weak.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x67A12B
+    UseEmotionAnimation: True
+    Unused3: 0x62A12B
+  ResponseText: Fighting is the work of the young, and children make such good soldiers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+Choices:
+- 024DA1:NovaArizona.esm
+- 024DA2:NovaArizona.esm
+- 020DE1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You and I both understand that children are more suited to logistics than fighting.

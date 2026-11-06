@@ -1,0 +1,47 @@
+FormKey: 0E2C6E:FalloutNV.esm
+EditorID: AntivenomEffectSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967287
+    RefCount: 10
+    Type: MagicEffect
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000600110088000000421109000100FFFF0500520100421109000100FFFF0500520200421109000100FFFF0500520300421109000100FFFF0500520400421109000100FFFF0500520500421109000100FFFF0500520600421109000100FFFF0500520700421109000100FFFF0500520800421109000100FFFF050052090059100B000100720A0000000000000011000000
+  SourceCode: >-
+    name AntivenomEffectSCRIPT;
+
+
+    ScriptEffectStart {
+    	Dispel(BarkScorpionPoison);
+    	Dispel(CazadorPoison);
+    	Dispel(DeathClawPoison);
+    	Dispel(DLC03FeralGhoulPoison);
+    	Dispel(DLC03RadScorpion3Poison);
+    	Dispel(NightstalkerPoison);
+    	Dispel(RadScorpion1Poison);
+    	Dispel(RadScorpion2Poison);
+    	Dispel(AZActorEffectGilaMonsterVenom);
+    	ShowMessage(PoisonRemovalMsg);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EB402:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 12A22E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 06B20E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0E29D1:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0E29CD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 147D25:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 04D843:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 04D844:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 005A4E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16198E:FalloutNV.esm

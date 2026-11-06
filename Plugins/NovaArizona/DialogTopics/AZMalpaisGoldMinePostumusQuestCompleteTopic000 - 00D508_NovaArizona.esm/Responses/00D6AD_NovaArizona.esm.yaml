@@ -1,0 +1,73 @@
+FormKey: 00D6AD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D474:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes, heard the blast loud and clear. Can't thank you enough, stranger.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll let Castulus know and start burying the dead outside.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Feel free to take whatever you want from the storehouse. No one will be missing it now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100710244
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100717684
+  SecondParameter: 12
+Choices:
+- 00D4B9:NovaArizona.esm
+- 00D4B3:NovaArizona.esm
+- 00D4B4:NovaArizona.esm
+- 00D4B5:NovaArizona.esm
+- 00D4B6:NovaArizona.esm
+- 00D4B7:NovaArizona.esm
+- 00D4B8:NovaArizona.esm
+- 00D4BB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1600100001000C00207201007301002031203D3D39150C00010B0056010100010042020019000000
+  SourceCode: >-
+    if AZFreeformMalpaisGoldMine.iHelpingPostumus == 1
+        AZFreeformMalpaisGoldMine.iHelpingPostumus = 2
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D474:NovaArizona.esm
+Prompt: The way through the back door is clear now.

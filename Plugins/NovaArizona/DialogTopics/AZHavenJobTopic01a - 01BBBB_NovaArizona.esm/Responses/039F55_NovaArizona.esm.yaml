@@ -1,0 +1,43 @@
+FormKey: 039F55:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: 039F52:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4ED125
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Here, take these ant pheromones. They should help you stay safe.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657365
+    UseEmotionAnimation: True
+    Unused3: 0x706865
+  ResponseText: Please, whatever you find down there will bring peace of mind to the people here. Go with whatever god you believe in.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+Choices:
+- 01BBBB:NovaArizona.esm
+- 01BBBA:NovaArizona.esm
+- 01BBBE:NovaArizona.esm
+- 01BBC0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Wierzbowski is having me investigate the ant attacks.

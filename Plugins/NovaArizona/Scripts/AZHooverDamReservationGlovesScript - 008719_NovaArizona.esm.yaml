@@ -1,0 +1,43 @@
+FormKey: 008719:NovaArizona.esm
+EditorID: AZHooverDamReservationGlovesScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 7
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000D900000080161300020B0056010100010042000607004CF800000080161300020B0056010200030042010407004C650000003A151000010F005203007800002110040000002880161300020B0056010200030042020407004CF80000003A151000010F00520300780000211004000000283A151000010F00520400780000211004000000283A15180001170052050078000010100C0002002D00FFFF04004264283A15180001170052060078000010100C0002002D00FFFF04004264283A15180001170052070078000010100C0002002D00FFFF040042642811000000
+  SourceCode: >-
+    name AZHooverDamReservationGlovesScript;
+
+
+    GameMode {
+    	if (vHDBattleController.iBattleState > 0) {
+    		if (AZBaseCampReservationQuest.iGlovesBought == 1) {
+    			AZCenturionDisplacerGloveMarkerREF.Enable();
+    		}
+
+    		if (AZBaseCampReservationQuest.iGlovesBought == 2) {
+    			AZCenturionDisplacerGloveMarkerREF.Enable();
+    			AZHDCenturionDisplacerGlove04REF.Enable();
+    			AZHDCenturionDisplacerGlove01REF.ModAv(Unarmed, 100);
+    			AZHDCenturionDisplacerGlove02REF.ModAv(Unarmed, 100);
+    			AZHDCenturionDisplacerGlove03REF.ModAv(Unarmed, 100);
+    		}
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 133075:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00863E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008717:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008718:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0086F8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0086F9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0086FB:NovaArizona.esm

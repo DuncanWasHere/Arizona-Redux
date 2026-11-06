@@ -1,0 +1,31 @@
+FormKey: 01CE67:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And the aliens are these small black-eyed people?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100781638
+Choices:
+- 01CE51:NovaArizona.esm
+- 01CE52:NovaArizona.esm
+- 01CE53:NovaArizona.esm
+- 01CE54:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You have things confused. UFOs are the spaceships. Aliens are inside piloting.

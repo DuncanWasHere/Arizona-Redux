@@ -1,0 +1,30 @@
+FormKey: 01ED8C:NovaArizona.esm
+FormVersion: 15
+Quest: 01ED61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: I think so. I've got an appointment with one of our psychiatrists later this week to see if there's any lingering trauma.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789653
+Choices:
+- 01ED89:NovaArizona.esm
+- 01ED8B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you okay?

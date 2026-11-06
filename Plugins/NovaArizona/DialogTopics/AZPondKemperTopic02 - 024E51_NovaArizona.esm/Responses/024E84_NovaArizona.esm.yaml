@@ -1,0 +1,53 @@
+FormKey: 024E84:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: 024E83:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You see a guy in a redshirt, he used to be a raider for Julius.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Normally, the Legion would just kill us, but Julius has a tongue so silver that I swear I've seen it glint on the horizon.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legionaries don't really like dealing with merchants or being away from the frontlines in general, so they use us to maintain order. You know, to help the merchants feel safe.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708396
+Choices:
+- 024E4B:NovaArizona.esm
+- 021080:NovaArizona.esm
+- 024E50:NovaArizona.esm
+- 024E51:NovaArizona.esm
+- 024E52:NovaArizona.esm
+- 024E59:NovaArizona.esm
+- 024E5A:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the deputies.

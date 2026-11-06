@@ -1,0 +1,45 @@
+FormKey: 0209D5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x334F0B
+    UseEmotionAnimation: True
+    Unused3: 0x1C490B
+  ResponseText: Alright, pull up a seat by the fire over the there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073050002002031A2110F0003007201006E0F0000006E0100000039100A0002007202006E01000000
+  SourceCode: >-
+    Set AZBrushQuest01.BrushToke to 1
+
+    SetObjectiveCompleted AZBrushQuest01 15 1
+
+    SetStage AZBrushQuest01CampfireQuest 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020AF1:NovaArizona.esm
+Prompt: Sure, why not?

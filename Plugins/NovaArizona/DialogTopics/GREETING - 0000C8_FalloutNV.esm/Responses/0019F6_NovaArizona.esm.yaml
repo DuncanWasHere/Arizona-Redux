@@ -1,0 +1,31 @@
+FormKey: 0019F6:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: 0019F5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0x00803F
+  ResponseText: Fortification Hill is not far from here. Just a short ways up the road.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+- Fluff: 0x000000
+  Function: GetIsID
+  FirstParameter: 1226005
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

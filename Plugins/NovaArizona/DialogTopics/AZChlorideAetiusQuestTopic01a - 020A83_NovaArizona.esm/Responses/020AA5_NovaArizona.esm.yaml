@@ -1,0 +1,59 @@
+FormKey: 020AA5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 020AC3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: I never liked Quintus. The punk was never really loyal. Always questioned orders. Talked about how he wasn't sure if Caesar wanted this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: Now, we know that was a bold-faced lie. So, I'm fine with decriminalizing Brush.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100796571
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756656
+- Fluff: 0x000000
+  ComparisonValue: 36
+  Function: GetStage
+  FirstParameter: 100796571
+Choices:
+- 020A87:NovaArizona.esm
+- 020A28:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E28000000
+  SourceCode: SetStage AZBrushQuest02 40
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+Prompt: I'd like to speak to you about the Brush discussion you've been having.

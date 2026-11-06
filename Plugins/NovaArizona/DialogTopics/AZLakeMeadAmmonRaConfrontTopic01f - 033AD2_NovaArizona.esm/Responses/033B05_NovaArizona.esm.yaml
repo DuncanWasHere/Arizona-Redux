@@ -1,0 +1,54 @@
+FormKey: 033B05:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's on now!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1C00010080110500010072020016100500010072030078100800020072020072040015000A0072050073070002002031
+  SourceCode: >-
+    AZPirateTurretREF.RemoveFromFaction PlayerFaction
+
+    StartCombat player
+
+    SetEnemy PlayerFaction AZAmmonRaFaction
+
+    Set AZFreeformLakeMead.AmmonRaHostile to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EBA0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033ACC:NovaArizona.esm
+Prompt: <Attack.> Fuck this.

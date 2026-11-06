@@ -1,0 +1,59 @@
+FormKey: 0342AB:NovaArizona.esm
+EditorID: AZHavenWierzbowskiMovePackage01
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- AlwaysRun
+- WeaponDrawn
+Unused: 41
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 10272
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0342A9:NovaArizona.esm
+  Radius: 128
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 20
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 4
+      Enabled: 1
+    CompiledScript: 0x36100500010072030015000A00720400731400020020321C0001005E1000001C0002005E100000
+    SourceCode: >-
+      StartQuest AZHavenAntCheckerQuest
+
+      Set AZFreeformHaven.WierzbowskiMove to 2
+
+      AZHavenWierzbowskiREF.evp
+
+      AZHavenAhoteREF.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01BBA5:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024BB0:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0342B0:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01B980:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,89 @@
+FormKey: 01763C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 0175B8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If that's what you think. I'll print it, but that's it. After this, I'm done.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I feel like I'm cresting a hill. This is the Legion. I saw them in full, talked to the commanders, shook hands. I got what I wanted.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: It isn't sustainable. One day, the Legion will kill me. I can't stay here just because of some morbid fascination.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I guess I quit. I've got no more work for you. Good luck out there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 100758917
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E780000001C0001004F12050001007204001111070001006E01000000150013007203007306000B00207203007306002032202B15000A00720300731800020020311C00020002100A0002007205006E64000000
+  SourceCode: >-
+    setstage AZMalpaisJournalistQuest 120
+
+    AZStanleyHartfordREF.MovetoMarkerwithFade AZMalpaisRoadhouseXMarkerREF
+
+    EnableFastTravel 1
+
+
+    Set AZMalpaisJournalistQuest.bStanleyLegionApproval to AZMalpaisJournalistQuest.bStanleyLegionApproval + 2
+
+    set AZMalpaisJournalistQuest.bDominicusInterviewVeryPositive to 1
+
+
+    player.additem caps001 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006435:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: These people harbored enemy spies. Dominicus did the right thing.

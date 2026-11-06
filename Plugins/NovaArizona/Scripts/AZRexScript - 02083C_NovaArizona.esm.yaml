@@ -1,0 +1,68 @@
+FormKey: 02083C:NovaArizona.esm
+EditorID: AZRexScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 8
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000004D01000080162F00022700560100000100155201007800002E100400000028150252020078000023100400000028150207004C3D010000801618000210005202007800002E1004000000281507004C3101000080163500022D0052020078000021110400000028155203007800002E1004000000280252040078000021110400000028150207004C3101000080161F000217005204007800001B100B000100FFFF0500520200281507004C310100003A151000010F00520100780000211004000000283A1517000116005201007800009E100B000100FFFF0500520200283A151000010F005202007800002210040000002839150C00010B0056010500030042000039150C00010B00560100000100420100811608000107004C6C01000080161700020F005201007800002E10040000002807004C6C0100003A151000010F005202007800008B10040000002811000000100008000A0061000000000080162700021F005203007800002E100400000028155201007800002E100400000028150207004CBA01000039100F000200FFFF0500520600FFFF0400420539150C00010B00560107003F0042010059100B00010072080000000000000011000000
+  SourceCode: >-
+    name AZRexScript;
+
+
+    int DoOnce;
+
+
+    GameMode {
+        if (!DoOnce && !RexREF.GetDead() && !AZRexREF.GetDisabled()) {
+            if (!AZRexREF.GetDead()) {
+                if (!AZRexREF.IsInCombat() && FortCaesarREF.GetDead() && !Player.IsInCombat()) {
+                    if (!Player.GetLineOfSight(AZRexREF)) {
+                        RexREF.Enable();
+                        RexREF.MoveTo(AZRexREF);
+                        AZRexREF.Disable();
+                        AZVanillaDialogueQuest.RexReturnedToCaesar = 0;
+                        DoOnce = 1;
+                    }
+                }
+            }
+        } else if (RexREF.GetDead()) {
+            AZRexREF.Kill();
+        }
+    }
+
+
+    OnDeath {
+        if (!FortCaesarREF.GetDead() && !RexREF.GetDead()) {
+            SetStage(VMQCaesarFail, 5);
+        }
+
+        VNPCFollowers.bRexDead = 1;
+        ShowMessage(FollowerMessageDeadRex);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8DF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 121FF0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEA6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11EB4C:FalloutNV.esm

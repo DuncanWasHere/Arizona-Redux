@@ -1,0 +1,57 @@
+FormKey: 02D468:NovaArizona.esm
+EditorID: AZSwitchbladeUniqueScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B0017001C00000001007201001C0001001D10050001007202001500070073010002002030110000001000060000008D00000016000D0004000900207301002030203D3D16001700020013002072010058B610050001007203002031203D3D1C0001001C100500010072020015000700730100020020311900000017000200040016001700020013002072010058B610050001007203002030203D3D1C0001001D10050001007202001500070073010002002030190000001900000011000000
+  SourceCode: >-
+    scn AZSwitchbladeUniqueScript
+
+
+    ; This script controls the bonus Agility effect of the unique switchblade
+
+
+    Short bEquipped
+
+
+    BEGIN OnSell Player
+
+    	Player.RemoveSpell AZActorEffectSwitchbladeUnique
+    	Set bEquipped to 0
+
+    END
+
+
+
+    BEGIN GameMode
+
+    	If bEquipped == 0
+    		If (Player.GetEquipped AZWeapSwitchbladeUnique == 1)
+    			Player.AddSpell AZActorEffectSwitchbladeUnique
+    			Set bEquipped to 1
+    		EndIf
+    	Else
+    		If (Player.GetEquipped AZWeapSwitchbladeUnique == 0)
+    			Player.RemoveSpell AZActorEffectSwitchbladeUnique
+    			Set bEquipped to 0
+    		EndIf
+    	EndIf
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xE0DD29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x724D6573736167
+    Name: bEquipped
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02D467:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 023B54:NovaArizona.esm

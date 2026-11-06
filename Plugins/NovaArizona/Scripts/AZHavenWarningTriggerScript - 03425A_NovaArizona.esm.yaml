@@ -1,0 +1,49 @@
+FormKey: 03425A:NovaArizona.esm
+EditorID: AZHavenWarningTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00A6000000010072010080161D0002150058000038100B000100FFFF050052020042010407004CBE00000080161300020B0056010000010042000407004CA60000003A15170001160052030078000033100B000100FFFF0500520400283A15170001160052050078000033100B000100FFFF05005204002839150C00010B00560100000100420100221002000000BB1102000000811608000107004CCA000000221002000000BB110200000011000000
+  SourceCode: >-
+    name AZHavenWarningTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (GetQuestRunning(AZHavenIntroQuest) == 1) {
+            if (DoOnce == 0) {
+                AZHavenMurrayREF.Say(AZHavenMurrayWarningTopic);
+                AZHavenWarningTalkerREF.Say(AZHavenMurrayWarningTopic);
+                DoOnce = 1;
+            }
+            Disable();
+            MarkForDelete();
+        } else {
+            Disable();
+            MarkForDelete();
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341FF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03425B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03428B:NovaArizona.esm

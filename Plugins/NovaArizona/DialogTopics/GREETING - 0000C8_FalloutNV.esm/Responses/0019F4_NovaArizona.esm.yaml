@@ -1,0 +1,32 @@
+FormKey: 0019F4:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnceADay
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: 0019F3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E61
+  ResponseText: Save your strength for the road and your words for Caesar. We can talk more later.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+- Fluff: 0x000000
+  Function: GetIsID
+  FirstParameter: 1226005
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

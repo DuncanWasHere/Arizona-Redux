@@ -1,0 +1,60 @@
+FormKey: 035027:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 035026:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Go ahead, then. Kill me already!
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 010F57:HonestHearts.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 21
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 22
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 0.2
+  Function: GetHealthPercentage
+Choices:
+- 035012:NovaArizona.esm
+- 035013:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39150C00010B005601020016004200001C00010017100000
+  SourceCode: >-
+    AZMalpaisSniperQuest.bBrawlRoundOver = 0
+
+    AZMalpaisRegulusREF.StopCombat PlayerREF
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034F35:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm

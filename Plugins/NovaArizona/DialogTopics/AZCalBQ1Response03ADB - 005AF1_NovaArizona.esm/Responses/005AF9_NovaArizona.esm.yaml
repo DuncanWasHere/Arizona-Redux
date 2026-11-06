@@ -1,0 +1,44 @@
+FormKey: 005AF9:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x642074
+  ResponseText: Maybe not weak in the physical sense.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E7920
+    UseEmotionAnimation: True
+    Unused3: 0x686F77
+  ResponseText: They're weak in brains, that's for sure.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F07:NovaArizona.esm
+- 0052BC:NovaArizona.esm
+- 0052C5:NovaArizona.esm
+- 0052C7:NovaArizona.esm
+- 0052CC:NovaArizona.esm
+- 0052CF:NovaArizona.esm
+- 0052D5:NovaArizona.esm
+- 0052D9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you calling the Legion weak?

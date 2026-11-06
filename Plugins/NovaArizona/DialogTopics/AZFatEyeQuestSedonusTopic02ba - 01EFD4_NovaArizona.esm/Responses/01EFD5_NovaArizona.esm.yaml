@@ -1,0 +1,59 @@
+FormKey: 01EFD5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: Okay, then. 2,000 caps, and I'll make sure that Sedonus has his fix. Pleasure doing business with you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2000
+  Function: GetItemCount
+  FirstParameter: 15
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006ED0070000A2110F0003007203006E5A0000006E01000000A2110F0003007203006E5C0000006E01000000A3110F0003007203006E5B0000006E00000000A3110F0003007203006E5D0000006E00000000A3110F0003007203006E5E0000006E01000000
+  SourceCode: >-
+    Player.RemoveItem Caps001 2000
+
+    SetObjectiveCompleted AZMalpaisAbuserQuest 90 1
+
+    SetObjectiveCompleted AZMalpaisAbuserQuest 92 1
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 91 0
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 93 0
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 94 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+Prompt: 2,000 caps it is.

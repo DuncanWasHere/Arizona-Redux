@@ -1,0 +1,37 @@
+FormKey: 037DB9:NovaArizona.esm
+EditorID: AZRecklessAbandon
+FormVersion: 15
+Name: Reckless Abandon
+Description: While Deejay is a companion, you and your party members will take 50% less self-damage from explosives. Additionally, the player can craft Campfire items through Deejay's dialogue.
+Icons:
+  LargeIconFilename: nvdlc02\interface\icons\nvdlc02perk_fight_the_power.dds
+PerkData:
+  NumRanks: 1
+  IsPlayable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - Conditions:
+    - Fluff: 0x000000
+      Function: MenuMode
+      FirstParameter: 1
+  - RunOnTabIndex: 1
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: IsWeaponSkillType
+      FirstParameter: 35
+  - RunOnTabIndex: 2
+    Conditions:
+    - Flags:
+      - OR
+      Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetIsReference
+      FirstParameter: 20
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetPlayerTeammate
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 0.5

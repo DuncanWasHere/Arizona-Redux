@@ -1,0 +1,41 @@
+FormKey: 035751:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EDD2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Uh, no, that's not what I was talking about. That's highly inappropriate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+Choices:
+- 01EDD6:NovaArizona.esm
+- 01EDAC:NovaArizona.esm
+- 01EDAD:NovaArizona.esm
+- 01EDAE:NovaArizona.esm
+- 01EDAF:NovaArizona.esm
+- 01EDB0:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You said mammary-ists? Like boobies? Sick.
+ActorValuePerk: 0003EC:FalloutNV.esm

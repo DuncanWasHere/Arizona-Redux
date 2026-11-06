@@ -1,0 +1,53 @@
+FormKey: 0181AB:NovaArizona.esm
+EditorID: AZGladiusUniqueScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0017002F00000001007201003A1517000116005201007800001D100B000100FFFF05005202002839150C00010B0056010000010042000011000000100006000000C0000000801611000209005601000001001507004CCF00000080161E00021600520100780000B6100B000100FFFF05005203002807004CC30000003A1517000116005201007800001C100B000100FFFF05005202002839150C00010B00560100000100420100811608000107004C1D01000080161F00021700520100780000B6100B000100FFFF0500520300281507004C1D0100003A1517000116005201007800001D100B000100FFFF05005202002839150C00010B0056010000010042000011000000
+  SourceCode: >-
+    name AZGladiusUniqueScript;
+
+
+    // This script controls the bonus AP effect of the unique Gladius
+
+
+    int bEquipped;
+
+
+    OnSell::Player {
+        Player.RemoveSpell(AZActorEffectGladiusUnique);
+        bEquipped = 0;
+    }
+
+
+    GameMode {
+        if (!bEquipped) {
+            if (Player.GetEquipped(AZWeapGladiusUnique)) {
+                Player.AddSpell(AZActorEffectGladiusUnique);
+                bEquipped = 1;
+            }
+        } else {
+            if (!Player.GetEquipped(AZWeapGladiusUnique)) {
+                Player.RemoveSpell(AZActorEffectGladiusUnique);
+                bEquipped = 0;
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bEquipped
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0181AC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0181A9:NovaArizona.esm

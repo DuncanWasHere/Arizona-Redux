@@ -1,0 +1,58 @@
+FormKey: 020EFB:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Certainly. It's our job to chase down any felonies that are happening in the NCR Army. Usually things like sexual assault and chem trafficking. Sometimes desertion.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Our findings are then presented to the appropriate authorities, who may prosecute as they see fit.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This here is the Mojave office. There are other offices elsewhere. A big one in Mexicali, as I recall. We all work independently of each other.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We should be getting a new building soon. That's what they're saying, at least. I sure hope so. It's getting pretty cramped here at the embassy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100794120
+Choices:
+- 020EE6:NovaArizona.esm
+- 020EE7:NovaArizona.esm
+- 020EE8:NovaArizona.esm
+- 020EF3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the Criminal Investigation Division.

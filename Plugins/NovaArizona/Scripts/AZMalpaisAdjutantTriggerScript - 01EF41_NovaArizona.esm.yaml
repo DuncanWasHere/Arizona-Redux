@@ -1,0 +1,60 @@
+FormKey: 01EF41:NovaArizona.esm
+EditorID: AZMalpaisAdjutantTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 6
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00B301000001007201003A151600011500520200780000F1100A000100FFFF040042002880163400022C00580000A51111000200FFFF0500520300FFFF0400423B420104520200780000211104000000284200040207004CD701000080161300020B0056010000010042000407004CBE0000003A15190001180052020078000082110D0002001600FFFF050049E8032839150C00010B005601000001004201003A15170001160052020078000098100B000100FFFF0500520400283A151000010F005202007800005E1004000000283A15170001160052020078000080110B000100FFFF0500520500283A15170001160052020078000080110B000100FFFF05005206002880163D00023500580000A51111000200FFFF0500520300FFFF04004238420104580000A41111000200FFFF0500520300FFFF040042384200040207004C7D010000A31115000300FFFF0500520300FFFF04004238FFFF0400420080163D00023500580000A51111000200FFFF0500520300FFFF04004239420104580000A41111000200FFFF0500520300FFFF040042394200040207004CD7010000A31115000300FFFF0500520300FFFF04004239FFFF0400420011000000
+  SourceCode: >-
+    name AZMalpaisAdjutantTriggerScript;
+
+
+    int AdjutantForceGreet;
+
+
+    OnTriggerEnter::Player {
+    	AZMalpaisAdjutantREF.SetUnconscious(0);
+
+    	if (GetObjectiveDisplayed(AZMalpaisAbuserQuest, 59) == 1 && AZMalpaisAdjutantREF.IsInCombat() == 0) {
+    		if (AdjutantForceGreet == 0) {
+    			AZMalpaisAdjutantREF.RestoreAV(Fatigue, 1000);
+    			AdjutantForceGreet = 1;
+    		}
+
+    		AZMalpaisAdjutantREF.RemoveScriptPackage(AZLegatusAdjutantGuardPackage);
+    		AZMalpaisAdjutantREF.Evp();
+    		AZMalpaisAdjutantREF.RemoveFromFaction(VCaesarsLegionFaction);
+    		AZMalpaisAdjutantREF.RemoveFromFaction(ArmorVCaesarsLegionFaction);
+
+    		if (GetObjectiveDisplayed(AZMalpaisAbuserQuest, 56) == 1 && GetObjectiveCompleted(AZMalpaisAbuserQuest, 56) == 0) {
+    			SetObjectiveDisplayed(AZMalpaisAbuserQuest, 56, 0);
+    		}
+
+    		if (GetObjectiveDisplayed(AZMalpaisAbuserQuest, 57) == 1 && GetObjectiveCompleted(AZMalpaisAbuserQuest, 57) == 0) {
+    			SetObjectiveDisplayed(AZMalpaisAbuserQuest, 57, 0);
+    		}
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: AdjutantForceGreet
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B71:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDDA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm

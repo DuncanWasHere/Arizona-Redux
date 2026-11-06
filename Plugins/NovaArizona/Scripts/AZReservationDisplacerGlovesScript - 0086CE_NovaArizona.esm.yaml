@@ -1,0 +1,30 @@
+FormKey: 0086CE:NovaArizona.esm
+EditorID: AZReservationDisplacerGlovesScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0003008C0000000100720100801611000209005601020002001507004CB000000080161E000216005203007800002D100B000100FFFF05005201002807004C8D00000039100F000200FFFF0500520200FFFF040042FF3A15170001160052030078000016100B000100FFFF05005201002839100F000200FFFF0500520200FFFF0400420A39150C00010B0056010200020042010011000000
+  SourceCode: >-
+    name AZReservationDisplacerGlovesScript;
+
+
+    OnAdd::Player {
+        if (!AZBaseCampReservationQuest.iGlovesStolen) {
+            if (AZBaseCampBethREF.GetDetected(Player)) {
+                SetStage(AZBaseCampReservationQuest, 255);
+                AZBaseCampBethREF.StartCombat(Player);
+            }
+            SetStage(AZBaseCampReservationQuest, 10);
+            AZBaseCampReservationQuest.iGlovesStolen = 1;
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00863E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B3FE:NovaArizona.esm

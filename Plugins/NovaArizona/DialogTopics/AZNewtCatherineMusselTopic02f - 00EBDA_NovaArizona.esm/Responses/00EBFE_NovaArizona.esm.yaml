@@ -1,0 +1,69 @@
+FormKey: 00EBFE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Alright.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100852412
+  RunOnType: Target
+Choices:
+- 00EBD7:NovaArizona.esm
+- 00EBD8:NovaArizona.esm
+- 00EBDB:NovaArizona.esm
+- 00EBDC:NovaArizona.esm
+- 00EBDD:NovaArizona.esm
+- 00EBDA:NovaArizona.esm
+- 00EBD9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x150016007202007309000E0020720100582F10050001007203001C00010052100F000200720300FFFF08005601020009001C000100021012000200720400FFFF0B005601020009004228101500180072020073040010002072020073040020720200730900202B15000A0072020073090002002030
+  SourceCode: >-
+    Set AZFreeformNewt.AllMusselsVariable to (Player.GetItemCount AZQuaggaMusselMeat)
+
+    Player.RemoveItem AZQuaggaMusselMeat (AZFreeformNewt.AllMusselsVariable)
+
+    Player.AddItem Caps001 (AZFreeformNewt.AllMusselsVariable * 40)
+
+    Set AZFreeformNewt.MusselsGathered to (AZFreeformNewt.MusselsGathered + AZFreeformNewt.AllMusselsVariable)
+
+    Set AZFreeformNewt.AllMusselsVariable to 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02E2BC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: Just take all of the meat I have.

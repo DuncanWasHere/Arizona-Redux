@@ -1,0 +1,80 @@
+FormKey: 00DF94:NovaArizona.esm
+EditorID: AZBigStopAutonousScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000009000000016000D0002000900207301002031203D3D1500070066020002002033150007007301000200203218000D0007000900207301002032203D3D16000C0003000800206602002030203C39100A0002007201006E370000008B10020000001500090073010004002031207E170002000100150011006602000C002066020020580C100000202D190000001900000011000000100008000A0020000000000015000A007201007301000200203239100A0002007201006E370000001100000010000B000A002E000000010072020015000A007201007301000200203215000A007201007306000200203239100A0002007201006E3700000011000000
+  SourceCode: >-
+    scn AZBigStopAutonousScript
+
+
+    short DeathAnim
+
+    float DeathTimer
+
+
+
+    BEGIN GameMode
+
+
+    if DeathAnim == 1
+    	Set DeathTimer to 3
+    	Set DeathAnim to 2
+    elseif DeathAnim == 2
+    	if DeathTimer < 0
+    		SetStage AZstatioFindFriendQuest 55
+    		Kill
+    		Set DeathAnim to -1
+    	else
+    		Set DeathTimer to (DeathTimer - GetSecondsPassed)
+    	endif
+    endif
+
+
+    END
+
+
+
+    BEGIN OnDeath
+
+
+    Set AZStatioFindFriendQuest.AutonousStatus to 2
+
+    SetStage AZStatioFindFriendQuest 55
+
+
+    END
+
+
+
+    BEGIN OnDeath Player
+
+
+    Set AZStatioFindFriendQuest.AutonousStatus to 2
+
+    Set AZStatioFindFriendQuest.AutonousSuicide to 2
+
+    SetStage AZStatioFindFriendQuest 55
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xE04B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x32687272656C6F
+    Name: DeathAnim
+  - Data:
+      Index: 2
+      Unknown: 0xA0E829120000000000000000
+      Unknown2: 0x326872756E6571
+    Name: DeathTimer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

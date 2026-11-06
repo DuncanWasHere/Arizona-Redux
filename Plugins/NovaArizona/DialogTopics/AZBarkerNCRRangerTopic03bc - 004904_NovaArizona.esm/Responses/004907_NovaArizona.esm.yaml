@@ -1,0 +1,47 @@
+FormKey: 004907:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xEBE71C
+    UseEmotionAnimation: True
+    Unused3: 0xF0E71C
+  ResponseText: The NCR has in its constitution that it is a "most perfect union". The NCR holds that it is the savior of the Wasteland, destined to civilize it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xEBE71C
+    UseEmotionAnimation: True
+    Unused3: 0xF0E71C
+  ResponseText: If the NCR ever needed help or there was someone better, it weakens that myth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: So, the NCR Rangers are the only Rangers that ever existed. All the other Rangers are to be forgotten.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why doesn't the NCR teach the difference?

@@ -1,0 +1,40 @@
+FormKey: 01EFBE:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E6F67
+    UseEmotionAnimation: True
+    Unused3: 0x732072
+  ResponseText: It doesn't do to slander a legate. You know that I would have to kill you, even with that Mark.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789368
+  SecondParameter: 90
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789368
+  SecondParameter: 91
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+Choices:
+- 01EFBF:NovaArizona.esm
+- 01EFC1:NovaArizona.esm
+- 01EFC3:NovaArizona.esm
+- 01EFE1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Sedonus is asking for contraband under the table. He sent me to you for help with that.

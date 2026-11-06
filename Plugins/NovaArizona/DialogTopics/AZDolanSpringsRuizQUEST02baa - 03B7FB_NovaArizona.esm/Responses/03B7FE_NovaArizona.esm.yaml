@@ -1,0 +1,37 @@
+FormKey: 03B7FE:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 03B7FD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657373
+    UseEmotionAnimation: True
+    Unused3: 0x697465
+  ResponseText: I trust Mr. Luke, not his "associate". I'll wait.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetActorValue
+  FirstParameter: 43
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 033085:NovaArizona.esm
+- 033081:NovaArizona.esm
+- 03308A:NovaArizona.esm
+- 03B7F3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie> He's on the campaign trail. He won't be back until election day. An associate will verify it.

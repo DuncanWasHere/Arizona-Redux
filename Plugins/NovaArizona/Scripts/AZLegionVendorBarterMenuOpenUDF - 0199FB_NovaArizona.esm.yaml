@@ -1,0 +1,262 @@
+FormKey: 0199FB:NovaArizona.esm
+EditorID: AZLegionVendorBarterMenuOpenUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 3
+    RefCount: 11
+    VariableCount: 23
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000C000D000C0700000101070001008016490002410058000053140A000100FFFF0400420158000053140A000100FFFF0400420F0158000053140A000100FFFF040042380158000004220A000100FFFF040042100107004CD0000000411536000135005330005061757365206D656E75206F70656E656420647572696E67206261727465722C2069676E6F72696E67206576656E742E1E00000039151A0001190056040000090058000085260B000100FFFF0500491D040080163400022C005800003B2925000200FFFF0800560400000900FFFF1500531000415A44656E617269757356656E646F7207004C4D0700009B2716000300FFFF0500520600FFFF04004201FFFF0500491D0439151E00011D00560100000A005207007800002F100B000100FFFF0500520800280039151E00011D00560100000B005207007800002F100B000100FFFF0500520900280039151E00011D00560100000C005207007800002F100B000100FFFF0500520A00280039151A00011900560100000D00560100000B00560100000C004219100E0039152100012000560100000E005604000009007800002F100B000100FFFF0500520800280039151300011200560100000F00560100000E004204110039151000010F0056040B0009005604000009000039151000010F0056010B000300560100000A000039151000010F0056010B000400560100000B000039151000010F0056010B000500560100000C000039151000010F0056010B000600560100000D000039151000010F0056010B000700560100000E000039151000010F0056010B000800560100000F00003A15270001260052070078000052101B000300FFFF0500520900FFFF0800560100000B00FFFF04004201283A15270001260052070078000052101B000300FFFF0500520A00FFFF0800560100000C00FFFF04004201283A15270001260052070078000052101B000300FFFF0500520800FFFF0800560100000A00FFFF04004201283A15270001260052070078000002101B000300FFFF0500520800FFFF0800560100000D00FFFF04004201283A152A0001290056040000090078000052101B000300FFFF0500520800FFFF0800560100000E00FFFF04004201283A152A0001290056040000090078000002101B000300FFFF0500520800FFFF0800560100000F00FFFF040042012821164F000200FFFF3D005338004261727465724D656E755C4E4F474C4F575F4252414E43485C424D5F43617073466C6F775C424D5F436170734C6162656C5C737472696E67FFFF0C0053070044656E61726969211659000200FFFF470053420052657061697253657276696365734D656E755C4E4F474C4F575F4252414E43485C52534D5F4D61696E526563745C52534D5F436170734C6162656C5C737472696E67FFFF0C0053070044656E61726969351425000200FFFF1300530E0073496E76656E746F727943617073FFFF0C0053070044656E61726969351444000200FFFF1400530F00734D65726368616E744E6F476F6C64FFFF2A005325004D65726368616E7420646F65736E2774206861766520656E6F7567682064656E617269692E35143C000200FFFF1300530E00734E6F74456E6F75676843617073FFFF2300531E00596F7520646F6E2774206861766520656E6F7567682064656E617269692E35142B000200FFFF1000530B0073526570616972436F7374FFFF1500531000436F73743A2025642064656E617269693915230001220056030B000F005800004F1514000100FFFF0E00530900737472696E676D6170007016270049060000031700580000352910000200FFFF04004201FFFF04004200080056040000100003004B39151A00011900560400001100560400001000780000101504000000280039151D00011C005602000012005800002A260E000100FFFF08005604000011000080162200021A005800005D15130002080056030B000F00080056020000120007004CDF0500003E15000039151D00011C0056000000130058000007260E000100FFFF0800560400001100003915170001160056030B000F005602000012001856000000130000AB2626000200FFFF0800560400001100FFFF1800580000CC1411000100FFFF0B005600000013004204113C1500007016270047070000031700580000352910000200FFFF04004201FFFF04004201080056040000140003004B39151A00011900560400001500560400001400780000101504000000280039151D00011C005602000016005800002A260E000100FFFF08005604000015000080162200021A005800005D15130002080056030B000F00080056020000160007004CDD0600003E15000039151D00011C0056000000170058000007260E000100FFFF0800560400001500003915170001160056030B000F005602000016001856000000170000AB2626000200FFFF0800560400001500FFFF1800580000CC1411000100FFFF0B005600000017004204113C150000E8270200000011000000
+  SourceCode: >-
+    name AZLegionVendorBarterMenuOpenUDF;
+
+
+    fn (int iMenuID) {
+    	if (IsKeyPressed(1) ||
+    		IsKeyPressed(15) ||
+    		IsKeyPressed(56) ||
+    		IsButtonPressed(16)) {
+    		// If the pause menu was opened during barter, we need to return now
+    		// Because apparently GetMenuItemListRefs() will trigger an error otherwise
+    		print("Pause menu opened during barter, ignoring event.");
+    		return;
+    	}
+
+    	ref rVendor = GetMenuTargetRef(1053);
+
+    	if (HasKeyword(rVendor, "AZDenariusVendor")) {
+    		SetOnMenuCloseEventHandler(AZLegionVendorBarterMenuCloseUDF, 1, 1053);
+
+    		// Count and convert currencies
+    		int iPlayerCaps = PlayerREF.GetItemCount(Caps001);
+    		int iPlayerDenarii = PlayerREF.GetItemCount(MoneyLegion1);
+    		int iPlayerAurei = PlayerREF.GetItemCount(MoneyLegion25);
+    		int iPlayerLegionCoinValue = iPlayerDenarii + iPlayerAurei * 25;
+    		int iVendorCaps = rVendor.GetItemCount(Caps001);
+    		int iVendorDenarii = iVendorCaps / 4;
+    	
+    		// Store variables in quest
+    		AZLegionVendorBarterQuest.rVendor = rVendor;
+    		AZLegionVendorBarterQuest.iPlayerCaps = iPlayerCaps;
+    		AZLegionVendorBarterQuest.iPlayerDenarii = iPlayerDenarii;
+    		AZLegionVendorBarterQuest.iPlayerAurei = iPlayerAurei;
+    		AZLegionVendorBarterQuest.iPlayerLegionCoinValue = iPlayerLegionCoinValue;
+    		AZLegionVendorBarterQuest.iVendorCaps = iVendorCaps;
+    		AZLegionVendorBarterQuest.iVendorDenarii = iVendorDenarii;
+    		// AZLegionVendorBarterQuest.fBarterBuyBaseDefault = GetNumericGameSetting("fBarterBuyBase");
+    		// AZLegionVendorBarterQuest.fBarterSellBaseDefault = GetNumericGameSetting("fBarterSellBase");
+    		
+    		// Remove player's Legion coins so they won't appear in the barter menu
+    		PlayerREF.RemoveItem(MoneyLegion1, iPlayerDenarii, 1);
+    		PlayerREF.RemoveItem(MoneyLegion25, iPlayerAurei, 1);
+    	
+    		// Remove player's caps and replace with total value of Legion coins
+    		PlayerREF.RemoveItem(Caps001, iPlayerCaps, 1);
+    		PlayerREF.AddItem(Caps001, iPlayerLegionCoinValue, 1);
+    	
+    		// Remove vendor's caps and replace with number of denarii of equal value
+    		rVendor.RemoveItem(Caps001, iVendorCaps, 1);
+    		rVendor.AddItem(Caps001, iVendorDenarii, 1);
+    		
+    		// No longer changing these settings, modifying values directly now
+    		// Convert item values to use denarii
+    		// SetNumericGameSetting("fBarterBuyBase", 0.3875);
+    		// SetNumericGameSetting("fBarterSellBase", 0.1125);
+    		
+    		// Temporarily modify the UI strings to reflect the new currency
+    		SetUIStringAlt("BarterMenu\\NOGLOW_BRANCH\\BM_CapsFlow\\BM_CapsLabel\\string", "Denarii");
+    		SetUIStringAlt("RepairServicesMenu\\NOGLOW_BRANCH\\RSM_MainRect\\RSM_CapsLabel\\string", "Denarii");
+    		con_SetGameSetting("sInventoryCaps", "Denarii");
+    		con_SetGameSetting("sMerchantNoGold", "Merchant doesn't have enough denarii.");
+    		con_SetGameSetting("sNotEnoughCaps", "You don't have enough denarii.");
+    		con_SetGameSetting("sRepairCost", "Cost: %d denarii");
+    		
+    		AZLegionVendorBarterQuest.aItemValues = Ar_Construct("stringmap");
+
+    		for ([_, ref rItem] in GetMenuItemListRefs(1, 0)) {
+    			ref rBaseItem = rItem.GetBaseForm();
+    			string sBaseItem = RefToString(rBaseItem);
+    			if (Ar_HasKey(AZLegionVendorBarterQuest.aItemValues, sBaseItem)) {
+    				continue;
+    			}
+    			
+    			float fBaseValue = GetValueAlt(rBaseItem);
+    			AZLegionVendorBarterQuest.aItemValues[sBaseItem] = fBaseValue;
+    			SetValueAlt(rBaseItem, Ceil(fBaseValue / 4));
+    		}
+
+    		for ([_, ref rItem] in GetMenuItemListRefs(1, 1)) {
+    		ref rBaseItem = rItem.GetBaseForm();
+    		string sBaseItem = RefToString(rBaseItem);
+    		if (Ar_HasKey(AZLegionVendorBarterQuest.aItemValues, sBaseItem)) {
+    			continue;
+    		}
+    		
+    		float fBaseValue = GetValueAlt(rBaseItem);
+    		AZLegionVendorBarterQuest.aItemValues[sBaseItem] = fBaseValue;
+    		SetValueAlt(rBaseItem, Ceil(fBaseValue / 4));
+    	}
+    		
+    		RefreshItemsList();
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerCaps
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerDenarii
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerAurei
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerLegionCoinValue
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorCaps
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorDenarii
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMenuID
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: rVendor
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rVendor_1
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerCaps_2
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerDenarii_3
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerAurei_4
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerLegionCoinValue_5
+  - Data:
+      Index: 14
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iVendorCaps_6
+  - Data:
+      Index: 15
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iVendorDenarii_7
+  - Data:
+      Index: 16
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rItem_8
+  - Data:
+      Index: 17
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rBaseItem_9
+  - Data:
+      Index: 18
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 2
+      Unknown2: 0x00000000000000
+    Name: __temp_sBaseItem_10
+  - Data:
+      Index: 19
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: __temp_fBaseValue_11
+  - Data:
+      Index: 20
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rItem_12
+  - Data:
+      Index: 21
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rBaseItem_13
+  - Data:
+      Index: 22
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 2
+      Unknown2: 0x00000000000000
+    Name: __temp_sBaseItem_14
+  - Data:
+      Index: 23
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: __temp_fBaseValue_15
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 16
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 17
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 20
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 21
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199FC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199FD:NovaArizona.esm

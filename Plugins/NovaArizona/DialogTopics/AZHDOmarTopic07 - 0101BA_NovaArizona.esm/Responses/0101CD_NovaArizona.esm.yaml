@@ -1,0 +1,50 @@
+FormKey: 0101CD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742041
+    UseEmotionAnimation: True
+    Unused3: 0x726520
+  ResponseText: Really? That's amazing. I'll tell everyone here to pack up and head on west. When does the ceasefire begin, and how long will it last?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 43
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+Choices:
+- 0101CE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E2C00000039100A0002007202006E4C000000
+  SourceCode: >-
+    setstage AZDamNQuest2 44
+
+    setstage AZDamNQuest1 76
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018D:NovaArizona.esm
+Prompt: I've negotiated a temporary ceasefire between the NCR and Legion. You should be free to go.

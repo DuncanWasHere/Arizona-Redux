@@ -1,0 +1,49 @@
+FormKey: 013B74:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E616C
+    UseEmotionAnimation: True
+    Unused3: 0x657374
+  ResponseText: Ow! What the fuck?!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100743970
+  SecondParameter: 2
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100743970
+  SecondParameter: 3
+Choices:
+- 013BA4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007303000200203115000A00720100730A0002002031
+  SourceCode: >-
+    set AZMalpaisSedonusDialogueQuest.adjutantjobfinished to 1
+
+    set AZMalpaisSedonusDialogueQuest.adjutantpunched to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B22:NovaArizona.esm
+Prompt: <Punch him in the nose.>

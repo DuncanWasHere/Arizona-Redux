@@ -1,0 +1,40 @@
+FormKey: 033094:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x726F6D
+    UseEmotionAnimation: True
+    Unused3: 0x7A202D
+  ResponseText: Or what? They'll kill me? Yeah right.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I pay my tribute on time every time. If they target people like me, they'd have a full-on revolt.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 03308C:NovaArizona.esm
+- 03308D:NovaArizona.esm
+- 03308E:NovaArizona.esm
+- 0330A7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You probably shouldn't be saying things like that around here.

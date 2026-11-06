@@ -1,0 +1,42 @@
+FormKey: 02CD0E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{sarcastic fake enthusiasm}I'm Sassy Sally, and I'm here to make sure you're having a rootin' tootin' chem-shootin'  Elephant Hill of a time!"
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{no fake enthusiasm}I'm a Mister Handy. My function is to do domestic tasks and hospitality. Sunset Sarsaparilla commissioned me for this location."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CCEF:NovaArizona.esm
+- 02CCF0:NovaArizona.esm
+- 02CD07:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Didn't expect to see a robot here. What's your deal?

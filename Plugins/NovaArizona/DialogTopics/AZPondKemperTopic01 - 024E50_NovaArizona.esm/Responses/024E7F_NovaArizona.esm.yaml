@@ -1,0 +1,56 @@
+FormKey: 024E7F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: 024E7E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Old history now. We used to go way back, but he's a businessman now, and I'm doing this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Only, he's real close with White Sands these days. Word on the winds is that White Sands wants this mine.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They'll get it, too. History don't mean much when money's involved.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708396
+Choices:
+- 024E4B:NovaArizona.esm
+- 021080:NovaArizona.esm
+- 024E50:NovaArizona.esm
+- 024E51:NovaArizona.esm
+- 024E52:NovaArizona.esm
+- 024E59:NovaArizona.esm
+- 024E5A:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you have some sort of problem with Julius?

@@ -1,0 +1,30 @@
+FormKey: 0199A7:NovaArizona.esm
+FormVersion: 15
+Quest: 01998E:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah, the merchants convinced the Legion to let them run the town and keep things nice and smooth for them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768140
+Choices:
+- 0199A8:NovaArizona.esm
+- 0199AA:NovaArizona.esm
+- 0199A3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: An election? In Legion territory?

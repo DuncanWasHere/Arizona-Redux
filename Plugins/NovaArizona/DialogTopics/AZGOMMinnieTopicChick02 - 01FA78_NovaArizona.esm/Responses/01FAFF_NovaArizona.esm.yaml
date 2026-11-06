@@ -1,0 +1,32 @@
+FormKey: 01FAFF:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 01FAFE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not that I know of.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792071
+Choices:
+- 01FA78:NovaArizona.esm
+- 01FA79:NovaArizona.esm
+- 01FA7B:NovaArizona.esm
+- 01FA82:NovaArizona.esm
+- 01FABF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does he have any vices? Secrets? Anything juicy?

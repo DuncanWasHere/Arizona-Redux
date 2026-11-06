@@ -1,0 +1,41 @@
+FormKey: 013D8D:NovaArizona.esm
+EditorID: AZNewtResidentCrucifiedPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+- SkipFalloutBehavior
+- HeadTrackingOff
+Unused: 48
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 15276
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+IdleAnimations:
+  AnimationCount: 0x03
+  TimerSetting: 4
+  Animations:
+  - 13DAF7:FalloutNV.esm
+  - 13DAF4:FalloutNV.esm
+  - 153A05:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

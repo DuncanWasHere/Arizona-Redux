@@ -1,0 +1,45 @@
+FormKey: 03800E:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It will be so much worse than before. They've been trained to be perfect killers, and that's what they're going to do.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You can pacify raiders with chems and money, but Legionaries? They don't want anything. They spill blood to honor Mars.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FC6:NovaArizona.esm
+- 037FC7:NovaArizona.esm
+- 037FC8:NovaArizona.esm
+- 037FC9:NovaArizona.esm
+- 037FCA:NovaArizona.esm
+- 037FCB:NovaArizona.esm
+- 037FCC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can Arizona really get worse than it was before the Legion?

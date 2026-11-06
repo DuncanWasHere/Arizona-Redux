@@ -1,0 +1,70 @@
+FormKey: 008F77:NovaArizona.esm
+EditorID: AZBigStopEntryExecutionScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 9
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A006D0100000100720100801611000209005601000001001507004C5501000039150C00010B005601020003004201003A151000010F005203007800005E1004000000283A151000010F005204007800005E1004000000283A151000010F005205007800005E1004000000283A151000010F005206007800005E10040000002839150C00010B005601020004004201003A151000010F005203007800005E1004000000283A151000010F005204007800005E1004000000283A151000010F005205007800005E1004000000283A151000010F005206007800005E10040000002880161D000215005800003A100B000100FFFF050052070042460407004C390100003A15170001160052080078000033100B000100FFFF05005209002839150C00010B00560100000100420100811608000107004C9101000080161D000215005800003A100B000100FFFF050052070042460407004C910100003A15170001160052080078000033100B000100FFFF05005209002811000000
+  SourceCode: >-
+    name AZBigStopEntryExecutionScript;
+
+
+    int doonce;
+
+
+    OnTriggerEnter::Player {
+        if (!doonce) {
+            AZBigStopEntryExecutionQuest.livefire = 1;
+
+            AZBigStopLegionExecutioner01Ref.EVP();
+            AZBigStopLegionExecutioner02Ref.EVP();
+            AZBigStopLegionExecutioner03Ref.EVP();
+            AZBigStopLegionExecutioner04Ref.EVP();
+
+            AZBigStopEntryExecutionQuest.deadfired = 1;
+
+            AZBigStopLegionExecutioner01Ref.EVP();
+            AZBigStopLegionExecutioner02Ref.EVP();
+            AZBigStopLegionExecutioner03Ref.EVP();
+            AZBigStopLegionExecutioner04Ref.EVP();
+
+            if (GetStage(AZMalpaisJournalistQuest) == 70) {
+                AZStanleyHartfordREF.Say(AZMalpaisStanleyBigStopTopicReact);
+            }
+
+            doonce = 1;
+        } else {
+            if (GetStage(AZMalpaisJournalistQuest) == 70) {
+                AZStanleyHartfordREF.Say(AZMalpaisStanleyBigStopTopicReact);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: doonce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008F82:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008F22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008F86:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008FB9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008FBA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01761E:NovaArizona.esm

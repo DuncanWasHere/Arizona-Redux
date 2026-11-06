@@ -1,0 +1,65 @@
+FormKey: 019D21:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 019D1F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fine. I'll accept that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100768688
+  SecondParameter: 11
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768679
+Choices:
+- 019BF4:NovaArizona.esm
+- 019BF5:NovaArizona.esm
+- 019BF6:NovaArizona.esm
+- 019BF7:NovaArizona.esm
+- 019BF8:NovaArizona.esm
+- 019BF0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E6400000039100A0002007203006EB400000015000A0072030073160002002031
+  SourceCode: >-
+    player.removeitem MoneyLegion1 100
+
+    setstage AZBaseCampRomanceQuest 180
+
+    set AZBaseCampRomanceQuest.youDealtWithIulia to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: "Here: 100 denarii. In exchange, you're going to forget about Arceus and Flemus."

@@ -1,0 +1,90 @@
+FormKey: 01EDC7:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: No, it has not. The Legion are... morons.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Do you know how hard it is to treat gangrene without blood transfusions or Stimpaks? Or how to treat tremors without Steady?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Oh, and they don't seem to care that the mortality rate drastically increases when using their herbal remedies instead of Stimpaks.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: And don't get me started on therapy for PTSD. The Legion doesn't have it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Even if they did, the Cult of Mars would rather spend their time making sure that you know you're weak for using it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: The only thing I'm allowed to use is alcohol for sterilizing wounds, and that's it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Honestly, I'm glad that I've mostly been required to work with children instead of medicine. I would have lost my mind.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EDEA:NovaArizona.esm
+- 01EF84:NovaArizona.esm
+- 01EDB1:NovaArizona.esm
+- 01EDB2:NovaArizona.esm
+- 01EDB3:NovaArizona.esm
+- 01EDB4:NovaArizona.esm
+- 01EDB5:NovaArizona.esm
+- 01EDB6:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, has being a Follower helped you with being a Martian?

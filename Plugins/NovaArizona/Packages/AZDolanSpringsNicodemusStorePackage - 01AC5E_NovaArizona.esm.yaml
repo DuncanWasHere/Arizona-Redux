@@ -1,0 +1,42 @@
+FormKey: 01AC5E:NovaArizona.esm
+EditorID: AZDolanSpringsNicodemusStorePackage
+FormVersion: 15
+GeneralFlags:
+- ContinueIfPcNear
+- SkipFalloutBehavior
+Unused: 71
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoSleeping
+  - NoConversation
+Unused2: 29541
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 8
+Duration: 12
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

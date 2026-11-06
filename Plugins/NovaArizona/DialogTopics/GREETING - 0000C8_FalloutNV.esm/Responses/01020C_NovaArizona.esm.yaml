@@ -1,0 +1,44 @@
+FormKey: 01020C:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 033469:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm on duty, make it quick.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 61
+  Function: GetGlobalValue
+  FirstParameter: 1149628
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+Choices:
+- 01CDFA:NovaArizona.esm
+- 01020D:NovaArizona.esm
+- 01020F:NovaArizona.esm
+- 01024A:NovaArizona.esm
+- 010253:NovaArizona.esm
+- 01024F:NovaArizona.esm
+- 0102F9:NovaArizona.esm
+- 010358:NovaArizona.esm
+- 010226:NovaArizona.esm
+- 01022A:NovaArizona.esm
+- 010228:NovaArizona.esm
+- 01022F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,55 @@
+FormKey: 031D68:NovaArizona.esm
+EditorID: AZElephantHillSlipperyWillForceGreetPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+BehaviorFlags:
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 16640
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 16
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 031D67:NovaArizona.esm
+  Radius: 512
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 128
+Conditions:
+- Fluff: 0x000000
+  Function: GetTalkedToPC
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 0000C8:FalloutNV.esm
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 031D67:NovaArizona.esm
+  Radius: 512
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

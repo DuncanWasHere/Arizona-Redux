@@ -1,0 +1,60 @@
+FormKey: 0091BD:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: Not much to tell you about, unfortunately.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: The Trading Post is staffed, but short on supplies.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: Most homes around here have already been raided and emptied out. So don't bother looking for anything of value.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: Nowadays we're nothing more than a work camp with flowers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 020D29:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+- 009298:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What can you tell me about the village?

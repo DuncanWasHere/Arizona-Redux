@@ -1,0 +1,24 @@
+FormKey: 02915D:NovaArizona.esm
+EditorID: AZBigStopSolitareOfficeCameraTerminal01
+FormVersion: 15
+ObjectBounds:
+  First: -18, -20, 0
+  Second: 24, 20, 37
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >-
+  CYCL-Ops Remote Monitoring
+
+
+  Hiram Spade Camera 01 requires restart
+BaseHackingDifficulty: Hard
+MenuItems:
+- ItemText: View last saved recording
+  ResultText: Opening...
+  MenuItemFlags:
+  - AddNote
+  SubMenu: 02915E:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

@@ -1,0 +1,24 @@
+FormKey: 037DBA:NovaArizona.esm
+EditorID: AZLeadInstigator
+FormVersion: 15
+Name: Lead Instigator
+Description: While Deejay is a companion, deal double damage to targets who detect you but aren't in combat.
+Icons:
+  LargeIconFilename: nvdlc02\interface\icons\nvdlc02perk_fight_the_power.dds
+PerkData:
+  NumRanks: 1
+  IsPlayable: True
+Effects:
+- MutagenObjectType: PerkEntryPointModifyValue
+  Conditions:
+  - RunOnTabIndex: 2
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetDetected
+      FirstParameter: 20
+    - Fluff: 0x000000
+      Function: IsInCombat
+  PerkConditionTabCount: 3
+  Modification: Multiply
+  Value: 2

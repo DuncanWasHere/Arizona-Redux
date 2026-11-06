@@ -1,0 +1,38 @@
+FormKey: 024D9C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: 020DDE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: If he is a child in the camp, then he should be a soldier. His body is for fighting, not rolling dough.  We have slaves for that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 3
+Choices:
+- 020DDF:NovaArizona.esm
+- 020DE0:NovaArizona.esm
+- 020DE1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: A child down in the camp. He wants to work in the mess hall's kitchen.

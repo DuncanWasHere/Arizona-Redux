@@ -1,0 +1,51 @@
+FormKey: 029401:NovaArizona.esm
+FormVersion: 15
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: 0293E9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Like looking gift horses in the mouth, do ya? The catch is that this is across the river. You'll have no backup, no help, nothing. Just you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Would be a job for the Rangers, but, frankly, they're outmatched on this. Caesar's Frumentarii are honed spies and killers. Our Rangers are glorified scouts.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x676966
+    UseEmotionAnimation: True
+    Unused3: 0x736573
+  ResponseText: The brass doesn't believe this can be done. I disagreed. You'll get your money. Hell, we'll take it out of the food budget. Just get it done.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293C1:NovaArizona.esm
+- 0293C2:NovaArizona.esm
+- 0293C3:NovaArizona.esm
+- 0293C4:NovaArizona.esm
+- 0293C5:NovaArizona.esm
+- 0293C6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: This job seems too important to be handing off to a contractor. What's the catch?

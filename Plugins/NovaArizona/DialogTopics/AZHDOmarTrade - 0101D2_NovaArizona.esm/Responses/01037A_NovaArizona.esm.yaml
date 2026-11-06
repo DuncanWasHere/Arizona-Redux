@@ -1,0 +1,46 @@
+FormKey: 01037A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010373:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: This is Legion territory. You need denarii to trade here. You'll have to exchange all of your caps for Legion coin.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 1534663
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100729230
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 55
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Let's trade.

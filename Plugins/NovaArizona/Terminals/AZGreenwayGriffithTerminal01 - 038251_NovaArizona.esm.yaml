@@ -1,0 +1,41 @@
+FormKey: 038251:NovaArizona.esm
+EditorID: AZGreenwayGriffithTerminal01
+FormVersion: 15
+ObjectBounds:
+  First: -12, -18, -23
+  Second: 52, 22, 19
+Name: Terminal
+Model:
+  File: terminals\terminal01.nif
+Description: O TRIUNE GODDESS THY SPEAR BEGET LIFE AS DEATH AND DEATH AS LIFE. YE SNAKE MOTHER, YE HORNED SERPENT, YE GREAT DRAGON. THY KINGDOM IS ON EARTH.
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: I submit.
+  ResultText: LEVIATHAN
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100DD10070001006E01000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.setOpenState 1
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x606F291A0000000000000000
+        Unknown2: 0x0100DD10070001
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+- ItemText: What is happening?
+  ResultText: PERDITION
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

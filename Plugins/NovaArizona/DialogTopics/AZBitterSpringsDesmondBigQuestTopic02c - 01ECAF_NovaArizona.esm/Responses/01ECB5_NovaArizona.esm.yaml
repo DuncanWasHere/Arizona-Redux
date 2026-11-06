@@ -1,0 +1,41 @@
+FormKey: 01ECB5:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6E7443
+  ResponseText: Caesar was once a Follower of the Apocalypse, not the son of Mars or whatever crap he's been saying.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6E7443
+  ResponseText: He really doesn't want anyone telling the people there the truth. So, for Followers, who can, it's practically shoot on sight.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01ECAD:NovaArizona.esm
+- 01ECAE:NovaArizona.esm
+- 01ECAF:NovaArizona.esm
+- 01ECB0:NovaArizona.esm
+- 01EE74:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why can't you go?

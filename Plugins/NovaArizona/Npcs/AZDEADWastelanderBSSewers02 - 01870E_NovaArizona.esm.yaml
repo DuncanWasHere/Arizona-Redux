@@ -1,0 +1,146 @@
+FormKey: 01870E:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZDEADWastelanderBSSewers02
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Wastelander
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  CalcMin: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - ActorEffectList
+  - AIData
+Factions:
+- Faction: 0942BE:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A4:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0448D1:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 041E7D:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 02AB62:FalloutNV.esm
+Template: 02E29B:FalloutNV.esm
+Race: 000019:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 0AB48E:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 04390C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 031DA3:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 02E2A5:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 023619:FalloutNV.esm
+- 01FD89:FalloutNV.esm
+Class: 01873D:FalloutNV.esm
+Strength: 6
+Perception: 5
+Endurance: 4
+Charisma: 4
+Intelligence: 4
+Agility: 6
+Luck: 4
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 12
+  - Key: BigGuns
+    Value: 12
+  - Key: EnergyWeapons
+    Value: 14
+  - Key: Explosives
+    Value: 14
+  - Key: Lockpick
+    Value: 14
+  - Key: Medicine
+    Value: 12
+  - Key: MeleeWeapons
+    Value: 31
+  - Key: Repair
+    Value: 12
+  - Key: Science
+    Value: 12
+  - Key: SmallGuns
+    Value: 31
+  - Key: Sneak
+    Value: 31
+  - Key: Speech
+    Value: 12
+  - Key: Survival
+    Value: 12
+  - Key: Unarmed
+    Value: 12
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 033183:FalloutNV.esm
+HairLength: 0.7184
+Eyes: 004256:FalloutNV.esm
+HairColor: '#00161416'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x727B5FBF3F772D403B39C9BE0B8D31BE4164B13F993375BEAE97B8BFF284793FC82BBBBF507607BF9A43AC3F97DC8C3FD69ABE3D003CE43E8EA70A3F1C458B3E70569FBD50125E3E38EDD53F6C549BBEF08F433EC02A68BE38F0C23E00D7773CC0649E3CF7228DBF7019033E2013ADBEFA47AD3F1FFE87BFEE52A43FBA2CB3BFC8F30ABF5C3C303F98F9F2BE56F4A53D60730C3EF476653F76FE08BF001161BCE20FC1BFE0948ABDC3D0D23FC01408BF1272C9BFD581AE3E90ECB33E41F4823F8D59793F7ED4893F
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x52F5C1BE2D6FE7BF148048BF386364BF369BD5BE2E028FBEB2A3EE3F6879A3BFEB6356BF46A91EBF4E93173E4AB3D83E349846BF7304E83DFB8620BF3BEFD93F8AE4353F7E7C8FBDE7F942BF9C36D4BE8F2D0D3F12949BBF1D3CC23E32BE8A3FF6986A3F0C9D8BBE106816BED4DCC2BF704D0ABF81AE9FBF90E488BE4744423E50963ABE56C503BF008F5FBEB76142BF989A9ABF1857683E8289823F992BA23E7A74DBBD7BC1E1BE6E3A1CBEA0DD8F3FF839B6BE12D3283F23E55C3FF8280DBDED1B63BE240B513F
+NAM5: 255
+DATADataTypeState:
+- Break0
+MajorFlags:
+- 0x80000

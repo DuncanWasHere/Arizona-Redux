@@ -1,0 +1,51 @@
+FormKey: 00E298:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 00DC83:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That dog.... Can I take a closer look at him?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 1104095
+  SecondParameter: 8
+  RunOnType: Reference
+  Reference: 10D8DF:FalloutNV.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 15
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 121FF0:FalloutNV.esm
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 1200854
+  SecondParameter: 11
+Choices:
+- 00E27B:NovaArizona.esm
+- 00E27C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

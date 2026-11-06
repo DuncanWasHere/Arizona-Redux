@@ -1,0 +1,85 @@
+FormKey: 024E24:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x686973
+    UseEmotionAnimation: True
+    Unused3: 0x746572
+  ResponseText: Fine. Then our business is at an end. Oh, by the way....
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x654469
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: "As for your missing person: Alba Nox served as Dominicus Rex's advisor during the interrogations."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x722062
+    UseEmotionAnimation: True
+    Unused3: 0x737320
+  ResponseText: If August was interrogated by the Frumentarii, Alba Nox would be the one to have handled it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x722062
+    UseEmotionAnimation: True
+    Unused3: 0x737320
+  ResponseText: Nox is thorough with his chosen prey. August is dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: That's all I have to say on that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100698647
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100698647
+  SecondParameter: 3
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100698647
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006EFF000000
+  SourceCode: SetStage AZBigStopAhigaQuest01 255
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: I don't want to be involved in this.

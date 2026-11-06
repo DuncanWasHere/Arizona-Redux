@@ -1,0 +1,45 @@
+FormKey: 0078A5:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Data:
+  Flags:
+  - Random
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 0078A4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x657220
+  ResponseText: We've had a big Mole Rat problem lately.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x277320
+    UseEmotionAnimation: True
+    Unused3: 0x657220
+  ResponseText: All these new folks in town rile them up.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721594
+Choices:
+- 00D195:NovaArizona.esm
+- 00789D:NovaArizona.esm
+- 00789F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Any rumors?

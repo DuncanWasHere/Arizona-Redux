@@ -1,0 +1,72 @@
+FormKey: 010216:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010217:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, hell. Not another bleeding heart. No one's crossing that checkpoint.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 20
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 31
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 30
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 42
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100729230
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+Choices:
+- 010218:NovaArizona.esm
+- 010239:NovaArizona.esm
+- 01023F:NovaArizona.esm
+- 010248:NovaArizona.esm
+- 033466:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who do I talk to about securing passage through the checkpoint?

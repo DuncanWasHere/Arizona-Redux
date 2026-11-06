@@ -1,0 +1,31 @@
+FormKey: 01EE6C:NovaArizona.esm
+EditorID: AZMalpaisOptioHelperQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000009D00000080163200022A00580000A41111000200FFFF0500520100FFFF0400429658000022120B000100FFFF0500520100150207004CBC00000080163700022F00580000A51111000200FFFF0500520100FFFF040042A5580000A51111000200FFFF0500520100FFFF040042A60107004CBC0000003A15170001160052020078000097100B000100FFFF050052030028371009000100FFFF050052040011000000
+  SourceCode: >-
+    name AZMalpaisOptioHelperQuestScript;
+
+
+    GameMode {
+        if (GetObjectiveCompleted(AZMalpaisAbuseQuest, 150) && !GetQuestCompleted(AZMalpaisAbuseQuest)) {
+            if (GetObjectiveDisplayed(AZMalpaisAbuseQuest, 165) || GetObjectiveDisplayed(AZMalpaisAbuseQuest, 166)) {
+                AZMalpaisOptiOREF.AddScriptPackage(AZMalpaisOptioForceGreetPackage);
+                StopQuest(AZMalpaisOptioHelperQuest);
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004BC2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE71:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE6D:NovaArizona.esm

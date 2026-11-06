@@ -1,0 +1,152 @@
+FormKey: 10BEEA:FalloutNV.esm
+EditorID: FreesideWorld
+FormVersion: 15
+Name: Freeside
+Parent:
+  Worldspace: 0DA726:FalloutNV.esm
+  Flags:
+  - UseMapData
+Climate: 174006:FalloutNV.esm
+Water: 030009:FalloutNV.esm
+LodWater: 030009:FalloutNV.esm
+LodWaterHeight: 0
+LandData:
+  DefaultLandHeight: 1000
+WorldMapScale: 0.7
+CellXOffset: -16000
+CellYOffset: 103000
+ImageSpace: 08809D:FalloutNV.esm
+Flags:
+- SmallWorld
+ObjectBoundsMin: -40960, -32768
+ObjectBoundsMax: 28672, 49152
+Music: 119D2E:FalloutNV.esm
+CanopyShadow: ''
+WaterNoiseTexture: Data\Textures\Water\wastelandwaterpotomac.dds
+TopCell:
+  FormKey: 10D903:FalloutNV.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Flags:
+  - HasWater
+  Grid: {}
+  LightTemplate: Null
+  LightInheritFlags:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  WaterHeight: 3.4028235E+38
+  WaterNoiseTexture: ''
+  Persistent:
+  - MutagenObjectType: PlacedObject
+    FormKey: 1715B6:FalloutNV.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: VFSSilverRushFriskingTriggerREF
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 1715B2:FalloutNV.esm
+    Primitive:
+      Bounds: 47.5, 17.5, 130
+      Color: '#00CC4C33'
+      Unknown: 0.15
+      PrimitiveType: Box
+    Placement:
+      Position: -2275.5, 2064.5, 1121
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedNpc
+    FormKey: 020FA7:NovaArizona.esm
+    MajorRecordFlagsRaw: 3072
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    - InitiallyDisabled
+    Base: 020FA6:NovaArizona.esm
+    EnableParent:
+      Reference: 020FAD:NovaArizona.esm
+      Flags:
+      - 0x4000
+      - 0x8000
+      - 0x20000
+      - 0x40000
+      - 0x200000
+      - 0x400000
+      - 0x1000000
+      - 0x4000000
+      - 0x10000000
+      - 0x20000000
+      - 0x40000000
+    Position: -1818.7242, -3849.7883, 1014.78064
+    Rotation: 0, 0, 4.2000055
+  - MutagenObjectType: PlacedNpc
+    FormKey: 020FA8:NovaArizona.esm
+    MajorRecordFlagsRaw: 3072
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    - InitiallyDisabled
+    Base: 020FA6:NovaArizona.esm
+    EnableParent:
+      Reference: 020FAD:NovaArizona.esm
+    Position: -1785.6246, -4005.9072, 1014.78064
+    Rotation: 0, 0, 4.545008
+  - MutagenObjectType: PlacedNpc
+    FormKey: 020FA9:NovaArizona.esm
+    MajorRecordFlagsRaw: 3072
+    EditorID: AZFreesideNCRMPREF
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    - InitiallyDisabled
+    Base: 020FA6:NovaArizona.esm
+    EnableParent:
+      Reference: 020FAD:NovaArizona.esm
+    Position: -2000.1609, -3686.3271, 1014.78064
+    Rotation: 0, 0, 3.6800075
+  - MutagenObjectType: PlacedNpc
+    FormKey: 020FAA:NovaArizona.esm
+    MajorRecordFlagsRaw: 3072
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    - InitiallyDisabled
+    Base: 020FA6:NovaArizona.esm
+    EnableParent:
+      Reference: 020FAD:NovaArizona.esm
+    Position: -2127.3044, -3676.7205, 1014.78064
+    Rotation: 0, 0, 3.4550073
+  - MutagenObjectType: PlacedObject
+    FormKey: 020FAB:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 000034:FalloutNV.esm
+    Placement:
+      Position: -2221.9067, -4128.7837, 1017.27686
+      Rotation: 0, 0, 0.6800001
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 020FAD:NovaArizona.esm
+    MajorRecordFlagsRaw: 3072
+    EditorID: AZGOMChickNCRSoldiersEnablerREF
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    - InitiallyDisabled
+    Base: 00003B:FalloutNV.esm
+    Placement:
+      Position: -1864.8246, -3796.2612, 1611.1732
+    MajorFlags:
+    - Persistent
+    - InitiallyDisabled
+  MajorFlags:
+  - Persistent
+SubCellsUnknownGroupData: -2141294536

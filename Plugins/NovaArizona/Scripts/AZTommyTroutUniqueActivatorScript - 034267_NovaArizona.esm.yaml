@@ -1,0 +1,23 @@
+FormKey: 034267:NovaArizona.esm
+EditorID: AZTommyTroutUniqueActivatorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000080002003100000000003A151D00011C00520100780000021011000200FFFF0500520200FFFF0400420128221002000000BB110200000011000000
+  SourceCode: >-
+    name AZTommyTroutUniqueActivatorScript;
+
+
+    OnActivate {
+        Player.AddItem(AZWeapTommyTroutUnique, 1);
+        Disable();
+        MarkForDelete();
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00CE48:NovaArizona.esm

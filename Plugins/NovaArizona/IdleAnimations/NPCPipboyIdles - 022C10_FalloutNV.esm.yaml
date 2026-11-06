@@ -1,0 +1,23 @@
+FormKey: 022C10:FalloutNV.esm
+EditorID: NPCPipboyIdles
+FormVersion: 15
+Model:
+  File: Characters\_Male\IdleAnims
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetEquipped
+  FirstParameter: 145112
+- Fluff: 0x000000
+  Function: IsMoving
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetRandomPercent
+RelatedIdleAnimations:
+  Parent: 0723B5:FalloutNV.esm
+AnimationData:
+  AnimationGroupSection: SpecialIdle
+  MustReturnFile: True
+  Unused1: 205
+  Unused2: 22

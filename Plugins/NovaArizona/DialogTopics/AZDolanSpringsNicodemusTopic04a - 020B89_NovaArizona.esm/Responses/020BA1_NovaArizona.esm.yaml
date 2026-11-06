@@ -1,0 +1,53 @@
+FormKey: 020BA1:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You know, I've never actually measured. I'm all in on Luke though. He's a motherfucker who knows business.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: See, Calvin's only out for himself. Which is a problem, because I'm out for myself too.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's not to say that Luke isn't out for himself, but I'm a lot more like Luke than I am Calvin. If Luke helps himself, it helps me too.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+Choices:
+- 020B7A:NovaArizona.esm
+- 020B7E:NovaArizona.esm
+- 01CC3D:NovaArizona.esm
+- 01CC3E:NovaArizona.esm
+- 020B7F:NovaArizona.esm
+- 020B85:NovaArizona.esm
+- 020B88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So you're backing the little guy?

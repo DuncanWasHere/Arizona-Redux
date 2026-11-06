@@ -1,0 +1,45 @@
+FormKey: 013DFD:NovaArizona.esm
+EditorID: AZPrimumStatioHuntsGoatsCrucifixPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+- HeadTrackingOff
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100744496
+  SecondParameter: 9
+IdleAnimations:
+  AnimationCount: 0x03
+  TimerSetting: 3.5
+  Animations:
+  - 13DAF7:FalloutNV.esm
+  - 13DAF4:FalloutNV.esm
+  - 153A05:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

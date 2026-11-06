@@ -1,0 +1,150 @@
+FormKey: 020D30:NovaArizona.esm
+EditorID: AZBaseCampScipioYuma
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Scipio Yuma
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 150
+  Level: 5
+  SpeedMultiplier: 130
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 140D4E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 154418:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 019D50:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 00002D:FalloutNV.esm
+Template: 165807:FalloutNV.esm
+Race: 00424A:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 1372B4:FalloutNV.esm
+Items:
+- Item:
+    Item: 02937E:FalloutNV.esm
+    Count: 13
+- Item:
+    Item: 074336:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0CD539:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.2
+- Item:
+    Item: 11F3E1:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575C:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 13DBDB:FalloutNV.esm
+- 018E6A:FalloutNV.esm
+Class: 127736:FalloutNV.esm
+BaseHealth: 50
+Strength: 6
+Perception: 5
+Endurance: 6
+Charisma: 4
+Intelligence: 4
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 13
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 13
+  - Key: MeleeWeapons
+    Value: 48
+  - Key: Repair
+    Value: 13
+  - Key: Science
+    Value: 13
+  - Key: SmallGuns
+    Value: 46
+  - Key: Sneak
+    Value: 15
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 48
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 05DC7F:FalloutNV.esm
+HairLength: 0
+Eyes: 004252:FalloutNV.esm
+HairColor: '#00150E06'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xC5AC71C00AC140402AD6BABE25C6D53FE86695BD30150C4017085B3FD670923F14D1564063F880408D8B00BFEBBC98BFD01243BFB42B27C00EC95ABFE7E3C33F4012913D862F9ABFEE4D58C0C107613F3AE7B8BF1B07913FCE6E3FC0805C64BFA78BA9409EB5F73F43F6223FE68C90403C38C44062382BBF28810FBF39D0A540E20B8A3F76DE844033C685C0F8E9CA3F40F74B409AFC7DBFEC944B3F10FFB94091FC1FC1BE39BABF9C56183F4650BCC0AC967B400DFF57C0BA8A2AC1348969BFD061B9BE60F249C0
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x40FBA73D2CA207BFCA9439BF86D8BC3F2AEE853F95FA943EF59F413F3AA2353F59BE4CC001DBC03E12AE2BBFE40E4C3FE28E62C004DB903FB10B2940EA51B43FB18792402DDFA93FF855383F857EB33F809A6D3CB4591ABF44F4ED3E26502040068708C046D8D03F5BC382C062835A4030F74C3EB1220E3FE55C2D4052EC9EBF83A6DB4020F6BA3F8C6426BF5AE72AC004ABD9BD453A1BBFC471AA40224F5F3F43ABDA40D4DD9DBE64A8C23F302D2640CA1F99C03AC600C0A41E5F3F662EF0BECCFE62C003674E40
+NAM5: 255
+DATADataTypeState:
+- Break0

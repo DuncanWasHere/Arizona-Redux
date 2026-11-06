@@ -1,0 +1,41 @@
+FormKey: 020E82:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If you find anything, report back to me. Tell her that
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797744
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E0B0000006E01000000A3110F0003007201006E0D0000006E01000000
+  SourceCode: >+
+    setobjectivecompleted azsmugglingquest 11 1
+
+    setobjectivedisplayed azsmugglingquest 13 1 
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D36:NovaArizona.esm
+Prompt: I'll investigate how she's arranging these smuggling runs.

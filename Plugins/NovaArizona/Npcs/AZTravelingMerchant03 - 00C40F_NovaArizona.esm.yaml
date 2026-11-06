@@ -1,0 +1,141 @@
+FormKey: 00C40F:NovaArizona.esm
+EditorID: AZTravelingMerchant03
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Traveling Merchant
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - ActorEffectList
+  - AIData
+  - Script
+Factions:
+- Faction: 000E21:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 02AB62:FalloutNV.esm
+Template: 0EDC40:FalloutNV.esm
+Race: 0038E5:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 01519E:FalloutNV.esm
+    Count: 5
+- Item:
+    Item: 0378A1:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0609E5:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 096C91:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.2
+- Item:
+    Item: 0E2F6D:FalloutNV.esm
+    Count: 2
+- Item:
+    Item: 1543BB:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 023619:FalloutNV.esm
+Class: 000801:FalloutNV.esm
+BaseHealth: 50
+Strength: 5
+Perception: 5
+Endurance: 4
+Charisma: 5
+Intelligence: 5
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 15
+  - Key: BigGuns
+    Value: 13
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 15
+  - Key: MeleeWeapons
+    Value: 15
+  - Key: Repair
+    Value: 15
+  - Key: Science
+    Value: 30
+  - Key: SmallGuns
+    Value: 30
+  - Key: Sneak
+    Value: 15
+  - Key: Speech
+    Value: 15
+  - Key: Survival
+    Value: 13
+  - Key: Unarmed
+    Value: 28
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 066FD0:FalloutNV.esm
+Hair: 02A185:FalloutNV.esm
+HairLength: 0.31167
+Eyes: 004256:FalloutNV.esm
+HairColor: '#00150E06'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xBA48F4BE940E593FDCE888BF70A3A8BEF07C1F3FE50E1FBF007E6D3DA59D9E3F17DCB93E0F473ABFC49E813E0A8AE4BEAA24013FF0E2D5BF8E53B33ECAE3BA3F8062F3BEE8752E3FC8DB42BF78DA2E3E06B84F3FF85248BE949E1CBFE0CEEE3DE1BF3CBFAA3875BFF4147C3F13D87B3F6099503E887C0B3FC562E33F88B479BF18DFF8BE64B2E93E7C5818BF90DD0C3FE0B805BF003EDDBDC07DF83B80B520BD78C10C3FDCB604BFA068A83EA0932EBE96290BBF4486E43E74E3E33FACA987BF5E22973FC46E963F
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x1C443DBE8811C4BF2CBC693FD8040BBE48B56ABFEB3ABB3E889F6E3E30F3A8BD5C6B0B3FD403603FECC08C3F9C166D3F186D523FA489923F31D68B3F285CA93E449FA9BDB42B10BEE4949FBDC0A514BEA4D4A0BE22200A3F60FD1E3DA33E22BF2DE9483E56B6C3BE0772723FEEBCF73E98934DBF9E15F6BEFC4805BF452F5DBFBFA2DA3EAB5B5F3F00E1F1BDE3A57CBE6242BF3FDB9FD43E7A8115BE6E4DA43F486393BD78EC34BDED0387BFD5E02E3FF1AA0EBF6EB98BBE6EEB04BF053A03BFA68E3CBFD68F803F
+NAM5: 255
+DATADataTypeState:
+- Break0

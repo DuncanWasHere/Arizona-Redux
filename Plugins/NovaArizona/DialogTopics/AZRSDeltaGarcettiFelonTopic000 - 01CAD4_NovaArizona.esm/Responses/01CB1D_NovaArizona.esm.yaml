@@ -1,0 +1,30 @@
+FormKey: 01CB1D:NovaArizona.esm
+FormVersion: 15
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Boneyard shit. I nearly killed a kid over a girl. Served two years in LSP. It was a long time ago.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+Choices:
+- 01CAD4:NovaArizona.esm
+- 01CAD5:NovaArizona.esm
+- 01CAD6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Really? What did you do?

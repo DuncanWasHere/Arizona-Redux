@@ -1,0 +1,39 @@
+FormKey: 00D54A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - AlwaysDarken
+Quest: 00D474:NovaArizona.esm
+PreviousInfo: 00D549:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Manius Castulus, Malpais Mine Slavemaster.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717682
+Choices:
+- 00D475:NovaArizona.esm
+- 0350F4:NovaArizona.esm
+- 00D48E:NovaArizona.esm
+- 00D48F:NovaArizona.esm
+- 00D490:NovaArizona.esm
+- 00D492:NovaArizona.esm
+- 00D6D4:NovaArizona.esm
+- 00D4A0:NovaArizona.esm
+- 00D493:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are you again?

@@ -1,0 +1,47 @@
+FormKey: 01F016:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652041
+    UseEmotionAnimation: True
+    Unused3: 0x746F70
+  ResponseText: If you're looking for Natalie, she and the children have already moved on from here. They've gone West.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x43466F
+  ResponseText: We'll see if they'll do better in the Boneyard. I hope they will.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100789369
+Choices:
+- 01EC85:NovaArizona.esm
+- 01EC8B:NovaArizona.esm
+- 01EC87:NovaArizona.esm
+- 01EC88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

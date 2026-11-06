@@ -1,0 +1,50 @@
+FormKey: 01CC0C:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ah, you might not know. The first city of Mars. The first city of true civilization.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Its fall left a gap in the world, one that we never filled. Its successors were all pale imitations.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But Vegas? Vegas will be the new Rome. A shining city to be an example for all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780946
+Choices:
+- 01CBF1:NovaArizona.esm
+- 01CBF2:NovaArizona.esm
+- 01CBF3:NovaArizona.esm
+- 01CBF4:NovaArizona.esm
+- 01CC02:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Rebirth of Rome?

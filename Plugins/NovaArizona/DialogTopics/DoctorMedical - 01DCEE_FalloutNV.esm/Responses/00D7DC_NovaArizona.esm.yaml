@@ -1,0 +1,38 @@
+FormKey: 00D7DC:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 00D7DF:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x63746F
+    UseEmotionAnimation: True
+    Unused3: 0x652052
+  ResponseText: Oh, wow. That looks pretty bad. That'll be 25 denarii.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742750
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 0.66
+  Function: GetHealthPercentage
+  RunOnType: Target
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 0.33
+  Function: GetHealthPercentage
+  RunOnType: Target
+Choices:
+- 02284F:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How much to heal my wounds?

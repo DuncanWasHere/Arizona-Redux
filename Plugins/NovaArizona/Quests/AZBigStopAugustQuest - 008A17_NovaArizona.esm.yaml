@@ -1,0 +1,115 @@
+FormKey: 008A17:NovaArizona.esm
+EditorID: AZBigStopAugustQuest
+FormVersion: 15
+Script: 01EF27:NovaArizona.esm
+Name: Town Without Pity
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Starts quest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 6
+  LogEntries:
+  - Flags: []
+    Entry: Ernest and Reed stuff done
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x15000A007201007304000200203115000A0072010073030002002031
+      SourceCode: >-
+        Set AZBigStopAugustQuest.AhigaHasTarget to 1
+
+        Set AZBigStopAugustQuest.NoxHasTarget to 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A17:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+      CompiledScript: 0x7711070001006E32000000
+      SourceCode: RewardXp 50
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 1
+  Description: Talk to Ernest about August's disappearance.
+  Targets:
+  - Target: 013F08:NovaArizona.esm
+    Unused: 0x1C2529
+- Index: 2
+  Description: Talk to the Solitare Frumentarii and discover what happened to August.
+  Targets:
+  - Target: 008A67:NovaArizona.esm
+    Unused: 0x74052D
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 008A67:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 008A67:NovaArizona.esm
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x74052D
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 024E15:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetQuestCompleted
+      FirstParameter: 100698646
+    - CompareOperator: LessThan
+      Fluff: 0x000000
+      ComparisonValue: 255
+      Function: GetStage
+      FirstParameter: 100698646
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 008A66:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100698647
+      SecondParameter: 5
+- Index: 3
+  Description: (Optional) Complete Ahiga's weapon parts delivery.
+- Index: 4
+  Description: (Optional) Deal with the SMART Array.
+- Index: 8
+  Description: Tell Jem what you've discovered.
+  Targets:
+  - Target: 01365F:NovaArizona.esm
+    Unused: 0x8A1D26
+- Index: 5
+  Description: (Optional) Complete Ahiga's second delivery.
+- Index: 6
+  Description: (Optional) Investigate the barrel at Solitare landfill.
+  Targets:
+  - Target: 0089CA:NovaArizona.esm
+    Unused: 0x2F102B
+- Index: 10
+  Description: Talk to Reed about August's disappearance.
+  Targets:
+  - Target: 008AF0:NovaArizona.esm
+    Unused: 0x1E1428

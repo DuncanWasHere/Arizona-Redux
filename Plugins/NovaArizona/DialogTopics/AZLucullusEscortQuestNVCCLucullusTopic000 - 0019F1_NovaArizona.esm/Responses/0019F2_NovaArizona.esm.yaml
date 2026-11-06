@@ -1,0 +1,41 @@
+FormKey: 0019F2:NovaArizona.esm
+FormVersion: 15
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696162
+    UseEmotionAnimation: True
+    Unused3: 0x434C75
+  ResponseText: My orders are to escort you safely to the Fort without delay. If you choose to wander off on your own, I cannot harm you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20746F
+    UseEmotionAnimation: True
+    Unused3: 0x727420
+  ResponseText: But to defy Caesar in his own territory is beyond foolish. It is suicidal. You would do well to remember that even his patience has its limits.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+Choices:
+- 0019F1:NovaArizona.esm
+- 0019F8:NovaArizona.esm
+- 0019FC:NovaArizona.esm
+- 0019FE:NovaArizona.esm
+- 000E0A:NovaArizona.esm
+- 000E17:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

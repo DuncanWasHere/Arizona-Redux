@@ -1,0 +1,60 @@
+FormKey: 006E44:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 006E43:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Legion deserters are pretty rare. Plenty of bounty hunters have attempted to kill Legionaries and pass them off as deserters.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Usually, they're crucified for that when the Legion inevitably finds out that they weren't deserters.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Anyways, he's right outside of the camp, down there. You can't miss him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100681665
+  SecondParameter: 10
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 4
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100681665
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  SourceCode: ;
+Prompt: How come you haven't taken up this bounty?

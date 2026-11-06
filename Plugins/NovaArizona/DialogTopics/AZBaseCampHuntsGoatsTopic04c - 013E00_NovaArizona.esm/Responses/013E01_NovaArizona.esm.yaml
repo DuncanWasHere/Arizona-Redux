@@ -1,0 +1,50 @@
+FormKey: 013E01:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Almost all of them. Soon, Lanius will arrive, and the Second Battle of Hoover Dam will begin.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: I only hope that the Brotherhood will be dealt with sooner rather than later. I'd really rather not see them again.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know Caesar has a plan, but I worry daily that I'm not strong enough to be able to carry out his will.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744517
+Choices:
+- 013DB8:NovaArizona.esm
+- 013DAC:NovaArizona.esm
+- 013DAD:NovaArizona.esm
+- 013DAE:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are there many veterans of that conflict on the way to the Mojave?

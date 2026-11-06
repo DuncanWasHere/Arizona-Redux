@@ -1,0 +1,108 @@
+FormKey: 00E2A4:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 00E29F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Excellent. You have made me a very happy man. I cannot wait to see him reunited with Caesar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+Choices:
+- 020840:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 13
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007204006ECA0800001600100002000C00207205007302002030203D3D36100500010072060039100A0002007206006E050000001900000015000A00720700730300020020311C0002002110020000001C000300AD100F0003007201006E010000006E000000001C00030022100200000015000A007203007308000200203015000A00720800730F000200203015000A007208007311000200203115000A007208007339000200203015000A00720800733000020020301C000300C511070001006E00000000150013007208007313000B00207208007313002031202D1C000300A811050001007209001C000100A81105000100720A001C000300801105000100720B001C0003000F100900020039006E0000000059100B000100720C0000000000000059100B000100720D000000000000001C000300FA1100001600100001000C00207208007313002030203D3D15000A007208007312000200203019000000
+  SourceCode: >-
+    Player.AddItem Caps001 2250
+
+    if VMS24.nTransplantResult == 0
+    	StartQuest AZLaertesSellDogQuest
+    	SetStage AZLaertesSellDogQuest 5
+    endif
+
+    Set AZVanillaDialogueQuest.RexReturnedtoCaesar to 1
+
+    AZRexREF.enable
+
+
+    RexREF.RemoveAllItems Player 1 0
+
+    RexREF.disable
+
+    set RexREF.Waiting to 0
+
+    set VNPCFollowers.RexHired to 0
+
+    set VNPCFollowers.RexFired to 1
+
+    set VNPCFollowers.bRexL38 to 0
+
+    set VNPCFollowers.bCritterInParty to 0
+
+    RexREF.SetPlayerTeammate 0
+
+    set VNPCFollowers.nCurrentFollowers to (VNPCFollowers.nCurrentFollowers - 1)
+
+    RexRef.removeperk CompanionSuite
+
+    player.removeperk SearchAndMark
+
+    RexRef.RemoveFromFaction FollowerFaction
+
+    RexRef.SetAV Assistance 0
+
+    showmessage FollowerMessagePerkRexRemove
+
+    ShowMessage FollowerMessageLeaveRex
+
+    RexRef.ResetAI
+
+    if VNPCFollowers.nCurrentFollowers == 0
+         set VNPCFollowers.bPlayerHasFollower to 0
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8DF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1176B8:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEA6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C571:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C611:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037136:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C623:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 116E18:FalloutNV.esm
+Prompt: That's a fair deal. [Sell Rex.]

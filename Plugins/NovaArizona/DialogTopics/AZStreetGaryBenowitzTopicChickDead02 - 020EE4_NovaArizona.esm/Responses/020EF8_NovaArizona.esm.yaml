@@ -1,0 +1,44 @@
+FormKey: 020EF8:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: From what I heard on our radio, yes, he is dead. Please don't blame yourself. He made his choice.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100794120
+Choices:
+- 020EE5:NovaArizona.esm
+- 020EE9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E010000006E01000000A2110F0003007201006E0B0000006E01000000A3110F0003007201006E0F0000006E01000000
+  SourceCode: >-
+    setobjectivecompleted AZGOMAssassinationQuest 1 1
+
+    setobjectivecompleted AZGOMAssassinationQuest 11 1
+
+    setobjectivedisplayed AZGOMAssassinationQuest 15 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+Prompt: So that's it? He's dead?

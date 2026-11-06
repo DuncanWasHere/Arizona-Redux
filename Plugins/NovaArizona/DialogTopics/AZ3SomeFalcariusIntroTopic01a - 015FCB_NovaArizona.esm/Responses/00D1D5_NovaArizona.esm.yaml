@@ -1,0 +1,33 @@
+FormKey: 00D1D5:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0xA73901
+  ResponseText: I am Decanus Falcarius, the Legion representative here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712373
+Choices:
+- 016232:NovaArizona.esm
+- 016240:NovaArizona.esm
+- 016242:NovaArizona.esm
+- 016244:NovaArizona.esm
+- 01623C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are you?

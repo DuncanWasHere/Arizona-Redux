@@ -1,0 +1,64 @@
+FormKey: 004968:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: 0047E0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE80D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ha! I wish. No secret mission. I appreciate that you recognized the armor though.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F2073
+    UseEmotionAnimation: True
+    Unused3: 0x206D69
+  ResponseText: Listen closely. Stay away from the gate. Very dangerous.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730100020020331C0001005E100000
+  SourceCode: >-
+    Set AZBarkerDialogue.iBarkerCaveAcceptance to 3
+
+    AZSUHBarkerREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F6A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C2:NovaArizona.esm
+Prompt: "[NCR Rep] You're an Arizona Ranger, aren't you? Are you on a secret mission to kill Caesar?"

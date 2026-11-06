@@ -1,0 +1,50 @@
+FormKey: 0161B5:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: It's alright.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: I'm a union guy -- excuse me, former union guy. So I've got higher standards than some folk might.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: I've managed to talk my way into better accomodations for us dungeon dwellers though. It all adds up, I say.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 01615C:NovaArizona.esm
+- 016175:NovaArizona.esm
+- 01617E:NovaArizona.esm
+- 01617F:NovaArizona.esm
+- 016180:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you like working here?

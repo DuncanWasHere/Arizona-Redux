@@ -1,0 +1,111 @@
+FormKey: 033832:NovaArizona.esm
+EditorID: AZRSDeltaGarcettiScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 10
+    VariableCount: 5
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000090100003915130001120056040000050058000057270400000000160014000600100020583A150A0001090056010000040015160017000100130020583A150D00010C005604000005005203000439150C00010B00560100000100420100170002000100EF10050001007204001900000039150C00010B0056010000040042010019000000160017000400130020583A150D00010C0056040000050052030004160014000200100020583A150A0001090056010000010015EE100500010072040039150C00010B00560100000100420100190000001800130002000F0020583A150900010800560100000100EF100500010072040039150C00010B00560100000100420000190000001100000010000B001900900000000100720500160027000600230020583810050001007206002031203D3D2058DF10050001007207002031203D3D2026265F10080002007205007208005F100800020072050072090015000B00660200060020586B1100001600210001001D00205801100500010072050020353132203C20660200203020213D2026261C000100331005000100720A00190000001900000011000000
+  SourceCode: >-
+    scn AZRSDeltaGarcettiScript
+
+
+    int bInit
+
+    int bHelmetEquipped
+
+
+    ; NCR Sniffer Stuff
+
+    ref MyHandler
+
+    short DoOnce
+
+
+    BEGIN GameMode
+    	ref rCurrentPackage = GetCurrentStablePackage
+
+    	if eval (!bInit)
+    		if eval (rCurrentPackage == AZRSDeltaGarcettiScoutPackage)
+    			bHelmetEquipped = 1
+    		else
+    			UnequipItem HelmetNVNCRRangerCombat
+    		endif
+
+    		bInit = 1
+    	endif
+    		
+    	if eval (rCurrentPackage == AZRSDeltaGarcettiScoutPackage)
+    		if eval (!bHelmetEquipped)
+    			EquipItem HelmetNVNCRRangerCombat
+    			bHelmetEquipped = 1
+    		endif
+    	elseif eval (bHelmetEquipped)
+    		UnequipItem HelmetNVNCRRangerCombat
+    		bHelmetEquipped = 0
+    	endif
+    END
+
+
+    begin OnStartCombat Player
+    	if (GetQR DisguiseFactionPulseQuest == 1) && (IsSpellTarget DisguiseFactionPulseActorEffect == 1)
+    		sendAssaultAlarm Player NCRFactionNV
+    		sendAssaultAlarm Player VNCRSnifferFaction
+    		set MyHandler to GetLinkedRef
+    		if (GetDistance player < 512) && MyHandler != 0
+    			MyHandler.Say NCRSnifferChallengePlayer			
+    		endif
+    	endif
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x80A120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x316C6D686F6C73
+    Name: bHelmetEquipped
+  - Data:
+      Index: 2
+      Unknown: 0xE0DC29120000000000000000
+      Unknown2: 0x6C73654163746F
+    Name: MyHandler
+  - Data:
+      Index: 3
+      Unknown: 0x00DF29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 4
+      Unknown: 0x60A120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C73654163746F
+    Name: bInit
+  - Data:
+      Index: 5
+      Unknown: 0x20DF29120000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCurrentPackage
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 5
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033833:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 145EC5:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1411A8:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1413D1:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0A46E7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 12676F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 126763:FalloutNV.esm

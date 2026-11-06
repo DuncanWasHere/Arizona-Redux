@@ -1,0 +1,161 @@
+FormKey: 017380:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZScavengerGM01DEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Dead Scavenger
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - NoLowLevelProcessing
+  Fatigue: 150
+  Level: 6
+  CalcMin: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+Factions:
+- Faction: 152E91:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13F8A4:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13F89B:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 13C8D6:FalloutNV.esm
+Template: 1532FD:FalloutNV.esm
+Race: 003B3E:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 162962:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 162960:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295F:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295D:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295A:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 162959:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 162956:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 12D513:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 12D512:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 12D511:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 0FDA92:FalloutNV.esm
+- 025754:FalloutNV.esm
+Class: 01873D:FalloutNV.esm
+Strength: 6
+Perception: 6
+Endurance: 5
+Intelligence: 4
+Agility: 6
+Luck: 4
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 12
+  - Key: BigGuns
+    Value: 47
+  - Key: EnergyWeapons
+    Value: 14
+  - Key: Explosives
+    Value: 14
+  - Key: Lockpick
+    Value: 14
+  - Key: Medicine
+    Value: 12
+  - Key: MeleeWeapons
+    Value: 51
+  - Key: Repair
+    Value: 12
+  - Key: Science
+    Value: 12
+  - Key: SmallGuns
+    Value: 51
+  - Key: Sneak
+    Value: 51
+  - Key: Speech
+    Value: 12
+  - Key: Survival
+    Value: 12
+  - Key: Unarmed
+    Value: 12
+  SkillOffsets:
+  - Key: Barter
+    Value: 15
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 20
+  - Key: Explosives
+    Value: 30
+  - Key: Lockpick
+    Value: 10
+  - Key: Medicine
+    Value: 5
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 25
+  - Key: Science
+    Value: 5
+  - Key: SmallGuns
+    Value: 4
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 10
+  - Key: Survival
+    Value: 40
+  - Key: Unarmed
+    Value: 20
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Eyes: 035E4F:FalloutNV.esm
+HairColor: '#00291E18'
+CombatStyle: 0B2945:FalloutNV.esm
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x00EF8C3FA1532A3F195D00BF76B9133F23BD693F3A48F8BF615224409737733FAE3C30BF1A6C6CBFC8A5D0BF346B8FBFF2E2133D9FC459C017A7A03E65DEA7BF4322D63EEEDEE93F86947C3F436C10405A0C1BC0937616C09DA52240A191F03F2DE3FF3F094413401F691A3F655119C0A6AB623F6908273E8C44A93DB804FF3F600190402BFCA2C036C83C40C89B494086F50CC0C86C6AC0F748A140A72BEDBFBF34D33FD2E4F8BE5FC80141488641BECA49854042E7B03FD7A94FC009500A40C2BD36C0521D9540
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x00DCE5B70000EEB60000F6B60080CE37000004370000C0B500A0DF3700005E360000D035000058B5000038350000A8B6000084B50000B035000048360000E2360000B03600801437000004B6000000B4000084B6000070360000F03400808836000020B6000068B60000D8B5000070B50000CC3600006436000064B60080D8B60000EC3500007836000020B60000AC350000000000002036000090350080B1360000B8B60000283500003CB600004033000060B50000E0B5000018B60000A4350000B4B500006035
+NAM5: 255
+DATADataTypeState:
+- Break0
+MajorFlags:
+- 0x80000

@@ -1,0 +1,40 @@
+FormKey: 035061:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 035062:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[SUCCEEDED] What the hell did you just- motherfucker, I- Man, fuck you!'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+Choices:
+- 03500C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x7711070001006E46000000
+  SourceCode: RewardXP 70
+Prompt: Mandibular prognathism. Symptom of inbreeding. Your family tree must look like a bush.
+ActorValuePerk: 0004B5:FalloutNV.esm

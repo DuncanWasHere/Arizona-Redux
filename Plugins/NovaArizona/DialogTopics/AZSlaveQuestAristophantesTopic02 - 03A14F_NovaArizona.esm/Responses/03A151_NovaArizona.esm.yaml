@@ -1,0 +1,69 @@
+FormKey: 03A151:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Ah, well. Say no more. This will make for an easy remedy to the situation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Return to the Rusty Hooks and do what you can to see to it that their current leader is replaced by our man, the mutant. Then return to me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: You have done good work for the Legion thus far on this matter, see it through and I will make sure you are rewarded.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100806563
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100901046
+  SecondParameter: 75
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E500000006E00000000A3110F0003007201006E5F0000006E01000000
+  SourceCode: >-
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 80 0
+
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 95 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+Prompt: The leader won't budge. But his right hand man, a mutant named Bear, said he'll do as he's asked.

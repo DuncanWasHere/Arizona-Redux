@@ -1,0 +1,44 @@
+FormKey: 024D76:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206F6E
+    UseEmotionAnimation: True
+    Unused3: 0x682074
+  ResponseText: The leader of Vegas? There is no way he could have known about this scheme. It's too far from his tower.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206F6E
+    UseEmotionAnimation: True
+    Unused3: 0x682074
+  ResponseText: So, I'm assuming that you're simply an employee, what's the word, freelancing.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  Function: GetGlobalValue
+  FirstParameter: 1273806
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1465026
+Choices:
+- 024B52:NovaArizona.esm
+- 024D8A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Mr. House.

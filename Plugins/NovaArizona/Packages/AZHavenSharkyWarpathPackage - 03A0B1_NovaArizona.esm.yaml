@@ -1,0 +1,45 @@
+FormKey: 03A0B1:NovaArizona.esm
+EditorID: AZHavenSharkyWarpathPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+Unused: 133
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 21539
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0192B7:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 3
+      Enabled: 1
+    CompiledScript: 0x1C0001008011050001007202001C000100161005000100720300
+    SourceCode: >-
+      AZHavenSharkyREF.RemoveFromFaction AZHavenFaction
+
+      AZHavenSharkyREF.StartCombat AZHavenJobREF
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 03A0AF:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 004361:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0192B7:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

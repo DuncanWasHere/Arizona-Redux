@@ -1,0 +1,45 @@
+FormKey: 00482E:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: 0047E6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x617665
+    UseEmotionAnimation: True
+    Unused3: 0x657265
+  ResponseText: '[FAILED] You made a beeline straight for this cave, and you expect me to believe that?'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C6564
+    UseEmotionAnimation: True
+    Unused3: 0x636174
+  ResponseText: Wait. What the hell is that around your neck?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00482F:NovaArizona.esm
+- 004831:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm just passing through. Kind of stumbled on this place by accident.
+ActorValuePerk: 0004BB:FalloutNV.esm

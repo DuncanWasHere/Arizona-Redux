@@ -1,0 +1,62 @@
+FormKey: 01EFBA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: 01EFB9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: You bumbling moron! I should have you executed and strung on a cross with your eyes gouged out with cattle prods!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Heavy breathing} Fine. Fine. I will make my own accomodations. Leave me be.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00D041:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 008A67:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006EC80000003B12130003007202006E000000007A0000000000001040
+  SourceCode: >-
+    SetStage AZMalpaisAbuserQuest 200
+
+    AddReputationExact RepNVCaesarsLegion 0 4
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: Both of them are dead. They're nothing I can do.

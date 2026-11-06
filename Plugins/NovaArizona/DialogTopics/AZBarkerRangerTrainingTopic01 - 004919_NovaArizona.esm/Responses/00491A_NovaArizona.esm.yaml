@@ -1,0 +1,57 @@
+FormKey: 00491A:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xEBE71C
+    UseEmotionAnimation: True
+    Unused3: 0xF0E71C
+  ResponseText: That's going to depend on your band. There's lot of Ranger groups out there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In Nevada and Utah, you're born into it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: When you come of age, you complete a rite of passage. After that, you're sent out into the Wasteland to help other communities.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x616E6C
+    UseEmotionAnimation: True
+    Unused3: 0x732068
+  ResponseText: In Arizona, you spend years of your life training to physical perfection. When you're ready, you take the test of endurance.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00491B:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How you do become a Ranger?

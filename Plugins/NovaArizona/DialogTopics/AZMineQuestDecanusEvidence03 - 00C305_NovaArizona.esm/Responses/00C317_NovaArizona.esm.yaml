@@ -1,0 +1,88 @@
+FormKey: 00C317:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Tribal junk. Savages love this sort of superstitious trash-worship.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm satisfied with this evidence. Callum shall return to normal duty.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100749113
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+Choices:
+- 00C302:NovaArizona.esm
+- 00C303:NovaArizona.esm
+- 00ABFA:NovaArizona.esm
+- 02097F:NovaArizona.esm
+- 020991:NovaArizona.esm
+- 020995:NovaArizona.esm
+- 020996:NovaArizona.esm
+- 020997:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000A2110F0003007203006E230000006E0100000015000A00720300730600020020311600100007000C00207203007309002030203D3D160016000500120020720100582F10050001007204002030203E1600610001005D002058A5110A0002007203006E050000002031203D3D2058A4110A0002007203006E050000002030203D3D2026262058A5110A0002007203006E070000002031203D3D2058A4110A0002007203006E070000002030203D3D202626207C7C39100A0002007203006E28000000180017000100130020720100582F10050001007204002030203D3D39100A0002007203006E5F00000019000000190000001800100001000C00207203007309002031203D3D39100A0002007203006E5F00000019000000
+  SourceCode: >-
+    player.removeitem AZLetiTribalHeirloom 1
+
+    setobjectivecompleted AZWhiteHillsMineDialogue 35 1
+
+    set AZWhiteHillsMineDialogue.savedcallum to 1
+
+
+    if AZWhiteHillsMineDialogue.SlipperyWillComplete == 0
+    	if Player.GetItemCount AZMineQuestMap > 0
+    		if (GetObjectiveDisplayed AZWhiteHillsMineDialogue 5 == 1 && GetObjectiveCompleted AZWhiteHillsMineDialogue 5 == 0) || (GetObjectiveDisplayed AZWhiteHillsMineDialogue 7 == 1 && GetObjectiveCompleted AZWhiteHillsMineDialogue 7 == 0)
+    			SetStage AZWhiteHillsMineDialogue 40
+    		elseif Player.GetItemCount AZMineQuestMap == 0
+    			SetStage AZWhiteHillsMineDialogue 95
+    		endif
+    	endif
+    elseif AZWhiteHillsMineDialogue.SlipperyWillComplete == 1
+    	SetStage AZWhiteHillsMineDialogue 95
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014F39:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ABF1:NovaArizona.esm
+Prompt: I have an heirloom of the raider tribe.

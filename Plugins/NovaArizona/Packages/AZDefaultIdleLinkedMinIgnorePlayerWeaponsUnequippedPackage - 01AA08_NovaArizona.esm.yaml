@@ -1,0 +1,35 @@
+FormKey: 01AA08:NovaArizona.esm
+EditorID: AZDefaultIdleLinkedMinIgnorePlayerWeaponsUnequippedPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- HeadTrackingOff
+- WeaponsUnequipped
+Unused: 44
+BehaviorFlags:
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 15677
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

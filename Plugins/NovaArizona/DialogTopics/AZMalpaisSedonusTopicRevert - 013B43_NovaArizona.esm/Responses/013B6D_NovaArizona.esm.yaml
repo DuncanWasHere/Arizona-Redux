@@ -1,0 +1,38 @@
+FormKey: 013B6D:NovaArizona.esm
+FormVersion: 15
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fine.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 013B2A:NovaArizona.esm
+- 013B2D:NovaArizona.esm
+- 013B36:NovaArizona.esm
+- 013B3C:NovaArizona.esm
+- 013B3D:NovaArizona.esm
+- 013B40:NovaArizona.esm
+- 013B41:NovaArizona.esm
+- 013B98:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'd like to ask about something else.

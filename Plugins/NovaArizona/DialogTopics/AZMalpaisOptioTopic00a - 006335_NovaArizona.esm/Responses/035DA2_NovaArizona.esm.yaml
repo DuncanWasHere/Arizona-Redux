@@ -1,0 +1,86 @@
+FormKey: 035DA2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 035DA0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: The bounty was revoked. If he was killed, then no payment will be dispensed.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: I am assuming, of course, that he didn't face death at your hands. You should be glad that I'm assuming that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 006E22:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100681665
+  SecondParameter: 14
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 3
+Choices:
+- 00DE03:NovaArizona.esm
+- 020A9E:NovaArizona.esm
+- 01ED1D:NovaArizona.esm
+- 004C60:NovaArizona.esm
+- 004C3D:NovaArizona.esm
+- 004C3E:NovaArizona.esm
+- 004C4C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007202006E150000006E00000000A3110F0003007202006E160000006E00000000A3110F0003007202006E190000006E00000000A2110F0003007202006E1A0000006E0100000015000A00720200730300020020311C00010052100A0002007203006E010000001C00010052100A0002007204006E01000000
+  SourceCode: >-
+    setobjectivedisplayed AZMalpaisBountyQuest 21 0
+
+    setobjectivedisplayed AZMalpaisBountyQuest 22 0
+
+    setobjectivedisplayed AZMalpaisBountyQuest 25 0
+
+    setobjectivecompleted AZMalpaisBountyQuest 26 1
+
+    set AZMalpaisBountyQuest.iScreamingEagleComplete to 1
+
+    Player.RemoveItem AZScreamingEagleHead 1
+
+    Player.RemoveItem AZScreamingEagleHeadMangled 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006E29:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F49:NovaArizona.esm
+Prompt: Screaming Eagle was killed.

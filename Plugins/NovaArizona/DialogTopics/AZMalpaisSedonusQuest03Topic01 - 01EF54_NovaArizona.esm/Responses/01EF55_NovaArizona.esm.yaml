@@ -1,0 +1,51 @@
+FormKey: 01EF55:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x69733F
+  ResponseText: He irritated me. It took me a while to find out why.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x65436F
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: I'm sure you've noticed my more... erratic tendencies.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x69733F
+  ResponseText: I will tell you the truth of it. I am not the man I was.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 01EF58:NovaArizona.esm
+- 01EF5A:NovaArizona.esm
+- 01EF5B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, why did you have me kill the adjutant?

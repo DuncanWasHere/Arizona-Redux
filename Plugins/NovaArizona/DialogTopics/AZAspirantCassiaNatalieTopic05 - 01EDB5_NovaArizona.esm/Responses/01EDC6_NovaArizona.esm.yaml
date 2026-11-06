@@ -1,0 +1,63 @@
+FormKey: 01EDC6:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: I don't know. I was in Malpais when it happened.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: I heard the reports for days. The Legionaries were talking about Rangers, and there were some rumors among the slaves that the NCR had begun crossing the Dam.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: The last one obviously wasn't true, but the first one might have been.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Either way, Mr. Rex has been cheerfully butchering the entire town as reprisal.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EDEA:NovaArizona.esm
+- 01EF84:NovaArizona.esm
+- 01EDB1:NovaArizona.esm
+- 01EDB2:NovaArizona.esm
+- 01EDB3:NovaArizona.esm
+- 01EDB4:NovaArizona.esm
+- 01EDB5:NovaArizona.esm
+- 01EDB6:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Did you see what happened to Big Stop?

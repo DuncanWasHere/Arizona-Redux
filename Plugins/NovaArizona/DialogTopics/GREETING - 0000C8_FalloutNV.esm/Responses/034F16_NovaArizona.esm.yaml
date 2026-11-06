@@ -1,0 +1,35 @@
+FormKey: 034F16:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 034F17:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '{Deep breathy voice trying to sound badass}I thought I told you to screw off?'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 2
+Choices:
+- 034EFD:NovaArizona.esm
+- 034F03:NovaArizona.esm
+- 034F04:NovaArizona.esm
+- 034F05:NovaArizona.esm
+- 034F06:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

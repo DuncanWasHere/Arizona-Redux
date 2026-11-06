@@ -1,0 +1,88 @@
+FormKey: 0103B3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Tribals or not, slaves are slaves. Maybe I've managed to sidestep the business of hunting them down. So what?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The efficiency of my operation is second to none. You know why? Because my slaves are born in captivity.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 0CC832:FalloutNV.esm
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You only need a few men and a few women. Keep them. You think I'm going to kill my golden goose?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I let them fuck. I keep them healthy. No harm is done to them. We've been doing it this way for years, before I even had hair on my chin.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Can you argue with the results?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729754
+Choices:
+- 01755A:NovaArizona.esm
+- 01755C:NovaArizona.esm
+- 017632:NovaArizona.esm
+- 01755D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007308000200203116001900010015002058A5110A0002007201006E2D0000002031203D3DA2110F0003007201006E2D0000006E0100000019000000
+  SourceCode: >-
+    set AZMalpaisJournalistQuest.bKnowsAboutMalachi to 1
+
+
+    if getobjectivedisplayed AZMalpaisJournalistQuest 45 == 1
+    	setobjectivecompleted AZMalpaisJournalistQuest 45 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: My point is that your story doesn't add up. How are you really getting these slaves?

@@ -1,0 +1,39 @@
+FormKey: 038002:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I had a feeling those raiders were tribals. Wonder how long they've been living underground.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FBF:NovaArizona.esm
+- 037FC0:NovaArizona.esm
+- 037FC1:NovaArizona.esm
+- 037FC2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000A0042011C
+  SourceCode: AZDeejayQuest.bTrust += 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E6B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1

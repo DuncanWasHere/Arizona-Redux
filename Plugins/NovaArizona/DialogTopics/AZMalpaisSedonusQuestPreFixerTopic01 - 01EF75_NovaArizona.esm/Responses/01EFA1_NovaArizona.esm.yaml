@@ -1,0 +1,63 @@
+FormKey: 01EFA1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: "[SUCCEEDED] If that's so, then I could just end up in the same position again."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6D706C
+    UseEmotionAnimation: True
+    Unused3: 0x6F7572
+  ResponseText: That is unacceptable. The only thing left, then, is to halt all potential sources of addiction. Only internal strength can overcome this weakness.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Tell me, servant. What's more important to the Legion? Obedience or service?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 01EF62:NovaArizona.esm
+- 01EF63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E3C000000
+  SourceCode: Player.RewardXP 60
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: Fixer is only a temporary cure for addiction. The drug itself has addictive properties of its own.
+ActorValuePerk: 0004B5:FalloutNV.esm

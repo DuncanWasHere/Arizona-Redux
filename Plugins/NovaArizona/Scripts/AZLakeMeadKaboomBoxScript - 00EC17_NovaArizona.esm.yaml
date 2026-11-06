@@ -1,0 +1,156 @@
+FormKey: 00EC17:NovaArizona.esm
+EditorID: AZLakeMeadKaboomBoxScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 24
+    VariableCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B0002004000000001007213001600100001000C0020721400730F002030203D3D59100B00010072150000000000000017000200010059100B0001007216000000000000001900000011000000100006000000A602000015000B00730100060020581F10000016000D0005000900207302002030203D3D16000D0003000900207301002031203D3D59100B000100721700000000000000150007007302000200203115000700730100020020301900000018000D0007000900207302002031203D3D16000D0001000900207301002030203D3D59100B00010072170000000000000018000C0003000800207301002030203E15000A00721400730F000200203115000700730200020020321500070073030002002031190000001900000016000D001C000900207303002031203D3D1C0001000D100A0002007201006E010000001C0002000D100A0002007202006E010000001C0003000D100A0002007203006E010000001C0004000D100A0002007204006E010000001C0005000D100A0002007205006E010000001C0006000D100A0002007206006E010000001C0007000D100A0002007207006E010000001C0008000D100A0002007208006E010000001C0009000D100A0002007209006E010000001C000A000D100A000200720A006E010000001C000B000D100A000200720B006E010000001C000C000D100A000200720C006E010000001C000D000D100A000200720D006E010000001C000E000D100A000200720E006E010000001C000F000D100A000200720F006E010000001C0010000D100A0002007210006E010000001C001100CC10070001006E010000001C001200211002000000261005000100721800160015000200110020583A1005000100721400203530203D3D39100A0002007214006E3C00000015000A007214007308000200203118000D0001000900205A1400203530203C15000A007214007308000200203118000F0001000B00205A140020313030203D3D15000A00721400730800020020321900000015000700730300020020321900000011000000
+  SourceCode: >-
+    scn AZLakeMeadKaboomBoxScript
+
+
+    int Button
+
+    int Decision
+
+    int DoOnce
+
+
+    BEGIN OnActivate player
+
+
+    if AZNewtFishingQuest.GeneratorsSettoBlow == 0
+    	ShowMessage AZLakeMeadSelfDestructMessage01
+    else
+    	ShowMessage AZLakeMeadSelfDestructMessage03
+    endif
+
+
+    END
+
+
+    BEGIN GameMode
+
+    Set Button to GetButtonPressed
+
+    if Decision == 0
+    	if Button == 1
+    		ShowMessage AZLakeMeadSelfDestructMessage02
+    		Set Decision to 1
+    		Set Button to 0
+    	endif
+    elseif Decision == 1
+    	if Button == 0
+    		ShowMessage AZLakeMeadSelfDestructMessage02
+    	elseif Button > 0
+    		Set AZNewtFishingQuest.GeneratorsSettoBlow to 1
+    		Set Decision to 2
+    		Set DoOnce to 1
+    	endif
+    endif
+
+
+    if DoOnce == 1
+    	AZLakeMeadLaboratoryKlaxonGlow01.activate AZLakeMeadLaboratoryKlaxonGlow01 1
+    	AZLakeMeadLaboratoryKlaxon01.activate AZLakeMeadLaboratoryKlaxon01 1
+    	AZLakeMeadLaboratoryKlaxonGlow02.activate AZLakeMeadLaboratoryKlaxonGlow02 1
+    	AZLakeMeadLaboratoryKlaxon02.activate AZLakeMeadLaboratoryKlaxon02 1
+    	AZLakeMeadLaboratoryKlaxonGlow03.activate AZLakeMeadLaboratoryKlaxonGlow03 1
+    	AZLakeMeadLaboratoryKlaxon03.activate AZLakeMeadLaboratoryKlaxon03 1
+    	AZLakeMeadLaboratoryKlaxonGlow04.activate AZLakeMeadLaboratoryKlaxonGlow04 1
+    	AZLakeMeadLaboratoryKlaxon04.activate AZLakeMeadLaboratoryKlaxon04 1
+    	AZLakeMeadLaboratoryKlaxonGlow05.activate AZLakeMeadLaboratoryKlaxonGlow05 1
+    	AZLakeMeadLaboratoryKlaxon05.activate AZLakeMeadLaboratoryKlaxon05 1
+    	AZLakeMeadLaboratoryKlaxonGlow06.activate AZLakeMeadLaboratoryKlaxonGlow06 1
+    	AZLakeMeadLaboratoryKlaxon06.activate AZLakeMeadLaboratoryKlaxon06 1
+    	AZLakeMeadLaboratoryKlaxonGlow07.activate AZLakeMeadLaboratoryKlaxonGlow07 1
+    	AZLakeMeadLaboratoryKlaxon07.activate AZLakeMeadLaboratoryKlaxon07 1
+    	AZLakeMeadLaboratoryKlaxonGlow08.activate AZLakeMeadLaboratoryKlaxonGlow08 1
+    	AZLakeMeadLaboratoryKlaxon08.activate AZLakeMeadLaboratoryKlaxon08 1
+
+    	AZLakeMeadFacilityDoorREF.SetDestroyed 1
+    	AZLakeMeadLaboratoryLockdownLurkEnabler.enable
+    	PlaySound VMS08Explosion3D
+    	if GetStage AZNewtFishingQuest == 50
+    		SetStage AZNewtFishingQuest 60
+    		Set AZNewtFishingQuest.HiveCleared to 1
+    	elseif AZNewtFishingQuest < 50
+    		Set AZNewtFishingQuest.HiveCleared to 1
+    	elseif AZNewtFishingQuest == 100
+    		Set AZNewtFishingQuest.HiveCleared to 2
+    	endif
+    	Set DoOnce to 2
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0D929120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30303031000000
+    Name: Button
+  - Data:
+      Index: 2
+      Unknown: 0xE0D929120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C6F3031000000
+    Name: Decision
+  - Data:
+      Index: 3
+      Unknown: 0x00DA29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039383:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039384:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039382:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039381:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039388:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039389:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039398:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039397:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039390:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039392:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039391:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 038CAE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039393:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC11:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC15:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC12:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0FCD87:FalloutNV.esm

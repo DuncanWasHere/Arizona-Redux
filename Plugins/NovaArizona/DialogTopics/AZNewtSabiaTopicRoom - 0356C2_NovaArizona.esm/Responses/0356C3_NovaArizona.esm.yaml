@@ -1,0 +1,47 @@
+FormKey: 0356C3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There's a room up in the rock face that's been empty a long time. You could stay there, if you want.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x757020
+    UseEmotionAnimation: True
+    Unused3: 0x652072
+  ResponseText: But I'm really not supposed to give the key away. How about 20 denarii?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713584
+Choices:
+- 00C47B:NovaArizona.esm
+- 00C47C:NovaArizona.esm
+- 00C47D:NovaArizona.esm
+- 00C480:NovaArizona.esm
+- 0356C2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is there somewhere I can stay around here?

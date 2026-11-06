@@ -1,0 +1,49 @@
+FormKey: 017561:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 008B00:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Welcome, you must be the reporters I've heard so much about. I hope you found the trip from Malpais pleasant.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E5468
+    UseEmotionAnimation: True
+    Unused3: 0x6C6420
+  ResponseText: I have my stenographus ready to transcribe. So, shall we begin?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758880
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 017562:NovaArizona.esm
+- 017564:NovaArizona.esm
+- 017610:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

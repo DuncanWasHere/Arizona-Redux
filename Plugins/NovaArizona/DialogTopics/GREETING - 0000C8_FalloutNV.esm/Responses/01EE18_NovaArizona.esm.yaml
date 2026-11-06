@@ -1,0 +1,35 @@
+FormKey: 01EE18:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EE17:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: Ave. I am Jaw Ripper. Unless you have business with the children, I would request that you leave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01EE3A:NovaArizona.esm
+- 01EE3B:NovaArizona.esm
+- 0350FD:NovaArizona.esm
+- 01EE37:NovaArizona.esm
+- 01EE39:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

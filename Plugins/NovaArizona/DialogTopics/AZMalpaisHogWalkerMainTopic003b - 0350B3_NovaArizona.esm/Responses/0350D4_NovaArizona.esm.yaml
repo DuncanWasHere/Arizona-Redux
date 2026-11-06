@@ -1,0 +1,69 @@
+FormKey: 0350D4:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I guess what I'm really yearning for is some dang respect around here. If I just had that...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It would be a lot easier to defeat the voices in my head that tell me I'm not worthy of respect.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But I don't know what I could ever do at this point to make that happen. My new rank doesn't exactly provide any opportunities to be heroic in battle.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know... Do you have any ideas?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 0350BD:NovaArizona.esm
+- 0350C6:NovaArizona.esm
+- 0350C7:NovaArizona.esm
+- 0350C8:NovaArizona.esm
+- 0350C9:NovaArizona.esm
+- 0350CD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E01000000
+  SourceCode: SetStage AZMalpaisSniperQuest 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+Prompt: Come on. There's got to be something that will cheer you up.

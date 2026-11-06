@@ -1,0 +1,57 @@
+FormKey: 035072:NovaArizona.esm
+EditorID: AZMalpaisRegulusBrawlVictoryPackage02
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 132
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 0
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+Conditions:
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetActorValue
+  FirstParameter: 16
+  RunOnType: Reference
+  Reference: 034F35:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 21
+IdleAnimations:
+  AnimationCount: 0x01
+  Animations:
+  - 15F8DD:FalloutNV.esm
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 0000C8:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1C00010017100000
+    SourceCode: AZMalpaisRegulusREF.StopCombat PlayerREF
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 034F35:NovaArizona.esm
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

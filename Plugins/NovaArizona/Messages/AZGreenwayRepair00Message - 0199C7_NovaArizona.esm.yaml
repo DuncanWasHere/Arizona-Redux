@@ -1,0 +1,20 @@
+FormKey: 0199C7:NovaArizona.esm
+EditorID: AZGreenwayRepair00Message
+FormVersion: 15
+Description: This is the junction box for the Dolan Springs Wind Farm. The junction box is in generally good condition, and could probably be repaired with the right technological know-how or a hefty amount of spare parts. Repairing it will be necessary to determine faults up the line.
+Name: Greenway Junction Box
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Leave It Alone
+- Text: Try to Fix It (Repair)
+- Text: Try to Bypass the Junction Box (Science)
+- Text: Fix It With Parts
+- Text: Have Raul fix it for you.
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetInCell
+    FirstParameter: 100744105
+    RunOnType: Reference
+    Reference: 0E6105:FalloutNV.esm

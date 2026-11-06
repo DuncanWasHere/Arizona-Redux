@@ -1,0 +1,45 @@
+FormKey: 03B801:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 03B800:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657373
+    UseEmotionAnimation: True
+    Unused3: 0x697465
+  ResponseText: '...!'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetActorValue
+  FirstParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010081110D00020016007A0000000000408F4039100A0002007202006E0A0000001C000100F51002000000A3110F0003007202006E1F0000006E01000000A2110F0003007202006E1E0000006E01000000
+  SourceCode: "AZDolanSpringsRuizREF.damageav fatigue 1000\r\nsetstage AZNeverbeFree 10;\r\nAZDolanSpringsRuizREF.Forceflee;\r\nsetobjectivedisplayed azneverbefree 31 1;  \r\nsetobjectivecompleted azneverbefree 30 1;  "
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DF4D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0331D3:NovaArizona.esm
+Prompt: <Push him over>

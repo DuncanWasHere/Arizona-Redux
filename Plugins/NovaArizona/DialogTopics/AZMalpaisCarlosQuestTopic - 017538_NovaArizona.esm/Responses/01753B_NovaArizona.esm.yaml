@@ -1,0 +1,76 @@
+FormKey: 01753B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 01753A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666679
+    UseEmotionAnimation: True
+    Unused3: 0x735C41
+  ResponseText: It's a rough business. You have to spend sometimes six months of the year out in the wilds of Texas and Mexico.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666679
+    UseEmotionAnimation: True
+    Unused3: 0x735C41
+  ResponseText: You got to bring all the food and water you can to make the trips. You got to be armed to teeth to defend it from raiders, wildlife and other slavers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You've probably never seen a Gila Monster, but they're nasty fuckers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Then, you've got to speak a bunch of different languages to make deals with the various tribes out there. I speak nine.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And you've got to be on constant alert to make sure the deals don't go bad. Have to make sure they're not trying to screw you. Or shoot you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758839
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100758634
+  SecondParameter: 40
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100758634
+  SecondParameter: 40
+Choices:
+- 017538:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's it like being a slaver?

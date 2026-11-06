@@ -1,0 +1,75 @@
+FormKey: 03506A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, damn you! It's not fair! Don't you walk away from me!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 8
+    Enabled: 1
+  CompiledScript: 0x39150C00010B005601050015004203001C0001007F110A0002007206006E010000001C0001007F110A0002007207006E010000001C0001007F110A0002007208006E010000001C000200AD100F0003007201006E010000006E010000001C000300AD100F0003007204006E010000006E010000006010020000001C0001003731040001004C001C0004003731040001004C001C0001005E10000016001400010010002058A5110A0002007205006E0A000000A2110F0003007205006E0A0000006E0100000019000000
+  SourceCode: >-
+    AZMalpaisSniperQuest.iBrawlStage = 3
+
+    AZMalpaisRegulusREF.AddToFaction VCaesarsLegionFaction 1
+
+    AZMalpaisRegulusREF.AddToFaction ArmorVCaesarsLegionFaction 1
+
+    AZMalpaisRegulusREF.AddToFaction AZMalpaisLegionFaction 1
+
+    AZMalpaisBrawlStorageContainerRegulusREF.RemoveAllItems AZMalpaisRegulusREF 1 1
+
+    AZMalpaisBrawlStorageContainerPlayerREF.RemoveAllItems PlayerREF 1 1
+
+    EnablePlayerControls
+
+    AZMalpaisRegulusREF.UnSetAV DamageThreshold
+
+    PlayerREF.UnSetAV DamageThreshold
+
+    AZMalpaisRegulusREF.EVP
+
+    if GetObjectiveDisplayed AZMalpaisSniperQuest 10
+      SetObjectiveCompleted AZMalpaisSniperQuest 10 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034F35:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 035074:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 035075:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+Prompt: You're going to live through the embarassment you put others through.

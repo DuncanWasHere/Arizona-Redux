@@ -1,0 +1,40 @@
+FormKey: 01CE12:NovaArizona.esm
+FormVersion: 15
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know, right? I'm still shocked that I'm here. I just started following a caravan and eventually we made it here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They even gave me a gun! A little peashooter. I think they probably just pitied me, but I it was still nice of them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100781532
+Choices:
+- 01CE0C:NovaArizona.esm
+- 01CE0D:NovaArizona.esm
+- 01CE0E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It's good to see you. You made it a long way from Big Stop.

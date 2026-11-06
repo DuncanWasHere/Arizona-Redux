@@ -1,0 +1,45 @@
+FormKey: 008610:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: It's not for squeamish outsiders like you. But, I'll say this. His attempts to make new ghouls aren't through radiation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sometimes, I think that.... Nevermind. Not like I can do anything while I'm here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 020DBF:NovaArizona.esm
+- 00875A:NovaArizona.esm
+- 00875B:NovaArizona.esm
+- 00B3CC:NovaArizona.esm
+- 008632:NovaArizona.esm
+- 008624:NovaArizona.esm
+- 008662:NovaArizona.esm
+- 00B3BF:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What type of eccentricities?

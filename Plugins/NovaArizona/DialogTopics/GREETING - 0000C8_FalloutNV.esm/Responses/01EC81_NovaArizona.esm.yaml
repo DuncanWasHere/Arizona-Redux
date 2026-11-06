@@ -1,0 +1,40 @@
+FormKey: 01EC81:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: 01EC80:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x490F16
+    UseEmotionAnimation: True
+    Unused3: 0x930F16
+  ResponseText: Thanks for taking care of the killer. I know the kids feel a lot safer.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1257542
+  SecondParameter: 20
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01EC85:NovaArizona.esm
+- 037EC7:NovaArizona.esm
+- 01EC8B:NovaArizona.esm
+- 01EC87:NovaArizona.esm
+- 01EC88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

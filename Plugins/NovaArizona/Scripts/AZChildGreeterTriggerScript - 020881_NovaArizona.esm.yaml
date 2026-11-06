@@ -1,0 +1,48 @@
+FormKey: 020881:NovaArizona.esm
+EditorID: AZChildGreeterTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000B001A009E000000010072010080164B000243005601000001001556010200230015025203007800003210040000002815025203007800002E10040000002815025800003A100B000100FFFF05005202004200040207004CDE0000003A15170001160052040078000097100B000100FFFF0500520500283A151600011500520400780000AC270A000100FFFF040042FA2822100200000039150C00010B0056010000010042010011000000
+  SourceCode: >-
+    name AZChildGreeterTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (!DoOnce
+            && !AZMalpaisJournalistQuest.ChildGreetDoOnce
+            && !AZStanleyHartfordREF.GetTalkedToPC()
+            && !AZStanleyHartfordREF.GetDead()
+            && (GetStage(AZMalpaisJournalistQuest) == 0)) 
+        {
+            AZMalpaisChildGreeterREF.AddScriptPackage(AZMalapisChildGreeterForceGreetPackage);
+            AZMalpaisChildGreeterREF.SetSpeedMult(250);
+            Disable();
+            DoOnce = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020880:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02087E:NovaArizona.esm

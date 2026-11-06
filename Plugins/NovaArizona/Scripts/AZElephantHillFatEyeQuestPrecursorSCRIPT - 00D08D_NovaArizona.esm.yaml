@@ -1,0 +1,20 @@
+FormKey: 00D08D:NovaArizona.esm
+EditorID: AZElephantHillFatEyeQuestPrecursorSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000300360000000000A31115000300FFFF0500520100FFFF0400420AFFFF04004201A21115000300FFFF0500520100FFFF04004205FFFF0400420111000000
+  SourceCode: >-
+    name AZElephantHillFatEyeQuestPrecursorScript;
+
+
+    OnAdd {
+        SetObjectiveDisplayed(AZElephantHillFatEyeQuest, 10, 1);
+        SetObjectiveCompleted(AZElephantHillFatEyeQuest, 5, 1);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm

@@ -1,0 +1,29 @@
+FormKey: 01C248:NovaArizona.esm
+EditorID: AZActorEffectMarsBlessing
+FormVersion: 15
+Name: Favor of Mars
+Flags:
+- 0x400
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x10000
+- 0x40000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x1000000
+- 0x4000000
+- 0x10000000
+- 0x20000000
+- 0x40000000
+Effects:
+- BaseEffect: 015162:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 480
+    ActorValue: Luck
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: IsInCombat

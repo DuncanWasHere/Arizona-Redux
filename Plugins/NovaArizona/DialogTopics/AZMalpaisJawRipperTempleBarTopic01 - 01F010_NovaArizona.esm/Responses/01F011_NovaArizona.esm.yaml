@@ -1,0 +1,47 @@
+FormKey: 01F011:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: When Agu told me that you were going on a secret mission, I knew that something was happening.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206D65
+    UseEmotionAnimation: True
+    Unused3: 0x20796F
+  ResponseText: That man is an enemy of the Legion. And it appears that he has corrupted our Priestess.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x206D65
+    UseEmotionAnimation: True
+    Unused3: 0x20796F
+  ResponseText: I will not let you take my children. The Legion won't allow it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+Choices:
+- 01F019:NovaArizona.esm
+- 01F024:NovaArizona.esm
+- 01F027:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

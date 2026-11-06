@@ -1,0 +1,34 @@
+FormKey: 0102EC:NovaArizona.esm
+EditorID: AZHDCharlieTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    VariableCount: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A009C000000010072010080167400026C005601000001004200045202007800002E100400000028420004025800003A100B000100FFFF0500520300420A07025800003A100B000100FFFF0500520400420A07025800003A100B000100FFFF0500520500420A07025800003A100B000100FFFF0500520600420A070207004CC000000039150C00010B0056010700080042010039150C00010B0056010000010042010011000000
+  SourceCode: >-
+    name AZHDCharlieTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::PlayerREF {
+        if ((DoOnce == 0) &&
+            (AZCharlieREF.GetDead() == 0) &&
+            (GetStage(VHDBattleController) < 10) &&
+            (GetStage(VHDLegionBattle) < 10) &&
+            (GetStage(VHDHouseBattle) < 10) &&
+            (GetStage(VHDIndependentBattle) < 10)) {
+
+            AZHooverDamCheckpointQuest.bWarningEast = 1;
+            DoOnce = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce

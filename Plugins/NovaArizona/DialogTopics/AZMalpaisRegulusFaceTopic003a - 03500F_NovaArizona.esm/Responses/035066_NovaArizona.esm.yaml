@@ -1,0 +1,33 @@
+FormKey: 035066:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Doubtful Stewie Griffin drawl}'Trick of the light...' I'm watching you, Profligate."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+Choices:
+- 034FE3:NovaArizona.esm
+- 034FE6:NovaArizona.esm
+- 034FEB:NovaArizona.esm
+- 034FEC:NovaArizona.esm
+- 034FED:NovaArizona.esm
+- 034FEE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Oh, nevermind. It must have been a trick of the light.

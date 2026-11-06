@@ -1,0 +1,31 @@
+FormKey: 00C539:NovaArizona.esm
+EditorID: AZDefaultSleep10pmTo5amLinkedPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 32
+Flags:
+  MutagenObjectType: PackageSleep
+Unused2: 30033
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 22
+Duration: 7
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

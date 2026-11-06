@@ -1,0 +1,43 @@
+FormKey: 01F61D:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: There's Aristophontes, he's like the town mayor. His deputy would be Aetius. There's also the traders. The most important are probably Calvin and Julius.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sad to say, but me and Ed Charles aren't major players in much of anything. We're just the old farts who have been here the longest.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797368
+Choices:
+- 01F604:NovaArizona.esm
+- 01F605:NovaArizona.esm
+- 01F606:NovaArizona.esm
+- 01F607:NovaArizona.esm
+- 01F608:NovaArizona.esm
+- 01F60E:NovaArizona.esm
+- 01F619:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are the major players in town I need to know about?

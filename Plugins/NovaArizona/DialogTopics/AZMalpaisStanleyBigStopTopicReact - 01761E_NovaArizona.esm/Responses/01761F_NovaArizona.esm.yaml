@@ -1,0 +1,35 @@
+FormKey: 01761F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652041
+    UseEmotionAnimation: True
+    Unused3: 0x616973
+  ResponseText: I've heard about the Legion using children to do their dirty work. I'd never thought I'd see it in person. I've never seen any of this in person.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 100700036
+  SecondParameter: 1
+  RunOnType: Reference
+  Reference: 008F84:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

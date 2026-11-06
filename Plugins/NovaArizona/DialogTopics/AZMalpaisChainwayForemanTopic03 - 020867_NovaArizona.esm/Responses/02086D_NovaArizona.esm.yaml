@@ -1,0 +1,55 @@
+FormKey: 02086D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: What do you think happens if the Chainway isn't repaired in time to support us during Hoover Dam?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: These slaves will simply be moved to some other post. Me? I will be dismissed. If my failure harms us in the battle, I may even be killed.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x204120
+    UseEmotionAnimation: True
+    Unused3: 0x696761
+  ResponseText: The Legatus Sedonus is not a patient man, and he is who I report to. So yes, I am quite stressed.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+Choices:
+- 01751C:NovaArizona.esm
+- 017600:NovaArizona.esm
+- 020866:NovaArizona.esm
+- 020868:NovaArizona.esm
+- 020867:NovaArizona.esm
+- 020869:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You seem pretty stressed for a guy who gets to sit around and watch others do the work.

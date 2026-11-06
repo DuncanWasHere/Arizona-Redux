@@ -1,0 +1,38 @@
+FormKey: 01757A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, of course, sir. I've been writing everything down.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758917
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C0001003410120004007202007203006E010000006E01000000
+  SourceCode: AZBigStopDominicusRexREF.SayTo AZBSStenographusREF AZBSDominicusTopic07 1 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175D8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01757F:NovaArizona.esm

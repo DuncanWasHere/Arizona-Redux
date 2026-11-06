@@ -1,0 +1,53 @@
+FormKey: 016BAA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: 016BAD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Do I look as if though I am posted here to entertain questions from any wastrel who wanders in?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Only joking of course! I am at your service for as long as time permits.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B1F:NovaArizona.esm
+- 016B20:NovaArizona.esm
+- 016B21:NovaArizona.esm
+- 016B22:NovaArizona.esm
+- 016B24:NovaArizona.esm
+- 016B1E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000A00420100
+  SourceCode: AZFreeformDolanSprings.bAristophontesAskedQuestions = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E68C:NovaArizona.esm
+Prompt: Actually, I was just wondering if you could answer a few questions.

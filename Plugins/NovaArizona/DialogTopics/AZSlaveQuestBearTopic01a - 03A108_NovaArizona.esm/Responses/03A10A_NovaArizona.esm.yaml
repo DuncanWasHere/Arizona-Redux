@@ -1,0 +1,45 @@
+FormKey: 03A10A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: I see... Well, the drawing belongs to Sketch. He's one of us. You could actually say that he's more than one of us, he's Kyle's nephew.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: He's recently returned to camp with his half-brother Gristle from a slave-hunt that, truth be told, has taken all of us somewhat by surprise.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+Choices:
+- 03A10E:NovaArizona.esm
+- 03A10F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E410000006E01000000
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1

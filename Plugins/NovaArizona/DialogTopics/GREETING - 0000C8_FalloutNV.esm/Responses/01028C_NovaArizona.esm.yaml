@@ -1,0 +1,32 @@
+FormKey: 01028C:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01028B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: Can't you just leave me alone?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+Choices:
+- 010286:NovaArizona.esm
+- 01028D:NovaArizona.esm
+- 01028E:NovaArizona.esm
+- 01028F:NovaArizona.esm
+- 010294:NovaArizona.esm
+- 010288:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

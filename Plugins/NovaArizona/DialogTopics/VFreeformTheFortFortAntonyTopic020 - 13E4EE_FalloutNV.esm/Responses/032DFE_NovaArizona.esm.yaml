@@ -1,0 +1,43 @@
+FormKey: 032DFE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 11F9CF:FalloutNV.esm
+PreviousInfo: 13E50A:FalloutNV.esm
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xA8DC07
+    UseEmotionAnimation: True
+    Unused3: 0xA9DC07
+  ResponseText: Cyber-dog? Like the ones I've seen up in Denver? I know what you're talking about, and it would make Lupa immortal in a way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 1178063
+  SecondParameter: 36
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1144504
+  SecondParameter: 20
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1180018
+Choices:
+- 13E4ED:FalloutNV.esm
+- 13E4EC:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Speaker: 120172:FalloutNV.esm

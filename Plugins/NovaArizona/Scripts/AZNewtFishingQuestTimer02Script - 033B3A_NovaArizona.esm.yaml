@@ -1,0 +1,63 @@
+FormKey: 033B3A:NovaArizona.esm
+EditorID: AZNewtFishingQuestTimer02Script
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000009F00000016000D0002000900207301002030203D3D15000D00730200080020582F2802000000150007007301000200203118000D0007000900207301002031203D3D1600120001000E0020660300207302002032202B203C391513000112005600000003005800002F28040000000017000200030039100A0002007201006E310000001500070073010002002032371005000100720200190000001900000011000000
+  SourceCode: >-
+    scn AZNewtFishingQuestTimer02Script
+
+
+    int DoOnce
+
+    int QuestProgression
+
+    float Timer
+
+
+
+    BEGIN GameMode
+
+
+    if DoOnce == 0
+    	Set QuestProgression to GetGameDaysPassed
+    	Set DoOnce to 1
+    elseif DoOnce == 1
+    	if Timer < QuestProgression + 2
+    		Timer = GetGameDaysPassed
+    	else
+    		SetStage AZNewtFishingQuest 49
+    		Set DoOnce to 2
+    		StopQuest AZNewtFishingQuestTimer02
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x00BD20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xD14C0FD8EF4C0F
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x20BD20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x08550FA40A550F
+    Name: QuestProgression
+  - Data:
+      Index: 3
+      Unknown: 0x00DE29120000000000000000
+      Unknown2: 0x2F203137322E30
+    Name: Timer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033B3C:NovaArizona.esm

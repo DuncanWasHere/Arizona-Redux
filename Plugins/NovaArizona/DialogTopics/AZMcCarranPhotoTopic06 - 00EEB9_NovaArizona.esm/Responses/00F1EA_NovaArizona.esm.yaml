@@ -1,0 +1,49 @@
+FormKey: 00F1EA:NovaArizona.esm
+FormVersion: 15
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Which ones?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetQuestVariable
+  FirstParameter: 100728865
+  SecondParameter: 23
+Choices:
+- 00EEBA:NovaArizona.esm
+- 00EEBB:NovaArizona.esm
+- 00EEBD:NovaArizona.esm
+- 00EEBE:NovaArizona.esm
+- 00EEC0:NovaArizona.esm
+- 00EEC1:NovaArizona.esm
+- 00EEC2:NovaArizona.esm
+- 00EEC3:NovaArizona.esm
+- 00EEC4:NovaArizona.esm
+- 00EEC5:NovaArizona.esm
+- 00EEC6:NovaArizona.esm
+- 00EEC7:NovaArizona.esm
+- 00EEC8:NovaArizona.esm
+- 00EEC9:NovaArizona.esm
+- 00EECA:NovaArizona.esm
+- 00EECB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Frumentarii.

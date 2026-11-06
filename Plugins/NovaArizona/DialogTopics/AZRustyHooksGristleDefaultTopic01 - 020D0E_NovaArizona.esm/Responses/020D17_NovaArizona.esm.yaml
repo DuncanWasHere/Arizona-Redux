@@ -1,0 +1,44 @@
+FormKey: 020D17:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I used to smash skulls like Bear, that was chill. But now I get to keep the crew fed, keep everyone happy. I like that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Back when I was out raiding we only had slaves cooking back at camp. None of them were very good. Kyle says my cooking is way better.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797705
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101002000420100
+  SourceCode: AZRustyHooksDialogueQuest.bGristleBackstory = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0130AD:NovaArizona.esm
+Prompt: What do you do here?

@@ -1,0 +1,75 @@
+FormKey: 017501:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: Well, that is horrible. And illegal. I'm surprised that the Legion didn't find out, though.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: The Frumentarii are usually pretty on the ball. Still, we better let them know.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 8
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 9
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174F7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x150013007203007307000B00207203007307002032202B1600100001000C00207203007313002031203D3D1C00010002100A0002007204006E6E000000190000001600100001000C00207203007313002030203D3D1C00010002100A0002007204006E64000000190000001C0002008B1002000000
+  SourceCode: >-
+    Set AZMalpaisJournalistQuest.bStanleyLegionDisapproval to AZMalpaisJournalistQuest.bStanleyLegionDisapproval + 2
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 1)
+    	player.additem caps001 110
+    endif
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 0)
+    	player.additem caps001 100
+    endif
+
+
+    AZMalachiREF.killactor
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01039B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: <Lie.> Malachi was a chattel slaver. And the Legion did nothing about it.

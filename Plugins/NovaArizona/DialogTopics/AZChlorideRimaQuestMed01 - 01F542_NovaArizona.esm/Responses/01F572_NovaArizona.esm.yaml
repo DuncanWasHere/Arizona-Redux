@@ -1,0 +1,39 @@
+FormKey: 01F572:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F5C4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah, I know.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718660
+Choices:
+- 01F542:NovaArizona.esm
+- 01F548:NovaArizona.esm
+- 01F549:NovaArizona.esm
+- 01F54A:NovaArizona.esm
+- 01F550:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Oh, that's gross. Sounds really bad. Sorry to hear that.
+ActorValuePerk: 0004B5:FalloutNV.esm

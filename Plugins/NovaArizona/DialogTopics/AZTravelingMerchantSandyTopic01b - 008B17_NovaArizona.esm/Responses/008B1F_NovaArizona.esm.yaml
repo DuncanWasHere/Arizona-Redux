@@ -1,0 +1,35 @@
+FormKey: 008B1F:NovaArizona.esm
+FormVersion: 15
+Quest: 008B14:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nope. My parents named me Alexander. I guess you can tell they wanted a boy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698898
+Choices:
+- 00ECD2:NovaArizona.esm
+- 008B19:NovaArizona.esm
+- 008B15:NovaArizona.esm
+- 008B1A:NovaArizona.esm
+- 008B1B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Did your parents name you Sandy Rhodes?

@@ -1,0 +1,103 @@
+FormKey: 008E6A:NovaArizona.esm
+EditorID: AZWhiteHillsMineDialogueScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 11
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000008E00000016001D00010019002058A4110E000200720100FFFF070042074223022031203D3D39100A0002007201006E5F00000018001D00010019002058A4110E000200720100FFFF070042074228022031203D3D39100A0002007201006E5F0000001800200001001C002058A41111000200720100FFFF0A004207422302422802203120213D1E0000001900000011000000
+  SourceCode: >-
+    scn AZWhiteHillsMineDialogueScript
+
+
+    short talking ; 0=guard 1=talking
+
+    short callumrobbed ; 0=not robbed 1=robbed
+
+    short wakeemheaddoonce
+
+    short Letitalking
+
+    short savedcallum
+
+    short killedcallum
+
+    short SlipperyWillComplete
+
+
+    short CallumCrucified
+
+    short CallumDecimated
+
+
+    begin GameMode
+
+    	if getobjectivecompleted AZWhiteHillsMineDialogue ( 7 && 35 ) == 1
+    		setstage AZWhiteHillsMineDialogue 95
+    	elseif getobjectivecompleted AZWhiteHillsMineDialogue ( 7 && 40 ) == 1
+    		setstage AZWhiteHillsMineDialogue 95
+    	elseif getobjectivecompleted AZWhiteHillsMineDialogue ( 7 && 35 && 40 ) != 1
+    		return
+    	endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA03720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xF94A0B287E530B
+    Name: talking
+  - Data:
+      Index: 2
+      Unknown: 0xC03720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x544A0B48AC560B
+    Name: callumrobbed
+  - Data:
+      Index: 4
+      Unknown: 0xE03720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: wakeemheaddoonce
+  - Data:
+      Index: 5
+      Unknown: 0x003820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Letitalking
+  - Data:
+      Index: 6
+      Unknown: 0x203820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: savedcallum
+  - Data:
+      Index: 7
+      Unknown: 0x403820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: killedcallum
+  - Data:
+      Index: 9
+      Unknown: 0x603820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x46701028000000
+    Name: SlipperyWillComplete
+  - Data:
+      Index: 10
+      Unknown: 0x803820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CallumCrucified
+  - Data:
+      Index: 11
+      Unknown: 0x40C129120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x874F0B74874F0B
+    Name: CallumDecimated
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm

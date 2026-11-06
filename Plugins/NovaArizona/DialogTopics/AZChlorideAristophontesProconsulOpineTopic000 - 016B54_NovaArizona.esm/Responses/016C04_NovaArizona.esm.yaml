@@ -1,0 +1,45 @@
+FormKey: 016C04:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It is. I had served Caesar as a Scribonius for nearly twenty years before he rewarded me with the title.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Few in the Legion ever prove themselves worthy of administering a latrine, let alone an entire province.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B3E:NovaArizona.esm
+- 016B43:NovaArizona.esm
+- 016B45:NovaArizona.esm
+- 016B49:NovaArizona.esm
+- 016B4B:NovaArizona.esm
+- 016B4F:NovaArizona.esm
+- 016B3A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It sounds like an prestigious position!

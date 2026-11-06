@@ -1,0 +1,75 @@
+FormKey: 01EFAB:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206E6F
+    UseEmotionAnimation: True
+    Unused3: 0x756974
+  ResponseText: Excellent. With this, I should finally be able to overcome my addiction. Thank you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x746820
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: Hmm. Is it really so easy?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x746820
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: You, I have a question for you. It's imporant. What is more important to the Legion, obedience or service?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789368
+  SecondParameter: 82
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789368
+  SecondParameter: 82
+Choices:
+- 01EFAC:NovaArizona.esm
+- 01EFAD:NovaArizona.esm
+- 01EFAE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000A2110F0003007203006E510000006E01000000A2110F0003007203006E520000006E01000000
+  SourceCode: >-
+    Player.RemoveItem NVFixer 1
+
+    SetObjectiveCompleted AZMalpaisAbuserQuest 81 1
+
+    SetObjectiveCompleted AZMalpaisAbuserQuest 82 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CB5A9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+Prompt: I've brought you some Fixer.

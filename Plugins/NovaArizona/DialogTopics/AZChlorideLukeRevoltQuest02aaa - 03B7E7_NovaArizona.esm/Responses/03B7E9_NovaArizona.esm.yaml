@@ -1,0 +1,31 @@
+FormKey: 03B7E9:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 03B7E8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D2E20
+    UseEmotionAnimation: True
+    Unused3: 0x657373
+  ResponseText: I've got a friend with a nice secure safe. He'll handle the rest.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where do you suggest he store it?

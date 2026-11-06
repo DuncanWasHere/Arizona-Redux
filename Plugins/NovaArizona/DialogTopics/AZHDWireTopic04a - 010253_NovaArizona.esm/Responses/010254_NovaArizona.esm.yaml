@@ -1,0 +1,81 @@
+FormKey: 010254:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Actually, you know what? The NCR's going to keep you on hand to help monitor those fuckers. You've been temporarily conscripted.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, you don't get a say in this. Come with me to the checkpoint.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100729231
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 21
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E1600000039100A0002007202006E05000000
+  SourceCode: >-
+    setstage AZDamNQuest2 22
+
+
+    setstage AZDamNQuest3 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1C0001009E10050001007203001C0002009E100500010072040015000A0072050073080002002031
+  SourceCode: >-
+    AZHDWireREF.moveto AZHDWireMarker
+
+    player.moveto AZOmarHooverDamMarker
+
+    set AZDamNQuest2.bOnDuty to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010260:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0101CC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+Prompt: Omar's been informed. I'll be going now.

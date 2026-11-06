@@ -1,0 +1,74 @@
+FormKey: 0174CD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65206C
+    UseEmotionAnimation: True
+    Unused3: 0x666F72
+  ResponseText: Great! Let's get started. You probably haven't done this kind of work before, so we'll start small.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x676574
+    UseEmotionAnimation: True
+    Unused3: 0x746564
+  ResponseText: The Legion's been repairing the Chainway for a long time, and I'm curious about how it's coming along.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x626565
+    UseEmotionAnimation: True
+    Unused3: 0x616972
+  ResponseText: Get on over there and ask some questions, whatever feels natural. Once you're satisfied, come back here and give me a rundown.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0xD94701
+    UseEmotionAnimation: True
+    Unused3: 0xDB4701
+  ResponseText: Oh, and since you're a journalist for RNV, here's your own newsman fedora. Don't lose it. I only brought the two when I came across the Colorado.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E140000001C00010002100F0003007203006E010000006E01000000
+  SourceCode: >-
+    setstage AZMalpaisJournalistQuest 20
+
+
+    player.additem AZHeadwearUniqueNewsmanFedora 1 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175BE:NovaArizona.esm
+Prompt: Sounds fair to me.

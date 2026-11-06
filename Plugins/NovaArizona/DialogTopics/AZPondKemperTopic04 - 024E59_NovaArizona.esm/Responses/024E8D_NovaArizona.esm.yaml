@@ -1,0 +1,56 @@
+FormKey: 024E8D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You know, in the old days, when I ran with the raiders, I was free. I might have had Julius as a boss, but in a way, we were all our own bosses.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And then the Legion came through the first time and I had to help work the mine for them, I thought this wasn't so bad. I knew where I stood.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But these days? I don't know. I think I'd almost prefer being a slave. At least I'd know where I stand.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708396
+Choices:
+- 024E4B:NovaArizona.esm
+- 021080:NovaArizona.esm
+- 024E50:NovaArizona.esm
+- 024E51:NovaArizona.esm
+- 024E52:NovaArizona.esm
+- 024E59:NovaArizona.esm
+- 024E5A:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you like your job?

@@ -1,0 +1,55 @@
+FormKey: 01EE10:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01F013:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: You're not Frumentarii. That's clear to me, otherwise you would just have pulled me off the street. So, who are you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetInCell
+  FirstParameter: 100680534
+  RunOnType: Reference
+  Reference: 00C45B:NovaArizona.esm
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100789369
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100789369
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EDDE:NovaArizona.esm
+- 01EDDF:NovaArizona.esm
+- 01EDE0:NovaArizona.esm
+- 01EDE1:NovaArizona.esm
+- 01EDE2:NovaArizona.esm
+- 01EDE3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E0A0000006E01000000
+  SourceCode: SetObjectiveCompleted AZBigStopChildSoldierQuest 10 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1

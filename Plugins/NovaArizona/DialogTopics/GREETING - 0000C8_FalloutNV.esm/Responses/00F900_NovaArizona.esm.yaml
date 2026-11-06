@@ -1,0 +1,29 @@
+FormKey: 00F900:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 03A923:NovaArizona.esm
+PreviousInfo: 00F8FE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x776E20
+    UseEmotionAnimation: True
+    Unused3: 0x656D73
+  ResponseText: The road northeast past the firehouse is bad business. People say it's haunted. I'd stay away.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100768154
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

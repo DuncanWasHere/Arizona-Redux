@@ -1,0 +1,48 @@
+FormKey: 0102ED:NovaArizona.esm
+EditorID: AZHDCharlieForceGreetPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- AlwaysRun
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 750
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 500
+DialogueData:
+  DialogueFOV: 100
+  DialogueFlags:
+  - DontControlTargetMovement
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 750
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

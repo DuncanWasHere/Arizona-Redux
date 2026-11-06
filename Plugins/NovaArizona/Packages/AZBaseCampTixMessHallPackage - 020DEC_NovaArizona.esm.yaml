@@ -1,0 +1,36 @@
+FormKey: 020DEC:NovaArizona.esm
+EditorID: AZBaseCampTixMessHallPackage
+FormVersion: 15
+Unused: 38
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 10776
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 020DED:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100744501
+  SecondParameter: 2
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

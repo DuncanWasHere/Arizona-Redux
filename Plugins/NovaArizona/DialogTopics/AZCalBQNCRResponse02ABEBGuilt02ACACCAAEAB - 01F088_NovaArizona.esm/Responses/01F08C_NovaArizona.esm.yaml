@@ -1,0 +1,35 @@
+FormKey: 01F08C:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Freak.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F07:NovaArizona.esm
+- 0052BC:NovaArizona.esm
+- 0052C5:NovaArizona.esm
+- 0052C7:NovaArizona.esm
+- 0052CC:NovaArizona.esm
+- 0052CF:NovaArizona.esm
+- 0052D5:NovaArizona.esm
+- 0052D9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The blood.

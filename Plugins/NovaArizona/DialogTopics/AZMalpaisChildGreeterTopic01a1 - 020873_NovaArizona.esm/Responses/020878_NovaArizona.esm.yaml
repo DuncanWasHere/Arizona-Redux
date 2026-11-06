@@ -1,0 +1,43 @@
+FormKey: 020878:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20696E
+    UseEmotionAnimation: True
+    Unused3: 0x616973
+  ResponseText: Sure, I'll go tell him. Later.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796517
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A00720200732300020020311C0001005E100000
+  SourceCode: >-
+    Set AZMalpaisJournalistQuest.ChildGreetDoOnce to 1
+
+    AZMalpaisChildGreeterREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020880:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: I'll pay him a visit later.

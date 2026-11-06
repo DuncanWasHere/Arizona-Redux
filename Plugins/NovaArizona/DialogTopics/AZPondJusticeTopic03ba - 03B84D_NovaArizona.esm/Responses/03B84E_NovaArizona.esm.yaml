@@ -1,0 +1,51 @@
+FormKey: 03B84E:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Surely you know it? The celebration of a man named Christ. King of the old world.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616C72
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: They consume his everlasting body and blood, joining in ritual communion to briefly embody his spiritual essence.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x616C72
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: It is a strange cult.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B84D:NovaArizona.esm
+- 03B84F:NovaArizona.esm
+- 03B851:NovaArizona.esm
+- 03B853:NovaArizona.esm
+- 03B855:NovaArizona.esm
+- 03B857:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is the Old Faith?

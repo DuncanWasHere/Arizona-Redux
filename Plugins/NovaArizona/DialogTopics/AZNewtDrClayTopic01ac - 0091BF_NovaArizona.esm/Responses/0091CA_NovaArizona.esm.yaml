@@ -1,0 +1,51 @@
+FormKey: 0091CA:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: Not much to tell. I've always found healing to be spiritually fulfilling.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: It just made sense to open my home as a place of healing.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: We're low on supplies, but there's nothing a splint, some bandages and ibuprofene can't fix.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 0091B4:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+- 009298:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the Clinic.

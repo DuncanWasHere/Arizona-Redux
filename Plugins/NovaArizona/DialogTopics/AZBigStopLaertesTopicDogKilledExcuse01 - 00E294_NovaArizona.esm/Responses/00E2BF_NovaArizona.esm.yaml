@@ -1,0 +1,52 @@
+FormKey: 00E2BF:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 00E2BE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] Degenerate liar. You'll pay."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 85
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E050000006E0100000039100A0002007201006E05000000161005000100720200
+  SourceCode: >-
+    setobjectivecompleted AZBigStopFindDogQuest 5 1
+
+    setstage AZBigStopFindDogQuest 5
+
+    startcombat player
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C449:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: <Lie.> He had a... uh... medical issue. He wasn't going to make it. I'm sorry for your loss.
+ActorValuePerk: 0004BB:FalloutNV.esm

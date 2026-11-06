@@ -1,0 +1,42 @@
+FormKey: 020DC4:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnceADay
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: 020D9E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ave
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 98
+  Function: GetStage
+  FirstParameter: 100797847
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStage
+  FirstParameter: 100797847
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797744
+Choices:
+- 020DB9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

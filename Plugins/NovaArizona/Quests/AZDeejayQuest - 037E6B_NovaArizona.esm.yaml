@@ -1,0 +1,73 @@
+FormKey: 037E6B:NovaArizona.esm
+EditorID: AZDeejayQuest
+FormVersion: 15
+Script: 037E7A:NovaArizona.esm
+Name: Somebody Nobody Wants
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Objectives:
+- Description: Follow up on the whereabouts of Deejay's escaped slave.
+  Targets:
+  - Target: 01CA99:NovaArizona.esm
+    Unused: 0x21102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Target
+  - Target: 0102E8:NovaArizona.esm
+    Unused: 0x21102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100892267
+      SecondParameter: 1
+  - Target: 01EE05:NovaArizona.esm
+    Unused: 0x21102B
+- Index: 1
+  Description: Investigate the train tunnel to Nellis.
+  Targets:
+  - Target: 037E9A:NovaArizona.esm
+    Unused: 0xCB1527
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetInCell
+      FirstParameter: 1058009
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetInCell
+      FirstParameter: 1058009
+      RunOnType: Reference
+      Reference: 037E54:NovaArizona.esm
+  - Target: 1024E6:FalloutNV.esm
+    Unused: 0xCB1527
+- Index: 3
+  Description: Look for Namtar in Freeside.
+  Targets:
+  - Target: 037EBA:NovaArizona.esm
+    Unused: 0x2C2925
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: 420
+      FirstParameter: 100892267
+      SecondParameter: 2
+- Index: 2
+  Description: (Optional) Speak to the Boomer spotter.
+  Targets:
+  - Target: 010406:NovaArizona.esm
+    Unused: 0xCB1527
+- Index: 4
+  Description: Check the Old Mormon Fort storeroom.
+  Targets:
+  - Target: 01EE06:NovaArizona.esm
+    Unused: 0xCB1527
+- Index: 5
+  Description: Speak to Deejay.
+- Index: 6
+  Description: Make yourself known to the factions of the Mojave and draw Namtar out of hiding.

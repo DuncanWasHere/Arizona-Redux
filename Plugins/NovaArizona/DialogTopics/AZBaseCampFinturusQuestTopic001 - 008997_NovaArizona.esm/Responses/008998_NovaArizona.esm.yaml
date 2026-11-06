@@ -1,0 +1,64 @@
+FormKey: 008998:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656420
+    UseEmotionAnimation: True
+    Unused3: 0x746F20
+  ResponseText: I doubt it. The slave's joints are bad. He is probably not sneaking around at night because of them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: Iulia's a good slave, but she doesn't know what she's talking about.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: That's why she's a slave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100768688
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D53:NovaArizona.esm
+- 013D55:NovaArizona.esm
+- 013D57:NovaArizona.esm
+- 013D5B:NovaArizona.esm
+- 013D68:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Iulia thinks Flemus is up to something. Maybe, he's the vandal.

@@ -1,0 +1,47 @@
+FormKey: 039F83:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's short for something else, don't worry about it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Although, if my parents had named me "Doc," then I might have been a doctor before we got sealed in this place.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100876902
+Choices:
+- 039F72:NovaArizona.esm
+- 039F76:NovaArizona.esm
+- 039F7E:NovaArizona.esm
+- 039F7F:NovaArizona.esm
+- 039F63:NovaArizona.esm
+- 039F64:NovaArizona.esm
+- 039F65:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, who gave you the name Doc?

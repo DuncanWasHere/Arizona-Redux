@@ -1,0 +1,48 @@
+FormKey: 0059E2:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F6D
+  ResponseText: You should try it, it's good for you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F6D
+  ResponseText: We use a house blend of Turkey Tail, Chaga and Golden Teacher.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x652062
+    UseEmotionAnimation: True
+    Unused3: 0x6F6620
+  ResponseText: Dry those out, grind, 'em, mix 'em with some Cuppa Joe, and you got a brew going.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005A04:NovaArizona.esm
+- 005A05:NovaArizona.esm
+- 005A09:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Mushroom coffee? I've never heard of that.

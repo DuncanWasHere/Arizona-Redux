@@ -1,0 +1,76 @@
+FormKey: 024E2F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 024E2E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x746820
+    UseEmotionAnimation: True
+    Unused3: 0x656D20
+  ResponseText: They infiltrated the Frumentarii? I didn't even think that something like this could even be possible.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746820
+    UseEmotionAnimation: True
+    Unused3: 0x656D20
+  ResponseText: We're going to take him in for questioning.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x746820
+    UseEmotionAnimation: True
+    Unused3: 0x656D20
+  ResponseText: We'll find what we need from him soon enough. You did well to report this, assuming you're not playing a game of your own.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: If not, you're next, no matter how close you are with The Fort.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 85
+  Function: GetStage
+  FirstParameter: 100698646
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x3B12130003007201006E010000007A000000000000144039100A0002007202006E5E000000
+  SourceCode: >-
+    AddReputationExact RepNVCaesarsLegion 1 5
+
+    SetStage AZBigStopAhigaQuest01 94
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: He had me deliver broken weapons to Base Camp and fake war plans to the NCR. And then he confessed.

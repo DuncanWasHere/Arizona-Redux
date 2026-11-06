@@ -1,0 +1,33 @@
+FormKey: 018CF4:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 0101B3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204E43
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: I already told you why. I don't know why I bother.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+Choices:
+- 0101B4:NovaArizona.esm
+- 018CEF:NovaArizona.esm
+- 018CEE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why won't the NCR let the refugees through the checkpoint?

@@ -1,0 +1,79 @@
+FormKey: 01EB6D:NovaArizona.esm
+EditorID: AZCyclopicNimrod
+FormVersion: 15
+ObjectBounds:
+  First: -41, -43, 0
+  Second: 41, 43, 152
+Name: Nimrod
+Model:
+  File: Creatures\SMSpineBreaker\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 12B895:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- nightkinbare.nif
+- nv_night_base.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - AllowPCDialogue
+  - AllowPickpocket
+  Fatigue: 50
+  Level: 35
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - ActorEffectList
+Factions:
+- Faction: 13F894:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 07189D:FalloutNV.esm
+Voice: 14377C:FalloutNV.esm
+Template: 03A147:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2163048448
+  BuySellServices:
+  - Weapons
+  - Armor
+  - Alcohol
+  - Books
+  - Food
+  - Chems
+  - Stimpaks
+  - Miscellaneous
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 13DBDB:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: SuperMutant
+  CombatSkill: 100
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 200
+  Damage: 4
+  Strength: 9
+  Perception: 3
+  Endurance: 8
+  Charisma: 5
+  Intelligence: 3
+  Agility: 5
+  Luck: 5
+AttackReach: 96
+CombatStyle: 01D541:FalloutNV.esm
+BodyPartData: 02026E:FalloutNV.esm
+TurningSpeed: 75
+BaseScale: 1.2
+FootWeight: 15
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 01FF5F:FalloutNV.esm
+ImpactDataset: 075A49:FalloutNV.esm
+MeleeWeaponList: 03A15E:FalloutNV.esm

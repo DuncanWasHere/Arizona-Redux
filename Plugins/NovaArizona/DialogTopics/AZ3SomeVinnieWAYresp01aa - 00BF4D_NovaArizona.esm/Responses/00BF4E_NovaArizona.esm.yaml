@@ -1,0 +1,42 @@
+FormKey: 00BF4E:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: There it is. Glad I jogged that smooth brain of yours.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: I was about a second from knocking your head around til you started talking sense.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF17:NovaArizona.esm
+- 00BF48:NovaArizona.esm
+- 00BF5E:NovaArizona.esm
+- 00BF6A:NovaArizona.esm
+- 00BF6C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I remember you now.

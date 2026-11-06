@@ -1,0 +1,61 @@
+FormKey: 008A22:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 008A21:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x72656E
+    UseEmotionAnimation: True
+    Unused3: 0x756369
+  ResponseText: No.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x72656E
+    UseEmotionAnimation: True
+    Unused3: 0x756369
+  ResponseText: Sorry I'm not much help.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x560006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: August was - is - a good man. I hope you find him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744967
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E010000006E01000000A3110F0003007201006E0A0000006E01000000
+  SourceCode: >-
+    setobjectivecompleted AZBigStopAugustQuest 1 1
+
+    setobjectivedisplayed AZBigStopAugustQuest 10 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+Prompt: Is there anything else you'd like to add?

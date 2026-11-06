@@ -1,0 +1,33 @@
+FormKey: 020EC1:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And that's your business? She's just a whore.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 020E91:NovaArizona.esm
+- 020E93:NovaArizona.esm
+- 020E94:NovaArizona.esm
+- 020E95:NovaArizona.esm
+- 020E96:NovaArizona.esm
+- 020E97:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: If I deal with you, Isaiah will free a slave woman he's been prostituting out.

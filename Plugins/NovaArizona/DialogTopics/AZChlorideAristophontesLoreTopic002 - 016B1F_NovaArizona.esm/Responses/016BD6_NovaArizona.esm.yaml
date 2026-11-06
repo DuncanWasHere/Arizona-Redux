@@ -1,0 +1,53 @@
+FormKey: 016BD6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is the consulate of Chloride, office of the Proconsul of the Mojave Orientum province.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am the Proconsul of Mojave Orientum. This is my office. Understood? Optime!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B26:NovaArizona.esm
+- 016B2A:NovaArizona.esm
+- 016B2C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000C0042010039150C00010B00560101000B00420100
+  SourceCode: >-
+    AZFreeformDolanSprings.bAristophontesMentionedProvince = 1
+
+    AZFreeformDolanSprings.bAristophontesMentionedProconsul = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E68C:NovaArizona.esm
+Prompt: Is this some kind of Legion outpost?

@@ -1,0 +1,43 @@
+FormKey: 03A914:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x792063
+    UseEmotionAnimation: True
+    Unused3: 0x657273
+  ResponseText: I think most of 'em are the construction crew. They got laid off before the war, but they came back seeking shelter when the bombs dropped.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x792063
+    UseEmotionAnimation: True
+    Unused3: 0x657273
+  ResponseText: Guess there was radiation down there. Now they're ghouls like I am, but a lot less talkative.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 03A8E6:NovaArizona.esm
+- 03A8EF:NovaArizona.esm
+- 03A8E9:NovaArizona.esm
+- 03A911:NovaArizona.esm
+- 020B49:NovaArizona.esm
+- 020B4A:NovaArizona.esm
+- 020B4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where'd the ferals come from?

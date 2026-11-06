@@ -1,0 +1,36 @@
+FormKey: 0197FD:NovaArizona.esm
+EditorID: AZHaveniteWanderPackage
+FormVersion: 15
+Unused: 4
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 9264
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 512
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 16
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

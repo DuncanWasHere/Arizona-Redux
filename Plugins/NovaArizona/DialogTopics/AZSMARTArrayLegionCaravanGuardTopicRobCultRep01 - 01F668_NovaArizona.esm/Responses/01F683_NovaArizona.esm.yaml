@@ -1,0 +1,51 @@
+FormKey: 01F683:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01F58D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You speak true. Fine. Take the medicine. If someone asks who stole the cargo, I will give your names.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: 575
+  FirstParameter: 100792054
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791743
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007203006E010000001C00020002100A0002007203006E01000000
+  SourceCode: >-
+    AZSmartArrayLegionCaravanGuardREF.removeitem AZChlorideAntibioticsItem 1
+
+    player.additem AZChlorideAntibioticsItem 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5C0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F600:NovaArizona.esm
+Prompt: '[Cult Rep] The authority of Caesar, and of Mars. My Mark is the blessing of the divine son of war.'

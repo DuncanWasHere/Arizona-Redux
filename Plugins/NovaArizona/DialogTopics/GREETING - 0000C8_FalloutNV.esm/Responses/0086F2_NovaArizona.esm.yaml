@@ -1,0 +1,33 @@
+FormKey: 0086F2:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: 00B3C2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x74656D
+    UseEmotionAnimation: True
+    Unused3: 0x204E56
+  ResponseText: Sorry, I don't sell to murderers of my own kind. Assholes like you are why The Reservation exists in the first place.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00B3FE:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

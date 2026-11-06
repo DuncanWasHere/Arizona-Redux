@@ -1,0 +1,58 @@
+FormKey: 148C05:FalloutNV.esm
+EditorID: WastelandNVmini
+FormVersion: 15
+Name: Mojave Wasteland
+Parent:
+  Worldspace: 0DA726:FalloutNV.esm
+  Flags:
+  - UseMapData
+Climate: 174006:FalloutNV.esm
+Water: 030009:FalloutNV.esm
+LodWater: 030009:FalloutNV.esm
+LodWaterHeight: -2300
+LandData:
+  DefaultLandHeight: -2500
+  DefaultWaterHeight: -2300
+WorldMapScale: 1
+CellXOffset: -16400
+CellYOffset: 90000
+ImageSpace: 08809D:FalloutNV.esm
+Flags:
+- SmallWorld
+- NoLodWater
+ObjectBoundsMin: -131072, -131072
+ObjectBoundsMax: 131072, 131072
+CanopyShadow: ''
+WaterNoiseTexture: Data\Textures\Water\wastelandwaterpotomac.dds
+TopCell:
+  FormKey: 159B3E:FalloutNV.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Flags:
+  - HasWater
+  Grid: {}
+  LightTemplate: Null
+  LightInheritFlags:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  WaterHeight: 3.4028235E+38
+  WaterNoiseTexture: ''
+  Persistent:
+  - MutagenObjectType: PlacedNpc
+    FormKey: 010409:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: AZMcCarranBarryREF
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 00EE0E:NovaArizona.esm
+    Position: 5778.179, -18970.986, 10064
+  MajorFlags:
+  - Persistent
+SubCellsUnknownGroupData: -2141294536

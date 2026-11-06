@@ -1,0 +1,44 @@
+FormKey: 024E1E:NovaArizona.esm
+EditorID: AZBigStopDeadBodiesFailsafeTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A0079000000010072010080162600021E0056010000010015520200780000A1100B000100FFFF0500520300280207004C9D0000003A151000010F00520400780000211004000000283A1517000116005202007800009E100B000100FFFF05005205002839150C00010B00560100000100420100221002000000BB110200000011000000
+  SourceCode: >-
+    name AZBigStopDeadBodiesFailsafeTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+        if (!DoOnce && AZBigStopDominicusRexREF.GetIsCurrentPackage(AZDominicusArrestPackage)) {
+            AZAhigaDeadBodiesMarkerREF.Enable();
+            AZBigStopDominicusRexREF.MoveTo(AZBigStopDominicusNoxMarker);
+            DoOnce = 1;
+            Disable();
+            MarkForDelete();
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024E07:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024E13:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024E06:NovaArizona.esm

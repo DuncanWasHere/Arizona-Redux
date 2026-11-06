@@ -1,0 +1,34 @@
+FormKey: 00D4C3:NovaArizona.esm
+EditorID: AZPlanD
+FormVersion: 15
+ObjectBounds:
+  First: -3, -3, -5
+  Second: 3, 3, 5
+Name:
+  TargetLanguage: English
+  Value: Plan D
+Model:
+  File: AZNovaArizona\Clutter\Chems\AZPlanD.nif
+Icons:
+  LargeIconFilename: Interface\Icons\PipboyImages\Items\item_buffout.dds
+  SmallIconFilename: Interface\Icons\PipboyImages_small\Items_small\glow_items_buffout.dds
+EquipmentType: Chems
+Flags:
+- 0x400
+- 0x1000
+- 0x2000
+- 0x100000
+- 0x200000
+- 0x20000000
+ConsumeSound: 0211D0:FalloutNV.esm
+Effects:
+- BaseEffect: 043906:FalloutNV.esm
+  Data:
+    Magnitude: 1000
+    Duration: 5
+    ActorValue: Health
+- BaseEffect: 140A6B:FalloutNV.esm
+  Data:
+    Magnitude: 100
+    Duration: 5
+    ActorValue: None

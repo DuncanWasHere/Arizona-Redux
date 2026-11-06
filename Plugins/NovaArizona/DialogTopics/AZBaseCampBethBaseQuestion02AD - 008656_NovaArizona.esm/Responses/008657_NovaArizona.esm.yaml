@@ -1,0 +1,28 @@
+FormKey: 008657:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x140080
+    UseEmotionAnimation: True
+    Unused3: 0x637465
+  ResponseText: The hell you are. You try that, and I will fry your ass into next Sunday.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+Choices:
+- 008658:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm just going to steal the damn gloves and sell them myself. Make a nice deal with Hank.

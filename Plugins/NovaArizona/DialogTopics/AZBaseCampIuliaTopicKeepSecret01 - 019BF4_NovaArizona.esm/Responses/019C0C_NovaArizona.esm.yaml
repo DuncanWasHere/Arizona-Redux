@@ -1,0 +1,35 @@
+FormKey: 019C0C:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No. Absolutely not.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768679
+Choices:
+- 019BF4:NovaArizona.esm
+- 019BF5:NovaArizona.esm
+- 019BF6:NovaArizona.esm
+- 019BF7:NovaArizona.esm
+- 019BF8:NovaArizona.esm
+- 019BF0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is there some way I can convince you not to tell the Decanus?

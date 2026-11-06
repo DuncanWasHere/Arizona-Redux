@@ -1,0 +1,81 @@
+FormKey: 020198:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZBighornerDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -37, -75, 0
+  Second: 37, 75, 125
+Name: Dead Bighorner
+Model:
+  File: creatures\NVBigHorner\skeleton.nif
+UnarmedAttackEffect: 13DE70:FalloutNV.esm
+UnarmedAttackAnimation: AttackForwardPower
+Models:
+- NVBigHorner.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - TiltFrontBack
+  Fatigue: 150
+  Level: 9
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - ActorEffectList
+  - ModelAnimation
+  - Inventory
+Factions:
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 14F422:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 17412F:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 108020:FalloutNV.esm
+Items:
+- Item:
+    Item: 171620:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 20
+  Responsibility: 50
+  Mood: 1953064192
+  Teaches: Barter
+  Assistance: HelpsAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 500
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 40
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 35
+  Strength: 8
+  Perception: 3
+  Endurance: 7
+  Charisma: 4
+  Intelligence: 3
+  Agility: 4
+  Luck: 5
+AttackReach: 45
+CombatStyle: 14F437:FalloutNV.esm
+BodyPartData: 108021:FalloutNV.esm
+TurningSpeed: 40
+BaseScale: 1.5
+FootWeight: 30
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 137A11:FalloutNV.esm
+ImpactDataset: 173E76:FalloutNV.esm
+MajorFlags:
+- 0x80000

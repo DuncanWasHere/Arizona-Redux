@@ -1,0 +1,147 @@
+FormKey: 005F97:NovaArizona.esm
+MajorRecordFlagsRaw: 1024
+EditorID: AZBigSparMineWakeem
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Wakeem
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - PCLevelMult
+  Fatigue: 50
+  Level: 1000
+  CalcMin: 15
+  CalcMax: 23
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+  TemplateFlags:
+  - ActorEffectList
+Factions:
+- Faction: 0448D1:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A4:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0B87B3:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0EF323:FalloutNV.esm
+  Unused: 0x4F444C
+DeathItem: 0B7CC0:FalloutNV.esm
+Voice: 00002D:FalloutNV.esm
+Template: 0F1C69:FalloutNV.esm
+Race: 04BF71:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 014F35:NovaArizona.esm
+Items:
+- Item:
+    Item: 0A3045:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0F1CA0:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 141150:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0060A7:NovaArizona.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 023619:FalloutNV.esm
+Class: 015675:FalloutNV.esm
+BaseHealth: 170
+Strength: 6
+Perception: 5
+Endurance: 4
+Charisma: 3
+Intelligence: 3
+Agility: 6
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 11
+  - Key: BigGuns
+    Value: 13
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 11
+  - Key: MeleeWeapons
+    Value: 83
+  - Key: Repair
+    Value: 11
+  - Key: Science
+    Value: 11
+  - Key: SmallGuns
+    Value: 83
+  - Key: Sneak
+    Value: 17
+  - Key: Speech
+    Value: 11
+  - Key: Survival
+    Value: 13
+  - Key: Unarmed
+    Value: 13
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Hair: 0AAE63:FalloutNV.esm
+HairLength: 0
+HairColor: '#00181614'
+CombatStyle: 137AC1:FalloutNV.esm
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x4D0B853E6767033FDF90273FB785C4BEBD990D3F9E5D02BEF6EFA7BF2DAC143FAE59DBBFDA0FF0BFAEF0E83FB4F492BE6EFFECBE61EC19BFC87B7BBE7E4AB73F5C76D13D38819CBE72FFA53FBEDAB03FD4D488BD1035053F28485F3FB86E85BEA41D24BFF571E1BF10DE183F08F7C43E706487BE0F961FC085DBF73F7140E4BF11DF9040CE091740B07A733F4045C9BF60BF543EA4536EBE45DCAC40B8413C3F4B50B0C0146D3CC0FBC109C060BBA4BF0CB8AFBFE8AA0C3F7B05A7C0CD6B4A4090EA12C0A0404F3F
+FaceGenGeometryAsymmetric: 0x70C589BD2BFE373F4800ACBE0EE5F3BD3820C03E8E7E0EBF4A89063EB1679E3FE6B0DE3EA5EB6DBE340CED3E1EB805BFD73592BF363053BF1C6716BF8059C03C5E82B73EB7F9103E05429BBF1091A33D90AE473F13C0A53E88ABEDBB80B497BECF490640B071973EBEC4843FE8F669BDB33F98BFB93D87BE
+FaceGenTextureSymmetric: 0xB1ED9ABF389750BD188F05BF04E99A3ECC62393F9950913FCA06F23EA2D8F43E9825BA3F184C923D3385DFBFAB156FBFF7D542BF26361240A139A53FD49F1EBF921995BF5287AF3F1828893E07AAF2BFAA23AFBFC0FBC03F4A0DCBBEB059333CC0EF3BC01112F13F62A0F3BE798E37BF8447D4BF66C04DBFFCF0073F18C021407018803FDDFF793E6E6C8ABF4B7073C0729C52C0292D344006C2334082BA44BF00F98F3EDEF3123F7AB2713FA283BDBF051CB6C0C7A9B33F52E3063F434A3440E61779C03DA79C3F
+NAM5: 255
+Height: 1
+Weight: 1
+DATADataTypeState:
+- Break0
+MajorFlags:
+- QuestItem

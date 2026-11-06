@@ -1,0 +1,30 @@
+FormKey: 0174EE:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4A6F75
+    UseEmotionAnimation: True
+    Unused3: 0x737451
+  ResponseText: Yeah, we should. I'm not in the business of antagonizing the people who have the power to end my life whenever they want.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174F1:NovaArizona.esm
+- 0174F2:NovaArizona.esm
+- 0174F5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're right. We should probably say something else.

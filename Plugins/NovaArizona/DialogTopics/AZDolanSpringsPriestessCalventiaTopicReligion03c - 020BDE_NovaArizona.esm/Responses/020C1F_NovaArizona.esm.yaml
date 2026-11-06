@@ -1,0 +1,52 @@
+FormKey: 020C1F:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Caesar is the son of Mars, as I'm sure you know.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Filled with despair over the Profligacy running rampant in His creation, Mars pierced himself with a holy lance and bled into our mortal world.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 028DB9:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He roared in agony as He bled, and He used that fury to burn the world. That blood spilled into the oceans and seeded the birth of Caesar.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 028DBA:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 020BDF:NovaArizona.esm
+- 020BE0:NovaArizona.esm
+- 020BE1:NovaArizona.esm
+- 020BE2:NovaArizona.esm
+- 020BE3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How does Caesar fit into this?

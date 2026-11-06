@@ -1,0 +1,70 @@
+FormKey: 01EF9C:NovaArizona.esm
+EditorID: AZArcadeDisableQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000009300000016001E0001001A0020730300207301002036202B203C207302002030203D3D202626391513000112005601000003005800002F2804000000001700020006001C0001002110020000001C0001009E10050001007203001C00020002100A0002007204006E0100000059100B00010072050000000000000015000700730200020020313710050001007206001900000011000000
+  SourceCode: >-
+    scn AZArcadeDisableQuestScript
+
+
+    short ArcadeTreatment
+
+    short DoOnce
+
+
+    int iTimer
+
+
+    BEGIN GameMode
+
+
+    if iTimer < ArcadeTreatment + 6 && DoOnce == 0
+    		iTimer = GetGameDaysPassed
+    else
+    	ArcadeREF.enable
+    	ArcadeREF.MoveTo ArcadeHomeMarker
+    	Player.AddItem AZArcadeReturnNote 1
+    	ShowMessage FollowerMessageLeaveArcade
+    	Set DoOnce to 1
+    	StopQuest AZArcadeDisableQuest
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x208120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x71BA1F50EDBF1F
+    Name: ArcadeTreatment
+  - Data:
+      Index: 2
+      Unknown: 0x408120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xC1691D80C7691D
+    Name: DoOnce
+  - Data:
+      Index: 3
+      Unknown: 0x60E829120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x16000024C25900
+    Name: iTimer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8EB:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10EB41:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F039:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10EB40:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF9D:NovaArizona.esm

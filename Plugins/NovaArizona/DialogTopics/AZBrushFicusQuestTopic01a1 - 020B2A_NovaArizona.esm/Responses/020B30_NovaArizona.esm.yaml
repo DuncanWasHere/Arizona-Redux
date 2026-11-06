@@ -1,0 +1,54 @@
+FormKey: 020B30:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: 020B2C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You're lucky it jammed. You nearly shot your head off. You nearly shot your head off.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Give me that gun back.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 8
+  Function: GetActorValue
+  FirstParameter: 11
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x261005000100720100
+  SourceCode: PlaySound WPNPistol10mmFireDry
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F21C:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Nah nah, I got this, man!
+ActorValuePerk: 0003EE:FalloutNV.esm

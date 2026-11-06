@@ -1,0 +1,61 @@
+FormKey: 01033D:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0F0000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's great. We have everything we need. We know how to fight, how to heal, how to serve.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: We have brothers-in-arms which will follow us into battle. We show off superior Legion might every time we are seen.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: We civilize the world around us, and we make the world a better place for it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: This post is a little boring though. No battles, no actions, just me, Flaminius and Veranus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729663
+Choices:
+- 010336:NovaArizona.esm
+- 010338:NovaArizona.esm
+- 01033A:NovaArizona.esm
+- 01033C:NovaArizona.esm
+- 010387:NovaArizona.esm
+- 010397:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's it like being a Legionary?

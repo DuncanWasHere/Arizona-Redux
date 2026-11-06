@@ -1,0 +1,49 @@
+FormKey: 020AA0:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 020AA5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x757269
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: The mutiny against Decanus Quintus is disturbing. I never would have expected Quintus to be disloyal and a chem user, no less.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x757269
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: Quintus had banned Brush, but I'm considering overturning it given that he was obviously a spy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100796571
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756656
+- Fluff: 0x000000
+  ComparisonValue: 36
+  Function: GetStage
+  FirstParameter: 100796571
+Choices:
+- 020A87:NovaArizona.esm
+- 020A88:NovaArizona.esm
+- 020A8B:NovaArizona.esm
+- 020A8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'd like to speak to you about the Brush discussion you've been having.

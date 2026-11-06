@@ -1,0 +1,33 @@
+FormKey: 024C01:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Gold. Legion gold. 150 denarii liberated from a caravan near Yuma.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BFF:NovaArizona.esm
+- 024BFE:NovaArizona.esm
+- 024C00:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's in it for me?

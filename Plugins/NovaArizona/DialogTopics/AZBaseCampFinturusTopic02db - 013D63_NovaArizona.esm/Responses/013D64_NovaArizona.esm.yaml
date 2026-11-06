@@ -1,0 +1,32 @@
+FormKey: 013D64:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656420
+    UseEmotionAnimation: True
+    Unused3: 0x746F20
+  ResponseText: Perhaps, that would be best.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D53:NovaArizona.esm
+- 013D55:NovaArizona.esm
+- 013D57:NovaArizona.esm
+- 013D5B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, I'll keep on the lookout for bold women, just in case.

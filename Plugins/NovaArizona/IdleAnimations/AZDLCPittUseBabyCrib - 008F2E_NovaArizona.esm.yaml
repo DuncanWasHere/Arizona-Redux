@@ -1,0 +1,20 @@
+FormKey: 008F2E:NovaArizona.esm
+EditorID: AZDLCPittUseBabyCrib
+FormVersion: 15
+Model:
+  File: Characters\_Male\IdleAnims
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsChild
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 100699951
+RelatedIdleAnimations:
+  Parent: 008F2D:NovaArizona.esm
+AnimationData:
+  AnimationGroupSection: SpecialIdle
+  MustReturnFile: True
+  Unused1: 105

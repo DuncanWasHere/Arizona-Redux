@@ -1,0 +1,52 @@
+FormKey: 00DC37:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's in the town's Mojave Express. I was gonna mail it, but never got the chance.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And... thank you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723849
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007202006E010000006E010000001C000100211002000000
+  SourceCode: >-
+    setobjectivedisplayed AZBigStopClariceQuest 1 1
+
+    AZBigStopClariceLetterREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B2F2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm
+Prompt: Let's cut to the chase. I'll deliver it. Where's the letter?

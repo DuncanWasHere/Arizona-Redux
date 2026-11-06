@@ -1,0 +1,112 @@
+FormKey: 0386CB:NovaArizona.esm
+EditorID: AZNonEuclidianTeleporterTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 24
+    Enabled: 1
+  CompiledScript: 0x1D000000100008001A00E3010000000039151300011200560400000200580000CD100400000000391513000112005604000003005800006B110400000000391513000112005604000004005802006B11040000000039151F00011E00560000000F0058010006100500010058580200061005000100580F0039151F00011E0056000000100058010006100500010059580200061005000100590F0039151F00011E005600000011005801000610050001005A5802000610050001005A0F00391514000113005600000012005802000810050001005A00391514000113005600000013005803000810050001005A00391517000116005600000014005600000013005600000012000F00391516000115005600000015005800001C120700010066140000391516000115005600000016005800001D12070001006614000039152500012400560000001700560000000F0056000000160010560000001000560000001500100F0039152500012400560000001800560000000F0056000000150010560000001000560000001600100E001C00010007101800020058FFFF1300580300061005000100585600000017000E1C00010007101800020059FFFF1300580300061005000100595600000018000E1C0001000710180002005AFFFF13005803000610050001005A5600000011000E11000000
+  SourceCode: >-
+    scn AZNonEuclidianTeleporterTriggerScript
+
+
+    BEGIN OnTriggerEnter
+    	ref rTarget = GetActionRef
+    	ref rEntry = GetLinkedRef
+    	ref rExit = rEntry.GetLinkedRef
+
+    	float fRelX = rTarget.GetPos X - rEntry.GetPos X
+    	float fRelY = rTarget.GetPos Y - rEntry.GetPos Y
+    	float fRelZ = rTarget.GetPos Z - rEntry.GetPos Z
+
+    	float fEntryAZ = rEntry.GetAngle Z
+    	float fExitAZ  = rExit.GetAngle Z
+
+    	float fAng = fExitAZ - fEntryAZ
+    	float fSinA = Sin fAng
+    	float fCosA = Cos fAng
+
+    	float fNewX = fRelX * fCosA - fRelY * fSinA
+    	float fNewY = fRelX * fSinA + fRelY * fCosA
+
+    	rTarget.SetPos X ( rExit.GetPos X + fNewX )
+    	rTarget.SetPos Y ( rExit.GetPos Y + fNewY )
+    	rTarget.SetPos Z ( rExit.GetPos Z + fRelZ )
+    END
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0x60CB20120000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x0E0C2D01000000
+    Name: rTarget
+  - Data:
+      Index: 3
+      Unknown: 0x40CB20120000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x32687272656C6F
+    Name: rEntry
+  - Data:
+      Index: 4
+      Unknown: 0x20CB20120000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x32687272656C6F
+    Name: rExit
+  - Data:
+      Index: 15
+      Unknown: 0x00CB20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fRelX
+  - Data:
+      Index: 16
+      Unknown: 0xE0CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fRelY
+  - Data:
+      Index: 17
+      Unknown: 0xC0CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fRelZ
+  - Data:
+      Index: 18
+      Unknown: 0xA0CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fEntryAZ
+  - Data:
+      Index: 19
+      Unknown: 0x80CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fExitAZ
+  - Data:
+      Index: 20
+      Unknown: 0x60CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fAng
+  - Data:
+      Index: 21
+      Unknown: 0x40CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fSinA
+  - Data:
+      Index: 22
+      Unknown: 0x20CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fCosA
+  - Data:
+      Index: 23
+      Unknown: 0x00CA20120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fNewX
+  - Data:
+      Index: 24
+      Unknown: 0x20DF29120000000000000000
+      Unknown2: 0x32687272656C6F
+    Name: fNewY
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 3
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4

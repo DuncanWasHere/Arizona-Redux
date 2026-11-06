@@ -1,0 +1,47 @@
+FormKey: 01F05A:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01F059:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x7C2049
+    UseEmotionAnimation: True
+    Unused3: 0x727072
+  ResponseText: I'm a people person, what can I say?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x7C2049
+    UseEmotionAnimation: True
+    Unused3: 0x727072
+  ResponseText: Before the road went out, we'd see all sorts of human cargo traders flow through here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x7C2049
+    UseEmotionAnimation: True
+    Unused3: 0x727072
+  ResponseText: Salt of the earth, those guys. They demanded respect, and they got it. We could learn a thing or two from them
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 01F05B:NovaArizona.esm
+- 01F101:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The people business?

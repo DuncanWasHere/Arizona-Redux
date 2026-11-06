@@ -1,0 +1,53 @@
+FormKey: 01EEB0:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EEA6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4C6567
+    UseEmotionAnimation: True
+    Unused3: 0x792068
+  ResponseText: No. You see how Caesar runs things. I mean, you can't...help bad people.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1099623
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 156
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789367
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789367
+  SecondParameter: 165
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789367
+  SecondParameter: 166
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789367
+  SecondParameter: 156
+Choices:
+- 01EEB2:NovaArizona.esm
+- 01EEB8:NovaArizona.esm
+- 01EEB6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I want you to treat Noctis. His legate abused him, and he is suffering from post-traumatic stress.

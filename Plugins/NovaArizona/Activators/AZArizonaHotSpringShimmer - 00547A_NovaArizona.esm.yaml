@@ -1,0 +1,35 @@
+FormKey: 00547A:NovaArizona.esm
+MajorRecordFlagsRaw: 65536
+EditorID: AZArizonaHotSpringShimmer
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x10000
+ObjectBounds:
+  First: -156, -156, -128
+  Second: 156, 156, 128
+Model:
+  File: Traps\TrapGasFire01.NIF
+Destructible:
+  Data:
+    Health: 10
+    DESTCount: 3
+    Unused: 25
+  Stages:
+  - Data:
+      HealthPercent: 100
+  - Data:
+      HealthPercent: 99
+      Index: 1
+      ModelDamageStage: 1
+      Flags:
+      - CapDamage
+      - Destroy
+      SelfDamagePerSecond: 50
+  - Data:
+      Index: 2
+      ModelDamageStage: 2
+      Flags:
+      - Disable
+      Explosion: 0348D0:FalloutNV.esm
+MajorFlags:
+- RandomAnimStart

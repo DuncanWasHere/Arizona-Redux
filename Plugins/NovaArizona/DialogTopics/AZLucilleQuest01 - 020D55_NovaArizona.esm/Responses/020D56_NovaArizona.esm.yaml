@@ -1,0 +1,85 @@
+FormKey: 020D56:NovaArizona.esm
+FormVersion: 15
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: She left.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x150051
+    UseEmotionAnimation: True
+    Unused3: 0x855F14
+  ResponseText: One morning mom found her bed empty. Eventually word got back to us that she ended up with a settlement caravan.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: Once we learned where she was, we sent her letters but seldom heard back.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: The last time I spoke with her was just before the war with the Legion. I came to the village to rally the troops.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: There were a lot more of us there back then.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: She refused the call, a few months later the war was lost. We had retreated to the hills and canyons.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: I guess I was just had nothing more to say to her until now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100711888
+Choices:
+- 020D55:NovaArizona.esm
+- 020D57:NovaArizona.esm
+- 020D59:NovaArizona.esm
+- 020D63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why haven't you spoken to her in so long?

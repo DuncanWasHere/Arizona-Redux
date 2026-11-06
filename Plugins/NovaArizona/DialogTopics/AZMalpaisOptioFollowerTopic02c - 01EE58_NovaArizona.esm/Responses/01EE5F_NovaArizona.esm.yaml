@@ -1,0 +1,83 @@
+FormKey: 01EE5F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: '[SUCCEEDED] *sighs* That is true. The legate is no longer with us. Perhaps, that is the will of Mars, perhaps it is a test.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: The legate could have been wrong, although I doubt it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: 'Here is what will happen: Your prisoner will treat Noctis. After he is done, if there is improvement, then he will returned West.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: If there isn't, he and Noctis will both die.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 95
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+Choices:
+- 01EE64:NovaArizona.esm
+- 01EE65:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x36100500010072010039100A0002007202006EC8000000
+  SourceCode: >-
+    StartQuest AZFollowerReturnQuest
+
+    SetStage AZMalpaisAbuseQuest 200
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F035:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001005E100000
+  SourceCode: AZMalpaisOptioREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004BC2:NovaArizona.esm
+Prompt: Noctis is a dutiful Legionary. A lesser Profligate soldier would have deserted. There is hope for him.
+ActorValuePerk: 0004BB:FalloutNV.esm

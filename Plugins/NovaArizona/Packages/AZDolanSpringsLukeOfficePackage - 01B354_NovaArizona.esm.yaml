@@ -1,0 +1,37 @@
+FormKey: 01B354:NovaArizona.esm
+EditorID: AZDolanSpringsLukeOfficePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 1
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 024A7E:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 18
+Duration: 2
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,44 @@
+FormKey: 03804E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x426172
+    UseEmotionAnimation: True
+    Unused3: 0x77656E
+  ResponseText: "{you'll never get revenge. suffer this humiliation forever}He's dead."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x62726F
+    UseEmotionAnimation: True
+    Unused3: 0x68696D
+  ResponseText: The funny thing is, it was the Legion who killed him. Lanius brought him up in front of his troops and ripped out his throat.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 03804A:NovaArizona.esm
+- 03804F:NovaArizona.esm
+- 038050:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What about that centurion? Where is he now?

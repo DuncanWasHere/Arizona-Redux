@@ -1,0 +1,49 @@
+FormKey: 008760:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79496D
+  ResponseText: I don't have time to keep tabs on every two-bit Legionary. Nobody except the kids have time for gossip.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100768688
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 020DBF:NovaArizona.esm
+- 00875A:NovaArizona.esm
+- 00875B:NovaArizona.esm
+- 00B3CC:NovaArizona.esm
+- 008632:NovaArizona.esm
+- 008624:NovaArizona.esm
+- 008662:NovaArizona.esm
+- 00B3BF:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you know anything about Flemus and Arceus?

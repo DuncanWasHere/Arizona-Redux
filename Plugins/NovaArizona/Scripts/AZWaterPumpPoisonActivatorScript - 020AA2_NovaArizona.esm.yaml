@@ -1,0 +1,122 @@
+FormKey: 020AA2:NovaArizona.esm
+EditorID: AZWaterPumpPoisonActivatorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 7
+    VariableCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B00020073000000010072010016000F0005000B002058691005000100720100160017000100130020720100582F10050001007203002031203D3D59100B000100720400000000000000180017000100130020720100582F10050001007203002030203D3D59100B00010072050000000000000019000000190000001100000010000800020073000000000016000F0005000B002058691005000100720100160017000100130020720100582F10050001007203002031203D3D59100B000100720400000000000000180017000100130020720100582F10050001007203002030203D3D59100B0001007205000000000000001900000019000000110000001000060000002D01000015000B00730200060020581F100000160010000E000C00207206007304002030203D3D16000D0001000900207302002030203D3D1E00000018000D000A000900207302002031203D3D1C00010052100A0002007203006E010000001C00020022100200000015000A0072060073040002002031A2110F0003007206006E3C0000006E01000000A3110F0003007206006E3E0000006E00000000A3110F0003007206006E3F0000006E0100000016000E0002000A0020584A2700002031203E15000A00720600730500020020313B12130003007207006E000000007A0000000000002840190000001900000018001C0002001800207206007304002031203D3D207303002030203D3D20262659100B00010072050000000000000015000700730300020020311900000011000000
+  SourceCode: >-
+    scn AZWaterPumpPoisonActivatorScript
+
+
+    short WellButton
+
+    short WellDetected
+
+    short WellPoisoned
+
+    short DoOnce
+
+
+
+    BEGIN OnActivate player
+
+
+    if IsActionRef Player
+    	if Player.GetItemCount AZSmoochCannister == 1
+    		ShowMessage AZBrushQuest02WaterPrePoisoned
+    	elseif Player.GetItemCount AZSmoochCannister == 0
+    		ShowMessage AZBrushQuest02WaterPostPoisoned
+    	endif
+    endif
+
+
+    END
+
+
+
+    BEGIN OnActivate
+
+
+    if IsActionRef Player
+    	if Player.GetItemCount AZSmoochCannister == 1
+    		ShowMessage AZBrushQuest02WaterPrePoisoned
+    	elseif Player.GetItemCount AZSmoochCannister == 0
+    		ShowMessage AZBrushQuest02WaterPostPoisoned
+    	endif
+    endif
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+    Set WellButton to GetButtonPressed
+
+
+    if AZBrushQuest02.WellPoisoned == 0
+    	if WellButton == 0
+    		Return
+    	elseif WellButton == 1
+    		Player.RemoveItem AZSmoochCannister 1
+    		AZMountTiptonCaveMartyREF.disable
+    		set AZBrushQuest02.WellPoisoned to 1
+    		SetObjectiveCompleted AZBrushQuest02 60 1
+    		SetObjectiveDisplayed AZBrushQuest02 62 0
+    		SetObjectiveDisplayed AZBrushQuest02 63 1
+    		if GetPCDetectionState > 1
+    			Set AZBrushQuest02.WellPoisonedDetected to 1
+    			AddReputationExact RepNVCaesarsLegion 0 12
+    		endif
+    	endif
+    elseif AZBrushQuest02.WellPoisoned == 1 && DoOnce == 0
+    	ShowMessage AZBrushQuest02WaterPostPoisoned
+    	Set DoOnce to 1
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x80C029120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6973746F6C556E
+    Name: WellPoisoned
+  - Data:
+      Index: 2
+      Unknown: 0x609820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6572506F737450
+    Name: WellButton
+  - Data:
+      Index: 3
+      Unknown: 0xA0C029120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 4
+      Unknown: 0xE0DE29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6572506F737450
+    Name: WellDetected
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01DF4E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020A9D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020AA3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020AA4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm

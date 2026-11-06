@@ -1,0 +1,26 @@
+FormKey: 02F15F:NovaArizona.esm
+EditorID: AZSpillwayDoorSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060015003700000016000F0001000B00207201007301002030203ECC10070001006E01000000170002000100CC10070001006E000000001900000011000000
+  SourceCode: >-
+    SCN AZSpillwayDoorSCRIPT
+
+
+    BEGIN OnLoad
+
+
+    if VHDBattleController.iBattleState > 0
+    	SetDestroyed 1
+    else
+    	SetDestroyed 0
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 133075:FalloutNV.esm

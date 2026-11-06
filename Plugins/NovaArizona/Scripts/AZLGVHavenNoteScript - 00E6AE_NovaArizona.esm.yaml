@@ -1,0 +1,62 @@
+FormKey: 00E6AE:NovaArizona.esm
+EditorID: AZLGVHavenNoteScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 8
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B000200D4000000010072010016000D0002000900207301002030203D3D1C00010002100A0002007202006E0100000015000700730100020020311900000016001E0004001A00204703002031203D3D20720400582E1000002030203D3D20262659100B00010072050000000000000015000A0072060073020002002034A3110F0003007206006E1E0000006E0000000039100A0002007206006E280000001800120001000E0020720400582E1000002031203D3D59100B00010072070000000000000017000200010059100B0001007208000000000000001900000011000000
+  SourceCode: >-
+    scn AZLGVHavenNoteScript
+
+
+    int DoOnce
+
+
+    BEGIN OnActivate player
+
+
+    if DoOnce == 0
+    	Player.AddItem AZLGVNote02 1
+    	Set DoOnce to 1
+    endif
+
+
+    if AZStoryEventHavenFound == 1 && AZHavenBenjaminREF.GetDead == 0
+    	ShowMessage AZLGVAircraftActivator04b
+    	Set AZStatioFindFriendQuest.AutonousSearchStatus to 4
+    	SetObjectiveDisplayed AZStatioFindFriendQuest 30 0
+    	SetStage AZStatioFindFriendQuest 40
+    elseif AZHavenBenjaminREF.GetDead == 1
+    	ShowMessage AZLGVAircraftActivator04c
+    else
+    	ShowMessage AZLGVAircraftActivator04a
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0DA29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000050970000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE92:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024B9B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E60B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E6B4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E60A:NovaArizona.esm

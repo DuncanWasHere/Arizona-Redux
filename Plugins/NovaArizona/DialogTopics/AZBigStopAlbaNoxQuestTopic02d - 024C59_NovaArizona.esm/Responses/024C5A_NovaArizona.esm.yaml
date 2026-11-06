@@ -1,0 +1,40 @@
+FormKey: 024C5A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x006E01
+    UseEmotionAnimation: True
+    Unused3: 0x0F0003
+  ResponseText: Corvus? These days, that name is not a welcome one. But before his disappearance, yes I did.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100698646
+  SecondParameter: 5
+Choices:
+- 024C32:NovaArizona.esm
+- 024C37:NovaArizona.esm
+- 024C3B:NovaArizona.esm
+- 024C59:NovaArizona.esm
+- 024C40:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you know a Corvus by chance?

@@ -1,0 +1,63 @@
+FormKey: 020AEB:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x686974
+  ResponseText: Say no more. I'm in. The Decanus was going to punish me for following his orders. That type of rot should be purged from the Legion.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x9F4E0B
+    UseEmotionAnimation: True
+    Unused3: 0x9A4E0B
+  ResponseText: Besides, I owe you one.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00C2F8:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+- Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetStage
+  FirstParameter: 100796571
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100796571
+  SecondParameter: 9
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007307000B00207201007307002031202B15000A0072010073090002002031
+  SourceCode: >-
+    Set AZBrushQuest02.MutineersAssembled to AZBrushQuest02.MutineersAssembled + 1
+
+    Set AZBrushQuest02.CallumAccept to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+Prompt: Quintus is not fit to be a Decanus.

@@ -1,0 +1,178 @@
+FormKey: 008C70:NovaArizona.esm
+EditorID: AZLegionaryPrimeAAM01
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Prime Legionary
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 10
+  SpeedMultiplier: 130
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 019FCA:FalloutNV.esm
+Template: 008C6F:NovaArizona.esm
+Race: 00424A:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 1372B4:FalloutNV.esm
+Items:
+- Item:
+    Item: 0F52B6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A5FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 14D6C8:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 154416:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165747:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165748:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165760:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165761:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165764:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FB:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 174989:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 17498A:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 13DBDB:FalloutNV.esm
+- 018E6A:FalloutNV.esm
+Class: 127736:FalloutNV.esm
+BaseHealth: 50
+Strength: 6
+Perception: 5
+Endurance: 6
+Charisma: 4
+Intelligence: 4
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 13
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 13
+  - Key: MeleeWeapons
+    Value: 68
+  - Key: Repair
+    Value: 13
+  - Key: Science
+    Value: 13
+  - Key: SmallGuns
+    Value: 66
+  - Key: Sneak
+    Value: 15
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 68
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Eyes: 004255:FalloutNV.esm
+HairColor: '#00150E06'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xCCD8783EB04984BE909DB53DD0FE11BEECE5D9BE404D6C3E1773B03E121089BEFEFAC43EA02E62BE647179BE5F0BCCBE70F2B53DE0B78C3D20A693BED42C553EA03FC73C9CDC753E607D95BD025F9CBD808C7ABDC02BF8BDD006C5BD312208BE808C3D3DFA4F333EC0B492BD9070123EC0EB8BBDD08E763DF76CC2BE0064F73CC09E3EBD7775ACBE0A1241BE60D2833E20E2E23DD0463ABE10229C3C002A54BDA065543EC820C1BDB09406BE30E5293EE032DA3D70E7C33D8010B73B401C09BD80E9BCBDE02305BE
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0xE01796BEC0E769BF2E71503F2CE8063F28E1083EC05190BBCA96B2BE75F81DBF40AFD6BF0E7BB73FEBC2AF3FD1AB1FC074F0A43E92370BBEE813B33E46C28E3F80AACC3FAAE9693FFC1FC1BFCB2913C0F056DABE461B29400C94923E76D0F03EF2060040C00A2A3DB80F11BF64207F3F10D3F63DB9CD6A3F5E83973FA02009BF181AC73F760A87C0E2A636C054E887C05C7CA53EE2B4BC3FA8CF6C3FB8458D3FA9D2F5BF21E8184095C01540FC7A3A40B7D12140C7C8763F126007C0B1DC2640ABB686C0B07554BF
+NAM5: 255
+DATADataTypeState:
+- Break0

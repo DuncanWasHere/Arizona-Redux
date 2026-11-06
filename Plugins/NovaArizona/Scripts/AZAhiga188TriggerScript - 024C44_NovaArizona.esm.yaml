@@ -1,0 +1,27 @@
+FormKey: 024C44:NovaArizona.esm
+EditorID: AZAhiga188TriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A0053000000010072010080161D000215005800003A100B000100FFFF050052020042320407004C770000003A151000010F00520300780000211004000000283A151000010F005203007800005E10040000002822100200000011000000
+  SourceCode: >-
+    name AZAhiga188TriggerScript;
+
+
+    OnTriggerEnter::PlayerREF {
+    	if (GetStage(AZBigStopAhigaQuest01) == 50) {
+    		AZ188CourierREF.Enable();
+    		AZ188CourierREF.Evp();
+    		Disable();
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024C45:NovaArizona.esm

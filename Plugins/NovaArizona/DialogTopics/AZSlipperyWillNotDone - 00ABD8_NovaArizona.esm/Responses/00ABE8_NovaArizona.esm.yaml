@@ -1,0 +1,42 @@
+FormKey: 00ABE8:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Just follow the map, partner. Should lead you right to it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 100707312
+  SecondParameter: 2
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 100707312
+  SecondParameter: 1
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+Choices:
+- 00ABD7:NovaArizona.esm
+- 00ABCD:NovaArizona.esm
+- 00ABCE:NovaArizona.esm
+- 00ABCF:NovaArizona.esm
+- 00ABD6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm still working on finding the cached treasure.

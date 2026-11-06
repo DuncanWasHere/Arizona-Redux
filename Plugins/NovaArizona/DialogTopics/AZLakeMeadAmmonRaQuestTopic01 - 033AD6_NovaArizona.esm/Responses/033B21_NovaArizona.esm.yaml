@@ -1,0 +1,44 @@
+FormKey: 033B21:NovaArizona.esm
+FormVersion: 15
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: 033B09:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetStage
+  FirstParameter: 100874950
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100874950
+  SecondParameter: 12
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100874950
+  SecondParameter: 12
+Choices:
+- 033AEB:NovaArizona.esm
+- 033AE3:NovaArizona.esm
+- 033ADD:NovaArizona.esm
+- 033AEA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: About that trade mission...

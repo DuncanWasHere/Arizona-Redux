@@ -1,0 +1,39 @@
+FormKey: 013DE5:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: It was a trading post along Lake Mead. Belonged to a local tribe. They're gone now, killed when the Legion last came through here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Dr. Clay's been here longer than I have. Might ask her about it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744513
+Choices:
+- 013DDF:NovaArizona.esm
+- 013DE0:NovaArizona.esm
+- 013DE1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What was Newt before the Legion?

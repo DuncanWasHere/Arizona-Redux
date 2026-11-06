@@ -1,0 +1,43 @@
+FormKey: 01756D:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x207761
+    UseEmotionAnimation: True
+    Unused3: 0x696F75
+  ResponseText: Surely, you are aware that the Rangers had help? Collaborators. Friendly persons. Without them, the Rangers would have been killed instantly.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: But even if it were just two people, then the answer would still be yes. Order must be maintained at any cost, lest we descend into anarchy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 017570:NovaArizona.esm
+- 017571:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Was it necessary to massacre most of Solitare to deal with a rebellion by two Rangers?

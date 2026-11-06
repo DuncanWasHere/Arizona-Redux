@@ -1,0 +1,51 @@
+FormKey: 039FCE:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01623D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: It was the name of a long-dead thunderbird that roamed the wastes before the Great Fire.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: But it is not so uncommon, it is a sign that Mars smiled on the night of their birth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: Do names like Hadrian, Marcus, Amanda, Gloria, Felix or Victor seem uncommon to you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712373
+Choices:
+- 016232:NovaArizona.esm
+- 016240:NovaArizona.esm
+- 016242:NovaArizona.esm
+- 016244:NovaArizona.esm
+- 01623C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Interesting that your name was already Latin before meeting the Legion.

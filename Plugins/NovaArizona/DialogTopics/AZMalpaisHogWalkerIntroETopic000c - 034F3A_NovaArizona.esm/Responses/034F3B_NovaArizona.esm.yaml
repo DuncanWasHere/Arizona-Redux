@@ -1,0 +1,55 @@
+FormKey: 034F3B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x747469
+    UseEmotionAnimation: True
+    Unused3: 0x616461
+  ResponseText: So you get what I'm saying? Finally, someone else with some basic sense around here!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20766F
+    UseEmotionAnimation: True
+    Unused3: 0x2E2E2E
+  ResponseText: I was starting to think maybe the things they say about me are true.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 034F35:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 034F43:NovaArizona.esm
+- 034F4A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B0056010100010042011C39150C00010B00560101000800420100
+  SourceCode: >-
+    AZMalpaisSniperQuest.iEsteemCounter += 1
+
+    AZMalpaisSniperQuest.bWhatDoTheySay = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+Prompt: I know who Regulus is. I agree, he's a piece of work.

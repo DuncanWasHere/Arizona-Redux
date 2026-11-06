@@ -1,0 +1,146 @@
+FormKey: 020AF1:NovaArizona.esm
+EditorID: AZBrushQuest01CampfireQuest
+FormVersion: 15
+Script: 020B03:NovaArizona.esm
+QuestData:
+  Priority: 55
+  Unused: 28448
+  QuestDelay: 0.1
+Stages:
+- Index: 1
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 9
+        Enabled: 1
+      CompiledScript: 0x1C0001009E10050001007205006110020000009111050001007206001C0002009E10050001007207001C0003009E10050001007208001C0004002110020000001C00020002100A0002007209006E010000001C00030002100A0002007209006E010000001C000200EE10050001007209001C000300EE1005000100720900
+      SourceCode: >-
+        PlayerREF.MoveTo AZPlayerBrushConvoFurnitureREF
+
+        DisablePlayerControls
+
+        IMod FadeToBlack5sISFX
+
+        AZCowFieldAsherREF.MoveTo AZCowFieldAsherSitMarkerREF
+
+        AZCowFieldFicusREF.MoveTo AZCowFieldFicusSitMarkerREF
+
+        AZCowFieldSmokeREF.Enable
+
+        AZCowFieldAsherREF.AddItem AZHeadwearBrushBlunt 1
+
+        AZCowFieldFicusREF.AddItem AZHeadwearBrushBlunt 1
+
+        AZCowFieldAsherREF.EquipItem AZHeadwearBrushBlunt
+
+        AZCowFieldFicusREF.EquipItem AZHeadwearBrushBlunt
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209B9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 021121:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 11ECFF:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209D0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209CF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111C:NovaArizona.esm
+- Index: 5
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 9
+        Enabled: 1
+      CompiledScript: 0x1C0001005610180006007202007203007201007202006E000000006E0000000091110500010072040016001B000100170020583A1511000110005805000E1006000100070042040791110500010072060019000000160019000100150020583A150F00010E00580700C11107000100720800FF110500010072090019000000
+      SourceCode: >-
+        AZCowFieldAsherRef.StartConversation AZCowFieldFicusRef, AZCampfireTopic01A AZCowFieldAsherRef AZCowFieldFicusRef 0 0
+
+
+        IMOD AZBrushISMOD
+
+
+        if eval (Player.GetActorValue Endurance < 4)
+        	IMod BarkScorpionPoisonISFX
+        endif
+
+
+        if eval (PlayerREF.HasPerk WildWasteland)
+          PlayMusic AZBrushMusic
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209B9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AF3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 104671:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0ED568:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111D:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 8
+        Enabled: 1
+      CompiledScript: 0x6010020000001C00010052100A0002007205006E010000001C00020052100A0002007205006E010000001C0003002210020000001C0001005E1000001C0002005E100000921105000100720600921105000100720700160016000100120020583A150C00010B005804004A12040000001C00040081110D0002004A007A000000000000594019000000371005000100720800
+      SourceCode: >-
+        EnablePlayerControls
+
+        AZCowFieldAsherREF.RemoveItem AZHeadwearBrushBlunt 1
+
+        AZCowFieldFicusREF.RemoveItem AZHeadwearBrushBlunt 1
+
+        AZCowFieldSmokeREF.Disable
+
+        AZCowFieldAsherREF.EVP
+
+        AZCowFieldFicusREF.EVP
+
+        RemoveImageSpaceModifier BarkScorpionPoisonISFX
+
+        RemoveImageSpaceModifier AZBrushISMOD
+
+        if eval (PlayerREF.IsHardcore)
+          PlayerREF.DamageAV Hunger 100
+        endif
+
+
+        StopQuest AZBrushQuest01CampfireQuest
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209B9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 104671:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02111E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AF1:NovaArizona.esm

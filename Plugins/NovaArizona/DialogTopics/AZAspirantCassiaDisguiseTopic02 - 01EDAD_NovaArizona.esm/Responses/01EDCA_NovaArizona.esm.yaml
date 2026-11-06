@@ -1,0 +1,44 @@
+FormKey: 01EDCA:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616E64
+    UseEmotionAnimation: True
+    Unused3: 0x5C726F
+  ResponseText: An Aspirant is someone who devotes herself wholeheartedly to the Cult of Mars. To {Latin}Caesar and his divinity.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She dreams of nothing but Caesar and how to spread his good word across the Wasteland.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EF79:NovaArizona.esm
+- 01EDD6:NovaArizona.esm
+- 01EDAC:NovaArizona.esm
+- 01EDAD:NovaArizona.esm
+- 01EDAE:NovaArizona.esm
+- 01EDAF:NovaArizona.esm
+- 01EDB0:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's an Aspirant?

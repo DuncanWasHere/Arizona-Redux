@@ -1,0 +1,46 @@
+FormKey: 008A10:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 008A0F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I asked you to do something. Do it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100698647
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100698647
+  SecondParameter: 3
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetStage
+  FirstParameter: 100698646
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100698647
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Let's talk about August again.

@@ -1,0 +1,18 @@
+FormKey: 0199C8:NovaArizona.esm
+EditorID: AZGreenwayRepair01Message
+FormVersion: 15
+Description: It appears that the electric box can be electrically bypassed, but doing so would require a significant amount of technological know-how. (Science 75 or higher required)
+Name: Greenway Junction Box
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Leave It Alone
+- Text: Repair With Parts
+- Text: Run the bypass on the junction box.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 75
+    Function: GetActorValue
+    FirstParameter: 40
+- Text: Try to Fix It (Repair)

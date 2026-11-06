@@ -1,0 +1,74 @@
+FormKey: 01EEBF:NovaArizona.esm
+EditorID: AZOldMormonFortGregoryKidnappedScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967284
+    RefCount: 12
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B00030075000000010072010039150C00010B00560102000800420100A21115000300FFFF0500520200FFFF040042A6FFFF04004201A31115000300FFFF0500520200FFFF040042BFFFFF040042013A151000010F00520300780000211004000000283A1517000116005204007800009E100B000100FFFF0500520500281100000010000600000064010000801621000219005201007800002F100B000100FFFF05005206002842010407004C0702000080167200026A005207007800002D100B000100FFFF0500520100285208007800002D100B000100FFFF050052010028015209007800002D100B000100FFFF05005201002801520A007800002D100B000100FFFF05005201002801520B007800002D100B000100FFFF0500520100280107004C07020000801611000209005601000001001507004C8001000039150C00010B005601000001004201003B1215000300FFFF0500520C00FFFF04004200FFFF0400420C3A15170001160052070078000016100B000100FFFF0500520100283A15170001160052090078000016100B000100FFFF0500520100283A15170001160052080078000016100B000100FFFF0500520100283A151700011600520A0078000016100B000100FFFF0500520100283A151700011600520B0078000016100B000100FFFF05005201002811000000
+  SourceCode: >-
+    name AZOldMormonFortGregoryKidnappedScript;
+
+
+    int DoOnce;
+
+
+    OnAdd::player {
+        AZMalpaisAbuseQuest.GregoryKidnapped = 1;
+        SetObjectiveCompleted(AZMalpaisAbuseQuest, 166, 1);
+        SetObjectiveDisplayed(AZMalpaisAbuseQuest, 191, 1);
+        AZMalpaisFollowerArriveTriggerREF.Enable();
+        AZMalpaisOptioREF.MoveTo(AZMalpaisOptioMoveMarkerREF);
+    }
+
+
+    GameMode {
+        if (Player.GetItemCount(AZOldMormonFortGregoryKidnapped) == 1) {
+            if (VFSBeatrixREF.GetDetected(Player) || ArcadeREF.GetDetected(Player) || VFSJulieFarkasREF.GetDetected(Player) || VFSEDEScientistRef.GetDetected(Player) || FollowerEmily.GetDetected(Player)) {
+                if (!DoOnce) {
+                    DoOnce = 1;
+                    AddReputationExact(RepNVFollowers, 0, 12);
+                }
+
+                VFSBeatrixREF.StartCombat(Player);
+                VFSJulieFarkasREF.StartCombat(Player);
+                ArcadeREF.StartCombat(Player);
+                VFSEDEScientistRef.StartCombat(Player);
+                FollowerEmily.StartCombat(Player);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEC9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004BC2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EECA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEBE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 124AEA:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8EB:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 115C5F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15882C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11904F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 124AD1:FalloutNV.esm

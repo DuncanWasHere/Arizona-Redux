@@ -1,0 +1,31 @@
+FormKey: 026940:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What, a little tribal remedy? You gonna sprinkle some herbs on me? I'll pass.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100814745
+Choices:
+- 0263ED:NovaArizona.esm
+- 0263EE:NovaArizona.esm
+- 0263EF:NovaArizona.esm
+- 0263F0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can't I just get you some medicine?

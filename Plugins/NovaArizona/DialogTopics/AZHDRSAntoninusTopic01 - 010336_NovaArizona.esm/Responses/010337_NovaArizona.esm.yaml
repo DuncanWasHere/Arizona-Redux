@@ -1,0 +1,56 @@
+FormKey: 010337:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: I am not empowered to make decisions on Profligates without the direct approval of my superior. Speak to Publius Veranus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729663
+Choices:
+- 010336:NovaArizona.esm
+- 010338:NovaArizona.esm
+- 01033A:NovaArizona.esm
+- 01033C:NovaArizona.esm
+- 010387:NovaArizona.esm
+- 010397:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C000100A527130001000F005075626C69757320566572616E7573
+  SourceCode: AZCastraNervaREF.SetFullNameAlt "Publius Veranus"
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CC:NovaArizona.esm
+Prompt: I'm here to discuss the trader up the road.

@@ -1,0 +1,63 @@
+FormKey: 00EB6F:NovaArizona.esm
+EditorID: AZPirateDoorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 9
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B000200DA00000001007202000D10020000001C0001005E10000016000F0008000B00207203007301002032203C1600120001000E002072020058651000002030203D3D1E000000180019000400150020583A150F00010E00580400CB3C0400000042200B160054000200500020720200586C100000203120213D2072020058B610050001007205002030203D3D2026262072020058B610050001007206002030203D3D2026262072020058B610050001007207002030203D3D20262678100800020072080072090015000A007203007307000200203119000000190000001900000011000000
+  SourceCode: >-
+    scn AZPirateDoorScript
+
+
+    int Unlocked
+
+
+    BEGIN OnActivate player
+
+
+    Activate
+
+    AZLakeMeadAmmonRaREF.evp
+
+
+    if AZFreeformLakeMead.ParlayAccepted < 2
+    	if Player.IsWeaponOut == 0
+    		Return
+    	elseif eval (PlayerREF.GetEquippedItemsAsBitMask & 32)
+    		if Player.GetWeaponAnimType != 1 && Player.GetEquipped WeapNVBinoculars == 0 && Player.GetEquipped NVWeapMS22Camera == 0 && Player.GetEquipped Fists == 0
+    			SetEnemy PlayerFaction AZAmmonRaFaction
+    			Set AZFreeformLakeMead.AmmonRaHostile to 1
+    		endif
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0DE29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x56616C75652053
+    Name: Unlocked
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB04:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033ACC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0E6346:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11A208:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0001F4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC9:NovaArizona.esm

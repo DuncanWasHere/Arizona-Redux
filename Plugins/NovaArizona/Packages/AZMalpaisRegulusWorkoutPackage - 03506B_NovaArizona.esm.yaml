@@ -1,0 +1,38 @@
+FormKey: 03506B:NovaArizona.esm
+EditorID: AZMalpaisRegulusWorkoutPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 17486
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 035071:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 7
+Duration: 13
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x39150C00010B00560101001300420000
+    SourceCode: AZMalpaisSniperQuest.iRegulusScheduleTracker = 0
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01CA97:NovaArizona.esm
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

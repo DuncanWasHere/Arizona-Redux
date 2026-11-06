@@ -1,0 +1,42 @@
+FormKey: 0293E0:NovaArizona.esm
+FormVersion: 15
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: 0293DF:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Dominicus Rex, the head of Camp Malpais, and a guy named Aristophontes.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x72697A
+  ResponseText: This isn't a military operation. Don't expect our people to swoop in and set up camp after you. This needs to be precise. Three high-profiles.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293C1:NovaArizona.esm
+- 0293C2:NovaArizona.esm
+- 0293C3:NovaArizona.esm
+- 0293C4:NovaArizona.esm
+- 0293C5:NovaArizona.esm
+- 0293C6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are the targets?

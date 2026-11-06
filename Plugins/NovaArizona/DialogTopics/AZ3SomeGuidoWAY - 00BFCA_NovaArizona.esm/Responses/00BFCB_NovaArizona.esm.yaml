@@ -1,0 +1,50 @@
+FormKey: 00BFCB:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My name is Gustavo Jordano.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: I handle the logistics here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Without me, this whole operation falls apart.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717604
+Choices:
+- 0210AD:NovaArizona.esm
+- 00BFC5:NovaArizona.esm
+- 00BFCC:NovaArizona.esm
+- 00BFCA:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are you?

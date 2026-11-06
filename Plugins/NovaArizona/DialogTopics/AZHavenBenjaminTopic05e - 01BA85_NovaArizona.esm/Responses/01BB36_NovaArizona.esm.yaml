@@ -1,0 +1,81 @@
+FormKey: 01BB36:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She's my granddaughter. I can't wait to help raise her with Serwa. I've never been a grandfather before, and I can't wait.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Serwa and I might have our differences, but she's letting me help take care of her.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This whole place will help raise her. Ripley's promised to be her teacher. Murray's promised to devote time with her.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know I'm not well-liked here, but it warms my heart to know that they'll help me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776317
+Choices:
+- 01BA81:NovaArizona.esm
+- 01BA82:NovaArizona.esm
+- 01BA83:NovaArizona.esm
+- 01BA84:NovaArizona.esm
+- 01BA85:NovaArizona.esm
+- 01BA86:NovaArizona.esm
+- 01BA87:NovaArizona.esm
+- 01BA88:NovaArizona.esm
+- 01BA89:NovaArizona.esm
+- 01BA8A:NovaArizona.esm
+- 01BA8B:NovaArizona.esm
+- 01BA8C:NovaArizona.esm
+- 01BA8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073090002002031
+  SourceCode: Set AZFreeformHaven.RipleyMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+Prompt: Evelina.

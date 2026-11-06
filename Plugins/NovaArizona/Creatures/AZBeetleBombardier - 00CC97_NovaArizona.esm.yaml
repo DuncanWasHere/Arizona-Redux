@@ -1,0 +1,78 @@
+FormKey: 00CC97:NovaArizona.esm
+EditorID: AZBeetleBombardier
+FormVersion: 15
+ObjectBounds:
+  First: -16, -37, 0
+  Second: 16, 37, 27
+Name: Bombardier Beetle
+Model:
+  File: AZNovaArizona\Creatures\BlisterBeetle\skeleton.nif
+ActorEffects:
+- 0B7CC9:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- azbombardierbeetle.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 80
+  Level: 18
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021478:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 01D784:NovaArizona.esm
+Voice: 094EED:FalloutNV.esm
+Items:
+- Item:
+    Item: 05F706:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 00CC9A:NovaArizona.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 90
+  Responsibility: 50
+  Mood: 842257664
+  Teaches: Barter
+  AggroRadiusBehavior: True
+  AggroRadius: 90
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 125
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 75
+  Damage: 24
+  Strength: 4
+  Perception: 6
+  Endurance: 5
+  Charisma: 1
+  Intelligence: 3
+  Agility: 4
+  Luck: 3
+AttackReach: 64
+CombatStyle: 03A37D:FalloutNV.esm
+BodyPartData: 014ACF:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 2
+FootWeight: 1
+ImpactMaterialType: OrganicBug
+SoundLevel: Normal
+InheritsSoundFrom: 03AEF7:FalloutNV.esm
+MeleeWeaponList: 0104C7:NovaArizona.esm

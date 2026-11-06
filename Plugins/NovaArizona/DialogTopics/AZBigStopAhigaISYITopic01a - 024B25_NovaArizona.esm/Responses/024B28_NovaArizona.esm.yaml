@@ -1,0 +1,97 @@
+FormKey: 024B28:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x654469
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: Hmm? Oh, yes, you did this task in exchange for information for your friend.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: "As for your missing person: Alba Nox served as Dominicus Rex's advisor during the interrogations."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: If August was interrogated by the Frumentarii, Alba Nox would be the one to have handled it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x654469
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: Nox is thorough with his chosen prey. August is dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: Now, are you interested in assisting me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100698647
+  SecondParameter: 3
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100698647
+Choices:
+- 024B26:NovaArizona.esm
+- 024B27:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E060000006E01000000A2110F0003007202006E030000006E01000000A3110F0003007202006E080000006E01000000
+  SourceCode: >-
+    SetObjectiveCompleted AZBigStopAhigaQuest01 6 1
+
+    SetObjectiveCompleted AZBigStopAugustQuest 3 1
+
+    SetObjectiveDisplayed AZBigStopAugustQuest 8 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E030000006E01000000
+  SourceCode: SetObjectiveCompleted AZBigStopAugustQuest 3 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+Prompt: Look, before I get roped into all of that, you promised me information on August, remember?

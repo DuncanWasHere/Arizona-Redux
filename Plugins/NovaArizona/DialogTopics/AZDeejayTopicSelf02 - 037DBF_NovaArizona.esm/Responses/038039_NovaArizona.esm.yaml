@@ -1,0 +1,42 @@
+FormKey: 038039:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x426172
+    UseEmotionAnimation: True
+    Unused3: 0x77656E
+  ResponseText: Look, you don't really want to hear this shit. It's fine.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100892092
+  SecondParameter: 6
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 8
+  Function: GetQuestVariable
+  FirstParameter: 100892267
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 038067:NovaArizona.esm
+- 038065:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+  SourceCode: ;
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The work you did for the Legion in Dog Town didn't turn out well, I take it.

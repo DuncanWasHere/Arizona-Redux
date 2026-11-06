@@ -1,0 +1,111 @@
+FormKey: 03B299:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DFC61:FalloutNV.esm
+  VertexCount: 13
+  TriangleCount: 11
+  DoorLinkCount: 1
+Vertices:
+- 163387.9, -109961.76, 7953.558
+- 163491.22, -110029.99, 7934.8
+- 163495.42, -109960.69, 7953.558
+- 163390.7, -110028.336, 7934.8
+- 163549.77, -110118.88, 7928.2905
+- 163429.89, -110126.91, 7928
+- 163238.61, -110091.28, 7928.705
+- 163277.05, -110043.13, 7928
+- 163167.86, -110042.734, 7930.0093
+- 163193.36, -110013.305, 7928.7544
+- 163281.77, -110175.92, 7930.8896
+- 163192.98, -110147.45, 7932.6543
+- 163550.17, -110040.02, 7928
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Door
+  - Found
+- Vertices: 0, 3, 1
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 2
+  Flags:
+  - Found
+- Vertices: 1, 3, 4
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: 10
+  Flags:
+  - Found
+- Vertices: 3, 5, 4
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 2
+  Flags:
+  - Found
+- Vertices: 3, 6, 5
+  EdgeLink_0_1: 5
+  EdgeLink_1_2: 8
+  EdgeLink_2_0: 3
+  Flags:
+  - Found
+- Vertices: 6, 3, 7
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 6
+  Flags:
+  - Found
+- Vertices: 6, 7, 8
+  EdgeLink_0_1: 5
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 7, 9, 8
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 6
+  Flags:
+  - Found
+- Vertices: 5, 6, 10
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 9
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 6, 11, 10
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 8
+  Flags:
+  - Found
+- Vertices: 1, 4, 12
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+DoorLinks:
+- DoorReference: 0246AB:NovaArizona.esm
+  Unused: 2237
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 382.3125
+  MaxDistanceY: 215.23438
+  Min: 163167.86, -110175.92, 7928
+  Max: 163550.17, -109960.69, 7953.558
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10

@@ -1,0 +1,37 @@
+FormKey: 00B3DB:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697320
+    UseEmotionAnimation: True
+    Unused3: 0x652074
+  ResponseText: It means I'm delivering goods on behalf of The Reservation as a formal tribute before Caesar launches his offensive at the Dam.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x417269
+  ResponseText: We're obligated to because of the treaty we have with them. In exchange, they stop making us pollute our backyard with their corpses.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 00B3DC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What type of contract do you have with the Legion?

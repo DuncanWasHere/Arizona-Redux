@@ -1,0 +1,45 @@
+FormKey: 024DE9:NovaArizona.esm
+EditorID: AZDominicusRexPostAhigaConfrontPackage02
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+- AlwaysRun
+- WeaponDrawn
+Unused: 44
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 15677
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 1024
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100813835
+  SecondParameter: 1
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 024C0C:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+    SourceCode: ; This package is for Alba Nox's death
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

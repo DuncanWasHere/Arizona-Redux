@@ -1,0 +1,37 @@
+FormKey: 008FAF:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6D7077
+  ResponseText: No. This is an easy position for us to defend and a difficult one for the Profligates to take, so we largely have free reign.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6D7077
+  ResponseText: Unfortunately, it also puts us out of the action. There won’t be any fighting here when it comes time to take the dam.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691411
+Choices:
+- 008FB0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you see much trouble here?

@@ -1,0 +1,97 @@
+FormKey: 039385:NovaArizona.esm
+EditorID: AZLakeMeadLaboratoryLockdownScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 20
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B001A004601000001007213001C0001000D100A0002007201006E010000001C0002000D100A0002007202006E010000001C0003000D100A0002007203006E010000001C0004000D100A0002007204006E010000001C0005000D100A0002007205006E010000001C0006000D100A0002007206006E010000001C0007000D100A0002007207006E010000001C0008000D100A0002007208006E010000001C0009000D100A0002007209006E010000001C000A000D100A000200720A006E010000001C000B000D100A000200720B006E010000001C000C000D100A000200720C006E010000001C000D000D100A000200720D006E010000001C000E000D100A000200720E006E010000001C000F000D100A000200720F006E010000001C0010000D100A0002007210006E010000001C001100CC10070001006E010000001C00120021100200000026100500010072140011000000
+  SourceCode: >-
+    scn AZLakeMeadLaboratoryLockdownScript
+
+
+    begin ontriggerenter player
+
+
+    AZLakeMeadLaboratoryKlaxonGlow01.activate AZLakeMeadLaboratoryKlaxonGlow01 1
+
+    AZLakeMeadLaboratoryKlaxon01.activate AZLakeMeadLaboratoryKlaxon01 1
+
+    AZLakeMeadLaboratoryKlaxonGlow02.activate AZLakeMeadLaboratoryKlaxonGlow02 1
+
+    AZLakeMeadLaboratoryKlaxon02.activate AZLakeMeadLaboratoryKlaxon02 1
+
+    AZLakeMeadLaboratoryKlaxonGlow03.activate AZLakeMeadLaboratoryKlaxonGlow03 1
+
+    AZLakeMeadLaboratoryKlaxon03.activate AZLakeMeadLaboratoryKlaxon03 1
+
+    AZLakeMeadLaboratoryKlaxonGlow04.activate AZLakeMeadLaboratoryKlaxonGlow04 1
+
+    AZLakeMeadLaboratoryKlaxon04.activate AZLakeMeadLaboratoryKlaxon04 1
+
+    AZLakeMeadLaboratoryKlaxonGlow05.activate AZLakeMeadLaboratoryKlaxonGlow05 1
+
+    AZLakeMeadLaboratoryKlaxon05.activate AZLakeMeadLaboratoryKlaxon05 1
+
+    AZLakeMeadLaboratoryKlaxonGlow06.activate AZLakeMeadLaboratoryKlaxonGlow06 1
+
+    AZLakeMeadLaboratoryKlaxon06.activate AZLakeMeadLaboratoryKlaxon06 1
+
+    AZLakeMeadLaboratoryKlaxonGlow07.activate AZLakeMeadLaboratoryKlaxonGlow07 1
+
+    AZLakeMeadLaboratoryKlaxon07.activate AZLakeMeadLaboratoryKlaxon07 1
+
+    AZLakeMeadLaboratoryKlaxonGlow08.activate AZLakeMeadLaboratoryKlaxonGlow08 1
+
+    AZLakeMeadLaboratoryKlaxon08.activate AZLakeMeadLaboratoryKlaxon08 1
+
+
+    AZLakeMeadFacilityDoorREF.SetDestroyed 1
+
+    AZLakeMeadLaboratoryLockdownLurkEnabler.enable
+
+    PlaySound VMS08Explosion3D
+
+
+    end
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039383:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039384:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039382:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039381:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039388:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039389:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039398:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039397:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039390:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03938F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039392:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039391:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 038CAE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 039393:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0FCD87:FalloutNV.esm

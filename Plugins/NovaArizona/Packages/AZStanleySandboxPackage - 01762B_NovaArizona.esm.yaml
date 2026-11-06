@@ -1,0 +1,45 @@
+FormKey: 01762B:NovaArizona.esm
+EditorID: AZStanleySandboxPackage
+FormVersion: 15
+Unused: 61
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 10544
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 512
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetStage
+  FirstParameter: 100758634
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100758634
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

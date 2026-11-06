@@ -1,0 +1,75 @@
+FormKey: 010200:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Let me see it. Hmm. Recovery of NCR dead and their dogtags? That can be arranged. Very well, Nerva will sign this counteroffer.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Inform someone among the refugees that the ceasefire will begin once Wire has been informed.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100729230
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 42
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002030A3110F0003007201006E0A0000006E00000000
+  SourceCode: >-
+    Set AZDamNQuest2.bAgreedtoKillRefugees to 0
+
+    SetObjectiveDisplayed AZDamnQuest2 10 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E2B00000039100A0002007202006E4B000000
+  SourceCode: >-
+    SetStage AZDamNQuest2 43
+
+    SetStage AZDamNQuest1 75
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018D:NovaArizona.esm
+Prompt: I've returned with a counteroffer from the NCR.

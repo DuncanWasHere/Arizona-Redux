@@ -1,0 +1,40 @@
+FormKey: 0053D3:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61206D
+    UseEmotionAnimation: True
+    Unused3: 0x6C792E
+  ResponseText: In Shady Sands, maybe.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 15
+    ResponseNumber: 2
+    Unused2: 0x61206D
+    UseEmotionAnimation: True
+    Unused3: 0x6C792E
+  ResponseText: People in the countryside might disagree.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005495:NovaArizona.esm
+- 0054C9:NovaArizona.esm
+- 0054CF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're wrong. The NCR is the best nation on earth. Everyone has the same opportunity to succeed.

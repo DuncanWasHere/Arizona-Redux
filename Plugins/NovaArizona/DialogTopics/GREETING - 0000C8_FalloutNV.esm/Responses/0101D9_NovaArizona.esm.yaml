@@ -1,0 +1,32 @@
+FormKey: 0101D9:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 0101D8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x006E01
+    UseEmotionAnimation: True
+    Unused3: 0x0F0003
+  ResponseText: I assume you have some reason for bothering me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+Choices:
+- 018CF7:NovaArizona.esm
+- 0101DA:NovaArizona.esm
+- 0101E8:NovaArizona.esm
+- 0101EE:NovaArizona.esm
+- 00C6C9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,28 @@
+FormKey: 01CC3B:NovaArizona.esm
+EditorID: AZMountPerkinsPimpGuaiScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0002006F0000000100720100801621000219005800003B1011000200FFFF0500520200FFFF0400421A1507004C9300000059100B000100720300000000000000801620000218005800003B1011000200FFFF0500520200FFFF0400420107004C9300000039100F000200FFFF0500520200FFFF0400421411000000
+  SourceCode: >-
+    name AZMountPerkinsPimpGuaiScript;
+
+
+    OnActivate::PlayerREF {
+        if (!GetStageDone(AZDolanSpringsNicodemusQuest, 26)) {
+            ShowMessage(AZMountPerkinsPimpGuaiMessage);
+            if (GetStageDone(AZDolanSpringsNicodemusQuest, 1)) {
+                SetStage(AZDolanSpringsNicodemusQuest, 20);
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC27:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC3A:NovaArizona.esm

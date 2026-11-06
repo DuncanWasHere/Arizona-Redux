@@ -1,0 +1,44 @@
+FormKey: 00E67A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Blast fishing? I understand that the Legion has its needs, but arming a people under occupation would be the height of foolishness.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713546
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100874950
+  SecondParameter: 5
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100874950
+Choices:
+- 00E649:NovaArizona.esm
+- 00E64A:NovaArizona.esm
+- 00E64B:NovaArizona.esm
+- 00E64C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Becca wants a supply of dynamite to do blast fishing.

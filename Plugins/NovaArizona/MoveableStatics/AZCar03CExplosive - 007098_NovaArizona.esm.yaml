@@ -1,0 +1,53 @@
+FormKey: 007098:NovaArizona.esm
+MajorRecordFlagsRaw: 33554432
+EditorID: AZCar03CExplosive
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000000
+ObjectBounds:
+  First: -277, -102, -58
+  Second: 277, 106, 48
+Model:
+  File: AZNovaArizona\Vehicles\Car03C.nif
+Destructible:
+  Data:
+    Health: 325
+    DESTCount: 6
+    VATSTargetable: True
+    Unused: 25
+  Stages:
+  - Data:
+      HealthPercent: 93
+  - Data:
+      HealthPercent: 89
+      Index: 1
+      ModelDamageStage: 1
+      SelfDamagePerSecond: 2
+  - Data:
+      HealthPercent: 83
+      Index: 2
+      ModelDamageStage: 2
+      SelfDamagePerSecond: 10
+      Explosion: 00446C:FalloutNV.esm
+  - Data:
+      HealthPercent: 75
+      Index: 3
+      ModelDamageStage: 3
+      SelfDamagePerSecond: 10
+  - Data:
+      HealthPercent: 65
+      Index: 4
+      ModelDamageStage: 4
+      Flags:
+      - CapDamage
+      - Destroy
+      SelfDamagePerSecond: 1
+      Explosion: 01CA88:FalloutNV.esm
+    Model:
+      File: Vehicles\CarHulk03.NIF
+  - Data:
+      Index: 5
+      ModelDamageStage: 5
+OnLocalMap: False
+MajorFlags:
+- Obstacle

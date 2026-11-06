@@ -1,0 +1,62 @@
+FormKey: 01CC0E:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A grand, magnificent palace for the son of Mars. The palace would have a magnificent forum.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Beautiful flowing fountains, grand statues, the finest cuisine, the largest amphitheater in the known world.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Memorial obelisks for the sacrifices that made the Legion possible.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Caesar will build the people, but I will build the city. The most magnificent, most cultured city in the world.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780946
+Choices:
+- 01CBFD:NovaArizona.esm
+- 01CBFE:NovaArizona.esm
+- 01CC01:NovaArizona.esm
+- 01CBF0:NovaArizona.esm
+- 01CBF5:NovaArizona.esm
+- 01CBF6:NovaArizona.esm
+- 01CBFB:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you want to build in New Vegas?

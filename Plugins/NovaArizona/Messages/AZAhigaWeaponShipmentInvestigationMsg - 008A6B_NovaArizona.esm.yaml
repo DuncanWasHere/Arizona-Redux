@@ -1,0 +1,15 @@
+FormKey: 008A6B:NovaArizona.esm
+EditorID: AZAhigaWeaponShipmentInvestigationMsg
+FormVersion: 15
+Description: As you go to pick up the weapon shipment, you notice that the box is unlocked. You open it and look at the pile of weapon parts collected inside.
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing,
+- Text: Close the box and take it with you.
+- Text: Inspect the weapon parts.
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetQuestVariable
+    FirstParameter: 100698646
+    SecondParameter: 1

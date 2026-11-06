@@ -1,0 +1,36 @@
+FormKey: 01F578:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, of course not. They'll kill me. Not just Isaiah. The men too. I'm diseased. They'll want revenge. I've seen it happen before.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 05E9B9:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718660
+Choices:
+- 01F542:NovaArizona.esm
+- 01F548:NovaArizona.esm
+- 01F549:NovaArizona.esm
+- 01F54A:NovaArizona.esm
+- 01F550:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Have you told anyone?

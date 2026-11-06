@@ -1,0 +1,40 @@
+FormKey: 02D79B:NovaArizona.esm
+EditorID: AZDolanSpringsLvlResidentHouse02Package
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 77
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoConversation
+Unused2: 16175
+Location:
+  Location:
+    MutagenObjectType: PackageLocationCell
+    Cell: 00E3AE:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 20
+Duration: 8
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

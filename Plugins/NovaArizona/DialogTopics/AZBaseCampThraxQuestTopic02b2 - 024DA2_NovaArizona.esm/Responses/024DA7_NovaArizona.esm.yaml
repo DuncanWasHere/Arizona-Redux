@@ -1,0 +1,42 @@
+FormKey: 024DA7:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x07A12B
+    UseEmotionAnimation: True
+    Unused3: 0x7FA12B
+  ResponseText: You expect me to believe you? It was Caesar's will that boys be prepared as warriors in the first place.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x07A12B
+    UseEmotionAnimation: True
+    Unused3: 0x7FA12B
+  ResponseText: I should kill you where you stand for impersonating his orders.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+Choices:
+- 024DA3:NovaArizona.esm
+- 024DA4:NovaArizona.esm
+- 024DA5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie.> I have orders from Caesar! The boy named Tix is to be assigned in the mess hall.

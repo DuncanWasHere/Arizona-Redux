@@ -1,0 +1,56 @@
+FormKey: 01CAE4:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: 01CAE3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I noticed. Good work.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What, you want a fucking medal or something? You have to join the service for that. Best I can give you is my chump change.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100780843
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetStage
+  FirstParameter: 100780698
+Choices:
+- 01CB2F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E64000000
+  SourceCode: SetStage AZCampWillowRangerStationQuest 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA9A:NovaArizona.esm
+Prompt: Everyone at Camp Willow is dead.

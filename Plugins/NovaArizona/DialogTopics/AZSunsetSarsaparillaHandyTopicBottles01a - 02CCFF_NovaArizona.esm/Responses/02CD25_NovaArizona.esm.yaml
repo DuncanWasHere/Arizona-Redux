@@ -1,0 +1,58 @@
+FormKey: 02CD25:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 02CD24:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah. Take it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100730779
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100832179
+Choices:
+- 02CCFF:NovaArizona.esm
+- 02CD00:NovaArizona.esm
+- 02CD07:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010002100B000200720200720300730600
+  SourceCode: player.additem NVStarBottleCap AZFreeformElephantHill.iStarCapTracker
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 103B1C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01079B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007306000200203015000F00720100730500070020720100730800
+  SourceCode: >-
+    set AZFreeformElephantHill.iStarCapTracker to 0
+
+    set AZFreeformElephantHill.iBottleCounter to AZFreeformElephantHill.iExcessBottles
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01079B:NovaArizona.esm
+Prompt: That should be enough for a star cap, right?

@@ -1,0 +1,26 @@
+FormKey: 00B3F9:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x140080
+    UseEmotionAnimation: True
+    Unused3: 0x637465
+  ResponseText: Don't waste my time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Let's talk about something else

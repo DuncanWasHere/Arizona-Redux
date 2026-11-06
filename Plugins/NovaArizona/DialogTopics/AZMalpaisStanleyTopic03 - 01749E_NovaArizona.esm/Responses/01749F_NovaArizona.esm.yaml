@@ -1,0 +1,79 @@
+FormKey: 01749F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, there's a war going on between the Legion and some army called the NCR. I don't know if you've heard of it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I jest.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Legion's done pretty well for itself in this front. Six months ago, the NCR abruptly left Bullhead. Not sure why. Maybe they lost. Don't know.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Can't imagine folks back home are happy about that. Bullhead's the city Kimball ran on to become President, so he probably got raked in the midterms earlier this year.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x657265
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: About a month ago, the Legion took Camp Willow. A week later, the Legion knocked the NCR off the spillway of Hoover Dam. But I've heard they've withdrawn.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: If you're interested in more local stuff, there's the Chainway collapse and the Solitare situation.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174A0:NovaArizona.esm
+- 0174A1:NovaArizona.esm
+- 01F4AE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, what's going on in the world?

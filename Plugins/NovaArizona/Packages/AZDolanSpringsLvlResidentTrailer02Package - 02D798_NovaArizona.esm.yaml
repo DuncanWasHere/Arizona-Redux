@@ -1,0 +1,40 @@
+FormKey: 02D798:NovaArizona.esm
+EditorID: AZDolanSpringsLvlResidentTrailer02Package
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoConversation
+Unused2: 1
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 02D6AC:NovaArizona.esm
+  Radius: 512
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 20
+Duration: 8
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,48 @@
+FormKey: 019D30:NovaArizona.esm
+EditorID: AZBaseCampIuliaScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967290
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A006A010000000080161D000215005800003A100B000100FFFF0500520100422D0707004C5900000039100F000200FFFF0500520100FFFF040042FA801620000218005800003B1011000200FFFF0500520100FFFF0400422D07004CB000000039100F000200FFFF0500520100FFFF040042B439150C00010B0056010100170042010039150C00010B00560101001600420100801620000218005800003B1011000200FFFF0500520100FFFF0400429607004C8B01000039100F000200FFFF0500520100FFFF040042B439150C00010B00560101000F0042010039150C00010B005601010010004201003A151D00011C005202007800007F1111000200FFFF0500520300FFFF04004201283A151D00011C005202007800007F1111000200FFFF0500520400FFFF04004201283A151D00011C005202007800007F1111000200FFFF0500520500FFFF04004201283A151D00011C005202007800007F1111000200FFFF0500520600FFFF040042012811000000
+  SourceCode: >-
+    name AZBaseCampIuliaScript;
+
+
+    OnDeath {
+        if (GetStage(AZBaseCampRomanceQuest) < 45) {
+            SetStage(AZBaseCampRomanceQuest, 250);
+        }
+
+        if (GetStageDone(AZBaseCampRomanceQuest, 45)) {
+            SetStage(AZBaseCampRomanceQuest, 180);
+            AZBaseCampRomanceQuest.YouKilledIulia = 1;
+            AZBaseCampRomanceQuest.YouDealtWithIulia = 1;
+        }
+
+        if (GetStageDone(AZBaseCampRomanceQuest, 150)) {
+            SetStage(AZBaseCampRomanceQuest, 180);
+            AZBaseCampRomanceQuest.BeatingAftermathDialogue = 1;
+            AZBaseCampRomanceQuest.IuliaWasKilledByArceus = 1;
+
+            AZBaseCampArceusREF.AddToFaction(ArmorVCaesarsLegionFaction, 1);
+            AZBaseCampArceusREF.AddToFaction(VCaesarsLegionFaction, 1);
+            AZBaseCampArceusREF.AddToFaction(VCaesarsLegionMilitaryDialogueFaction, 1);
+            AZBaseCampArceusREF.AddToFaction(AZBaseCampLegionFaction, 1);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BAF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 137BB7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D50:NovaArizona.esm

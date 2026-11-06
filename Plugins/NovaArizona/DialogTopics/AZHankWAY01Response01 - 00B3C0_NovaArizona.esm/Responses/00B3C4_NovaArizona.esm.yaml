@@ -1,0 +1,33 @@
+FormKey: 00B3C4:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: We don't deal with small fry. That'd be why.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 008619:NovaArizona.esm
+- 00B3C5:NovaArizona.esm
+- 00B3C7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Alamos Co-Operative? Never heard of you.

@@ -1,0 +1,45 @@
+FormKey: 00FDA7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: 00FD59:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] You can take back to him my request for him to check the books in Kingman and then help him realize that he is wrong.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698898
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E06000000
+  SourceCode: SetStage AZChlorideTaxQuest 6
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC1C:NovaArizona.esm
+Prompt: Look, I need something to take back to Aristophontes. Help me out here.
+ActorValuePerk: 0004B0:FalloutNV.esm

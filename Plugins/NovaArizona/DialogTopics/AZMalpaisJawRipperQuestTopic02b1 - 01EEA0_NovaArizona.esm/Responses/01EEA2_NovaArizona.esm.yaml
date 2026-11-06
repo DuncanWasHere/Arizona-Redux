@@ -1,0 +1,48 @@
+FormKey: 01EEA2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EEA1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xEA2E1E
+    UseEmotionAnimation: True
+    Unused3: 0x992D1E
+  ResponseText: Then, your life is forfeit. Guards!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1610050001007201003B12130003007202006E000000007A000000000000104016001900020015002058A5110A0002007203006E280000002031203D3DA2110F0003007203006E280000006E0100000039100A0002007203006EFF00000019000000
+  SourceCode: >-
+    StartCombat player
+
+    AddReputationExact RepNVCaesarsLegion 0 4
+
+
+    if GetObjectiveDisplayed AZBigStopChildSoldierQuest 40 == 1
+    	SetObjectiveCompleted AZBigStopChildSoldierQuest 40 1
+    	SetStage AZBigStopChildSoldierQuest 255
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: No.

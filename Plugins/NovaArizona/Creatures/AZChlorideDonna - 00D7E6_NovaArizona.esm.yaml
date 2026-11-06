@@ -1,0 +1,72 @@
+FormKey: 00D7E6:NovaArizona.esm
+EditorID: AZChlorideDonna
+FormVersion: 15
+ObjectBounds:
+  First: -32, -34, 0
+  Second: 32, 34, 152
+Name: Donna
+Model:
+  File: Creatures\SMSpineBreaker\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 12B895:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- nv_sm_v2_base.nif
+- smspinebreakermedium3.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - AllowPCDialogue
+  - AllowPickpocket
+  Fatigue: 50
+  Level: 20
+  SpeedMultiplier: 100
+  Karma: 500
+  DispositionBase: 35
+  TemplateFlags:
+  - ActorEffectList
+Factions:
+- Faction: 13F894:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 01CD8A:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 07189D:FalloutNV.esm
+Voice: 14377C:FalloutNV.esm
+Template: 03A147:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 842259712
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 02FA29:FalloutNV.esm
+Data:
+  Type: SuperMutant
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 200
+  Damage: 4
+  Strength: 9
+  Perception: 3
+  Endurance: 8
+  Charisma: 5
+  Intelligence: 3
+  Agility: 5
+  Luck: 5
+AttackReach: 96
+CombatStyle: 01D541:FalloutNV.esm
+BodyPartData: 02026E:FalloutNV.esm
+TurningSpeed: 75
+BaseScale: 1
+FootWeight: 15
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 01FF5F:FalloutNV.esm
+ImpactDataset: 075A49:FalloutNV.esm
+MeleeWeaponList: 03A15E:FalloutNV.esm

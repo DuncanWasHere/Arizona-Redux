@@ -1,0 +1,38 @@
+FormKey: 01F676:NovaArizona.esm
+FormVersion: 15
+Quest: 01F58D:NovaArizona.esm
+PreviousInfo: 01F672:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Lanius is in the Mesa Verde, returning from Colorado. You could not be his messengers.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 90
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791743
+Choices:
+- 01F659:NovaArizona.esm
+- 01F65D:NovaArizona.esm
+- 01F65F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie.> We're here to pick up some itch cream for Lanius. Hand it over. You don't want to keep the big guy waiting.
+ActorValuePerk: 0004BB:FalloutNV.esm

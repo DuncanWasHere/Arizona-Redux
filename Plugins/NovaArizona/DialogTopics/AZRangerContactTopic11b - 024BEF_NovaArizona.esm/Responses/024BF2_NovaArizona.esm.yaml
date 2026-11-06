@@ -1,0 +1,39 @@
+FormKey: 024BF2:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206469
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: You have free reign in Caesar's land, so you're the only one who can do this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I want you to head back across the river. Take a look at those plans inside the War Room. See if they match.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BF4:NovaArizona.esm
+- 024BF5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  SourceCode: ;
+Prompt: Yes, absolutely.

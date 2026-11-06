@@ -1,0 +1,115 @@
+FormKey: 037E3F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Meaning you don't screw your travel partners? Good. Besides, I'm probably stronger than you anyway.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You know what, sure. Take me west. We'll poke around for this slave together.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPerkRank
+  FirstParameter: 1270195
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073100002002031
+  SourceCode: set AZDeejayREF.bCanBeHired to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 9
+    Enabled: 1
+  CompiledScript: 0x15000A007203007301000200203415000A00720100730B000200203015000A007201007308000200203115000A007201007309000200203015000A007201007306000200203115000A007201007307000200203015000A00720100730C000200203115000A00720100730D000200203015000A00720100730F00020020301C0001007611050001007204001C00020076110500010072050059100B0001007206000000000000001C000100C511070001006E010000001C0001005111070001006E010000001C0001007F110A0002007207006E010000001C00010089100A0002007208006E0100000015000A00720900732F000200203115000A0072090073120002002031150013007209007313000B00207209007313002031202B1C0001005E100000
+  SourceCode: >-
+    set AZDialogueDeejay.bIntroDialogue to 4
+
+    Set AZDeejayREF.Waiting to 0
+
+    Set AZDeejayREF.IsFollowingDefault to 1
+
+    Set AZDeejayREF.IsFollowingLong to 0
+
+    Set AZDeejayREF.CombatStyleRanged to 1
+
+    Set AZDeejayREF.CombatStyleMelee to 0
+
+    Set AZDeejayREF.bCurrentlyHired to 1
+
+    Set AZDeejayREF.bSentToLucky38 to 0
+
+    Set AZDeejayREF.bSentToAerotech to 0
+
+    AZDeejayREF.AddPerk CompanionSuite
+
+    player.addperk AZBitterWater
+
+    showmessage AZFollowerMessagePerkDeejayAdd
+
+
+    AZDeejayREF.SetPlayerTeammate 1
+
+    AZDeejayREF.SetIgnoreFriendlyHits 1
+
+    AZDeejayREF.AddToFaction FollowerFaction 1
+
+    AZDeejayREF.SetFactionRank TeammateFaction 1
+
+    set VNPCFollowers.bHumanoidInParty to 1
+
+    set VNPCFollowers.bPlayerHasFollower to 1
+
+    set VNPCFollowers.nCurrentFollowers to (VNPCFollowers.nCurrentFollowers + 1)
+
+    AZDeejayREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037DBC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C571:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037EFF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037F00:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037136:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 046312:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+Prompt: Do I really look like the kind of gal who shits where she eats? You've got nothing to worry about.
+ActorValuePerk: 1361B3:FalloutNV.esm

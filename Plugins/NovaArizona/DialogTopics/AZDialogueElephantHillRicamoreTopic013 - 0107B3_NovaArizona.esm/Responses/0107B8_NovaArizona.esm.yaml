@@ -1,0 +1,37 @@
+FormKey: 0107B8:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Okay... where in the south?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 0107AE:NovaArizona.esm
+- 0107AF:NovaArizona.esm
+- 0107B0:NovaArizona.esm
+- 0107B1:NovaArizona.esm
+- 0107B2:NovaArizona.esm
+- 0107B3:NovaArizona.esm
+- 0107B4:NovaArizona.esm
+- 0107B5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

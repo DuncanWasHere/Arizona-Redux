@@ -1,0 +1,56 @@
+FormKey: 0088F3:NovaArizona.esm
+EditorID: AZWeapHatchetUnique
+FormVersion: 15
+ObjectBounds: {}
+Name: Robeson's Hatchet
+Model:
+  File: weapons\1handmelee\Hatchet.NIF
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_hatchet.dds
+ObjectEffect: 007749:NovaArizona.esm
+RepairList: 11BC5E:FalloutNV.esm
+EquipmentType: MeleeWeapons
+PickUpSound: 0854E0:FalloutNV.esm
+DropSound: 0854DF:FalloutNV.esm
+VatsAttackName: Back Slash
+ImpactDataSet: 060A0F:FalloutNV.esm
+FirstPersonModel: 11A8E3:FalloutNV.esm
+SoundBlock: 0BF0EF:FalloutNV.esm
+SoundEquip: 08B5B2:FalloutNV.esm
+SoundUnequip: 08B5B3:FalloutNV.esm
+Value: 150
+Health: 250
+Weight: 2
+BaseDamage: 21
+ClipSize: 1
+AnimationType: Melee1Hand
+AnimationMultiplier: 1
+Reach: 0.7
+Flags:
+- NpcsUseAmmo
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+BaseVatsToHitChance: 12
+AttackAnimation: Default
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 2000
+OnHit: DismemberOnly
+AnimationAttackMultiplier: 1.1
+OverrideActionPoints: 19
+AttackShotsPerSec: 2.538461
+Skill: 38
+LimbDamageMult: 2
+ResistType: -1
+PowerAttackAnimationOverride: AttackCustom3Power
+StrengthReq: 2
+SkillReq: 25
+CriticalDamage: 21
+CriticalPercentMult: 1
+CriticalOnDeath: True
+Vats:
+  VatsSkill: 50
+  VatsDamageMult: 0.7
+  VatsAp: 15
+  VatsSilent: True
+SoundLevel: Silent

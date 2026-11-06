@@ -1,0 +1,211 @@
+FormKey: 034EF9:NovaArizona.esm
+EditorID: AZMalpaisSniperQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 29
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D00000010000600000057000000160025000200210020731C002031203E3D20731A002031203E3D20262620731B002031203E3D202626A2110F0003007201006E140000006E01000000A3110F0003007201006E150000006E010000001900000011000000
+  SourceCode: >-
+    scn AZMalpaisSniperQuestScript
+
+
+    int iEsteemCounter
+
+    int bBefriendedHogWalker
+
+    int bIHaveADarkSoul
+
+    int iStoryTimeFadedToBlack
+
+    int bHeardTheBeast
+
+    int bWhatDoTheySay
+
+    int bHeardAnimalKiller
+
+    int bHeardHogWalkerSobStory
+
+    int bHumiliatedByRegulus
+
+    int bBeatenByRegulus
+
+    int bDealWithRegulus
+
+    int bBeatRegulus
+
+    int bTerrifiedRegulus
+
+    int bBefriendedRegulus
+
+    int bAnnoyedRegulus
+
+    int iBrawlStage ; 0 = Not started ; 1 = Round 1 ; 2 = Round 2 ; 3 = Over
+
+    int iRegulusScheduleTracker ; 0 = Workout ; 1 = Epic Meal Time ; 2 = Shitting ; 3 = Free
+
+    int bBrawlRoundOver
+
+    int bGoingToShitter
+
+    int bToldHogWalkerRegulusNoBother
+
+    int iCastulusAdvice ; 0 = Not gotten ; 1 = Gotten ; 2 = Told to Hog Walker
+
+    int iAdjutantAdvice ; 0 = Not gotten ; 1 = Gotten ; 2 = Told to Hog Walker
+
+    int iJawRipperAdvice ; 0 = Not gotten ; 1 = Gotten ; 2 = Told to Hog Walker
+
+
+    BEGIN GameMode
+
+    	if (iCastulusAdvice >= 1 && iAdjutantAdvice >= 1 && iJawRipperAdvice >= 1)
+    		SetObjectiveCompleted AZMalpaisSniperQuest 20 1
+    		SetObjectiveDisplayed AZMalpaisSniperQuest 21 1
+    	endif
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x80B320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3C4C0D843F4C0D
+    Name: iEsteemCounter
+  - Data:
+      Index: 2
+      Unknown: 0xA0B320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x5D1D14805D1D14
+    Name: bBefriendedHogWalker
+  - Data:
+      Index: 5
+      Unknown: 0xE0B320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x384C0D84394C0D
+    Name: bIHaveADarkSoul
+  - Data:
+      Index: 7
+      Unknown: 0x00B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x756C75734E6F42
+    Name: bHeardTheBeast
+  - Data:
+      Index: 8
+      Unknown: 0x20B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x756C75734E6F42
+    Name: bWhatDoTheySay
+  - Data:
+      Index: 9
+      Unknown: 0x40B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30320000000000
+    Name: bHeardAnimalKiller
+  - Data:
+      Index: 10
+      Unknown: 0xC0B320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x756C75734E6F42
+    Name: iStoryTimeFadedToBlack
+  - Data:
+      Index: 11
+      Unknown: 0x60B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30320000000000
+    Name: bHeardHogWalkerSobStory
+  - Data:
+      Index: 12
+      Unknown: 0x80B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30310000000000
+    Name: bHumiliatedByRegulus
+  - Data:
+      Index: 13
+      Unknown: 0xA0B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x706C6173683031
+    Name: bBeatenByRegulus
+  - Data:
+      Index: 14
+      Unknown: 0xC0B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x706C6173683032
+    Name: bDealWithRegulus
+  - Data:
+      Index: 15
+      Unknown: 0xE0B420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x31303030300000
+    Name: bBeatRegulus
+  - Data:
+      Index: 16
+      Unknown: 0x00B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6730310000
+    Name: bTerrifiedRegulus
+  - Data:
+      Index: 17
+      Unknown: 0x20B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F777570000000
+    Name: bBefriendedRegulus
+  - Data:
+      Index: 18
+      Unknown: 0x40B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: bAnnoyedRegulus
+  - Data:
+      Index: 19
+      Unknown: 0x80B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65736D6F756C64
+    Name: iRegulusScheduleTracker
+  - Data:
+      Index: 21
+      Unknown: 0x60B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: iBrawlStage
+  - Data:
+      Index: 22
+      Unknown: 0xA0B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C617453747265
+    Name: bBrawlRoundOver
+  - Data:
+      Index: 23
+      Unknown: 0xC0B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C617444697374
+    Name: bGoingToShitter
+  - Data:
+      Index: 24
+      Unknown: 0xE0B520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000019000000
+    Name: bToldHogWalkerRegulusNoBother
+  - Data:
+      Index: 26
+      Unknown: 0x40B620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF7FFFFFFF7FFF
+    Name: iAdjutantAdvice
+  - Data:
+      Index: 27
+      Unknown: 0xA0DC29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x756C75734E6F42
+    Name: iJawRipperAdvice
+  - Data:
+      Index: 28
+      Unknown: 0x20B620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C617447656E00
+    Name: iCastulusAdvice
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm

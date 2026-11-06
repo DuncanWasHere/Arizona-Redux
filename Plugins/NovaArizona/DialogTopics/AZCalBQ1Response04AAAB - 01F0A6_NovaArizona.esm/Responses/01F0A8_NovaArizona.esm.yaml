@@ -1,0 +1,53 @@
+FormKey: 01F0A8:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: 01F0A7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x910005
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Legion are fierce fighters. They're also inhumane bastards willing to do anything to win.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x910005
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: House's secureobots can't cover everywhere.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x910005
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Legion can take the hills. Cut off the South and North. Frumentarii can salt the crops. Set fires inside the walls.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F636B
+    UseEmotionAnimation: True
+    Unused3: 0x656452
+  ResponseText: Before he knows it House will be facing angry mobs and food shortages. I've seen it happen a dozen times.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What could the Legion possibly do?

@@ -1,0 +1,39 @@
+FormKey: 0342AC:NovaArizona.esm
+EditorID: AZHavenWierzbowskiMovePackage02
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- AlwaysRun
+- WeaponDrawn
+Unused: 107
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 19280
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0342A8:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 20
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

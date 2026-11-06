@@ -1,0 +1,137 @@
+FormKey: 008A6C:NovaArizona.esm
+EditorID: AZAhigaWeaponShipmentSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 10
+    VariableCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B00020023000000010072010039150C00010B0056010000040042010059100B00010072020000000000000011000000100006000000A604000080161300020B0056010000040042010407004CE3010000391513000112005601000001005800001F10040000000080161300020B0056010000010042000407004CB600000039150C00010B00560100000400420000811608000107004CD701000080161300020B0056010000010042010407004C400100003A151000010F00520300780000221004000000283A151D00011C00520100780000021011000200FFFF0500520400FFFF0400420128A21115000300FFFF0500520500FFFF04004201FFFF04004201A31115000300FFFF0500520500FFFF04004203FFFF04004201811608000107004CD701000080161300020B0056010000010042020407004CD701000080164200023A005201007800000E1006000100270028424B085201007800000E1006000100290028424608015201007800000E10060001000600284207080107004CC801000059100B00010072060000000000000039150C00010B00560100000400420200811608000107004CD701000059100B000100720700000000000000811608000107004CF704000080161300020B0056010000040042020407004CF7040000391513000112005601000001005800001F10040000000080161300020B0056010000010042000407004C5302000059100B00010072020000000000000039150C00010B00560100000400420100811608000107004CF704000080161300020B0056010000010042010407004CDD0200003A151000010F00520300780000221004000000283A151D00011C00520100780000021011000200FFFF0500520400FFFF0400420128A21115000300FFFF0500520500FFFF04004201FFFF04004201A31115000300FFFF0500520500FFFF04004203FFFF04004201811608000107004CF704000080161300020B0056010000010042020407004CA503000080161C000214005201007800000E1006000100270028424B0807004C8A03000059100B00010072080000000000000039150C00010B00560105000100420100A31115000300FFFF0500520500FFFF04004204FFFF04004201A31115000300FFFF0500520500FFFF04004205FFFF04004201A31115000300FFFF0500520500FFFF04004207FFFF04004201811608000107004C9903000059100B000100720700000000000000811608000107004CF704000080161300020B0056010000010042030407004C7D04000080161C000214005201007800000E100600010029002842460807004C6204000059100B00010072090000000000000039150C00010B00560105000100420100A31115000300FFFF0500520500FFFF04004204FFFF04004201A31115000300FFFF0500520500FFFF04004205FFFF04004201A31115000300FFFF0500520500FFFF04004207FFFF0400420139150C00010B00560100000300420200811608000107004C7104000059100B000100720700000000000000811608000107004CF704000080161300020B0056010000010042040407004CF704000080161C000214005201007800000E100600010006002842070807004CE804000059100B000100720A00000000000000A31115000300FFFF0500520500FFFF04004202FFFF04004201811608000107004CF704000059100B00010072070000000000000011000000
+  SourceCode: >-
+    name AZAhigaWeaponShipmentScript;
+
+
+    int button;
+
+    int Decision;
+
+    int InvestigationAllowed;
+
+    int iMenu;
+
+
+    OnActivate::PlayerREF {
+        iMenu = 1;
+        ShowMessage(AZAhigaWeaponShipmentInvestigationMsg);
+    }
+
+
+    GameMode {
+        if (iMenu == 1) {
+            button = GetButtonPressed();
+            if (button == 0) {
+                iMenu = 0;
+            } else if (button == 1) {
+                AZAhigaWeaponShipmentREF.disable();
+                PlayerREF.AddItem(AZAhigaWeaponShipmentItem, 1);
+                SetObjectiveCompleted(AZBigStopAhigaQuest01, 1, 1);
+                SetObjectiveDisplayed(AZBigStopAhigaQuest01, 3, 1);
+            } else if (button == 2) {
+                if ((PlayerREF.GetActorValue(Repair) >= 75) || 
+                    (PlayerREF.GetActorValue(Guns) >= 70) || 
+                    (PlayerREF.GetActorValue(Perception) >= 7)) 
+                {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationSkillMsg);
+                    iMenu = 2;
+                } else {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationNoSkillMsg);
+                }
+            }
+        } else if (iMenu == 2) {
+            button = GetButtonPressed();
+            if (button == 0) {
+                ShowMessage(AZAhigaWeaponShipmentInvestigationMsg);
+                iMenu = 1;
+            } else if (button == 1) {
+                AZAhigaWeaponShipmentREF.disable();
+                PlayerREF.AddItem(AZAhigaWeaponShipmentItem, 1);
+                SetObjectiveCompleted(AZBigStopAhigaQuest01, 1, 1);
+                SetObjectiveDisplayed(AZBigStopAhigaQuest01, 3, 1);
+            } else if (button == 2) {
+                if (PlayerREF.GetActorValue(Repair) >= 75) {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationRepairMsg);
+                    AZBigStopAhigaQuest01.iDiscoveredPartsBroken = 1;
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 4, 1);
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 5, 1);
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 7, 1);
+                } else {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationNoSkillMsg);
+                }
+            } else if (button == 3) {
+                if (PlayerREF.GetActorValue(Guns) >= 70) {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationGunsMsg);
+                    AZBigStopAhigaQuest01.iDiscoveredPartsBroken = 1;
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 4, 1);
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 5, 1);
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 7, 1);
+                    InvestigationAllowed = 2;
+                } else {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationNoSkillMsg);
+                }
+            } else if (button == 4) {
+                if (PlayerREF.GetActorValue(Perception) >= 7) {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationPERMsg);
+                    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 2, 1);
+                } else {
+                    ShowMessage(AZAhigaWeaponShipmentInvestigationNoSkillMsg);
+                }
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: button
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Decision
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: InvestigationAllowed
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMenu
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A6B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A6A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A71:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024DEE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A70:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A6D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A6E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A6F:NovaArizona.esm

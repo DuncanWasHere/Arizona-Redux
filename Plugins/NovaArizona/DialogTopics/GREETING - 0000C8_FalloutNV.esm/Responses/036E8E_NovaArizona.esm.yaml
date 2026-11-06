@@ -1,0 +1,86 @@
+FormKey: 036E8E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 0130EE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hey, you! Fucker! Bet you feel pretty fuckin' stupid right now, huh?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696162
+    UseEmotionAnimation: True
+    Unused3: 0x527573
+  ResponseText: I know you set this up. You turned Bear against me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696162
+    UseEmotionAnimation: True
+    Unused3: 0x527573
+  ResponseText: But I feel mercy in the air tonight. Which is why I'm gonna give you five seconds to let it all sink in before my guys light you the fuck up.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696162
+    UseEmotionAnimation: True
+    Unused3: 0x527573
+  ResponseText: '...Starting five seconds ago.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100741293
+  SecondParameter: 21
+- Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetStage
+  FirstParameter: 100806563
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E630000007810120004007202007203006E000000006E0000000039120F0003007204006E000000006E05000000
+  SourceCode: >-
+    SetStage AZRustyHooksPackFightQuest 99
+
+    SetEnemy PlayerFaction AZRustyHooksFaction 0 0
+
+    AddReputation AZRepRustyHooks 0 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022FA3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00977B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004369:NovaArizona.esm

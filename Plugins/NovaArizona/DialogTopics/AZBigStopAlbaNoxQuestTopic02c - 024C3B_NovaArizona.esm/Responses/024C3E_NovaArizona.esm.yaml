@@ -1,0 +1,63 @@
+FormKey: 024C3E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 024C3D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Listen here and listen good. I would sooner convert to the Profligate, money-worshipping religion of the NCR than rip up a Frumentarii logbook.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If you ever accuse me of that again, I will kill you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100698646
+  SecondParameter: 18
+Choices:
+- 024C32:NovaArizona.esm
+- 024C37:NovaArizona.esm
+- 024C3B:NovaArizona.esm
+- 024C59:NovaArizona.esm
+- 024C40:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x3B12130003007201006E000000007A000000000000F03FA2110F0003007202006E090000006E01000000
+  SourceCode: >-
+    AddReputationExact RepNVCaesarsLegion 0 1
+
+    SetObjectiveCompleted AZBigStopAhigaQuest01 9 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: Rip out pages from the logbook.

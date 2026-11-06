@@ -1,0 +1,64 @@
+FormKey: 00D07A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fuck yeah, welcome aboard, amigo. Now the first thing we need is my shit. I don't keep it on me, so we'll need you to hike out to my stash.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's not far, so save your fucking complaints, I'll mark it on your map. We want everything that's in the duffle bag. Don't touch anything else.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D05C:NovaArizona.esm
+- 00D05D:NovaArizona.esm
+- 00D049:NovaArizona.esm
+- 00D04E:NovaArizona.esm
+- 00D046:NovaArizona.esm
+- 00D047:NovaArizona.esm
+- 00D048:NovaArizona.esm
+- 00D05E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E050000001C0001002110020000001C000200211002000000
+  SourceCode: >-
+    SetStage AZElephantHillFatEyeQuest 5
+
+    DrugStash1REF.enable
+
+    DrugStash2REF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D085:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D087:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm
+Prompt: Sounds good to me.

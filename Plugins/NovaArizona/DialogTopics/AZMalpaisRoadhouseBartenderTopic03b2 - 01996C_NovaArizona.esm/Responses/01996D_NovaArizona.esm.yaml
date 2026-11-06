@@ -1,0 +1,32 @@
+FormKey: 01996D:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: How the hell should I know?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768086
+Choices:
+- 019964:NovaArizona.esm
+- 019968:NovaArizona.esm
+- 019970:NovaArizona.esm
+- 019972:NovaArizona.esm
+- 019985:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: That Legate's Camp you mentioned, is Lanius already there?

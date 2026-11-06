@@ -1,0 +1,72 @@
+FormKey: 024DE5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x72656E
+    UseEmotionAnimation: True
+    Unused3: 0x722079
+  ResponseText: You will? That's good to hear.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x72656E
+    UseEmotionAnimation: True
+    Unused3: 0x722079
+  ResponseText: The best way to satisfy both Lanius without irreparably damaging the Frumentarii would be to put the spotlight on Alba Nox.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x72656E
+    UseEmotionAnimation: True
+    Unused3: 0x722079
+  ResponseText: An investigation would take too long, so I want you to sneak gun casings into his room instead. Make smoke, and the Legion will see fire.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x72656E
+    UseEmotionAnimation: True
+    Unused3: 0x722079
+  ResponseText: Then, inform Dominicus Rex about the evidence for Nox's crimes, and you may return to me for payment.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C000100211002000000A3110F0003007202006E0C0000006E01000000A3110F0003007202006E120000006E00000000
+  SourceCode: >-
+    AZAlbaNoxFrameTriggerREF.enable
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 12 1
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 18 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024E16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: Okay, I'll wade into this. I'll help.

@@ -1,0 +1,49 @@
+FormKey: 03B844:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D626C
+    UseEmotionAnimation: True
+    Unused3: 0x766520
+  ResponseText: They tired of my work-songs. They detest all song. Real song. Songs that honor our mothertongues and forefathers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206D79
+    UseEmotionAnimation: True
+    Unused3: 0x2D736F
+  ResponseText: I sung a Hymn for the Burned Man and it nearly caused a riot. Some guards wanted me dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x20666F
+    UseEmotionAnimation: True
+    Unused3: 0x204275
+  ResponseText: I've been on canteen duty ever since.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B83E:NovaArizona.esm
+- 03B840:NovaArizona.esm
+- 03B845:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why are you stuck here?

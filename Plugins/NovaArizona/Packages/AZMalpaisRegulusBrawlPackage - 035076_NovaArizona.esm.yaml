@@ -1,0 +1,62 @@
+FormKey: 035076:NovaArizona.esm
+EditorID: AZMalpaisRegulusBrawlPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- WeaponDrawn
+- ContinueDuringCombat
+Unused: 71
+Flags:
+  MutagenObjectType: PackageUseWeapon
+Unused2: 29541
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 000014:FalloutNV.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetObjectType
+    ObjectType: WeaponsRanged
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 21
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 21
+CombatStyle: 0B2944:FalloutNV.esm
+WeaponData:
+  FireCount: RepeatFire
+  NumberOfBursts: 1
+  ShootsPerVolleyMin: 1
+  ShootsPerVolleyMax: 6
+  PauseBetweenVolleysMin: 1
+  PauseBetweenVolleysMax: 2
+Target2:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

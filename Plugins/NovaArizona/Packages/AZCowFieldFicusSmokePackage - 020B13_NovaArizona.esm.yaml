@@ -1,0 +1,33 @@
+FormKey: 020B13:NovaArizona.esm
+EditorID: AZCowFieldFicusSmokePackage
+FormVersion: 15
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 17189
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0209CF:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestRunning
+  FirstParameter: 100797169
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

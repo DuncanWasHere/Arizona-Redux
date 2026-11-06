@@ -1,0 +1,147 @@
+FormKey: 01751B:NovaArizona.esm
+EditorID: AZFreeformMalpaisScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 21
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZFreeformMalpaisScript
+
+
+    ; Malachi Dialogue Variables
+
+    short iPhoenixMentioned
+
+
+    ; Optio Dialogue variables
+
+    short iDiscussedBurnedMan
+
+    short iDiscussedDominicusRex
+
+    short iDiscussedMarcellus
+
+    short iMetOptio
+
+    short iMentionedOptio
+
+    short iMentionedRangers
+
+    int iMentionedSlave
+
+
+    ; gate guard patdown variables
+
+    short bPlayerWeaponsConfiscated		;player's weapons have been confiscated
+
+    short bNotGoingIntoCamp		;the player has stated that they're either not entering malpais or are planning to leave and have been allowed their weapons
+
+
+    ; Sedonus variables
+
+    short bOptioInCharge
+
+    short SedonusDrugs
+
+
+    ;Trigger variables
+
+    short FrontTrigger
+
+    short BackTrigger
+
+    short InCamp
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x606E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7320636F727265
+    Name: iPhoenixMentioned
+  - Data:
+      Index: 4
+      Unknown: 0xE06E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x746F204661742D
+    Name: iMetOptio
+  - Data:
+      Index: 5
+      Unknown: 0x006F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x05965E2B010000
+    Name: iMentionedOptio
+  - Data:
+      Index: 6
+      Unknown: 0xC06E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x0A814D270C0000
+    Name: iDiscussedMarcellus
+  - Data:
+      Index: 7
+      Unknown: 0x806E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: iDiscussedBurnedMan
+  - Data:
+      Index: 8
+      Unknown: 0xA06E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF7FFFFFFF7FFF
+    Name: iDiscussedDominicusRex
+  - Data:
+      Index: 9
+      Unknown: 0x206F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF7FFFFFFF7FFF
+    Name: iMentionedRangers
+  - Data:
+      Index: 14
+      Unknown: 0x606F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x646A7574616E74
+    Name: bPlayerWeaponsConfiscated
+  - Data:
+      Index: 15
+      Unknown: 0x806F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x646A7574616E74
+    Name: bNotGoingIntoCamp
+  - Data:
+      Index: 16
+      Unknown: 0xA06F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734C6561766573
+    Name: bOptioInCharge
+  - Data:
+      Index: 17
+      Unknown: 0xC06F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000019000000
+    Name: SedonusDrugs
+  - Data:
+      Index: 18
+      Unknown: 0xE06F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65737453746167
+    Name: FrontTrigger
+  - Data:
+      Index: 19
+      Unknown: 0x005020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6A7574616E742E
+    Name: BackTrigger
+  - Data:
+      Index: 20
+      Unknown: 0x80D729120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x646A7574616E74
+    Name: InCamp
+  - Data:
+      Index: 21
+      Unknown: 0x406F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x080000BF070000
+    Name: iMentionedSlave

@@ -1,0 +1,26 @@
+FormKey: 020FB3:NovaArizona.esm
+EditorID: AZChlorideIsaiahWarrenScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A006D000000000039100F000200FFFF0500520100FFFF0400420A80162000021800580000A51111000200FFFF0500520200FFFF0400421207004C8E000000A21115000300FFFF0500520200FFFF04004212FFFF04004201A31115000300FFFF0500520200FFFF04004214FFFF0400420111000000
+  SourceCode: >-
+    name AZChlorideIsaiahWarrenScript;
+
+
+    OnDeath {
+        SetStage(AZGOMAssassinationQuest, 10);
+
+        if (GetObjectiveDisplayed(AZChlorideAntibioticsQuest, 18)) {
+            SetObjectiveCompleted(AZChlorideAntibioticsQuest, 18, 1);
+            SetObjectiveDisplayed(AZChlorideAntibioticsQuest, 20, 1);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm

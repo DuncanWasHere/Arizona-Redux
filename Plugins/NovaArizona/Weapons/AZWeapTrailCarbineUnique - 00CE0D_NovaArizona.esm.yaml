@@ -1,0 +1,76 @@
+FormKey: 00CE0D:NovaArizona.esm
+EditorID: AZWeapTrailCarbineUnique
+FormVersion: 15
+ObjectBounds:
+  First: -21, -5, -1
+  Second: 49, 10, 1
+Name: Absit Ignis Rifle
+Model:
+  File: AZNovaArizona\Weapons\AZTrailCarbineUnique.nif
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_trail_carbine.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_hunting_rifle.dds
+ObjectEffect: 109A09:FalloutNV.esm
+Ammo: 1537E4:FalloutNV.esm
+RepairList: 0CEAF3:FalloutNV.esm
+EquipmentType: SmallGuns
+PickUpSound: 087D63:FalloutNV.esm
+DropSound: 087D62:FalloutNV.esm
+ShellCasingModel:
+  File: weapons\2handrifle\44MagnumShellCasing.nif
+ScopeModel:
+  File: interface\HUD\biggamescope.NIF
+ImpactDataSet: 019083:FalloutNV.esm
+FirstPersonModel: 00CE0E:NovaArizona.esm
+SoundGunShoot3D: 120FB9:FalloutNV.esm
+SoundGunShootDist: 120FBA:FalloutNV.esm
+SoundGunShoot2D: 120FB8:FalloutNV.esm
+SoundMeleeSwingGunNoAmmo: 01F21C:FalloutNV.esm
+SoundEquip: 01CCC7:FalloutNV.esm
+SoundUnequip: 01D4BE:FalloutNV.esm
+Value: 4675
+Health: 500
+Weight: 5.5
+BaseDamage: 51
+ClipSize: 6
+AnimationType: RifleBallistic2Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- HasScope
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+ReloadAnimation: ReloadZ
+MinSpread: 0.03
+SightFov: 37
+Projectile: 12114C:FalloutNV.esm
+BaseVatsToHitChance: 45
+AttackAnimation: Attack5
+ProjectileCount: 1
+MinRange: 256
+MaxRange: 1500
+OnHit: ExplodeOnly
+AnimationAttackMultiplier: 0.8
+FireRate: 1
+OverrideActionPoints: 31
+RumbleLeftMotorStrength: 0.7
+RumbleRightMotorStrength: 0.9
+RumbleDuration: 0.2
+AttackShotsPerSec: 1.230769
+ReloadTime: 0.5
+JamTime: 2.3333
+Skill: 41
+RumblePattern: Square
+RumbleWavelength: 0.2
+LimbDamageMult: 1
+ResistType: -1
+SemiAutomaticFireDelayMax: 0.3
+ValueAMod2: 15
+StrengthReq: 5
+KillImpulse: 18
+SkillReq: 75
+CriticalDamage: 62
+CriticalPercentMult: 2
+CriticalOnDeath: True
+Vats:
+  VatsSilent: True

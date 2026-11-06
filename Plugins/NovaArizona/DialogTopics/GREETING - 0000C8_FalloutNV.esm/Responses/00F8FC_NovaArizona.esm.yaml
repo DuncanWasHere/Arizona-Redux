@@ -1,0 +1,29 @@
+FormKey: 00F8FC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 03A923:NovaArizona.esm
+PreviousInfo: 00F8F9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4D6567
+    UseEmotionAnimation: True
+    Unused3: 0x696E74
+  ResponseText: Last thing this town needs is more strangers...
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100768154
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

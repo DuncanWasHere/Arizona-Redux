@@ -1,0 +1,71 @@
+FormKey: 020C18:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The internal affairs of the Cult are not your business. I will not exploit loopholes or technicalities to justify sin. I'm not some common whore.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: These 'friendships' you speak of are pure degeneracy, a slippery slope into full blown Profligacy. That... fucking perversion has no place in the Legion.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 06B6A0:FalloutNV.esm
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I apologize, but I've done much thinking on this. It's just wrong. Head Priestess Pompeia made Mars' sentiment quite clear.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 0C7AB9:FalloutNV.esm
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I try to honor that sentiment as best I can. I'm not perfect, I stray, but thoughts are not actions. In the eyes of Mars, actions are what truly matter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 020BC7:NovaArizona.esm
+- 020BCC:NovaArizona.esm
+- 020BDC:NovaArizona.esm
+- 020BE4:NovaArizona.esm
+- 020BE5:NovaArizona.esm
+- 020BE6:NovaArizona.esm
+- 020BE7:NovaArizona.esm
+- 020BE8:NovaArizona.esm
+- 020BE9:NovaArizona.esm
+- 020BEB:NovaArizona.esm
+- 020BF3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There's nothing wrong with friendships, is there? With so many women in the Cult, it must be common.

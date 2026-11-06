@@ -1,0 +1,37 @@
+FormKey: 01762E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 01762D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652041
+    UseEmotionAnimation: True
+    Unused3: 0x616973
+  ResponseText: Ave. You must be the journalists that Dominicus Rex is expecting. We were only expecting two. Any companions you have must be dismissed.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 47
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 48
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100759006
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

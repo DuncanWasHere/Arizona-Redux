@@ -1,0 +1,84 @@
+FormKey: 0209E9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: Pleasant news. That advances the time table considerably.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x647661
+  ResponseText: The next step is to expand the Brush trade. The resident Centurion in Chloride is a bad-tempered man, but not unreasonable.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x2E2054
+    UseEmotionAnimation: True
+    Unused3: 0x647661
+  ResponseText: Speak to him, and we'll see about having the garrison as a whole adopt the use of Brush.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x727573
+  ResponseText: Oh, and a bonus for working ahead of schedule.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 1
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100796571
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E050000001C00010002100A0002007203006E1E0000001C00010002100A0002007204006EFA000000
+  SourceCode: >-
+    SetStage AZBrushQuest02 5
+
+    Player.AddItem MoneyLegion1 30
+
+    Player.AddItem Caps001 250
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: The Decanus has actually already authorized the continued use of Brush.

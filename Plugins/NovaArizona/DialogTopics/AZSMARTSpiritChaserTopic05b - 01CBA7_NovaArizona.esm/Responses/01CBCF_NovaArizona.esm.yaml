@@ -1,0 +1,43 @@
+FormKey: 01CBCF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: 01CBD0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] Unfortunate for you, because I am going to keep avoiding it, and there's not much you can do about it."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 8
+  Function: GetActorValue
+  FirstParameter: 5
+  RunOnType: Target
+Choices:
+- 01CB96:NovaArizona.esm
+- 01CB9C:NovaArizona.esm
+- 01CB9F:NovaArizona.esm
+- 01CBA4:NovaArizona.esm
+- 01CBA5:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're agitating me by avoiding the question.
+ActorValuePerk: 0003E8:FalloutNV.esm

@@ -1,0 +1,35 @@
+FormKey: 01993E:NovaArizona.esm
+EditorID: AZFishRaw
+FormVersion: 15
+ObjectBounds:
+  First: -8, -22, -2
+  Second: 8, 25, 2
+Name:
+  TargetLanguage: English
+  Value: Raw Fish
+Model:
+  File: AZNovaArizona\Clutter\Food\AZFishRaw.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages_small\Weapons_Small\AZTommyTrout.dds
+  SmallIconFilename: Interface\Icons\pipboyimages_Small\weapons_small\AZTommyTrout.dds
+EquipmentType: Food
+Weight: 0.5
+Value: 3
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 02D48D:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 4
+    ActorValue: Health
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 25
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586

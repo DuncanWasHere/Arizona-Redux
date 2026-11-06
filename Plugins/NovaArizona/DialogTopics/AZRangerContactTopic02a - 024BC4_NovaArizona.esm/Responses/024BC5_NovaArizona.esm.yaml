@@ -1,0 +1,30 @@
+FormKey: 024BC5:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65436F
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: Keep asking them, and you won't have a tongue to ask them anymore.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BC8:NovaArizona.esm
+- 024BDF:NovaArizona.esm
+- 024BE0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I do have questions, though.

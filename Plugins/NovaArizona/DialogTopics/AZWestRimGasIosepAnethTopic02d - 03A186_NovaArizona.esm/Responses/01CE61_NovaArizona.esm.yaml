@@ -1,0 +1,56 @@
+FormKey: 01CE61:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Where I'm from, there used to be a people called the {OO-fo}Ufo. They were shaped like us, but smaller, and with large black eyes.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Profligates of the Before-Time seemed to worship these Ufo. It's hard to say for certain. But they were said to have certain rituals... and powers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What we are seeing now, these cattle mutilations, lights in the sky, seems consistent with the Ufo. That is my belief.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100730123
+  SecondParameter: 9
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100781638
+Choices:
+- 01CE4F:NovaArizona.esm
+- 01CE4D:NovaArizona.esm
+- 01CE4E:NovaArizona.esm
+- 03A18A:NovaArizona.esm
+- 01CE50:NovaArizona.esm
+- 03A18B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're familiar with these lights in the sky?

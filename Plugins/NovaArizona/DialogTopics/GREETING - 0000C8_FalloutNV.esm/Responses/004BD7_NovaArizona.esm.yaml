@@ -1,0 +1,46 @@
+FormKey: 004BD7:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 004BC4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am Flavius Constantinus, Optio of Malpais. I give my thanks on behalf of the Legion for your service to Caesar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 4
+Choices:
+- 00DE03:NovaArizona.esm
+- 020A9E:NovaArizona.esm
+- 01ED1D:NovaArizona.esm
+- 004C60:NovaArizona.esm
+- 004C3D:NovaArizona.esm
+- 004C3E:NovaArizona.esm
+- 004C4C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

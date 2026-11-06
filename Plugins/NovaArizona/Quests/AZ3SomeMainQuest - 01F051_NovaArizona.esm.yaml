@@ -1,0 +1,52 @@
+FormKey: 01F051:NovaArizona.esm
+EditorID: AZ3SomeMainQuest
+FormVersion: 15
+Name: 3 O'Clock Blues
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - AllowRepeatedConversationTopics
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 27491
+Stages:
+- {}
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Speak to Gustavo and Chente about their ideas for improving the business.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 6
+  LogEntries:
+  - Flags: []
+    Entry: Ask local slavers about partnering with Tres Leches Caravan.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Speak with the Legion about working with Tres Leches Caravan.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 5
+  Description: (Optional) Check-in with Gustavo and Chente Jordano about the future of the caravan.
+  Targets:
+  - Target: 00D422:NovaArizona.esm
+    Unused: 0xD23B32
+  - Target: 00D425:NovaArizona.esm
+    Unused: 0xD23B32
+- Index: 10
+  Description: Speak with the Chainway Foreman outside Malpais Legionary Camp
+  Targets:
+  - Target: 0175EF:NovaArizona.esm
+    Unused: 0x796D2C
+- Index: 11
+  Description: Speak to the Scribonius at the Malpais Market.
+- Index: 20
+  Description: Speak with Enzo.
+- Description: ''

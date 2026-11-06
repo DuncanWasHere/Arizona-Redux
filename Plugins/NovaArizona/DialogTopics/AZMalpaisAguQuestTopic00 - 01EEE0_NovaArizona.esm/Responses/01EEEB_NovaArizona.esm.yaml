@@ -1,0 +1,38 @@
+FormKey: 01EEEB:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EEE1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Oh, this again?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789369
+  SecondParameter: 11
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 11
+Choices:
+- 01EEE2:NovaArizona.esm
+- 01EEE4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: About the rite of Mars....

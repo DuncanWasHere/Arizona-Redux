@@ -1,0 +1,60 @@
+FormKey: 009EB7:NovaArizona.esm
+EditorID: AZElephantHillFestusBroken
+FormVersion: 15
+ObjectBounds:
+  First: -35, -30, 0
+  Second: 35, 30, 145
+Name: Festus
+Model:
+  File: creatures\NVFestus\skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- nvfestus.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Essential
+  - NoLowLevelProcessing
+  - NoRightArm
+  - NoLeftArm
+  - CantOpenDoors
+  - Immobile
+  - NoKnockdowns
+  - IsGhost
+  - Invulnerable
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01FFB6:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 09C95E:FalloutNV.esm
+Voice: 10AAF1:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 2
+  Responsibility: 50
+  Mood: 168634624
+  Teaches: Barter
+Data:
+  Type: Robot
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 50
+  Strength: 5
+  Perception: 5
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+CombatStyle: 07B238:FalloutNV.esm
+BodyPartData: 055E75:FalloutNV.esm
+BaseScale: 1
+FootWeight: 3
+ImpactMaterialType: Metal
+SoundLevel: Normal

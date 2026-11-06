@@ -1,0 +1,148 @@
+FormKey: 010020:NovaArizona.esm
+EditorID: AZBigStopAhigaQuest02
+FormVersion: 15
+Script: 010023:NovaArizona.esm
+Name: Guided Missiles
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Unused: 27756
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0x15000A007201007301000200203115000A00720100730200020020311600120007000E0020720200582E1000002030203D3D16000D0003000900204703002032203D3DA3110F0003007201006E050000006E01000000A2110F0003007201006E050000006E01000000A3110F0003007201006E140000006E0100000018000C0001000800204703002032203CA3110F0003007201006E050000006E01000000190000001800120001000E0020720200582E1000002031203D3DA3110F0003007201006E060000006E01000000190000001600120001000E0020720400582E1000002030203D3DA3110F0003007201006E0A0000006E010000001800120001000E0020720400582E1000002031203D3DA3110F0003007201006E1E0000006E01000000190000001600230001001F0020720500582E1000002031203D3D20720600582E1000002031203D3D207C7C36100500010072070019000000
+      SourceCode: >-
+        Set AZBigStopAhigaQuest02.ExplosivesObtained to 1
+
+        Set AZBigStopAhigaQuest02.GunsObtained to 1
+
+        if AZNellisJenniferREF.GetDead == 0
+        	if VStoryEventBoomers == 2
+        		SetObjectiveDisplayed AZBigStopAhigaQuest02 5 1
+        		SetObjectiveCompleted AZBigStopAhigaQuest02 5 1
+        		SetObjectiveDisplayed AZBigStopAhigaQuest02 20 1
+        	elseif VStoryEventBoomers < 2
+        		SetObjectiveDisplayed AZBigStopAhigaQuest02 5 1
+        	endif
+        elseif AZNellisJenniferREF.GetDead == 1
+        		SetObjectiveDisplayed AZBigStopAhigaQuest02 6 1	
+        endif
+
+        if AZMcCarranBarryREF.GetDead == 0
+        	SetObjectiveDisplayed AZBigStopAhigaQuest02 10 1
+        elseif AZMcCarranBarryREF.GetDead == 1
+        	SetObjectiveDisplayed AZBigStopAhigaQuest02 30 1
+        endif
+
+        if NellisLoyalRef.GetDead == 1 || NellisPearlRef.GetDead == 1
+        	StartQuest AZBigStopAhigaQuest02HelperQuest
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 010020:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 010406:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 132F38:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 010409:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0FF26A:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0FF26B:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01040A:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E640000001600100001000C00207202007302002033203D3D1C00010002100A0002007203006E900100001800100001000C00207202007302002034203D3D1C00010002100A0002007203006E2C01000019000000
+      SourceCode: >-
+        Player.RewardXP 100
+
+        if AZBigStopAhigaQuest02.GunsObtained == 3
+        	Player.AddItem Caps001 400
+        elseif AZBigStopAhigaQuest02.GunsObtained == 4
+        	Player.AddItem Caps001 300
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 010020:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00000F:FalloutNV.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x15000A007201007301000200203015000A0072010073020002002030
+      SourceCode: >-
+        Set AZBigStopAhigaQuest02.ExplosivesObtained to 0
+
+        Set AZBigStopAhigaQuest02.GunsObtained to 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 010020:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Secure a supply of explosives from Nellis Air Force Base.
+  Targets:
+  - Target: 010406:NovaArizona.esm
+    Unused: 0x636D2C
+- Index: 10
+  Description: Secure a supply of guns from the Gun Runners.
+  Targets:
+  - Target: 010409:NovaArizona.esm
+    Unused: 0x192529
+- Index: 15
+  Description: Inform Ahiga that Nellis has agreed to supply him explosives.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x636D2C
+- Index: 20
+  Description: Inform Ahiga that Nellis has been wiped out and that he can scavenge the explosives.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0xDC3B32
+- Index: 25
+  Description: Inform Ahiga that the Gun Runners have agreed to supply him guns.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x652F30
+- Index: 30
+  Description: Inform Ahiga that the Gun Runners contact is dead.
+  Targets:
+  - Target: 008A66:NovaArizona.esm
+    Unused: 0x64102A
+- Index: 6
+  Description: Wipe out the Boomers so that the Code Talkers can scavenge Nellis Air Force.
+  Targets:
+  - Target: 0FF26B:FalloutNV.esm
+    Unused: 0x642F30
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0FF26B:FalloutNV.esm
+  - Target: 0FF26A:FalloutNV.esm
+    Unused: 0x642F30
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0FF26A:FalloutNV.esm

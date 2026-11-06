@@ -1,0 +1,91 @@
+FormKey: 01EF5C:NovaArizona.esm
+FormVersion: 15
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: A long time ago, a great warrior rose to become the greatest warrior in the Legion. Six tribes crushed under his heels in less than a month.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: For years, he is an undisputed chosen of his masters. Victory upon victory. Loved by all.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x666967
+    UseEmotionAnimation: True
+    Unused3: 0x6E6420
+  ResponseText: Then, one day, he can't run as fast as he did. He can't throw spears as far as he could. His youth had gone.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: His lord tells him that he is still useful even despite his age. Tells him that he is vital to his Lord's world without war.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: But, the wars continue. The Legion loses to the Profligates. Graham is killed and thrown into the Magnum Chasma. Failure is not tolerated.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: The warrior is desperate to do anything to save the Legion, even drink the forbidden nectars to make him strong.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: It was all for nothing. Lanius, a mask, was chosen instead of me. My sacrifice, my duty, it meant nothing to my lord.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100716610
+  SecondParameter: 4
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 17
+Choices:
+- 01EF5E:NovaArizona.esm
+- 01EF5F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you mean?

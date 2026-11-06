@@ -1,0 +1,41 @@
+FormKey: 00E667:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 00E657:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Legion is hungry - all the time - and while we've been able to sate their appetite for now, I know that more troops are arriving.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Our last leader would be spinning in her grave, but we're past the point where we can tiptoe around traditions. We need to try blast fishing.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100874950
+Choices:
+- 00E62B:NovaArizona.esm
+- 00E62C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm interested in that job you told me about. Let's go over it again.

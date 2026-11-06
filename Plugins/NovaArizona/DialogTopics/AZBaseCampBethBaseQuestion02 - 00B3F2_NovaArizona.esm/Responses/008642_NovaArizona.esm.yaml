@@ -1,0 +1,35 @@
+FormKey: 008642:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: 00B3F3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0x00803F
+  ResponseText: No. Buzz off, shrimp.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100697662
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+Choices:
+- 008652:NovaArizona.esm
+- 008654:NovaArizona.esm
+- 008656:NovaArizona.esm
+- 018D0E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Any chance I can change your mind?

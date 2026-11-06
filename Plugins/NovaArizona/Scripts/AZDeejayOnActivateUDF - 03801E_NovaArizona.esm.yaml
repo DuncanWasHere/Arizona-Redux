@@ -1,0 +1,81 @@
+FormKey: 03801E:NovaArizona.esm
+EditorID: AZDeejayOnActivateUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 10
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D00000010000F000D001F0100000102010004020004001600100001000C0020720300730C00203120213D1E000000170002000F0016000F0001000B0020660100205A0400203D3D15000C007204006601000400205A030018000F0001000B0020660100205A0500203D3D15000C007205006601000400205A030018000F0001000B0020660100205A0600203D3D15000C007206006601000400205A030018000F0001000B0020660100205A0700203D3D15000C007207006601000400205A030018000F0001000B0020660100205A0800203D3D15000C007208006601000400205A030018000F0001000B0020660100205A0900203D3D15000C007209006601000400205A030018000F0001000B0020660100205A0A00203D3D15000C00720A006603000400205A0300190000001900000011000000
+  SourceCode: >-
+    scn AZDeejayOnActivateUDF
+
+
+    ref Activated
+
+    ref Activator
+
+
+    BEGIN Function { Activated, Activator }
+
+    	If AZDeejayREF.bCurrentlyHired != 1
+    		Return
+    	else
+
+    	if (Activated == NVCCPlayerStorageActivatorREF)
+    		set NVCCPlayerStorageActivatorREF.Follower1 to AZDeejayREF
+
+    	elseif (Activated == VFSSilverRushFriskingTriggerREF)
+    		set VFSSilverRushFriskingTriggerREF.Companion1REF to AZDeejayREF
+
+    	elseif (Activated == TopsFriskingTriggerREF)
+    		set TopsFriskingTriggerREF.Companion1REF to AZDeejayREF
+
+    	elseif (Activated == TopsFriskingHoldoutTriggerREF)
+    		set TopsFriskingHoldoutTriggerREF.Companion1REF to AZDeejayREF
+
+    	elseif (Activated == VUltraLuxeFriskingTriggerREF)
+    		set VUltraLuxeFriskingTriggerREF.Companion1REF to AZDeejayREF
+
+    	elseif (Activated == VUltraLuxeFriskingHoldoutTriggerREF)
+    		set VUltraLuxeFriskingHoldoutTriggerREF.Companion1REF to AZDeejayREF
+
+    	elseif (Activated == GomorrahCasinoEnterTriggerREF)
+    		set GomorrahCasinoEnterTriggerREF.Companion1REF to AZDeejayREF
+
+
+    	endif
+    	endif
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0D229120000000000000000
+      Unknown2: 0x6E675265640000
+    Name: Activated
+  - Data:
+      Index: 2
+      Unknown: 0xE0D229120000000000000000
+      Unknown2: 0x6E6768616C6676
+    Name: Activator
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 139B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1715B6:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1287E8:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1287E9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16569A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16569B:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 127953:FalloutNV.esm

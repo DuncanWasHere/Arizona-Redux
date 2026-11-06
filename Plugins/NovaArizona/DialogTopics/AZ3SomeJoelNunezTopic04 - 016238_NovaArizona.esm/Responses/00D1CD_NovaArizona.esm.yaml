@@ -1,0 +1,36 @@
+FormKey: 00D1CD:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 016239:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xAAAAFF
+    UseEmotionAnimation: True
+    Unused3: 0x499204
+  ResponseText: I've got an errand I don't have time for. Interested in running it for me?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 100798958
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 00D1CE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you personally need help with anything?

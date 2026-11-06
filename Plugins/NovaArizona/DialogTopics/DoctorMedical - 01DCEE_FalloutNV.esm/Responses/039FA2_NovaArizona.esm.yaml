@@ -1,0 +1,66 @@
+FormKey: 039FA2:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Uh... No, you're not.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100876902
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHealthPercentage
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 25
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 26
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 28
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 30
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 27
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 29
+  RunOnType: Target
+Choices:
+- 0B7615:FalloutNV.esm
+- 0963C4:FalloutNV.esm
+- 01DCEE:FalloutNV.esm
+- 0BE414:FalloutNV.esm
+- 039F75:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm hurt. I need help.

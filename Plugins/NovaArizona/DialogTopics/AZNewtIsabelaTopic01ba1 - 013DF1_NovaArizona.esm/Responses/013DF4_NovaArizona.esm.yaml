@@ -1,0 +1,35 @@
+FormKey: 013DF4:NovaArizona.esm
+FormVersion: 15
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 013DF3:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x43C879
+    UseEmotionAnimation: True
+    Unused3: 0x6068E8
+  ResponseText: "[FAILED] I can't. I don't have anymore. Please don't tell the Legion."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744513
+Choices:
+- 013DF2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Give me more.
+ActorValuePerk: 0004B0:FalloutNV.esm

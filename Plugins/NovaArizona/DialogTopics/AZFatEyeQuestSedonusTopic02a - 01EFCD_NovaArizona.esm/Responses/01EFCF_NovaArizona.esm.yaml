@@ -1,0 +1,53 @@
+FormKey: 01EFCF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: 01EFCE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: Hell no. That isn't how any of that works. They ban drugs, dumbass.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206973
+    UseEmotionAnimation: True
+    Unused3: 0x6F7720
+  ResponseText: Your legate friend isn't even supposed to be doing this. I'm not going to stick my neck out for someone Caesar himself is watching.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Now, buzz off.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 75
+  Function: GetActorValue
+  FirstParameter: 43
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: But if you deal with the Legion, then you'll able to access bigger and better markets and stuff.
+ActorValuePerk: 0004BB:FalloutNV.esm

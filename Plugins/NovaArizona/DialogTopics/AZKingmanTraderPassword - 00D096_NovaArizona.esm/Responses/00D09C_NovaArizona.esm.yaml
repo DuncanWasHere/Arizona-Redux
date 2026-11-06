@@ -1,0 +1,52 @@
+FormKey: 00D09C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x2E5FBA
+    UseEmotionAnimation: True
+    Unused3: 0x00C4C0
+  ResponseText: It’s about goddamn time. You are late as fuck, you know that? The boss wants to talk to you, he’s in the back.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100716610
+  SecondParameter: 15
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100716610
+  SecondParameter: 15
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100716686
+Choices:
+- 00D096:NovaArizona.esm
+- 00D094:NovaArizona.esm
+- 00D099:NovaArizona.esm
+- 00D095:NovaArizona.esm
+- 00D097:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073070002002031
+  SourceCode: set AZElephantHillFatEyeQuest.KingmanIntro to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm

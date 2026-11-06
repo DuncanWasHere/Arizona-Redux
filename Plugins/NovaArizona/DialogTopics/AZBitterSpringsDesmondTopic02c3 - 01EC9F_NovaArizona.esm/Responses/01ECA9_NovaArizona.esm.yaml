@@ -1,0 +1,39 @@
+FormKey: 01ECA9:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: 01ECA8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742061
+    UseEmotionAnimation: True
+    Unused3: 0x652061
+  ResponseText: Legion took it and then lost it, I think? And then the NCR didn't retake it? No idea, really. A bunch of people are dead, though.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDeadCount
+  FirstParameter: 1183180
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDeadCount
+  FirstParameter: 1177871
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01EC9D:NovaArizona.esm
+- 01EC9E:NovaArizona.esm
+- 01EC9F:NovaArizona.esm
+- 01EC8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What happened to Nelson?
