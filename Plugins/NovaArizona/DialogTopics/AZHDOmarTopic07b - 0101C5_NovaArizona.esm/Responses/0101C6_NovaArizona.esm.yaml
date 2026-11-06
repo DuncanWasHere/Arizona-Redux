@@ -1,0 +1,70 @@
+FormKey: 0101C6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x686174
+    UseEmotionAnimation: True
+    Unused3: 0x61696E
+  ResponseText: "[SUCCEEDED] You know what? You're right. I did all I can. Just wait till I leave."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 7
+    Enabled: 1
+  CompiledScript: 0x1C0001008011050001007203001C0001004F12050001007204009111050001007205001C0002007711070001006E0F000000A2110F0003007206006E0B0000006E01000000911105000100720700
+  SourceCode: >-
+    AZOmarREF.RemovefromFaction AZHHRCFaction
+
+    AZOmarREF.MovetoMarkerwithFade AZOmarHooverDamMarker
+
+    ApplyImageSpaceModifier FadeToBlackAndBackISFX
+
+
+    player.rewardxp 15
+
+    setobjectivecompleted AZDamNQuest2 11 1
+
+    ApplyImageSpaceModifier FadeToBlackISFX
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0101C9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0101CC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08F0BC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0269C4:FalloutNV.esm
+Prompt: Look, it's them or you. You're already done all you can.
+ActorValuePerk: 0004BB:FalloutNV.esm

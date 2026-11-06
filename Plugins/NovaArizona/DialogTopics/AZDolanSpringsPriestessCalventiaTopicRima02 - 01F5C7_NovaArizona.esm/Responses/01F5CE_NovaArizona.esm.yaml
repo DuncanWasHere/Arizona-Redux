@@ -1,0 +1,36 @@
+FormKey: 01F5CE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I do not know for sure. I'm considering making her a Maiden, if only to ensure those animals aren't allowed to touch her anymore.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 01F5C7:NovaArizona.esm
+- 01F5C8:NovaArizona.esm
+- 01F5C9:NovaArizona.esm
+- 01F5CA:NovaArizona.esm
+- 01F5CB:NovaArizona.esm
+- 01F5CC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you want with her?

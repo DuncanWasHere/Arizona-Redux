@@ -1,0 +1,49 @@
+FormKey: 039F8C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 039F8B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Uh, no, and only children do that.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100876902
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 24
+Choices:
+- 039F72:NovaArizona.esm
+- 039F76:NovaArizona.esm
+- 039F7E:NovaArizona.esm
+- 039F7F:NovaArizona.esm
+- 039F63:NovaArizona.esm
+- 039F64:NovaArizona.esm
+- 039F65:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me! I'll keep my mouth shut, see? <Make a zipping motion over yours lips.>
+ActorValuePerk: 0004B5:FalloutNV.esm

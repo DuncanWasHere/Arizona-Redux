@@ -1,0 +1,50 @@
+FormKey: 00D073:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: 00D074:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] Yeah but Legion spies don't mind working like that, so long as they think it gets them more degenerates on crosses at the end of the day."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't trust you, outsider.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+Choices:
+- 00D053:NovaArizona.esm
+- 00D054:NovaArizona.esm
+- 00D055:NovaArizona.esm
+- 00D056:NovaArizona.esm
+- 00D057:NovaArizona.esm
+- 00D058:NovaArizona.esm
+- 00D05F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've done right by you so far, haven't I?
+ActorValuePerk: 0004BB:FalloutNV.esm

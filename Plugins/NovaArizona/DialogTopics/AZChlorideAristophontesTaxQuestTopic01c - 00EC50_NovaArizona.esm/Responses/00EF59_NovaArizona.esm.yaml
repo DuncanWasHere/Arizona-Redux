@@ -1,0 +1,50 @@
+FormKey: 00EF59:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: 00EFD8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, well, that's perfectly satisfactory. Very good, very good.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100723740
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100768142
+Choices:
+- 00EC21:NovaArizona.esm
+- 00EC4F:NovaArizona.esm
+- 00EC50:NovaArizona.esm
+- 00EC51:NovaArizona.esm
+- 00EC54:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E24000000
+  SourceCode: SetStage AZChlorideTaxQuest 36
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC1C:NovaArizona.esm
+Prompt: Zeke told me to have you pull the tribute directly from the Greenway Wind Farm's electricity output.

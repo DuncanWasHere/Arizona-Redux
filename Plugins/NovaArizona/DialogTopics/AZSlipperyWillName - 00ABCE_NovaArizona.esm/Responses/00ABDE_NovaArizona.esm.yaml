@@ -1,0 +1,43 @@
+FormKey: 00ABDE:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh that name goes way back to when I was a young'un. You see, old Slippery Will always gets himself out of binds, at least I did back when I had my health.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I reckon folks took notice to it and the name stuck. Now why they chose 'slippery' instead of 'lucky' I can't rightly tell you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+Choices:
+- 00ABD7:NovaArizona.esm
+- 00ABCD:NovaArizona.esm
+- 00ABCE:NovaArizona.esm
+- 00ABCF:NovaArizona.esm
+- 00ABD6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why do they call you Slippery Will?

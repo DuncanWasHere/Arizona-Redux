@@ -1,0 +1,37 @@
+FormKey: 03A13E:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x752067
+    UseEmotionAnimation: True
+    Unused3: 0x697374
+  ResponseText: Yeah, yeah. I heard what you said, wastoid. What makes you think I give a shit, huh? For all I know that mutie planted that scribble in Dolan.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206361
+    UseEmotionAnimation: True
+    Unused3: 0x742063
+  ResponseText: You know, you coming in here fucking with my cash flow isn't going to make uncle Kyle happy. Doesn't make me very happy either, you won't like that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100901150
+Choices:
+- 03A13F:NovaArizona.esm
+- 03A140:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

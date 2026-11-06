@@ -1,0 +1,114 @@
+FormKey: 03A0B6:NovaArizona.esm
+EditorID: AZMalpaisMarketSlaveQuest
+FormVersion: 15
+Script: 03A0F4:NovaArizona.esm
+Name: In the Still of the Night
+QuestData:
+  Priority: 75
+Stages:
+- {}
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: complete
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x7711070001006EBC0200001C0001002210020000001C000200221002000000
+      SourceCode: >-
+        rewardxp 700
+
+        AZRustyHooksGristleREF.Disable
+
+        AZRustyHooksSketchREF.Disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020D0D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 03A120:NovaArizona.esm
+Objectives:
+- Index: 50
+  Description: Search for Trentorius' missing slave.
+- Index: 10
+  Description: (Optional) Canvass the settlement of Newt for the missing slave.
+  Targets:
+  - Target: 00C44B:NovaArizona.esm
+    Unused: 0x782F30
+- Index: 20
+  Description: (Optional) Canvass the settlement of Elephant Hill for the missing slave.
+  Targets:
+  - Target: 01076C:NovaArizona.esm
+    Unused: 0x47042F
+- Index: 15
+  Description: (Optional) Inquire about the missing fisherwoman from Newt with the traders in Chloride.
+  Targets:
+  - Target: 013905:NovaArizona.esm
+    Unused: 0x940531
+- Index: 25
+  Description: Search the area around the Dolan Springs springhouse for any sign of missing persons.
+  Targets:
+  - Target: 03A0DF:NovaArizona.esm
+    Unused: 0xEF3B32
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100746538
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+- Index: 21
+  Description: (Optional) Inquire about the missing soda merchant from Elephant Hill with the traders in Chloride.
+  Targets:
+  - Target: 00D849:NovaArizona.esm
+    Unused: 0x0B0434
+- Index: 60
+  Description: Return to Trentorius with news that his missing slave is dead.
+  Targets:
+  - Target: 016C81:NovaArizona.esm
+    Unused: 0x716D2C
+- Index: 65
+  Description: Track down the mutant and "unwashed raider" from the sketch found beside Trentorius' dead slave.
+- Index: 70
+  Description: Speak with Sketch or Gristle about the dead slave and missing persons.
+- Index: 66
+  Description: Speak to Bear about the discarded sketch found by Trentorius' dead slave.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x47042F
+- Index: 75
+  Description: (Optional) Return to Bear with news that Sketch has all but confessed.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x8B052D
+- Index: 80
+  Description: (Optional) Handle the bomb in Bears chest and help him turn Sketch in to the Legion.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0xEF3B32
+- Index: 85
+  Description: Return to Trentoria with news that you've found his slave's killer.
+  Targets:
+  - Target: 016C81:NovaArizona.esm
+    Unused: 0x782F30
+- Index: 90
+  Description: Report Sketch's slave poaching ring to Aristophanes.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x21102B
+- Index: 100
+  Description: Assist the Legion contubernium assigned to wipe out the Rusty Hooks.
+  Targets:
+  - Target: 03A159:NovaArizona.esm
+    Unused: 0x8A052D
+- Index: 110
+  Description: Return to Aristophanes.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x483523
+- Index: 95
+  Description: Handle the bomb in Bears chest and help him turn Sketch in to the Legion.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x46042F
+- Index: 91
+  Description: Seek out a way for the Rusty Hooks to hand over Sketch with minimal bloodshed.

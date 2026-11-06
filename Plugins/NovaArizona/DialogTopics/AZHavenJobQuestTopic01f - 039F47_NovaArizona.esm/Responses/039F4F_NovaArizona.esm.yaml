@@ -1,0 +1,32 @@
+FormKey: 039F4F:NovaArizona.esm
+FormVersion: 15
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746576
+    UseEmotionAnimation: True
+    Unused3: 0x652063
+  ResponseText: I will await the final verdict.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+Choices:
+- 039F40:NovaArizona.esm
+- 01BBB8:NovaArizona.esm
+- 024A16:NovaArizona.esm
+- 039F3E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Okay then.

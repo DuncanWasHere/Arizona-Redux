@@ -1,0 +1,58 @@
+FormKey: 00D0B1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: You're correct, you do not. You would do well to remember that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721587
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006EFA000000A2110F0003007203006E0F0000006E01000000A3110F0003007203006E160000006E01000000160017000100130020720100582F10050001007204002031203E3D1C00010052100A0002007204006E01000000180017000100130020720100582F10050001007204002030203D3D1E0000001900000015000A0072030073070002002032
+  SourceCode: >-
+    player.additem Caps001 250
+
+    setobjectivecompleted AZElephantHillFatEyeQuest 15 1
+
+    setobjectivedisplayed AZElephantHillFatEyeQuest 22 1
+
+
+    if player.GetItemCount AZFatEyeDrugQuestPrecursors >= 1
+        player.removeitem AZFatEyeDrugQuestPrecursors 1
+    elseif player.GetItemCount AZFatEyeDrugQuestPrecursors == 0
+       return
+    endif
+
+
+    set AZElephantHillFatEyeQuest.KingmanIntro to 2
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D08C:NovaArizona.esm

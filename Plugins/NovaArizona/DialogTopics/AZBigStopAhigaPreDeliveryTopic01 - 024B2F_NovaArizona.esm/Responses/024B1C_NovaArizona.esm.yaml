@@ -1,0 +1,42 @@
+FormKey: 024B1C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: Confederate weapons are some of the best in the land, and there is no way it would have left the factory like this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: Say, would you be interested in helping me with my investigation into this?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B1D:NovaArizona.esm
+- 024B1E:NovaArizona.esm
+- 024B1F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's off?

@@ -1,0 +1,70 @@
+FormKey: 025D08:NovaArizona.esm
+EditorID: AZElephantHillManagerTerminal
+FormVersion: 15
+ObjectBounds:
+  First: -19, -21, 0
+  Second: 22, 21, 37
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >+
+  Sunset Sarsaparilla Company Intranet
+
+
+  Local Saved Messages
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: Uncertain future
+  ResultText: Loading message...
+  DisplayNote: 025E3C:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Meeting with upper management
+  ResultText: Loading message...
+  DisplayNote: 025E3D:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Shelved projects
+  ResultText: Loading message...
+  DisplayNote: 025FEB:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: This is bullshit
+  ResultText: Loading message...
+  DisplayNote: 025FF6:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Limited operations
+  ResultText: Loading message...
+  DisplayNote: 025FF7:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Product recall URGENT
+  ResultText: Loading message...
+  DisplayNote: 025FF8:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000A0072010073100002002031A2110F0003007201006E040000006E01000000A3110F0003007201006E050000006E01000000
+    SourceCode: >-
+      set AZChlorideAntibioticsQuest.bBlueSassRecallDiscovered to 1
+
+      setobjectivecompleted AZChlorideAntibioticsQuest 4 1
+
+      setobjectivedisplayed AZChlorideAntibioticsQuest 5 1
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01F58D:NovaArizona.esm
+- ItemText: Is anyone still alive?
+  ResultText: Loading message...
+  DisplayNote: 028A84:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

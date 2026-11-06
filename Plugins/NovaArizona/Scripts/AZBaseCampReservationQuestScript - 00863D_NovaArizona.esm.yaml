@@ -1,0 +1,98 @@
+FormKey: 00863D:NovaArizona.esm
+EditorID: AZBaseCampReservationQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000007000000016000D0002000900207304002031203D3D1C0001009710050001007203001C00020097100500010072030019000000160027000100230020582212050001007204002031203D3D20582212050001007205002030203D3D20262639100A0002007205006EFF0000001900000011000000
+  SourceCode: >-
+    scn AZBaseCampReservationQuestScript
+
+
+    short iDealMentioned
+
+    short iGloveBoughtPlayer
+
+    short iGlovesBought           ; 1 = Half, 2 = Full
+
+    short iGlovesStolen           ; 1 = Actually stolen, 2 = Given
+
+    short iMetBeth
+
+    short iLeavingBaseCamp
+
+    short iReservationTradersinDolanGood
+
+
+    BEGIN GameMode
+
+
+    if iLeavingBaseCamp == 1
+    	AZBethPackhorner.AddScriptPackage AZReservationBighornersFollowPackage
+    	AZHankPackhorner.AddScriptPackage AZReservationBighornersFollowPackage
+    endif
+
+
+    if GetQuestCompleted VMQCaesarFail == 1 && GetQuestCompleted AZBaseCampReservationQuest == 0
+    	SetStage AZBaseCampReservationQuest 255
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x603E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3168706A616D65
+    Name: iMetBeth
+  - Data:
+      Index: 2
+      Unknown: 0x403E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7273696E446F6C
+    Name: iGlovesStolen
+  - Data:
+      Index: 3
+      Unknown: 0x003E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3268686A616D63
+    Name: iGlovesBought
+  - Data:
+      Index: 4
+      Unknown: 0x803E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30302000000000
+    Name: iLeavingBaseCamp
+  - Data:
+      Index: 5
+      Unknown: 0xA03E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000050516C1E
+    Name: iReservationTradersinDolanGood
+  - Data:
+      Index: 6
+      Unknown: 0xE03D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x322E3000000000
+    Name: iDealMentioned
+  - Data:
+      Index: 7
+      Unknown: 0x203E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xE777101C000000
+    Name: iGloveBoughtPlayer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00775F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 007760:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0089C0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00863E:NovaArizona.esm

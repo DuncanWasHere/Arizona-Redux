@@ -1,0 +1,43 @@
+FormKey: 01F6E2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01F580:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Thank you. I'm... I appreciate it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718660
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E000000006E01000000A3110F0003007201006E010000006E01000000A3110F0003007201006E020000006E01000000
+  SourceCode: >-
+    setobjectivedisplayed AZChlorideAntibioticsQuest 0 1
+
+    setobjectivedisplayed AZChlorideAntibioticsQuest 1 1
+
+    setobjectivedisplayed AZChlorideAntibioticsQuest 2 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+Prompt: I don't need payment. I'll try and help you.

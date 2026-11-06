@@ -1,0 +1,70 @@
+FormKey: 024F78:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 024F77:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: I don't like your tone, but I will entertain the question. It was all established ad hoc to support our first incursion into the Mojave.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: There are small hanging bridges along the Chainway. The Tres Leches brothers had them built to support our supply movements.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As I understand it, that was the deal with Caesar. They would assist with Legion logistics, and in return, they would be allowed to keep their heads.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6E2066
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: When we returned a second time, the brothers had built an office on the Chainway.  Caesar obliged to use it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You see the result.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+Choices:
+- 01751C:NovaArizona.esm
+- 017600:NovaArizona.esm
+- 020866:NovaArizona.esm
+- 020868:NovaArizona.esm
+- 020867:NovaArizona.esm
+- 020869:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Whose idea was it to use a crumbling pre-war bridge as a supply line?

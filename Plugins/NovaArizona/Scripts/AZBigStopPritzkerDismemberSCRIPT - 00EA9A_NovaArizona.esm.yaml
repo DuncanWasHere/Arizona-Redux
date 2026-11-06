@@ -1,0 +1,38 @@
+FormKey: 00EA9A:NovaArizona.esm
+EditorID: AZBigStopPritzkerDismemberSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100008001A00490000000000801611000209005601000002001507004C860000003A151C00011B00520100780000332810000200FFFF04004207FFFF040042012839150C00010B0056010000020042010011000000
+  SourceCode: >-
+    name AZBigStopPritzkerDismemberScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter {
+        if (!DoOnce) {
+            AZBigStopPritzkerREF.DismemberLimb(7, 1);
+            DoOnce = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: doonce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EA4C:NovaArizona.esm

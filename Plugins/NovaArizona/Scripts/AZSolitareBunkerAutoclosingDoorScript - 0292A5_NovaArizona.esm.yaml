@@ -1,0 +1,48 @@
+FormKey: 0292A5:NovaArizona.esm
+EditorID: AZSolitareBunkerAutoclosingDoorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000880000008016100002080056010000020007004CA700000080161300020B0056000000010042000607004C71000000391513000112005600000001005800000C100400000020811608000107004CA700000080161600020E005800009D100400000042010407004CA7000000DD1008000100FFFF0400420039150C00010B005601000002004200001100000010000800020044000000000080161600020E005800009D100400000042030407004CF100000039150C00010B00560000000100420A0039150C00010B005601000002004201000D100200000011000000
+  SourceCode: >-
+    name AZSolitareBunkerAutoclosingDoorScript;
+
+
+    float doorTimer;
+
+    int closeDoor;
+
+
+    GameMode {
+        if (closeDoor) {
+            if (doorTimer > 0) {
+                doorTimer -= GetSecondsPassed();
+            } else if (GetOpenState() == 1) {   ; // if the door is still open
+                SetOpenState(0);               ; // close the door
+                closeDoor = 0;
+            }
+        }
+    }
+
+
+    OnActivate {
+        if (GetOpenState() == 3) {            ; // if the door is closed
+            doorTimer = 10;
+            closeDoor = 1;
+        }
+        Activate();
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: doorTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: closeDoor

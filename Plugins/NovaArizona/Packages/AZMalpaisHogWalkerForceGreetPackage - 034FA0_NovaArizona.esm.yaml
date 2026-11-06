@@ -1,0 +1,41 @@
+FormKey: 034FA0:NovaArizona.esm
+EditorID: AZMalpaisHogWalkerForceGreetPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- WeaponDrawn
+Unused: 40
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 28773
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 10
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 0000C8:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

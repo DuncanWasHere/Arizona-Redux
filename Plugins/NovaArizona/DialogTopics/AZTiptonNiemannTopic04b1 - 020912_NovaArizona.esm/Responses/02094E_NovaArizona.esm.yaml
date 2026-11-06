@@ -1,0 +1,65 @@
+FormKey: 02094E:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: South of here, in the distant lands of the Sonora Wasteland.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x2C2069
+    UseEmotionAnimation: True
+    Unused3: 0x206469
+  ResponseText: Back then, I was looking for an army I heard was pretty similar to my old crew. I didn't find them. Instead, I found criminals, drug dealers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They put a gun to my head and took me to Parker. I told them that the Legion was coming. No one cared, they weren't here yet. No need to worry.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: One of the dealers, a man named Big River Joe, told me I was asking the wrong question.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x2C2069
+    UseEmotionAnimation: True
+    Unused3: 0x206469
+  ResponseText: The real question was if there was money in fighting the Legion. When I said yes, he brought me into his crew.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+Choices:
+- 020913:NovaArizona.esm
+- 020914:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where did you learn to kill?

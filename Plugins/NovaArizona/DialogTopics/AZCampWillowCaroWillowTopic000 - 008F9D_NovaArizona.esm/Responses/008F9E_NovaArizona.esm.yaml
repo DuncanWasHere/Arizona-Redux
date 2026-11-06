@@ -1,0 +1,37 @@
+FormKey: 008F9E:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 20
+    ResponseNumber: 1
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: You say that as if there is no glory in keeping the Legion supplied. Supply is the lifeblood of an army. This river is ours.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 15
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6D7077
+  ResponseText: The Profligates don't dare touch us. We took from them the most valuable supply route in the whole Mojave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688606
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So you're glorified delivery men?

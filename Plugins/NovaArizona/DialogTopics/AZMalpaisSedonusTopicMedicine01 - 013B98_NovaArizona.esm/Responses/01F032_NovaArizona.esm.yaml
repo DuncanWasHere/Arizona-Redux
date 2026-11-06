@@ -1,0 +1,83 @@
+FormKey: 01F032:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: 013B9B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: No. Graham put a stop to that. For good reason, too.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x277265
+    UseEmotionAnimation: True
+    Unused3: 0x617465
+  ResponseText: King Devil’s alliance. A band of pissant raiders. We had just defeated them in a battle.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: We got cocky. One of the newly-assimilated tribes threw a party. People got drunk.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: The raiders took advantage of that moment. They nearly crippled us. The next morning, Graham ordered the first Decimation.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100789368
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100743970
+  SecondParameter: 9
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100743970
+  SecondParameter: 8
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 013B2A:NovaArizona.esm
+- 013B2D:NovaArizona.esm
+- 013B36:NovaArizona.esm
+- 013B3C:NovaArizona.esm
+- 013B3D:NovaArizona.esm
+- 013B40:NovaArizona.esm
+- 013B41:NovaArizona.esm
+- 013B98:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Legion didn't always ban chems?

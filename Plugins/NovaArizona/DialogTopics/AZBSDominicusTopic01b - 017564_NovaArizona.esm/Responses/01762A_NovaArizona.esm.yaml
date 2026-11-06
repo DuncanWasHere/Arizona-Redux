@@ -1,0 +1,48 @@
+FormKey: 01762A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 017565:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x320006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Should I wish it, I could have your head severed from your shoulders at the snap of my fingers. Remember that before we begin the interview.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 33617531
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 017566:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073020002002031
+  SourceCode: set AZMalpaisJournalistQuest.bDominicusAngry to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: Legion? Civilized? Those two words don't go together.
+ActorValuePerk: 00F67B:HonestHearts.esm

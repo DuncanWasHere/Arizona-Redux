@@ -1,0 +1,60 @@
+FormKey: 0293D5:NovaArizona.esm
+FormVersion: 15
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Watch your tone with me, kid.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They're not like us. They're less than us. If you tell me I'm wrong, you're lying to yourself.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696B65
+    UseEmotionAnimation: True
+    Unused3: 0x546865
+  ResponseText: Caesar is just like the Khans. Just like the Vipers and the Jackals. Walking around with sticks, eating raw meat. And they want to tell us we're wrong for how we live?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Things would be a lot safer, and a lot happier, if everywhere was more like the NCR. End of story.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293CA:NovaArizona.esm
+- 0293B6:NovaArizona.esm
+- 0293B7:NovaArizona.esm
+- 0293BB:NovaArizona.esm
+- 0293B8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So is it all just about killing tribals? Is that what you're enlisted for?

@@ -1,0 +1,41 @@
+FormKey: 00ABCC:NovaArizona.esm
+EditorID: AZSlipperyWillIdlePackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- ContinueIfPcNear
+- SkipFalloutBehavior
+Flags:
+  MutagenObjectType: PackageUseItemAt
+Unused2: 49023
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 00ABC9:NovaArizona.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+IsUseItem: True
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

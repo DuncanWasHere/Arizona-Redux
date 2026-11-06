@@ -1,0 +1,50 @@
+FormKey: 005727:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 85
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Too many. I don't know.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6D7563
+    UseEmotionAnimation: True
+    Unused3: 0x666572
+  ResponseText: I can't know.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6D7563
+    UseEmotionAnimation: True
+    Unused3: 0x666572
+  ResponseText: Why do you think I'm holed up here? You think I want to be living in a cave?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005729:NovaArizona.esm
+- 00572B:NovaArizona.esm
+- 00572D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You have no idea, do you? You're heartless.

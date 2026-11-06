@@ -1,0 +1,40 @@
+FormKey: 0293DA:NovaArizona.esm
+FormVersion: 15
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: 0293D9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah, sorry, I need the real deal, not a bullshitter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 41
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293CA:NovaArizona.esm
+- 0293B6:NovaArizona.esm
+- 0293B7:NovaArizona.esm
+- 0293BB:NovaArizona.esm
+- 0293B8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I could expertly and precisely shoot Caesar from a vantage point in the Boneyard, I'm just that good.
+ActorValuePerk: 0004B9:FalloutNV.esm

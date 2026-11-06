@@ -1,0 +1,449 @@
+FormKey: 00DE1A:NovaArizona.esm
+EditorID: AZStatioFindFriendQuest
+FormVersion: 15
+Script: 00DE1C:NovaArizona.esm
+Name: The Little Green Valley
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  QuestDelay: 10
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Starts quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000551005000100720200
+      SourceCode: >-
+        SetObjectiveDisplayed AZStatioFindFriendQuest 5 1
+
+        ShowMap AZSolitareBigStopMapMarkerREF
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0044DD:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: No Autonous found at Big Stop. Return to Phylacus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E0A0000006E0100000015000A0072010073020002002031
+      SourceCode: >-
+        SetObjectiveCompleted AZStatioFindFriendQuest 5 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 10 1
+
+        Set AZStatioFindFriendQuest.AutonousSearchStatus to 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Investigate at Malpais.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x551005000100720200A2110F0003007203006E0A0000006E01000000A3110F0003007203006E0F0000006E0100000015000A00720300730200020020321C000100211002000000
+      SourceCode: >-
+        ShowMap AZMalpaisMapMarkerREF
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 10 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 15 1
+
+        Set AZStatioFindFriendQuest.AutonousSearchStatus to 2
+
+        AZLGVCampfireActivatorREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00385E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: Hangman's Point unlocked
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E140000006E01000000
+      SourceCode: SetObjectiveDisplayed AZStatioFindFriendQuest 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 21
+  LogEntries:
+  - Flags: []
+    Entry: Investigate Dolan Springs
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007203006E190000006E010000005510050001007204001C0001002110020000001C000200211002000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZStatioFindFriendQuest 25 1
+
+        ShowMap AZDolanSpringsMarkerREF
+
+        AZLGVDolanNoteREF.enable
+
+        AZLGVDolanBasketREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B5:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00754F:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Light Aircraft Station unlocked
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000A3110F0003007202006E1E0000006E01000000A2110F0003007202006E140000006E01000000551005000100720300
+      SourceCode: >-
+        AZARSMarkerREF.enable
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 30 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 20 1
+
+        ShowMap AZLightAircraftRefuelingStationMapMarkerREF
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6F7:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 009792:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: White Hills unlocked
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E230000006E010000001C000100221002000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZStatioFindFriendQuest 35 1
+
+        AZLGVCampfireActivatorREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 35
+  LogEntries:
+  - Flags: []
+    Entry: Investigate Santa Claus
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E1A0000006E01000000A2110F0003007201006E190000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZStatioFindFriendQuest 26 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: Investigate Haven/Hideaway/Moletown/Easytown/Freihafen/Hole in the Ground
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E280000006E01000000A2110F0003007201006E0F0000006E01000000A2110F0003007201006E140000006E01000000A2110F0003007201006E190000006E01000000A2110F0003007201006E1E0000006E01000000A2110F0003007201006E230000006E01000000A3110F0003007201006E0F0000006E00000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZStatioFindFriendQuest 40 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 15 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 20 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 25 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 30 1
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 35 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 15 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 45
+  LogEntries:
+  - Flags: []
+    Entry: Investigate Newt
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x5510050001007202001C00010021100200000015000A0072030073020002002035A2110F0003007203006E280000006E01000000A3110F0003007203006E370000006E01000000A3110F0003007203006E0F0000006E00000000
+      SourceCode: >-
+        ShowMap AZNewtMapMarkerREF
+
+        AZLGVNewtActivatorREF.enable
+
+        Set AZStatioFindFriendQuest.AutonousSearchStatus to 5
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 40 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 55 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 15 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E81F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 006604:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Speak with Autonous.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x15000A0072010073020002002036A2110F0003007201006E370000006E01000000A3110F0003007201006E320000006E00000000A3110F0003007201006E1A0000006E00000000A3110F0003007201006E140000006E00000000A3110F0003007201006E190000006E00000000A3110F0003007201006E230000006E00000000A3110F0003007201006E0F0000006E00000000
+      SourceCode: >-
+        Set AZStatioFindFriendQuest.AutonousSearchStatus to 6
+
+        SetObjectiveCompleted AZStatioFindFriendQuest 55 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 50 0
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 26 0
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 20 0
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 25 0
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 35 0
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 15 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 55
+  LogEntries:
+  - Flags: []
+    Entry: Return to Phylacus
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E3C0000006E01000000A3110F0003007201006E410000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZStatioFindFriendQuest 60 1
+
+        SetObjectiveDisplayed AZStatioFindFriendQuest 65 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xAD11050001007203001C0001007711070001006E2C0100001600100001000C00207203007301002034203D3D1C00020021100200000019000000
+      SourceCode: >-
+        CompleteAllObjectives AZStatioFindFriendQuest
+
+        Player.RewardXP 300
+
+        if AZStatioFindFriendQuest.AutonousStatus == 4
+        	AZBigStopAutonousREF.enable
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EAE6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00DE1A:NovaArizona.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0x1C0001002210020000001C0002002210020000001C0003002210020000001C0004002210020000001C0005002210020000001C000600221002000000
+      SourceCode: >-
+        AZLGVDolanNoteREF.disable
+
+        AZLGVDolanBasketREF.disable
+
+        AZLGVCampfireActivatorREF.disable
+
+        AZARSMarkerREF.disable
+
+        AZLGVNewtActivatorREF.disable
+
+        AZLGVNewtBasementDoorREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B5:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6B0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E6F7:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E81F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E821:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Walk around Solitare and find Autonous. Inform him that Phylacus is wondering if he is okay.
+- Index: 10
+  Description: Return to Phylacus to inform him that Autonous is not at Solitare.
+  Targets:
+  - Target: 00DF95:NovaArizona.esm
+    Unused: 0x652F30
+- Index: 15
+  Description: Question Legionaries at Malpais to get a lead on where Autonous went.
+- Index: 20
+  Description: (Optional) Follow the lead to the camp at Hangman's Point.
+  Targets:
+  - Target: 00E6B0:NovaArizona.esm
+    Unused: 0x656D2C
+- Index: 25
+  Description: (Optional) Follow the lead to Dolan Springs.
+  Targets:
+  - Target: 020BB3:NovaArizona.esm
+    Unused: 0x1A2529
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 020BB3:NovaArizona.esm
+  - Target: 00E6B6:NovaArizona.esm
+    Unused: 0x1A2529
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 020BB3:NovaArizona.esm
+  - Target: 00E6B5:NovaArizona.esm
+    Unused: 0x1A2529
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 020BB3:NovaArizona.esm
+- Index: 30
+  Description: (Optional) Follow the lead to the Light Aircraft Station.
+- Index: 35
+  Description: (Optional) Follow the lead to White Hills.
+- Index: 40
+  Description: (Optional) Meet with Autonous's contact from Haven.
+  Targets:
+  - Target: 01BBA7:NovaArizona.esm
+    Unused: 0x65102A
+    Conditions:
+    - CompareOperator: GreaterThanOrEqualTo
+      Flags:
+      - OR
+      Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetGlobalValue
+      FirstParameter: 100813723
+    - Flags:
+      - OR
+      Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetInCell
+      FirstParameter: 100763959
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - Flags:
+      - OR
+      Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetInCell
+      FirstParameter: 100697701
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - Flags:
+      - OR
+      Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetInCell
+      FirstParameter: 100697413
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+- Index: 50
+  Description: Inform Phylacus that you cannot find Autonous.
+  Targets:
+  - Target: 00DF95:NovaArizona.esm
+    Unused: 0x1A2529
+- Index: 55
+  Description: Find a lead on Autonous in Newt.
+  Targets:
+  - Target: 033B60:NovaArizona.esm
+    Unused: 0x821D26
+  - Target: 00E821:NovaArizona.esm
+    Unused: 0x821D26
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 00E821:NovaArizona.esm
+  - Target: 005A07:NovaArizona.esm
+    Unused: 0x821D26
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetInCell
+      FirstParameter: 100686339
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+- Index: 65
+  Description: Return to Phylacus.
+  Targets:
+  - Target: 00DF95:NovaArizona.esm
+    Unused: 0x202F22
+- Index: 60
+  Description: (Optional) Lie to Phylacus that cannot find Autonous.
+  Targets:
+  - Target: 00DF95:NovaArizona.esm
+    Unused: 0x2E102B
+- Index: 26
+  Description: Follow the lead to the border.
+  Targets:
+  - Target: 00E6B7:NovaArizona.esm
+    Unused: 0x142925

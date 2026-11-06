@@ -1,0 +1,32 @@
+FormKey: 01C223:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It doesn't matter. As long as you recover their armor plates. Only those are needed for the death rituals.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+Choices:
+- 01C1F6:NovaArizona.esm
+- 01C1F7:NovaArizona.esm
+- 01C1F8:NovaArizona.esm
+- 01C1F9:NovaArizona.esm
+- 01C1FA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So... what do I do with their bodies? Should I bury them?

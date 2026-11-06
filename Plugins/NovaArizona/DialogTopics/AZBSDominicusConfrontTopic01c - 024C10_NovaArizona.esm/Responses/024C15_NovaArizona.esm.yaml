@@ -1,0 +1,46 @@
+FormKey: 024C15:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: That's true, but this is essentially my domain. Caesar has entrusted with full powers over who lives and who dies.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x652074
+    UseEmotionAnimation: True
+    Unused3: 0x696E69
+  ResponseText: Do you have a good reason for killing not a valued Frumentarius, but also a representative of one of the Legion's most trusted allies.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+Choices:
+- 024C10:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Hey, hey, hey, wait. I have the Mark of Caesar. Do you really want to piss off the people upstairs?

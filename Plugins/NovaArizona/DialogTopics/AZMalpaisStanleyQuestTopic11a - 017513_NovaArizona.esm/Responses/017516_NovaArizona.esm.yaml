@@ -1,0 +1,62 @@
+FormKey: 017516:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: Okay. The Legion confiscated all of my weapons when I came here. I'm going to need an escort to Solitare. Don't worry. I can keep up.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C000100211002000000
+  SourceCode: AZBigStopInterviewTentEnablerMarkerREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0187FF:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E460000001111110003006E000000006E000000006E010000001C0001005E1000001C0002009E10050001007204001C0001009E1005000100720500
+  SourceCode: >-
+    setstage AZMalpaisJournalistQuest 70
+
+    EnableFastTravel 0 0 1
+
+
+    AZStanleyHartfordREF.evp
+
+    player.moveto AZMalpaisJournalistTeleportMarkerREF02
+
+    AZStanleyHartfordREF.moveto AZMalpaisJournalistTeleportMarkerREF
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017613:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017612:NovaArizona.esm
+Prompt: Yes.

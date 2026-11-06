@@ -1,0 +1,37 @@
+FormKey: 019A03:NovaArizona.esm
+EditorID: AZLegionVendorBarterInitQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 1
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000003900000016000A00020006002058A81400009A270F0003007201006E010000006E1D04000039150C00010B005601000001004201001900000011000000
+  SourceCode: >-
+    scn AZLegionVendorBarterInitQuestScript
+
+
+
+    int bDoOnce
+
+
+
+    BEGIN GameMode
+
+    	if GetGameRestarted
+    		SetOnMenuOpenEventHandler AZLegionVendorBarterMenuOpenUDF 1 1053
+    		bDoOnce = 1
+    	endif
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x40D729120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F72794B6C6178
+    Name: bDoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199FB:NovaArizona.esm

@@ -1,0 +1,42 @@
+FormKey: 037E33:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Fear
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{dramatic and fake performance, last-ditch attempt to save your own skin}Oh, nothing, this Legionary is just mistaken. He's accusing me of letting the slave go on purpose, but you know I wouldn't do that, right?"
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 05DB20:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's exactly as I said - the slave poisoned us and slipped away. Right? Tell him!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037E16:NovaArizona.esm
+- 037E17:NovaArizona.esm
+- 037E18:NovaArizona.esm
+- 037E19:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie.> Right, the slave. What seems to be the problem?

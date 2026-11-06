@@ -1,0 +1,31 @@
+FormKey: 03B849:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x766572
+  ResponseText: You know Him already. Call Him what you like. Jesus. Mars. Atom. He is known as all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B83E:NovaArizona.esm
+- 03B840:NovaArizona.esm
+- 03B848:NovaArizona.esm
+- 03B84A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Lord? Do you mean Mars?

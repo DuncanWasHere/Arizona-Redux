@@ -1,0 +1,81 @@
+FormKey: 024949:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZHavenAmelie
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -106, -174, 0
+  Second: 106, 174, 93
+Name: Amelie
+Model:
+  File: Creatures\QueenAnt\skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- antqueen.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 250
+  Level: 13
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021471:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E2C7:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 086DBA:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Items:
+- Item:
+    Item: 06E8CE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0B8791:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2263747584
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 768
+Packages:
+- 025754:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 100
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 45
+  Strength: 8
+  Perception: 4
+  Endurance: 6
+  Charisma: 5
+  Intelligence: 5
+  Agility: 3
+  Luck: 5
+AttackReach: 200
+CombatStyle: 03A445:FalloutNV.esm
+BodyPartData: 02F86F:FalloutNV.esm
+TurningSpeed: 22.5
+BaseScale: 1
+FootWeight: 40
+ImpactMaterialType: OrganicBug
+SoundLevel: Normal
+InheritsSoundFrom: 0B037F:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm
+MajorFlags:
+- 0x80000

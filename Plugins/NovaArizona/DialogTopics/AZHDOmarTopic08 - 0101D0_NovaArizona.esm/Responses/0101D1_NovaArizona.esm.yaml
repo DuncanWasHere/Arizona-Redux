@@ -1,0 +1,48 @@
+FormKey: 0101D1:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742041
+    UseEmotionAnimation: True
+    Unused3: 0x726520
+  ResponseText: You gave me notions of being a hero. Pulled some refugees from Arizona to take advantage of the ceasefire. Missed the cutoff.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x742041
+    UseEmotionAnimation: True
+    Unused3: 0x726520
+  ResponseText: Now, the Legion is fully convinced I'm a subversive element. And the NCR wants me to spy on the refugees instead of letting me through.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x742041
+    UseEmotionAnimation: True
+    Unused3: 0x726520
+  ResponseText: So, once again, I'm stuck. It's your fault. Buzz off.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Huh? Why not?

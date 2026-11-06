@@ -1,0 +1,156 @@
+FormKey: 0293FF:NovaArizona.esm
+EditorID: AZChlorideAristophontesScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 15
+    VariableCount: 9
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000930000008016100002080056010000010007004CCE000000391513000112005604000009005800005727040000000080161700020F005604000009005604000003000407004CCE00000080161F0002170047070042060847070042120702560100000200150207004CCE000000BB1012000200FFFF0800560400000400FFFF0400420039150C00010B0056010000020042010011000000100008000A0036000000000080161B0002130058000022120B000100FFFF05005208001507004C1001000002100F000200FFFF0500520900FFFF040042011100000010000B001A00730000000100720A0039150D00010C00560400000300520B000039150D00010C00560400000400520C000039150D00010C00560400000500520D000039150D00010C00560400000600520E000039150C00010B005601000001004201003A151700011600520A00780000BA110B000100FFFF0500520F002811000000
+  SourceCode: >-
+    name AZChlorideAristophontesScript;
+
+
+    // Door Locking Stuff
+
+    int bInit;
+
+
+    int bLocked;
+
+    int bGetOut;
+
+
+    ref rPackage;
+
+    ref rCell;
+
+    ref rDoorREF;
+
+
+    ref rKey;
+
+
+    GameMode {
+        // Door Locking Stuff
+        if (bInit) {
+            ref rCurrentPackage = GetCurrentStablePackage();
+
+            if (rCurrentPackage == rPackage) {
+                // Have actor try to kick player out if they need to leave.
+                if (GameHour >= 6 && GameHour < 18 && !bGetOut) {
+                    SetPublic(rCell, 0);
+                    bGetOut = 1;
+                }
+            }
+        }
+    }
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZArizonaOpenSeason)) {
+            AddItem(AZScalpAristophontes, 1);
+        }
+    }
+
+
+    // This is only triggered by the door locking activator during initialization.
+
+    OnTriggerEnter::AZChlorideActivatorAristophontesDoorLockerREF {
+        rPackage = AZChlorideAristophontesHousePackage;
+        rCell = AZChlorideAristophontesHouseINT;
+        rDoorREF = AZChlorideAristophontesHouseDoorREF;
+
+        rKey = AZKeyChlorideAristophontes;
+
+        bInit = 1;
+
+        AZChlorideActivatorAristophontesDoorLockerREF.EnterTrigger(PlayerREF);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInit
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGetOut
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rPackage
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCell
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rDoorREF
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rKey
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCurrentPackage
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLocked
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rCurrentPackage_1
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 3
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 5
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 6
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000038:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293B5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293FA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B7D2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B7D4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C873:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013798:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B7D3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

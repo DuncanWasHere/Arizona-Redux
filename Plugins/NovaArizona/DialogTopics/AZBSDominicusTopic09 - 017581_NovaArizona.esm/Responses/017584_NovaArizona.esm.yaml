@@ -1,0 +1,44 @@
+FormKey: 017584:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: That's right. Which means you must be planning to undermine the Legion. Which is death.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C0001001610050001007202001C0002000F100900020010006E32000000
+  SourceCode: >-
+    AZBigStopDominicusRexREF.startcombat AZBSStenographusREF
+
+    AZBSStenographusREF.setav health 50
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175D8:NovaArizona.esm

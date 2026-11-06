@@ -1,0 +1,40 @@
+FormKey: 01CAE6:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Veteran? No. I'm just getting started.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100780699
+  SecondParameter: 4
+Choices:
+- 01CAAA:NovaArizona.esm
+- 01CAAB:NovaArizona.esm
+- 01CAAC:NovaArizona.esm
+- 01CAAD:NovaArizona.esm
+- 01CAAE:NovaArizona.esm
+- 01CAAF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you a Veteran Ranger?

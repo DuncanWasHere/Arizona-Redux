@@ -1,0 +1,67 @@
+FormKey: 008E82:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 008E4C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E73
+    UseEmotionAnimation: True
+    Unused3: 0x5C4E56
+  ResponseText: Haha! That was exhilarating. You're quite resourceful for a Profligate. You'd make a fine Legionary.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x732065
+    UseEmotionAnimation: True
+    Unused3: 0x726174
+  ResponseText: But my Decanus...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Fear
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6E6571
+  ResponseText: If I go back to him now, he'll have me beaten for deserting. Or crucified. To have been taken captive by a band of savages like that...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Fear
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x732065
+    UseEmotionAnimation: True
+    Unused3: 0x726174
+  ResponseText: Could you speak to my Decanus? We can tell him the truth together. He'll be more likely to believe me that way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691346
+Choices:
+- 00C31B:NovaArizona.esm
+- 00C31C:NovaArizona.esm
+- 00C31D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

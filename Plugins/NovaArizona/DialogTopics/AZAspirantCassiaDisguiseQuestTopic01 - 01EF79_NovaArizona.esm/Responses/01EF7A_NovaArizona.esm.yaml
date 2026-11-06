@@ -1,0 +1,50 @@
+FormKey: 01EF7A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: Noctis? He's one of the Legionaries, right? Sorry, but my duties prevent me from attending to whatever his needs may be.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100789367
+  SecondParameter: 13
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789367
+  SecondParameter: 160
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 160
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789367
+Choices:
+- 01EF7C:NovaArizona.esm
+- 01EF7D:NovaArizona.esm
+- 01EF7E:NovaArizona.esm
+- 01EF82:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Hey, there, I'm looking for someone to help treat Noctis.

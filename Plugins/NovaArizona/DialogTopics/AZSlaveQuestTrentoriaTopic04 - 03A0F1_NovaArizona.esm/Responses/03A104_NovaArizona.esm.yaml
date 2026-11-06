@@ -1,0 +1,72 @@
+FormKey: 03A104:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: It's well done, for degenerate art. What such an artist is doing around a mutant and what appears to be an unwashed raider is anyones guess.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696E67
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Truth be told there is something about this pair that seems familiar, I cannot shake the feeling that I have seen them before...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: What else?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHasNote
+  FirstParameter: 100901109
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756608
+Choices:
+- 03A0ED:NovaArizona.esm
+- 03A0EE:NovaArizona.esm
+- 03A0F1:NovaArizona.esm
+- 03A0F2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x7D1105000100720100
+  SourceCode: removenote AZSlaveQuestSketchNote
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0F5:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007305000B00207201007305002033202B
+  SourceCode: set AZMalpaisMarketSlaveQuest.iClue to AZMalpaisMarketSlaveQuest.iClue + 3
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm

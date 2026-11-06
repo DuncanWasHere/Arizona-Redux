@@ -1,0 +1,69 @@
+FormKey: 01EEAB:NovaArizona.esm
+EditorID: AZVanillaDialogueQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 9
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000CB00000016000F0008000B002058A81400002031203D3DEA31120004007201007202006E010000006E00000000EA31120004007203007202006E010000006E00000000EA31120004007204007202006E010000006E00000000EA31120004007205007202006E010000006E00000000EA31120004007206007202006E010000006E00000000EA31120004007207007202006E010000006E00000000EA31120004007205007202006E010000006E00000000EA31120004007208007209006E010000006E000000001900000011000000
+  SourceCode: >-
+    scn AZVanillaDialogueQuestScript
+
+
+    short RexReturnedtoCaesar
+
+
+    short DoOnce
+
+
+    BEGIN GameMode
+
+
+    if GetGameRestarted == 1
+    	DialogResponseAddRelatedTopic 00124a52 AZCaesarDialogueTopic01 1 0
+    	DialogResponseAddRelatedTopic 00124a53 AZCaesarDialogueTopic01 1 0
+    	DialogResponseAddRelatedTopic 00144610 AZCaesarDialogueTopic01 1 0
+    	DialogResponseAddRelatedTopic 00124a51 AZCaesarDialogueTopic01 1 0
+    	DialogResponseAddRelatedTopic 00144612 AZCaesarDialogueTopic01 1 0
+    	DialogResponseAddRelatedTopic 00152a22 AZCaesarDialogueTopic01 1 0
+    	DialogResponseAddRelatedTopic 00124a51 AZCaesarDialogueTopic01 1 0
+
+    	DialogResponseAddRelatedTopic 0016335b AZArcadeDialogueTopic01 1 0
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0x80DE29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x41627573655175
+    Name: DoOnce
+  - Data:
+      Index: 3
+      Unknown: 0xA08520120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6547616E6E6F6E
+    Name: RexReturnedtoCaesar
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 124A52:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEA4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 124A53:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 144610:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 124A51:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 144612:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 152A22:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16335B:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEAF:NovaArizona.esm

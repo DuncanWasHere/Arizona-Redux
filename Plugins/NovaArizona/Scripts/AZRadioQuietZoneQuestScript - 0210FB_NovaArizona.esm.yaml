@@ -1,0 +1,147 @@
+FormKey: 0210FB:NovaArizona.esm
+EditorID: AZRadioQuietZoneQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 1
+    RefCount: 6
+    VariableCount: 11
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161D000215005310006A6F686E6E796775697461726E76736507004C1002000076161800021000530B006A6970206C6E206E76736507004C621600001000060000008C020000801611000209005601000001001507004CE701000080161A0002120058000060120B000100FFFF050052040007004CDB01000039150C00010B0056010000010042010039151300011200560300000200580000FA31040000000039151F00011E005603000003005800004F1510000100FFFF0A0053050061727261790080161D0002150058000050150B0001080056030000020042000607004CC10100003D151400C1010000010F005603000008005603000002001A3915190001180056040000070056030000080053050076616C7565180080161A00021200560400000700780000D411040000002807004CBD0100006615110002080056030000030008005604000007003A151900011800560400000700780000D5110A000100FFFF0400420028382736000200FFFF04004203FFFF2C0053270023337C245549526164696F5369676E616C4C6F73747C416C6C207369676E616C73206C6F73742E3C1500003A151600011500520500780000D5110A000100FFFF0400420128811608000107004CE802000080162A0002220058000060120B000100FFFF0500520400155206007800002C110400000028150207004CE802000039150C00010B0056010000010042000080161D0002150058000050150B0001080056030000030042000607004CDB0200003D151400DB020000010F00560300000B005603000003001A39151900011800560400000A00560300000B0053050076616C756518003A151900011800560400000A00780000D5110A000100FFFF040042012838273B000200FFFF04004203FFFF3100532C0023317C244E56444C4330335549526164696F5369676E616C466F756E647C5369676E616C7320666F756E642E3C1500005315090001080056030000030011000000
+  SourceCode: >-
+    name AZRadioQuietZoneQuestScript;
+
+
+    int bPlayerInQuietZone;
+
+    array aGameRadios;
+
+    array aActiveRadios;
+
+
+    GameMode {
+        if (!bPlayerInQuietZone) {
+            if (IsPlayerInRegion(AZRadioQuietZoneRegion)) {
+                bPlayerInQuietZone = 1;
+
+                aGameRadios = GetAllGameRadios();
+                aActiveRadios = Ar_Construct("array");
+                array aRadio;
+                ref rRadio;
+
+                // Loop through each radio and check if it's active
+                if (ar_Size(aGameRadios) > 0) {
+                    for (array aRadio in aGameRadios) {
+                        rRadio = aRadio["value"];
+                        if (rRadio.GetBroadcastState()) {
+                            // Store active radios before disabling them
+                            ar_Append(aActiveRadios, rRadio);
+                            rRadio.SetBroadcastState(0);
+                            MessageExAlt(3, "#3|$UIRadioSignalLost|All signals lost.");
+                        }
+                    }
+                }
+
+                AZSMARTArrayEyebotRadioREF.SetBroadcastState(1);
+            }
+        } else {
+            if (!IsPlayerInRegion(AZRadioQuietZoneRegion) && !PlayerREF.IsInInterior()) {
+                bPlayerInQuietZone = 0;
+
+                array aRadio;
+                ref rRadio;
+
+                // Re-enable only the radios that were active before entering
+                if (ar_Size(aActiveRadios) > 0) {
+                    for (array aRadio in aActiveRadios) {
+                        rRadio = aRadio["value"];
+                        rRadio.SetBroadcastState(1);
+                        MessageExAlt(3, "#1|$NVDLC03UIRadioSignalFound|Signals found.");
+                    }
+                }
+
+                ar_Erase(aActiveRadios);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPlayerInQuietZone
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: aGameRadios
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: aActiveRadios
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rRadio
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: aRadio
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: __temp_aRadio_1
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rRadio_2
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: __temp_aRadio_3
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: __temp_aRadio_4
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rRadio_5
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: __temp_aRadio_6
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 10
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014460:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 021226:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

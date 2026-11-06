@@ -1,0 +1,33 @@
+FormKey: 020DE2:NovaArizona.esm
+FormVersion: 15
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x07A12B
+    UseEmotionAnimation: True
+    Unused3: 0x7FA12B
+  ResponseText: I do not need a common wastrel to explain the basics of logistics to me. Get to the point or I will nail you to a cross.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+Choices:
+- 024D9E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Consider how important it is to keep the soldiers fed.

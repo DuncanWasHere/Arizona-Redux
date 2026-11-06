@@ -1,0 +1,68 @@
+FormKey: 00ABEC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You ever hear of Big Spar Mine, wastelander? It's a big one, got passages that run all over like some kinda maze. They say no man's seen all of it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I learned of it on account of a dying man I met baking in the sun in the Utah years back. Told me he would reveal his treasure for a sip of water.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He gave me this, a map of the mine with an 'X' where he buried a cache of silver. I swear on my mama's mama that's what he said it was.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Now Slippery Will ain't who he used to be, so we'll need you to hike out there for the silver. Bring it back for 50 percent of the split. Sound fair?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+Choices:
+- 00ABD3:NovaArizona.esm
+- 00ABD4:NovaArizona.esm
+- 00ABD5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E000000006E01000000
+  SourceCode: setobjectivecompleted AZWhiteHillsMineDialogue 0 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+Prompt: Tell me more about the claim.

@@ -1,0 +1,58 @@
+FormKey: 006E3B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79696D
+  ResponseText: Ye referrin' to the Ranger? It is a Ranger, just s'ye know. I saw him staring down from the hills. I've seen me share o' Rangers.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x746F20
+    UseEmotionAnimation: True
+    Unused3: 0x616E67
+  ResponseText: But if ye want more, that'll cost ye.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100681665
+  SecondParameter: 50
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100681665
+  SecondParameter: 42
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100681665
+  SecondParameter: 42
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 006F6A:NovaArizona.esm
+Choices:
+- 006E3C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm looking for information on a bounty.

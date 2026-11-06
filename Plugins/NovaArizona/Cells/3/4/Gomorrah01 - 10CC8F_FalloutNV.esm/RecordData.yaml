@@ -1,0 +1,238 @@
+FormKey: 10CC8F:FalloutNV.esm
+MajorRecordFlagsRaw: 524288
+EditorID: Gomorrah01
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+Name: Gomorrah Main Level
+Flags:
+- IsInteriorCell
+Lighting:
+  AmbientColor: '#00371E18'
+  DirectionalColor: '#00333842'
+  FogColor: '#00292521'
+  FogNear: 64
+  FogFar: 6500
+  DirectionalRotationZ: 270
+  DirectionalFade: 1
+  FogClipDistance: 6600
+  FogPower: 0.75
+LightTemplate: Null
+LightInheritFlags:
+- AmbientColor
+- DirectionalColor
+- FogColor
+- FogNear
+- FogFar
+- ClipDistance
+WaterHeight: -2.1474836E+09
+WaterNoiseTexture: ''
+ImageSpace: 0A59AA:FalloutNV.esm
+EncounterZone: 10CC90:FalloutNV.esm
+AcousticSpace: 16B437:FalloutNV.esm
+MusicType: 090907:FalloutNV.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 01F702:NovaArizona.esm
+  MajorRecordFlagsRaw: 3072
+  EditorID: AZGOMChickHadleyREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  - InitiallyDisabled
+  Base: 01F701:NovaArizona.esm
+  Position: 6654.931, 1807.483, 6399.9995
+- MutagenObjectType: PlacedObject
+  FormKey: 01F705:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 13F412:FalloutNV.esm
+  Patrol:
+    IdleTime: 5
+    ScriptMarker: True
+    Idle: Null
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+    Topic: Null
+  Placement:
+    Position: 5342.589, 40.86714, 6400.7373
+    Rotation: 0, 0, 6.283185
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedObject
+  FormKey: 01FB2C:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 126695:FalloutNV.esm
+  TeleportDestination:
+    Door: 01FD50:NovaArizona.esm
+    Position: 2227.3271, 1695.4489, 7600.6597
+    Rotation: 0, 0, -4.1723254E-07
+  Ownership:
+    Owner: 10C6F8:FalloutNV.esm
+  Scale: 0.94
+  Placement:
+    Position: 7277.2524, 3029.5127, 6480.3325
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedObject
+  FormKey: 020F1E:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 000034:FalloutNV.esm
+  Patrol:
+    IdleTime: 0
+    ScriptMarker: True
+    Idle: Null
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C0001002210020000001C000200221002000000
+      SourceCode: >-
+        AZGOMTrooperTillisREF.disable
+
+        AZGOMTrooperPollockREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020F1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020ECC:NovaArizona.esm
+    Topic: Null
+  Placement:
+    Position: 1761.2549, 2416.4028, 6400
+    Rotation: 0, 0, 4.712389
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedNpc
+  FormKey: 020F8E:NovaArizona.esm
+  MajorRecordFlagsRaw: 3072
+  EditorID: AZGOMClaudeREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  - InitiallyDisabled
+  Base: 020F86:NovaArizona.esm
+  Position: 5555.062, 2670.9045, 6399.9995
+  Rotation: 0, 0, 0.7853972
+- MutagenObjectType: PlacedNpc
+  FormKey: 020F9B:NovaArizona.esm
+  MajorRecordFlagsRaw: 3072
+  EditorID: AZGOMOmertaAssassinREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  - InitiallyDisabled
+  Base: 020F9A:NovaArizona.esm
+  Position: 5102.466, -723.0748, 6375.3853
+  Rotation: 0, 0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 020F9C:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 00003B:FalloutNV.esm
+  Placement:
+    Position: 5104.635, -823.6308, 6375.3833
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedObject
+  FormKey: 020FA2:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: AZGOMClaudeAutotalkTriggerREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 020FA1:NovaArizona.esm
+  Primitive:
+    Bounds: 84.327095, 19.46814, 100.45789
+    Color: '#00CC4C33'
+    Unknown: 0.14901961
+    PrimitiveType: Box
+  BoundHalfExtents: 84.327095, 19.46814, 100.45789
+  Placement:
+    Position: 5633.616, 2887.0435, 6500.456
+  MajorFlags:
+  - Persistent
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 15FB06:FalloutNV.esm
+  FormVersion: 15
+  Base: 15FB59:FalloutNV.esm
+  Placement:
+    Position: 7049.312, 3015.9863, 6686.9985
+    Rotation: 0, 0, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 15FB23:FalloutNV.esm
+  MajorRecordFlagsRaw: 2048
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - InitiallyDisabled
+  Base: 156FBE:FalloutNV.esm
+  Placement:
+    Position: 7197.463, 2992.167, 6480.3325
+    Rotation: 0, 0, 0.100004174
+  MajorFlags:
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 15FB24:FalloutNV.esm
+  MajorRecordFlagsRaw: 2048
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - InitiallyDisabled
+  Base: 156FC1:FalloutNV.esm
+  Placement:
+    Position: 7203.762, 3102.066, 6480.3325
+    Rotation: 0, 0, 1.6708038
+  MajorFlags:
+  - InitiallyDisabled
+- MutagenObjectType: PlacedObject
+  FormKey: 01FF00:NovaArizona.esm
+  FormVersion: 15
+  Base: 17B364:FalloutNV.esm
+  Scale: 1.13
+  Placement:
+    Position: 7275.904, 3030.8643, 6462.5425
+    Rotation: 0, 0, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 01FF02:NovaArizona.esm
+  FormVersion: 15
+  Base: 01EF32:FalloutNV.esm
+  Placement:
+    Position: 7265.4897, 3111.8223, 6592.3784
+- MutagenObjectType: PlacedObject
+  FormKey: 01FF03:NovaArizona.esm
+  FormVersion: 15
+  Base: 0695BB:FalloutNV.esm
+  Radius: -69.52144
+  Placement:
+    Position: 7223.033, 3088.6284, 6588.9756
+- MutagenObjectType: PlacedObject
+  FormKey: 01FF04:NovaArizona.esm
+  FormVersion: 15
+  Base: 082F9D:FalloutNV.esm
+  Placement:
+    Position: 7275.5684, 3034.873, 6566.3726
+    Rotation: 1.5707959, -4.3711374E-08, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 020F9F:NovaArizona.esm
+  FormVersion: 15
+  Base: 020F9E:NovaArizona.esm
+  Primitive:
+    Bounds: 90.38428, 75.72551, 109.39752
+    Color: '#00CC4C33'
+    Unknown: 0.14901961
+    PrimitiveType: Box
+  BoundHalfExtents: 90.38428, 75.72551, 109.39752
+  Placement:
+    Position: 4868.7812, -507.91568, 6509.396
+MajorFlags:
+- CantWait

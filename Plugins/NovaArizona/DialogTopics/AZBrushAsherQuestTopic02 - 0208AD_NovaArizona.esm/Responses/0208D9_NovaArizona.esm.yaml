@@ -1,0 +1,63 @@
+FormKey: 0208D9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Callum? Well, I'll tell the truth, he was always a drag. Annoying everyone with his "Caesar demands this, Caesar demands that" nonsense.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We already know what Caesar demands, no need to tell us. Plus, he swore too much. I can't stand swearing. It's Profligate behavior.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100796570
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100796570
+  SecondParameter: 6
+Choices:
+- 0208AE:NovaArizona.esm
+- 0208AF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x551005000100720100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A760:NovaArizona.esm
+Prompt: I'm looking for a Legionary who's gone missing. Callum.

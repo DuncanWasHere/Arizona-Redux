@@ -1,0 +1,47 @@
+FormKey: 01EC6D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[SUCCESS] Glory, yes, but you must not forget that the body is a weapon. Cultivate it for that purpose, and you will be rewarded.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 8
+  Function: GetActorValue
+  FirstParameter: 7
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+Choices:
+- 01EC5D:NovaArizona.esm
+- 01EC5E:NovaArizona.esm
+- 01EC5F:NovaArizona.esm
+- 01EC61:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x7711070001006E32000000
+  SourceCode: rewardxp 50
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  CompiledScript: 0x7711070001006E32000000
+Prompt: The body is only as good as its ability to endure pain in the pursuit of glory.
+ActorValuePerk: 0003EA:FalloutNV.esm

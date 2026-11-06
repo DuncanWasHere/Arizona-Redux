@@ -1,0 +1,36 @@
+FormKey: 00ED68:NovaArizona.esm
+EditorID: AZBigStopErnestPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+BehaviorFlags:
+- HellosToPlayer
+- RandomConversations
+- AllowIdleChatter
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 11095
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 008EB5:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 6
+Duration: 15
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,35 @@
+FormKey: 00E55D:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't have a point. There is no point. You're really going to expect a ghoul to have a point?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+Choices:
+- 00E51B:NovaArizona.esm
+- 00E51C:NovaArizona.esm
+- 00E51D:NovaArizona.esm
+- 00E51E:NovaArizona.esm
+- 00E51F:NovaArizona.esm
+- 00E520:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So what is your point? The NCR and the Legion are both equally bad?

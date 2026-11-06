@@ -1,0 +1,30 @@
+FormKey: 00EB1B:NovaArizona.esm
+EditorID: AZNewtAspirantOriaScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A003A0000000000781008000200720100720200160014000100100020582212050001007203002030203D3D39100A0002007203006EFF0000001900000011000000
+  SourceCode: >-
+    scn AZNewtAspirantOriaScript
+
+
+    BEGIN OnDeath
+
+
+    SetEnemy VCaesarsLegionFaction AZNewtFaction
+
+    if GetQuestCompleted AZNewtFishingQuest == 0
+    	SetStage AZNewtFishingQuest 255
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C946:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm

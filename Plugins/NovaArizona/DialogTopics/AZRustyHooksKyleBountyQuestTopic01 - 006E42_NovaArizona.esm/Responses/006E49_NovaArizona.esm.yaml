@@ -1,0 +1,64 @@
+FormKey: 006E49:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 006E46:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: Because the Legion are bunch of assholes. I've never heard of a Legion deserter.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: If it is one, then how hard is it to send one guy to get one other guy? I'm keeping out of that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100681665
+  SecondParameter: 10
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100681665
+  SecondParameter: 3
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100681665
+Choices:
+- 008A82:NovaArizona.esm
+- 006E42:NovaArizona.esm
+- 013150:NovaArizona.esm
+- 0130E1:NovaArizona.esm
+- 0130E4:NovaArizona.esm
+- 0130E5:NovaArizona.esm
+- 0130E6:NovaArizona.esm
+- 0130E7:NovaArizona.esm
+- 0130EA:NovaArizona.esm
+- 0130EB:NovaArizona.esm
+- 0130ED:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+  SourceCode: ;
+Prompt: How come you haven't taken up this bounty?

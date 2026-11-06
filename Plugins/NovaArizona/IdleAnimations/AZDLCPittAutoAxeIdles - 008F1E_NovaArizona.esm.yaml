@@ -1,0 +1,55 @@
+FormKey: 008F1E:NovaArizona.esm
+EditorID: AZDLCPittAutoAxeIdles
+FormVersion: 15
+Model:
+  File: Characters\_Male\IdleAnims
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 19
+  Function: GetFurnitureMarkerID
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 598281
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 598280
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 100700006
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 100700009
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 100700010
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 100700007
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsCurrentFurnitureObj
+  FirstParameter: 100700008
+RelatedIdleAnimations:
+  Parent: 008F1D:NovaArizona.esm
+AnimationData:
+  AnimationGroupSection: SpecialIdle
+  MustReturnFile: True
+  Unused2: 97

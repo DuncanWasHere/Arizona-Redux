@@ -1,0 +1,36 @@
+FormKey: 004931:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652056
+    UseEmotionAnimation: True
+    Unused3: 0x203720
+  ResponseText: Did you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004AB8:NovaArizona.esm
+- 004AD4:NovaArizona.esm
+- 004AD9:NovaArizona.esm
+- 004ADA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He wanted me to blow up some stuff in a vault under the Fort.

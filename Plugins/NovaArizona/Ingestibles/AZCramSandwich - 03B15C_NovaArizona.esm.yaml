@@ -1,0 +1,59 @@
+FormKey: 03B15C:NovaArizona.esm
+EditorID: AZCramSandwich
+FormVersion: 15
+ObjectBounds:
+  First: -4, -4, -1
+  Second: 4, 4, 1
+Name:
+  TargetLanguage: English
+  Value: Cram Sandwich
+Model:
+  File: Clutter\Food\MirelurkCake01.NIF
+Icons:
+  LargeIconFilename: Interface\Icons\PipboyImages\Items\items_crab_cake.dds
+EquipmentType: Food
+Weight: 1
+Value: 5
+Flags:
+- NoAutoCalc
+- FoodItem
+- 0x100
+- 0x400
+- 0x800
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x40000
+- 0x80000
+- 0x400000
+- 0x800000
+- 0x1000000
+- 0x4000000
+- 0x8000000
+- 0x40000000
+- 0x80000000
+- 0x0
+ConsumeSound: 02D48D:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 25
+    ActorValue: Health
+- BaseEffect: 020516:FalloutNV.esm
+  Data:
+    Magnitude: 3
+    ActorValue: RadLevel
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 120
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 031023:FalloutNV.esm
+  Data:
+    Magnitude: 20
+    Duration: 240
+    ActorValue: CarryWeight

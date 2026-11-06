@@ -1,0 +1,36 @@
+FormKey: 00ABDB:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 00A4A5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Howdy there, newcomer. The name's Slippery Will, pleased to make your acquaintance.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+Choices:
+- 00ABD7:NovaArizona.esm
+- 00ABCD:NovaArizona.esm
+- 00ABCE:NovaArizona.esm
+- 00ABCF:NovaArizona.esm
+- 00ABD6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,80 @@
+FormKey: 013CC2:NovaArizona.esm
+EditorID: AZWolfDenSheWolf
+FormVersion: 15
+ObjectBounds:
+  First: -29, -62, 0
+  Second: 29, 62, 70
+Name: She-Wolf
+Model:
+  File: Creatures\Dog\Skeleton.nif
+UnarmedAttackEffect: 11D9ED:FalloutNV.esm
+UnarmedAttackAnimation: AttackLeft
+Models:
+- azwildmongrel.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 50
+  Level: 25
+  SpeedMultiplier: 120
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - ActorEffectList
+  - AIPackages
+  - Inventory
+  - Script
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021475:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E26A:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 1768B3:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 11ECE6:FalloutNV.esm
+Script: 1252C0:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2163139328
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 1024
+Packages:
+- 025482:FalloutNV.esm
+- 025754:FalloutNV.esm
+Data:
+  CombatSkill: 90
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 300
+  Damage: 100
+  Strength: 9
+  Perception: 10
+  Endurance: 8
+  Charisma: 1
+  Intelligence: 1
+  Agility: 9
+  Luck: 5
+AttackReach: 68
+CombatStyle: 03A374:FalloutNV.esm
+BodyPartData: 02931E:FalloutNV.esm
+TurningSpeed: 120
+BaseScale: 1.55
+FootWeight: 1
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03E632:FalloutNV.esm
+ImpactDataset: 07E640:FalloutNV.esm

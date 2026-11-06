@@ -1,0 +1,601 @@
+FormKey: 033AC6:NovaArizona.esm
+EditorID: AZNewtFishingQuest
+FormVersion: 15
+Script: 033AC5:NovaArizona.esm
+Name: Wrong Lake to Catch a Fish
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Unused: 27756
+  QuestDelay: 30
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Quest start
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000A3110F0003007201006E060000006E01000000A3110F0003007201006E070000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZNewtFishingQuest 5 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 6 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 7 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 6
+  LogEntries:
+  - Flags: []
+    Entry: Union Mine discussed
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x5510050001007202001C000100211002000000A3110F0003007203006E0A0000006E010000001600210001001D0020720400582E1000002030203D3D207205007307002030203D3D202626A3110F0003007203006E0B0000006E0100000019000000
+      SourceCode: >-
+        ShowMap AZUnionMineMapMarkerREF
+
+        AZNewtFishingQuestUnionMineLockerREF.enable
+
+        SetObjectiveDisplayed AZNewtFishingQuest 10 1
+
+        if AZLakeMeadAmmonRaREF.GetDead == 0 && AZFreeformLakeMead.AmmonRaHostile == 0
+        	SetObjectiveDisplayed AZNewtFishingQuest 11 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 023736:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 023042:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EB04:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033ACC:NovaArizona.esm
+- Index: 7
+  LogEntries:
+  - Flags: []
+    Entry: Making the deal with Ammon-Ra
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0B0000006E01000000
+      SourceCode: SetObjectiveCompleted AZNewtFishingQuest 11 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 8
+  LogEntries:
+  - Flags: []
+    Entry: Complete the deal with Ammon-Ra
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0C0000006E01000000A3110F0003007201006E0D0000006E01000000361005000100720200
+      SourceCode: >-
+        SetObjectiveCompleted AZNewtFishingQuest 12 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 13 1
+
+        StartQuest AZNewtFishingQuestTimer01
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3B:NovaArizona.esm
+- Index: 9
+  LogEntries:
+  - Flags: []
+    Entry: Really complete the deal with Ammon-Ra
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0D0000006E01000000A3110F0003007201006E0E0000006E01000000A3110F0003007201006E0A0000006E00000000
+      SourceCode: >-
+        SetObjectiveCompleted AZNewtFishingQuest 13 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 14 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 10 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Legion dynamite
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x15000A0072010073060002002031A2110F0003007201006E050000006E01000000A2110F0003007201006E070000006E01000000371005000100720200A3110F0003007201006E060000006E00000000A3110F0003007201006E0A0000006E00000000A3110F0003007201006E0B0000006E00000000A3110F0003007201006E0C0000006E00000000A3110F0003007201006E0D0000006E00000000A3110F0003007201006E0E0000006E00000000A3110F0003007201006E0F0000006E01000000
+      SourceCode: >-
+        Set AZNewtFishingQuest.DynamiteMethod to 1
+
+        SetObjectiveCompleted AZNewtFishingQuest 5 1
+
+        SetObjectiveCompleted AZNewtFishingQuest 7 1
+
+        StopQuest AZNewtFishingQuestTimer01
+
+        SetObjectiveDisplayed AZNewtFishingQuest 6 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 10 0 
+
+        SetObjectiveDisplayed AZNewtFishingQuest 11 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 12 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 13 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 14 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3B:NovaArizona.esm
+- Index: 19
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0x3610050001007202003710050001007203001600100002000C00207204007309002030203D3D1C00010002100A0002007205006EC80000003B12130003007206006E010000007A00000000000010401800100002000C00207204007309002031203D3D1C00010002100A0002007205006EFA0000003B12130003007206006E010000007A000000000000104019000000A2110F0003007204006E0F0000006E01000000A3110F0003007204006E140000006E01000000
+      SourceCode: >-
+        StartQuest AZNewtFishingQuestTimer02
+
+        StopQuest AZNewtFishingQuestTimer01
+
+        if AZNewtFishingQuest.BeccaPay == 0
+        	Player.AddItem Caps001 200
+        	AddReputationExact AZRepNewt 1 4
+        elseif AZNewtFishingQuest.BeccaPay == 1
+        	Player.AddItem Caps001 250
+        	AddReputationExact AZRepNewt 1 4
+        endif
+
+        SetObjectiveCompleted AZNewtFishingQuest 15 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00000F:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004368:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: Dynamite obtained, timer for the first part starts
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0x3610050001007202003710050001007203001600100002000C00207204007309002030203D3D1C00010002100A0002007205006EC80000003B12130003007206006E010000007A00000000000014401800100002000C00207204007309002031203D3D1C00010002100A0002007205006EFA0000003B12130003007206006E010000007A000000000000144019000000A2110F0003007204006E0F0000006E01000000A3110F0003007204006E140000006E01000000
+      SourceCode: >-
+        StartQuest AZNewtFishingQuestTimer02
+
+        StopQuest AZNewtFishingQuestTimer01
+
+        if AZNewtFishingQuest.BeccaPay == 0
+        	Player.AddItem Caps001 200
+        	AddReputationExact AZRepNewt 1 5
+        elseif AZNewtFishingQuest.BeccaPay == 1
+        	Player.AddItem Caps001 250
+        	AddReputationExact AZRepNewt 1 5
+        endif
+
+        SetObjectiveCompleted AZNewtFishingQuest 15 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00000F:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004368:NovaArizona.esm
+- Index: 49
+  LogEntries:
+  - Flags: []
+    Entry: Timer for the second part concludes
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000A2110F0003007202006E140000006E01000000A3110F0003007202006E1E0000006E01000000
+      SourceCode: >-
+        AZNewtBattleMarkerREF.enable
+
+        SetObjectiveCompleted AZNewtFishingQuest 20 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 30 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EB0F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Timer for the second part concludes
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E1E0000006E0100000015000A00720100730E0002002031A3110F0003007201006E320000006E01000000A3110F0003007201006E3C0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZNewtFishingQuest 30 1
+
+        Set AZNewtFishingQuest.DoorsUnlocked to 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 50 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 60 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E3C0000006E01000000A3110F0003007201006E320000006E00000000A3110F0003007201006E410000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZNewtFishingQuest 60 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 50 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 65 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Completed by leaving
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xAD11050001007202001C0001007711070001006EFA0000001500070047030002002031
+      SourceCode: >-
+        CompleteAllObjectives AZNewtFishingQuest
+
+        Player.RewardXP 250
+
+        Set AZStoryEventNewt to 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC7:NovaArizona.esm
+- Index: 104
+  LogEntries:
+  - Flags: []
+    Entry: Legion deal negotiated; locks player out of the hive
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E320000006E01000000A3110F0003007201006E3C0000006E00000000A3110F0003007201006E410000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZNewtFishingQuest 50 1
+
+        SetObjectiveDisplayed AZNewtFishingQuest 60 0
+
+        SetObjectiveDisplayed AZNewtFishingQuest 65 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+- Index: 105
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Completed by Legion
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xAD11050001007203001C0001007711070001006EFA0000001C0002002210020000001500070047040002002032
+      SourceCode: >-
+        CompleteAllObjectives AZNewtFishingQuest
+
+        Player.RewardXP 250
+
+        AZNewtBattleMarkerREF.disable
+
+        Set AZStoryEventNewt to 2
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EB0F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC7:NovaArizona.esm
+- Index: 110
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Completed by destroying the Lakelurks
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0xAD11050001007203001C0001007711070001006EFA0000001C00020022100200000015000700470400020020333B12130003007205006E010000007A00000000000020401C00010002100A0002007206006EC80000001C00010002100A0002007207006E0F000000
+      SourceCode: >-
+        CompleteAllObjectives AZNewtFishingQuest
+
+        Player.RewardXP 250
+
+        AZNewtBattleMarkerREF.disable
+
+        Set AZStoryEventNewt to 3
+
+        AddReputationExact AZRepNewt 1 8
+
+        Player.AddItem Caps001 200
+
+        Player.AddItem MoneyLegion1 15
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EB0F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033AC7:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004368:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00000F:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x371005000100720100371005000100720200
+      SourceCode: >-
+        StopQuest AZNewtFishingQuestTimer01
+
+        StopQuest AZNewtFishingQuestTimer02
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 033B3C:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Secure a supply of dynamite for Newt.
+- Index: 6
+  Description: (Optional) Collect 100 sticks of dynamite for Becca.
+  Targets:
+  - Target: 019C13:NovaArizona.esm
+    Unused: 0x22102B
+    Conditions:
+    - CompareOperator: GreaterThanOrEqualTo
+      Fluff: 0x000000
+      ComparisonValue: 100
+      Function: GetItemCount
+      FirstParameter: 762099
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+- Index: 7
+  Description: (Optional) Secure a supply of dynamite from the Legion.
+  Targets:
+  - Target: 00C44B:NovaArizona.esm
+    Unused: 0x21102B
+- Index: 10
+  Description: (Optional) Steal the dynamite supply used by the raiders at Union Mine.
+  Targets:
+  - Target: 023736:NovaArizona.esm
+    Unused: 0x8B052D
+    Conditions:
+    - CompareOperator: NotEqualTo
+      Fluff: 0x000000
+      Function: GetItemCount
+      FirstParameter: 762099
+      RunOnType: Reference
+      Reference: 023736:NovaArizona.esm
+- Index: 11
+  Description: (Optional) Find someone willing to negotiate with the raiders at Union Mine.
+  Targets:
+  - Target: 00EB04:NovaArizona.esm
+    Unused: 0x792F30
+- Index: 12
+  Description: (Optional) Complete the deal with Ammon-Ra.
+  Targets:
+  - Target: 00EB04:NovaArizona.esm
+    Unused: 0x151428
+- Index: 13
+  Description: Give Ammon-Ra one day to negotiate with the raiders.
+- Index: 14
+  Description: Return to Ammon-Ra.
+  Targets:
+  - Target: 00EB04:NovaArizona.esm
+    Unused: 0x5C2F22
+- Index: 15
+  Description: Return to Becca with the dynamite.
+  Targets:
+  - Target: 019C13:NovaArizona.esm
+    Unused: 0xC91D26
+- Index: 16
+  Description: Inform Becca that the Legion will be supplying dynamite to Newt.
+  Targets:
+  - Target: 019C13:NovaArizona.esm
+    Unused: 0x792F30
+- Index: 20
+  Description: Return to Newt in two days.
+- Index: 30
+  Description: Two days have passed. See how Newt is doing.
+  Targets:
+  - Target: 019C13:NovaArizona.esm
+    Unused: 0x102529
+- Index: 50
+  Description: OR Convince the Legion to protect Newt.
+  Targets:
+  - Target: 00C44B:NovaArizona.esm
+    Unused: 0xCB1527
+- Index: 60
+  Description: Clear out the main Lakelurk hive under Lake Mead.
+  Targets:
+  - Target: 039375:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 039375:NovaArizona.esm
+  - Target: 0388E0:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0388E0:NovaArizona.esm
+  - Target: 03933E:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 03933E:NovaArizona.esm
+  - Target: 039394:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 039394:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 039394:NovaArizona.esm
+  - Target: 039395:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 039395:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 039395:NovaArizona.esm
+  - Target: 039396:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 039396:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 039396:NovaArizona.esm
+  - Target: 038FF9:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038FF9:NovaArizona.esm
+  - Target: 038B88:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038B88:NovaArizona.esm
+  - Target: 038BA3:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038BA3:NovaArizona.esm
+  - Target: 038C6E:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038C6E:NovaArizona.esm
+  - Target: 038C6F:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038C6F:NovaArizona.esm
+  - Target: 038CDA:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038CDA:NovaArizona.esm
+  - Target: 038FF8:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 038FF8:NovaArizona.esm
+  - Target: 03933D:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 03933D:NovaArizona.esm
+  - Target: 0388E1:NovaArizona.esm
+    Unused: 0x7B102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 0388E1:NovaArizona.esm
+- Index: 65
+  Description: Return to Becca.
+  Targets:
+  - Target: 019C13:NovaArizona.esm
+    Unused: 0x5A2F22

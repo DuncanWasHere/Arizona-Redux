@@ -1,0 +1,39 @@
+FormKey: 013D83:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20415A
+    UseEmotionAnimation: True
+    Unused3: 0x656769
+  ResponseText: Only in the sense that they held the dam, but they were too weak to pursue, and they are too weak to hold it now
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20415A
+    UseEmotionAnimation: True
+    Unused3: 0x656769
+  ResponseText: When Lanius is ready, we shall march on the dam and Vegas.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D81:NovaArizona.esm
+- 013D82:NovaArizona.esm
+- 013E1B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Didn't the NCR win that battle?

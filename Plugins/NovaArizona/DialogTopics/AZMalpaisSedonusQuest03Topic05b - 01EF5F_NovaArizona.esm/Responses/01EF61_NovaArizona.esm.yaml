@@ -1,0 +1,94 @@
+FormKey: 01EF61:NovaArizona.esm
+FormVersion: 15
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: Don't fucking interrupt me!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x713901
+  ResponseText: Of course I did! I had to do something! Was I to wither away and die so that I could no longer serve my lord? Of course not.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: The Buffout made me so strong, just like the olden days. But, it didn't matter. Caesar did not choose me. He chose the mask, Lanius.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696421
+    UseEmotionAnimation: True
+    Unused3: 0x642074
+  ResponseText: I told Caesar of my sacrifice for him. What I had done to my body. He was angry. He threatened to behead me if I didn't clean up.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: I kicked the Buffout. I killed my drug runner, and now?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: These accursed soda bottles. I needed them to help me focus, but now I can't focus without them. I recognize the signs.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x427566
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: So, I ordered my adjutant to bar any new shipments. He's dead now.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 8
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: There is a Profligate drug called Fixer. We used it before the decimations. Find some and return to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 01EF73:NovaArizona.esm
+- 01EF75:NovaArizona.esm
+- 01EF76:NovaArizona.esm
+- 01EF77:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you blame yourself for the Legion losing at Hoover Dam?

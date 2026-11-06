@@ -1,0 +1,69 @@
+FormKey: 0297EC:NovaArizona.esm
+EditorID: AZDeathclawPromontoryDeathclawChameleonAlpha
+FormVersion: 15
+ObjectBounds:
+  First: -50, -95, 0
+  Second: 50, 95, 152
+Name: Chameleon Deathclaw Alpha Male
+Model:
+  File: Creatures\DeathClaw\Skeleton.nif
+ActorEffects:
+- 12B894:FalloutNV.esm
+UnarmedAttackEffect: 0EB40E:FalloutNV.esm
+UnarmedAttackAnimation: AttackLeftPower
+Models:
+- deathclaw_am_g.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  Fatigue: 900
+  Level: 25
+  SpeedMultiplier: 150
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 021474:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E274:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 05329F:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Script: 144F2A:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: 100
+  Mood: 842291712
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: Abomination
+  CombatSkill: 85
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 900
+  Damage: 350
+  Strength: 10
+  Perception: 10
+  Endurance: 6
+  Charisma: 2
+  Intelligence: 4
+  Agility: 5
+  Luck: 10
+AttackReach: 255
+CombatStyle: 03BC67:FalloutNV.esm
+BodyPartData: 02026E:FalloutNV.esm
+TurningSpeed: 100
+BaseScale: 1.25
+FootWeight: 15
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 0A5D40:FalloutNV.esm
+ImpactDataset: 0553E0:FalloutNV.esm

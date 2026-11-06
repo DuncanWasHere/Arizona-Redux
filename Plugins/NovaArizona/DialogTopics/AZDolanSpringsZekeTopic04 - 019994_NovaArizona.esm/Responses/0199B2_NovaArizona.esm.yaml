@@ -1,0 +1,36 @@
+FormKey: 0199B2:NovaArizona.esm
+FormVersion: 15
+Quest: 01998E:NovaArizona.esm
+PreviousInfo: 019998:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Still looking for someone to optimize the windmills.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100768142
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768140
+Choices:
+- 0199B0:NovaArizona.esm
+- 0199B9:NovaArizona.esm
+- 0199BA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm looking for work.

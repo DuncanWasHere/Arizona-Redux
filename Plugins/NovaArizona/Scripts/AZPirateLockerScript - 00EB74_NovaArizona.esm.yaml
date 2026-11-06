@@ -1,0 +1,65 @@
+FormKey: 00EB74:NovaArizona.esm
+EditorID: AZPirateLockerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B0002003700000001007201001600100001000C00207202007308002030203D3D59100B0001007203000000000000001700020001000D100200000019000000110000001000060000008A00000015000B00730100060020581F10000016000D0003000900207301002031203D3D1C0001004912140004007204006E010000006E000000006E2800000015000A0072020073080002002031150007007301000200203019000000160017000100130020720400582F10050001007205002030203D3D15000A00720200730800020020301900000011000000
+  SourceCode: >-
+    scn AZPirateLockerScript
+
+
+    int Button
+
+
+    BEGIN OnActivate player
+
+    if AZFreeformLakeMead.GunsStored == 0
+    	ShowMessage AZPirateLockerMessage
+    else
+    	Activate
+    endif
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+
+    Set Button to GetButtonPressed
+
+    if Button == 1
+    	Player.RemoveAllTypedItems AZPirateLockerREF 1 0 40
+    	Set AZFreeformLakeMead.GunsStored to 1
+    	Set Button to 0
+    endif
+
+
+    if AZPirateLockerREF.GetItemCount NVAllWeapons == 0
+    	Set AZFreeformLakeMead.GunsStored to 0
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0DE29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6775654875
+    Name: Button
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033ACC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB76:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 162313:FalloutNV.esm

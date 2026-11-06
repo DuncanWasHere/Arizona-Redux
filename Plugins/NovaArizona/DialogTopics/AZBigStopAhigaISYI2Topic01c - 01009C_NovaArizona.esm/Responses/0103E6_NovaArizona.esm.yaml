@@ -1,0 +1,93 @@
+FormKey: 0103E6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 0100E9:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Indeed. You've done a decent job.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: I'm loath to admit it, but the Confederacy is the most united it's been in decades. All of our nations have come together.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: A common enemy, a common plan, a common goal. And it turns out that we Diné didn't need to lead the charge.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: The future is... well, I don't want to make predictions, but I know we can win. We'll just have to see at what cost.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x2E2E2E
+    UseEmotionAnimation: True
+    Unused3: 0x68742E
+  ResponseText: I thank you for your assistance in this matter. I want you to take this reward.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x2E2E2E
+    UseEmotionAnimation: True
+    Unused3: 0x68742E
+  ResponseText: You've earned it, and should you find yourself in Window Rock, you'll always be welcome.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  ComparisonValue: 4
+  Function: GetQuestVariable
+  FirstParameter: 100728864
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100728864
+  SecondParameter: 1
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E64000000
+  SourceCode: SetStage AZBigStopAhigaQuest02 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010020:NovaArizona.esm
+Prompt: You've got your explosives at least.

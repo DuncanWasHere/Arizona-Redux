@@ -1,0 +1,77 @@
+FormKey: 010204:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01028C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79496D
+  ResponseText: You stupid motherfucker! This is your fault! You just had to stick up for the savages! Just had to bring your Follower bullshit to my dam!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79496D
+  ResponseText: Get the fuck off my checkpoint!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 1253129
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 1253128
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100729231
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100729231
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 61
+  Function: GetGlobalValue
+  FirstParameter: 1149628
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x160014000100100020582212050001007201002030203D3D39100A0002007201006E2800000019000000
+  SourceCode: >+
+    if GetQuestCompleted AZDamNQuest3 == 0
+
+    setstage AZDamNQuest3 40
+
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm

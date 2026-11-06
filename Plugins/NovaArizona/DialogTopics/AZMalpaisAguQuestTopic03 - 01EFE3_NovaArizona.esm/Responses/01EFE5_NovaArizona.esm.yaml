@@ -1,0 +1,72 @@
+FormKey: 01EFE5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x004469
+    UseEmotionAnimation: True
+    Unused3: 0x654372
+  ResponseText: "[SUCCEEDED] Oh, I see. Well, if that's the case, then I'll be sure to bring everyone for that."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 1187823
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789369
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 30
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789369
+  SecondParameter: 30
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+Choices:
+- 01EE83:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730D0002002031
+  SourceCode: Set AZBigStopChildSoldierQuest.AguSpeech to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007202006E1E0000006E01000000A3110F0003007202006E320000006E010000001C0001007711070001006E3C000000
+  SourceCode: >-
+    SetObjectiveCompleted AZBigStopChildSoldierQuest 30 1
+
+    SetObjectiveDisplayed AZBigStopChildSoldierQuest 50 1
+
+    Player.RewardXP 60
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: Caesar is sending you boys on a super secret mission, and he sent me to tell you.
+ActorValuePerk: 0004BB:FalloutNV.esm

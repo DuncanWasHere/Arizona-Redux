@@ -1,0 +1,63 @@
+FormKey: 002D62:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x63746F
+    UseEmotionAnimation: True
+    Unused3: 0x65204C
+  ResponseText: Ah, you're new.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x63746F
+    UseEmotionAnimation: True
+    Unused3: 0x65204C
+  ResponseText: Kam yuu, fresh face.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F72
+  ResponseText: What do you need? Are you hurt?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: I'm afraid you'll need to wait. I have other patients.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100797750
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 002D63:NovaArizona.esm
+- 0050EC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

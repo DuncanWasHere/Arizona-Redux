@@ -1,0 +1,42 @@
+FormKey: 01FABA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7420
+    UseEmotionAnimation: True
+    Unused3: 0x6D696C
+  ResponseText: Not if I take you with me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657273
+    UseEmotionAnimation: True
+    Unused3: 0x206869
+  ResponseText: "[Justice tampers with his collar, triggering it's detonator.]"
+  ScriptNotes: ''
+  Edits: ''
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001008B100F0003007201006E010000006E00000000
+  SourceCode: AZPondDavidREF.Kill AZPondDavidREF 1 0;
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00BF31:NovaArizona.esm
+Prompt: Thanks for admitting that to me, you'll be on a cross in no time.

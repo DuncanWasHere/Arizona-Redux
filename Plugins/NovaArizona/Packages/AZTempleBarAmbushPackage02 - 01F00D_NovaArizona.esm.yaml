@@ -1,0 +1,34 @@
+FormKey: 01F00D:NovaArizona.esm
+EditorID: AZTempleBarAmbushPackage02
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+- AlwaysRun
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 16256
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01F008:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

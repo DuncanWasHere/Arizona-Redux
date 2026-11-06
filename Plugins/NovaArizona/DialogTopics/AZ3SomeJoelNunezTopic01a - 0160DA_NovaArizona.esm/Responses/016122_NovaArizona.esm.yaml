@@ -1,0 +1,51 @@
+FormKey: 016122:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xFDEE2A
+    UseEmotionAnimation: True
+    Unused3: 0x06EF2A
+  ResponseText: Got nothing to do with being rude.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0xFF7F7F
+  ResponseText: I've got deadlines, and I'm behind on prep.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Unless you wanna help pack fifty Caravan Lunches, I'm afraid you're in the way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 016058:NovaArizona.esm
+- 016123:NovaArizona.esm
+- 016236:NovaArizona.esm
+- 016238:NovaArizona.esm
+- 00D1D2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: No need to be so rude.

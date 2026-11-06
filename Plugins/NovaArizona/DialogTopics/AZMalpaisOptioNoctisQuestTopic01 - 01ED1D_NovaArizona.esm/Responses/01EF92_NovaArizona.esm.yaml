@@ -1,0 +1,49 @@
+FormKey: 01EF92:NovaArizona.esm
+FormVersion: 15
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 01EF91:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436F6D
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Arcade? He is a Follower. No, unacceptable.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789367
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789367
+  SecondParameter: 191
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100789367
+  SecondParameter: 17
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 12
+Choices:
+- 01EF93:NovaArizona.esm
+- 01EF94:NovaArizona.esm
+- 01EF95:NovaArizona.esm
+- 01EF99:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: My companion Arcade will be treating Noctis.

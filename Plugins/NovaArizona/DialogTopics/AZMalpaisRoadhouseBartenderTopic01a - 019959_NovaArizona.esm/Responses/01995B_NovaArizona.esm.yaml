@@ -1,0 +1,30 @@
+FormKey: 01995B:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x706C65
+    UseEmotionAnimation: True
+    Unused3: 0x5A4E65
+  ResponseText: No. This is Legion territory. All the other stuff is in a gray area. Alcohol is absolutely illegal.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768086
+Choices:
+- 019959:NovaArizona.esm
+- 01995A:NovaArizona.esm
+- 019962:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Any chance of something harder?

@@ -1,0 +1,37 @@
+FormKey: 020FA0:NovaArizona.esm
+EditorID: AZGOMClaudeAmbushTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967290
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00EA000000010072010080163800023000580000A51111000200FFFF0500520200FFFF0400420A580000A41111000200FFFF0500520200FFFF0400420A150207004C0E0100003A15170001160052030078000016100B000100FFFF0500520100283A151D00011C00520400780000021011000200FFFF0500520500FFFF04004201283A151D00011C00520400780000021011000200FFFF0500520600FFFF04004214283A15170001160052040078000016100B000100FFFF050052010028A21115000300FFFF0500520200FFFF0400420AFFFF04004201A31115000300FFFF0500520200FFFF0400420FFFFF0400420111000000
+  SourceCode: >-
+    name AZGOMClaudeAmbushTriggerScript;
+
+
+    OnTriggerEnter::Player {
+        if (GetObjectiveDisplayed(AZGOMAssassinationQuest, 10) && !GetObjectiveCompleted(AZGOMAssassinationQuest, 10)) {
+            AZGOMOmertaAssassinREF.StartCombat(Player);
+            AZGOMClaudeREF.AddItem(WeapNVSilenced22Pistol, 1);
+            AZGOMClaudeREF.AddItem(Ammo22LR, 20);
+            AZGOMClaudeREF.StartCombat(Player);
+
+            SetObjectiveCompleted(AZGOMAssassinationQuest, 10, 1);
+            SetObjectiveDisplayed(AZGOMAssassinationQuest, 15, 1);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020F9B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020F8E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0E377A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 07EA27:FalloutNV.esm

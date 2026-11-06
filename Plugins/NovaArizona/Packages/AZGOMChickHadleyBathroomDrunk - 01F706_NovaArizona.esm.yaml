@@ -1,0 +1,38 @@
+FormKey: 01F706:NovaArizona.esm
+EditorID: AZGOMChickHadleyBathroomDrunk
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+Unused: 255
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 65407
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01F705:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100792073
+  SecondParameter: 3
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

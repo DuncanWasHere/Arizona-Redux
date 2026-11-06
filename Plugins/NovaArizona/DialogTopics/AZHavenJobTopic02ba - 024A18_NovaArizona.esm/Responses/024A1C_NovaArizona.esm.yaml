@@ -1,0 +1,44 @@
+FormKey: 024A1C:NovaArizona.esm
+FormVersion: 15
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: 024A1A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x642074
+    UseEmotionAnimation: True
+    Unused3: 0x702073
+  ResponseText: I have no idea. They're normally so calm. This last crop in particular. The community thinks I did it. Ridiculous.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x642074
+    UseEmotionAnimation: True
+    Unused3: 0x702073
+  ResponseText: Something must have happened deeper into the nest.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x642074
+    UseEmotionAnimation: True
+    Unused3: 0x702073
+  ResponseText: If I could do one thing before my execution, it'd be investigating what made them go beserk.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think riled them up?

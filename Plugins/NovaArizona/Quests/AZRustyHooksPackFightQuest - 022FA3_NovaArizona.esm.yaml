@@ -1,0 +1,322 @@
+FormKey: 022FA3:NovaArizona.esm
+EditorID: AZRustyHooksPackFightQuest
+FormVersion: 15
+Name: Unchain My Heart
+QuestData:
+  Unused: 25966
+Stages:
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Player asked Bear to overthrow Kyle.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E000000006E01000000
+      SourceCode: >+
+        SetObjectiveDisplayed AZRustyHooksPackFightQuest 0 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 022FA3:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: Player is trying to disarm Bear's heart bomb.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000
+      SourceCode: SetObjectiveDisplayed AZRustyHooksPackFightQuest 5 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 022FA3:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: Bear thinks his heart bomb was disarmed (even if it wasn't).
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E0E0000006E0100000039150C00010B00560102001C00420100911105000100720300
+      SourceCode: >+
+        SetObjectiveCompleted AZRustyHooksPackFightQuest 5 1
+
+        SetObjectiveDisplayed AZRustyHooksPackFightQuest 14 1
+
+
+        AZRustyHooksDialogueQuest.bBearThinksBombDisarmed = 1
+
+
+        ApplyImageSpaceModifier FadetoBlackandBackQuickISFX
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 022FA3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0130AD:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0E366A:FalloutNV.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: Pack fight is being set up.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E000000006E01000000A2110F0003007203006E0E0000006E01000000A3110F0003007203006E0F0000006E010000001C000100EE10050001007204001C0002005E1000001C0001005E100000
+      SourceCode: >-
+        SetObjectiveCompleted AZRustyHooksPackFightQuest 0 1
+
+        SetObjectiveCompleted AZRustyHooksPackFightQuest 14 1
+
+        SetObjectiveDisplayed AZRustyHooksPackFightQuest 15 1
+
+
+        AZRustyHooksKyleREF.EquipItem AZWeapDetonatorKyle
+
+
+        AZRustyHooksBearREF.EVP
+
+        AZRustyHooksKyleREF.EVP
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 009F02:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00977A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 022FA3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 036E9D:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: The pack fight has started.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0x39150C00010B005601030014004202001C0001008011050001007204001C0002008011050001007204007810120004007205007206006E000000006E000000001C0002000F100900020001006E050000001C0001000F100900020001006E050000001C0002005E1000001C0001005E100000160014000100100020583A150A00010900560103001500151C00020025100500010072070019000000
+      SourceCode: >-
+        AZRustyHooksDialogueQuest.iPackFightState = 2
+
+
+        AZRustyHooksKyleREF.RemoveFromFaction AZRustyHooksFaction
+
+        AZRustyHooksBearREF.RemoveFromFaction AZRustyHooksFaction
+
+        SetEnemy AZRustyHooksBearFaction AZRustyHooksKyleFaction 0 0
+
+
+        AZRustyHooksBearREF.SetAv Confidence 5
+
+        AZRustyHooksKyleREF.SetAv Confidence 5
+
+
+        AZRustyHooksBearREF.EVP
+
+        AZRustyHooksKyleREF.EVP
+
+
+        if eval (!AZRustyHooksDialogueQuest.bBearBombDisarmed)
+          AZRustyHooksBearREF.PlaceAtMe AZRustyHooksBearExplosion
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 009F02:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00977A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0130AD:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00977B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013148:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013149:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 036E9C:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry: Bear won the pack fight.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E0F0000006E01000000A3110F0003007203006E140000006E0100000039150C00010B0056010400140042030039150C00010B005601040013004201001C0001005E1000001C000200561008000200720500720600
+      SourceCode: >-
+        SetObjectiveCompleted AZRustyHooksPackFightQuest 15 1
+
+        SetObjectiveDisplayed AZRustyHooksPackFightQuest 20 1
+
+
+        AZRustyHooksDialogueQuest.iPackFightState = 3
+
+        AZRustyHooksDialogueQuest.iPackFightWinner = 1
+
+
+        AZRustyHooksBearREF.EVP
+
+
+        AZRustyHooksJillianREF.StartConversation PlayerREF GREETING
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00977A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 016811:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 022FA3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0130AD:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0000C8:FalloutNV.esm
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry: Kyle won the pack fight.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E0F0000006E01000000A3110F0003007202006E190000006E0100000039150C00010B0056010300140042030039150C00010B005601030013004202001C0001005E100000
+      SourceCode: >-
+        SetObjectiveCompleted AZRustyHooksPackFightQuest 15 1
+
+        SetObjectiveDisplayed AZRustyHooksPackFightQuest 25 1
+
+
+        AZRustyHooksDialogueQuest.iPackFightState = 3
+
+        AZRustyHooksDialogueQuest.iPackFightWinner = 2
+
+
+        AZRustyHooksKyleREF.EVP
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 009F02:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 022FA3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0130AD:NovaArizona.esm
+- Index: 98
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Quest failed because player infettered with the pack fight.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x59100B0001007201000000000000007810120004007202007203006E000000006E0000000039120F0003007204006E000000006E0500000039150C00010B00560105001400420300
+      SourceCode: >+
+        ShowMessage AZRustyHooksPackFightFailMessage
+
+        SetEnemy AZRustyHooksFaction PlayerFaction 0 0
+
+        AddReputation AZRepRustyHooks 0 5
+
+
+        AZRustyHooksDialogueQuest.iPackFightState = 3
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 036E43:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00977B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01B2A4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004369:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0130AD:NovaArizona.esm
+- Index: 99
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Quest failed because someone died prematurely.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: The pack fight is over.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x7711070001006E9600000039120F0003007201006E010000006E04000000
+      SourceCode: >-
+        RewardXP 150
+
+
+        AddReputation AZRepRustyHooks 1 4
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004369:NovaArizona.esm
+Objectives:
+- Index: 10
+  Description: (Optional) Get Sid to help disarm the bomb in Bear's chest.
+  Targets:
+  - Target: 016810:NovaArizona.esm
+    Unused: 0x756D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 016810:NovaArizona.esm
+- Description: Convince Bear to challenge Kyle for control of the Rusty Hooks.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x756D2C
+- Index: 5
+  Description: Find a way to disarm the bomb in Bear's chest.
+  Targets:
+  - Target: 016811:NovaArizona.esm
+    Unused: 0x122529
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 016811:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 016811:NovaArizona.esm
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x122529
+- Index: 15
+  Description: Observe the pack fight.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x4B3523
+- Index: 20
+  Description: Speak to Bear.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x105321
+- Index: 25
+  Description: Speak to Kyle.
+  Targets:
+  - Target: 009F02:NovaArizona.esm
+    Unused: 0x105321
+- Index: 11
+  Description: (Optional) Get Jillian to help disarm the bomb in Bear's chest.
+  Targets:
+  - Target: 016811:NovaArizona.esm
+    Unused: 0x756D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 016811:NovaArizona.esm
+- Index: 14
+  Description: Talk to Bear to begin the pack fight.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0xCE1527

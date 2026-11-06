@@ -1,0 +1,33 @@
+FormKey: 01CDDA:NovaArizona.esm
+EditorID: AZLegatusAdjutantGuardPackage
+FormVersion: 15
+GeneralFlags:
+- NoWarnAttackBehavior
+Flags:
+  MutagenObjectType: PackageGuard
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 01EF44:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,147 @@
+FormKey: 034258:NovaArizona.esm
+EditorID: AZHavenIntroQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 15
+    VariableCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D00000010000600000041020000160010000C000C0020720A007304002032203D3D15000A00720A007301000200203315000A00720B00731000020020311C0001005E1000001C0002005E1000001C0003005E1000001C0004005E1000001C0005005E1000001C0006005E1000001C0007005E1000001C0008005E1000001C0009005E100000371005000100720A001700020009001C0001007712070001006E010000001C0002007712070001006E010000001C0003007712070001006E010000001C0004007712070001006E010000001C0005007712070001006E010000001C0006007712070001006E010000001C0007007712070001006E010000001C0008007712070001006E010000001C0009007712070001006E01000000190000001600100001000C0020720A007303002031203D3D1C000700971005000100720C00190000001600100009000C0020720A007301002031203D3D1C000500971005000100720D001C000100981000001C000200981000001C000300981000001C000500981000001C000600981000001C000700981000001C000800981000001C0009009810000019000000160012000B000E0020720E0058211100002031203D3D15000A00720A00730100020020331C0001005E1000001C0002005E1000001C0003005E1000001C0004005E1000001C0005005E1000001C0006005E1000001C0007005E1000001C0008005E1000001C0009005E100000371005000100720A0019000000160017000100130020720E0058431005000100720F002030203D3D371005000100720A001900000011000000
+  SourceCode: >-
+    scn AZHavenIntroQuestScript
+
+
+    short RuceGreetVariable
+
+    short MurrayGreetVariable
+
+    short RuceEndVariable ; 1 = Ruce is not going to kill you, 2 = Ruce is going to kill you
+
+    short BarksComplete
+
+
+    BEGIN GameMode
+
+
+    if AZHavenIntroQuest.BarksComplete == 2
+    	Set AZHavenIntroQuest.MurrayGreetVariable to 3
+    	Set AZFreeformHaven.HavenEntrance to 1
+    	AZHavenBenjaminREF.evp
+    	AZHavenCalREF.evp
+    	AZHavenDocREF.evp
+    	AZHavenJobREF.evp
+    	AZHavenMurrayREF.evp
+    	AZHavenRipleyREF.evp
+    	AZHavenRuceREF.evp
+    	AZHavenSerwaREF.evp
+    	AZHavenWierzbowskiREF.evp
+    	StopQuest AZHavenIntroQuest
+    else
+    	AZHavenBenjaminREF.AlwaysShowActorSubtitles 1
+    	AZHavenCalREF.AlwaysShowActorSubtitles 1
+    	AZHavenDocREF.AlwaysShowActorSubtitles 1
+    	AZHavenJobREF.AlwaysShowActorSubtitles 1
+    	AZHavenMurrayREF.AlwaysShowActorSubtitles 1
+    	AZHavenRipleyREF.AlwaysShowActorSubtitles 1
+    	AZHavenRuceREF.AlwaysShowActorSubtitles 1
+    	AZHavenSerwaREF.AlwaysShowActorSubtitles 1
+    	AZHavenWierzbowskiREF.AlwaysShowActorSubtitles 1
+    endif
+
+
+    if AZHavenIntroQuest.RuceGreetVariable == 1
+    	AZHavenRuceREF.AddScriptPackage AZHavenRuceGreetPackageNEW
+    endif
+
+
+    if AZHavenIntroQuest.MurrayGreetVariable == 1
+    	AZHavenMurrayREF.AddScriptPackage AZHavenMurrayGreetPackageNEW
+    	AZHavenBenjaminREF.RemoveScriptPackage AZHavenBenjaminIntroPackage
+    	AZHavenCalREF.RemoveScriptPackage AZHavenCalIntroPackage
+    	AZHavenDocREF.RemoveScriptPackage AZHavenDocIntroPackage
+    	AZHavenMurrayREF.RemoveScriptPackage AZHavenMurrayIntroPackage
+    	AZHavenRipleyREF.RemoveScriptPackage AZHavenRipleyIntroPackage
+    	AZHavenRuceREF.RemoveScriptPackage AZHavenRuceIntroPackage
+    	AZHavenSerwaREF.RemoveScriptPackage AZHavenSerwaIntroPackage
+    	AZHavenWierzbowskiREF.RemoveScriptPackage AZHavenWierzbowskiIntroPackage
+    endif
+
+
+    if Player.IsInCombat == 1
+    	Set AZHavenIntroQuest.MurrayGreetVariable to 3
+    	AZHavenBenjaminREF.evp
+    	AZHavenCalREF.evp
+    	AZHavenDocREF.evp
+    	AZHavenJobREF.evp
+    	AZHavenMurrayREF.evp
+    	AZHavenRipleyREF.evp
+    	AZHavenRuceREF.evp
+    	AZHavenSerwaREF.evp
+    	AZHavenWierzbowskiREF.evp
+    	StopQuest AZHavenIntroQuest
+    endif
+
+
+    if Player.GetInCell AZHavenINT == 0
+    	StopQuest AZHavenIntroQuest
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x20BA20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7572726179203D
+    Name: MurrayGreetVariable
+  - Data:
+      Index: 2
+      Unknown: 0xC0D629120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: RuceEndVariable
+  - Data:
+      Index: 3
+      Unknown: 0x00BA20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x756365203D3D20
+    Name: RuceGreetVariable
+  - Data:
+      Index: 4
+      Unknown: 0x40D729120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x426565746C6530
+    Name: BarksComplete
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0058A9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034273:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0192B7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E578:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D55:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBAA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341FF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034284:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034283:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 018937:NovaArizona.esm

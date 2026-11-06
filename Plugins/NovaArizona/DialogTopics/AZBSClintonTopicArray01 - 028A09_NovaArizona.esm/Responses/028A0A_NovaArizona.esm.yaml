@@ -1,0 +1,74 @@
+FormKey: 028A0A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, that? I didn't put the sign up. It's been there since before the war.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x69646E
+    UseEmotionAnimation: True
+    Unused3: 0x742074
+  ResponseText: There's some weird radio stuff going on south of here, as I understand it. I've never been, so take this with a grain of salt.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x69646E
+    UseEmotionAnimation: True
+    Unused3: 0x742074
+  ResponseText: If you make it down to Dolan Springs, there's a road that goes north towards the Grand Canyon - that's where things get fuzzy. Even the Legionaries stay away.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x495911
+    UseEmotionAnimation: True
+    Unused3: 0x4E5911
+  ResponseText: And I guess some cows are getting cut up too, but I don't know how that's related.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x4F5911
+    UseEmotionAnimation: True
+    Unused3: 0x5D5911
+  ResponseText: Personally I'm more interested in that giant radio tower just off the Chainway, but that one isn't working either. Getting sick of Johnny Guitar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742180
+Choices:
+- 01342D:NovaArizona.esm
+- 028A09:NovaArizona.esm
+- 01342E:NovaArizona.esm
+- 01342F:NovaArizona.esm
+- 013430:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the 'Pierce Ferry phenomenon'?

@@ -1,0 +1,45 @@
+FormKey: 002C1E:NovaArizona.esm
+EditorID: AZNVCCLucullusCampWillowEscort02bPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- SkipFalloutBehavior
+- AlwaysRun
+- DefensiveCombat
+Unused: 48
+BehaviorFlags:
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageEscort
+Unused2: 8260
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 002C20:NovaArizona.esm
+  Radius: 32
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+EscortDistance: 800
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

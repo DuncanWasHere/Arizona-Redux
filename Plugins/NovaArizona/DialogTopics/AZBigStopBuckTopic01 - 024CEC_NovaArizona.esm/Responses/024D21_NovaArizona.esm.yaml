@@ -1,0 +1,42 @@
+FormKey: 024D21:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 024CE4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Buck's was founded in 2056 by Alexander "Buck" Rodriguez for the express use of helping fix up vehicles passing through the town of Solitare.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I was adopted as a son by Mr. Rodriguez in 2076 and renamed "Buck Jr.". However, I simply go by Buck.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723482
+Choices:
+- 024CED:NovaArizona.esm
+- 024CEE:NovaArizona.esm
+- 024CEF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Out of curiosity, do you know anything about the history of this place?

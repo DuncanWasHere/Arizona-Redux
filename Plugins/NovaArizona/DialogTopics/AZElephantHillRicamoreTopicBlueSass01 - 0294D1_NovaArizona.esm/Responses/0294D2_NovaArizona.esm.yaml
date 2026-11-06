@@ -1,0 +1,70 @@
+FormKey: 0294D2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hm. A drink, you said? Not the little blue stars? Long time ago, must've been.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x7D4B11
+    UseEmotionAnimation: True
+    Unused3: 0x7D4B11
+  ResponseText: There's a computer in the storage room. Old manager here used to use it for all his business. Might find a lead in the files somewhere.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x7D4B11
+    UseEmotionAnimation: True
+    Unused3: 0x7D4B11
+  ResponseText: Here's the key to the room. Don't take nothin'. Not that there's much worth takin' anyway. See if you can get that terminal open.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100791693
+  SecondParameter: 14
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHasNote
+  FirstParameter: 100791793
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100791693
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E01000000
+  SourceCode: player.additem AZElephantHillStorageKey 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0294D3:NovaArizona.esm
+Prompt: I'm looking for a drink called Blue Sass. Ring any bells?

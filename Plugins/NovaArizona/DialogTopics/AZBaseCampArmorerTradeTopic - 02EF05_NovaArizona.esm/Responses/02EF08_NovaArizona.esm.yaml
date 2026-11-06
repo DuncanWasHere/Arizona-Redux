@@ -1,0 +1,37 @@
+FormKey: 02EF08:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: This is the War Room, for the senior officers of the Legion. You are not a Legionary, let alone a Centurion.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+Choices:
+- 02EF05:NovaArizona.esm
+- 0199E7:NovaArizona.esm
+- 00862A:NovaArizona.esm
+- 020DA5:NovaArizona.esm
+- 0199DA:NovaArizona.esm
+- 0199DB:NovaArizona.esm
+- 0199E8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I would like to trade.

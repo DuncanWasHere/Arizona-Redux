@@ -1,0 +1,40 @@
+FormKey: 03B7EB:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x717561
+    UseEmotionAnimation: True
+    Unused3: 0x206265
+  ResponseText: Good.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E05000000
+  SourceCode: 'setstage azneverbefree 5 '
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0331D3:NovaArizona.esm
+Prompt: I'll secure his vote for you.

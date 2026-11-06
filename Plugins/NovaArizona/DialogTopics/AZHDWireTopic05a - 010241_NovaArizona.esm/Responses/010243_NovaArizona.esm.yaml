@@ -1,0 +1,59 @@
+FormKey: 010243:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010242:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x3E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ah.... Fuck it. Let's do something good, for once. I'll talk to the quartermaster and get some food out there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100729229
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 31
+  Function: GetStage
+  FirstParameter: 100729230
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E1F0000001C000100211002000000
+  SourceCode: >-
+    setstage AZDamNQuest2 31
+
+    AZHHRCFoodContainerParentREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 018D1C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+Prompt: "[NCR Rep] Look, it's me we're talking about. Can't you make an exception just this once?"

@@ -1,0 +1,43 @@
+FormKey: 00EF57:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: 00EF56:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Helena Devic. It is not a pleasure to meet you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 575
+  FirstParameter: 1000414
+Choices:
+- 00EE9E:NovaArizona.esm
+- 00EEAF:NovaArizona.esm
+- 00EE48:NovaArizona.esm
+- 00EE4C:NovaArizona.esm
+- 00EE6E:NovaArizona.esm
+- 00EE6F:NovaArizona.esm
+- 00EE8D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are you?

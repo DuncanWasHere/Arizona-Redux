@@ -1,0 +1,54 @@
+FormKey: 00E573:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Jesus, you're a freak...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll clear my schedule. Tell the T.A. to cancel my lunch.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPerkRank
+  FirstParameter: 1464061
+  RunOnType: Target
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+Choices:
+- 039F1E:NovaArizona.esm
+- 00E4F5:NovaArizona.esm
+- 00E4FE:NovaArizona.esm
+- 00E505:NovaArizona.esm
+- 00E501:NovaArizona.esm
+- 00E508:NovaArizona.esm
+- 00E521:NovaArizona.esm
+- 00E526:NovaArizona.esm
+- 00E527:NovaArizona.esm
+- 00E52E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: "[Rad Child] Hey, it's not a good time if the Geiger counter isn't rattling."

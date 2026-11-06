@@ -1,0 +1,37 @@
+FormKey: 02CF22:NovaArizona.esm
+EditorID: AZSlaveCaravanSlaveScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C621600001000060000006100000080163200022A00580000E1220B000100FFFF050052020049E803075800002F100B000100FFFF05005203004201080207004C9C000000391513000112005604000001005800006B11040000000016100C000100FFFF080056040000010011000000
+  SourceCode: >-
+    name AZSlaveCaravanSlaveScript;
+
+
+    ref SlaveOwner;
+
+
+    GameMode {
+        if (GetDistance3D(Player) < 1000 && GetItemCount(Lockpick) >= 1) {
+            SlaveOwner = GetLinkedRef();
+            StartCombat(SlaveOwner);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: SlaveOwner
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000A:FalloutNV.esm

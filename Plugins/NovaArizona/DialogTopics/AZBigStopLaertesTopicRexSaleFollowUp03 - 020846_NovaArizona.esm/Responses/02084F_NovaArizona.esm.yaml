@@ -1,0 +1,69 @@
+FormKey: 02084F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x32342C
+  ResponseText: Excellent! A fellow Legion dog.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x32342C
+  ResponseText: Here's your payment in full.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 1300561
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E0100000039100A0002007203006E190000001C00010002100A0002007204006EC2010000160014000100100020582212050001007205002030203D3D39100A0002007205006E6E00000019000000
+  SourceCode: >-
+    Player.RemoveItem VMS24BrainLupa 1
+
+    SetStage AZLaertesSellDogQuest 25
+
+    Player.AddItem Caps001 450
+
+    if GetQuestCompleted VMS24 == 0
+    	SetStage VMS24 110
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13D851:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1176B8:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I got this dog's brain from the Fort actually. <Give Lupa's brain.>

@@ -1,0 +1,28 @@
+FormKey: 00E61E:NovaArizona.esm
+EditorID: AZLGVDolanSpringsTrashCanScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B00020021000000010072010059100B00010072020000000000000039100A0002007203006E2300000011000000
+  SourceCode: >-
+    scn AZLGVDolanSpringsTrashCanScript
+
+
+    BEGIN OnActivate player
+
+
+    ShowMessage AZLGVDolanActivator01
+
+    SetStage AZStatioFindFriendQuest 35
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm

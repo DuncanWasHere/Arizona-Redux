@@ -1,0 +1,77 @@
+FormKey: 01EFEA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: "[SUCCEEDED] I guess you're right. I'm going to grab the other kids to deal with her. I just hope you're right."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100789369
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 30
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789369
+  SecondParameter: 30
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E46000000A2110F0003007203006E230000006E01000000A3110F0003007203006E320000006E00000000A3110F0003007203006E240000006E010000007810080002007204007205001C0002005E100000
+  SourceCode: >-
+    Player.RewardXP 70
+
+
+    SetObjectiveCompleted AZBigStopChildSoldierQuest 35 1
+
+    SetObjectiveDisplayed AZBigStopChildSoldierQuest 50 0
+
+    SetObjectiveDisplayed AZBigStopChildSoldierQuest 36 1
+
+    SetEnemy AZAspirantCassiaFaction TheFortChildFaction
+
+    AZBigStopLegionExecutioner03REF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008FB9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EFED:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134420:FalloutNV.esm
+Prompt: If Cassia is a spy, then Caesar is going to be very disappointed that you didn't deal with her.
+ActorValuePerk: 0004BB:FalloutNV.esm

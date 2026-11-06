@@ -1,0 +1,45 @@
+FormKey: 032DFD:NovaArizona.esm
+FormVersion: 15
+Quest: 084224:FalloutNV.esm
+PreviousInfo: 1424C3:FalloutNV.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x21BF19
+    UseEmotionAnimation: True
+    Unused3: 0xB35111
+  ResponseText: Like I said before, give me 700 caps and Rey's brain is yours.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetDeadCount
+  FirstParameter: 840240
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1144504
+  SecondParameter: 20
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 1144504
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 541190
+Choices:
+- 1424A6:FalloutNV.esm
+- 1424A7:FalloutNV.esm
+- 15F30E:FalloutNV.esm
+- 1424A3:FalloutNV.esm
+- 1424A5:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Speaker: 084206:FalloutNV.esm

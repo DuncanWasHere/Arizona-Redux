@@ -1,0 +1,27 @@
+FormKey: 00EB02:NovaArizona.esm
+EditorID: AZNewtFishingQuestDynamiteContainerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D00000010000600000046000000160014000200100020582F10050001007201002030203D3DA2110F0003007202006E0A0000006E01000000A3110F0003007202006E0F0000006E010000001900000011000000
+  SourceCode: >-
+    scn AZNewtFishingQuestDynamiteContainerScript
+
+
+    BEGIN GameMode
+
+
+    if GetItemCount WeapNVDynamite == 0
+    	SetObjectiveCompleted AZNewtFishingQuest 10 1
+    	SetObjectiveDisplayed AZNewtFishingQuest 15 1
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0BA0F3:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm

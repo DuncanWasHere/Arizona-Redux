@@ -1,0 +1,44 @@
+FormKey: 036E6D:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x757374
+  ResponseText: He likes to punk us around a lot, but eh, I think Kyle is a pretty chill guy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x757374
+  ResponseText: He cracks skulls and isn't afraid of anything!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797705
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 009F02:NovaArizona.esm
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 009F02:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you respect Kyle as your leader?

@@ -1,0 +1,32 @@
+FormKey: 01618C:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xFDFFAA
+    UseEmotionAnimation: True
+    Unused3: 0x688B26
+  ResponseText: Can't say I like them too much. It's best I don't talk about that though. Biting the hand, and all that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 01615C:NovaArizona.esm
+- 016175:NovaArizona.esm
+- 01617E:NovaArizona.esm
+- 01617F:NovaArizona.esm
+- 016180:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think of the Legion?

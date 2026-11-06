@@ -1,0 +1,85 @@
+FormKey: 013D9A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: 013D99:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: '[SUCCEEDED] You speak the truth. I cannot crucify them due to the Los Alamos Agreement.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: But I can expel them from the camp, let the Dolan Springs garrison deal with them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Here is your reward.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 100744550
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E1F0000001C00010002100A0002007203006E320000001C0001007711070001006E2800000015000A007202007307000200203116001900010015002058A5110A0002007202006E160000002031203D3DA2110F0003007202006E160000006E0100000019000000
+  SourceCode: >-
+    SetStage AZNewtLegionGraffitiQuest 31
+
+    Player.AddItem MoneyLegion1 50
+
+    Player.RewardXP 40
+
+
+    Set AZNewtLegionGraffitiQuest.bReservationTradersPunished to 1
+
+
+    if GetObjectiveDisplayed AZNewtLegionGraffitiQuest 22 == 1
+    	SetObjectiveCompleted AZNewtLegionGraffitiQuest 22 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D30:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+Prompt: And if they are the Reservation, then they cannot possibly trusted.
+ActorValuePerk: 0004BB:FalloutNV.esm

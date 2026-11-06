@@ -1,0 +1,189 @@
+FormKey: 00C443:NovaArizona.esm
+EditorID: AZIrradiatedBunkerTurretTermWALL3Hard
+FormVersion: 15
+ObjectBounds:
+  First: -12, -18, -23
+  Second: 52, 22, 19
+Name: Turret Control System
+Model:
+  File: Terminals\Terminal01.NIF
+Description: >-
+  -RobCo Trespasser Management System-
+
+  ====================================
+LoopingSound: 018EC0:FalloutNV.esm
+PasswordNote: 00C407:NovaArizona.esm
+BaseHackingDifficulty: Hard
+ServerType: Server6
+MenuItems:
+- ItemText: Re-configure Targeting Parameters
+  ResultText: Target Data cleared.  Exercise Caution.
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C00010081110D0002001F007A0000000000005940
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.damageAV braincondition 100
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x000000000000000000000000
+        Unknown2: 0x00000000000000
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+  Conditions:
+  - CompareOperator: GreaterThan
+    Fluff: 0x000000
+    Function: GetActorValue
+    FirstParameter: 31
+    RunOnType: LinkedReference
+- ItemText: '<!>WARNING: No Targeting Data<!>'
+  ResultText: <!>Please Exercise Caution<!>
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: LessThanOrEqualTo
+    Fluff: 0x000000
+    Function: GetActorValue
+    FirstParameter: 31
+    RunOnType: LinkedReference
+  - Fluff: 0x000000
+    Function: GetUnconscious
+    RunOnType: LinkedReference
+- ItemText: Activate Turret System
+  ResultText: Booting...
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 2
+      Enabled: 1
+    CompiledScript: 0x15000B00660200060020586B1100001C000100F110070001006E00000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.setUnconscious 0
+    LocalVariables:
+    - Data:
+        Index: 2
+        Unknown: 0x252028300000000000000000
+        Unknown2: 0x3137372E303020
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 2
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetUnconscious
+    RunOnType: LinkedReference
+- ItemText: Deactivate Turret System
+  ResultText: Powering Down...
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100171000001C000100F110070001006E01000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.stopCombat
+
+      myLink.setUnconscious 1
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x8226633F0000000000000000
+        Unknown2: 0x00803F1CC7AF3E
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetUnconscious
+    RunOnType: LinkedReference
+- ItemText: System Information
+  ResultText: Loading LOG file...
+  DisplayNote: 0AF8CE:FalloutNV.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetFactionRank
+    FirstParameter: 136310
+    RunOnType: LinkedReference
+- ItemText: System Information
+  ResultText: Loading LOG file...
+  DisplayNote: 0B15F4:FalloutNV.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetFactionRank
+    FirstParameter: 119275
+    RunOnType: LinkedReference
+- ItemText: System Information
+  ResultText: Loading LOG file...
+  DisplayNote: 0B15F5:FalloutNV.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetFactionRank
+    FirstParameter: 130998
+    RunOnType: LinkedReference
+- ItemText: System Information
+  ResultText: Loading LOG file...
+  DisplayNote: 0B25A8:FalloutNV.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetFactionRank
+    FirstParameter: 119807
+    RunOnType: LinkedReference
+- ItemText: System Information
+  ResultText: Loading LOG file...
+  DisplayNote: 0B25A9:FalloutNV.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetFactionRank
+    FirstParameter: 119805
+    RunOnType: LinkedReference

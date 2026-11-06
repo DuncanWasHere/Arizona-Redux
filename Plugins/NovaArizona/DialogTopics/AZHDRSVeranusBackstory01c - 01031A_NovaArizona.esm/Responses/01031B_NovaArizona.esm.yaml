@@ -1,0 +1,54 @@
+FormKey: 01031B:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: Optios are the step below Centurions, who are a step below legates, all of whom are a step below the Legate.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: Although, there's only one Legate in the Mojave right now. He reports directly to Caesar.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x647563
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Well, let me correct myself. There is Marcellus Sedonus in Malpais. But, in my view, he is well past his prime and should be retired.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 008D04:NovaArizona.esm
+Choices:
+- 010316:NovaArizona.esm
+- 010318:NovaArizona.esm
+- 01031A:NovaArizona.esm
+- 01031C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's an Optio?

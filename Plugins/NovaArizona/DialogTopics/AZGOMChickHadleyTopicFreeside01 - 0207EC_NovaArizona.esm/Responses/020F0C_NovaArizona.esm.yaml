@@ -1,0 +1,72 @@
+FormKey: 020F0C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020EB4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] Wait, what? Seriously? Thanks, friend. I'll head there now."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100792073
+  SecondParameter: 4
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100792073
+  SecondParameter: 4
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E4100000015000A00720400730D00020020311C0002005E100000A2110F0003007204006E040000006E01000000A3110F0003007204006E0B0000006E010000001C000300211002000000
+  SourceCode: >-
+    Player.RewardXP 65
+
+    set AZGOMAssassinationQuest.bChickFreeside to 1
+
+    AZGOMChickHadleyREF.evp
+
+    setobjectivecompleted AZGOMAssassinationQuest 4 1
+
+    setobjectivedisplayed AZGOMAssassinationQuest 11 1
+
+    AZGOMChickNCRSoldiersEnablerREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F702:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020FAD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F709:NovaArizona.esm
+Prompt: Hey, you remember that last girl you were with? If I were you, I'd go to the Mormon Fort and get checked up.
+ActorValuePerk: 0004BB:FalloutNV.esm

@@ -1,0 +1,28 @@
+FormKey: 037E0F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D696E
+    UseEmotionAnimation: True
+    Unused3: 0x206174
+  ResponseText: "{Irritated, player fired a gun near her}A little warning would've been nice."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

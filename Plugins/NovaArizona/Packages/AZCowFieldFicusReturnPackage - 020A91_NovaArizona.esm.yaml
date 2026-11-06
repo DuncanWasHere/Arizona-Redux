@@ -1,0 +1,52 @@
+FormKey: 020A91:NovaArizona.esm
+EditorID: AZCowFieldFicusReturnPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 16255
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00C32B:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 9
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestCompleted
+  FirstParameter: 100796570
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x15000A00720200730900020020311C0001005E100000
+    SourceCode: >-
+      Set AZBrushQuest01.FicusReturn to 1
+
+      AZCowFieldFicusREF.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0209BA:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02089A:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

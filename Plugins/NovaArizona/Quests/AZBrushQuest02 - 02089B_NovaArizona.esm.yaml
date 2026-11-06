@@ -1,0 +1,483 @@
+FormKey: 02089B:NovaArizona.esm
+EditorID: AZBrushQuest02
+FormVersion: 15
+Script: 0209FB:NovaArizona.esm
+Name: You'se a Viper
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Unused: 21513
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Need to convince Decanus Quintus to support Brush
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1600100006000C00207201007301002030203D3D1600100002000C00207201007302002030203D3DA3110F0003007202006E050000006E01000000A3110F0003007202006E060000006E010000001800100001000C00207201007302002031203D3D39100A0002007202006E0F000000190000001800100001000C00207201007301002031203D3D39100A0002007202006E2400000019000000
+      SourceCode: >-
+        if AZBrushQuest01.BrushAllowed == 0
+        	if AZBrushQuest01.BrushBanned == 0
+        		SetObjectiveDisplayed AZBrushQuest02 5 1
+        		SetObjectiveDisplayed AZBrushQuest02 6 1
+        	elseif AZBrushQuest01.BrushBanned == 1
+        		SetStage AZBrushQuest02 15
+        	endif
+        elseif AZBrushQuest01.BrushAllowed == 1
+        	SetStage AZBrushQuest02 36
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Need to get Decanus killed for Brush
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E0F0000006E01000000A3110F0003007202006E100000006E01000000A3110F0003007202006E110000006E010000001C000100211002000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBrushQuest02 15 1
+
+        SetObjectiveDisplayed AZBrushQuest02 16 1
+
+        SetObjectiveDisplayed AZBrushQuest02 17 1
+
+        AZDecanusQuintusSupplyLockerREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AC1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Reported Niemann to Quintus
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C0100001C0002002210020000001C0003008B10020000001C0004008B10020000001C0005008B1002000000
+      SourceCode: >-
+        Player.RewardXP 300
+
+        AZDecanusQuintusSupplyLockerREF.disable
+
+
+        ; Placeholder stuff
+
+        AZMountTiptonCaveNiemannREF.kill
+
+        AZMountTiptonCaveClarkREF.kill
+
+        AZMountTiptonCaveJessREF.kill
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AC1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF4C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF52:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF50:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: Quintus okay with Brush. Return to Niemann.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E060000006E00000000A3110F0003007201006E0A0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBrushQuest02 5 1
+
+        SetObjectiveDisplayed AZBrushQuest02 6 0
+
+        SetObjectiveDisplayed AZBrushQuest02 10 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 35
+  LogEntries:
+  - Flags: []
+    Entry: Quintus removed. Return to Niemann.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E0F0000006E01000000A3110F0003007203006E120000006E00000000A3110F0003007202006E190000006E010000001C000100221002000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBrushQuest02 15 1
+
+        SetObjectiveDisplayed AZBrushQuest01 18 0
+
+        SetObjectiveDisplayed AZBrushQuest02 25 1
+
+        AZDecanusQuintusSupplyLockerREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AC1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089A:NovaArizona.esm
+- Index: 36
+  LogEntries:
+  - Flags: []
+    Entry: Convince Aetius to legalize Brush
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E1E0000006E01000000A3110F0003007201006E1A0000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBrushQuest02 30 1
+
+        SetObjectiveDisplayed AZBrushQuest02 26 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: Aetius okay with Brush. Return to Niemann.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E1A0000006E00000000A2110F0003007201006E1E0000006E01000000A3110F0003007201006E230000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZBrushQuest02 26 0
+
+        SetObjectiveCompleted AZBrushQuest02 30 1
+
+        SetObjectiveDisplayed AZBrushQuest02 35 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 45
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Niemann reported to Aetius.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C0100001C0002002210020000001C0003008B10020000001C0004008B10020000001C0005008B1002000000
+      SourceCode: >-
+        Player.RewardXP 300
+
+        AZDecanusQuintusSupplyLockerREF.disable
+
+
+        ; Placeholder stuff
+
+        AZMountTiptonCaveNiemannREF.kill
+
+        AZMountTiptonCaveClarkREF.kill
+
+        AZMountTiptonCaveJessREF.kill
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AC1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF4C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF52:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF50:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Starts Malpais Brush timer quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E230000006E01000000A3110F0003007201006E280000006E0100000015001000720100730100080020582F2802000000361005000100720200
+      SourceCode: >+
+        SetObjectiveCompleted AZBrushQuest02 35 1
+
+        SetObjectiveDisplayed AZBrushQuest02 40 1
+
+        Set AZBrushQuest02.BrushTimer to GetGameDaysPassed
+
+        StartQuest AZBrushQuest02QuestTimer
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209FA:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry: Finishes Malpais Brush timer quest.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000A2110F0003007202006E280000006E01000000A3110F0003007202006E2D0000006E01000000
+      SourceCode: >-
+        AZMountTiptonCaveMartyREF.enable
+
+        SetObjectiveCompleted AZBrushQuest02 40 1
+
+        SetObjectiveDisplayed AZBrushQuest02 45 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF4E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 62
+- Index: 75
+  LogEntries:
+  - Flags: []
+    Entry: Spike Malpais Brush supply with Smooch.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000A2110F0003007202006E320000006E01000000A3110F0003007202006E3C0000006E01000000A3110F0003007202006E3E0000006E01000000
+      SourceCode: >-
+        AZMalpaisWaterPumpREF.enable
+
+        SetObjectiveCompleted AZBrushQuest02 50 1
+
+        SetObjectiveDisplayed AZBrushQuest02 60 1
+
+        SetObjectiveDisplayed AZBrushQuest02 62 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020A9C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 80
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Report Niemann to Flavius
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E2C010000A2110F0003007206006E3E0000006E010000001C0002002210020000001C00010052100A0002007207006E010000001C0003008B10020000001C0004008B10020000001C0005008B1002000000
+      SourceCode: >-
+        Player.RewardXP 300
+
+        SetObjectiveCompleted AZBrushQuest02 62 1
+
+        AZMalpaisWaterPumpREF.disable
+
+        Player.RemoveItem AZSmoochCannister 1
+
+
+        ; Placeholder stuff
+
+        AZMountTiptonCaveNiemannREF.kill
+
+        AZMountTiptonCaveClarkREF.kill
+
+        AZMountTiptonCaveJessREF.kill
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020A9C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF4C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF52:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01DF50:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020A9D:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007204006E410000006E010000001C0001007711070001006E2C0100001C0002002210020000001C000300221002000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBrushQuest02 65 1
+
+        Player.RewardXP 300
+
+        AZMalpaisWaterPumpREF.disable
+
+        AZDecanusQuintusSupplyLockerREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020A9C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AC1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x3710050001007204001C0001002210020000001C0002002210020000001C00030052100A0002007205006E01000000
+      SourceCode: >-
+        StopQuest AZBrushQuest02QuestTimer
+
+        AZMalpaisWaterPumpREF.disable
+
+        AZDecanusQuintusSupplyLockerREF.disable
+
+        Player.RemoveItem AZSmoochCannister 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020A9C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020AC1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209FA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 020A9D:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Convince Decanus Quintus to support Legionary use of Brush.
+  Targets:
+  - Target: 00C2F8:NovaArizona.esm
+    Unused: 0x776D2C
+- Index: 6
+  Description: (Optional) Report Niemann's activity to Quintus.
+  Targets:
+  - Target: 00C2F8:NovaArizona.esm
+    Unused: 0x7D102A
+- Index: 10
+  Description: Quintus has agreed to let his Legionaries use Brush. Return to Niemann.
+  Targets:
+  - Target: 01DF4C:NovaArizona.esm
+    Unused: 0x8D052D
+- Index: 12
+  Description: Quintus has banned Brush. Return to Niemann with news of your failure.
+  Targets:
+  - Target: 01DF4C:NovaArizona.esm
+    Unused: 0x8D052D
+- Index: 15
+  Description: Find a way to have Decanus Quintus killed.
+  Targets:
+  - Target: 00C2F8:NovaArizona.esm
+    Unused: 0x161428
+- Index: 16
+  Description: (Optional) Convince Quintus's Legionaries to secretly kill Qunitus for "disloyalty".
+  Targets:
+  - Target: 0209B9:NovaArizona.esm
+    Unused: 0xD13B32
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100796571
+      SecondParameter: 8
+  - Target: 006D93:NovaArizona.esm
+    Unused: 0xD13B32
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100796571
+      SecondParameter: 9
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 020A96:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 006D93:NovaArizona.esm
+  - Target: 0209BA:NovaArizona.esm
+    Unused: 0xD13B32
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100796571
+      SecondParameter: 10
+- Index: 17
+  Description: (Optional) Place drugs in Quintus's stash and then report him to Aetius.
+  Targets:
+  - Target: 020AC1:NovaArizona.esm
+    Unused: 0x49042F
+- Index: 18
+  Description: (Optional) Report Quintus to Aetius.
+  Targets:
+  - Target: 016CB1:NovaArizona.esm
+    Unused: 0xCF1527
+- Index: 25
+  Description: Quintus has been killed. Return to Niemann.
+  Targets:
+  - Target: 01DF4C:NovaArizona.esm
+    Unused: 0x161428
+- Index: 26
+  Description: (Optional) Report Niemann's activity to Centurion Aetius.
+  Targets:
+  - Target: 016CB1:NovaArizona.esm
+    Unused: 0x776D2C
+- Index: 30
+  Description: Convince Centurion Aetius to support the Legionaries' use of Brush.
+  Targets:
+  - Target: 016CB1:NovaArizona.esm
+    Unused: 0x7A2F30
+- Index: 35
+  Description: Return to Niemann.
+  Targets:
+  - Target: 01DF4C:NovaArizona.esm
+    Unused: 0x452F22
+- Index: 40
+  Description: Wait three days for Brush to make its way to Malpais.
+- Index: 45
+  Description: Three days have passed. Return to Niemann.
+  Targets:
+  - Target: 01DF4C:NovaArizona.esm
+    Unused: 0x161428
+- Index: 50
+  Description: Speak with Marty.
+  Targets:
+  - Target: 01DF4E:NovaArizona.esm
+    Unused: 0x442F22
+- Index: 60
+  Description: Spike the Brush supply at Malpais with Smooch.
+  Targets:
+  - Target: 020A9C:NovaArizona.esm
+    Unused: 0x132529
+- Index: 62
+  Description: (Optional) Report Niemann's activity to Flavius Constantius.
+  Targets:
+  - Target: 004BC2:NovaArizona.esm
+    Unused: 0x766D2C
+- Index: 63
+  Description: Return to Niemann.
+  Targets:
+  - Target: 01DF4C:NovaArizona.esm
+    Unused: 0x442F22
+- Index: 19
+  Description: Launch the mutiny against Decanus Quintus.
+  Targets:
+  - Target: 00C2F8:NovaArizona.esm
+    Unused: 0x161428

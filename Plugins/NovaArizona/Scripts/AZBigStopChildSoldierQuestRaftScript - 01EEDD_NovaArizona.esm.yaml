@@ -1,0 +1,122 @@
+FormKey: 01EEDD:NovaArizona.esm
+EditorID: AZBigStopChildSoldierQuestRaftScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 10
+    VariableCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000200610000000000801611000209005601000002001507004C7300000080161A0002120058000069100B000100FFFF050052020007004C6700000059100B000100720300000000000000811608000107004C8200000059100B00010072040000000000000011000000100006000000CF020000801611000209005601000002001507004C1B030000391513000112005601000003005800001F10040000000080161300020B0056010000030042000607004C1B03000080161300020B0056010000030042010407004C0A02000080161C000214005202007800000E10060001002C002842410807004CEF01000059100B00010072040000000000000039150C00010B00560105000A0042011C771108000100FFFF0400423280161A0002120058000088100B000100FFFF050052060007004C730100003A151000010F0052060078000022100400000028811608000107004CE301000080161A0002120058000088100B000100FFFF050052070007004CB10100003A151000010F0052070078000022100400000028811608000107004CE301000080161A0002120058000088100B000100FFFF050052080007004CE30100003A151000010F0052080078000022100400000028811608000107004CFE01000059100B000100720900000000000000811608000107004C1B03000080161300020B0056010000030042020407004C1B0300003A151D00011C00520200780000521011000200FFFF0500520A00FFFF040042012859100B00010072040000000000000039150C00010B00560105000A0042011C771108000100FFFF0400423280161A0002120058000088100B000100FFFF050052060007004CAB0200003A151000010F0052060078000022100400000028811608000107004C1B03000080161A0002120058000088100B000100FFFF050052070007004CE90200003A151000010F0052070078000022100400000028811608000107004C1B03000080161A0002120058000088100B000100FFFF050052080007004C1B0300003A151000010F005208007800002210040000002880161300020B00560105000A0042030407004C5B030000A21115000300FFFF0500520500FFFF04004214FFFF0400420139150C00010B0056010000020042010011000000
+  SourceCode: >-
+    name AZBigStopChildSoldierQuestRaftScript;
+
+
+    int AllRaftsRepaired;
+
+    int RaftRepaired;
+
+    int Button;
+
+    ref ThisRaft;
+
+
+    OnActivate {
+        if (!RaftRepaired) {
+            if (IsActionRef(Player)) {
+                ShowMessage(AZYTempleBarRaftMessage);
+            }
+        } else {
+            ShowMessage(AZYTempleBarRaftMessageRepaired);
+        }
+    }
+
+
+    GameMode {
+        if (!RaftRepaired) {
+            Button = GetButtonPressed();
+            if (Button > 0) {
+                if (Button == 1) {
+                    if (Player.GetAv(Survival) >= 65) {
+                        ShowMessage(AZYTempleBarRaftMessageRepaired);
+                        AZBigStopChildSoldierQuest.RaftsRepaired += 1;
+                        RewardXP(50);
+
+                        if (GetIsReference(AZCassiaRaftREF01)) {
+                            AZCassiaRaftREF01.Disable();
+                        } else if (GetIsReference(AZCassiaRaftREF02)) {
+                            AZCassiaRaftREF02.Disable();
+                        } else if (GetIsReference(AZCassiaRaftREF03)) {
+                            AZCassiaRaftREF03.Disable();
+                        }
+                    } else {
+                        ShowMessage(AZYTempleBarRaftMessageLowRepaired);
+                    }
+                } else if (Button == 2) {
+                    Player.RemoveItem(AZRaftRepairWire, 1);
+                    ShowMessage(AZYTempleBarRaftMessageRepaired);
+                    AZBigStopChildSoldierQuest.RaftsRepaired += 1;
+                    RewardXP(50);
+
+                    if (GetIsReference(AZCassiaRaftREF01)) {
+                        AZCassiaRaftREF01.Disable();
+                    } else if (GetIsReference(AZCassiaRaftREF02)) {
+                        AZCassiaRaftREF02.Disable();
+                    } else if (GetIsReference(AZCassiaRaftREF03)) {
+                        AZCassiaRaftREF03.Disable();
+                    }
+                }
+            }
+        }
+
+        if (AZBigStopChildSoldierQuest.RaftsRepaired == 3) {
+            SetObjectiveCompleted(AZBigStopChildSoldierQuest, 20, 1);
+            RaftRepaired = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: AllRaftsRepaired
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: RaftRepaired
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Button
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: ThisRaft
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF1B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF1C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEDE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B2C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF1E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF1D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF17:NovaArizona.esm

@@ -1,0 +1,50 @@
+FormKey: 005A0F:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F6D
+  ResponseText: Psilocybe cubensis.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C686F
+  ResponseText: Comes in a few varieties. Any'll do the trick though.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C686F
+  ResponseText: It's potent stuff. We use just a bit in the brew. Just enough to keep us peppy and present.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005A46:NovaArizona.esm
+- 005A04:NovaArizona.esm
+- 005A05:NovaArizona.esm
+- 005A09:NovaArizona.esm
+- 00556D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Golden Teacher?

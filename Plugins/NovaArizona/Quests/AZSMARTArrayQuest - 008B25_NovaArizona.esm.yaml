@@ -1,0 +1,59 @@
+FormKey: 008B25:NovaArizona.esm
+EditorID: AZSMARTArrayQuest
+FormVersion: 15
+Name: Count Every Star
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 17008
+Stages:
+- {}
+- Index: 10
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 20
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 30
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+      CompiledScript: 0x7711070001006EC8000000
+      SourceCode: rewardxp 200
+Objectives:
+- Index: 1
+  Description: Talk to the Rusty Hooks.
+  Targets:
+  - Target: 00977A:NovaArizona.esm
+    Unused: 0x824C24
+  - Target: 009F02:NovaArizona.esm
+    Unused: 0x824C24
+- Index: 2
+  Description: Go to the SMART Array.
+  Targets:
+  - Target: 008B52:NovaArizona.esm
+    Unused: 0x343523
+- Index: 10
+  Description: Return to Alba Nox. We didn't finish the quest yet, sorry!
+  Targets:
+  - Target: 008A67:NovaArizona.esm
+    Unused: 0x676D2C
+- Index: 100
+  Description: ''

@@ -1,0 +1,112 @@
+FormKey: 14B27D:FalloutNV.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DDD1F:FalloutNV.esm
+  VertexCount: 12
+  TriangleCount: 10
+  EdgeLinkCount: 5
+Vertices:
+- 85759.59, 28672, 3344
+- 86016, 28672, 3336
+- 85769.72, 29070.402, 3319.4568
+- 86016, 29060.537, 3318.9534
+- 85782.2, 29618.621, 3342.7505
+- 86016, 29619.328, 3342.7139
+- 85804.5, 30455.56, 3378.3174
+- 86016, 30457.236, 3378.0332
+- 85926.97, 29818.8, 3352.3853
+- 86016, 29970.432, 3357.5134
+- 85948.43, 29972.7, 3358.5679
+- 85801.26, 29970.314, 3357.6816
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 3, 2, 1
+  EdgeLink_0_1: 2
+  Flags:
+  - EdgeLink_2_0
+  - Found
+- Vertices: 3, 4, 2
+  EdgeLink_0_1: 3
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 1
+  Flags:
+  - Found
+- Vertices: 4, 3, 5
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: 6
+  Flags:
+  - EdgeLink_1_2
+  - Found
+- Vertices: 9, 7, 10
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: 5
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 10, 8, 9
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 8
+  EdgeLink_2_0: 4
+  Flags:
+  - Found
+- Vertices: 4, 5, 8
+  EdgeLink_0_1: 3
+  EdgeLink_1_2: 8
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 10, 7, 6
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 9
+  Flags:
+  - Found
+- Vertices: 8, 5, 9
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: 5
+  Flags:
+  - EdgeLink_1_2
+  - Found
+- Vertices: 10, 6, 11
+  EdgeLink_0_1: 7
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 256.40625
+  MaxDistanceY: 1785.2363
+  Min: 85759.59, 28672, 3318.9534
+  Max: 86016, 30457.236, 3378.3174
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+EdgeLinks:
+- Mesh: 14B279:FalloutNV.esm
+- Mesh: 14B279:FalloutNV.esm
+  Triangle: 3
+- Mesh: 14B279:FalloutNV.esm
+  Triangle: 8
+- Mesh: 14B279:FalloutNV.esm
+  Triangle: 5
+- Mesh: 0224F2:NovaArizona.esm

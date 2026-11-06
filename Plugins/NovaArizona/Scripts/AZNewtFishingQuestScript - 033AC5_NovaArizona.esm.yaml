@@ -1,0 +1,171 @@
+FormKey: 033AC5:NovaArizona.esm
+EditorID: AZNewtFishingQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 4
+    VariableCount: 15
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000CC01000016002C000900280020583A10050001007201002035203E3D205A0100203130203C202626207306002030203D3D202626160019000300150020720200582F100500010072030020313030203E3DA2110F0003007201006E050000006E01000000A2110F0003007201006E060000006E01000000A3110F0003007201006E0F0000006E01000000170002000300A2110F0003007201006E050000006E00000000A2110F0003007201006E060000006E00000000A3110F0003007201006E0F0000006E000000001900000019000000160023000E001F0020730F002031203D3D20720200584310050001007204002030203D3D202626160015000400110020583A1005000100720100203530203D3D39100A0002007201006E3C00000015000A007201007308000200203115000B00720100730500030020313015000A007201007307000200203518000D0003000900205A0100203530203C15000A007201007308000200203115000B00720100730500030020313015000A007201007307000200203518000F0003000B00205A010020313030203D3D15000A007201007308000200203215000B00720100730500030020313015000A0072010073070002002035190000001900000011000000
+  SourceCode: >-
+    scn AZNewtFishingQuestScript
+
+
+    int OriaConfront
+
+    int DealNegotiated ; will be used for the timer to advance the quest for Ammon-Ra to negotiate with the raiders
+
+    int DynamiteDelivered ; used for the timer to advance the quest to the Lakelurk stage
+
+    int LakelurksKilled ; Attach this script to Lakelurk scripts and tick up like the Great Khans
+
+    int BossLakelurksKilled
+
+    int HiveCleared
+
+    int BeccaPay
+
+    int BeccaDisinterest
+
+    int OriaReward
+
+    int PiratesDiscussed
+
+    int DoorsUnlocked
+
+    int GeneratorsSettoBlow
+
+
+    int DynamiteMethod ; 1 = Legion, 2 = Player, 3 = Union Mine, 4 = Ammon-Ra
+
+
+    ; Use the global AZStoryEventNewt for ending, 1 = Lakelurks continue to attack, 2 = Legion clamps down, Newt grows more dependent, 3 = Lake Mead facility destroyed, Newt grows more independent
+
+    ; Ending states will also affect the global
+
+
+
+    BEGIN GameMode
+
+
+    if GetStage AZNewtFishingQuest >= 5 && AZNewtFishingQuest < 10 && DynamiteMethod == 0
+    	if Player.GetItemCount AZDynamiteFormList >= 100
+    		SetObjectiveCompleted AZNewtFishingQuest 5 1
+    		SetObjectiveCompleted AZNewtFishingQuest 6 1
+    		SetObjectiveDisplayed AZNewtFishingQuest 15 1
+    	else
+    		SetObjectiveCompleted AZNewtFishingQuest 5 0
+    		SetObjectiveCompleted AZNewtFishingQuest 6 0
+    		SetObjectiveDisplayed AZNewtFishingQuest 15 0
+    	endif
+    endif
+
+
+    if GeneratorsSettoBlow == 1 && Player.GetInCell AZLakeMeadLaboratoryINT == 0
+    	if GetStage AZNewtFishingQuest == 50
+    		SetStage AZNewtFishingQuest 60
+    		Set AZNewtFishingQuest.HiveCleared to 1
+    		Set AZNewtFishingQuest.LakelurksKilled to 10
+    		Set AZNewtFishingQuest.BossLakelurksKilled to 5
+    	elseif AZNewtFishingQuest < 50
+    		Set AZNewtFishingQuest.HiveCleared to 1
+    		Set AZNewtFishingQuest.LakelurksKilled to 10
+    		Set AZNewtFishingQuest.BossLakelurksKilled to 5
+    	elseif AZNewtFishingQuest == 100
+    		Set AZNewtFishingQuest.HiveCleared to 2
+    		Set AZNewtFishingQuest.LakelurksKilled to 10
+    		Set AZNewtFishingQuest.BossLakelurksKilled to 5
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 3
+      Unknown: 0x60BF20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C665669730000
+    Name: DealNegotiated
+  - Data:
+      Index: 4
+      Unknown: 0x80BF20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000F0030000
+    Name: DynamiteDelivered
+  - Data:
+      Index: 5
+      Unknown: 0xA0BF20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x70696330316130
+    Name: LakelurksKilled
+  - Data:
+      Index: 6
+      Unknown: 0x20DF29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x0000008C0A0000
+    Name: DynamiteMethod
+  - Data:
+      Index: 7
+      Unknown: 0xC0BF20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x59600F0442600F
+    Name: BossLakelurksKilled
+  - Data:
+      Index: 8
+      Unknown: 0xE0BF20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x61626961203D3D
+    Name: HiveCleared
+  - Data:
+      Index: 9
+      Unknown: 0x00A020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x626961203D3D20
+    Name: BeccaPay
+  - Data:
+      Index: 10
+      Unknown: 0x20A020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x33000000000000
+    Name: BeccaDisinterest
+  - Data:
+      Index: 11
+      Unknown: 0x40BF20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x1C282674A15C0F
+    Name: OriaConfront
+  - Data:
+      Index: 12
+      Unknown: 0x40A020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: OriaReward
+  - Data:
+      Index: 13
+      Unknown: 0x60A020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C665669730000
+    Name: PiratesDiscussed
+  - Data:
+      Index: 14
+      Unknown: 0x80A020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xBA5C0F4CBE5C0F
+    Name: DoorsUnlocked
+  - Data:
+      Index: 15
+      Unknown: 0xA0A020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000010050000
+    Name: GeneratorsSettoBlow
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB15:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 038781:NovaArizona.esm

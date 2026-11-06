@@ -1,0 +1,36 @@
+FormKey: 0104B6:NovaArizona.esm
+EditorID: AZTravelingMerchantSandyRhodesScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A009A000000000016005D000500590020583B100A0002007202006E050000002031203D3D20583B100A0002007202006E0A0000002031203D3D207C7C20583B100A0002007202006E0C0000002030203D3D20262620583A100500010072020020313030203C20262639100A0002007202006E0F0000001C000100011100008011050001007203008011050001007204008011050001007205001900000011000000
+  SourceCode: >-
+    scn AZTravelingMerchantSandyRhodesScript
+
+
+    BEGIN OnDeath
+
+
+    if (GetStageDone AZChlorideTaxQuest 5 == 1 || GetStageDone AZChlorideTaxQuest 10 == 1) && GetStageDone AZChlorideTaxQuest 12 == 0 && GetStage AZChlorideTaxQuest < 100
+    	SetStage AZChlorideTaxQuest 15
+    	PlayerRef.StopCombatAlarmOnActor
+    	RemoveFromFaction AZDolanSpringsCivilianFaction
+    	RemoveFromFaction AZLibertiDialogueFaction
+    	RemoveFromFaction AZMerchantsDialogueFaction
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC1C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004363:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01839A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000E21:NovaArizona.esm

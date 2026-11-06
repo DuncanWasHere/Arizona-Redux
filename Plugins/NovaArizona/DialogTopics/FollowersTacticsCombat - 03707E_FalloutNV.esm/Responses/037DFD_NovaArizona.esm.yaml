@@ -1,0 +1,33 @@
+FormKey: 037DFD:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You got a problem with it?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 03707B:FalloutNV.esm
+- 03707A:FalloutNV.esm
+- 11EBCD:FalloutNV.esm
+- 11EBCC:FalloutNV.esm
+- 03707C:FalloutNV.esm
+- 03707D:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I want you to change your combat style.

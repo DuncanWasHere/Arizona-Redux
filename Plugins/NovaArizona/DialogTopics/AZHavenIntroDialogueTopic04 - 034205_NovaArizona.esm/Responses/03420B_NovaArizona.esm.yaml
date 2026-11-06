@@ -1,0 +1,43 @@
+FormKey: 03420B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: You want me watching the gate when there's a murderer right here?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776315
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010033100A0002007203006E010000001C00020034100D0003007204007203006E01000000
+  SourceCode: >-
+    AZHavenJobREF.Say AZHavenIntroDialogueTopic05 1
+
+    AZHavenConvoTalkerREF.SayTo player AZHavenIntroDialogueTopic05 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0192B7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034289:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034206:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

@@ -1,0 +1,41 @@
+FormKey: 01EB9D:NovaArizona.esm
+EditorID: AZDominicusRexSleepPackage
+FormVersion: 15
+Unused: 11
+Flags:
+  MutagenObjectType: PackageSleep
+Unused2: 49024
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0087A1:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 22
+Duration: 9
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetStage
+  FirstParameter: 100758634
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

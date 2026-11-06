@@ -1,0 +1,46 @@
+FormKey: 020A99:NovaArizona.esm
+EditorID: AZLetiDialogueTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A00A1000000010072010080161A000212005202007800002310040000002842000407004C9B00000080161300020B0056010000010042000407004C9B0000003A151E00011D00520200780000561012000200FFFF0500520100FFFF05005203002839150C00010B00560100000100420100221002000000BB110200000080161A000212005202007800002E10040000002842010407004CC5000000221002000000BB110200000011000000
+  SourceCode: >-
+    name AZLetiDialogueTriggerScript;
+
+
+    int DoOnce;
+
+
+    OnTriggerEnter::Player {
+    	if (AZBigSparMineLetiREF.GetDisabled() == 0) {
+    		if (DoOnce == 0) {
+    			AZBigSparMineLetiREF.StartConversation(Player, GREETING);
+    			DoOnce = 1;
+    			Disable();
+    			MarkForDelete();
+    		}
+    	}
+
+    	if (AZBigSparMineLetiREF.GetDead() == 1) {
+    		Disable();
+    		MarkForDelete();
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A76F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0000C8:FalloutNV.esm

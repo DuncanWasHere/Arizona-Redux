@@ -1,0 +1,45 @@
+FormKey: 020B68:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Met him once. He had the right kind of attitude. Told me he wasn't interested in no 'shows of force', only makin' sure things're runnin' well.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If it weren't for his blessing, it's hard to say if I'd still be in business.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 006E3A:NovaArizona.esm
+- 021061:NovaArizona.esm
+- 020B40:NovaArizona.esm
+- 020B41:NovaArizona.esm
+- 020B44:NovaArizona.esm
+- 020B4C:NovaArizona.esm
+- 020B4D:NovaArizona.esm
+- 020B4E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me more about Aristophontes.

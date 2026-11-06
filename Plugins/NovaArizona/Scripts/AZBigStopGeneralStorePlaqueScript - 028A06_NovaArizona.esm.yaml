@@ -1,0 +1,112 @@
+FormKey: 028A06:NovaArizona.esm
+EditorID: AZBigStopGeneralStorePlaqueScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 13
+    RefCount: 8
+    VariableCount: 13
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000800020013000000000059100B00010072080000000000000011000000
+  SourceCode: >-
+    name AZBigStopGeneralStorePlaqueScript;
+
+
+    OnActivate {
+        ShowMessage(AZBigStopGeneralStorePlaque);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: Timer
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInit
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLockedStore
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLockedHouse
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGetOut
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStorePackage
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStoreCell
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStoreDoorREF
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHousePackage
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHouseCell
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHouseDoorREF
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rKey
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 8
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 10
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 11
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 12
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 13
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 028A05:NovaArizona.esm

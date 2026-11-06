@@ -1,0 +1,235 @@
+FormKey: 02505C:NovaArizona.esm
+EditorID: AZUniqueFormListScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 44
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000C205000016000A00790006002058A8140000421408000200720100720200421408000200720100720300421408000200720100720400421408000200720100720500421408000200720100720600421408000200720700720200421408000200720700720300421408000200720700720400421408000200720700720500421408000200720700720600421408000200720800720200421408000200720800720300421408000200720800720400421408000200720800720500421408000200720800720600421408000200720900720300421408000200720900720400421408000200720900720500421408000200720A00720200421408000200720A00720300421408000200720A00720400421408000200720A00720500421408000200720A00720600421408000200720B00720300421408000200720C00720200421408000200720D00720200421408000200720D00720600421408000200720E00720400421408000200720100720F00421408000200720100720F00421408000200720700720F00421408000200720700721000421408000200721100721000421408000200720900720F00421408000200721200721000421408000200720A00720F00421408000200720A00721000421408000200721300720F00421408000200721300721000421408000200720100721400421408000200720100721500421408000200720100721600421408000200720700721400421408000200720700721500421408000200720700721600421408000200721100721400421408000200721100721500421408000200721100721600421408000200721700721400421408000200721700721500421408000200721700721600421408000200721200721600421408000200720A00721400421408000200720A00721500421408000200720A00721600421408000200721800721400421408000200721900721400421408000200721A00721600421408000200720100721B00421408000200720100721C00421408000200720700721B00421408000200720700721C00421408000200721100721B00421408000200721100721C00421408000200721D00721B00421408000200721D00721C00421408000200720A00721B00421408000200720A00721C00421408000200721E00721B00421408000200721E00721C00421408000200721800721B00421408000200721900721B00421408000200720100721F00421408000200720100722000421408000200720700721F00421408000200720700722000421408000200721100721F00421408000200721100722000421408000200722100721F00421408000200722100722000421408000200720A00721F00421408000200720A00722000421408000200722200721F00421408000200722200722000421408000200722300721F00421408000200722300722000421408000200720100722400421408000200720100722500421408000200720100722600421408000200720700722400421408000200720700722500421408000200720700722600421408000200721100722400421408000200721100722600421408000200722100722400421408000200722100722500421408000200722100722600421408000200720A00722400421408000200720A00722500421408000200720A00722600421408000200722700722400421408000200722700722500421408000200722700722600421408000200720100722800421408000200720100722900421408000200720100722A00421408000200720700722800421408000200720700722900421408000200721100722800421408000200721100722900421408000200721100722A00421408000200720A00722800421408000200720A00722900421408000200720A00722A00421408000200721A00722800421408000200722B00722900421408000200722B00722A00421408000200720100722C00421408000200720700722C00421408000200720900722C00421408000200720A00722C001900000011000000
+  SourceCode: >-
+    scn AZUniqueFormListScript
+
+
+    Begin Gamemode
+    	   If GetGameRestarted
+    		;Melee/Unarmed
+    			ListAddForm Everything AZWeapGladiusUnique
+    			ListAddForm Everything AZWeapKnifeUnique
+    			ListAddForm Everything AZWeapSwitchBladeUnique
+    			ListAddForm Everything AZWeapTommyTroutUnique
+    			ListAddForm Everything AZWeapBaseballBatUnique
+    			ListAddForm NVAllWeapons AZWeapGladiusUnique
+    			ListAddForm NVAllWeapons AZWeapKnifeUnique
+    			ListAddForm NVAllWeapons AZWeapSwitchBladeUnique
+    			ListAddForm NVAllWeapons AZWeapTommyTroutUnique
+    			ListAddForm NVAllWeapons AZWeapBaseballBatUnique
+    			ListAddForm WeaponListMeleeALL AZWeapGladiusUnique
+    			ListAddForm WeaponListMeleeALL AZWeapKnifeUnique
+    			ListAddForm WeaponListMeleeALL AZWeapSwitchBladeUnique
+    			ListAddForm WeaponListMeleeALL AZWeapTommyTroutUnique
+    			ListAddForm WeaponListMeleeALL AZWeapBaseballBatUnique
+    			ListAddForm NVHoldoutWeapons AZWeapKnifeUnique
+    			ListAddForm NVHoldoutWeapons AZWeapSwitchBladeUnique
+    			ListAddForm NVHoldoutWeapons AZWeapTommyTroutUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapGladiusUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapKnifeUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapSwitchBladeUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapTommyTroutUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapBaseballBatUnique
+    			ListAddForm NVDLC05ChallengeHistoricalProprietyList AZWeapKnifeUnique
+    			ListAddForm NVDLC05ChallengeArmedForBearWeapons AZWeapGladiusUnique
+    			ListAddForm NVDLC05ChallengeWhiteLineNightmareWeapons AZWeapGladiusUnique
+    			ListAddForm NVDLC05ChallengeWhiteLineNightmareWeapons AZWeapBaseballBatUnique
+    			ListAddForm NVDLC05ChallengeDeathclawProHunterWeaponList AZWeapSwitchBladeUnique
+    		;Pistol
+    			ListAddForm Everything AZWeapSilenced22PistolUnique
+    			ListAddForm Everything AZWeapSilenced22PistolUnique
+    			ListAddForm NVAllWeapons AZWeapSilenced22PistolUnique
+    			ListAddForm NVAllWeapons AZWeap127mmPistolUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeap127mmPistolUnique
+    			ListAddForm NVHoldoutWeapons AZWeapSilenced22PistolUnique
+    			ListAddForm NVImprovedHoldoutWeapons AZWeap127mmPistolUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapSilenced22PistolUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeap127mmPistolUnique
+    			ListAddForm TheProfessionalWeaponsList AZWeapSilenced22PistolUnique
+    			ListAddForm TheProfessionalWeaponsList AZWeap127mmPistolUnique
+    		;Rifle
+    			ListAddForm Everything AZWeapTrailCarbineUnique
+    			ListAddForm Everything AZWeapAssaultCarbineUnique
+    			ListAddForm Everything AZWeapAntiMaterielRifleUnique
+    			ListAddForm NVAllWeapons AZWeapTrailCarbineUnique
+    			ListAddForm NVAllWeapons AZWeapAssaultCarbineUnique
+    			ListAddForm NVAllWeapons AZWeapAntiMaterielRifleUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapTrailCarbineUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapAssaultCarbineUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapAntiMaterielRifleUnique
+    			ListAddForm WeaponRiflesLIST AZWeapTrailCarbineUnique
+    			ListAddForm WeaponRiflesLIST AZWeapAssaultCarbineUnique
+    			ListAddForm WeaponRiflesLIST AZWeapAntiMaterielRifleUnique
+    			ListAddForm NVImprovedHoldoutWeapons AZWeapAntiMaterielRifleUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapTrailCarbineUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapAssaultCarbineUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapAntiMaterielRifleUnique
+    			ListAddForm PerkCowboyWeapons AZWeapTrailCarbineUnique
+     			ListAddForm OldVaqueroWeapons AZWeapTrailCarbineUnique
+    			ListAddForm PerkPyromaniacWeaponsUsingAmmo AZWeapAntiMaterielRifleUnique
+    		;Shotgun
+    			ListAddForm Everything AZWeapLeverActionShotgunUnique
+    			ListAddForm Everything AZWeapRiotShotgunUnique
+    			ListAddForm NVAllWeapons AZWeapLeverActionShotgunUnique
+    			ListAddForm NVAllWeapons AZWeapRiotShotgunUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapLeverActionShotgunUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapRiotShotgunUnique
+    			ListAddForm WeaponShotgunLIST AZWeapLeverActionShotgunUnique
+    			ListAddForm WeaponShotgunLIST AZWeapRiotShotgunUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapLeverActionShotgunUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapRiotShotgunUnique
+    			ListAddForm ShotgunSurgeonWeaponsList AZWeapLeverActionShotgunUnique
+    			ListAddForm ShotgunSurgeonWeaponsList AZWeapRiotShotgunUnique
+    			ListAddForm PerkCowboyWeapons AZWeapLeverActionShotgunUnique
+     			ListAddForm OldVaqueroWeapons AZWeapLeverActionShotgunUnique
+    		;Laser
+    			ListAddForm Everything AZWeapTriBeamLaserRifleUnique
+    			ListAddForm Everything AZWeapNVLaserRCWUnique
+    			ListAddForm NVAllWeapons AZWeapTriBeamLaserRifleUnique
+    			ListAddForm NVAllWeapons AZWeapNVLaserRCWUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapTriBeamLaserRifleUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapNVLaserRCWUnique
+    			ListAddForm EnergyWeapons AZWeapTriBeamLaserRifleUnique
+    			ListAddForm EnergyWeapons AZWeapNVLaserRCWUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapTriBeamLaserRifleUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapNVLaserRCWUnique
+    			ListAddForm BeamChallengeWeaponLIST AZWeapTriBeamLaserRifleUnique
+    			ListAddForm BeamChallengeWeaponLIST AZWeapNVLaserRCWUnique
+    			ListAddForm LaserCommanderWeaponsList AZWeapTriBeamLaserRifleUnique
+    			ListAddForm LaserCommanderWeaponsList AZWeapNVLaserRCWUnique
+    		;Plasma
+    			ListAddForm Everything AZWeapPlasmaPistolUnique
+    			ListAddForm Everything AZWeapNVPlasmaDefenderUnique
+    			ListAddForm Everything AZWeapMultiPlasRifleUnique
+    			ListAddForm NVAllWeapons AZWeapPlasmaPistolUnique
+    			ListAddForm NVAllWeapons AZWeapNVPlasmaDefenderUnique
+    			ListAddForm NVAllWeapons AZWeapMultiPlasRifleUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapPlasmaPistolUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapMultiPlasRifleUnique
+    			ListAddForm EnergyWeapons AZWeapPlasmaPistolUnique
+    			ListAddForm EnergyWeapons AZWeapNVPlasmaDefenderUnique
+    			ListAddForm EnergyWeapons AZWeapMultiPlasRifleUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapPlasmaPistolUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapNVPlasmaDefenderUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapMultiPlasRifleUnique
+    			ListAddForm PlasmaSpazWeaponList AZWeapPlasmaPistolUnique
+    			ListAddForm PlasmaSpazWeaponList AZWeapNVPlasmaDefenderUnique
+    			ListAddForm PlasmaSpazWeaponList AZWeapMultiPlasRifleUnique
+    		;Explosive/Flame
+    			ListAddForm Everything AZWeapGrenadeLauncherUnique
+    			ListAddForm Everything AZWeapHeavyIncineratorUnique
+    			ListAddForm Everything AZWeapNVIncineratorUnique
+    			ListAddForm NVAllWeapons AZWeapGrenadeLauncherUnique
+    			ListAddForm NVAllWeapons AZWeapHeavyIncineratorUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapGrenadeLauncherUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapHeavyIncineratorUnique
+    			ListAddForm ExplodesGasTrapsOnHit AZWeapNVIncineratorUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapGrenadeLauncherUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapHeavyIncineratorUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapNVIncineratorUnique
+    			ListAddForm PerkPyromaniacWeaponsUsingAmmo AZWeapGrenadeLauncherUnique
+    			ListAddForm PerkPyromaniacWeapons AZWeapHeavyIncineratorUnique
+    			ListAddForm PerkPyromaniacWeapons AZWeapNVIncineratorUnique
+    		;Thrown
+    			ListAddForm Everything AZWeapWWNukaYellowUnique
+    			ListAddForm NVAllWeapons AZWeapWWNukaYellowUnique
+    			ListAddForm NVHoldoutWeapons AZWeapWWNukaYellowUnique
+    			ListAddForm NVDLC05ChallengeCuriosAndRelicsWeapons AZWeapWWNukaYellowUnique
+    	   EndIf
+    End
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 157EAD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0181A9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D8D8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 023B54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00CE48:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0062B6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 162313:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16AEA9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F0F05:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000A52:GunRunnersArsenal.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000A3F:GunRunnersArsenal.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000A57:GunRunnersArsenal.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000A40:GunRunnersArsenal.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000A45:GunRunnersArsenal.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0246C9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013140:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 07627F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 129876:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 165AEB:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00CE0D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01AAB8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0221B9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15EAD0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 138561:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15D2BD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 165116:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 018890:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 016CBF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15EAD4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16578A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0251CE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0105B6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1205BE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16B51B:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 165788:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024753:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01051B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C259:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 165AEE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 012BFA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 025FBD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0105AC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 031DA6:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00AD59:NovaArizona.esm

@@ -1,0 +1,42 @@
+FormKey: 007137:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 006E3E:NovaArizona.esm
+PreviousInfo: 006F67:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x690006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is a Legion military installation on an active frontline. State your reason for trespassing or face death.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100691518
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691485
+Choices:
+- 007139:NovaArizona.esm
+- 00713B:NovaArizona.esm
+- 00713F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073030002002031
+  SourceCode: "set AZFreeformArizonaSpillway.iMetRufo to 1\0"
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006E3E:NovaArizona.esm

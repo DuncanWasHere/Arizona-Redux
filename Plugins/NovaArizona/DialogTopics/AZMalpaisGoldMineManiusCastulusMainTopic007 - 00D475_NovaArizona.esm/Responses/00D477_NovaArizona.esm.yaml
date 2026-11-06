@@ -1,0 +1,82 @@
+FormKey: 00D477:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D474:NovaArizona.esm
+PreviousInfo: 00D476:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yes, my slaves have already informed me. Well done.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Why are you looking at me like that? You expect payment...? I didn't ask you to do anything in the first place.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, fine, here. Don't spend it all in one place!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717682
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100717684
+  SecondParameter: 1
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100717684
+  SecondParameter: 10
+Choices:
+- 00D475:NovaArizona.esm
+- 0350F4:NovaArizona.esm
+- 00D48E:NovaArizona.esm
+- 00D48F:NovaArizona.esm
+- 00D490:NovaArizona.esm
+- 00D492:NovaArizona.esm
+- 00D6D4:NovaArizona.esm
+- 00D4A0:NovaArizona.esm
+- 00D493:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E0100000039150C00010B00560103000A00420100
+  SourceCode: >-
+    PlayerREF.AddItem MoneyLegion25 1
+
+    AZFreeformMalpaisGoldMine.bCastulusKnowsClear = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D474:NovaArizona.esm
+Prompt: I removed the boulder that was blocking the back entrance of the mine.

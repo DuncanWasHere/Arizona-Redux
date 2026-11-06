@@ -1,0 +1,35 @@
+FormKey: 01F065:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 01F064:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206E65
+    UseEmotionAnimation: True
+    Unused3: 0x20746F
+  ResponseText: If they revolt, they revolt. There's always more where they came from.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206E65
+    UseEmotionAnimation: True
+    Unused3: 0x20746F
+  ResponseText: Look, are you going to help me or not?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Paying them at least gives them an incentive to not revolt.

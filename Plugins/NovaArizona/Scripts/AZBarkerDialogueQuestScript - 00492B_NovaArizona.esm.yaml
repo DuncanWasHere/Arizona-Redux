@@ -1,0 +1,45 @@
+FormKey: 00492B:NovaArizona.esm
+EditorID: AZBarkerDialogueQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 6
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZBarkerDialogueQuestScript
+
+
+    int iBarkerCaveAcceptance                            ; 1 == Wants you to leave, 2 == Is okay with you being around; 3 == Is willing to answer your questions
+
+    int iMetBarker
+
+    int iRaiderWarMentioned
+
+    int iWindowRockMentioned
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xE02120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000E06EE510
+    Name: iBarkerCaveAcceptance
+  - Data:
+      Index: 2
+      Unknown: 0x202220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iRaiderWarMentioned
+  - Data:
+      Index: 3
+      Unknown: 0x002220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMetBarker
+  - Data:
+      Index: 5
+      Unknown: 0xA0E829120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iWindowRockMentioned

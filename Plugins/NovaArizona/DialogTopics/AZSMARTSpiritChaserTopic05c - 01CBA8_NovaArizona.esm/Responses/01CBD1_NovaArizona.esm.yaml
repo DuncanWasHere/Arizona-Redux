@@ -1,0 +1,106 @@
+FormKey: 01CBD1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ah, Ahiga. Everyone likes him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A rogue Frumentarius. We have reason to believe that he caused the collapse of the Chainway.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He had telling us for weeks that its integrity was failing, and that we'd be sorry if we didn't listen to him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Then, he disappears, and the Chainway falls.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Corvus was always an asshole, but I never expected him to lash out against us like that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestCompleted
+  FirstParameter: 100698646
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100698646
+  SecondParameter: 255
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100698646
+  SecondParameter: 94
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100698646
+  SecondParameter: 81
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100698646
+  SecondParameter: 65
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100698646
+  SecondParameter: 66
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100698646
+  SecondParameter: 25
+Choices:
+- 01CB96:NovaArizona.esm
+- 01CB9C:NovaArizona.esm
+- 01CB9F:NovaArizona.esm
+- 01CBA4:NovaArizona.esm
+- 01CBA5:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073050002002031
+  SourceCode: Set AZFreeformSMARTArray.SpiritChaserCorvus to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB95:NovaArizona.esm
+Prompt: I've done some work for Ahiga. That worth anything?

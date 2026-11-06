@@ -1,0 +1,46 @@
+FormKey: 0210FF:NovaArizona.esm
+EditorID: AZInvisibilityBaseEffectScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 4
+    VariableCount: 2
+    Type: MagicEffect
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060011008A00000039151300011200560400000200580000CE10040000000080161E00021600520300780000C1110B000100FFFF05005204002807004C8C0000003A152000011F00560400000200780000291111000100FFFF0B005A2D431CEBE2361A3F28811608000107004CA90000003A15190001180056040000020078000029110A000100FFFF040042002811000000
+  SourceCode: >-
+    name AZInvisibilityBaseEffectScript;
+
+
+    ScriptEffectStart {
+    	ref rSelf = GetSelf();
+
+    	if (PlayerREF.HasPerk(WildWasteland)) {
+    		rSelf.SetActorAlpha(0.0001);
+    	} else {
+    		rSelf.SetActorAlpha(0);
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rSelf
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rSelf_1
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0ED568:FalloutNV.esm

@@ -1,0 +1,23 @@
+FormKey: 017CDB:NovaArizona.esm
+EditorID: AZCLTentFullDoorCH1Script
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000003900000080161D0002150058000054100B000100FFFF050052010042010407004C580000003A151000010F005202007800007310040000002811000000
+  SourceCode: >-
+    name AZCLTentFullDoorCH1Script;
+
+
+    GameMode {
+        if (GetDeadCount(AZBigStopDominicusRex) == 1) {
+            AZBigStopInterviewTentDoorREF.Unlock();
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B117:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017CC8:NovaArizona.esm

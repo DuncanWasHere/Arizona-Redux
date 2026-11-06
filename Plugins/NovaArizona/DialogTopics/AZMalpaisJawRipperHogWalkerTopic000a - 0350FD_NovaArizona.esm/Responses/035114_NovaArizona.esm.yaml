@@ -1,0 +1,38 @@
+FormKey: 035114:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You've been talking to Pork Chopper? Can't say I understand why it'd be any of your business, but it's about time someone set that boy straight.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100780695
+  SecondParameter: 20
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 27
+Choices:
+- 0350FE:NovaArizona.esm
+- 0350FF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There's a Legionary in Malpais who's in need of whatever wisdom you can spare.

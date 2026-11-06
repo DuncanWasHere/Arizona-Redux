@@ -1,0 +1,28 @@
+FormKey: 03A12E:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A12D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204927
+    UseEmotionAnimation: True
+    Unused3: 0x207375
+  ResponseText: Oh he's over there. Me and him are tight, we're family basically. He's also family with Kyle. It makes a bunch of other people jealous.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797705
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who's Sketch?

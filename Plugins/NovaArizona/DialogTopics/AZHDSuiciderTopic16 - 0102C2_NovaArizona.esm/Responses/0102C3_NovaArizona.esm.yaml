@@ -1,0 +1,28 @@
+FormKey: 0102C3:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204920
+    UseEmotionAnimation: True
+    Unused3: 0x207072
+  ResponseText: Well, no, but they always know. There's probably a Frumentarius right here, right now. They're everywhere. Oh God, they're everywhere.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+Choices:
+- 0102C4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Okay, and did they go into how they would know?

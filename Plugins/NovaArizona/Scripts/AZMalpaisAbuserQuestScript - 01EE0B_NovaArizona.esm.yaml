@@ -1,0 +1,191 @@
+FormKey: 01EE0B:NovaArizona.esm
+EditorID: AZMalpaisAbuserQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 15
+    VariableCount: 10
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000ED03000016002C00040028002058A5110A0002007203006E230000002031203D3D20582212050001007203002030203D3D20262616000D0002000900207301002032203D3DA2110F0003007203006E230000006E01000000A3110F0003007203006E280000006E0100000019000000190000001600230008001F0020720400582E1000002031203E3D20720400582E1000002031203E3D207C7C1600250006002100207302002030203D3D20583B100A0002007203006E140000002030203D3D202626160014000400100020585410050001007205002030203D3D39100A0002007203006EFF0000001C0001001610050001007206003B12130003007207006E000000007A00000000000028401500070073020002002031190000001900000019000000160047000600430020720600587E11050001007208002031203D3D2058A5110A0002007203006E370000002031203D3D2026262058A4110A0002007203006E370000002030203D3D20262616004A000100460020585410050001007209002030203D3D20720A007304002030203D3D2026262058A4110A0002007203006E380000002030203D3D20262620720B007301002030203D3D202626A3110F0003007203006E380000006E01000000190000001600230001001F002058541005000100720C002030203D3D20720A007304002031203D3D202626A3110F0003007203006E390000006E0100000019000000190000001600310005002D002058A5110A0002007203006E510000002031203D3D2058A4110A0002007203006E510000002030203D3D202626160016000100120020720600582F1005000100720D002030203EA3110F0003007203006E520000006E01000000180017000100130020720600582F1005000100720D002030203D3DA3110F0003007203006E520000006E000000001900000019000000160028000C00240020583A1005000100720300203730203D3D20582212050001007203002030203D3D20262616000D0002000900207307002030203D3D15000D00730600080020582F2802000000150007007307000200203118000D0007000900207307002031203D3D1600120001000E0020660800207306002037202B203C391513000112005600000008005800002F28040000000017000200030039100A0002007203006E500000001C0002002210020000001500070073070002002032190000001900000019000000160015000500110020583A1005000100720300203830203D3D1600100003000C00207203007304002031203D3D1600230001001F0020720E00582E1000002031203D3D20720F00582E1000002031203D3D202626A3110F0003007203006E5F0000006E0100000019000000190000001900000011000000
+  SourceCode: >-
+    scn AZMalpaisAbuserQuestScript
+
+
+    short SedonusSlavesMoved
+
+    short SlaveDoOnce
+
+
+    short Slave1DoOnce
+
+    short Slave2DoOnce
+
+
+    short SedonusInspired
+
+    short SedonusUninspired
+
+    short SedonusWaitTimer
+
+
+    short DoOnce
+
+
+    float iTimer
+
+
+    BEGIN GameMode
+
+
+    if GetObjectiveDisplayed AZMalpaisAbuserQuest 35 == 1 && GetQuestCompleted AZMalpaisAbuserQuest == 0
+    	if SedonusSlavesMoved == 2
+    		SetObjectiveCompleted AZMalpaisAbuserQuest 35 1
+    		SetObjectiveDisplayed AZMalpaisAbuserQuest 40 1
+    	endif
+    endif
+
+
+
+    if AZSedonusSlave01REF.GetDead >= 1 || AZSedonusSlave01REF.GetDead >= 1
+    	if SlaveDOOnce == 0 && GetStageDone AZMalpaisAbuserQuest 20 == 0
+    		if GetDeadCount AZMalpaisMarcellusSedonus == 0
+    			SetStage AZMalpaisAbuserQuest 255
+    			AZMarcellusSedonusREF.StartCombat player
+    			AddReputationExact RepNVCaesarsLegion 0 12
+    			Set SlaveDoOnce to 1
+    		endif
+    	endif
+    endif
+
+
+    if Player.GetHasNote AZMalpaisSedonusQuestNote == 1 && GetObjectiveDisplayed AZMalpaisAbuserQuest 55 == 1 && GetObjectiveCompleted AZMalpaisAbuserQuest 55 == 0
+    	if GetDeadCount AZBigStopJem == 0 && AZElephantHillFatEyeQuest.FatEyeJem == 0 && GetObjectiveCompleted AZMalpaisAbuserQuest 56 == 0 && AZBigStopAugustQuest.GossipReject == 0
+    		SetObjectiveDisplayed AZMalpaisAbuserQuest 56 1
+    	endif
+    	if GetDeadCount AZElephantHillFatEye == 0 && AZElephantHillFatEyeQuest.FatEyeJem == 1
+    		SetObjectiveDisplayed AZMalpaisAbuserQuest 57 1
+    	endif
+    endif
+
+
+    if GetObjectiveDisplayed AZMalpaisAbuserQuest 81 == 1 && GetObjectiveCompleted AZMalpaisAbuserQuest 81 == 0
+    	if Player.GetItemCount NVFixer > 0
+    		SetObjectiveDisplayed AZMalpaisAbuserQuest 82 1
+    	elseif Player.GetItemCount NVFixer == 0
+    		SetObjectiveDisplayed AZMalpaisAbuserQuest 82 0
+    	endif
+    endif
+
+
+    if GetStage AZMalpaisAbuserQuest == 70 && GetQuestCompleted AZMalpaisAbuserQuest == 0
+    	if DoOnce == 0
+    		set SedonusWaitTimer to GetGameDaysPassed
+    		set DoOnce to 1
+    	elseif DoOnce == 1
+    		if iTimer < SedonusWaitTimer + 7
+    				iTimer = GetGameDaysPassed
+    		else
+    			SetStage AZMalpaisAbuserQuest 80
+    			AZMalpaisAdjutantREF.disable
+    			Set DoOnce to 2
+    		endif
+    	endif
+    endif
+
+
+    if GetStage AZMalpaisAbuserQuest == 80
+    	if AZMalpaisAbuserQuest.SedonusUninspired == 1
+    		if AZBigStopAlbaNoxREF.GetDead == 1 && AZElephantHillFatEyeREF.GetDead == 1
+    			SetObjectiveDisplayed AZMalpaisAbuserQuest 95 1
+    		endif
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x208A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30203D3DA3110F
+    Name: SedonusSlavesMoved
+  - Data:
+      Index: 2
+      Unknown: 0x408A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x2F280200000015
+    Name: SlaveDoOnce
+  - Data:
+      Index: 3
+      Unknown: 0xA08A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00720B00203020
+    Name: SedonusInspired
+  - Data:
+      Index: 4
+      Unknown: 0xC08A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000019000000
+    Name: SedonusUninspired
+  - Data:
+      Index: 6
+      Unknown: 0xE08A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x582F1005000100
+    Name: SedonusWaitTimer
+  - Data:
+      Index: 7
+      Unknown: 0x008B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x0039100A000200
+    Name: DoOnce
+  - Data:
+      Index: 8
+      Unknown: 0x60DB29120000000000000000
+      Unknown2: 0x00000000000000
+    Name: iTimer
+  - Data:
+      Index: 9
+      Unknown: 0x608A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65737453746167
+    Name: Slave1DoOnce
+  - Data:
+      Index: 10
+      Unknown: 0x808A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x2F203137322E30
+    Name: Slave2DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008D04:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B71:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008D40:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008D03:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE76:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01365E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0089CF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CB5A9:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A67:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D041:NovaArizona.esm

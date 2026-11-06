@@ -1,0 +1,78 @@
+FormKey: 00EC02:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 033B4F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Before that, I have something you. A little gift. Recipe, too. You've been down below the lake so much that this will be very useful for you, I'm surre.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x756573
+    UseEmotionAnimation: True
+    Unused3: 0x61626C
+  ResponseText: The effect is good for five minutes and five minutes only. Remember that. Anyways, you said you had pearls?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 30
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 5
+  RunOnType: Target
+Choices:
+- 00EBB0:NovaArizona.esm
+- 00EBB2:NovaArizona.esm
+- 00EBB3:NovaArizona.esm
+- 00EBB4:NovaArizona.esm
+- 00EBB5:NovaArizona.esm
+- 00EBBC:NovaArizona.esm
+- 00EBC1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730700020020311C00010002100A0002007203006E030000003B12130003007204006E010000007A0000000000000840
+  SourceCode: >-
+    Set AZFreeformNewt.PearlReward to 1
+
+    Player.AddItem AZSweetwaterStew 3
+
+    AddReputationExact AZRepNewt 1 3
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02E635:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004368:NovaArizona.esm
+Prompt: I have pearls for you.

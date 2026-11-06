@@ -1,0 +1,43 @@
+FormKey: 01FAF3:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x487567
+    UseEmotionAnimation: True
+    Unused3: 0x6F756E
+  ResponseText: I'd rather just rot here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x487567
+    UseEmotionAnimation: True
+    Unused3: 0x6F756E
+  ResponseText: Thanks
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712236
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 31
+  Function: GetStage
+  FirstParameter: 100872659
+Choices:
+- 01FB05:NovaArizona.esm
+- 01FAF4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Sorry pal, I'm sending you back to your owner.

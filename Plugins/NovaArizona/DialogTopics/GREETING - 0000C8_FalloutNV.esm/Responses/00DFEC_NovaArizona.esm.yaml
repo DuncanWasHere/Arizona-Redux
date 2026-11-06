@@ -1,0 +1,45 @@
+FormKey: 00DFEC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: 00DFED:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I remember faces well. You're not one of the usual merchants.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is Quartus Statio. I am Decanus Phylacus, come and go as you please.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720529
+Choices:
+- 00DFA8:NovaArizona.esm
+- 00DFAF:NovaArizona.esm
+- 00DFB0:NovaArizona.esm
+- 00DFB1:NovaArizona.esm
+- 00DF97:NovaArizona.esm
+- 00DF9A:NovaArizona.esm
+- 0000D4:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

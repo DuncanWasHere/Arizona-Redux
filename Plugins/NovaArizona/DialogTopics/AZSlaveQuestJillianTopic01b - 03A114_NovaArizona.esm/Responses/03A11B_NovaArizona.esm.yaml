@@ -1,0 +1,37 @@
+FormKey: 03A11B:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65636F
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: "[FAILED] I don't need your money, we have more character than that on this side of the river. Is that all? Because you should probably be leaving."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702071
+Choices:
+- 03A113:NovaArizona.esm
+- 03A114:NovaArizona.esm
+- 03A115:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Maybe there's some kind of financial arrangement we can come to?
+ActorValuePerk: 0004B0:FalloutNV.esm

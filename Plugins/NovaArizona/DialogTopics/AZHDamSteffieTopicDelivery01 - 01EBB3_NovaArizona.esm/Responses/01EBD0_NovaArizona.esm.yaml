@@ -1,0 +1,45 @@
+FormKey: 01EBD0:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{breathlessly anxious} From mom? How is she? Is she alright? She's still alive, right?"
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100719675
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100719677
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100719677
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723855
+Choices:
+- 01EBB4:NovaArizona.esm
+- 01EBBA:NovaArizona.esm
+- 01EBBB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have a letter for you, from your mom.

@@ -1,0 +1,35 @@
+FormKey: 017D8D:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 01995F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x706C65
+    UseEmotionAnimation: True
+    Unused3: 0x5A4E65
+  ResponseText: They like me. I keep up with the banter. Most people are too soft for it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x706C65
+    UseEmotionAnimation: True
+    Unused3: 0x5A4E65
+  ResponseText: I bring money in and keep soldier morale up. It's no fun to get your drinks poured by some sickly-looking slave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768086
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So you're really just a bartender? Why does the Legion need you?

@@ -1,0 +1,42 @@
+FormKey: 00ED17:NovaArizona.esm
+EditorID: AZBigStopClintonStorePackage
+FormVersion: 15
+GeneralFlags:
+- ContinueIfPcNear
+- SkipFalloutBehavior
+Unused: 54
+BehaviorFlags:
+- HellosToPlayer
+- RandomConversations
+- ReactionToPlayerActions
+- AllowIdleChatter
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoSleeping
+  - NoConversation
+Unused2: 36591
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 512
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 6
+Duration: 15
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

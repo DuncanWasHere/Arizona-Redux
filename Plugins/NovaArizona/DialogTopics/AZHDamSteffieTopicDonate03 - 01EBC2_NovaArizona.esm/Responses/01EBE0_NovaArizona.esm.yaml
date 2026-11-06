@@ -1,0 +1,63 @@
+FormKey: 01EBE0:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Really? Thank you. I don't even know what to say.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100719677
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 500
+  Function: GetItemCount
+  FirstParameter: 15
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723855
+Choices:
+- 01EBB2:NovaArizona.esm
+- 01EBC0:NovaArizona.esm
+- 01EBC1:NovaArizona.esm
+- 01EBC2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006EF40100000412070001006E0F00000015000A007203007301000200203115000A0072030073040002002031
+  SourceCode: >-
+    player.removeitem caps001 500
+
+    rewardkarma 15
+
+    set AZBigStopClariceQuest.bDonated to 1
+
+    set AZBigStopClariceQuest.bDonatedAll to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm
+Prompt: <Give her 500 caps.> Here. When you get across the Dam, buy whatever you need.

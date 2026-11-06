@@ -1,0 +1,153 @@
+FormKey: 03B46D:NovaArizona.esm
+MajorRecordFlagsRaw: 525312
+EditorID: AZChlorideMineChlorideResidentDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Dead Chloride Resident
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  CalcMin: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - ActorEffectList
+  - AIData
+Factions:
+- Faction: 041E7D:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0448D1:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A4:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0942BE:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 02AB62:FalloutNV.esm
+Template: 02E29B:FalloutNV.esm
+Race: 04BB8D:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 04390C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0AB48E:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 137B9E:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A5FD:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 03B470:NovaArizona.esm
+    Count: 1
+- Item:
+    Item: 03B471:NovaArizona.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 023619:FalloutNV.esm
+- 01FD89:FalloutNV.esm
+Class: 01873D:FalloutNV.esm
+Strength: 6
+Perception: 5
+Endurance: 4
+Charisma: 4
+Intelligence: 4
+Agility: 6
+Luck: 4
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 12
+  - Key: BigGuns
+    Value: 12
+  - Key: EnergyWeapons
+    Value: 14
+  - Key: Explosives
+    Value: 14
+  - Key: Lockpick
+    Value: 14
+  - Key: Medicine
+    Value: 12
+  - Key: MeleeWeapons
+    Value: 31
+  - Key: Repair
+    Value: 12
+  - Key: Science
+    Value: 12
+  - Key: SmallGuns
+    Value: 31
+  - Key: Sneak
+    Value: 31
+  - Key: Speech
+    Value: 12
+  - Key: Survival
+    Value: 12
+  - Key: Unarmed
+    Value: 12
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 0298CD:FalloutNV.esm
+HairLength: 0.986051
+Eyes: 04CB10:FalloutNV.esm
+HairColor: '#004B3219'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x1761C13ECE04323F98C7963E6915B93FB171813F48192DBF6750B4BEE06E8CBD59ADC73F80F7293D1F30D83E8A9CA83F8D5734BFAE96893F106FB43EC63290BEBC06AFBF1CBC103FE8FBBE3FF5A0CCBE30A5D43E8DB6FFBE98C128BF801CFCBD0045893FA0A06FBE946DF63E44A767BF607138BE7D4D1C40E8C38BBFB0D9F93EB8719B3EF01B2B3EF0ACE23EC0C3D8BD00D4943CE0D1663FB631E9BF70A37D3D604B93BD384E0CBF9828FC3EE8F411BFA0389FBE4AC9E7BF6AD3DA3E50F7033FC0B3813EF06B973E
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x688AB2BD1BD7D8BE282525BF3CF5C3BF900B3B3E5EA01CBF23185E3FFC9D04BECDB62D3F8498AC3DF03759BE16B9823E82287E3F1832353F92D5C73D0421A93EA099443EE34C5BBFD5CD2CBFC87B4E3F10CB6F3FC1D4EF3E05B8F9BF560E83BF604325BF56147CBE956E903F7C4730BEEE96C4BE7A08DCBD9AD6593F40AD933E1843BF3FEE5593BFF607573FBA84B33FDED1E2BED6EA38BE90AE523F37E90DBF88C4A13FAEC98ABF1E15024078C82C3FC1DA243FADCC8C3F6D3F6D3F32305D3F51493DBFE435393F
+NAM5: 255
+DATADataTypeState:
+- Break0
+MajorFlags:
+- QuestItem
+- 0x80000

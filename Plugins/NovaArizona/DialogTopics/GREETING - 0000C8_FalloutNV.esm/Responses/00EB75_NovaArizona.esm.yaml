@@ -1,0 +1,38 @@
+FormKey: 00EB75:NovaArizona.esm
+FormVersion: 15
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: 033B30:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You want through that door, outsider? Your weapons, leave them in the case over there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsActorTalkingThroughActivator
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100874956
+  SecondParameter: 1
+Choices:
+- 033AF1:NovaArizona.esm
+- 033AF2:NovaArizona.esm
+- 033AF3:NovaArizona.esm
+- 033AF4:NovaArizona.esm
+- 033AF5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

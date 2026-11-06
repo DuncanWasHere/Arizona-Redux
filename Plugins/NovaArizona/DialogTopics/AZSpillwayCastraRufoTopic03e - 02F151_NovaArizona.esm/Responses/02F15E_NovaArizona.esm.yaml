@@ -1,0 +1,46 @@
+FormKey: 02F15E:NovaArizona.esm
+FormVersion: 15
+Quest: 006E3E:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x734F0B
+    UseEmotionAnimation: True
+    Unused3: 0x8B4F0B
+  ResponseText: The spillway should run parallel with the eastern generators, so we are digging to open up another attack vector for our assault.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x1D2544
+    UseEmotionAnimation: True
+    Unused3: 0x182544
+  ResponseText: If the battle begins before we make it through, then so be it. It is not a critical part of our assault plan.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100691518
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691485
+Choices:
+- 00716E:NovaArizona.esm
+- 00716F:NovaArizona.esm
+- 010341:NovaArizona.esm
+- 02F152:NovaArizona.esm
+- 02F151:NovaArizona.esm
+- 007170:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you digging for in the back?

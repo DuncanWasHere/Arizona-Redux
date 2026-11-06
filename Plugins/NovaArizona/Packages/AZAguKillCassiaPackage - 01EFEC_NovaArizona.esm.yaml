@@ -1,0 +1,91 @@
+FormKey: 01EFEC:NovaArizona.esm
+EditorID: AZAguKillCassiaPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+Unused: 120
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 28521
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00C45B:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 36
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789369
+  SecondParameter: 36
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00C45B:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 4
+      Enabled: 1
+    CompiledScript: 0x1C0001005E1000001C0002005E1000001C0003005E1000001C0004000F100900020001006E04000000
+    SourceCode: >-
+      AZBigStopLegionExecutioner01Ref.evp
+
+      AZBigStopLegionExecutioner02Ref.evp
+
+      AZBigStopLegionExecutioner04Ref.evp
+
+
+      AZBigStopLegionExecutioner03REF.SetAv Confidence 4
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008F22:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008F86:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008FBA:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008FB9:NovaArizona.esm
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 6
+      Enabled: 1
+    CompiledScript: 0xA2110F0003007205006E240000006E010000001C0001001610050001007206001C0002005E1000001C0003005E1000001C0004005E100000
+    SourceCode: >-
+      SetObjectiveCompleted AZBigStopChildSoldierQuest 36 1
+
+      AZBigStopLegionExecutioner03REF.StartCombat AZAspirantCassiaREF
+
+      AZBigStopLegionExecutioner01Ref.evp
+
+      AZBigStopLegionExecutioner02Ref.evp
+
+      AZBigStopLegionExecutioner04Ref.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008FB9:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008F22:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008F86:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008FBA:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01EC79:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00C45B:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

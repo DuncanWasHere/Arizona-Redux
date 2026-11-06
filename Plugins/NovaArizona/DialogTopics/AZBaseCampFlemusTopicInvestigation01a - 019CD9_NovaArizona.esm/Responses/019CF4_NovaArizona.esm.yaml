@@ -1,0 +1,38 @@
+FormKey: 019CF4:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What? That's absurd. If she has a problem, she should just come speak to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768684
+Choices:
+- 020DBB:NovaArizona.esm
+- 008999:NovaArizona.esm
+- 019CDB:NovaArizona.esm
+- 019CD8:NovaArizona.esm
+- 019CDA:NovaArizona.esm
+- 019CD5:NovaArizona.esm
+- 019CD6:NovaArizona.esm
+- 019CD7:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Iulia seems to think you and Arceus have some sort of scheme.

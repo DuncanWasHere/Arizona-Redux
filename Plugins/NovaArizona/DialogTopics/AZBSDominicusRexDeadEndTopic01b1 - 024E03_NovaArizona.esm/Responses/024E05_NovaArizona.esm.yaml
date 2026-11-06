@@ -1,0 +1,61 @@
+FormKey: 024E05:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 024E04:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746820
+    UseEmotionAnimation: True
+    Unused3: 0x656D20
+  ResponseText: I'm taking both of them in for questioning. Come with me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073030002002030
+  SourceCode: Set AZBigStopAugustQuest.NoxHasTarget to 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007204006E090000006E00000000A3110F0003007204006E110000006E0000000015000A00720400731B00020020311C0001005E1000001C0002002210020000001C000300221002000000
+  SourceCode: >-
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 9 0
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 17 0
+
+    Set AZBigStopAhigaQuest01.iBothInforQuestioning to 1
+
+    AZBigStopDominicusRexREF.evp
+
+    AZBigStopAhigaREF.disable
+
+    AZBigStopAlbaNoxREF.disable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A66:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A67:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: I found the key to the shed where the toolbox was taken from in Ahiga's room.

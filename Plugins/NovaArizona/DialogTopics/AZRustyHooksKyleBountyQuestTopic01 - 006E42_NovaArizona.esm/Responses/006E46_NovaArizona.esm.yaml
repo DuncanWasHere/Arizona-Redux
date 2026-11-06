@@ -1,0 +1,56 @@
+FormKey: 006E46:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Oh, figured that they would send someone eventually. Yes, he's still where we said he was.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100681665
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100681665
+  SecondParameter: 10
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007202006E0A0000006E010000001C000100A527130001000F0053637265616D696E67204561676C65A3110F0003007202006E0B0000006E00000000A3110F0003007202006E0C0000006E01000000
+  SourceCode: >-
+    setobjectivecompleted AZMalpaisBountyQuest 10 1
+
+    AZScreamingEagleREF.SetFullNameAlt "Screaming Eagle"
+
+    setobjectivedisplayed AZMalpaisBountyQuest 11 0
+
+    setobjectivedisplayed AZMalpaisBountyQuest 12 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006E22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Malpais sent me. They have a bounty on a Legion deserter.

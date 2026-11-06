@@ -1,0 +1,64 @@
+FormKey: 00AD59:NovaArizona.esm
+EditorID: AZWeapWWNukaYellowUnique
+FormVersion: 15
+ObjectBounds:
+  First: -4, -4, -11
+  Second: 4, 4, 18
+Name: Nuka Yellow
+Model:
+  File: AZNovaArizona\Weapons\AZWWNukaYellow.nif
+LargeIconFilename: Interface\Icons\PipboyImages\Weapons\weapons_frag_grenade.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_frag_grenade.dds
+ObjectEffect: 00AD5F:NovaArizona.esm
+EquipmentType: ThrownWeapons
+PickUpSound: 0864D3:FalloutNV.esm
+DropSound: 0864D4:FalloutNV.esm
+ShellCasingModel:
+  File: Weapons\1handGrenadeThrow\GrenadeFrag.NIF
+WorldModel:
+  File: AZNovaArizona\Clutter\WW\AZWWNukaYellow.nif
+ImpactDataSet: 09B8DE:FalloutNV.esm
+SoundEquip: 087D65:FalloutNV.esm
+SoundUnequip: 0864D4:FalloutNV.esm
+Value: 5
+Health: 5
+Weight: 0.5
+BaseDamage: 10
+ClipSize: 1
+AnimationType: Thrown1Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- DontUse1stPersonISAnimations
+- NpcsUseAmmo
+- OverrideActionPoints
+- DontUse3rdPersonISAnimations
+GripAnimation: 255
+AmmoUse: 1
+Spread: 1
+DnamUnused1: 1065353216
+SightFov: 65
+Projectile: 00AD5A:NovaArizona.esm
+BaseVatsToHitChance: 50
+AttackAnimation: AttackThrow6
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 1024
+OnHit: NoDismemberExplode
+AnimationAttackMultiplier: 1
+FireRate: 1
+OverrideActionPoints: 14
+AttackShotsPerSec: 0.7317
+ReloadTime: 1.3
+JamTime: 1.4
+Skill: 38
+LimbDamageMult: 1
+ResistType: -1
+SemiAutomaticFireDelayMin: 0.1
+SemiAutomaticFireDelayMax: 0.5
+DnamUnknownFloat: 0.1
+StrengthReq: 1
+CriticalPercentMult: 1
+Vats:
+  VatsSilent: True
+SoundLevel: Silent

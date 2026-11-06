@@ -1,0 +1,41 @@
+FormKey: 017D80:NovaArizona.esm
+EditorID: AZMalpaisRooftopBallistusPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoSleeping
+  - NoConversation
+  - NoFurniture
+  - NoWandering
+Unused2: 11037
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 017D81:NovaArizona.esm
+  Radius: 16
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+IdleAnimations:
+  AnimationCount: 0x01
+  Animations:
+  - 0269B8:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

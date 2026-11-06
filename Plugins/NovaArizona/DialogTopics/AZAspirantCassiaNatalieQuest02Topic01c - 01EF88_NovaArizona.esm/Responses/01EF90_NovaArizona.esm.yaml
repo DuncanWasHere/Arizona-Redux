@@ -1,0 +1,47 @@
+FormKey: 01EF90:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EF8C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: I sympathize with him, but he's also a Legionary.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: I know that he would not hesitate to target women in the exact same way if his Decanus ordered it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EF86:NovaArizona.esm
+- 01EF87:NovaArizona.esm
+- 01EF88:NovaArizona.esm
+- 01EF89:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I mean, he deserves some therapy, right?
+ActorValuePerk: 0004BB:FalloutNV.esm

@@ -1,0 +1,41 @@
+FormKey: 0199A0:NovaArizona.esm
+FormVersion: 15
+Quest: 01998E:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not bad. They ban drugs, so no junkies. They killed all of the raiders, so good trade. They seem to like our town, so we get some freedom.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As long as you aren't a dumbass, not bad at all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768140
+Choices:
+- 01999C:NovaArizona.esm
+- 01999D:NovaArizona.esm
+- 01999E:NovaArizona.esm
+- 0199A2:NovaArizona.esm
+- 0199A3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the Legion like?

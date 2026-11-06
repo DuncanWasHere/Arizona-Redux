@@ -1,0 +1,49 @@
+FormKey: 019D2D:NovaArizona.esm
+EditorID: AZBaseCampArceusConfrontationPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+Unused: 42
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 12624
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 019BA8:NovaArizona.esm
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 180
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100768688
+  SecondParameter: 13
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 019D3D:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,69 @@
+FormKey: 00E663:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I see. Well, thank you for getting it done. You probably got a better deal than I would have gotten.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, hey, you should come back in a couple days. Depending on how this goes, I might have some more work for you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100874950
+  SecondParameter: 6
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E060000006E00000000A3110F0003007201006E0A0000006E00000000A3110F0003007201006E0B0000006E00000000A3110F0003007201006E0C0000006E00000000A3110F0003007201006E0D0000006E00000000A3110F0003007201006E0E0000006E00000000
+  SourceCode: >-
+    SetObjectiveDisplayed AZNewtFishingQuest 6 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 10 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 11 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 12 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 13 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 14 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E13000000
+  SourceCode: SetStage AZNewtFishingQuest 19
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+Prompt: I have secured dynamite from the Legion. Several crates will arrive soon.

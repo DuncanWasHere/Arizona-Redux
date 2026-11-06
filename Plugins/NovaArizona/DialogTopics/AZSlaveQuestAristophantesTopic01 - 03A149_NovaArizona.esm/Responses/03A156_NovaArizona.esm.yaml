@@ -1,0 +1,97 @@
+FormKey: 03A156:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A154:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Then this sorry business has concluded. Here is some compensation for your services. The mighty Caesar takes care of those who protect his roads.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: Will there be anything else?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 110
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 420
+  FirstParameter: 100901046
+  SecondParameter: 100
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 12
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A000200720B006E0A00000039100A000200720C006E0A0000001C0002002210020000001C0003002210020000001C0004002210020000001C0005002210020000001C0006002210020000001C0007002210020000001C0008002210020000001C0009002210020000001C000A00221002000000
+  SourceCode: >-
+    player.additem MoneyLegion1 10
+
+    setstage AZMalpaisMarketSlaveQuest 10
+
+    AZSlaveQuestRecruit01REF.disable
+
+    AZSlaveQuestRecruit02REF.disable
+
+    AZSlaveQuestRecruit03REF.disable
+
+    AZSlaveQuestRecruit04REF.disable
+
+    AZSlaveQuestRecruit05REF.disable
+
+    AZSlaveQuestRecruit06REF.disable
+
+    AZSlaveQuestRecruit07REF.disable
+
+    AZSlaveQuestRecruit08REF.disable
+
+    AZSlaveQuestDecanusLarREF.disable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A162:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A160:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A15D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A15C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A15B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A15E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A15F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A161:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A159:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+Prompt: The Rusty Hooks have been eliminated.

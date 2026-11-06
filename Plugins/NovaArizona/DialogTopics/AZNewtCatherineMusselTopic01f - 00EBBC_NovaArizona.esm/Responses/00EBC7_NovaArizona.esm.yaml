@@ -1,0 +1,69 @@
+FormKey: 00EBC7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Alright.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100852413
+  RunOnType: Target
+Choices:
+- 00EBB0:NovaArizona.esm
+- 00EBB2:NovaArizona.esm
+- 00EBB3:NovaArizona.esm
+- 00EBB4:NovaArizona.esm
+- 00EBB5:NovaArizona.esm
+- 00EBBC:NovaArizona.esm
+- 00EBC1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x15001600720200730A000E0020720100582F10050001007203001C00010052100F000200720300FFFF0800560102000A001C000100021012000200720400FFFF0B00560102000A004228101500180072020073050010002072020073050020720200730A00202B15000A00720200730A0002002030
+  SourceCode: >-
+    Set AZFreeformNewt.AllPearlsVariable to (Player.GetItemCount AZPearl)
+
+    Player.RemoveItem AZPearl (AZFreeformNewt.AllPearlsVariable)
+
+    Player.AddItem Caps001 (AZFreeformNewt.AllPearlsVariable * 40)
+
+    Set AZFreeformNewt.PearlsGathered to (AZFreeformNewt.PearlsGathered + AZFreeformNewt.AllPearlsVariable)
+
+    Set AZFreeformNewt.AllPearlsVariable to 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02E2BD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: Just take all of them.

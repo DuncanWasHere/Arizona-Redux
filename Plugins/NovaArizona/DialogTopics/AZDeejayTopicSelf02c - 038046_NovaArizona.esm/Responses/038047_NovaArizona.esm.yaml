@@ -1,0 +1,51 @@
+FormKey: 038047:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 03804D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x426172
+    UseEmotionAnimation: True
+    Unused3: 0x77656E
+  ResponseText: Yeah. You know the worst part? {painful and vulnerable to admit}It hurt.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Such a fucking idiot. Finally free, and all I could think was "why didn't he want me? Why wasn't I good enough?"
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I can't forgive myself for that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 038044:NovaArizona.esm
+- 038046:NovaArizona.esm
+- 038048:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He really just let you go?

@@ -1,0 +1,37 @@
+FormKey: 034263:NovaArizona.esm
+EditorID: AZHavenCalIntroPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- NoWarnAttackBehavior
+Flags:
+  MutagenObjectType: PackageGuard
+Unused2: 0
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 03426F:NovaArizona.esm
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 16
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

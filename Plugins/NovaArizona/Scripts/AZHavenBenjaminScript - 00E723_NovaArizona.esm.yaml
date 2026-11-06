@@ -1,0 +1,32 @@
+FormKey: 00E723:NovaArizona.esm
+EditorID: AZHavenBenjaminScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A006100000000007810080002007201007202001600100003000C00207203007302002034203D3DA3110F0003007203006E280000006E00000000A3110F0003007203006E320000006E01000000A3110F0003007203006E3C0000006E000000001900000011000000
+  SourceCode: >-
+    scn AZHavenBenjaminScript
+
+
+    BEGIN OnDeath
+
+
+    SetEnemy PlayerFaction AZHavenFaction
+
+    if AZStatioFindFriendQuest.AutonousSearchStatus == 4
+    	SetObjectiveDisplayed AZStatioFindFriendQuest 40 0
+    	SetObjectiveDisplayed AZStatioFindFriendQuest 50 1
+    	SetObjectiveDisplayed AZStatioFindFriendQuest 60 0
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004361:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm

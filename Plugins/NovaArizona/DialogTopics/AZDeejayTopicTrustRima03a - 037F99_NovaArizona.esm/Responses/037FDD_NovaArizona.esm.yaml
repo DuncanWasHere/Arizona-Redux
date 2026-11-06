@@ -1,0 +1,41 @@
+FormKey: 037FDD:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{indignant}Fuck you, you lying scumbag. I don't capture girls. Not ever."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037F9A:NovaArizona.esm
+- 03807E:NovaArizona.esm
+- 038080:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+  SourceCode: ;AZDeejayQuest.bTrust += 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie.> I heard that Rima was bought from a woman with a chin tattoo. Any idea who it might be?
+ActorValuePerk: 0004BB:FalloutNV.esm

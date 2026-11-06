@@ -1,0 +1,98 @@
+FormKey: 013B78:NovaArizona.esm
+FormVersion: 15
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: 013B59:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x116D1C
+    UseEmotionAnimation: True
+    Unused3: 0xB0961B
+  ResponseText: Gladly. I was newly a veteran Centurion, and had just assumed leadership of Cohors IV.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: The Legion had taken Flagstaff earlier that year. Caesar set his sights south. He wanted Phoenix.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: 'The towns of Prescott and Sedona had joined together so as to prevent our advance. Six different tribes and militias with a common cause: stopping us.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: We took Sedona with ease. The enemy retreated into Woodchute Mountain, near the town of Jerome. I refused to follow.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: Instead, I took Montezuma, Camp Verde, and Dewey-Humboldt. Then we took Prescott.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: Finally, we went through Woodchute Mountain, coming from the west. By the time we arrived, the Profligates had no will left to fight.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: They meant to be an impassable wall. They waited for us to spring their trap, while we were already in their towns.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 8
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x646F6E
+  ResponseText: It took only thirty days to break this six-tribe coalition. When I met Caesar at Sedona, he named me Legatus Sedonus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 013B2E:NovaArizona.esm
+- 013B2F:NovaArizona.esm
+- 013B30:NovaArizona.esm
+- 013B31:NovaArizona.esm
+- 013B32:NovaArizona.esm
+- 013B43:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the Prescott-Sedona campaign.

@@ -1,0 +1,55 @@
+FormKey: 17709B:FalloutNV.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DDC31:FalloutNV.esm
+  VertexCount: 5
+  TriangleCount: 3
+  EdgeLinkCount: 3
+Vertices:
+- 108019.97, 21999.197, 5888.529
+- 107899.914, 21651.506, 5792.456
+- 108037.36, 21670.629, 5797.58
+- 107769.87, 21940.152, 5869.799
+- 107755.84, 21639.64, 5789.277
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: -1
+  Flags:
+  - EdgeLink_1_2
+  - Found
+- Vertices: 1, 0, 3
+  EdgeLink_2_0: 2
+  Flags:
+  - EdgeLink_1_2
+  - Found
+- Vertices: 4, 1, 3
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - EdgeLink_0_1
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 281.51562
+  MaxDistanceY: 359.55664
+  Min: 107755.84, 21639.64, 5789.277
+  Max: 108037.36, 21999.197, 5888.529
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+EdgeLinks:
+- Type: LedgeUp
+  Mesh: 177099:FalloutNV.esm
+  Triangle: 13
+- Type: LedgeDown
+  Mesh: 17709A:FalloutNV.esm
+  Triangle: 21
+- Type: LedgeDown
+  Mesh: 17709A:FalloutNV.esm
+  Triangle: 20

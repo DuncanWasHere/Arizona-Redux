@@ -1,0 +1,63 @@
+FormKey: 01750A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 017509:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: "[FAILED] Hmm.... Somehow, I don't believe you. I'm beginning to think that Malachi was a chattel slaver. That's probably how he kept his prices so low."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: And if that's the case, then the Legion was justified in killing him. I'm writing that. You're fired by the way.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x150013007202007306000B00207202007306002031202B39100A0002007202006E8C0000001C0001008B1002000000
+  SourceCode: >-
+    Set AZMalpaisJournalistQuest.bStanleyLegionApproval to AZMalpaisJournalistQuest.bStanleyLegionApproval + 1
+
+
+    setstage AZMalpaisJournalistQuest 140
+
+
+    AZMalachiREF.killactor
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01039B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: They just went crazy.
+ActorValuePerk: 0004BB:FalloutNV.esm

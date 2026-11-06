@@ -1,0 +1,55 @@
+FormKey: 01F028:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x436869
+    UseEmotionAnimation: True
+    Unused3: 0x646965
+  ResponseText: Legionaries, kill these traitors!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730C00020020317810080002007203007204007810080002007205007204001C000100161005000100720600
+  SourceCode: >-
+    Set AZBigStopChildSoldierQuest.TempleBarConfrontation to 1
+
+    SetEnemy PlayerFaction AZJawRipperFaction
+
+    SetEnemy AZAspirantCassiaFaction AZJawRipperFaction
+
+    AZBigStopLegionExecutioner03Ref.StartCombat player
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008FB9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EFF8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EFED:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: Looks like a lost cause, Natalie. It's time to fight.

@@ -1,0 +1,56 @@
+FormKey: 007425:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xB91F1E
+    UseEmotionAnimation: True
+    Unused3: 0xB81F1E
+  ResponseText: The Ranger is in a cave to the south of here. I'll mark eet on ya map.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E32000000A2110F0003007203006E2A0000006E01000000A3110F0003007203006E280000006E00000000A3110F0003007203006E290000006E01000000
+  SourceCode: >-
+    Player.RemoveItem MoneyLegion1 50
+
+
+    setobjectivecompleted AZMalpaisBountyQuest 42 1
+
+    setobjectivedisplayed AZMalpaisBountyQuest 40 0
+
+    setobjectivedisplayed AZMalpaisBountyQuest 41 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+Prompt: Fine. Here's your coin.

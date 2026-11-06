@@ -1,0 +1,53 @@
+FormKey: 020A90:NovaArizona.esm
+EditorID: AZCowFieldAsherReturnPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+Unused: 108
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 16142
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00C32B:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100796570
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestCompleted
+  FirstParameter: 100796570
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x15000A00720200730A00020020311C0001005E100000
+    SourceCode: >-
+      Set AZBrushQuest01.AsherReturn to 1
+
+      AZCowFieldAsherREF.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0209B9:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 02089A:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

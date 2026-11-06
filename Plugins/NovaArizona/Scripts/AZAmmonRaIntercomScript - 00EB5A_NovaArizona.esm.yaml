@@ -1,0 +1,31 @@
+FormKey: 00EB5A:NovaArizona.esm
+EditorID: AZAmmonRaIntercomScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B0002004700000001007201001600200002001C0020720200582E1000002030203D3D207203007301002032203C2026267111050001007202000D10020000001700020001007111020000001900000011000000
+  SourceCode: >-
+    scn AZAmmonRaIntercomScript
+
+
+    BEGIN OnActivate player
+
+
+    if AZLakeMeadAmmonRaREF.GetDead == 0 && AZFreeformLakeMead.ParlayAccepted < 2
+    	SetTalkingActivatorActor AZLakeMeadAmmonRaREF
+    	Activate
+    else
+    	SetTalkingActivatorActor
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB04:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033ACC:NovaArizona.esm

@@ -1,0 +1,53 @@
+FormKey: 01EDCB:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616E64
+    UseEmotionAnimation: True
+    Unused3: 0x5C726F
+  ResponseText: We are {Latin}Caesar's gift to the Wasteland. We are his chosen disciples to spread the divine message of Mars.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He sends us out into the world to proselytize the Dissolute, to make Profligates renounce their own profligacy, to shape the world in his image.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We enforce his divine will on the children as well, so that they may grow up to be strong enough to carry out his mandate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EF79:NovaArizona.esm
+- 01EDD6:NovaArizona.esm
+- 01EDAC:NovaArizona.esm
+- 01EDAD:NovaArizona.esm
+- 01EDAE:NovaArizona.esm
+- 01EDAF:NovaArizona.esm
+- 01EDB0:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about the Cult of Mars.

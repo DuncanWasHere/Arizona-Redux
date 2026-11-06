@@ -1,0 +1,37 @@
+FormKey: 033120:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x682074
+    UseEmotionAnimation: True
+    Unused3: 0x546861
+  ResponseText: That's a mockery of democracy. I can respect that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x682074
+    UseEmotionAnimation: True
+    Unused3: 0x546861
+  ResponseText: No deal though.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 03B7E0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He said he can't get your cargo back, but he needs your vote and will pay for it.

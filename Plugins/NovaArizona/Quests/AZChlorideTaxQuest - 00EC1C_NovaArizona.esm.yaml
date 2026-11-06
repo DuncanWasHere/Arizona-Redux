@@ -1,0 +1,545 @@
+FormKey: 00EC1C:NovaArizona.esm
+EditorID: AZChlorideTaxQuest
+FormVersion: 15
+Script: 00EC1B:NovaArizona.esm
+Name: Taxman
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 75
+  Unused: 29797
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Starts quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000A3110F0003007201006E0A0000006E01000000A3110F0003007201006E140000006E01000000A3110F0003007201006E1E0000006E01000000A3110F0003007201006E280000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZChlorideTaxQuest 5 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 10 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 20 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 30 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 40 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 6
+  LogEntries:
+  - Flags: []
+    Entry: Tribute from Sandy discussed
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0B0000006E01000000
+      SourceCode: SetObjectiveDisplayed AZChlorideTaxQuest 11 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 7
+  LogEntries:
+  - Flags: []
+    Entry: Sandy's tribute discussed with Aristophontes
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E0B0000006E010000001600100001000C00207202007309002031203D3DA3110F0003007202006E0C0000006E010000001800100003000C00207202007309002032203D3DA2110F0003007202006E0A0000006E01000000A3110F0003007202006E0D0000006E01000000A3110F0003007202006E0E0000006E01000000180010000B000C00207202007309002033203D3DA3110F0003007202006E110000006E010000001600100001000C00207202007306002031203D3D1C00010052100A0002007203006E670000001800100001000C00207202007306002032203D3D1C00010052100A0002007203006ECE0000001800100001000C00207202007306002033203D3D1C00010052100A0002007203006E350100001800100001000C00207202007306002034203D3D1C00010052100A0002007203006E9C0100001900000039100A0002007202006E0B00000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZChlorideTaxQuest 11 1
+
+        if AZChlorideTaxQuest.SandyWaiveStatus == 1
+        	SetObjectiveDisplayed AZChlorideTaxQuest 12 1
+        elseif AZChlorideTaxQuest.SandyWaiveStatus == 2
+        	SetObjectiveCompleted AZChlorideTaxQuest 10 1
+        	SetObjectiveDisplayed AZChlorideTaxQuest 13 1
+        	SetObjectiveDisplayed AZChlorideTaxQuest 14 1
+        elseif AZChlorideTaxQuest.SandyWaiveStatus == 3
+        	SetObjectiveDisplayed AZChlorideTaxQuest 17 1
+        	if AZChlorideTaxQuest.SandyCollateral == 1
+        		Player.RemoveItem MoneyLegion1 103
+        	elseif AZChlorideTaxQuest.SandyCollateral == 2
+        		Player.RemoveItem MoneyLegion1 206
+        	elseif AZChlorideTaxQuest.SandyCollateral == 3
+        		Player.RemoveItem MoneyLegion1 309
+        	elseif AZChlorideTaxQuest.SandyCollateral == 4
+        		Player.RemoveItem MoneyLegion1 412
+        	endif
+        	SetStage AZChlorideTaxQuest 11
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Tribute from Sandy obtained
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x15000A00720200730400020020311600100001000C00207202007306002030203D3D1C00010002100A0002007203006E9C0100001800100001000C00207202007306002031203D3D1C00010002100A0002007203006E350100001800100001000C00207202007306002032203D3D1C00010002100A0002007203006ECE0000001800100001000C00207202007306002033203D3D1C00010002100A0002007203006E670000001800100001000C00207202007306002034203D3D1C00010002100A0002007203006E0000000019000000A2110F0003007202006E0A0000006E01000000A3110F0003007202006E0F0000006E01000000
+      SourceCode: >-
+        Set AZChlorideTaxQuest.TributeSandyRhodes to 1
+
+        if AZChlorideTaxQuest.SandyCollateral == 0
+        	Player.AddItem MoneyLegion1 412
+        elseif AZChlorideTaxQuest.SandyCollateral == 1
+        	Player.AddItem MoneyLegion1 309
+        elseif AZChlorideTaxQuest.SandyCollateral == 2
+        	Player.AddItem MoneyLegion1 206
+        elseif AZChlorideTaxQuest.SandyCollateral == 3
+        	Player.AddItem MoneyLegion1 103
+        elseif AZChlorideTaxQuest.SandyCollateral == 4
+        	Player.AddItem MoneyLegion1 0
+        endif
+
+        SetObjectiveCompleted AZChlorideTaxQuest 10 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 11
+  LogEntries:
+  - Flags: []
+    Entry: Sandy resolution of tax issue
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E010000001600310001002D002058A5110A0002007201006E0B0000002031203D3D2058A4110A0002007201006E0B0000002030203D3D202626A3110F0003007201006E0B0000006E00000000190000001600310001002D002058A5110A0002007201006E0C0000002031203D3D2058A4110A0002007201006E0C0000002030203D3D202626A2110F0003007201006E0C0000006E01000000190000001600310001002D002058A5110A0002007201006E0D0000002031203D3D2058A4110A0002007201006E0D0000002030203D3D202626A2110F0003007201006E0D0000006E01000000190000001600310001002D002058A5110A0002007201006E0E0000002031203D3D2058A4110A0002007201006E0E0000002030203D3D202626A2110F0003007201006E0E0000006E010000001900000015000A0072010073040002002031150013007201007301000B00207201007301002031202B
+      SourceCode: >-
+        SetObjectiveCompleted AZChlorideTaxQuest 10 1
+
+        if GetObjectiveDisplayed AZChlorideTaxQuest 11 == 1 && GetObjectiveCompleted AZChlorideTaxQuest 11 == 0
+        	SetObjectiveDisplayed AZChlorideTaxQuest 11 0
+        endif
+
+        if GetObjectiveDisplayed AZChlorideTaxQuest 12 == 1 && GetObjectiveCompleted AZChlorideTaxQuest 12 == 0
+        	SetObjectiveCompleted AZChlorideTaxQuest 12 1
+        endif
+
+        if GetObjectiveDisplayed AZChlorideTaxQuest 13 == 1 && GetObjectiveCompleted AZChlorideTaxQuest 13 == 0
+        	SetObjectiveCompleted AZChlorideTaxQuest 13 1
+        endif
+
+        if GetObjectiveDisplayed AZChlorideTaxQuest 14 == 1 && GetObjectiveCompleted AZChlorideTaxQuest 14 == 0
+        	SetObjectiveCompleted AZChlorideTaxQuest 14 1
+        endif
+
+        Set AZChlorideTaxQuest.TributeSandyRhodes to 1
+
+        Set AZChlorideTaxQuest.TributeSum to AZChlorideTaxQuest.TributeSum + 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 12
+  LogEntries:
+  - Flags: []
+    Entry: Sandy tribute delivered to Aristophontes
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x15000A0072010073040002002031A2110F0003007201006E0F0000006E01000000150013007201007301000B00207201007301002031202B
+      SourceCode: >-
+        Set AZChlorideTaxQuest.TributeSandyRhodes to 1
+
+        SetObjectiveCompleted AZChlorideTaxQuest 15 1
+
+        Set AZChlorideTaxQuest.TributeSum to AZChlorideTaxQuest.TributeSum + 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Sandy dead
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E00000000A3110F0003007201006E0B0000006E00000000A3110F0003007201006E0C0000006E00000000A3110F0003007201006E0D0000006E00000000A3110F0003007201006E0E0000006E00000000A3110F0003007201006E0F0000006E00000000A3110F0003007201006E100000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZChlorideTaxQuest 10 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 11 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 12 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 13 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 14 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 15 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 16 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: Harlow tribute
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x15000A00720200730200020020311C00010002100A0002007203006EDB000000A2110F0003007202006E140000006E01000000A3110F0003007202006E150000006E01000000
+      SourceCode: >-
+        Set AZChlorideTaxQuest.TributeHarlow to 1
+
+        Player.AddItem MoneyLegion1 219
+
+        SetObjectiveCompleted AZChlorideTaxQuest 20 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 21 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Harlow dead
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E140000006E00000000A3110F0003007201006E150000006E00000000A3110F0003007201006E160000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZChlorideTaxQuest 20 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 21 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 22 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 26
+  LogEntries:
+  - Flags: []
+    Entry: Harlow tribute turned in
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E150000006E0100000015000A00720200730200020020321C00010052100A0002007203006EDB000000150013007202007301000B00207202007301002031202B
+      SourceCode: >-
+        SetObjectiveCompleted AZChlorideTaxQuest 21 1
+
+        Set AZChlorideTaxQuest.TributeHarlow to 2
+
+        Player.RemoveItem MoneyLegion1 219
+
+        Set AZChlorideTaxQuest.TributeSum to AZChlorideTaxQuest.TributeSum + 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: Zeke tribute
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x15000A0072010073050002002031A2110F0003007201006E1E0000006E01000000A3110F0003007201006E230000006E01000000
+      SourceCode: >-
+        Set AZChlorideTaxQuest.TributeZeke to 1
+
+        SetObjectiveCompleted AZChlorideTaxQuest 30 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 35 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 35
+  LogEntries:
+  - Flags: []
+    Entry: Zeke dead
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E1E0000006E00000000A3110F0003007201006E1F0000006E00000000A3110F0003007201006E200000006E00000000A3110F0003007201006E210000006E00000000A3110F0003007201006E220000006E00000000A3110F0003007201006E230000006E00000000A3110F0003007201006E240000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZChlorideTaxQuest 30 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 31 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 32 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 33 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 34 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 35 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 36 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 36
+  LogEntries:
+  - Flags: []
+    Entry: Zeke tribute paid
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E1E0000006E01000000A2110F0003007201006E230000006E01000000150013007201007301000B00207201007301002031202B15000A0072010073050002002032
+      SourceCode: >-
+        SetObjectiveCompleted AZChlorideTaxQuest 30 1
+
+        SetObjectiveCompleted AZChlorideTaxQuest 35 1
+
+        Set AZChlorideTaxQuest.TributeSum to AZChlorideTaxQuest.TributeSum + 1
+
+        Set AZChlorideTaxQuest.TributeZeke to 2
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: Nicodemus tribute
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x15000A00720200730300020020311C00010002100A0002007203006E1F000000A2110F0003007202006E280000006E01000000A3110F0003007202006E290000006E01000000
+      SourceCode: >-
+        Set AZChlorideTaxQuest.TributeNicodemus to 1
+
+        Player.AddItem MoneyLegion1 31
+
+        SetObjectiveCompleted AZChlorideTaxQuest 40 1
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 41 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 45
+  LogEntries:
+  - Flags: []
+    Entry: Nicodemus dead
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E280000006E00000000A3110F0003007201006E290000006E00000000A3110F0003007201006E2A0000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZChlorideTaxQuest 40 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 41 0
+
+        SetObjectiveDisplayed AZChlorideTaxQuest 42 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 46
+  LogEntries:
+  - Flags: []
+    Entry: Nicodemus tribute paid
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E290000006E0100000015000A00720200730300020020321C00010052100A0002007203006E1F000000150013007202007301000B00207202007301002031202B
+      SourceCode: >-
+        SetObjectiveCompleted AZChlorideTaxQuest 41 1
+
+        Set AZChlorideTaxQuest.TributeNicodemus to 2
+
+        Player.RemoveItem MoneyLegion1 31
+
+        Set AZChlorideTaxQuest.TributeSum to AZChlorideTaxQuest.TributeSum + 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E960000001C00010002100A0002007202006E190000003B12130003007203006E010000007A0000000000000840AD1105000100720400
+      SourceCode: >-
+        Player.RewardXP 150
+
+        Player.AddItem MoneyLegion1 25
+
+        AddReputationExact RepNVCaesarsLegion 1 3
+
+        CompleteAllObjectives AZChlorideTaxQuest
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0F43DD:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00EC1C:NovaArizona.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 5
+  Description: Collect tribute from the people of Mojave Orientum.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x65102A
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 4
+      Function: GetQuestVariable
+      FirstParameter: 100723740
+      SecondParameter: 1
+- Index: 10
+  Description: Collect tribute from Sandy Rhodes.
+  Targets:
+  - Target: 03388E:NovaArizona.esm
+    Unused: 0x811D26
+- Index: 11
+  Description: Ask Aristophontes about waiving Sandy Rhodes's tribute.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x2E102B
+- Index: 12
+  Description: Inform Sandy Rhodes that Aristophontes will not waive her debt.
+  Targets:
+  - Target: 03388E:NovaArizona.esm
+    Unused: 0x646D2C
+- Index: 13
+  Description: Inform Sandy Rhodes that Aristophontes will waive her debt.
+  Targets:
+  - Target: 03388E:NovaArizona.esm
+    Unused: 0x646D2C
+- Index: 14
+  Description: (Optional) Lie to Sandy Rhodes that Aristophontes will not waive her debt.
+  Targets:
+  - Target: 03388E:NovaArizona.esm
+    Unused: 0x4E042F
+- Index: 15
+  Description: Return to Aristophontes with Sandy Rhodes's tribute.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x2E102B
+- Index: 16
+  Description: Inform Aristophontes that Sandy Rhodes is dead.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x192529
+- Index: 20
+  Description: Collect tribute from Harlow.
+  Targets:
+  - Target: 016CB3:NovaArizona.esm
+    Unused: 0x142925
+- Index: 21
+  Description: Return to Aristophontes with Harlow's tribute.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x192529
+- Index: 22
+  Description: Inform Aristophontes that Harlow is dead.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x1D1428
+- Index: 30
+  Description: Collect tribute from Zeke.
+  Targets:
+  - Target: 01998D:NovaArizona.esm
+    Unused: 0x9E4C24
+- Index: 31
+  Description: Ask Aristophontes if Zeke can work to pay off his debt.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x2E102B
+- Index: 32
+  Description: Tell Zeke that he can work for White Sands.
+  Targets:
+  - Target: 01998D:NovaArizona.esm
+    Unused: 0x1C1428
+- Index: 33
+  Description: (Optional) Help Zeke optimize the electricity from the Greenway Wind Farm.
+- Index: 34
+  Description: Tell Zeke that the electricity has been optimized.
+  Targets:
+  - Target: 01998D:NovaArizona.esm
+    Unused: 0x65102A
+- Index: 35
+  Description: Return to Aristophontes with Zeke's tribute.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x192529
+- Index: 36
+  Description: Inform Aristophontes that Zeke is dead.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0xBA1527
+- Index: 40
+  Description: Collect tribute from Nicodemus.
+  Targets:
+  - Target: 000805:NovaArizona.esm
+    Unused: 0x132925
+- Index: 41
+  Description: Return to Aristophontes with Nicodemus's tribute.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x64102A
+- Index: 42
+  Description: Inform Aristophontes that Nicodemus is dead.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x192529
+- Index: 45
+  Description: All tributes have been collected. Speak to Aristophontes.
+  Targets:
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0x646D2C
+- Index: 17
+  Description: Inform Sandy Rhodes that her tribute is lowered.
+  Targets:
+  - Target: 03388E:NovaArizona.esm
+    Unused: 0x64102A

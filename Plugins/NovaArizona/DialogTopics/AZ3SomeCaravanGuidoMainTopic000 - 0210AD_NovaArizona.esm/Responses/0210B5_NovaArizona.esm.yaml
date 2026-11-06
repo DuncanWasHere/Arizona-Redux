@@ -1,0 +1,39 @@
+FormKey: 0210B5:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 0210B4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Still 200 Denarii.Take it or leave it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717604
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 25
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100781095
+  SecondParameter: 26
+Choices:
+- 0210AF:NovaArizona.esm
+- 0210B1:NovaArizona.esm
+- 0210B2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm ready to reconsider your offer.

@@ -1,0 +1,46 @@
+FormKey: 033082:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x736F72
+    UseEmotionAnimation: True
+    Unused3: 0x723F20
+  ResponseText: Skirts took everything. Good, quality cargo - I was on my way to bringing it to market until it was confiscated at a checkpoint.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x792063
+    UseEmotionAnimation: True
+    Unused3: 0x204974
+  ResponseText: The jackass told me to my face that I had no right to complain. That it was property of Caesar and necessary to get the roads back in order.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x792063
+    UseEmotionAnimation: True
+    Unused3: 0x204974
+  ResponseText: Well here I am, complaining. It's not my problem they can't keep the road from crumbling apart.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 033083:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What happened?

@@ -1,0 +1,53 @@
+FormKey: 03421B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6B69
+    UseEmotionAnimation: True
+    Unused3: 0x204A6F
+  ResponseText: What the fuck?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1099469
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776315
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C000100971005000100720200781008000200720300720400
+  SourceCode: >-
+    AZHavenRuceREF.AddScriptPackage VTerrifyingPresencePackage
+
+    SetEnemy PlayerFaction AZHavenFaction
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D55:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 14EFF0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004361:NovaArizona.esm
+Prompt: You guys remind me of a puppy I skinned back when was I 9, except you yap way more.
+ActorValuePerk: 10C6CD:FalloutNV.esm

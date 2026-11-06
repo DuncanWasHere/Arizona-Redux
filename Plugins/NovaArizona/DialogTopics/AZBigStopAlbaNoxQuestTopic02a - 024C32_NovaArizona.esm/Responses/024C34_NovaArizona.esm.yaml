@@ -1,0 +1,41 @@
+FormKey: 024C34:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 024C33:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x427574
+    UseEmotionAnimation: True
+    Unused3: 0x73686F
+  ResponseText: The report I got from Red Rivers today indicates that the gun damage is more like damaged screws and springs that have lost their compression factor.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100813854
+  RunOnType: Target
+Choices:
+- 024C32:NovaArizona.esm
+- 024C37:NovaArizona.esm
+- 024C3B:NovaArizona.esm
+- 024C59:NovaArizona.esm
+- 024C40:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: When we initially looked at the weapons, the damage was subtle. A screwdriver could have been used.

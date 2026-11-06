@@ -1,0 +1,68 @@
+FormKey: 010290:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: "[SUCCEEDED] Oh, shit. Please, I.... The Frumentarii will kill my family if you don't let me do this. I don't want to kill you if I don't have to."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: I can wait until you leave.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetActorValue
+  FirstParameter: 35
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+Choices:
+- 0102B2:NovaArizona.esm
+- 0102B4:NovaArizona.esm
+- 0102B6:NovaArizona.esm
+- 0102B8:NovaArizona.esm
+- 0102BA:NovaArizona.esm
+- 0102BE:NovaArizona.esm
+- 0102BC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E64000000
+  SourceCode: player.rewardxp 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0F000000
+  SourceCode: setstage AZDamNQuest3 15
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm
+Prompt: You have upper body stiffness consistent with the placement of 18 C4 charges.
+ActorValuePerk: 0004B3:FalloutNV.esm

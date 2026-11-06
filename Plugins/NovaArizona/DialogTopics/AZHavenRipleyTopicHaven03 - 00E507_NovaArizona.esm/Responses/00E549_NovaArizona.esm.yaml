@@ -1,0 +1,58 @@
+FormKey: 00E549:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not the way the Rangers did.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I made some bombs. Helped drill some of the guys on insurgency and asymmetric warfare.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Not that they needed my help with that stuff. They had figured most of it out themselves. But there's still good info in old books.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+Choices:
+- 039F1E:NovaArizona.esm
+- 00E4F5:NovaArizona.esm
+- 00E4FE:NovaArizona.esm
+- 00E505:NovaArizona.esm
+- 00E501:NovaArizona.esm
+- 00E508:NovaArizona.esm
+- 00E521:NovaArizona.esm
+- 00E526:NovaArizona.esm
+- 00E527:NovaArizona.esm
+- 00E52E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: '*Our* failure? Did you fight the Legion?'

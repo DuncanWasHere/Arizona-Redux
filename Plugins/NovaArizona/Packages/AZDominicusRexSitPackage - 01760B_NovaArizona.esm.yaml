@@ -1,0 +1,54 @@
+FormKey: 01760B:NovaArizona.esm
+EditorID: AZDominicusRexSitPackage
+FormVersion: 15
+Flags:
+  MutagenObjectType: PackageUseItemAt
+  Flags:
+  - 0x2
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0175D6:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 0175D6:NovaArizona.esm
+Conditions:
+- Fluff: 0x000000
+  Function: IsInCombat
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100758634
+  SecondParameter: 70
+IsUseItem: True
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1C0001005E100000
+    SourceCode: AZBigStopDominicusRexREF.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00B13D:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,29 @@
+FormKey: 037F04:NovaArizona.esm
+EditorID: AZDeejayRecipeBitterDrink
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Deejay's Bitter Drink
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 100892415
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 12
+Skill: Survival
+Category: 13B2C0:FalloutNV.esm
+SubCategory: 13E119:FalloutNV.esm
+Ingredients:
+- Item: 13B2BA:FalloutNV.esm
+  Quantity: 1
+- Item: 13B2B9:FalloutNV.esm
+  Quantity: 1
+- Item: 103B1B:FalloutNV.esm
+  Quantity: 1
+Outputs:
+- Item: 1613BD:FalloutNV.esm
+  Quantity: 1

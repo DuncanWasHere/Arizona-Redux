@@ -1,0 +1,42 @@
+FormKey: 005134:NovaArizona.esm
+EditorID: AZBaseCampIuliaNoIdlePackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- SkipFalloutBehavior
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoSleeping
+  - NoIdleMarkers
+  - NoFurniture
+Unused2: 15893
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00512F:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 45
+  Function: GetStage
+  FirstParameter: 100768688
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

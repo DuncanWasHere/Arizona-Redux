@@ -1,0 +1,59 @@
+FormKey: 034F9F:NovaArizona.esm
+EditorID: AZMalpaisHogWalkerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000EA00000080161000020800560101000A0007004C25010000801611000209005600000001001507004CB5000000372808000100FFFF04004200391527000126005600000003005800001210040000005A00000000000018400E5A000000000000384012008B280C000100FFFF080056000000030061100200000080161300020B0056000000010042040707004CEF000000391513000112005600000001005800000C10040000001C811608000107004C25010000601002000000372808000100FFFF0400420139150C00010B00560101000A004202003A151000010F005202007800005E10040000002811000000
+  SourceCode: >-
+    name AZMalpaisHogWalkerScript;
+
+
+    float fTimer;
+
+
+    GameMode {
+        if (AZMalpaisSniperQuest.iStoryTimeFadedToBlack) {
+            if (!fTimer) {
+                ToggleHardcoreTracking(0);
+
+                float fSkipTime = (GetCurrentTime() + 6.0) % 24.0;
+
+                SetGameHour(fSkipTime);
+                DisablePlayerControls();
+            }
+
+            if (fTimer < 4) {
+                fTimer += GetSecondsPassed();
+            } else {
+                EnablePlayerControls();
+                ToggleHardcoreTracking(1);
+
+                AZMalpaisSniperQuest.iStoryTimeFadedToBlack = 2;
+                AZMalpaisHogWalkerREF.EVP();
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fSkipTime
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: __temp_fSkipTime_1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034EFB:NovaArizona.esm

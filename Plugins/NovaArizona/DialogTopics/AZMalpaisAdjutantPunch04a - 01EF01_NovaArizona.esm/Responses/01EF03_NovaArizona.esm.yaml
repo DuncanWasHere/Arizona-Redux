@@ -1,0 +1,34 @@
+FormKey: 01EF03:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC78:NovaArizona.esm
+PreviousInfo: 01EF02:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x706169
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: That's none of your business.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+Choices:
+- 01EF01:NovaArizona.esm
+- 01EEFD:NovaArizona.esm
+- 02EAD6:NovaArizona.esm
+- 01EF08:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: But why? Did you piss him off or something?

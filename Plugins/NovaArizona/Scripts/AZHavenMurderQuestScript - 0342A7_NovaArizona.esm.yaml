@@ -1,0 +1,192 @@
+FormKey: 0342A7:NovaArizona.esm
+EditorID: AZHavenMurderQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 20
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000AB0000001600910001008D00207305002031203D3D207306002031203D3D20262620730E002031203D3D20262620730F002031203D3D202626207310002031203E3D202626207311002031203D3D202626207314002031203D3D202626207307002031203D3D202626207308002031203D3D202626207312002031203D3D202626207309002031203D3D202626207313002031203D3D20262639100A0002007201006E0A0000001900000011000000
+  SourceCode: >-
+    scn AZHavenMurderQuestScript
+
+
+    ; Variables to help manage the Haven vote system
+
+    int TotalHavenPopulation
+
+    int HavenJobKillVote
+
+    int HavenJobSpareVote
+
+    int HavenJobUncommittedVote
+
+
+    ; Variables to help manage Haven's randomness
+
+    int AhoteDecision
+
+    int BenjaminDecision
+
+    int MurrayDecision
+
+    int RipleyDecision
+
+    int SerwaDecision
+
+
+    ; variables to clear quest objectives
+
+    int CalDecision
+
+    int CorvusDecision
+
+    int DocDecision
+
+    int EvelinaDecision
+
+    int JobDecision
+
+    int RuceDecision
+
+    int WierzbowskiDecision
+
+
+    ; Other quest variables
+
+    int JobConclusion ; 1 = Executed by player, 2 = Executed by Deathclaws, 3 = Spared and given community service, 4 = Spared and exiled, 5 = Killed by Sharky, 6 = Job been killed (conclusion of 1 and 2)
+
+    int WaterChipFound
+
+    int SharkyHealed ; 1 = offered, 2 = healed, 3 = Sharky attacks Job, 4 = Sharky killed, 5 = Sharky lives
+
+
+
+    BEGIN GameMode
+
+
+    if AhoteDecision == 1 && BenjaminDecision == 1 && CalDecision == 1 && CorvusDecision == 1 && DocDecision >= 1 && EvelinaDecision == 1 && JobDecision == 1 && MurrayDecision == 1 && RipleyDecision == 1 && RuceDecision == 1 && SerwaDecision == 1 && WierzbowskiDecision == 1
+    	SetStage AZHavenMurderQuest 10
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x00B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30320000000000
+    Name: TotalHavenPopulation
+  - Data:
+      Index: 2
+      Unknown: 0x20B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: HavenJobKillVote
+  - Data:
+      Index: 3
+      Unknown: 0x40B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30310000000000
+    Name: HavenJobSpareVote
+  - Data:
+      Index: 4
+      Unknown: 0x60B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xF04B0B54034C0B
+    Name: HavenJobUncommittedVote
+  - Data:
+      Index: 5
+      Unknown: 0x80B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x234C0BE4F04B0B
+    Name: AhoteDecision
+  - Data:
+      Index: 6
+      Unknown: 0xA0B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x811D4450074C0B
+    Name: BenjaminDecision
+  - Data:
+      Index: 7
+      Unknown: 0xC0B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x294C0B64054C0B
+    Name: MurrayDecision
+  - Data:
+      Index: 8
+      Unknown: 0xE0B720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D303100000000
+    Name: RipleyDecision
+  - Data:
+      Index: 9
+      Unknown: 0x00B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30303000000000
+    Name: SerwaDecision
+  - Data:
+      Index: 10
+      Unknown: 0x00B920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF4B0BE4FF4B0B
+    Name: JobConclusion
+  - Data:
+      Index: 11
+      Unknown: 0x20B920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x851D44349E1D44
+    Name: WaterChipFound
+  - Data:
+      Index: 13
+      Unknown: 0x20D929120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF7FFFFFFF7FFF
+    Name: SharkyHealed
+  - Data:
+      Index: 14
+      Unknown: 0x20B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CalDecision
+  - Data:
+      Index: 15
+      Unknown: 0x40B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xE64B0B24294C0B
+    Name: CorvusDecision
+  - Data:
+      Index: 16
+      Unknown: 0x60B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xF04B0BAC854C0B
+    Name: DocDecision
+  - Data:
+      Index: 17
+      Unknown: 0x80B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x054C0BE4F04B0B
+    Name: EvelinaDecision
+  - Data:
+      Index: 18
+      Unknown: 0xC0B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x244C0BE4FF4B0B
+    Name: RuceDecision
+  - Data:
+      Index: 19
+      Unknown: 0xE0B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x064C0B5C541D44
+    Name: WierzbowskiDecision
+  - Data:
+      Index: 20
+      Unknown: 0xA0B820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x871D445C044C0B
+    Name: JobDecision
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024846:NovaArizona.esm

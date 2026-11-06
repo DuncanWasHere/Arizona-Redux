@@ -1,0 +1,83 @@
+FormKey: 0101B5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204E43
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: Don't bother. They won't. Ever since the Legion kicked the NCR off the spillway, dam's been locked down tighter than Kimball's asshole.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They weren't lying when they said they'd kill us for trying to cross. I've seen it happen. They let the body rot there for days.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Although if you're really willing to help, why don't you talk to the Legionaries down the road and see if they'll let me pass?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm near out of food and there's no point sticking around here to starve.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+Choices:
+- 0101B6:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x36100500010072010039100A0002007201006E05000000
+  SourceCode: >-
+    StartQuest AZDamNQuest1
+
+    SetStage AZDamNQuest1 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018D:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x36100500010072010039100A0002007201006E05000000
+  SourceCode: >-
+    StartQuest AZDamNQuest2
+
+    SetStage AZDamNQuest2 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+Prompt: Maybe I could talk to the checkpoint officer and see if they'll change their mind?

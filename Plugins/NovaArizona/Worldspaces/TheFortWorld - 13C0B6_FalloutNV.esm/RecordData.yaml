@@ -1,0 +1,66 @@
+FormKey: 13C0B6:FalloutNV.esm
+MajorRecordFlagsRaw: 524288
+EditorID: TheFortWorld
+FormVersion: 15
+Version2: 1
+Fallout3MajorRecordFlags:
+- CantWait
+Name: Caesar's Tent
+Parent:
+  Worldspace: 0DA726:FalloutNV.esm
+  Flags:
+  - UseMapData
+Climate: 08809B:FalloutNV.esm
+Water: 030009:FalloutNV.esm
+LodWater: 030009:FalloutNV.esm
+LodWaterHeight: 0
+LandData:
+  DefaultLandHeight: 1000
+WorldMapScale: 1
+CellXOffset: 86000
+CellYOffset: 45000
+ImageSpace: 08809D:FalloutNV.esm
+Flags:
+- SmallWorld
+- CannotFastTravel
+ObjectBoundsMin: -8192, -4096
+ObjectBoundsMax: 12288, 8192
+CanopyShadow: ''
+WaterNoiseTexture: Data\Textures\Water\wastelandwaterpotomac.dds
+TopCell:
+  FormKey: 13C715:FalloutNV.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Version2: 1
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Flags:
+  - HasWater
+  Grid: {}
+  LightTemplate: Null
+  LightInheritFlags:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  WaterHeight: 3.4028235E+38
+  WaterNoiseTexture: ''
+  Persistent:
+  - MutagenObjectType: PlacedCreature
+    FormKey: 02083A:NovaArizona.esm
+    MajorRecordFlagsRaw: 3072
+    EditorID: AZRexREF
+    FormVersion: 15
+    Version2: 1
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    - InitiallyDisabled
+    Base: 020837:NovaArizona.esm
+    Position: 1842.9098, 2240.763, 2184
+  MajorFlags:
+  - Persistent
+SubCellsUnknownGroupData: -2141294536
+MajorFlags:
+- CanNotWait

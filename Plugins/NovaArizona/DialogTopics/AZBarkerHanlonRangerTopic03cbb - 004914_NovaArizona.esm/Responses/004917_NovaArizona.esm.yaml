@@ -1,0 +1,76 @@
+FormKey: 004917:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: Because they're assholes, that's why! The NCR has never made an agreement that they followed through on ever!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: They pick fights with every single group they encounter. They force you into the NCR whether you want it or not!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: They roll over everyone, do whatever they want, consequences be damned!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: All they saw when the treaty was in front of them was having more troops to throw into their meat grinders!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: They didn't stop even one second to think about their obligations! And they are always like this!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x890080
+    UseEmotionAnimation: True
+    Unused3: 0x8EFDC5
+  ResponseText: Fuck. I need to calm down. Let's talk about something else.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why did the NCR wait to help the Rangers?

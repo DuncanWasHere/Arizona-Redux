@@ -1,0 +1,52 @@
+FormKey: 037E74:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x726961
+    UseEmotionAnimation: True
+    Unused3: 0x5A4465
+  ResponseText: Nah, no thanks. Not interested in playing third wheel. Come get me when you've lost the extra.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 726736
+  SecondParameter: 47
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 16
+- Fluff: 0x000000
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 12
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x59100B000100720100000000000000
+  SourceCode: showmessage FollowerMessageOneFollower
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 07FE0B:FalloutNV.esm
+Prompt: I think we should travel together.

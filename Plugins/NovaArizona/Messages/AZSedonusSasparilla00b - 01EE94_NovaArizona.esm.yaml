@@ -1,0 +1,30 @@
+FormKey: 01EE94:NovaArizona.esm
+EditorID: AZSedonusSasparilla00b
+FormVersion: 15
+Description: This is Marcellus Sedonus's Sunset Sasparilla. It could be laced with 5 Ultrajet, 5 Psycho or 1 Smooch. That will probably be lethal.
+Name: Marcellus Sedonus's Sunset Sasparilla
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing.
+- Text: Lace the Sunset Sasparilla with 5 Ultrajet.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 5
+    Function: GetItemCount
+    FirstParameter: 826612
+- Text: Lace the Sunset Sasparilla with 5 Psycho.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 5
+    Function: GetItemCount
+    FirstParameter: 86374
+- Text: Lace the Sunset Sasparilla with 1 Smooch.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetItemCount
+    FirstParameter: 100797058

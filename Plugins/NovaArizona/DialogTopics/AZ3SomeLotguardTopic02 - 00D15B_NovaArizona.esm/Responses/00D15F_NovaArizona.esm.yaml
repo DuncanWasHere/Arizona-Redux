@@ -1,0 +1,29 @@
+FormKey: 00D15F:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 00D15E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E616D
+    UseEmotionAnimation: True
+    Unused3: 0x206576
+  ResponseText: Oh, it's not too bad. When the road's fixed, things'll pick up again.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D160:NovaArizona.esm
+- 00D16E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Must be pretty boring up here.

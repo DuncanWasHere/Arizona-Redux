@@ -1,0 +1,67 @@
+FormKey: 034280:NovaArizona.esm
+EditorID: AZHavenSetupTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967279
+    RefCount: 18
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A001F010000010072010080161300020B0056010200010042020707004C370100003A151000010F00520100780000011104000000283A15170001160052030078000097100B000100FFFF0500520400283A15170001160052050078000097100B000100FFFF0500520600283A15170001160052070078000097100B000100FFFF0500520800283A15170001160052090078000097100B000100FFFF0500520A00283A151700011600520B0078000097100B000100FFFF0500520C00283A151700011600520D0078000097100B000100FFFF0500520E00283A151700011600520F0078000097100B000100FFFF0500521000283A15170001160052110078000097100B000100FFFF050052120028811608000107004C43010000221002000000BB110200000011000000
+  SourceCode: >-
+    name AZHavenSetupTriggerScript;
+
+
+    OnTriggerEnter::Player {
+        if (AZHavenIntroQuest.MurrayGreetVariable < 2) {
+            Player.StopCombatAlarmOnActor();
+
+            AZHavenBenjaminREF.AddScriptPackage(AZHavenBenjaminIntroPackage);
+            AZHavenCalREF.AddScriptPackage(AZHavenCalIntroPackage);
+            AZHavenDocREF.AddScriptPackage(AZHavenDocIntroPackage);
+            AZHavenMurrayREF.AddScriptPackage(AZHavenMurrayIntroPackage);
+            AZHavenRipleyREF.AddScriptPackage(AZHavenRipleyIntroPackage);
+            AZHavenRuceREF.AddScriptPackage(AZHavenRuceIntroPackage);
+            AZHavenSerwaREF.AddScriptPackage(AZHavenSerwaIntroPackage);
+            AZHavenWierzbowskiREF.AddScriptPackage(AZHavenWierzbowskiIntroPackage);
+        } else {
+            Disable();
+            MarkForDelete();
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341FF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03425D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0058A9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034263:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034273:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034265:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034261:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E578:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03425F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D55:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034260:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBAA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034264:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034262:NovaArizona.esm

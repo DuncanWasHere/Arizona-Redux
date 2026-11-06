@@ -1,0 +1,69 @@
+FormKey: 017CFC:NovaArizona.esm
+EditorID: AZGeckoBurrowGeckoMother
+FormVersion: 15
+ObjectBounds:
+  First: -40, -71, 0
+  Second: 40, 48, 99
+Name: Gecko Mother
+Model:
+  File: creatures\NVGecko\skeleton.nif
+UnarmedAttackAnimation: AttackPower
+Models:
+- nvgecko.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 180
+  Level: 25
+  SpeedMultiplier: 75
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 11B9B3:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 176860:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 20
+  Responsibility: 50
+  Mood: 2263628544
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 85
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 45
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 275
+  Damage: 95
+  Strength: 6
+  Perception: 5
+  Endurance: 6
+  Charisma: 5
+  Intelligence: 4
+  Agility: 8
+  Luck: 5
+AttackReach: 100
+CombatStyle: 14F405:FalloutNV.esm
+BodyPartData: 10CD74:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 1.66
+FootWeight: 5
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 16A165:FalloutNV.esm
+ImpactDataset: 145A47:FalloutNV.esm

@@ -1,0 +1,31 @@
+FormKey: 037FFC:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037FFB:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{questioning herself}I don't know. They never did anything wrong to me, and it doesn't seem like they're hurting anyone."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FB7:NovaArizona.esm
+- 037FBB:NovaArizona.esm
+- 037FBC:NovaArizona.esm
+- 037FBD:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you think these people deserve to be killed? Can you look them in the eye and make that decision?

@@ -1,0 +1,106 @@
+FormKey: 007908:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DE86E:FalloutNV.esm
+  VertexCount: 11
+  TriangleCount: 9
+  EdgeLinkCount: 5
+Vertices:
+- 102400.05, -30683.992, 6978.3804
+- 102549.16, -30560.688, 6936.3735
+- 102400, -30535.064, 7027.5947
+- 102402.25, -30337.059, 7011.2046
+- 102646.54, -30352.729, 6943.5923
+- 102400, -30201.51, 7032.0327
+- 102669.484, -30073.023, 6958.3174
+- 102400, -29963.748, 7009.061
+- 102562.79, -29861.326, 6974.209
+- 102400, -29796.807, 6964.655
+- 102400, -30127.73, 7035.974
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: 4
+  Flags:
+  - EdgeLink_2_0
+  - Found
+- Vertices: 2, 1, 3
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 1, 4, 3
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: 1
+  Flags:
+  - Found
+- Vertices: 3, 4, 5
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: 4
+  Flags:
+  - EdgeLink_2_0
+  - Found
+- Vertices: 4, 6, 5
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 5
+  EdgeLink_2_0: 3
+  Flags:
+  - Found
+- Vertices: 10, 5, 6
+  EdgeLink_0_1: 3
+  EdgeLink_1_2: 4
+  EdgeLink_2_0: 8
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 6, 8, 7
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: 8
+  Flags:
+  - Found
+- Vertices: 7, 8, 9
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 1
+  Flags:
+  - EdgeLink_2_0
+  - Found
+- Vertices: 6, 7, 10
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: 5
+  Flags:
+  - EdgeLink_1_2
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 269.48438
+  MaxDistanceY: 887.18555
+  Min: 102400, -30683.992, 6936.3735
+  Max: 102669.484, -29796.807, 7035.974
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+EdgeLinks:
+- Mesh: 007906:NovaArizona.esm
+  Triangle: 25
+- Mesh: 007906:NovaArizona.esm
+  Triangle: 257
+- Mesh: 007906:NovaArizona.esm
+  Triangle: 259
+- Mesh: 007906:NovaArizona.esm
+  Triangle: 261
+- Mesh: 007906:NovaArizona.esm
+  Triangle: 288

@@ -1,0 +1,37 @@
+FormKey: 024DD4:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2063
+    UseEmotionAnimation: True
+    Unused3: 0x74652C
+  ResponseText: No, you're not. No Legion agent, no matter how deep undercover they are, would do the things you've done.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E2063
+    UseEmotionAnimation: True
+    Unused3: 0x74652C
+  ResponseText: But allies? I don't think so.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100814284
+Choices:
+- 024DD7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Look, I'm not Legion. You know this. So, we're allies.

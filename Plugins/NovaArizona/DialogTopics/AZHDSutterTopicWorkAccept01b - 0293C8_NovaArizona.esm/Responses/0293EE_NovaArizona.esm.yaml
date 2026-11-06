@@ -1,0 +1,81 @@
+FormKey: 0293EE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0293B5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Seems I've underestimated you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll never forget riding past the Crater Lakes, scalps dangling from my belt, obsidian knife in the sheathe where my standard-issue ought to go.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "Corporal had written on his helmet: 'Bullhead bays for blood!'"
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: War ain't so bad for a certain type of person, is what I mean to say. Do it for your country, and you'll never feel guilty in your life. Why should you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPerkRank
+  FirstParameter: 33617531
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100832181
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756587
+Choices:
+- 0293C8:NovaArizona.esm
+- 0293C9:NovaArizona.esm
+- 0293C5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073020002002031
+  SourceCode: set AZArizonaOpenSeason.bLearnedAboutWar to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293B5:NovaArizona.esm
+Prompt: Actually, I do understand. You have to use their savagery against them, otherwise they'll never learn.
+ActorValuePerk: 00F67B:HonestHearts.esm

@@ -1,0 +1,137 @@
+FormKey: 00E3B3:NovaArizona.esm
+EditorID: AZChlorideManInBlack
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Man in Black
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - ActorEffectList
+  - Script
+Factions:
+- Faction: 00D0B7:NovaArizona.esm
+  Unused: 0x4F444C
+- Faction: 01CD8A:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 094EEC:FalloutNV.esm
+Template: 0EDC40:FalloutNV.esm
+Race: 00424A:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 0378A1:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0ACDA4:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.9
+- Item:
+    Item: 10E1DF:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.66
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: Cocky
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 11AFD7:FalloutNV.esm
+Class: 0173E8:FalloutNV.esm
+BaseHealth: 50
+Strength: 4
+Perception: 4
+Endurance: 4
+Charisma: 7
+Intelligence: 6
+Agility: 4
+Luck: 6
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 34
+  - Key: BigGuns
+    Value: 13
+  - Key: EnergyWeapons
+    Value: 13
+  - Key: Explosives
+    Value: 13
+  - Key: Lockpick
+    Value: 28
+  - Key: Medicine
+    Value: 17
+  - Key: MeleeWeapons
+    Value: 13
+  - Key: Repair
+    Value: 17
+  - Key: Science
+    Value: 17
+  - Key: SmallGuns
+    Value: 13
+  - Key: Sneak
+    Value: 13
+  - Key: Speech
+    Value: 34
+  - Key: Survival
+    Value: 13
+  - Key: Unarmed
+    Value: 13
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Hair: 02BFDB:FalloutNV.esm
+HairLength: 0.05
+Eyes: 004255:FalloutNV.esm
+HairColor: '#00220F09'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xDE6E993EA430343F80531B400DDDAD3F7AB72A3E0979923F9ABAFE3FD4B1813FE260A23F5881B33F88C17DBF1444F7BE2CCD89BE98E748C0E8ACCD3FA77C853F6028A0BF03A903C0C2007DBF9CD56B40A4DC8BC017D40CC0C2A174BF68BFD1BE801A69BF34EDD43FA8B222403BCC9C408610E03F88F0CC3F60FC893DBC15223FE0CA95BD00F2FFBF8447163E64921BBF636F893F5B5306C0DFE44EC0B0AAFDBE54C28FBFAE38404000802C3E600BC3BDBC8F3C3F2299AF3F40DE67BE087D9F3FC47788BF1F683D40
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x18EE7BBFB28597BF56781D3F0AF3223F6C5782BFB2C7603FE0B9E7BE66A0A33EB076B7BD2958D03F6949EBBFF5EB97BF30AD92BD7D8A8B3E1C74D83F0E36D53FBFF344BF60DE34BD0F8E3C3E1752153F642787BEB235FA3FA8AA4BBF50A7D7BE1029833F02FE663FB043A7BD1812823FD0FDE23D20D45FBD3FE068C0243829BF583F253E018D2FBF083E41BF633DC3BFD5ECAF3F301219BDF0410DBF982A07BFA74C83C0399D41407B9F7DC05F85C33FF0072A3D88DB2E407E6BBBBFF8A44640843C043FCFAE813F
+NAM5: 255
+DATADataTypeState:
+- Break0

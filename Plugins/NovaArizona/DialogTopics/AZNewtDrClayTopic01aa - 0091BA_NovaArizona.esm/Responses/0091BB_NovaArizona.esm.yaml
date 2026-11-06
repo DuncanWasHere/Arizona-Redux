@@ -1,0 +1,61 @@
+FormKey: 0091BB:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: That's right.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: It was founded under a different name. Most folks couldn't pronounce it though, it was a Tall Pines word, I think.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: After the Legion wiped them out, gutted the town, it started going by all sorts of names. Eventually, people settled on Newt.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x88083D
+    UseEmotionAnimation: True
+    Unused3: 0x93083D
+  ResponseText: Not sure why. Don't care, either.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 020D25:NovaArizona.esm
+- 020D27:NovaArizona.esm
+- 009298:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Its old name?

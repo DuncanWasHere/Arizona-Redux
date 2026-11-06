@@ -1,0 +1,29 @@
+FormKey: 033125:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 033124:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xCCCC3D
+    UseEmotionAnimation: True
+    Unused3: 0xC97C2C
+  ResponseText: I'd rather not. If I want to maintain my father's relationship with White Sands, I need Calvin in power.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 033126:NovaArizona.esm
+- 0330A7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He wants your vote. Commit to voting for him and he'll help you out.

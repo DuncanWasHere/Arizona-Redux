@@ -1,0 +1,95 @@
+FormKey: 0175D9:NovaArizona.esm
+EditorID: AZDominicusRexScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967282
+    RefCount: 15
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000B001900DA0000000100720100781010000200FFFF0500520200FFFF050052030080161B0002130058000022120B000100FFFF05005204001507004C84000000032909000100FFFF050052040080161B0002130058000022120B000100FFFF05005205001507004CB600000039100F000200FFFF0500520500FFFF040042FF80161B0002130058000022120B000100FFFF05005206001507004CE800000039100F000200FFFF0500520600FFFF040042FF80161B0002130058000022120B000100FFFF05005207001507004C1A01000039100F000200FFFF0500520700FFFF0400429611000000100008000A0088010000000080161B0002130058000022120B000100FFFF05005208001507004C5C01000002100F000200FFFF0500520900FFFF0400420180161800021000520A00780000231004000000281507004CD301000039100F000200FFFF0500520700FFFF040042963A151D00011C00520B00780000021011000200FFFF0500520C00FFFF04004201283A151700011600520D007800009E100B000100FFFF0500520E0028111108000100FFFF0400420180161B0002130058000022120B000100FFFF05005204001507004CFF010000032909000100FFFF050052040080161B0002130058000022120B000100FFFF05005205001507004C3102000039100F000200FFFF0500520500FFFF040042FF80161B0002130058000022120B000100FFFF05005206001507004C6302000039100F000200FFFF0500520600FFFF040042FF80161B0002130058000022120B000100FFFF05005207001507004C9502000039100F000200FFFF0500520700FFFF040042963B1215000300FFFF0500520F00FFFF04004200FFFF0400420C11000000
+  SourceCode: >-
+    name AZDominicusRexScript;
+
+
+    OnStartCombat::Player {
+        SetEnemy(PlayerFaction, AZBigStopLegionFaction);
+
+        if (!GetQuestCompleted(AZSMARTArrayQuest)) {
+            FailQuest(AZSMARTArrayQuest);
+        }
+
+        if (!GetQuestCompleted(AZBigStopAhigaQuest01)) {
+            SetStage(AZBigStopAhigaQuest01, 255);
+        }
+
+        if (!GetQuestCompleted(AZBigStopAugustQuest)) {
+            SetStage(AZBigStopAugustQuest, 255);
+        }
+
+        if (!GetQuestCompleted(AZMalpaisJournalistQuest)) {
+            SetStage(AZMalpaisJournalistQuest, 150);
+        }
+    }
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZArizonaOpenSeason)) {
+            AddItem(AZScalpDominicusRex, 1);
+        }
+
+        if (!AZBSStenographusREF.GetDisabled()) {
+            SetStage(AZMalpaisJournalistQuest, 150);
+            AZBigStopDominicusRexREF.AddItem(WeapNVMachete, 1);
+            AZBSTentGuardREF.MoveTo(AZTentGuardMoveREF);
+            EnableFastTravel(1);
+        }
+
+        if (!GetQuestCompleted(AZSMARTArrayQuest)) {
+            FailQuest(AZSMARTArrayQuest);
+        }
+
+        if (!GetQuestCompleted(AZBigStopAhigaQuest01)) {
+            SetStage(AZBigStopAhigaQuest01, 255);
+        }
+
+        if (!GetQuestCompleted(AZBigStopAugustQuest)) {
+            SetStage(AZBigStopAugustQuest, 255);
+        }
+
+        if (!GetQuestCompleted(AZMalpaisJournalistQuest)) {
+            SetStage(AZMalpaisJournalistQuest, 150);
+        }
+
+        AddReputationExact(RepNVCaesarsLegion, 0, 12);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00901D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008B25:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293B5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293F8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175D8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CE569:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175DF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017644:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm

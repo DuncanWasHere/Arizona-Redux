@@ -1,0 +1,201 @@
+FormKey: 0199CB:NovaArizona.esm
+EditorID: AZGreenwayJunctionBoxScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967288
+    RefCount: 15
+    VariableCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B000200BB000000010072010080161A0002120058000069100B000100FFFF050052010007004CDF00000080162B00022300520100780000211104000000285800003A100B000100FFFF0500520200420A040207004C8400000059100B00010072030000000000000080162500021D00560100000200155800003A100B000100FFFF0500520200420A040207004CBC00000059100B0001007204000000000000008016100002080056010000020007004CDF00000059100B00010072050000000000000011000000100008000200CC000000000080162E0002260058000069100B000100FFFF05005201005800003A100B000100FFFF0500520200420A040207004C6601000080161700020F005201007800002111040000002807004C5701000059100B000100720300000000000000811608000107004C6601000059100B00010072060000000000000080161A000212005601000003004200045601000002000207004C880100001E00000080161B00021300560100000300420004560100000200150207004CB701000039150C00010B0056010000010042000011000000100006000000DE040000391513000112005601000003005800001F10040000000080161B00021300560100000100420004560100000200150207004CA902000080161300020B0056010000030042010407004C3102000059100B00010072070000000000000039150C00010B0056010000010042020080161300020B0056010000030042020407004C6702000059100B00010072060000000000000039150C00010B0056010000010042010080161300020B0056010000030042030407004C9D02000059100B00010072080000000000000039150C00010B00560100000100420300811608000107004C9F06000080161B00021300560100000100420104560100000200150207004CBD03000080161300020B0056010000030042000407004CFE02000059100B00010072040000000000000039150C00010B0056010000010042000080161300020B0056010000030042010407004C3403000059100B00010072080000000000000039150C00010B0056010000010042030080161300020B0056010000030042020407004C7B03000039150C00010B0056010000020042010039100F000200FFFF0500520200FFFF04004219551009000100FFFF050052090080161300020B0056010000030042030407004CB103000059100B00010072070000000000000039150C00010B00560100000100420200811608000107004C9F06000080161B00021300560100000100420204560100000200150207004CD104000080161300020B0056010000030042000407004C1204000059100B00010072040000000000000039150C00010B0056010000010042000080161300020B0056010000030042010407004C5904000039150C00010B0056010000020042010039100F000200FFFF0500520200FFFF04004219551009000100FFFF050052090080161300020B0056010000030042020407004C8F04000059100B00010072080000000000000039150C00010B0056010000010042030080161300020B0056010000030042030407004CC504000059100B00010072060000000000000039150C00010B00560100000100420100811608000107004C9F06000080161B00021300560100000100420304560100000200150207004C9F06000080161300020B0056010000030042000407004C2605000059100B00010072040000000000000039150C00010B0056010000010042000080161300020B0056010000030042010407004C3306000039100F000200FFFF0500520200FFFF04004219551009000100FFFF050052090039150C00010B005601000002004201003A151D00011C00520100780000521011000200FFFF0500520A00FFFF04004201283A151D00011C00520100780000521011000200FFFF0500520B00FFFF04004204283A151D00011C00520100780000521011000200FFFF0500520C00FFFF04004202283A151D00011C00520100780000521011000200FFFF0500520D00FFFF04004202283A151D00011C00520100780000521011000200FFFF0500520E00FFFF04004206283A151D00011C00520100780000521011000200FFFF0500520F00FFFF040042062880161300020B0056010000030042020407004C6906000059100B00010072060000000000000039150C00010B0056010000010042010080161300020B0056010000030042030407004C9F06000059100B00010072070000000000000039150C00010B0056010000010042020011000000
+  SourceCode: >-
+    name AZGreenwayJunctionBoxScript;
+
+
+    int DoOnce;
+
+    int iJBButton;                // Tracks the button presses for the junction box repair menus 
+
+    int iMenu;                     // Tracks the current menu screen: 1 == Science, 2 == Repair, 3 == Parts
+
+    int iJunctionBoxRepaired;
+
+
+    // GreenwayRepair00 - Intro Message
+
+    // GreenwayRepair01 - Science Check
+
+    // GreenwayRepair02 - Repair Check
+
+    // GreenwayRepair03 - Parts Check
+
+
+    OnActivate::Player {
+        if (IsActionRef(Player)) {
+            if (Player.IsInCombat() && GetStage(AZGreenwayWindFarmQuest) == 10) {
+                ShowMessage(AZGreenwayCombatMessage);
+            }
+            if (!iJunctionBoxRepaired && GetStage(AZGreenwayWindFarmQuest) == 10) {
+                ShowMessage(AZGreenwayRepair00Message);
+            }
+            if (iJunctionBoxRepaired) {
+                ShowMessage(AZGreenwayRepairCompleteMessage);
+            }
+        }
+    }
+
+
+    OnActivate {
+        if (IsActionRef(Player) && GetStage(AZGreenwayWindFarmQuest) == 10) {
+            if (Player.IsInCombat()) {
+                ShowMessage(AZGreenwayCombatMessage);
+            } else {
+                ShowMessage(AZGreenwayRepair01Message);
+            }
+        }
+
+        if (iJBButton == 0 && iJunctionBoxRepaired) {
+            Return;
+        }
+
+        if (iJBButton == 0 && !iJunctionBoxRepaired) {
+            iMenu = 0;
+        }
+    }
+
+
+    GameMode {
+        iJBButton = GetButtonPressed();
+
+        if (iMenu == 0 && !iJunctionBoxRepaired) {
+            if (iJBButton == 1) {
+                ShowMessage(AZGreenwayRepair02Message);
+                iMenu = 2;
+            }
+            if (iJBButton == 2) {
+                ShowMessage(AZGreenwayRepair01Message);
+                iMenu = 1;
+            }
+            if (iJBButton == 3) {
+                ShowMessage(AZGreenwayRepair03Message);
+                iMenu = 3;
+            }
+        } else if (iMenu == 1 && !iJunctionBoxRepaired) {
+            if (iJBButton == 0) {
+                ShowMessage(AZGreenwayRepair00Message);
+                iMenu = 0;
+            }
+            if (iJBButton == 1) {
+                ShowMessage(AZGreenwayRepair03Message);
+                iMenu = 3;
+            }
+            if (iJBButton == 2) {
+                iJunctionBoxRepaired = 1;
+                SetStage(AZGreenwayWindFarmQuest, 25);
+                ShowMap(AZMountTiptonPowerStationMarkerREF);
+            }
+            if (iJBButton == 3) {
+                ShowMessage(AZGreenwayRepair02Message);
+                iMenu = 2;
+            }
+        } else if (iMenu == 2 && !iJunctionBoxRepaired) {
+            if (iJBButton == 0) {
+                ShowMessage(AZGreenwayRepair00Message);
+                iMenu = 0;
+            }
+            if (iJBButton == 1) {
+                iJunctionBoxRepaired = 1;
+                SetStage(AZGreenwayWindFarmQuest, 25);
+                ShowMap(AZMountTiptonPowerStationMarkerREF);
+            }
+            if (iJBButton == 2) {
+                ShowMessage(AZGreenwayRepair03Message);
+                iMenu = 3;
+            }
+            if (iJBButton == 3) {
+                ShowMessage(AZGreenwayRepair01Message);
+                iMenu = 1;
+            }
+        } else if (iMenu == 3 && !iJunctionBoxRepaired) {
+            if (iJBButton == 0) {
+                ShowMessage(AZGreenwayRepair00Message);
+                iMenu = 0;
+            }
+            if (iJBButton == 1) {
+                SetStage(AZGreenwayWindFarmQuest, 25);
+                ShowMap(AZMountTiptonPowerStationMarkerREF);
+                iJunctionBoxRepaired = 1;
+
+                Player.RemoveItem(Conductor, 1);
+                Player.RemoveItem(DuctTape, 4);
+                Player.RemoveItem(FissionBattery, 2);
+                Player.RemoveItem(SensorModule, 2);
+                Player.RemoveItem(ScrapElectronics, 6);
+                Player.RemoveItem(SpareParts, 6);
+            }
+            if (iJBButton == 2) {
+                ShowMessage(AZGreenwayRepair01Message);
+                iMenu = 1;
+            }
+            if (iJBButton == 3) {
+                ShowMessage(AZGreenwayRepair02Message);
+                iMenu = 2;
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMenu
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iJunctionBoxRepaired
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iJBButton
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01998E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199C6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199C7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199CC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199C8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199C9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199CA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014BD6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022102:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13B2B2:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033BC6:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022109:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13B2B1:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 031944:FalloutNV.esm

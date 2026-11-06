@@ -1,0 +1,37 @@
+FormKey: 01EDFA:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: Did he? What happened there?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+Choices:
+- 01EDFB:NovaArizona.esm
+- 01EDFD:NovaArizona.esm
+- 01EDFE:NovaArizona.esm
+- 01EDFF:NovaArizona.esm
+- 01EE00:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have a Mark of Caesar, though, see? Caesar wanted to talk to me about an army of robots.

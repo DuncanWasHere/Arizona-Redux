@@ -1,0 +1,72 @@
+FormKey: 00E275:NovaArizona.esm
+EditorID: AZWildMongrelFriendly
+FormVersion: 15
+ObjectBounds:
+  First: -12, -50, 0
+  Second: 13, 60, 70
+Name: Wild Mongrel
+Model:
+  File: Creatures\Dog\Skeleton.nif
+UnarmedAttackEffect: 11D9ED:FalloutNV.esm
+UnarmedAttackAnimation: AttackLeft
+Models:
+- azwildmongrel.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 50
+  Level: 12
+  SpeedMultiplier: 115
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021475:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E26A:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 1768B3:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 11ECE6:FalloutNV.esm
+Script: 1252C0:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 991447296
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 025754:FalloutNV.esm
+Data:
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 100
+  Damage: 70
+  Strength: 7
+  Perception: 9
+  Endurance: 6
+  Charisma: 1
+  Intelligence: 1
+  Agility: 8
+  Luck: 5
+AttackReach: 48
+CombatStyle: 03A374:FalloutNV.esm
+BodyPartData: 02931E:FalloutNV.esm
+TurningSpeed: 120
+BaseScale: 1
+FootWeight: 1
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03E632:FalloutNV.esm
+ImpactDataset: 07E640:FalloutNV.esm

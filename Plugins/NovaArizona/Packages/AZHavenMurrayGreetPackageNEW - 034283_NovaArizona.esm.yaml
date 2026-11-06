@@ -1,0 +1,43 @@
+FormKey: 034283:NovaArizona.esm
+EditorID: AZHavenMurrayGreetPackageNEW
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- SkipFalloutBehavior
+- AlwaysRun
+Unused: 97
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 17483
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 256
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100876799
+  SecondParameter: 1
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 034222:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

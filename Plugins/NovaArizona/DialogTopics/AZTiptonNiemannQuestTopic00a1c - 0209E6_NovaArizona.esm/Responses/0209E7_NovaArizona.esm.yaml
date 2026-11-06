@@ -1,0 +1,50 @@
+FormKey: 0209E7:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: I've concluded that the garrison Legionaries in the territory of Dolan Springs and Chloride will likely be the most receptive to Brush use.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: My scouts have indicated that the Decanus at Dolan Springs has a number of Legionaries from Colorado under his command.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: I want you to speak to the man and persuade him that allowing the use of Brush is in the Legion's best interests.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100796571
+Choices:
+- 0209E8:NovaArizona.esm
+- 0209DF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, what do you need me to do?

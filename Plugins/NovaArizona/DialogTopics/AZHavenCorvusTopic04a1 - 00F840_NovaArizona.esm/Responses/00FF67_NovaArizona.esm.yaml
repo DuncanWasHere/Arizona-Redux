@@ -1,0 +1,42 @@
+FormKey: 00FF67:NovaArizona.esm
+FormVersion: 15
+Quest: 00F50D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You lie so blatantly. I informed them weeks in advance that the Chainway was in danger.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If it has collapsed since then, it should have vindicated my prediction.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724241
+Choices:
+- 00F83F:NovaArizona.esm
+- 00F863:NovaArizona.esm
+- 00F865:NovaArizona.esm
+- 00F867:NovaArizona.esm
+- 00F8C4:NovaArizona.esm
+- 00FDE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It's true. They told me that you're a traitor who blew up the Chainway.

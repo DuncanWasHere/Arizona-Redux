@@ -1,0 +1,53 @@
+FormKey: 03B86C:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: Beggars can't be choosers of course.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: The Burned Man's pistol would serve as an important symbol.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: Symbols matter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 39
+  Function: GetActorValue
+  FirstParameter: 41
+Choices:
+- 03B866:NovaArizona.esm
+- 03B879:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does it *need* to be a .45 Auto? Those are pretty hard to come-by, you know.

@@ -1,0 +1,62 @@
+FormKey: 01BA24:NovaArizona.esm
+FormVersion: 15
+Quest: 01B981:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It is a broad word, and I struggle to see where raiders begin and end.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Do tribes that depend on raiding in the harsh winters count as raiders? Or NCR troops who cross the Colorado to kill, burn and loot Legion camps? Are they raiders?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: When I was a Ranger, I found that the people of the wastes didn't distinguish between who was raiding them, whether they be degenerate, tribe, army, refugee or thug.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In any event, raiding was the least terrible thing I did in my time as a degenerate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776318
+Choices:
+- 01B9B2:NovaArizona.esm
+- 01B9B7:NovaArizona.esm
+- 01B9BC:NovaArizona.esm
+- 01B9BF:NovaArizona.esm
+- 01B9C2:NovaArizona.esm
+- 01B9C3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do mean that raiding is a state of action? I've met lots of raiders.

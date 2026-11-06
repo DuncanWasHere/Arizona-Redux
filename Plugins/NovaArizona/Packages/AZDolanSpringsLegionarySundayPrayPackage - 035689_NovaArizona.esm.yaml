@@ -1,0 +1,52 @@
+FormKey: 035689:NovaArizona.esm
+EditorID: AZDolanSpringsLegionarySundayPrayPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- WeaponsUnequipped
+Unused: 40
+BehaviorFlags:
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoEating
+  - NoConversation
+Unused2: 24948
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 035688:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleTime: 6
+Duration: 12
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100699722
+  SecondParameter: 25
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 95
+  Function: GetStage
+  FirstParameter: 100699722
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

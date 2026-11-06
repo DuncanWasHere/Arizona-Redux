@@ -1,0 +1,50 @@
+FormKey: 024EEB:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 024EE5:NovaArizona.esm
+  VertexCount: 6
+  TriangleCount: 4
+Vertices:
+- 2206.5059, 2017.9457, 7625.4033
+- 2209.3054, 2135.8215, 7625.4033
+- 2062.25, 2022.6248, 7625.4033
+- 2047.4467, 2144.0474, 7625.4033
+- 1945.0731, 2019.7958, 7625.4033
+- 1929.1547, 2139.655, 7625.4033
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 1, 3, 2
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 2
+  Flags:
+  - Found
+- Vertices: 2, 3, 4
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 3, 5, 4
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 2
+  Flags:
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 280.15076
+  MaxDistanceY: 126.101685
+  Min: 1929.1547, 2017.9457, 7625.4033
+  Max: 2209.3054, 2144.0474, 7625.4033
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3

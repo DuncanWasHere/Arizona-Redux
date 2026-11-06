@@ -1,0 +1,46 @@
+FormKey: 00CE4A:NovaArizona.esm
+EditorID: AZWeapTommyTroutUniqueCriticalUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 5
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000076161200020A005305006B6E76736507004C2500000010000F000D008600000001020100040200040080161F0002170052030078000017280B000100FFFF0500520400281507004CE00000003A151D00011C00520300780000203911000200FFFF0500520400FFFF0400420228261009000100FFFF050052050041152D00012C00532700546F6D6D792054726F757420637269746963616C2073686F756C6420626520706C6179696E672111000000
+  SourceCode: >-
+    name AZWeapTommyTroutUniqueCriticalUDF;
+
+
+    fn (ref rSource, ref rWeapon) {
+        if (!PlayerREF.IsIdlePlayingEx(AZ1stPTommyTroutCritIdle)) {
+            PlayerREF.ForcePlayIdle(AZ1stPTommyTroutCritIdle, 2);
+            PlaySound(AZWPNTommyTroutUniqueCritical);
+
+            Print("Tommy Trout critical should be playing!");
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rSource
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rWeapon
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00CE4C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00CE4D:NovaArizona.esm

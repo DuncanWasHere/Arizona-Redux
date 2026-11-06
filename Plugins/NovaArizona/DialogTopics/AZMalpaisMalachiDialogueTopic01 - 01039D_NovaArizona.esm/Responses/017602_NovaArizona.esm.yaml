@@ -1,0 +1,48 @@
+FormKey: 017602:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, everything you could possibly want, partner! Labor! Sex! Companionship! Malachi has it all!
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 024190:FalloutNV.esm
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You won't find higher-quality manpower on the shelves anywhere else, so don't even look!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729754
+Choices:
+- 01039D:NovaArizona.esm
+- 01039E:NovaArizona.esm
+- 01039F:NovaArizona.esm
+- 0103A0:NovaArizona.esm
+- 0103A1:NovaArizona.esm
+- 0103A2:NovaArizona.esm
+- 0103A3:NovaArizona.esm
+- 0103A4:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you selling?

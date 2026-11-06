@@ -1,0 +1,112 @@
+FormKey: 0341E2:NovaArizona.esm
+EditorID: AZMalpaisCheckerQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967287
+    RefCount: 9
+    VariableCount: 6
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000C401000039151E00011D00560100000300520100780000E1220B000100FFFF0500520200280039151E00011D00560100000400520300780000E1220B000100FFFF0500520400280039151E00011D00560100000500520500780000E0220B000100FFFF0500520200280039151E00011D00560100000600520500780000E0220B000100FFFF0500520400280080161700020F005601000003005601000005000707004CFE00000039150C00010B00560100000100420000811608000107004C0E01000039150C00010B0056010000010042010080161700020F005601000004005601000006000707004C4501000039150C00010B00560100000200420000811608000107004C5501000039150C00010B0056010000020042010080163500022D0058000060120B000100FFFF050052060042000452050078000036110B000100FFFF0500520700284201040207004CBB01000039150C00010B0056010000010042000039150C00010B00560100000200420000371009000100FFFF050052080080163300022B005209007800002E1004000000285201007800002E100400000028015203007800002E1004000000280107004CFF010000371009000100FFFF050052080011000000
+  SourceCode: >-
+    name AZMalpaisCheckerQuestScript;
+
+
+    int MalpaisConfiscationFailsafe01;
+
+    int MalpaisConfiscationFailsafe02;
+
+    int GateGuard01Position;
+
+    int GateGuard02Position;
+
+    int PlayerPositionMarker01;
+
+    int PlayerPositionMarker02;
+
+
+    GameMode {
+    	GateGuard01Position = AZMalpaisGateGuardREF.GetDistance3D(AZMalpaisGateGuardPlayerNoEntryMarkerREF);
+    	GateGuard02Position = AZMalpaisGateGuard02REF.GetDistance3D(AZMalpaisGateGuardPlayerNoEntryMarker02REF);
+    	PlayerPositionMarker01 = Player.GetDistance2D(AZMalpaisGateGuardPlayerNoEntryMarkerREF);
+    	PlayerPositionMarker02 = Player.GetDistance2D(AZMalpaisGateGuardPlayerNoEntryMarker02REF);
+
+    	if (GateGuard01Position < PlayerPositionMarker01) {
+    		MalpaisConfiscationFailsafe01 = 0;
+    	} else {
+    		MalpaisConfiscationFailsafe01 = 1;
+    	}
+
+    	if (GateGuard02Position < PlayerPositionMarker02) {
+    		MalpaisConfiscationFailsafe02 = 0;
+    	} else {
+    		MalpaisConfiscationFailsafe02 = 1;
+    	}
+
+    	if (IsPlayerInRegion(AZMalpaisRegion) == 0 && Player.GetInWorldspace(WastelandNV) == 1) {
+    		MalpaisConfiscationFailsafe01 = 0;
+    		MalpaisConfiscationFailsafe02 = 0;
+    		StopQuest(AZMalpaisCheckerQuest);
+    	}
+
+    	if (AZMalpaisOptioREF.GetDead() || AZMalpaisGateGuardREF.GetDead() || AZMalpaisGateGuard02REF.GetDead()) {
+    		StopQuest(AZMalpaisCheckerQuest);
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: MalpaisConfiscationFailsafe01
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: MalpaisConfiscationFailsafe02
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GateGuard01Position
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GateGuard02Position
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: PlayerPositionMarker01
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: PlayerPositionMarker02
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B7A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C74F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C254:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C256:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008DC2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0DA726:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341E4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004BC2:NovaArizona.esm

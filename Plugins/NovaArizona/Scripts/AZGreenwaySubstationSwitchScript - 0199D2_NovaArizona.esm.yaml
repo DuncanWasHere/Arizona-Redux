@@ -1,0 +1,75 @@
+FormKey: 0199D2:NovaArizona.esm
+EditorID: AZGreenwaySubstationSwitchScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 6
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B000200E20000000100720100801611000209005601020002001507004C4C00000059100B000100720300000000000000801630000228005601020002005800003B1011000200FFFF0500520400FFFF040042321502560100000200150207004CCF00000059100B00010072050000000000000080161300020B0056010000010042010407004CCF00000039100F000200FFFF0500520400FFFF040042320D100200000039150C00010B0056010000020042010080162400021C005800003A100B000100FFFF05005204004219065601000002000207004C0601000059100B0001007206000000000000001100000010000600000063000000391513000112005601000001005800001F10040000000080161B00021300560100000100420104560100000200150207004C7301000039100F000200FFFF0500520400FFFF040042320D100200000039150C00010B0056010000020042010011000000
+  SourceCode: >-
+    name AZGreenwaySubstationSwitchScript;
+
+
+    int DoOnce;
+
+    int iButton;
+
+
+    OnActivate::Player {
+        if (!AZGreenwayJunctionBoxREF.iJunctionBoxRepaired) {
+            ShowMessage(AZGreenwaySubstationNotReadyMessage);
+        }
+
+        if (AZGreenwayJunctionBoxREF.iJunctionBoxRepaired && !GetStageDone(AZGreenwayWindFarmQuest, 50) && !DoOnce) {
+            ShowMessage(AZGreenwaySubstationSwitchMessage);
+
+            if (iButton == 1) {
+                SetStage(AZGreenwayWindFarmQuest, 50);
+                Activate();
+                DoOnce = 1;
+            }
+        }
+
+        if (GetStage(AZGreenwayWindFarmQuest) > 25 && DoOnce) {
+            ShowMessage(AZGreenwaySubstationReadyMessage02);
+        }
+    }
+
+
+    GameMode {
+        iButton = GetButtonPressed();
+
+        if (iButton == 1 && !DoOnce) {
+            SetStage(AZGreenwayWindFarmQuest, 50);
+            Activate();
+            DoOnce = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iButton
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199C5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199CF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01998E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199CE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199D1:NovaArizona.esm

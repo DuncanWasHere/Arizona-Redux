@@ -1,0 +1,39 @@
+FormKey: 011ACA:NovaArizona.esm
+EditorID: AZMustard
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Mustard
+Model:
+  File: AZNovaArizona\Clutter\Junk\Diner\AZSqueezeBottleMustard.nif
+Icons:
+  LargeIconFilename: AZNovaArizona\Interface\Icons\AZingestible_condiment.dds
+EquipmentType: Food
+Weight: 0.5
+Value: 10
+Flags:
+- NoAutoCalc
+- FoodItem
+ConsumeSound: 02D48D:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+    ActorValue: Health
+- BaseEffect: 162BCC:FalloutNV.esm
+  Data:
+    Magnitude: 10
+    ActorValue: Hunger
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 162BCB:FalloutNV.esm
+  Data:
+    Magnitude: 10
+    ActorValue: Dehydration
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586

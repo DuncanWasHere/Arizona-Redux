@@ -1,0 +1,38 @@
+FormKey: 020DCB:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x2AA623
+    UseEmotionAnimation: True
+    Unused3: 0xBE9217
+  ResponseText: Oh...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x2AA623
+    UseEmotionAnimation: True
+    Unused3: 0xBE9217
+  ResponseText: I wish I could help her... but Cent-yor-eeon Thrax is making me a warrior! Warriors don't belong in the kitchen!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768788
+Choices:
+- 020DCC:NovaArizona.esm
+- 020DCF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm asking for the slave-girl working in the mess hall. She doesn't know how to make it.

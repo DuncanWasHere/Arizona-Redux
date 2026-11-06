@@ -1,0 +1,42 @@
+FormKey: 0089E3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 0089E2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Heyo!
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 08944C:FalloutNV.esm
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742750
+Choices:
+- 024E46:NovaArizona.esm
+- 0089D9:NovaArizona.esm
+- 01DCEE:FalloutNV.esm
+- 0089DD:NovaArizona.esm
+- 0089D1:NovaArizona.esm
+- 0089D2:NovaArizona.esm
+- 0089D3:NovaArizona.esm
+- 0089D4:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

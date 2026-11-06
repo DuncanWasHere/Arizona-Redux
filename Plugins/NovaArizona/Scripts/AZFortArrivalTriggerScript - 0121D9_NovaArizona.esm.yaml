@@ -1,0 +1,129 @@
+FormKey: 0121D9:NovaArizona.esm
+EditorID: AZFortArrivalTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967281
+    RefCount: 21
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A0063020000010072010039150C00010B0056010200100042010080161800021000560103000C00560104000F00150207004C6F0000003A15170001160052050078000097100B000100FFFF050052060028801620000218005800003B1011000200FFFF0500520700FFFF0400420107004CDE00000039100F000200FFFF0500520700FFFF0400420239150C00010B005601000001004201003A151000010F00520800780000221004000000283A151000010F00520800780000BB110400000028801621000219005800003B1011000200FFFF0500520700FFFF0400426E1507004C33010000801611000209005601090001001507004C330100003A151700011600520A0078000097100B000100FFFF0500520B002880161500020D00470C00560100000200150207004CD70100003A151000010F00520D00780000211004000000283A151000010F00520E007800002110040000002880162100021900520F007800002F100B000100FFFF05005210002842000407004CBA0100003A151D00011C00520F00780000021011000200FFFF0500521000FFFF040042012839150C00010B00560100000200420100391509000108004711004203008016100002080056011200260007004C2302000039150C00010B005601120026004200003A151000010F00521300780000211004000000283A151000010F005214007800002210040000002880161A0002120058000038100B000100FFFF050052150007004C8702000080161800021000560115000B00560112001500150207004C8702000039150C00010B005601120015004201003A151600011500520F00780000AB100A000100FFFF04004201281100000010000B001A001E0000000100720D003A151600011500520D0078000022100A000100FFFF040042012811000000
+  SourceCode: >-
+    name AZFortArrivalTriggerScript;
+
+
+    int bDoOnce;
+
+    int bChipTransferred;
+
+
+    OnTriggerEnter::Player {
+        VMS45.bPlayerAtFort = 1;
+
+        if (VNPCFollowers.ArcadeHired && !VDialogueArcadeGannon.bArcadeQuestionedBeforeCaesar) {
+            ArcadeREF.AddScriptPackage(ArcadeTriggerBeforeCaesarDialoguePackage);
+        }
+
+        // If VMQ02 (The Enemy of My Enemy) is active, update the quest to direct the player to go see Caesar when the player first arrives
+        if (GetStageDone(VMQ02, 1)) {
+            SetStage(VMQ02, 2);
+            bDoOnce = 1;
+            VVulpesIncultaStripRef.Disable();
+            VVulpesIncultaStripRef.MarkForDelete();
+        }
+
+        if (!GetStageDone(VMQ02, 110)) {
+            if (!FortEquipmentConfiscationQuest.bFortEquipmentStored) {
+                AZFortLegionaryEntranceGreeterREF.AddScriptPackage(FortDisarmDialoguePackage);
+            }
+        }
+
+        if (VStoryEventBennyFled && !bChipTransferred) {
+            VFortBennyRef.Enable();
+            FortBennyGuardRef.Enable();
+
+            if (FortCaesarRef.GetItemCount(VPlatinumChip) == 0) {
+                FortCaesarRef.AddItem(VPlatinumChip, 1);
+            }
+
+            bChipTransferred = 1;
+            VStoryChipOwner = 3;
+        }
+
+        // Player was inside inner camp, but fast traveled out
+        if (VFreeformTheFort.bPlayerInside) {
+            VFreeformTheFort.bPlayerInside = 0;
+            FortExteriorNPCParent.Enable();
+            FortInteriorNPCParent.Disable();
+        }
+
+        // Caesar has revealed his illness, and time is running out
+        if (GetQuestRunning(VMS35)) {
+            if (VMS35.bEnableCaesarComa && !VFreeformTheFort.bCaesarInComa) {
+                // put Caesar in coma
+                VFreeformTheFort.bCaesarInComa = 1;
+                FortCaesarRef.IgnoreCrime(1);
+            }
+        }
+    }
+
+
+    OnTriggerEnter::VFortBennyRef {
+        VFortBennyRef.Disable(1);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bChipTransferred
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 140C3A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16117F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8EB:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 168ADF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 129D14:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 131F78:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 164762:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121DC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 139B5D:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 118AC3:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1344BF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1630C5:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 121FF0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1164FB:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 118AC4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11F9CF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1411AE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1411AF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1252D6:FalloutNV.esm

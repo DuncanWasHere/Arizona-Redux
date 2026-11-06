@@ -1,0 +1,49 @@
+FormKey: 024CBE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 024C73:NovaArizona.esm
+PreviousInfo: 024CBD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] I did step up. I blew up car bombs at the age of 14 and assassinated a Legion Centurion at the age of 25.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: How about you shut your damn mouth?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100813743
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 95
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+Choices:
+- 024C81:NovaArizona.esm
+- 024C83:NovaArizona.esm
+- 024C84:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There is no chance of success unless you step up first.
+ActorValuePerk: 0004BB:FalloutNV.esm

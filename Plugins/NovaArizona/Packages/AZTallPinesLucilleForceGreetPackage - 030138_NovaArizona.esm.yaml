@@ -1,0 +1,52 @@
+FormKey: 030138:NovaArizona.esm
+EditorID: AZTallPinesLucilleForceGreetPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- AlwaysRun
+- WeaponDrawn
+Unused: 253
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 34993
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 030139:NovaArizona.esm
+  Radius: 1024
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 256
+Conditions:
+- Fluff: 0x000000
+  Function: GetTalkedToPC
+DialogueData:
+  DialogueTopic: 0000C8:FalloutNV.esm
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 030139:NovaArizona.esm
+  Radius: 1024
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

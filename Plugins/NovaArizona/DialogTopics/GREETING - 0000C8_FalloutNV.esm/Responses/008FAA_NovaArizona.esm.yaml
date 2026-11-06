@@ -1,0 +1,33 @@
+FormKey: 008FAA:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: 008F9A:NovaArizona.esm
+AddTopics:
+- 008FB4:NovaArizona.esm
+- 008FB2:NovaArizona.esm
+- 008FAE:NovaArizona.esm
+- 008FAC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: I assume you have business here. This is a military outpost.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 1219860
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691411
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

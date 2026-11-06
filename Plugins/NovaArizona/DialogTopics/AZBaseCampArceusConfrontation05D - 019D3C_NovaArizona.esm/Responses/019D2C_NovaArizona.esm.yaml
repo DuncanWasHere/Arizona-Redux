@@ -1,0 +1,87 @@
+FormKey: 019D2C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Type: Conversation
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x706963
+  ResponseText: You lying whore!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+LinkFrom:
+- 019D25:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 11
+    Enabled: 1
+  CompiledScript: 0x1C0001007F110A0002007203006E010000001C0001008011050001007204001C0001008011050001007205001C0001008011050001007206001C000100F310070001006E010000001C0002008011050001007207001C0002008011050001007208001C0002008011050001007209001C000200801105000100720A001C0002005E10000015000A00720B00732100020020311C0001000F100900020010006E190000001C0001005E100000
+  SourceCode: >-
+    AZBaseCampIuliaREF.addtofaction AZBaseCampIuliaExileFaction 1
+
+    AZBaseCampIuliaREF.removefromfaction AZBaseCampSlaveFaction
+
+    AZBaseCampIuliaREF.removefromfaction TheFortSlaveFaction
+
+    AZBaseCampIuliaREF.removefromfaction vCaesarsLegionSlaveDialogueFaction
+
+
+    AZBaseCampIuliaREF.setrestrained 1
+
+    AZBaseCampArceusREF.removefromfaction ArmorVCaesarsLegionFaction
+
+    AZBaseCampArceusREF.removefromfaction AZBaseCampLegionFaction
+
+    AZBaseCampArceusREF.removefromfaction VCaesarsLegionFaction
+
+    AZBaseCampArceusREF.removefromfaction vCaesarsLegionMilitaryDialogueFaction
+
+    AZBaseCampArceusREF.evp
+
+    set AZBaseCampRomanceQuest.IuliaIsGettingBeaten to 1
+
+    AZBaseCampIuliaREF.setav health 25
+
+    AZBaseCampIuliaREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BA8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BAF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D2E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D37:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1271EE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13FB67:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 134B6E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D50:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 137BB7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm

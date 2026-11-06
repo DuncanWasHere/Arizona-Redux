@@ -1,0 +1,39 @@
+FormKey: 00D482:NovaArizona.esm
+EditorID: AZMalpaisGoldMinePostumusBreakSandboxPackage01
+FormVersion: 15
+Unused: 48
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoSleeping
+Unused2: 17486
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 00CC01:NovaArizona.esm
+  Radius: 512
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 5
+Duration: 2
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100717684
+  SecondParameter: 6
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

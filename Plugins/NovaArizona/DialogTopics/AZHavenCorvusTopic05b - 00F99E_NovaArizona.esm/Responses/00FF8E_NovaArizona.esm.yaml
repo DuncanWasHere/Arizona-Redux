@@ -1,0 +1,39 @@
+FormKey: 00FF8E:NovaArizona.esm
+FormVersion: 15
+Quest: 00F50D:NovaArizona.esm
+PreviousInfo: 00FF8D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Everyone the Legion kills is subhuman filth. The only good people in the wasteland are those who willingly submit to us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Everyone not of the Legion is lethal to the wasteland, whether in the short-term or the long-term.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724241
+Choices:
+- 00F98A:NovaArizona.esm
+- 00F99E:NovaArizona.esm
+- 00FDE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There are no alternatives to the Legion? No other good people in the wasteland?

@@ -1,0 +1,82 @@
+FormKey: 01CB34:NovaArizona.esm
+EditorID: AZCampWillowSnipedLegionaryTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 7
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001800CE0000000100720100801631000229005800003A100B000100FFFF05005202004232045800003A100B000100FFFF05005202004246040107004CF2000000801611000209005601000002001507004CF20000006110020000003A15160001150052030078000021100A000100FFFF04004200283A15160001150052040078000021100A000100FFFF04004200283A1517000116005201007800005F100B000100FFFF0500520300283A1517000116005201007800005F100B000100FFFF05005204002839150C00010B005601000002004201001100000010000600000085010000801631000229005800003A100B000100FFFF05005202004232045800003A100B000100FFFF05005202004246040107004C810200008016100002080056010000020007004C81020000391513000112005600000001005800000C10040000001C80161D000215005601000002004201045600000001004202060207004CDF0100003A1523000122005203007800008B1017000300FFFF0500520500FFFF04004201FFFF04004202283A151700011600520600780000B2100B000100FFFF05005207002839150C00010B00560100000200420200811608000107004C8102000080161D000215005601000002004202045600000001004204060207004C5E0200003A1523000122005204007800008B1017000300FFFF0500520500FFFF04004201FFFF04004202283A151700011600520600780000B2100B000100FFFF05005207002839150C00010B00560100000200420300811608000107004C8102000080161300020B0056010000020042030407004C8102000060100200000022100200000011000000
+  SourceCode: >-
+    name AZCampWillowSnipedLegionaryTriggerScript;
+
+
+    int iSequenceCounter;
+
+    float fTimer;
+
+
+    OnTrigger::PlayerREF {
+        if (GetStage(AZCampWillowRangerStationQuest) == 50 || GetStage(AZCampWillowRangerStationQuest) == 70) {
+            if (!iSequenceCounter) {
+                DisablePlayerControls();
+                AZCampWillowSnipedLegionary01REF.Enable(0);
+                AZCampWillowSnipedLegionary02REF.Enable(0);
+                PlayerREF.SendAssaultAlarm(AZCampWillowSnipedLegionary01REF);
+                PlayerREF.SendAssaultAlarm(AZCampWillowSnipedLegionary02REF);
+                iSequenceCounter = 1;
+            }
+        }
+    }
+
+
+    GameMode {
+        if (GetStage(AZCampWillowRangerStationQuest) == 50 || GetStage(AZCampWillowRangerStationQuest) == 70) {
+            if (iSequenceCounter) {
+                fTimer += GetSecondsPassed();
+
+                if (iSequenceCounter == 1 && fTimer > 2) {
+                    AZCampWillowSnipedLegionary01REF.KillActor(AZRSDeltaGarcettiREF, 1, 2);
+                    AZCampWillowGarcettiSniperSoundMarkerREF.PlaySound3D(WPNRifleSniperFire3DDIST);
+                    iSequenceCounter = 2;
+
+                } else if (iSequenceCounter == 2 && fTimer > 4) {
+                    AZCampWillowSnipedLegionary02REF.KillActor(AZRSDeltaGarcettiREF, 1, 2);
+                    AZCampWillowGarcettiSniperSoundMarkerREF.PlaySound3D(WPNRifleSniperFire3DDIST);
+                    iSequenceCounter = 3;
+
+                } else if (iSequenceCounter == 3) {
+                    EnablePlayerControls();
+                    Disable();
+                }
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iSequenceCounter
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA9A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB33:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB32:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA99:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB35:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 12B886:FalloutNV.esm

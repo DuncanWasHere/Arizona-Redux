@@ -1,0 +1,65 @@
+FormKey: 022505:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DD748:FalloutNV.esm
+  VertexCount: 7
+  TriangleCount: 5
+  EdgeLinkCount: 2
+Vertices:
+- 158382.36, 4096.133, 7061.111
+- 158558.8, 4096, 7050.075
+- 158459.61, 4283.426, 7072
+- 158633.14, 4260.1396, 7063.4023
+- 158855.84, 4096, 7064
+- 158447.39, 4444.5293, 7080.8975
+- 158615.67, 4409.0034, 7073.4795
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 2, 1, 3
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: 3
+  Flags:
+  - Found
+- Vertices: 1, 4, 3
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 1
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 2, 3, 5
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: 4
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 3, 6, 5
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 3
+  Flags:
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 473.48438
+  MaxDistanceY: 348.5293
+  Min: 158382.36, 4096, 7050.075
+  Max: 158855.84, 4444.5293, 7080.8975
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+EdgeLinks:
+- Mesh: 0079AD:NovaArizona.esm
+  Triangle: 280
+- Mesh: 0079AD:NovaArizona.esm
+  Triangle: 278

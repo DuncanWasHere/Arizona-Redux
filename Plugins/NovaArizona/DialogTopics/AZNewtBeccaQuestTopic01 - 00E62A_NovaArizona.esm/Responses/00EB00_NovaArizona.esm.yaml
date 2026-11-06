@@ -1,0 +1,106 @@
+FormKey: 00EB00:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 00E667:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, there's a couple of mines around here. Cisco Mine, you could try dungeon-diving there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And there's the pirates.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Tribal raiders from up north. They come down and raid along Lake Mead every year or so. I've seen them use dynamite before.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They've set themselves up in Union Mine, so you might be able to get dynamite from them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Word of warning, though. They're unpredictable. They tend to shoot outsiders on sight, especially since the Legion moved in.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But I know there is a couple out on the lake more reasonable.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+- Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100874950
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100874950
+  SecondParameter: 6
+Choices:
+- 019C2E:NovaArizona.esm
+- 0089A2:NovaArizona.esm
+- 00E637:NovaArizona.esm
+- 00E638:NovaArizona.esm
+- 00E639:NovaArizona.esm
+- 00E643:NovaArizona.esm
+- 00E644:NovaArizona.esm
+- 00E62A:NovaArizona.esm
+- 019C2B:NovaArizona.esm
+- 019C2C:NovaArizona.esm
+- 019C2D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x55100500010072010039100A0002007202006E06000000
+  SourceCode: >-
+    ShowMap AZCiscoMineMapMarkerREF
+
+    SetStage AZNewtFishingQuest 6
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B235:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+Prompt: Where do you think I could find dynamite?

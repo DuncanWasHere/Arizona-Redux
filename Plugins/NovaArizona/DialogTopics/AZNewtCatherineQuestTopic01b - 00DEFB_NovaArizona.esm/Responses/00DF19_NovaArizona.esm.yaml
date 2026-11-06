@@ -1,0 +1,36 @@
+FormKey: 00DF19:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 00DF17:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746872
+    UseEmotionAnimation: True
+    Unused3: 0x6D7920
+  ResponseText: "[FAILED] I don't, so fuck off."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you sure that you don't have anything to hide?
+ActorValuePerk: 0004BB:FalloutNV.esm

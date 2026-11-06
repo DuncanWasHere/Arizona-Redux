@@ -1,0 +1,81 @@
+FormKey: 014576:NovaArizona.esm
+MajorRecordFlagsRaw: 525312
+EditorID: AZDolanSpringsLegionMongrelDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+- CantWait
+ObjectBounds:
+  First: -12, -50, 0
+  Second: 13, 60, 70
+Name: Dead Legion Mongrel
+Model:
+  File: Creatures\Dog\Skeleton.nif
+UnarmedAttackEffect: 11D9ED:FalloutNV.esm
+UnarmedAttackAnimation: AttackLeft
+Models:
+- nv_mongrel.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - TiltFrontBack
+  - AllowPickpocket
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 021475:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E26A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 1252C7:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 1768B3:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Script: 1252C0:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 221146368
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  CombatSkill: 40
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 5
+  Strength: 6
+  Perception: 8
+  Endurance: 6
+  Charisma: 1
+  Intelligence: 1
+  Agility: 6
+  Luck: 5
+AttackReach: 48
+CombatStyle: 03A374:FalloutNV.esm
+BodyPartData: 02931E:FalloutNV.esm
+TurningSpeed: 90
+BaseScale: 1
+FootWeight: 1
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03E632:FalloutNV.esm
+ImpactDataset: 07E640:FalloutNV.esm
+MajorFlags:
+- QuestItem
+- 0x80000

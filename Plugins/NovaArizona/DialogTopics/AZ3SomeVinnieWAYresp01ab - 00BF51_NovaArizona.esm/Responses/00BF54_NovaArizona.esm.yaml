@@ -1,0 +1,30 @@
+FormKey: 00BF54:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206F66
+    UseEmotionAnimation: True
+    Unused3: 0x652073
+  ResponseText: Really?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF56:NovaArizona.esm
+- 00BF57:NovaArizona.esm
+- 00BF58:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Sorry, I have no idea who you are.

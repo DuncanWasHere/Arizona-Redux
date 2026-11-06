@@ -1,0 +1,47 @@
+FormKey: 03A173:NovaArizona.esm
+EditorID: AZSlaveQuestAttack02Package
+FormVersion: 15
+GeneralFlags:
+- AlwaysRun
+- WeaponDrawn
+Unused: 34
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 35615
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 009F02:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 009F02:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00977A:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100901046
+  SecondParameter: 10
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,50 @@
+FormKey: 024C35:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: 024C34:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x427574
+    UseEmotionAnimation: True
+    Unused3: 0x73686F
+  ResponseText: Of course I do. I have no reason to hide anything. That is not even my screwdriver.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100813854
+  RunOnType: Target
+Choices:
+- 024C32:NovaArizona.esm
+- 024C37:NovaArizona.esm
+- 024C3B:NovaArizona.esm
+- 024C59:NovaArizona.esm
+- 024C40:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E090000006E01000000
+  SourceCode: SetObjectiveCompleted AZBigStopAhigaQuest01 9 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: So you admit that someone could have used this screwdriver to damage those guns?

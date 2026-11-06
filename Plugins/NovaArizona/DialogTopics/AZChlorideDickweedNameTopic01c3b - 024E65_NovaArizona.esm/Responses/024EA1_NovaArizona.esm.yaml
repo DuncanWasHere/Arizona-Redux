@@ -1,0 +1,43 @@
+FormKey: 024EA1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Dumbass. Shit's mine, now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100716089
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C0001004912170005007202006E010000006E000000006E2F000000720300
+  SourceCode: >+
+    player.RemoveAllTypedItems AZChlorideDickweedREF 1 0 47 NVLegionChemsList
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00CE3C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 179347:FalloutNV.esm
+Prompt: <Give him all of your chems.> Fine.

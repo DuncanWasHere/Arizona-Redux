@@ -1,0 +1,48 @@
+FormKey: 01BBA0:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He doesn't bother me, and I don't bother him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He's usually pretty nice to me whenever we do talk, though.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776316
+Choices:
+- 01BADE:NovaArizona.esm
+- 01BADF:NovaArizona.esm
+- 01BAE0:NovaArizona.esm
+- 01BAE1:NovaArizona.esm
+- 01BAE2:NovaArizona.esm
+- 01BAE3:NovaArizona.esm
+- 01BAE4:NovaArizona.esm
+- 01BAE5:NovaArizona.esm
+- 01BAE6:NovaArizona.esm
+- 01BAE7:NovaArizona.esm
+- 01BAE8:NovaArizona.esm
+- 01BAE9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Ruce.

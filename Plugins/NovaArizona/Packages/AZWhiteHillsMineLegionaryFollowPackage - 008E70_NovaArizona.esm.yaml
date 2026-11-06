@@ -1,0 +1,54 @@
+FormKey: 008E70:NovaArizona.esm
+EditorID: AZWhiteHillsMineLegionaryFollowPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- AllowSwimming
+- AllowFalls
+- DefensiveCombat
+- WeaponDrawn
+- ContinueDuringCombat
+BehaviorFlags:
+- HellosToPlayer
+- RandomConversations
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+- AllowIdleChatter
+- AvoidRadiation
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 0
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 300
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100699722
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100699722
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

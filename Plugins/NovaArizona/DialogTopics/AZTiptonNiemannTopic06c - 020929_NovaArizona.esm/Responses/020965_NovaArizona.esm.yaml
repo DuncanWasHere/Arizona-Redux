@@ -1,0 +1,41 @@
+FormKey: 020965:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Frumentarii have to make deals with raiders and tribes all the time. They can't always afford to bring in an Auto-Doc as a gift, but chems are always appreciated by whatever tribe or raider they're working with.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Some of them even think it's a worthwhile endeavor to try and get them to sell drugs in California. I don't know if that's working out for them, but it's certainly working out for me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+Choices:
+- 020922:NovaArizona.esm
+- 020925:NovaArizona.esm
+- 020929:NovaArizona.esm
+- 02092A:NovaArizona.esm
+- 02092C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Wait, the Legion bans drugs, but you sell to the Legion?

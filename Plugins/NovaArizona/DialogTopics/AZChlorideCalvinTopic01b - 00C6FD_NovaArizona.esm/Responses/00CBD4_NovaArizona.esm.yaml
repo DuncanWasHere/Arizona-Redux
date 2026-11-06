@@ -1,0 +1,43 @@
+FormKey: 00CBD4:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Because of me. It was back in '77. I don't know it back then, but the Legion had just lost at Hoover Dam.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: Me and Julius successfully managed to negotiate a deal with the Legion. My caravan and his slaves would help the Legion keep a little presence in the region.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: I managed to befriend Aristophantes, and even got an audience with Caesar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+Choices:
+- 00C6FE:NovaArizona.esm
+- 00C6FF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How did the merchants become so strong in Legion territory?

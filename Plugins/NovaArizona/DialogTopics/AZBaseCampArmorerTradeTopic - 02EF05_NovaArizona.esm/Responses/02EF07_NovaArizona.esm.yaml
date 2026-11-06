@@ -1,0 +1,43 @@
+FormKey: 02EF07:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: 02EF09:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: This is true. You possess the spirit of a Legionary, if not the training and discipline. Very well, I could spare some equipment for denarii.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+Choices:
+- 02EF05:NovaArizona.esm
+- 0199E7:NovaArizona.esm
+- 00862A:NovaArizona.esm
+- 020DA5:NovaArizona.esm
+- 0199DA:NovaArizona.esm
+- 0199DB:NovaArizona.esm
+- 0199E8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have served this Legion faithfully. I am the right hand of Caesar, and his hand needs weapons.

@@ -1,0 +1,40 @@
+FormKey: 02083F:NovaArizona.esm
+EditorID: AZLaertesSellDogQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000D300000080161D000215005800003A100B000100FFFF050052010042050407004CC4000000801669000261005202007800002F100B000100FFFF0500520300284200065202007800002F100B000100FFFF050052040028420006015202007800002F100B000100FFFF050052050028420006015202007800002F100B000100FFFF0500520600284200060107004CC400000039100F000200FFFF0500520100FFFF0400420F80161700020F005207007800002E10040000002807004CF200000039100F000200FFFF0500520100FFFF040042FF11000000
+  SourceCode: >-
+    name AZLaertesSellDogQuestScript;
+
+
+    GameMode {
+        if (GetStage(AZLaertesSellDogQuest) == 5) {
+            if (Player.GetItemCount(AZQuestCerberusBrain) > 0 || Player.GetItemCount(VMS24BrainRey) > 0 || Player.GetItemCount(VMS24BrainLupa) > 0 || Player.GetItemCount(VMS24BrainVioletta) > 0) {
+                SetStage(AZLaertesSellDogQuest, 15);
+            }
+        }
+
+        if (RexREF.GetDead()) {
+            SetStage(AZLaertesSellDogQuest, 255);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13D852:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13D851:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13E5BA:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 10D8DF:FalloutNV.esm

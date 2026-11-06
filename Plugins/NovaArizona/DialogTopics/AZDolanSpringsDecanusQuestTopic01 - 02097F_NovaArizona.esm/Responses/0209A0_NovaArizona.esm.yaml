@@ -1,0 +1,49 @@
+FormKey: 0209A0:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 02099B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100796570
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100796570
+  SecondParameter: 16
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100796570
+  SecondParameter: 16
+Choices:
+- 018393:NovaArizona.esm
+- 020985:NovaArizona.esm
+- 020986:NovaArizona.esm
+- 020987:NovaArizona.esm
+- 020988:NovaArizona.esm
+- 0209BB:NovaArizona.esm
+- 018397:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Spoke to Asher and Ficus. When I arrived, there were two dead Gila Monsters and a mutilated Brahmin.

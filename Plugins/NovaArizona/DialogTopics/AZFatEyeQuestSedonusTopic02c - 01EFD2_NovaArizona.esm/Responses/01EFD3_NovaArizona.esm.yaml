@@ -1,0 +1,54 @@
+FormKey: 01EFD3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: Oh, Christ, you know what? I'll do it. Tell your legate friend that I'll supply him, but he better not fuck me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 5
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E5A0000006E01000000A2110F0003007201006E5C0000006E01000000A3110F0003007201006E5B0000006E00000000A3110F0003007201006E5D0000006E00000000A3110F0003007201006E5E0000006E01000000
+  SourceCode: >-
+    SetObjectiveCompleted AZMalpaisAbuserQuest 90 1
+
+    SetObjectiveCompleted AZMalpaisAbuserQuest 92 1
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 91 0
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 93 0
+
+    SetObjectiveDisplayed AZMalpaisAbuserQuest 94 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+Prompt: I'm thinking about whether or not I could snap your arm clean off.
+ActorValuePerk: 0003E8:FalloutNV.esm

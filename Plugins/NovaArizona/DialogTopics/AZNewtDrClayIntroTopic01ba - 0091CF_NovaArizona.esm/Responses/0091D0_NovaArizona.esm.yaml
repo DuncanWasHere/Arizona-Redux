@@ -1,0 +1,41 @@
+FormKey: 0091D0:NovaArizona.esm
+FormVersion: 15
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: About 3-4 hours a day. Here and there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x0E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If I ever need to do a longer sleep I'll get one of the kids in town to watch him while I nap on the couch.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 002D65:NovaArizona.esm
+- 00918C:NovaArizona.esm
+- 00918E:NovaArizona.esm
+- 0091B1:NovaArizona.esm
+- 0050EC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: 24/7 care? Do you sleep?

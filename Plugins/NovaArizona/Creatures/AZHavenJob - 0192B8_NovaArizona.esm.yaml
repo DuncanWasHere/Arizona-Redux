@@ -1,0 +1,71 @@
+FormKey: 0192B8:NovaArizona.esm
+EditorID: AZHavenJob
+FormVersion: 15
+ObjectBounds:
+  First: -41, -43, 0
+  Second: 41, 43, 152
+Name: Job
+Model:
+  File: Creatures\SMSpineBreaker\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07B201:FalloutNV.esm
+- 0CE556:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- nvsmhair.nif
+- nv_night_base.nif
+- nv_sm_boots.nif
+- nv_sm_bootsloin.nif
+- voltaroutfitlight.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - AllowPCDialogue
+  - AllowPickpocket
+  Fatigue: 50
+  Level: 6
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - ActorEffectList
+DeathItem: 07189D:FalloutNV.esm
+Voice: 019FD9:FalloutNV.esm
+Template: 13AFDC:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 1679847168
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 03425E:NovaArizona.esm
+Data:
+  Type: SuperMutant
+  CombatSkill: 80
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 175
+  Damage: 20
+  Strength: 9
+  Perception: 3
+  Endurance: 8
+  Charisma: 5
+  Intelligence: 3
+  Agility: 10
+  Luck: 6
+AttackReach: 96
+CombatStyle: 0269BA:FalloutNV.esm
+BodyPartData: 02026E:FalloutNV.esm
+TurningSpeed: 75
+BaseScale: 1
+FootWeight: 15
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 01FF5F:FalloutNV.esm
+ImpactDataset: 075A49:FalloutNV.esm
+MeleeWeaponList: 03A15E:FalloutNV.esm

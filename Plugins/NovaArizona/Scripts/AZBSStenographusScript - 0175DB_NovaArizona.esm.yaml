@@ -1,0 +1,35 @@
+FormKey: 0175DB:NovaArizona.esm
+EditorID: AZBSStenographusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00630000000000801611000209005601010002001507004C4E000000781010000200FFFF0500520200FFFF05005203008016100002080056010100020007004C840000003A151E00011D00520400780000341012000200FFFF0500520500FFFF05005206002811000000
+  SourceCode: >-
+    name AZBSStenographusScript;
+
+
+    OnDeath {
+        if (!AZMalpaisJournalistQuest.bDominicusAngry) {
+            SetEnemy(PlayerFaction, AZDominicusRexFaction);
+        }
+
+        if (AZMalpaisJournalistQuest.bDominicusAngry) {
+            AZBigStopDominicusRexREF.SayTo(Player, AZBSDominicusTopic10);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175DC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B13D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01758C:NovaArizona.esm

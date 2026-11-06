@@ -1,0 +1,67 @@
+FormKey: 00C53B:NovaArizona.esm
+EditorID: AZKLBKDog
+FormVersion: 15
+ObjectBounds:
+  First: -29, -62, 0
+  Second: 29, 62, 70
+Name: Dog
+Model:
+  File: Creatures\Dog\Skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- dogskin.nif
+- eyessetoneblue.nif
+ModelListTextures: 0x0200000006E7EF0364C5A9DB8D676F0364CAA9DB8D676F16744C20FEFDEEDF05647DC54A8E6E5F056482C54A8E676F16744C20FEFDF3DF05647DC54A8E735F056482C54A8E676F16744C20FEFDB1B00D6DFA4C094631300D6DFF4C094665720D74387A3871EEDF0F6D7B0EB15D6E5F0F6D800EB15D65720D74387A3871F3DF0F6D7B0EB15D735F0F6D800EB15D65720D74387A387103E7EF0364C5A9DB8D676F0364CAA9DB8D676F16744C20FEFDEEDF05647DC54A8E6E5F056482C54A8E676F16744C20FEFDF3DF05647DC54A8E735F056482C54A8E676F16744C20FEFD
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 180
+  Level: 7
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 07E26A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 00C53A:NovaArizona.esm
+  Rank: 1
+  Unused: 0x49465A
+DeathItem: 03A58B:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 1057544966
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  CombatSkill: 40
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 20
+  Damage: 12
+  Strength: 4
+  Perception: 6
+  Endurance: 6
+  Charisma: 5
+  Intelligence: 5
+  Agility: 4
+  Luck: 2
+AttackReach: 48
+CombatStyle: 03A374:FalloutNV.esm
+BodyPartData: 02931E:FalloutNV.esm
+TurningSpeed: 90
+BaseScale: 0.8
+FootWeight: 1
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03E632:FalloutNV.esm
+ImpactDataset: 07E640:FalloutNV.esm

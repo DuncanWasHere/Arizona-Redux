@@ -1,0 +1,53 @@
+FormKey: 035077:NovaArizona.esm
+EditorID: AZMalpaisRegulusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000BF000000801611000209005601000001001507004CDE00000080164D0002450056010100150042010456010100150042020401520200780000AF1104000000285A9A9999999999C93F09520300780000AF1104000000285A9A9999999999C93F09010207004CDE00000039150C00010B005601010016004201003A15170001160052020078000017100B000100FFFF0500520300283A151000010F005202007800005E10040000002839150C00010B0056010000010042010061100200000011000000100008000A0075000000000080161100020900560101000B001507004C2201000039100F000200FFFF0500520100FFFF04004265811608000107004C5F01000080162000021800580000A51111000200FFFF0500520100FFFF0400420A07004C5F010000A21115000300FFFF0500520100FFFF0400420AFFFF0400420111000000
+  SourceCode: >-
+    name AZMalpaisRegulusScript;
+
+
+    int bDoTwice;
+
+
+    GameMode {
+        if (!bDoTwice) {
+            if ((AZMalpaisSniperQuest.iBrawlStage == 1 || AZMalpaisSniperQuest.iBrawlStage == 2) &&
+                (AZMalpaisRegulusREF.GetHealthPercentage() <= 0.20 || PlayerREF.GetHealthPercentage() <= 0.20)) {
+
+                AZMalpaisSniperQuest.bBrawlRoundOver = 1;
+                AZMalpaisRegulusREF.StopCombat(PlayerREF);
+                AZMalpaisRegulusREF.EVP();
+                bDoTwice = 1;
+                DisablePlayerControls();
+            }
+        }
+    }
+
+
+    OnDeath {
+        if (!AZMalpaisSniperQuest.bHeardHogWalkerSobStory) {
+            SetStage(AZMalpaisSniperQuest, 101);
+        } else if (GetObjectiveDisplayed(AZMalpaisSniperQuest, 10)) {
+            SetObjectiveCompleted(AZMalpaisSniperQuest, 10, 1);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDoTwice
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034F35:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

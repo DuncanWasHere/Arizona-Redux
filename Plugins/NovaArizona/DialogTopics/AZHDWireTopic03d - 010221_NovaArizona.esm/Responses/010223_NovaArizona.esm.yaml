@@ -1,0 +1,176 @@
+FormKey: 010223:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010222:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Interesting. I thought you might have been just another bleeding heart.... But you think just like I do.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll spread some rumors about how you're a hero to Oliver to give you some cover. Oh, and here's your reward.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Plus a little something extra. Got this here street sweeper, for taking out the trash. I used during the Vault City Riots a couple years ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You have fun with it now. Oh, and don't talk to the press. They wouldn't get it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729230
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0102D4:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0102D3:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0102D5:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0102D6:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0102D7:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0102D8:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 0101C9:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100729229
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 16
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E0F00000015000A00720300730100020020321C00010002100A0002007204006E010000001C00010002100A0002007205006E3C0000001C00010002100A0002007206006E640000001C00010002100A0002007207006E2C0100003B12130003007208006E010000007A000000000000284016001F000F001B00207209007306002031203D3D20720A00731800203220213D2026261600100001000C00207209007313002030203D3D15000A0072090073120002002030190000001C0002004F1205000100720B0015000A007209007306000200203015000A007209007307000200203115000A00720900732C000200203115000A00720900732F00020020301C000200C511070001006E000000001C000200A81105000100720C001C000100A81105000100720D0059100B000100720E000000000000001C000100801105000100720F001C000200801105000100721000150013007209007313000B00207209007313002031202D19000000
+  SourceCode: >+
+    setstage AZDamNQuest2 15
+
+    Set AZDamNQuest2.bAgreedtoKillRefugees to 2
+
+
+    player.additem AZWeapRiotShotgunUnique 1
+
+    player.additem Ammo12Ga 60
+
+    player.additem Ammo12GaSlug 100
+
+    player.additem caps001 300
+
+
+    AddReputationExact RepNVNCR 1 12
+
+
+    if (VNPCFollowers.bBooneHired == 1) && (VDialogueCraigBoone.nFinalState != 2)
+    		if VNPCFollowers.nCurrentFollowers == 0
+    			set VNPCFollowers.bPlayerHasFollower to 0
+    		endif
+    	CraigBooneRef.MoveToMarkerWithFade BooneHomeMarkerREF
+    	set VNPCFollowers.bBooneHired to 0
+    	set VNPCFollowers.bBooneFired to 1
+    	set VNPCFollowers.bBooneQuit to 1
+    	set VNPCFollowers.bHumanoidInParty to 0
+    	CraigBooneREF.SetPlayerTeammate 0
+    	CraigBooneREF.removeperk CompanionSuite
+    	player.removeperk Spotting
+    	showmessage FollowerMessagePerkBooneRemove
+    	Player.RemoveFromFaction VBooneFaction;
+    	CraigBooneREF.RemoveFromFaction FollowerFaction
+    	set VNPCFollowers.nCurrentFollowers to (VNPCFollowers.nCurrentFollowers - 1)
+    endif
+
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 096BCE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 016CBF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08ECF5:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13E447:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 096BCD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CAEB6:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C571:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C60C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 15C61E:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B160C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037136:FalloutNV.esm
+Prompt: Well, the refugees are dead, but so is Omar.

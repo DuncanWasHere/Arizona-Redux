@@ -1,0 +1,49 @@
+FormKey: 024D45:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 024CE4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723482
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x36100500010072010091110500010072020061100200000015000A0072030073020002002031
+  SourceCode: >-
+    StartQuest AZBuckTimerQuest
+
+    imod FadeToBlack5sISFX
+
+    DisablePlayerControls
+
+    Set AZBigStopAugustQuest.BuckSpokenTo to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024D5A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11ECFF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+Prompt: Reroute data from Node B to Node D. Output log through AV sensor.

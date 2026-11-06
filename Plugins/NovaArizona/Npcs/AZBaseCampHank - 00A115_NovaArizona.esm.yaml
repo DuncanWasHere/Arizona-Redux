@@ -1,0 +1,161 @@
+FormKey: 00A115:NovaArizona.esm
+EditorID: AZBaseCampHank
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Hank
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1750
+  CalcMin: 10
+  CalcMax: 30
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 00436D:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 14377A:FalloutNV.esm
+Race: 003B3E:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 0086D8:NovaArizona.esm
+Items:
+- Item:
+    Item: 004240:FalloutNV.esm
+    Count: 13
+- Item:
+    Item: 004332:FalloutNV.esm
+    Count: 3
+- Item:
+    Item: 015169:FalloutNV.esm
+    Count: 3
+- Item:
+    Item: 01D057:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 034067:FalloutNV.esm
+    Count: 20
+- Item:
+    Item: 06099C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 130153:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.81
+- Item:
+    Item: 165747:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165760:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165761:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165762:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: 50
+  BuySellServices:
+  - Weapons
+  - Armor
+  - Miscellaneous
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 037903:NovaArizona.esm
+Class: 01945F:FalloutNV.esm
+BaseHealth: 200
+Strength: 6
+Perception: 7
+Endurance: 5
+Charisma: 3
+Intelligence: 3
+Agility: 6
+Luck: 4
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 10
+  - Key: BigGuns
+    Value: 14
+  - Key: EnergyWeapons
+    Value: 100
+  - Key: Explosives
+    Value: 18
+  - Key: Lockpick
+    Value: 18
+  - Key: Medicine
+    Value: 10
+  - Key: MeleeWeapons
+    Value: 100
+  - Key: Repair
+    Value: 10
+  - Key: Science
+    Value: 10
+  - Key: SmallGuns
+    Value: 100
+  - Key: Sneak
+    Value: 16
+  - Key: Speech
+    Value: 10
+  - Key: Survival
+    Value: 14
+  - Key: Unarmed
+    Value: 14
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Eyes: 035E4F:FalloutNV.esm
+HairColor: '#004B3219'
+CombatStyle: 09E8F5:FalloutNV.esm
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xECBBEBBECC5D843F21FB763F001FEEBB676AF13F14E3E5BF30E4BFBDCC3A084064AB9D3DD557DEBED4CD2F4092D0BEBFAD284740CA9F78BFE049B63EBEEAF1BFD9F80C40D14ABBC054602B3E1A4F963FD3DC9AC0C820D7BF88C4B6BF01BC873FF9C9B9BF905DE2BF63589EBF7889E03EF34D4540A8A61DC08D6FAF40F71C8840DC09F13E6B3094C0D6E5A14044EE2140005D8A3E9003D63E92BA9440FF1E24BFE03F3B40C099D140223E25C1EE9908418E1FCD40DCA26FC0DD2BA9C05462C1408DF0D14039E3D040
+FaceGenGeometryAsymmetric: 0x1C84B63D8E4FA2BF3281853FDF666D3F7C640C3F8C9D183E1AEB32408ECA92BE624784BE58ACFFBE45FCCDBE9DEF26C043330C3F44EFFD3F4AEC31BF10B7743FA82231C0615892BFE4F52CBF0A35DFBE7E35C4BF5E756CBF16BC1840E92396C05A40943FF6A15E406592D13F4746973E3EBEEE3F0AFC763F
+FaceGenTextureSymmetric: 0x3BB02EC02D44B0BF51B60DBF25CA413F863627BF31ED5D40940C3C4021EE2A3FA0968BC01BBB6540B8737740E1C94B4040059F40F513DDBE3A706DC0E14E8FC0A5AFE6BF4807C9BEE78C97BF11331B419477A03F2BFC26402732ACC0AB082D3EF1C2594072F301C1C1C1D1C0937A87BE4FE02240B7F716C016DC69BE1CD279400013EF3E56AFCAC0926B2441EC55E6BEE9A99D402FB1E2BEBE673C403D52D4BF68DAB33F5EE7AE4013EC28406C019A4045D4B13E079840BF16C93DBF83948140B87903C1F6DE8FC0
+NAM5: 255
+DATADataTypeState:
+- Break0

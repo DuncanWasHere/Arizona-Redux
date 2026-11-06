@@ -1,0 +1,29 @@
+FormKey: 0183C7:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - Random
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 0183CA:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x69726C
+    UseEmotionAnimation: True
+    Unused3: 0x20796F
+  ResponseText: You been to the trading post yet? Ask for their fish fry. Wish we had a tent maid who could cook like that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100762539
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

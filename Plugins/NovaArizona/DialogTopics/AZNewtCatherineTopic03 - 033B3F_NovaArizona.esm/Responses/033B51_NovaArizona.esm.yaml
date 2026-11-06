@@ -1,0 +1,52 @@
+FormKey: 033B51:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: 033B50:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The Legion doesn't like it, but it also doesn't want to give us the silver coins they use, the coins we need, for supplies.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So, whenever caravans pass through, we exchange in caps. My brother used to go out to other towns with some of this stuff, but, uh, he doesn't anymore.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+Choices:
+- 00DEED:NovaArizona.esm
+- 033B40:NovaArizona.esm
+- 00EBA4:NovaArizona.esm
+- 033B3D:NovaArizona.esm
+- 033B3E:NovaArizona.esm
+- 033B3F:NovaArizona.esm
+- 033B44:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Legion lets you use caps?

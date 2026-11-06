@@ -1,0 +1,21 @@
+FormKey: 032E02:NovaArizona.esm
+EditorID: AZLaertesDogDespawnerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A001F00000001007201003A1517000116005201007800009E100B000100FFFF05005202002811000000
+  SourceCode: >-
+    name AZLaertesDogDespawnerScript;
+
+
+    OnTriggerEnter::AZCrLaertesDogREF {
+        AZCrLaertesDogREF.MoveTo(AZLaertesDogDespawnerMarker);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E269:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 032E1A:NovaArizona.esm

@@ -1,0 +1,47 @@
+FormKey: 00C449:NovaArizona.esm
+EditorID: AZBigStopFindDogQuest
+FormVersion: 15
+Name: King of the Road
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 10
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 1
+  Description: Find Laertes' dog and convince him to come home.
+  Targets:
+  - Target: 00E269:NovaArizona.esm
+    Unused: 0x66102A
+- Index: 3
+  Description: Tell Laertes that Cerberus isn't coming home.
+  Targets:
+  - Target: 00C448:NovaArizona.esm
+    Unused: 0x1B2529
+- Index: 4
+  Description: Return to Laertes for your reward.
+  Targets:
+  - Target: 00C448:NovaArizona.esm
+    Unused: 0x861D26
+- Index: 5
+  Description: Tell Laertes that Cerberus is dead.
+  Targets:
+  - Target: 00C448:NovaArizona.esm
+    Unused: 0x861D26
+- Index: 2
+  Description: (Optional) Find some Brahmin meat for Cerberus.

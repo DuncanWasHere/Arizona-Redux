@@ -1,0 +1,45 @@
+FormKey: 034EF5:NovaArizona.esm
+EditorID: AZCampWillowGuardTalkPackage
+FormVersion: 15
+GeneralFlags:
+- AlwaysRun
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 17647
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 1024
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 150
+DialogueData:
+  DialogueFOV: 100
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 1024
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

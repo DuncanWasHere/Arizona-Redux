@@ -1,0 +1,19 @@
+FormKey: 008F1F:NovaArizona.esm
+EditorID: AZDLCPittSlaveDynamicIdle
+FormVersion: 15
+Model:
+  File: Characters\_Male\IdleAnims\dlcpittautoaxedynamicidle.kf
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 44
+  Function: GetCurrentAIProcedure
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetSitting
+RelatedIdleAnimations:
+  Parent: 008F1E:NovaArizona.esm
+AnimationData:
+  AnimationGroupSection: SpecialIdle
+  MustReturnFile: True
+  Unused1: 185

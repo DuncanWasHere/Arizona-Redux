@@ -1,0 +1,48 @@
+FormKey: 017572:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652069
+    UseEmotionAnimation: True
+    Unused3: 0x204F72
+  ResponseText: It's Solitare. Solitare provides us with a valuable resupply point just outside of the Fort. It is also necessary to patrol the roads to Dolan Springs.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+Choices:
+- 017574:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x150013007201007302000B00207201007302002031202B39120F0003007202006E000000006E01000000
+  SourceCode: >-
+    set AZMalpaisJournalistQuest.bDominicusAngry to AZMalpaisJournalistQuest.bDominicusAngry + 1
+
+
+    AddReputation RepNVCaesarsLegion 0 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: What does Big Stop do for the war effort against the Legion?

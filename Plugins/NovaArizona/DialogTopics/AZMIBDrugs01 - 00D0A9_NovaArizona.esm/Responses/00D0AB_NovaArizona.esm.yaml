@@ -1,0 +1,48 @@
+FormKey: 00D0AB:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: Ah, yes. Now for the matter of payment. The shipment was late and it was delivered by a stranger, a violation of our agreement with the addict.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666163
+    UseEmotionAnimation: True
+    Unused3: 0x6E735C
+  ResponseText: With these considerations made, I will be giving you 50 percent of what was agreed upon. You are both fortunate, this is a generous offer.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721587
+Choices:
+- 00D0AD:NovaArizona.esm
+- 00D0AE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000
+  SourceCode: player.RemoveItem AZFatEyeDrugQuestPrecursors 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D08C:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1

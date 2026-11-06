@@ -1,0 +1,63 @@
+FormKey: 019C24:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Sometimes, I see smoke from a campfire a little north of here, on the shore. It only happens at night, so that's kinda interesting I guess.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100768688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100768688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768788
+Choices:
+- 019C1A:NovaArizona.esm
+- 019C16:NovaArizona.esm
+- 019C17:NovaArizona.esm
+- 019C18:NovaArizona.esm
+- 019C19:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0F00000016001900010015002058A5110A0002007201006E1E0000002031203D3DA2110F0003007201006E1E0000006E0100000019000000
+  SourceCode: >-
+    setstage AZBaseCampRomanceQuest 15
+
+
+    if getObjectiveDisplayed AZBaseCampRomanceQuest 30 == 1
+
+    SetObjectiveCompleted AZBaseCampRomanceQuest 30 1
+
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Is there anything going on in the camp that seems interesting or notable to you?

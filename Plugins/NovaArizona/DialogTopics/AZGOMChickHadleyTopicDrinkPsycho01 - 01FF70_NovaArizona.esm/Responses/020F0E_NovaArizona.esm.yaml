@@ -1,0 +1,49 @@
+FormKey: 020F0E:NovaArizona.esm
+FormVersion: 15
+Quest: 01F709:NovaArizona.esm
+PreviousInfo: 020EA7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] You alright? You look nervous. Have another shot.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 86374
+  RunOnType: Target
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 42
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100792065
+Choices:
+- 01FF6E:NovaArizona.esm
+- 0203FD:NovaArizona.esm
+- 01FF6F:NovaArizona.esm
+- 020E98:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 015166:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Take a deep breath and try to work up the nerve to reach for the Psycho you're keeping on you.>
+ActorValuePerk: 0004BA:FalloutNV.esm

@@ -1,0 +1,81 @@
+FormKey: 020D2A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7520
+    UseEmotionAnimation: True
+    Unused3: 0x66726F
+  ResponseText: We're being squeezed for all we've got.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x726179
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: When the Legion returned in this area, some folks from town attempted to negotiate with Caesar himself.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A man named Cray sold Caesar on a deal. We'd help him build up the Fort and support his men, he'd spare the village.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x726179
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: Cray was worked to death about a month or so later. Selfish bastard sold the town without even consulting us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x726179
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: We cannot leave, they've got outposts surrounding us. The Fort is right there. All of the men are gone. It's all old farts, kids and cripples left.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x726179
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: That hasn't stopped them from upping our quota's and shortening our deadlines, though.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+Choices:
+- 0091B4:NovaArizona.esm
+- 0091B5:NovaArizona.esm
+- 0091B6:NovaArizona.esm
+- 0091B7:NovaArizona.esm
+- 0091B8:NovaArizona.esm
+- 009298:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you mean?

@@ -1,0 +1,48 @@
+FormKey: 130DDE:FalloutNV.esm
+EditorID: HooverDamIntODeck
+FormVersion: 15
+Name: Hoover Dam Visitor Center
+Flags:
+- IsInteriorCell
+- PublicPlace
+Lighting:
+  AmbientColor: '#002D3739'
+  DirectionalColor: '#00000000'
+  FogColor: '#005B5B4D'
+  FogNear: 3000
+  FogFar: 10000
+  DirectionalFade: 1
+  FogClipDistance: 10100
+  FogPower: 0.7
+LightTemplate: 08F584:FalloutNV.esm
+LightInheritFlags:
+- DirectionalColor
+WaterHeight: -2.1474836E+09
+WaterNoiseTexture: ''
+ImageSpace: 11C0C1:FalloutNV.esm
+EncounterZone: 131F33:FalloutNV.esm
+AcousticSpace: 1405B7:FalloutNV.esm
+MusicType: 08A6D4:FalloutNV.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 0102CF:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: AZHDWireREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 010194:NovaArizona.esm
+  Position: 3908.2502, 4412.242, 7681.624
+  Rotation: 0, 0, 3.3000023
+- MutagenObjectType: PlacedObject
+  FormKey: 0102FE:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: AZHDWireMarkerREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 00003B:FalloutNV.esm
+  Placement:
+    Position: 3908.3318, 4468.219, 7682.244
+  MajorFlags:
+  - Persistent

@@ -1,0 +1,40 @@
+FormKey: 00DEE5:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Considering that I'm the only merchant in this province that can sell Stimpaks and "higher forms of medicine," yeah, it is.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You can get basically any herb or plant off the ground for free. So, the robber is a teetotaler and a thief. Unusual, isn't it?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797362
+Choices:
+- 00DEDA:NovaArizona.esm
+- 00DEE3:NovaArizona.esm
+- 00DEE4:NovaArizona.esm
+- 00DEEB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is that unusual?

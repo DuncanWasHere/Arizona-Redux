@@ -1,0 +1,37 @@
+FormKey: 0175CC:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 0175CB:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x706169
+    UseEmotionAnimation: True
+    Unused3: 0x6E616C
+  ResponseText: I don't know. I've never had to watch the Legion in action before. I always followed them. I can't think straight. What's your idea?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0175AC:NovaArizona.esm
+- 0175AD:NovaArizona.esm
+- 0175AE:NovaArizona.esm
+- 0175AF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, what do you want to print?

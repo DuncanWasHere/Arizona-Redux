@@ -1,0 +1,60 @@
+FormKey: 036E83:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I know Kyle better than anyone.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0E0007
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The rest of the crew like to forget that his leadership is the only thing standing between us and annihilation, or worse.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x0E0007
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But they're with him until the end, and so am I. We don't have any alternative.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702071
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 009F02:NovaArizona.esm
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 009F02:NovaArizona.esm
+Choices:
+- 036E82:NovaArizona.esm
+- 0130C6:NovaArizona.esm
+- 036E85:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you like working for Kyle?

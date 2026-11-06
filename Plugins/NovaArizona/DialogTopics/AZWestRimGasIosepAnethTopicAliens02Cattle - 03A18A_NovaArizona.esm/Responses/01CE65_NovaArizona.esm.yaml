@@ -1,0 +1,33 @@
+FormKey: 01CE65:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Mhmm. Other things too. Abductions. Disappearances. Large symbols carved onto the landscape.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100781638
+Choices:
+- 01CE4F:NovaArizona.esm
+- 01CE4D:NovaArizona.esm
+- 01CE4E:NovaArizona.esm
+- 03A18A:NovaArizona.esm
+- 01CE50:NovaArizona.esm
+- 03A18B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are the Ufo known for cattle mutilations?

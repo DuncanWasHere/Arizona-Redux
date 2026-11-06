@@ -1,0 +1,68 @@
+FormKey: 00EC03:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Before that, I have something you. A little gift. Recipe, too.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874952
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 1
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetQuestVariable
+  FirstParameter: 100744500
+  SecondParameter: 4
+Choices:
+- 00EBD7:NovaArizona.esm
+- 00EBD8:NovaArizona.esm
+- 00EBDB:NovaArizona.esm
+- 00EBDC:NovaArizona.esm
+- 00EBDD:NovaArizona.esm
+- 00EBDA:NovaArizona.esm
+- 00EBD9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730600020020311C00010002100A0002007203006E030000003B12130003007204006E010000007A0000000000000040
+  SourceCode: >-
+    Set AZFreeformNewt.MusselReward to 1
+
+    Player.AddItem AZQuaggaMusselCooked 3
+
+    AddReputationExact AZRepNewt 1 2
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02E636:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004368:NovaArizona.esm
+Prompt: I have mussel meat to turn in.

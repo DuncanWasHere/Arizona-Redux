@@ -1,0 +1,56 @@
+FormKey: 00B3FC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0x00803F
+  ResponseText: Don't talk to me, swine.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100697662
+  SecondParameter: 100
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100697662
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+Choices:
+- 020DBE:NovaArizona.esm
+- 008756:NovaArizona.esm
+- 008758:NovaArizona.esm
+- 00B3F0:NovaArizona.esm
+- 00B3F2:NovaArizona.esm
+- 0086F3:NovaArizona.esm
+- 00B3FA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002031
+  SourceCode: set AZBaseCampReservationQuest.iMetBeth to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00863E:NovaArizona.esm

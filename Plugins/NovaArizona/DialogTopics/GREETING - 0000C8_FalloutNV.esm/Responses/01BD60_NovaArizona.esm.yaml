@@ -1,0 +1,35 @@
+FormKey: 01BD60:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+  - RandomEnd
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 01BD5F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F636B
+    UseEmotionAnimation: True
+    Unused3: 0x656452
+  ResponseText: Good to see you again. Here to buy some more clothes?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100777324
+Choices:
+- 01BD61:NovaArizona.esm
+- 01BD63:NovaArizona.esm
+- 01BD64:NovaArizona.esm
+- 01BD65:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,90 @@
+FormKey: 013B9C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: 013B99:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You think you're educated just because you can deduce things?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x277265
+    UseEmotionAnimation: True
+    Unused3: 0x617465
+  ResponseText: I serve Caesar. I have and will until I die. Whatever I put in my body is between me and the latrine.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100789368
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 17
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100743970
+  SecondParameter: 9
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100743970
+  SecondParameter: 8
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 013B2A:NovaArizona.esm
+- 013B2D:NovaArizona.esm
+- 013B36:NovaArizona.esm
+- 013B3C:NovaArizona.esm
+- 013B3D:NovaArizona.esm
+- 013B40:NovaArizona.esm
+- 013B41:NovaArizona.esm
+- 013B98:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E3200000015000A0072020073110002002031
+  SourceCode: >-
+    player.rewardxp 50
+
+    Set AZFreeformMalpais.SedonusDrugs to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+Prompt: Quick temper, binge-drinking sugary sodas... Are you nursing an addiction?
+ActorValuePerk: 0004B5:FalloutNV.esm

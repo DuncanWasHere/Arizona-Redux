@@ -1,0 +1,49 @@
+FormKey: 039F41:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x76656E
+  ResponseText: I would vote to convict. I vote for my own execution.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100812870
+  SecondParameter: 20
+Choices:
+- 039F42:NovaArizona.esm
+- 039F43:NovaArizona.esm
+- 039F44:NovaArizona.esm
+- 039F45:NovaArizona.esm
+- 039F46:NovaArizona.esm
+- 039F47:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073140002002031
+  SourceCode: Set AZHavenMurderQuest.JobDecision to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024846:NovaArizona.esm
+Prompt: I think you probably get a vote on what happens to you.

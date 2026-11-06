@@ -1,0 +1,38 @@
+FormKey: 03B888:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 03B887:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x1C0080
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No shit it's temporary. Once the Dam's taken I'm gunning for mayor of Vegas.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Unless you got a better station than that, I don't give a shit.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetPerkRank
+  FirstParameter: 204248
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I can tell you're not a dumbass. Surely you must know that your station here is temporary?

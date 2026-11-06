@@ -1,0 +1,65 @@
+FormKey: 033119:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E54
+    UseEmotionAnimation: True
+    Unused3: 0x6F6C64
+  ResponseText: Oh, the guy squatting behind the station? He's been there for a bit now.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x717561
+    UseEmotionAnimation: True
+    Unused3: 0x206265
+  ResponseText: Down south, huh? Hmm.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x717561
+    UseEmotionAnimation: True
+    Unused3: 0x206265
+  ResponseText: That cargo is as good as gone, sorry.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+Choices:
+- 033118:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E150000006E01000000A3110F0003007201006E160000006E01000000
+  SourceCode: >+
+    setobjectivecompleted azneverbefree 21 1; 
+
+    setobjectivedisplayed azneverbefree 22 1; 
+
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0331D3:NovaArizona.esm
+Prompt: There's this destitute guy in town saying the Legion took his cargo south. I feel bad for him.

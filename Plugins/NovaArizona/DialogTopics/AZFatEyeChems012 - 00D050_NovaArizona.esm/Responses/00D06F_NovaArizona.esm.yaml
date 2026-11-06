@@ -1,0 +1,43 @@
+FormKey: 00D06F:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well yeah! I'm always fucking afraid. That's why I always have a little product on me, you dig? Takes the edge off, keeps me running smooth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Don't worry about me. If the Legion catches up to me I'll make sure I go quick. I'm not going up on any cross while I'm still breathing.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D04F:NovaArizona.esm
+- 00D050:NovaArizona.esm
+- 00D051:NovaArizona.esm
+- 00D052:NovaArizona.esm
+- 00D05F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Aren't you afraid you'll get caught?

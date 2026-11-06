@@ -1,0 +1,61 @@
+FormKey: 00E624:NovaArizona.esm
+EditorID: AZLGVBloodActivator01Script
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B00020013000000010072010059100B00010072020000000000000011000000100006000000A000000015000B00730100060020581F10000016000D0007000900207301002031203D3D160016000100120020720100580E10040001002500203430203C59100B000100720300000000000000180017000300130020720100580E10040001002500203430203E3D59100B00010072040000000000000039100A0002007205006E15000000A3110F0003007205006E1E0000006E00000000190000001900000011000000
+  SourceCode: >-
+    scn AZLGVBloodActivator01Script
+
+
+    int Button
+
+
+    BEGIN OnActivate Player
+
+
+    ShowMessage AZLGVAircraftActivator01
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+
+    Set Button to GetButtonPressed
+
+    if Button == 1
+    	if Player.GetAV Medicine < 40
+    		ShowMessage AZLGVAircraftActivator01a
+    	elseif Player.GetAV Medicine >= 40
+    		ShowMessage AZLGVAircraftActivator01b
+    		SetStage AZStatioFindFriendQuest 21
+    		SetObjectiveDisplayed AZStatioFindFriendQuest 30 0
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0D729120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000B1010000
+    Name: Button
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5DE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5D8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm

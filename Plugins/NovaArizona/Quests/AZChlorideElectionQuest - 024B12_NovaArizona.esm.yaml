@@ -1,0 +1,119 @@
+FormKey: 024B12:NovaArizona.esm
+EditorID: AZChlorideElectionQuest
+FormVersion: 15
+Script: 024B11:NovaArizona.esm
+Name: The Ladder of Success
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+Stages:
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 5
+  Description: Help Calvin win the election in Chloride.
+- Index: 10
+  Description: Help Luke win the election in Chloride.
+- Index: 11
+  Description: Convince Ruiz to give his share to Nicodemus for safekeeping.
+  Targets:
+  - Target: 00DF4D:NovaArizona.esm
+    Unused: 0x746D2C
+- Index: 12
+  Description: Speak to Nicodemus.
+  Targets:
+  - Target: 000805:NovaArizona.esm
+    Unused: 0x402F22
+- Index: 15
+  Description: Return to Calvin.
+  Targets:
+  - Target: 013905:NovaArizona.esm
+    Unused: 0x402F22
+- Index: 20
+  Description: Return to Luke.
+  Targets:
+  - Target: 013906:NovaArizona.esm
+    Unused: 0x2F5321
+- Index: 25
+  Description: (Optional) Determine how Hank and Beth are voting in the upcoming election.
+  Targets:
+  - Target: 00C402:NovaArizona.esm
+    Unused: 0x48042F
+- Index: 30
+  Description: (Optional) Secure Harris's supprt in the upcoming election.
+  Targets:
+  - Target: 00D849:NovaArizona.esm
+    Unused: 0x746D2C
+- Index: 35
+  Description: (Optional) Boost Julius's shares in the upcoming election.
+  Targets:
+  - Target: 00D7A6:NovaArizona.esm
+    Unused: 0x746D2C
+- Index: 36
+  Description: (Optional) Weaken Julius's shares in the upcoming election.
+  Targets:
+  - Target: 00D7A6:NovaArizona.esm
+    Unused: 0x736D2C
+- Index: 40
+  Description: (Optional) Boost the Man in Black's shares in the upcoming election.
+  Targets:
+  - Target: 013904:NovaArizona.esm
+    Unused: 0x8C052D
+- Index: 41
+  Description: (Optional) Weaken the Man in Black's shares in the upcoming election.
+  Targets:
+  - Target: 013904:NovaArizona.esm
+    Unused: 0x8C052D
+- Index: 45
+  Description: (Optional) Secure Milia's support in the upcoming election.
+  Targets:
+  - Target: 00D823:NovaArizona.esm
+    Unused: 0x736D2C
+- Index: 50
+  Description: (Optional) Secure Omar's support in the upcoming election.
+  Targets:
+  - Target: 01037F:NovaArizona.esm
+    Unused: 0x736D2C
+- Index: 51
+  Description: Find Omar's missing 200 caps.
+- Index: 52
+  Description: Ask Tombstone for where Omar's 200 caps are.
+- Index: 53
+  Description: Return to Omar with his caps.
+  Targets:
+  - Target: 01037F:NovaArizona.esm
+    Unused: 0x2D2925
+- Index: 55
+  Description: (Optional) Secure Tex's support in the upcoming election.
+  Targets:
+  - Target: 00E4DA:NovaArizona.esm
+    Unused: 0x736D2C
+- Index: 60
+  Description: (Optional) Secure Tres Leches's support in the upcoming election.
+- Index: 61
+  Description: (Optional) Inform Enzo of Chente's slave trading deal with Julius.
+  Targets:
+  - Target: 00D420:NovaArizona.esm
+    Unused: 0x792F30
+- Index: 70
+  Description: Steal Calvin's shares from the bank.
+- Index: 80
+  Description: Steal Luke's shares from Dolan Springs.
+- Index: 100
+  Description: Hold the election.
+- Index: 105
+  Description: Return to Calvin.
+  Targets:
+  - Target: 013905:NovaArizona.esm
+    Unused: 0x5F2F22
+- Index: 110
+  Description: Return to Luke.
+  Targets:
+  - Target: 013906:NovaArizona.esm
+    Unused: 0x2F5321

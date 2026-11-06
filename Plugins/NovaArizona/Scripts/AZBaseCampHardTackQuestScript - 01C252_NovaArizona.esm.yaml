@@ -1,0 +1,38 @@
+FormKey: 01C252:NovaArizona.esm
+EditorID: AZBaseCampHardTackQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 3
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406
+  SourceCode: >-
+    name AZBaseCampHardTackQuestScript;
+
+
+    int HardTackRecipe; // 1 = Looking for, 2 = Found Normie Recipe, 3 = Found Good Recipe, 4 = Turned In Normie Recipe, 5 = Turned in Good Recipe
+
+    int SlaveExecuted;
+
+    int TixWorker; // 1 = Tix wants to be a cook, 2 = Tix is a cook
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: HardTackRecipe
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: SlaveExecuted
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: TixWorker

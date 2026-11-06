@@ -1,0 +1,137 @@
+FormKey: 00EC06:NovaArizona.esm
+EditorID: AZLakeMeadStatusTerminal
+FormVersion: 15
+ObjectBounds:
+  First: -12, -18, -23
+  Second: 52, 22, 19
+Name: Facility Monitoring Terminal
+Model:
+  File: Terminals\Terminal01.NIF
+Description: '> Welcome, User'
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: Status
+  ResultText: ''
+  DisplayNote: 00EC07:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - CompareOperator: NotEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetStageDone
+    FirstParameter: 100874950
+    SecondParameter: 50
+  - CompareOperator: NotEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 255
+    Function: GetStage
+    FirstParameter: 100874950
+- ItemText: Status
+  ResultText: ''
+  DisplayNote: 00EC0A:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetQuestVariable
+    FirstParameter: 100874950
+    SecondParameter: 15
+  - Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetStageDone
+    FirstParameter: 100874950
+    SecondParameter: 50
+  - Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 255
+    Function: GetStage
+    FirstParameter: 100874950
+- ItemText: Status
+  ResultText: ''
+  DisplayNote: 00EC10:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetQuestVariable
+    FirstParameter: 100874950
+    SecondParameter: 15
+- ItemText: Unlock All Facility Doors
+  ResultText: ''
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 14
+      Enabled: 1
+    CompiledScript: 0x15000A00720E00730E00020020321C0001007310020000001C0002007310020000001C0003007310020000001C0004007310020000001C0005007310020000001C0006007310020000001C0007007310020000001C0008007310020000001C0009007310020000001C000A007310020000001C000B007310020000001C000C007310020000001C000D00731002000000
+    SourceCode: >-
+      Set AZNewtFishingQuest.DoorsUnlocked to 2
+
+      AZLakeMeadDoorREF01.unlock
+
+      AZLakeMeadDoorREF02.unlock
+
+      AZLakeMeadDoorREF03.unlock
+
+      AZLakeMeadDoorREF04.unlock
+
+      AZLakeMeadDoorREF05.unlock
+
+      AZLakeMeadDoorREF06.unlock
+
+      AZLakeMeadDoorREF07.unlock
+
+      AZLakeMeadDoorREF08.unlock
+
+      AZLakeMeadDoorREF09.unlock
+
+      AZLakeMeadDoorREF10.unlock
+
+      AZLakeMeadDoorREF11.unlock
+
+      AZLakeMeadDoorREF12.unlock
+
+      AZLakeMeadDoorREF13.unlock
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01A386:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01A387:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01A388:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01A389:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01A38A:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01A38D:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024273:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024272:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024271:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024270:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024216:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0241A9:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 024168:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 033AC6:NovaArizona.esm
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetQuestVariable
+    FirstParameter: 100874950
+    SecondParameter: 14

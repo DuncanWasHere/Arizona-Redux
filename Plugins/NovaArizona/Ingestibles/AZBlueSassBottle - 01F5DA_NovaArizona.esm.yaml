@@ -1,0 +1,53 @@
+FormKey: 01F5DA:NovaArizona.esm
+EditorID: AZBlueSassBottle
+FormVersion: 15
+ObjectBounds:
+  First: -3, -3, 0
+  Second: 3, 3, 28
+Name:
+  TargetLanguage: English
+  Value: Blue Sass
+Model:
+  File: AZNovaArizona\Clutter\Quests\AZBlueSassBottle.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\items_sunset_sarsp.dds
+  SmallIconFilename: interface\icons\pipboyimages_small\items_small\glow_items_cola.dds
+Script: 01F5F9:NovaArizona.esm
+PickUpSound: 0864D3:FalloutNV.esm
+DropSound: 0864D4:FalloutNV.esm
+EquipmentType: Food
+Weight: 1
+Flags:
+- 0x100000
+- 0x400000
+ConsumeSound: 07494B:FalloutNV.esm
+Effects:
+- BaseEffect: 0F04AB:FalloutNV.esm
+  Data:
+    ActorValue: None
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetIsID
+    FirstParameter: 7
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 25
+    ActorValue: Health
+- BaseEffect: 162BCB:FalloutNV.esm
+  Data:
+    Magnitude: 5
+    ActorValue: Dehydration
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 16747D:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 120
+    ActorValue: Endurance
+- BaseEffect: 01F601:NovaArizona.esm
+  Data:
+    ActorValue: None

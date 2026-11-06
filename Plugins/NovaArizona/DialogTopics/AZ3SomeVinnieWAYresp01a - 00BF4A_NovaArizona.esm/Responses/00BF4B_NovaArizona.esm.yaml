@@ -1,0 +1,66 @@
+FormKey: 00BF4B:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xCD0480
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah right. Folks all over know us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206F66
+    UseEmotionAnimation: True
+    Unused3: 0x652073
+  ResponseText: We're the fucking Jordano trio.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: The guys that started from the ground up? From Prison to going toe-to-toe with the Crimson fucking Caravan?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: We're kind of a big fucking deal.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x207374
+    UseEmotionAnimation: True
+    Unused3: 0x206672
+  ResponseText: Still haven't heard of us?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF4D:NovaArizona.esm
+- 00BF51:NovaArizona.esm
+- 00BF72:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I swear. I've never heard of you guys.

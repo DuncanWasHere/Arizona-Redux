@@ -1,0 +1,32 @@
+FormKey: 00D7A1:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x702061
+    UseEmotionAnimation: True
+    Unused3: 0x706F73
+  ResponseText: Dammit.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691411
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHasNote
+  FirstParameter: 100718312
+Choices:
+- 00D7A2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have a letter from the Malpais Scribonius.

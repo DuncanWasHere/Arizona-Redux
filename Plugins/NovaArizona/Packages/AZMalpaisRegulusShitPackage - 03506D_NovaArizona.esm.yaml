@@ -1,0 +1,47 @@
+FormKey: 03506D:NovaArizona.esm
+EditorID: AZMalpaisRegulusShitPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 48
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 17486
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 003840:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 22
+Duration: 2
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x39150C00010B00560101001300420200
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01CA97:NovaArizona.esm
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x39150C00010B00560101001300420300
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01CA97:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x39150C00010B00560101001300420300
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01CA97:NovaArizona.esm
+  Topic: Null

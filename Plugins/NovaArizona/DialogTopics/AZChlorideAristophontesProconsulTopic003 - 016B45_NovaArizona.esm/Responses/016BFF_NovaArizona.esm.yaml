@@ -1,0 +1,59 @@
+FormKey: 016BFF:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Perhaps, but such men are indispensible as martial leaders. It would be wasteful to repurpose them.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Besides, not many Legionaries would consider that a reward. They cherish the heat of battle, and the valor of dying a warrior's death.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It is difficult for their minds to grasp the honor that comes with a life of humble restraint and civic duty.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100722316
+  SecondParameter: 8
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B3E:NovaArizona.esm
+- 016B43:NovaArizona.esm
+- 016B45:NovaArizona.esm
+- 016B49:NovaArizona.esm
+- 016B4B:NovaArizona.esm
+- 016B4F:NovaArizona.esm
+- 016B3A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What about Centurions or Legates? Wouldn't they be most deserving of a whole province to rule over?

@@ -1,0 +1,59 @@
+FormKey: 00D7A3:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: Yes, yes. Give it here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: '...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: I have a reply for you to give him. Don't worry, it's already written. Just hand it to him next time you're up there if you don't mind.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691411
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x7D1105000100720100
+  SourceCode: RemoveNote AZCampWillowPrentusNote03
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D6E8:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x7C1105000100720100
+  SourceCode: AddNote AZCampWillowPrentusNote04
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D6E9:NovaArizona.esm
+Prompt: Are you gonna take it?

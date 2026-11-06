@@ -1,0 +1,96 @@
+FormKey: 020ABF:NovaArizona.esm
+EditorID: AZBrushQuest02AlcoholHelperQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000002D01000080161E000216005203007800002F100B000100FFFF05005204002807004C3F01000039151D00011C005601000006005800003F140B000100FFFF050052040042010F0039150C00010B00560100000100420000801611000209005601000001001507004C3F01000039152300012200560100000500580000D51414000200FFFF04004200FFFF08005601000006000039152400012300560400000700580000401415000200FFFF0500520400FFFF080056010000050000801621000219005203007800002F100E000100FFFF08005604000007002807004C330100003A152000011F00520300780000521014000200FFFF0800560400000700FFFF040042012839150C00010B00560100000100420100811608000107004C76000000371009000100FFFF050052050011000000
+  SourceCode: >-
+    name AZBrushQuest02AlcoholHelperQuestScript;
+
+
+    int AlcoholFound;
+
+    int IListIndex;
+
+    int IListIndexMax;
+
+
+    ref RFormToRemove;
+
+
+    GameMode {
+        if (PlayerREF.GetItemCount(AlchoholicDrinks)) {
+            IListIndexMax = ListGetCount(AlchoholicDrinks) - 1;
+            AlcoholFound = 0;
+
+            while (!AlcoholFound) {
+                IListIndex = Rand(0, IListIndexMax);
+                RFormToRemove = ListGetNthForm(AlchoholicDrinks, IListIndex);
+
+                if (PlayerREF.GetItemCount(RFormToRemove)) {
+                    PlayerREF.RemoveItem(RFormToRemove, 1);
+                    AlcoholFound = 1;
+                }
+            }
+        }
+
+        StopQuest(AZBrushQuest02AlcoholHelperQuest);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: AlcoholFound
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iListIndex
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iListIndexMax
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rFormToRemove
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IListIndex
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: IListIndexMax
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: RFormToRemove
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 05C365:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020ABD:NovaArizona.esm

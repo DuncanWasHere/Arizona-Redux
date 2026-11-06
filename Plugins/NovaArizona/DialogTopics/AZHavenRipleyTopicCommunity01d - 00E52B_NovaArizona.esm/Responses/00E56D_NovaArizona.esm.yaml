@@ -1,0 +1,54 @@
+FormKey: 00E56D:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He still thinks the NCR is going to come save us. That should give you an idea. Delusional. Detached from reality. Deeply unserious.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He thinks war is a battle between the good guys, and the bad guys. And the good guys are here to do good things. The NCR will save us because they're the good guys.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's ahistorical. No, it's worse than that. It's undialectical. It's stupid.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+Choices:
+- 00E528:NovaArizona.esm
+- 00E529:NovaArizona.esm
+- 00E52A:NovaArizona.esm
+- 00E52B:NovaArizona.esm
+- 00E52C:NovaArizona.esm
+- 00E52D:NovaArizona.esm
+- 00E533:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Benjamin.

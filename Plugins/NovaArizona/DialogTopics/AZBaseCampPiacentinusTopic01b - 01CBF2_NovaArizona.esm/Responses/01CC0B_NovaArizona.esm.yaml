@@ -1,0 +1,78 @@
+FormKey: 01CC0B:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Everything. I built for him amphitheaters in all the great cities, for the common man to venerate His name and learn His history.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I built for Him magificent gladiatorial rings, for Liberti to prove their worth to the Legion, a chance to earn their might.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I transformed Flagstaff into the city of seven wonders. Beautiful concrete domes over the Martian Cult, obelisks for great battles, statues of our Lord on Earth.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I built for him a new university in Two-Sun to rival anything in The Boneyard. Orchestral halls, museums, art galleries. All the blessings of Legion culture.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I resurrected the city of Phoenix from the ashes of the Great Burning and built temples of industry, fed by the sweat and tears and sinew of thousands of slaves.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In all these lands, the rebirth of Rome on Earth is complete.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780946
+Choices:
+- 01CBF1:NovaArizona.esm
+- 01CBF2:NovaArizona.esm
+- 01CBF3:NovaArizona.esm
+- 01CBF4:NovaArizona.esm
+- 01CC02:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What have you built for Caesar?

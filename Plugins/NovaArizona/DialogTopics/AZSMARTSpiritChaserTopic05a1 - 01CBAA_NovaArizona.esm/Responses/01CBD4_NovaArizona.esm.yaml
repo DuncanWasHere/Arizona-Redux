@@ -1,0 +1,30 @@
+FormKey: 01CBD4:NovaArizona.esm
+FormVersion: 15
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The bounty itself, I would give a sum of 200 denarii. But, if you can find this haven, I would offer you 30 denarii for the information alone.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+Choices:
+- 01CBAA:NovaArizona.esm
+- 01CBAB:NovaArizona.esm
+- 01CBAC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How much are you offering?

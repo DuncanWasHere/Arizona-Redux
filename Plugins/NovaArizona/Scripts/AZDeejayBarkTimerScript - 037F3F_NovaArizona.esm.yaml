@@ -1,0 +1,68 @@
+FormKey: 037F3F:NovaArizona.esm
+EditorID: AZDeejayBarkTimerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    SCN AZDeejayBarkTimerScript
+
+
+    Float	ftimer
+
+    Float	fRandom
+
+
+    Int		iCounter
+
+    Short	bDeejayBarked
+
+    Short	bQuestDelayFast
+
+    Short bRegionSection								;Regions  divided into different script sections.  An error occurs if sections exceeds 10 if/else nests.
+
+
+    Float	fSpeakTime
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x60CE20120000000000000000
+      Unknown2: 0x706C6173683032
+    Name: ftimer
+  - Data:
+      Index: 2
+      Unknown: 0x40CE20120000000000000000
+      Unknown2: 0x31303030300000
+    Name: fRandom
+  - Data:
+      Index: 3
+      Unknown: 0x20CE20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6730310000
+    Name: iCounter
+  - Data:
+      Index: 4
+      Unknown: 0x00CE20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F777570000000
+    Name: bDeejayBarked
+  - Data:
+      Index: 5
+      Unknown: 0xE0CD20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C6C646F776E00
+    Name: bQuestDelayFast
+  - Data:
+      Index: 6
+      Unknown: 0xC0CD20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: bRegionSection
+  - Data:
+      Index: 7
+      Unknown: 0xA0D129120000000000000000
+      Unknown2: 0x733031616E696D
+    Name: fSpeakTime

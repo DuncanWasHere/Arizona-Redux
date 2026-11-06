@@ -1,0 +1,49 @@
+FormKey: 03B7DF:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: Unless you plan on going to the Strip and risking it all, you'll need to get a big boy job like the rest of us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: I suggest you try asking down the road. That's where all the action is.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x551005000100720100
+  SourceCode: ShowMap AZChlorideMapMarkerREF;
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 009E0E:NovaArizona.esm
+Prompt: Where am I supposed to get that kind of money?

@@ -1,0 +1,46 @@
+FormKey: 020B20:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65436F
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: The door's unlocked.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: IsActorTalkingThroughActivator
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100786001
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010073100200000015000A0072020073030002002031
+  SourceCode: >-
+    AZMountTiptonDoorREF.unlock
+
+    Set AZFreeformTiptonCave.DoorOkay to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0208A2:NovaArizona.esm
+Prompt: The Man in Black sent me here.

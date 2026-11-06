@@ -1,0 +1,39 @@
+FormKey: 008644:NovaArizona.esm
+FormVersion: 15
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x72726F
+  ResponseText: The only reason I'm humoring you is because of your personal service to Caesar.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x72726F
+  ResponseText: Very well. Tell me something that the ghouls didn't.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742502
+Choices:
+- 008647:NovaArizona.esm
+- 008648:NovaArizona.esm
+- 008660:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Look, this is a deal in which the Legion can only benefit. Just hear me out.

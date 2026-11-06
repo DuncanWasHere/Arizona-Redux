@@ -1,0 +1,38 @@
+FormKey: 024DB8:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: '{Angrily, but not quite shouting}Does it matter? Of course, it matters.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: You don't understand. The government's taking control of the plan. Too many cooks in the kitchen will kill us all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024DC2:NovaArizona.esm
+- 024DC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does it matter?

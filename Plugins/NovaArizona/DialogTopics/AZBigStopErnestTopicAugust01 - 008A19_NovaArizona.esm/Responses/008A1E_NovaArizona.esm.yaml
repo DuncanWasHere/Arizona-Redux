@@ -1,0 +1,40 @@
+FormKey: 008A1E:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2041
+    UseEmotionAnimation: True
+    Unused3: 0x746F70
+  ResponseText: Last to see him? Don't know about that. I intended to see him, but he was gone already.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744967
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100698647
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100698647
+  SecondParameter: 1
+Choices:
+- 008A1A:NovaArizona.esm
+- 008A1B:NovaArizona.esm
+- 008A1C:NovaArizona.esm
+- 008A1D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm investigating a disappearance - a man named August. Jem said you were the last to see him.

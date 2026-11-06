@@ -1,0 +1,77 @@
+FormKey: 019D45:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: Cottonwood Cove? That's excellent! I may make Veteran before the fight for the Dam even begins.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617365
+  ResponseText: Thank you, amicus. I'm in your debt. But... before I go, may I ask one more favor?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696375
+    UseEmotionAnimation: True
+    Unused3: 0x6D2069
+  ResponseText: Please keep an eye on Flemus for me. He's a sensitive soul.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6E2065
+    UseEmotionAnimation: True
+    Unused3: 0x20466C
+  ResponseText: Well. I'm off to pack my things. Until we meet again, amicus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006EB400000015000A007202007320000200203115000A00720200731200020020311C000100211002000000
+  SourceCode: >-
+    setstage AZBaseCampRomanceQuest 180
+
+    set AZBaseCampRomanceQuest.ArceusIsLeaving to 1
+
+    set AZBaseCampRomanceQuest.ArceusWasReassignedAsFavor to 1
+
+
+    AZCCArceusREF.enable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019D48:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Syracuse said he'll reassign you to Cottonwood Cove.

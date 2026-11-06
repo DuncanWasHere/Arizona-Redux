@@ -1,0 +1,35 @@
+FormKey: 026884:NovaArizona.esm
+EditorID: AZActorEffectHellHornerKnockback
+FormVersion: 15
+Name: Hellhorner Knockback
+Flags:
+- AreaEffectIgnoresLOS
+- ScriptEffectAlwaysApplies
+- DisableAbsorbReflect
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x200000
+- 0x800000
+- 0x4000000
+- 0x10000000
+- 0x20000000
+- 0x80000000
+- 0x0
+Effects:
+- BaseEffect: 0EB40D:FalloutNV.esm
+  Data:
+    Duration: 2
+    ActorValue: None
+- BaseEffect: 00014B:FalloutNV.esm
+  Data:
+    Magnitude: 5
+    Duration: 1
+    Type: Touch
+    ActorValue: Health
+- BaseEffect: 0A73DA:FalloutNV.esm
+  Data:
+    Type: Touch
+    ActorValue: None

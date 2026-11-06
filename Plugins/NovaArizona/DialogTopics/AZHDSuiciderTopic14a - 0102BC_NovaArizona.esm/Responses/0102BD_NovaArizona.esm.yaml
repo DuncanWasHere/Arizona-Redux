@@ -1,0 +1,90 @@
+FormKey: 0102BD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 13
+    Enabled: 1
+  CompiledScript: 0x39100A000200720B006E1900000015000A00720B00730300020020311C000100251005000100720C001C00020081110D00020010007A0000000000807B401C0001008B10020000001C0003008B10020000001C0004008B10020000001C0005008B10020000001C0006008B10020000001C0007008B10020000001C0008008B10020000001C0009008B10020000001C000A008B10020000003B1213000300720D006E000000007A0000000000002840
+  SourceCode: >-
+    setstage AZDamNQuest3 25
+
+    set AZDamNQuest3.bBomberExploded to 1
+
+
+    AZSuiciderREF.placeatme AZHDExplosion
+
+    Player.DamageActorValue Health 440
+
+    AZSuiciderREF.killactor
+
+    AZHDCheckpointOfficerREF.killactor
+
+    AZCharlieREF.killactor
+
+    AZHDNCRTrooper02REF.killactor
+
+    AZHDNCRTrooper02bREF.killactor
+
+    AZHDNCRTrooper03aREF.killactor
+
+    AZHDNCRTrooper03bREF.killactor
+
+    AZHHRefugee2aaREF.killactor
+
+    AZHHRefugee2baREF.killactor
+
+    AddReputationExact RepNVNCR 0 12
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01035F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010304:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010309:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010308:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01030A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102D9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102DA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010190:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DE:FalloutNV.esm
+Prompt: He's over here, boys!

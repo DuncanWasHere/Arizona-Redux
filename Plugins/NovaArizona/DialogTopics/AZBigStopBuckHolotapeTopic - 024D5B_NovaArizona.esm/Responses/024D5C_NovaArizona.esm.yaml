@@ -1,0 +1,46 @@
+FormKey: 024D5C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 024CE4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Here you go. One holotape for the 16th for now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100723482
+Choices:
+- 024CEC:NovaArizona.esm
+- 024D0C:NovaArizona.esm
+- 024D0D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730200020020311C00010002100A0002007203006E01000000
+  SourceCode: >-
+    Set AZBigStopAugustQuest.BuckSpokenTo to 1
+
+    Player.AddItem AZBigStopBuckNote 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024D5D:NovaArizona.esm

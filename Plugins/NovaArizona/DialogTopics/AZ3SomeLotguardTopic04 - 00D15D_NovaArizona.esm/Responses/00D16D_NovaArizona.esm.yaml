@@ -1,0 +1,32 @@
+FormKey: 00D16D:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 00D16C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652069
+    UseEmotionAnimation: True
+    Unused3: 0x6E6465
+  ResponseText: Enzo Jordano. He's my boss. You can find him at the HQ, 2nd floor.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+Choices:
+- 00D1B7:NovaArizona.esm
+- 00D15B:NovaArizona.esm
+- 00D15C:NovaArizona.esm
+- 00D15D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Mr. J?

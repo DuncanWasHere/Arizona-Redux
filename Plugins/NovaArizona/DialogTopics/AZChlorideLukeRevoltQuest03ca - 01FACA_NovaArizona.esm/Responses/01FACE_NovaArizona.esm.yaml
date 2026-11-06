@@ -1,0 +1,35 @@
+FormKey: 01FACE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: 01FACD:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6D6F6E
+    UseEmotionAnimation: True
+    Unused3: 0x732120
+  ResponseText: Well, go get it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721596
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 500
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't have 500 Denarii.

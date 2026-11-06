@@ -1,0 +1,52 @@
+FormKey: 01FA26:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Just a lawman, nothing more. I used to be a raider. Most of us deputies were.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fate has a funny way of working. Spent most of my life on one side of the law, now I'm on the other.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I have a wife down in Kingman. Pregnant. Praying to Mars for a second boy. Knock on wood.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718662
+Choices:
+- 01F70B:NovaArizona.esm
+- 01F70A:NovaArizona.esm
+- 01F710:NovaArizona.esm
+- 01F717:NovaArizona.esm
+- 01F71B:NovaArizona.esm
+- 01F71E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about yourself, Isaiah.

@@ -1,0 +1,40 @@
+FormKey: 00D46F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D474:NovaArizona.esm
+PreviousInfo: 00D488:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Can I help you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100710244
+- Fluff: 0x000000
+  Function: GetTalkedToPC
+Choices:
+- 00D4B9:NovaArizona.esm
+- 00D4B3:NovaArizona.esm
+- 00D4B4:NovaArizona.esm
+- 00D4B5:NovaArizona.esm
+- 00D4B6:NovaArizona.esm
+- 00D4B7:NovaArizona.esm
+- 00D4B8:NovaArizona.esm
+- 00D508:NovaArizona.esm
+- 00D4BB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

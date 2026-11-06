@@ -1,0 +1,70 @@
+FormKey: 017DA2:NovaArizona.esm
+EditorID: AZGilaMonsterBurrowGilaMonsterGiant
+FormVersion: 15
+ObjectBounds:
+  First: -60, -95, 0
+  Second: 60, 94, 145
+Name: Giant Gila Monster
+Model:
+  File: nvdlc02\Creatures\YaoGuai\skeleton.nif
+ActorEffects:
+- 005A4E:NovaArizona.esm
+- 00E733:NovaArizona.esm
+UnarmedAttackEffect: 005A4E:NovaArizona.esm
+UnarmedAttackAnimation: Any
+Models:
+- azgilamonster.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  Fatigue: 650
+  Level: 30
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 003E33:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 05329F:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: 100
+  Mood: 2263747584
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 20
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: Abomination
+  CombatSkill: 70
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 700
+  Damage: 70
+  Strength: 7
+  Perception: 4
+  Endurance: 6
+  Charisma: 4
+  Intelligence: 4
+  Agility: 5
+  Luck: 10
+AttackReach: 140
+CombatStyle: 03BC67:FalloutNV.esm
+BodyPartData: 009F6D:HonestHearts.esm
+TurningSpeed: 35
+BaseScale: 1.25
+FootWeight: 8
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 0A5D40:FalloutNV.esm
+ImpactDataset: 0553E0:FalloutNV.esm

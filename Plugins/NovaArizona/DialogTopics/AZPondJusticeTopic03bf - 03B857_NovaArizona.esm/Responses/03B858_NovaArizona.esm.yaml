@@ -1,0 +1,52 @@
+FormKey: 03B858:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656D73
+    UseEmotionAnimation: True
+    Unused3: 0x20696E
+  ResponseText: He is a holy ghost that watches over us slaves. An avenging spirit. The first slave; the leader of all slaves.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: He has been seen all over the four corners. Texas. Utah. Mehico.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F7720
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: He haunts every fringe of the Legion.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B84D:NovaArizona.esm
+- 03B84F:NovaArizona.esm
+- 03B851:NovaArizona.esm
+- 03B853:NovaArizona.esm
+- 03B855:NovaArizona.esm
+- 03B859:NovaArizona.esm
+- 03B85B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Burned Man?

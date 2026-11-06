@@ -1,0 +1,35 @@
+FormKey: 024E8E:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You want to gamble, go to the Horseshoe. Look, I have to at least look busy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708396
+Choices:
+- 024E4B:NovaArizona.esm
+- 021080:NovaArizona.esm
+- 024E50:NovaArizona.esm
+- 024E51:NovaArizona.esm
+- 024E52:NovaArizona.esm
+- 024E59:NovaArizona.esm
+- 024E5A:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: We got off to the wrong start. Fancy a game of Caravan?

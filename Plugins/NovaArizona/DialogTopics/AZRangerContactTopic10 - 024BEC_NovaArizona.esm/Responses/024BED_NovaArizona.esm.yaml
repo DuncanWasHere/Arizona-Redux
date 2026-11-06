@@ -1,0 +1,48 @@
+FormKey: 024BED:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x677261
+  ResponseText: Hang on a second. I want you to do something for me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x677261
+  ResponseText: Something's off, real off here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x677261
+  ResponseText: Can I trust you enough to ask this of you?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BEE:NovaArizona.esm
+- 024BEF:NovaArizona.esm
+- 024BF3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, if that's all, I'd like to get this over with.

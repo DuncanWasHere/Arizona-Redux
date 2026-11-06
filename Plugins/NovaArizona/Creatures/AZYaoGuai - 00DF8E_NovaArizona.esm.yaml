@@ -1,0 +1,72 @@
+FormKey: 00DF8E:NovaArizona.esm
+EditorID: AZYaoGuai
+FormVersion: 15
+ObjectBounds:
+  First: -60, -95, 0
+  Second: 60, 94, 145
+Name: Yao Guai
+Model:
+  File: NVDLC02\Creatures\YaoGuai\Skeleton.nif
+UnarmedAttackAnimation: AttackPower
+Models:
+- nvdlc02yaoguai.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 180
+  Level: 12
+  SpeedMultiplier: 125
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 02147C:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E275:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 03A58E:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 20
+  Responsibility: 50
+  Mood: 842297600
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 700
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 100
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 300
+  Damage: 50
+  Strength: 6
+  Perception: 5
+  Endurance: 6
+  Charisma: 5
+  Intelligence: 4
+  Agility: 8
+  Luck: 5
+AttackReach: 100
+CombatStyle: 0116BE:HonestHearts.esm
+BodyPartData: 009F6D:HonestHearts.esm
+TurningSpeed: 200
+BaseScale: 1.25
+FootWeight: 5
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03FB04:FalloutNV.esm
+ImpactDataset: 07E684:FalloutNV.esm

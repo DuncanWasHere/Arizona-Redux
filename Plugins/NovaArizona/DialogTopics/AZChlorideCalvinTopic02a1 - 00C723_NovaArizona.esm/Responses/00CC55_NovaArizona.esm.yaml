@@ -1,0 +1,38 @@
+FormKey: 00CC55:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You're not a merchant. Everyone here has a vested interest in Chloride. You have to have roots here or show that you're truly willing to make some.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: You seem more like a free agent, or at least I assume you are with that Mark on your neck.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+Choices:
+- 00C723:NovaArizona.esm
+- 00C725:NovaArizona.esm
+- 00C72B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: But, I have money. Why can't I vote?

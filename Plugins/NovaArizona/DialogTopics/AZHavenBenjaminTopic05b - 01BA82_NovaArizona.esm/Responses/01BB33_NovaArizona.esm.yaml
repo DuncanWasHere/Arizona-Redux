@@ -1,0 +1,45 @@
+FormKey: 01BB33:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He seems depressed all the time. I tried to cheer him up by telling him that the NCR would be here soon, but he just stared at me and then called me an idiot.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 3
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776317
+Choices:
+- 01BA81:NovaArizona.esm
+- 01BA82:NovaArizona.esm
+- 01BA83:NovaArizona.esm
+- 01BA84:NovaArizona.esm
+- 01BA85:NovaArizona.esm
+- 01BA86:NovaArizona.esm
+- 01BA87:NovaArizona.esm
+- 01BA88:NovaArizona.esm
+- 01BA89:NovaArizona.esm
+- 01BA8A:NovaArizona.esm
+- 01BA8B:NovaArizona.esm
+- 01BA8C:NovaArizona.esm
+- 01BA8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Cal.

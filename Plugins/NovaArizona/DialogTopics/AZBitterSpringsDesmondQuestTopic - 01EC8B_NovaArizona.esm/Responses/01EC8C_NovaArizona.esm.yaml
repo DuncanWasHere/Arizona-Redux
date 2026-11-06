@@ -1,0 +1,43 @@
+FormKey: 01EC8C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x68436F
+    UseEmotionAnimation: True
+    Unused3: 0x626C65
+  ResponseText: It's a Khan, I know that much. Kids talk about seeing a man with a pointy hat in the hills. I'd check up north.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1257542
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1257542
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01EC85:NovaArizona.esm
+- 01EC8B:NovaArizona.esm
+- 01EC87:NovaArizona.esm
+- 01EC88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm investigating your murders problem.

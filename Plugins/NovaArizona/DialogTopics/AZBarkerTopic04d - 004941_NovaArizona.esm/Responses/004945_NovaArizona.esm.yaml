@@ -1,0 +1,35 @@
+FormKey: 004945:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: 004944:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x633032
+    UseEmotionAnimation: True
+    Unused3: 0x736361
+  ResponseText: Hmm. That was a long time ago.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00493C:NovaArizona.esm
+- 00493E:NovaArizona.esm
+- 004940:NovaArizona.esm
+- 004941:NovaArizona.esm
+- 004942:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who else was there?

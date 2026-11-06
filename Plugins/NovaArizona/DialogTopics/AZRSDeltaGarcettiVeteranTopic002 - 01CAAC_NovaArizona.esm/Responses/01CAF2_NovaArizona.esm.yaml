@@ -1,0 +1,41 @@
+FormKey: 01CAF2:NovaArizona.esm
+FormVersion: 15
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Don't know. I just show up, kill, and move on to the next shithole. They all look the same to me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But yeah, I've toured Baja.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+Choices:
+- 01CAB6:NovaArizona.esm
+- 01CAB7:NovaArizona.esm
+- 01CAB8:NovaArizona.esm
+- 01CAB9:NovaArizona.esm
+- 01CABA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Were you in Baja before you came to the Mojave?

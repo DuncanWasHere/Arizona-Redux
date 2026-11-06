@@ -1,0 +1,49 @@
+FormKey: 026A79:NovaArizona.esm
+EditorID: AZBaseCampFiringRangeLegionaryPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageUseWeapon
+Unused2: 16256
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 5
+Duration: 7
+Target:
+  Target:
+    MutagenObjectType: PackageTargetObjectType
+    ObjectType: WeaponsNone
+WeaponData:
+  WeaponFlags:
+  - DoNoDamage
+  - HoldFireWhenBlocked
+  FireRate: VolleyFire
+  FireCount: RepeatFire
+  NumberOfBursts: 1
+  ShootsPerVolleyMin: 1
+  ShootsPerVolleyMax: 3
+  PauseBetweenVolleysMin: 3
+  PauseBetweenVolleysMax: 6
+Target2:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 026A83:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

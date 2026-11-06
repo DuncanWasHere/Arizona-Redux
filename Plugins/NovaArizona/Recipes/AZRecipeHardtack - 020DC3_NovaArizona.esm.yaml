@@ -1,0 +1,24 @@
+FormKey: 020DC3:NovaArizona.esm
+EditorID: AZRecipeHardtack
+FormVersion: 15
+Name:
+  TargetLanguage: English
+  Value: Hardbread
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100797847
+  SecondParameter: 1
+Skill: None
+Category: 13B2C0:FalloutNV.esm
+SubCategory: 1613CE:FalloutNV.esm
+Ingredients:
+- Item: 0151A3:FalloutNV.esm
+  Quantity: 1
+- Item: 074EE1:FalloutNV.esm
+  Quantity: 2
+Outputs:
+- Item: 00C446:NovaArizona.esm
+  Quantity: 3

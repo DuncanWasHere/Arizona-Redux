@@ -1,0 +1,36 @@
+FormKey: 01751D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 00929E:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x0E0006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is the Chainway. If you're not here to deliver materials or labor, then what could you possibly be bothering me for?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+Choices:
+- 01751C:NovaArizona.esm
+- 017600:NovaArizona.esm
+- 020866:NovaArizona.esm
+- 020868:NovaArizona.esm
+- 020867:NovaArizona.esm
+- 020869:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

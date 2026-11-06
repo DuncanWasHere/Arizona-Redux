@@ -1,0 +1,111 @@
+FormKey: 007DE2:NovaArizona.esm
+EditorID: AZElephantHillProtectron
+FormVersion: 15
+ObjectBounds:
+  First: -19, -17, 0
+  Second: 19, 17, 132
+Name: Sunset Sarsaparilla Protectron
+Model:
+  File: Creatures\Protectron\skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07D4F3:FalloutNV.esm
+- 12B88E:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- 1hprhandlaser.nif
+- 2hlheadlaser.nif
+- blowawaybrain.nif
+- blowawaydome.nif
+- cowboyhat.nif
+- decalrarm.nif
+- decalrstripe.nif
+- decalyarm.nif
+- decalyleg.nif
+- protectron.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - AllowPCDialogue
+  Fatigue: 100
+  Level: 3
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01FFB6:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 09C95B:FalloutNV.esm
+Voice: 019FDA:FalloutNV.esm
+Items:
+- Item:
+    Item: 018B9E:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 018B9F:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 020772:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 029377:FalloutNV.esm
+    Count: 15
+- Item:
+    Item: 0B0279:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 1919221760
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 01FD89:FalloutNV.esm
+Animations:
+- 1hpaim.kf
+- 1hpaimdown.kf
+- 1hpaimup.kf
+- 1hpattackright.kf
+- 1hpattackrightdown.kf
+- 1hpattackrightup.kf
+- 1hpequip.kf
+- 1hpidle.kf
+- 1hpreloada.kf
+- 1hpunequip.kf
+- 2hlaim.kf
+- 2hlaimdown.kf
+- 2hlaimup.kf
+- 2hlattackright.kf
+- 2hlattackrightdown.kf
+- 2hlattackrightup.kf
+- 2hlequip.kf
+- 2hlidle.kf
+- 2hlreloada.kf
+- 2hlunequip.kf
+Data:
+  Type: Robot
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 45
+  Damage: 2
+  Strength: 5
+  Perception: 4
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 96
+CombatStyle: 03A708:FalloutNV.esm
+BodyPartData: 017F2C:FalloutNV.esm
+TurningSpeed: 50
+BaseScale: 1
+FootWeight: 20
+ImpactMaterialType: Metal
+SoundLevel: Normal
+InheritsSoundFrom: 05FCCB:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm

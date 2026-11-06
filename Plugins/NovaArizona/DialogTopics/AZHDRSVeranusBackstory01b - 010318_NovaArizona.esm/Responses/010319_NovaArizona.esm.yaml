@@ -1,0 +1,83 @@
+FormKey: 010319:NovaArizona.esm
+FormVersion: 15
+Version2: 1
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: Hmm. I missed my chance to make Centurion due to a bout of dysentery during the Battle of Universidad.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: I remember the celebrations as they lined the streets of Two-Sun with crucifixes as the resistance there was broken and bloodied.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: I remember the joy of the discovery of an ancient gladiatorial ring in what is now the Universitas Caesaris.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: Now, I am old and spent. Decades of combat experience to observe Centurions playing with their concubines and watching refugees rot in the shadow of the dam.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: Perhaps Lanius will make me a Centurion just before the Battle of Hoover Dam so I may die in frontline service.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x94AA1B
+    UseEmotionAnimation: True
+    Unused3: 0x931041
+  ResponseText: And not through suicide to escape this absolutely useless outpost.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+Choices:
+- 010316:NovaArizona.esm
+- 010318:NovaArizona.esm
+- 01031A:NovaArizona.esm
+- 01031C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: That's a rather low title for someone of your age.

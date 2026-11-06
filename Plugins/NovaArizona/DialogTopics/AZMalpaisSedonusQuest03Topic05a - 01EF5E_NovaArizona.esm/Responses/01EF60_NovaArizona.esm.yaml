@@ -1,0 +1,76 @@
+FormKey: 01EF60:NovaArizona.esm
+FormVersion: 15
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: The warrior was desperate to do anything to save the Legion, even drinking the forbidden nectars to make him strong.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: The Buffout made me so strong. When I told Caesar of my sacrifice for him, he was so angry.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: He ordered me to kick the addiction. I killed my drug runner and moved to purge the Buffout from my system.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x676F2C
+    UseEmotionAnimation: True
+    Unused3: 0x656174
+  ResponseText: I drank the soda to help me focus. I never realized how potent it could be. To my shame, I traded one addiction for another.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x6F6461
+    UseEmotionAnimation: True
+    Unused3: 0x656C70
+  ResponseText: I ordered my adjutant to help me taper the addiction. But, now, he is dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6570
+  ResponseText: There is an old drug we used before the decimations called Fixer. Find it, and return to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 01EF73:NovaArizona.esm
+- 01EF75:NovaArizona.esm
+- 01EF76:NovaArizona.esm
+- 01EF77:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Continue listening.>

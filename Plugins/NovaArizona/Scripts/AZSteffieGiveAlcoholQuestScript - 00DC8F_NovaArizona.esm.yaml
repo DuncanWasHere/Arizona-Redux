@@ -1,0 +1,78 @@
+FormKey: 00DC8F:NovaArizona.esm
+EditorID: AZSteffieGiveAlcoholQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 4
+    VariableCount: 5
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000E6000000160012000A000E0020720100582F1005000100720300391519000118005601000003005800003F140700010072030042010F0039150C00010B005601000005004200003B150E00E30000000109005601000005001539151F00011E00560100000200580000D514100002007A0000000000000000730300003915190001180056040000040058000040140A000200720300730200001600120002000E0020720100582F10050001007202001C00010052100A0002007202006E0100000039150C00010B00560100000500420100190000003C1500001900000037100500010072040011000000
+  SourceCode: >-
+    scn AZSteffieGiveAlcoholQuestScript
+
+
+    int bBeerFound
+
+    int iListIndex
+
+    int iListIndexMax
+
+
+    ref rFormToRemove
+
+
+    begin gamemode
+
+    if PlayerREF.GetItemCount AlchoholicDrinks
+        iListIndexMax = (ListGetCount AlchoholicDrinks) - 1
+        bBeerFound = 0
+
+        while !bBeerFound
+            iListIndex = Rand 0, iListIndexMax
+            rFormToRemove = ListGetNthForm AlchoholicDrinks iListIndex
+
+            if PlayerREF.GetItemCount rFormToRemove
+                PlayerREF.RemoveItem rFormToRemove 1
+                bBeerFound = 1
+            endif
+        loop
+    endif
+
+
+    stopquest AZSteffieGiveAlcoholQuest
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0x004F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xDBAB2B9890AB2B
+    Name: iListIndex
+  - Data:
+      Index: 3
+      Unknown: 0x204F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x99122C7096122C
+    Name: iListIndexMax
+  - Data:
+      Index: 4
+      Unknown: 0xE0DD29120000000000000000
+      Unknown2: 0x9A122C189A122C
+    Name: rFormToRemove
+  - Data:
+      Index: 5
+      Unknown: 0xE04E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x99122C909A122C
+    Name: bBeerFound
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 05C365:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC8E:NovaArizona.esm

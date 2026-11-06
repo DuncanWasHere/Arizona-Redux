@@ -1,0 +1,56 @@
+FormKey: 020FAC:NovaArizona.esm
+EditorID: AZGOMChickHadleyFreesideTravelPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- SkipFalloutBehavior
+- AlwaysRun
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 3
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 020FAB:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100792073
+  SecondParameter: 13
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 4
+      Enabled: 1
+    CompiledScript: 0x1C00010002100A0002007202006E010000001C00010002100A0002007203006E14000000161005000100720400
+    SourceCode: >-
+      AZGOMChickHadleyREF.additem WeapNVSilenced22Pistol 1
+
+      AZGOMChickHadleyREF.additem 0007EA27 20
+
+      startcombat AZFreesideNCRMPREF
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01F702:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 0E377A:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 07EA27:FalloutNV.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 020FA9:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

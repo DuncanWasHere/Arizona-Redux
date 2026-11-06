@@ -1,0 +1,56 @@
+FormKey: 005535:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 15
+    ResponseNumber: 1
+    Unused2: 0x61206D
+    UseEmotionAnimation: True
+    Unused3: 0x6C792E
+  ResponseText: Long days. Lots of walking.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 30
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Was hard, but I liked it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 40
+    ResponseNumber: 3
+    Unused2: 0x747320
+    UseEmotionAnimation: True
+    Unused3: 0x6C6B69
+  ResponseText: Anyways....
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F07:NovaArizona.esm
+- 0052BC:NovaArizona.esm
+- 0052C5:NovaArizona.esm
+- 0052C7:NovaArizona.esm
+- 0052CC:NovaArizona.esm
+- 0052CF:NovaArizona.esm
+- 0052D5:NovaArizona.esm
+- 0052D9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You used to be a doctor? What was that like?

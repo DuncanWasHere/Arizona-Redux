@@ -1,0 +1,53 @@
+FormKey: 01EE5C:NovaArizona.esm
+FormVersion: 15
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 01EE5D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: Arcade? Oh, the companion. We are under the sworn command of Caesar to avoid antagonizing your companions provided that they do not attack us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: If he had been in the position to treat Legionaries, then he also would have been executed.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetQuestVariable
+  FirstParameter: 1200854
+  SecondParameter: 8
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100789367
+  SecondParameter: 1
+Choices:
+- 01EE56:NovaArizona.esm
+- 01EE57:NovaArizona.esm
+- 01EE58:NovaArizona.esm
+- 01EE59:NovaArizona.esm
+- 01EE5A:NovaArizona.esm
+- 01EE5B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've come in here with Arcade before. What's the issue?

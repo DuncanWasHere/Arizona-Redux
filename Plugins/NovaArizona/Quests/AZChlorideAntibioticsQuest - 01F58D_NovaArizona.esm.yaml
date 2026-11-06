@@ -1,0 +1,279 @@
+FormKey: 01F58D:NovaArizona.esm
+EditorID: AZChlorideAntibioticsQuest
+FormVersion: 15
+Script: 01F5D8:NovaArizona.esm
+Name: One Night With Venus
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 1
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E010000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 1 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 2
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E020000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 2 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 3
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E030000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 3 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 4
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E040000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 4 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 5
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 5 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 6
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E060000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 6 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 7
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E070000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 7 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 9
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E090000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 9 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+  - Flags: []
+    Conditions:
+    - Fluff: 0x000000
+      Function: 420
+      FirstParameter: 100791693
+      SecondParameter: 10
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E00000000
+      SourceCode: setobjectivedisplayed AZChlorideAntibioticsQuest 10 0
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1600100001000C00207203007305002031203E3D1C000100211002000000190000001C0002007711070001006EC8000000
+      SourceCode: >-
+        if AZChlorideAntibioticsQuest.bCaravanGuardsKilled >= 1
+
+        AZWestRimGasBountyHunterEnableMarkerREF.enable
+
+        endif
+
+        Player.RewardXP 200
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 021034:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F58D:NovaArizona.esm
+Objectives:
+- Index: 1
+  Description: (Optional) Speak to the doctor west of Chloride.
+  Targets:
+  - Target: 00D84D:NovaArizona.esm
+    Unused: 0x7E102A
+- Index: 2
+  Description: (Optional) Speak to the doctor in Dolan Springs.
+  Targets:
+  - Target: 020BB3:NovaArizona.esm
+    Unused: 0x7E102A
+- Index: 4
+  Description: Track down Blue Sass.
+  Targets:
+  - Target: 025FF9:NovaArizona.esm
+    CompassMarkerIgnoresLocks: True
+    Unused: 0x4C3523
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100791693
+      SecondParameter: 16
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetItemCount
+      FirstParameter: 100832467
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+  - Target: 01076C:NovaArizona.esm
+    Unused: 0x4C3523
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100791693
+      SecondParameter: 16
+    - Fluff: 0x000000
+      Function: GetItemCount
+      FirstParameter: 100832467
+      RunOnType: Reference
+      Reference: 000014:FalloutNV.esm
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetHasNote
+      FirstParameter: 100791793
+- Index: 6
+  Description: (Optional) Buy antibiotics.
+- Index: 5
+  Description: Look for Blue Sass in the Sunset Sarsaparilla Headquarters.
+  Targets:
+  - Target: 01F5E9:NovaArizona.esm
+    Unused: 0x786D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetHasNote
+      FirstParameter: 100791777
+- Index: 9
+  Description: (Optional) Deal with the Frumentarii investigating the radio quiet zone.
+  Targets:
+  - Target: 01CC20:NovaArizona.esm
+    Unused: 0x4A042F
+  - Target: 01CC1F:NovaArizona.esm
+    Unused: 0x4A042F
+- Index: 10
+  Description: Rob the Legion supply caravan.
+  Targets:
+  - Target: 01F5C0:NovaArizona.esm
+    Unused: 0x2E2925
+- Description: Find something to cure Rima's sickness.
+- Index: 14
+  Description: Return to Rima with the medicine.
+  Targets:
+  - Target: 00D845:NovaArizona.esm
+    Unused: 0xBE1D26
+- Index: 15
+  Description: Tell someone about Rima's sickness.
+  Targets:
+  - Target: 00D847:NovaArizona.esm
+    Unused: 0xBD1D26
+  - Target: 0184C0:NovaArizona.esm
+    Unused: 0xBD1D26
+  - Target: 00E71F:NovaArizona.esm
+    Unused: 0xBD1D26
+- Index: 18
+  Description: Convince Isaiah to let Rima leave.
+  Targets:
+  - Target: 00D847:NovaArizona.esm
+    Unused: 0xBD1D26
+- Index: 20
+  Description: Tell Rima that she's free to go.
+  Targets:
+  - Target: 00D845:NovaArizona.esm
+    Unused: 0xBD1D26
+- Index: 3
+  Description: Search the law firm in Dolan Springs for information on mercury.
+  Targets:
+  - Target: 01F5F4:NovaArizona.esm
+    Unused: 0x7C2F30
+- Index: 7
+  Description: Learn more about the Legion caravan from Iosep.
+  Targets:
+  - Target: 01CE47:NovaArizona.esm
+    Unused: 0x142529
+- Index: 8
+  Description: Prepare for the Legion caravan's 6 A.M. arrival.
+  Targets:
+  - Target: 01F5F8:NovaArizona.esm
+    Unused: 0x7D102A

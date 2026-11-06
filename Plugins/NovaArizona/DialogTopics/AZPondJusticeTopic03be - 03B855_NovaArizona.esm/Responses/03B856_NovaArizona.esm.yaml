@@ -1,0 +1,51 @@
+FormKey: 03B856:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616C72
+    UseEmotionAnimation: True
+    Unused3: 0x204920
+  ResponseText: A faith called "Fraternitas Ferro". The Legion fought a war against one of their sects several years ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They bathe themselves in the scrap of the Old World hoping it will give them strength.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x656D73
+    UseEmotionAnimation: True
+    Unused3: 0x20696E
+  ResponseText: While their rituals provide them strength in battle, they do not provide strength of soul. Metal cannot know the love of the Lord.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+Choices:
+- 03B84D:NovaArizona.esm
+- 03B84F:NovaArizona.esm
+- 03B851:NovaArizona.esm
+- 03B853:NovaArizona.esm
+- 03B855:NovaArizona.esm
+- 03B857:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: People who worship tools?

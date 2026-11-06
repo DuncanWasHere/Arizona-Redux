@@ -1,0 +1,46 @@
+FormKey: 01CB00:NovaArizona.esm
+FormVersion: 15
+Quest: 01CA9B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Heard it before}You got that backwards. *We* are the ghosts. And we don't chase nothing."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Thinking of a clever follow-up}Nothing but busty señoritas. And the high you get from inhaling the fumes off the bubbling green tar that used to be some tribal's face."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780696
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 106D79:FalloutNV.esm
+Choices:
+- 01CAB6:NovaArizona.esm
+- 01CAB7:NovaArizona.esm
+- 01CAB8:NovaArizona.esm
+- 01CAB9:NovaArizona.esm
+- 01CABA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Someone told me you guys were just "chasing ghosts."

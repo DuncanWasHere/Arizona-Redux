@@ -1,0 +1,21 @@
+name: plugin-check
+on:
+  pull_request:
+    paths: ["Plugins/**", "fo-git.json", "Tools/fo-git.exe"]
+  push:
+    branches: [main]
+    paths: ["Plugins/**", "fo-git.json", "Tools/fo-git.exe"]
+jobs:
+  check:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            Plugins
+            Tools
+            fo-git.json
+            .gitattributes
+          sparse-checkout-cone-mode: false
+      - name: Check the master text
+        run: Tools/fo-git.exe check --text

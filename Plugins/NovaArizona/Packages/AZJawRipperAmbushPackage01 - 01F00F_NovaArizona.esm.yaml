@@ -1,0 +1,41 @@
+FormKey: 01F00F:NovaArizona.esm
+EditorID: AZJawRipperAmbushPackage01
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+- AlwaysRun
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 16256
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01F00B:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 128
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 01F010:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

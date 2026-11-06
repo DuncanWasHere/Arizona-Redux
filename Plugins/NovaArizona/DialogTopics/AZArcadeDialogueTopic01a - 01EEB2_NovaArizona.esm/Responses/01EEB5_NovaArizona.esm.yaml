@@ -1,0 +1,39 @@
+FormKey: 01EEB5:NovaArizona.esm
+FormVersion: 15
+Quest: 01EEA6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4C6567
+    UseEmotionAnimation: True
+    Unused3: 0x792068
+  ResponseText: We travel at Caesar's pleasure. He may not let me out as easily as he let you in.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No thanks.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1099623
+Choices:
+- 01EEB3:NovaArizona.esm
+- 01EEB4:NovaArizona.esm
+- 01EEB6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Arcade, I have the Mark of Caesar. You will be fine.

@@ -1,0 +1,71 @@
+FormKey: 00D0D8:NovaArizona.esm
+EditorID: AZWWJed
+FormVersion: 15
+ObjectBounds:
+  First: -29, -83, 0
+  Second: 29, 86, 94
+Name: Jed
+Model:
+  File: creatures\centaur\skeletonEvolved.nif
+UnarmedAttackAnimation: Any
+Models:
+- nv_centaur_evolved.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  Fatigue: 150
+  Level: 14
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021473:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 17688B:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Items:
+- Item:
+    Item: 05F706:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 14F424:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 90
+  Responsibility: 50
+  Mood: 1057544960
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: Abomination
+  CombatSkill: 100
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 150
+  Damage: 50
+  Strength: 8
+  Perception: 7
+  Endurance: 7
+  Charisma: 4
+  Intelligence: 7
+  Agility: 6
+  Luck: 8
+AttackReach: 32
+CombatStyle: 14F434:FalloutNV.esm
+BodyPartData: 03BE7D:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 1.1
+FootWeight: 10
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 06EE18:FalloutNV.esm
+MeleeWeaponList: 05F708:FalloutNV.esm

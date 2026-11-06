@@ -1,0 +1,54 @@
+FormKey: 039FCB:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: 016243:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: When the road collapsed, dozens of caravans were sent plunging into the valley below.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: Yet this place remained almost completely intact. No serious damage to the building or cargo or personnel. Only two slaves and six crates of food were lost.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x666978
+    UseEmotionAnimation: True
+    Unused3: 0x276D20
+  ResponseText: Compared to the rest of caravaneers on this supply route, they were lucky. Too lucky to be a coincidence and too godless to be fate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712373
+Choices:
+- 016232:NovaArizona.esm
+- 016240:NovaArizona.esm
+- 016242:NovaArizona.esm
+- 016244:NovaArizona.esm
+- 01623C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why do you think Tres Leches caused the collapse of the Chainway?

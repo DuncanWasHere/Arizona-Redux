@@ -1,0 +1,39 @@
+FormKey: 0380A2:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 03809F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206C69
+    UseEmotionAnimation: True
+    Unused3: 0x6F7270
+  ResponseText: They're junkies and chem-pushers whose idea of strength is beating the shit out of each other. Worthless.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The worst part, though? You're supposed to stand here and pretend you respect them and their stupid animal traditions. Fuck that and fuck tribals.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 03809E:NovaArizona.esm
+- 0380A0:NovaArizona.esm
+- 0380A3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It sounds like you don't like the Khans.

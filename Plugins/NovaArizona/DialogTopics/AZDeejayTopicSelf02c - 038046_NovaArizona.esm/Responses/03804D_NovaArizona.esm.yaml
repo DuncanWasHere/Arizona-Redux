@@ -1,0 +1,54 @@
+FormKey: 03804D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x426172
+    UseEmotionAnimation: True
+    Unused3: 0x77656E
+  ResponseText: Lanius showed up. Everyone was called to move out. Mitus didn't want to drag me along for their marches. Said I'd embarrass him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x426172
+    UseEmotionAnimation: True
+    Unused3: 0x77656E
+  ResponseText: So, he let me go. Kicked me to the curb.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Sad
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x682C20
+    UseEmotionAnimation: True
+    Unused3: 0x737320
+  ResponseText: I could've killed him. I could've marched back up to his caravan and pushed his machete into his neck. {this is almost impossible to say}But I didn't. Too much of a coward.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 038044:NovaArizona.esm
+- 038046:NovaArizona.esm
+- 038048:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How'd you escape?

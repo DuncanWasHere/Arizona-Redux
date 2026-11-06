@@ -1,0 +1,44 @@
+FormKey: 02CEB9:NovaArizona.esm
+FormVersion: 15
+Quest: 01079B:NovaArizona.esm
+PreviousInfo: 02CEB8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Don't need nobody else, don't think. I mix the drinks and she takes care of the rest.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: Somebody causes trouble? I reach for my shotty and play like I ain't blind just long enough for her to sneak up and cut 'em down! <Chuckles.>
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 03A8E6:NovaArizona.esm
+- 03A8EF:NovaArizona.esm
+- 03A8E9:NovaArizona.esm
+- 03A911:NovaArizona.esm
+- 020B49:NovaArizona.esm
+- 020B4A:NovaArizona.esm
+- 020B4F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So it's just you and the robot here? Kind of a skeleton crew.

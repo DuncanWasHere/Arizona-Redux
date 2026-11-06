@@ -1,0 +1,44 @@
+FormKey: 008FA9:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDB4A18
+    UseEmotionAnimation: True
+    Unused3: 0x844C18
+  ResponseText: He’s morose and lazy. Whatever fire he had is long put out.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E6420
+    UseEmotionAnimation: True
+    Unused3: 0x205768
+  ResponseText: If he were a normal soldier, I’d have him beaten or replaced, but he’s not. I can’t touch him. Caesar favored his intelligence, his attention to detail.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6E6420
+    UseEmotionAnimation: True
+    Unused3: 0x205768
+  ResponseText: Now he rots here, angry and bored. I pity him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688606
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you get along with the Scribonius?

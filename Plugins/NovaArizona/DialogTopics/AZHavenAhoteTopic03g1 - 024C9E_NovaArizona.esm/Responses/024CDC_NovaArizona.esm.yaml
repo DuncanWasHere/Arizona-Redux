@@ -1,0 +1,48 @@
+FormKey: 024CDC:NovaArizona.esm
+FormVersion: 15
+Quest: 024C73:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Any one of them could be a Reservation spy. Or he could go feral and kill us all.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He acts friendly enough, I suppose. I don't know.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100813743
+Choices:
+- 024C96:NovaArizona.esm
+- 024C97:NovaArizona.esm
+- 024C99:NovaArizona.esm
+- 024C9A:NovaArizona.esm
+- 024C9B:NovaArizona.esm
+- 024C9C:NovaArizona.esm
+- 024C9D:NovaArizona.esm
+- 024C9F:NovaArizona.esm
+- 024CA0:NovaArizona.esm
+- 024CA1:NovaArizona.esm
+- 024CA2:NovaArizona.esm
+- 024CA3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Really? Why?

@@ -1,0 +1,82 @@
+FormKey: 03A110:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: It was successful. They returned with enough coin to keep us fed for weeks. That level of hard work is... uncharacteristic of Sketch.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: I wasn't the only one who suspected that there was something happening on the side, many of us assumed chem dealing or maybe theft.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: I'm partially telling you this so you know that the rest of the Hooks aren't involved in whatever you think Sketch and Gristle are wrapped up in.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: If you want to talk to them about it you can do by the holding pen. You may be able to convince one of them to spill on what they've been up to.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: Oh, and one more thing. Don't press Kyle on this. He and Sketch are family and he takes that bond seriously. He won't budge, trust me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x696D20
+    UseEmotionAnimation: True
+    Unused3: 0x696E20
+  ResponseText: If there's anything that needs to be discussed about Sketch or Gristle or any of their actions, come to me. I'll see what I can do to help.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E460000006E01000000A2110F0003007201006E410000006E01000000
+  SourceCode: >-
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 70 1
+
+    setobjectivecompleted AZMalpaisMarketSlaveQuest 65 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm

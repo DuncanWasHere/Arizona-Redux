@@ -1,0 +1,58 @@
+FormKey: 00D1C2:NovaArizona.esm
+EditorID: AZDamienMaskQuest
+FormVersion: 15
+Name: All Shook Up
+QuestData:
+  Priority: 55
+Stages:
+- Index: 10
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E01000000
+      SourceCode: 'SetObjectiveDisplayed AZDamienMaskQuest 10 1 '
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D1C2:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E01000000A3110F0003007201006E140000006E01000000
+      SourceCode: "SetObjectiveCompleted AZDamienMaskQuest 10 1 \r\nSetObjectiveDisplayed AZDamienMaskQuest 20 1 "
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D1C2:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E010000007711070001006EFA000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZDamienMaskQuest 10 1 
+
+        RewardXP 250
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D1C2:NovaArizona.esm
+Objectives:
+- Index: 10
+  Description: Retrieve Damien's Mask
+  Targets:
+  - Target: 00D1BF:NovaArizona.esm
+    Unused: 0x343523
+- Index: 20
+  Description: Return Damien's Mask
+  Targets:
+  - Target: 00D0E1:NovaArizona.esm
+    Unused: 0x343523

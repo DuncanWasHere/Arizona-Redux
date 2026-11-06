@@ -1,0 +1,35 @@
+FormKey: 0078A0:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746F6D
+    UseEmotionAnimation: True
+    Unused3: 0x6D6573
+  ResponseText: The Cult controls the food in town. Before the merchants started settling in, if you wanted to eat, you had to pray in the temple.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721594
+Choices:
+- 00D195:NovaArizona.esm
+- 00789D:NovaArizona.esm
+- 00789F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Any rumors?

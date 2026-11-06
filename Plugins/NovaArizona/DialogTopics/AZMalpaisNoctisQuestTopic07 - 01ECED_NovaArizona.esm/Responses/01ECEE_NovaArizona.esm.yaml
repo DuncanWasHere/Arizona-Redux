@@ -1,0 +1,49 @@
+FormKey: 01ECEE:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EC77:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x73686F
+    UseEmotionAnimation: True
+    Unused3: 0x742E20
+  ResponseText: The legate was divinely chosen by Caesar himself. He is an acolyte of Mars. He is strength personified. He cannot possibly be wrong.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If he's wrong, then that means Caesar is wrong, and....
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x73686F
+    UseEmotionAnimation: True
+    Unused3: 0x742E20
+  ResponseText: This is too much. I need to get to the battlefield. It's much simpler there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789440
+Choices:
+- 01ECED:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're not weak. This has nothing to do with strength or weakness. It's wrong.

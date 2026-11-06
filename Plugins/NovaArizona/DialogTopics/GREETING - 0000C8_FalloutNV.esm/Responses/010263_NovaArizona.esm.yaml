@@ -1,0 +1,45 @@
+FormKey: 010263:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010264:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xBB1E1E
+    UseEmotionAnimation: True
+    Unused3: 0xB31E1E
+  ResponseText: Sorry, no entry to anyone from east of the rio.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E735C
+    UseEmotionAnimation: True
+    Unused3: 0x79496D
+  ResponseText: Go through that checkpoint, and everybody's going to start shooting.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729235
+Choices:
+- 01026E:NovaArizona.esm
+- 010262:NovaArizona.esm
+- 010268:NovaArizona.esm
+- 01026A:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

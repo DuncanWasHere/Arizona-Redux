@@ -1,0 +1,97 @@
+FormKey: 00EB9F:NovaArizona.esm
+EditorID: AZPirateTurret
+FormVersion: 15
+ObjectBounds:
+  First: -19, -23, -31
+  Second: 21, 22, 32
+Name: Salvaged Turret
+Model:
+  File: Creatures\MiniSentryTurret\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07D4F3:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- minisentryturret.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - NoLowLevelProcessing
+  - NoHead
+  - NoRightArm
+  - NoLeftArm
+  - NoVATSMelee
+  - CantOpenDoors
+  - Immobile
+  - NotPushable
+  Fatigue: 100
+  Level: 2
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - ActorEffectList
+  - AIPackages
+  - ModelAnimation
+  - Inventory
+  - Script
+Factions:
+- Faction: 01B2A4:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 033AC9:NovaArizona.esm
+  Unused: 0x49465A
+Voice: 040D41:FalloutNV.esm
+Template: 173FD6:FalloutNV.esm
+Destructible:
+  Data:
+    Health: 40
+    DESTCount: 1
+    VATSTargetable: True
+  Stages:
+  - Data:
+      Flags:
+      - Disable
+      Explosion: 07078A:FalloutNV.esm
+      Debris: 0B8FF4:FalloutNV.esm
+      DebrisCount: 3
+Items:
+- Item:
+    Item: 018E54:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 078CC4:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 991486720
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 0251AB:FalloutNV.esm
+Data:
+  Type: Robot
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 40
+  Strength: 1
+  Perception: 10
+  Endurance: 10
+  Charisma: 1
+  Intelligence: 5
+  Agility: 5
+  Luck: 10
+AttackReach: 255
+CombatStyle: 07B238:FalloutNV.esm
+BodyPartData: 0A6452:FalloutNV.esm
+TurningSpeed: 300
+BaseScale: 1
+FootWeight: 3
+ImpactMaterialType: Metal
+SoundLevel: Normal
+InheritsSoundFrom: 01E821:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm

@@ -1,0 +1,51 @@
+FormKey: 037EC5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Random
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037E04:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You mean while we're walking? Fine by me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 9
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037076:FalloutNV.esm
+- 037075:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A007201007308000200203115000A00720100730900020020301C0001005E100000
+  SourceCode: >-
+    Set AZDeejayREF.IsFollowingDefault to 1
+
+    Set AZDeejayREF.IsFollowingLong to 0
+
+    AZDeejayREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Stay close to me.

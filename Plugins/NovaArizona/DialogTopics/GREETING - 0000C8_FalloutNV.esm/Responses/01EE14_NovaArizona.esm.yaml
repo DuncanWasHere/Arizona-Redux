@@ -1,0 +1,42 @@
+FormKey: 01EE14:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01EE13:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x734261
+  ResponseText: The only reason I'm not going to kill you is because Jaw Ripper asked me not to.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+Choices:
+- 01EEE0:NovaArizona.esm
+- 01EE7A:NovaArizona.esm
+- 01EE1B:NovaArizona.esm
+- 01EE1C:NovaArizona.esm
+- 01EE1D:NovaArizona.esm
+- 01EE1E:NovaArizona.esm
+- 01EE1F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

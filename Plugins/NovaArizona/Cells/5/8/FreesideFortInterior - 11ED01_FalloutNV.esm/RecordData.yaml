@@ -1,0 +1,53 @@
+FormKey: 11ED01:FalloutNV.esm
+EditorID: FreesideFortInterior
+FormVersion: 15
+Name: Old Mormon Fort
+Flags:
+- IsInteriorCell
+- PublicPlace
+Lighting:
+  AmbientColor: '#00454130'
+  DirectionalColor: '#00000000'
+  FogColor: '#004D3E20'
+  FogNear: 0.32
+  FogFar: 4000
+  DirectionalRotationZ: 270
+  DirectionalFade: 1
+  FogClipDistance: 4000
+  FogPower: 1.25
+LightTemplate: 06532E:FalloutNV.esm
+LightInheritFlags:
+- AmbientColor
+- DirectionalColor
+- FogColor
+- FogNear
+- FogFar
+- ClipDistance
+WaterHeight: -2.1474836E+09
+WaterNoiseTexture: ''
+ImageSpace: 01507A:FalloutNV.esm
+Owner: 117E12:FalloutNV.esm
+AcousticSpace: 16572B:FalloutNV.esm
+MusicType: 090906:FalloutNV.esm
+Persistent:
+- MutagenObjectType: PlacedNpc
+  FormKey: 01EE06:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: AZOldMormonFortGregoryREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 01ED95:NovaArizona.esm
+  Position: 3657.6328, -142.00583, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 01F037:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  EditorID: AZGregoryFortMarkerREF
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 00003B:FalloutNV.esm
+  Placement:
+    Position: 3691.0903, -257.1565, 7.6293945E-06
+  MajorFlags:
+  - Persistent

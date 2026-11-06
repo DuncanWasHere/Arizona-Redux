@@ -1,0 +1,67 @@
+FormKey: 0209B7:NovaArizona.esm
+MajorRecordFlagsRaw: 525312
+EditorID: AZBrahminMutilatedDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+- CantWait
+ObjectBounds:
+  First: -40, -80, 0
+  Second: 40, 80, 80
+Name: Mutilated Brahmin
+Model:
+  File: Creatures\Brahmin\Skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- Brahmin.NIF
+ModelListTextures: 0x0100000006EEE90762B99810766E690762BE9810766E691A743E856656EEDF0962FE7809476E5F0962037909476E691A743E856656F3DF0962FE780947735F0962037909476E691A743E856656B1B00D6DFA4C094631300D6DFF4C094665720D74387A3871EEDF0F6D7B0EB15D6E5F0F6D800EB15D65720D74387A3871F3DF0F6D7B0EB15D735F0F6D800EB15D65720D74387A3871
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - TiltFrontBack
+  Fatigue: 50
+  Level: 3
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - ModelAnimation
+  - Inventory
+DeathItem: 09D413:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 01D3CD:FalloutNV.esm
+Script: 0209D2:NovaArizona.esm
+AIData:
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2163591680
+  Teaches: Barter
+  Assistance: HelpsAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 150
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 18
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 9
+  Strength: 5
+  Perception: 3
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+CombatStyle: 03A371:FalloutNV.esm
+BodyPartData: 015833:FalloutNV.esm
+TurningSpeed: 45
+BaseScale: 1.25
+FootWeight: 3
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 028047:FalloutNV.esm
+ImpactDataset: 07DB64:FalloutNV.esm
+MajorFlags:
+- QuestItem
+- 0x80000

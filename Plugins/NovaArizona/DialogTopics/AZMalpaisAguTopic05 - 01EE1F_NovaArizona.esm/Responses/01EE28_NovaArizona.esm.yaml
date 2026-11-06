@@ -1,0 +1,39 @@
+FormKey: 01EE28:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616420
+    UseEmotionAnimation: True
+    Unused3: 0x61696E
+  ResponseText: I am. I'm going to be a future Decanus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789786
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00C45B:NovaArizona.esm
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 01A658:NovaArizona.esm
+Choices:
+- 01EE1F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who's in charge here?

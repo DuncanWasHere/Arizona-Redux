@@ -1,0 +1,230 @@
+FormKey: 01018D:NovaArizona.esm
+EditorID: AZDamNQuest1
+FormVersion: 15
+Name: There's a Man at the Door
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 6783
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Secure permission for Omar to leave the refugee camp from either the NCR or the Legion.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000
+      SourceCode: setobjectivedisplayed AZDamNQuest1 5 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: The NCR has allowed Omar to pass through the checkpoint.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E140000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 5 1
+
+        setobjectivedisplayed AZDamNQuest1 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: The Legion has allowed Omar to return to Arizona.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E190000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 5 1
+
+        setobjectivedisplayed AZDamNQuest1 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Omar has passed through the checkpoint to Boulder City.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E140000006E01000000A2110F0003007203006E320000006E010000001C0001005E1000001C0002007711070001006E96000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 20 1
+
+        setobjectivecompleted AZDamNQuest1 50 1
+
+        AZOmarREF.evp
+
+
+        player.rewardxp 150
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0101C9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 55
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Omar has returned to Dolan Springs.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E190000006E01000000A2110F0003007203006E370000006E010000001C0001005E1000001C0002007711070001006E96000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 25 1
+
+        setobjectivecompleted AZDamNQuest1 55 1
+
+        AZOmarREF.evp
+
+
+        player.rewardxp 150
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0101C9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 75
+  LogEntries:
+  - Flags: []
+    Entry: Inform Omar that the NCR has negotiated a ceasefire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E4B0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 5 1
+
+        setobjectivedisplayed AZDamNQuest1 75 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 76
+  LogEntries:
+  - Flags: []
+    Entry: Omar has informed of the ceasefire. Return to him after the ceasefire.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A2110F0003007201006E4B0000006E01000000A3110F0003007201006E4C0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 5 1
+
+        setobjectivecompleted AZDamNQuest1 75 1
+
+        setobjectivedisplayed AZDamNQuest1 76 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 80
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Omar is stuck between the NCR and the Legion.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E4C0000006E01000000A2110F0003007201006E500000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZDamNQuest1 76 1
+
+        setobjectivecompleted AZDamNQuest1 80 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01018D:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Wire and Nerva are dead.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1C0001008B10020000001C0002009E1005000100720300
+      SourceCode: >-
+        AZOmarREF.KillActor
+
+        AZHDWireREF.moveto AZHDWireMarkerREF
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0101C9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102CF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0102FE:NovaArizona.esm
+- Index: 110
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Omar dead.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001008B1002000000
+      SourceCode: AZOmarREF.killactor
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0101C9:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Secure permission for Omar to leave the refugee camp from either the NCR officer at Hoover Dam, or the low-level Legionaries at Hoover Dam Rest Stop.
+  Targets:
+  - Target: 003A0A:NovaArizona.esm
+    Unused: 0x585E38
+  - Target: 0102CB:NovaArizona.esm
+    Unused: 0x585E38
+  - Target: 0102CF:NovaArizona.esm
+    Unused: 0x585E38
+- Index: 20
+  Description: Inform Omar that the NCR has allowed him to pass through the checkpoint.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x4D042F
+- Index: 25
+  Description: Inform Omar that the Legion has allowed him to return to Arizona.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x632F30
+- Index: 50
+  Description: Omar has passed through the checkpoint to Boulder City.
+- Index: 55
+  Description: Omar has returned to Dolan Springs.
+- Index: 75
+  Description: Inform Omar that the NCR has negotiated a ceasefire.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x2D102B
+- Index: 80
+  Description: Omar is stuck between the NCR and the Legion.
+- Index: 76
+  Description: Omar has informed of the ceasefire. Return to him after the ceasefire.
+  Targets:
+  - Target: 0101C9:NovaArizona.esm
+    Unused: 0x72052D

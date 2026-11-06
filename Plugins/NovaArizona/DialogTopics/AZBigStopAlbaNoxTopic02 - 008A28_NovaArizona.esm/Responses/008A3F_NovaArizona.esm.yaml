@@ -1,0 +1,39 @@
+FormKey: 008A3F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: We Frumentarii are allowed certain privileges that other Legionaries are not. Education is one such privilege.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698573
+Choices:
+- 01EFBD:NovaArizona.esm
+- 024C2C:NovaArizona.esm
+- 024C5C:NovaArizona.esm
+- 008A27:NovaArizona.esm
+- 008A28:NovaArizona.esm
+- 008A2A:NovaArizona.esm
+- 008A2C:NovaArizona.esm
+- 008A2D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You seem different from the other Legionaries.

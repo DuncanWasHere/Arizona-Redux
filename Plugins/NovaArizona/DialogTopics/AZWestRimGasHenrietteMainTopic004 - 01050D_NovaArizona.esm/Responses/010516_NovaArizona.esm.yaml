@@ -1,0 +1,55 @@
+FormKey: 010516:NovaArizona.esm
+FormVersion: 15
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: 010515:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It may be a ruin, but we are very close to the Magnum Chasma. This shrine draws power from that holy land.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Plus, it is peaceful here, isn't it? You can truly be alone with Mars. He shows us that he is pleased with us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He sends us fires in the sky, and shows us how to sacrifice the brahmin for him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+Choices:
+- 01C1EC:NovaArizona.esm
+- 01C1ED:NovaArizona.esm
+- 01C1EE:NovaArizona.esm
+- 01C1EF:NovaArizona.esm
+- 01050D:NovaArizona.esm
+- 01050E:NovaArizona.esm
+- 010510:NovaArizona.esm
+- 01C1F0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why is this shrine here? This place is a ruin.

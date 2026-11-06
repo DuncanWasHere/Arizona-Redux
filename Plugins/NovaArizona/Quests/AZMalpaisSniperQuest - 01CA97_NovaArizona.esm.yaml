@@ -1,0 +1,132 @@
+FormKey: 01CA97:NovaArizona.esm
+EditorID: AZMalpaisSniperQuest
+FormVersion: 15
+Script: 034EF9:NovaArizona.esm
+Name: I Wish You Would
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 1
+  LogEntries:
+  - Flags: []
+    Entry: Player insisted on helping Hog Walker.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E010000006E01000000
+      SourceCode: SetObjectiveDisplayed AZMalpaisSniperQuest 1 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CA97:NovaArizona.esm
+- Index: 22
+  LogEntries:
+  - Flags: []
+    Entry: Player chose dating sim route.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E160000006E01000000
+      SourceCode: SetObjectiveDisplayed AZMalpaisSniperQuest 22 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CA97:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: Player chose sniper route.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E010000006E01000000
+      SourceCode: SetObjectiveDisplayed AZMalpaisSniperQuest 1 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CA97:NovaArizona.esm
+- Index: 101
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Regulus died early.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 102
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Hog Walker died.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 1
+  Description: Help Walker resolve his self-esteem issues.
+  Targets:
+  - Target: 034EFB:NovaArizona.esm
+    Unused: 0x1B1428
+- Index: 10
+  Description: (Optional) Put an end to Regulus's bullying.
+  Targets:
+  - Target: 034F35:NovaArizona.esm
+    Unused: 0x152529
+- Index: 20
+  Description: (Optional) Seek wisdom from the other Legionaries around Malpais.
+  Targets:
+  - Target: 00D473:NovaArizona.esm
+    Unused: 0x7D2F30
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 00D473:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100780695
+      SecondParameter: 28
+  - Target: 01A658:NovaArizona.esm
+    Unused: 0x7D2F30
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 01A658:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100780695
+      SecondParameter: 27
+  - Target: 013B71:NovaArizona.esm
+    Unused: 0x7D2F30
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 013B71:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100780695
+      SecondParameter: 26
+- Index: 30
+  Description: Enter the Malpais Camp and flash your Pip-Boy light when ready.
+- Index: 21
+  Description: Return to Walker.
+  Targets:
+  - Target: 034EFB:NovaArizona.esm
+    Unused: 0x332F22
+- Index: 22
+  Description: (Optional) Set up a practice date with a Maiden in the Malpais Balneum.
+- Index: 23
+  Description: Inform Walker that Maiden Daria agreed to help him practice.
+- Index: 24
+  Description: Show Walker how it's done.
+- Index: 25
+  Description: Talk to Walker.
+- Index: 31
+  Description: Escape the camp and find Walker.
+- Index: 32
+  Description: Kill Walker.

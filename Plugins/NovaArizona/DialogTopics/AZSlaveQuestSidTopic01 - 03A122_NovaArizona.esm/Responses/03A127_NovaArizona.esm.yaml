@@ -1,0 +1,47 @@
+FormKey: 03A127:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A126:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x446973
+    UseEmotionAnimation: True
+    Unused3: 0x642041
+  ResponseText: I said I don't know, okay! Fuck! It's just a stupid picture, what's the big deal.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100901046
+  SecondParameter: 8
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100901046
+  SecondParameter: 65
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 65
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 66
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702085
+Choices:
+- 03A123:NovaArizona.esm
+- 03A124:NovaArizona.esm
+- 03A125:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Show Discarded Sketch> I ask if the figures in the sketch look familiar. Do you recognize them?

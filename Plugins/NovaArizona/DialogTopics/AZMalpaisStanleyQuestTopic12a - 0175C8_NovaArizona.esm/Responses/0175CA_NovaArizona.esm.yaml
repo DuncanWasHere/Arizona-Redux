@@ -1,0 +1,110 @@
+FormKey: 0175CA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x772E20
+    UseEmotionAnimation: True
+    Unused3: 0x697427
+  ResponseText: "[SUCCEEDED] Oh, hell.... You're right. This is exactly what I signed up for, and I knew the risks when I crossed the Colorado."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x682C20
+    UseEmotionAnimation: True
+    Unused3: 0x2E2E2E
+  ResponseText: Tomorrow morning, the Legion will find out that their golden boy accidentally leaked important military plans to satisfy his own ego.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x682C20
+    UseEmotionAnimation: True
+    Unused3: 0x2E2E2E
+  ResponseText: I have no more work for you. I'm going to pack my things and see if I can't arrange some way out of here, before things get hot.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x207269
+    UseEmotionAnimation: True
+    Unused3: 0x626F75
+  ResponseText: If we both make it, come find me in Vegas. We'll have some beers.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 8
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E780000001C0001004F12050001007204001111070001006E0100000015000C007203007307000400203130309111050001007205001C00010002100A0002007206006E0100000039120F0003007207006E000000006E080000001600100001000C00207203007313002031203D3D1C00020002100A0002007208006EDC000000190000001600100001000C00207203007313002030203D3D1C00020002100A0002007208006EC800000019000000
+  SourceCode: >-
+    setstage AZMalpaisJournalistQuest 120
+
+    AZStanleyHartfordREF.MovetoMarkerwithFade AZMalpaisRoadhouseXMarkerREF
+
+    EnableFastTravel 1
+
+    set AZMalpaisJournalistQuest.bStanleyLegionDisapproval to 100
+
+    ApplyImageSpaceModifier FadeToBlackAndBackISFX
+
+    AZStanleyHartfordRef.additem AZStanleyDeathNote 1
+
+
+    AddReputation RepNVCaesarsLegion 0 8
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 1)
+    	player.additem caps001 220
+    endif
+
+
+    if (AZMalpaisJournalistQuest.bStanleyPaysMore == 0)
+    	player.additem caps001 200
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006435:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08F0BC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017645:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+Prompt: What good is a journalist if he can't bring change to the world and only observe?
+ActorValuePerk: 0004BB:FalloutNV.esm

@@ -1,0 +1,32 @@
+FormKey: 039FC5:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 039F56:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617665
+  ResponseText: Yeah, that's, um... I'm sorry, could you repeat the question?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100812870
+  SecondParameter: 7
+Choices:
+- 039FC4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How will you be voting to deal with Job?

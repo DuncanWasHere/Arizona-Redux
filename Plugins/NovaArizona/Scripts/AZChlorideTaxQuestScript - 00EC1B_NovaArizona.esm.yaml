@@ -1,0 +1,85 @@
+FormKey: 00EC1B:NovaArizona.esm
+EditorID: AZChlorideTaxQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 10
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZChlorideTaxQuestScript
+
+
+    int TributeSum ; needs to be four to progress
+
+    int TributeHarlow ; these track whether tribute has been paid
+
+    int TributeNicodemus
+
+    int TributeSandyRhodes
+
+    int TributeZeke
+
+    int SandyCollateral ; 1 = 103 denarii, 2 = 206 denarii, 3 = 309 denarii, 4 = 412 denarii
+
+    int SandyWaiveStatus ; 1 = No, 2 = Yes ; 3 = lowered, 4 = cheating Sandy
+
+    int ZekeIndenturedServant
+
+    int SandySituation
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x404720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D706C65517561
+    Name: TributeSum
+  - Data:
+      Index: 2
+      Unknown: 0x204720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x73000000000000
+    Name: TributeHarlow
+  - Data:
+      Index: 3
+      Unknown: 0x004720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C665669730000
+    Name: TributeNicodemus
+  - Data:
+      Index: 4
+      Unknown: 0xE04620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x73000000000000
+    Name: TributeSandyRhodes
+  - Data:
+      Index: 5
+      Unknown: 0xC04620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x34000000000000
+    Name: TributeZeke
+  - Data:
+      Index: 6
+      Unknown: 0xA04620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x33000000000000
+    Name: SandyCollateral
+  - Data:
+      Index: 7
+      Unknown: 0x604620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x32000000000000
+    Name: ZekeIndenturedServant
+  - Data:
+      Index: 9
+      Unknown: 0x804620120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xA51D0F04281E0F
+    Name: SandyWaiveStatus
+  - Data:
+      Index: 10
+      Unknown: 0x20D229120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3C1E260C3F1E26
+    Name: SandySituation

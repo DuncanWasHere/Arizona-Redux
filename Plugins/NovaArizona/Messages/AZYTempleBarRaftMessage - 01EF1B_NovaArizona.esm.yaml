@@ -1,0 +1,27 @@
+FormKey: 01EF1B:NovaArizona.esm
+EditorID: AZYTempleBarRaftMessage
+FormVersion: 15
+Description: This raft requires repairs if it is to become worthy of crossing Lake Mead. You could either wing it to repair it or use salvaged parts, mostly wiring. Would you like to repair the raft? (Survival 65 or higher required or use Spare Wires as parts).
+Name: Temple Bar Raft
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Leave it alone.
+- Text: Repair the raft without spare parts.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 65
+    Function: GetActorValue
+    FirstParameter: 44
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Use spare wiring to repair the raft.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetItemCount
+    FirstParameter: 100790039
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm

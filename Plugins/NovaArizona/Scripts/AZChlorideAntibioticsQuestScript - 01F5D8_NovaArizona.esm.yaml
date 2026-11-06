@@ -1,0 +1,161 @@
+FormKey: 01F5D8:NovaArizona.esm
+EditorID: AZChlorideAntibioticsQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 16
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000B80000001600190002001500207309002031203D3D20730C002030203D3D20262615000700730C000200203115000D00660B00080020582F28020000001900000016000D0007000900207309002031203D3D16001E0001001A0020660A0020660B002031202B203C20730C002031203D3D20262639151300011200560000000A005800002F28040000000017000200030015000700730C00020020321C0001002110020000001C000200221002000000190000001900000011000000
+  SourceCode: >-
+    scn AZChlorideAntibioticsQuestScript
+
+
+    float iTimer
+
+    float fRimaDeathCountdown
+
+
+    short bDoOnce
+
+
+    short bMetRima
+
+    short bGotRimaInfo
+
+    short bRimaGoIndoors
+
+    short bRimaIsIndoors
+
+    short bBlueSassRecallDiscovered
+
+    short bDistractedFrumentarii
+
+    short bConvincedSpiritChaser
+
+    short bInQuietBox
+
+    short bCaravanGuardsKilled
+
+    short bRobbedCaravan
+
+    short bSpiritChaserDebrief
+
+    short bRattedRima
+
+
+    begin gamemode
+
+
+    if bRattedRima == 1 && bDoOnce == 0
+    	set bDoOnce to 1
+    	set fRimaDeathCountdown to GetGameDaysPassed
+    endif
+
+
+    if bRattedRima == 1
+    	if iTimer < fRimaDeathCountdown + 1 && bDoOnce == 1
+    		iTimer = GetGameDaysPassed
+    	else
+    		set bDoOnce to 2
+    		AZRimaDeathEnablerREF.enable
+    		AZChlorideRimaREF.disable
+    	endif
+    endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x209E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000800D0000
+    Name: bRimaGoIndoors
+  - Data:
+      Index: 2
+      Unknown: 0x409E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bRimaIsIndoors
+  - Data:
+      Index: 3
+      Unknown: 0x809E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x74696F6E467269
+    Name: bDistractedFrumentarii
+  - Data:
+      Index: 4
+      Unknown: 0xA09E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x74636170696E73
+    Name: bConvincedSpiritChaser
+  - Data:
+      Index: 5
+      Unknown: 0xE09E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: bCaravanGuardsKilled
+  - Data:
+      Index: 6
+      Unknown: 0x009F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C6C646F776E00
+    Name: bRobbedCaravan
+  - Data:
+      Index: 7
+      Unknown: 0x209F20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65736D6F756C64
+    Name: bSpiritChaserDebrief
+  - Data:
+      Index: 9
+      Unknown: 0x20D229120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x32687265717569
+    Name: bRattedRima
+  - Data:
+      Index: 10
+      Unknown: 0x809D20120000000000000000
+      Unknown2: 0x6D706C6548616C
+    Name: iTimer
+  - Data:
+      Index: 11
+      Unknown: 0xA09D20120000000000000000
+      Unknown2: 0x32687241747461
+    Name: fRimaDeathCountdown
+  - Data:
+      Index: 12
+      Unknown: 0xC09D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x32000000000000
+    Name: bDoOnce
+  - Data:
+      Index: 13
+      Unknown: 0xE09D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x32686865717569
+    Name: bMetRima
+  - Data:
+      Index: 14
+      Unknown: 0xC09E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000098130000
+    Name: bInQuietBox
+  - Data:
+      Index: 15
+      Unknown: 0x009E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000F0AE0000
+    Name: bGotRimaInfo
+  - Data:
+      Index: 16
+      Unknown: 0x609E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x934E11809D4E11
+    Name: bBlueSassRecallDiscovered
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F6F7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D845:NovaArizona.esm

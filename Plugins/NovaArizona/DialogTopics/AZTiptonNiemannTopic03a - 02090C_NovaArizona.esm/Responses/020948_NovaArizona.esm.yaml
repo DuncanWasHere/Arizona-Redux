@@ -1,0 +1,40 @@
+FormKey: 020948:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: That's the one.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetMapMarkerVisible
+  RunOnType: Reference
+  Reference: 0044DD:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+Choices:
+- 020901:NovaArizona.esm
+- 020905:NovaArizona.esm
+- 020906:NovaArizona.esm
+- 02090B:NovaArizona.esm
+- 02090F:NovaArizona.esm
+- 02091B:NovaArizona.esm
+- 020921:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There's a town up north called Big Stop.

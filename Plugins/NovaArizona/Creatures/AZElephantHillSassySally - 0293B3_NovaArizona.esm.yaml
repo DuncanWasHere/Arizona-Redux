@@ -1,0 +1,105 @@
+FormKey: 0293B3:NovaArizona.esm
+EditorID: AZElephantHillSassySally
+FormVersion: 15
+ObjectBounds:
+  First: -26, -26, 0
+  Second: 26, 26, 132
+Name: Sassy Sally
+Model:
+  File: Creatures\MisterGutsy\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07D4F3:FalloutNV.esm
+- 12B88B:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- azsunsetsarsaparillahandy01.nif
+- brainhandy.nif
+- fxmrhandyjetaddon.nif
+- handyfrontclaw.nif
+- handyleftclaw.nif
+- handyrightclaw.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Flies
+  - Walks
+  - PCLevelMult
+  - AllowPCDialogue
+  Fatigue: 100
+  Level: 2000
+  CalcMin: 5
+  CalcMax: 25
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01FFB6:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 004360:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 09C960:FalloutNV.esm
+Voice: 019FDC:FalloutNV.esm
+Items:
+- Item:
+    Item: 029372:FalloutNV.esm
+    Count: 32
+- Item:
+    Item: 029642:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 03BC6F:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0A0C02:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 35
+  Responsibility: 50
+  Mood: 842257920
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 01A5F7:NovaArizona.esm
+Animations:
+- 1hmaim.kf
+- 1hmattackleft_chop.kf
+- 1hmattackright_chop.kf
+- 1hmattackright_stab.kf
+- 1hmattackright_uppercut.kf
+- 1hmequip.kf
+- 1hmholster.kf
+- 1hmunequip.kf
+- 2hlaim.kf
+- 2hlattackspin.kf
+- 2hlattackspindown.kf
+- 2hlattackspinup.kf
+- 2hlequip.kf
+- 2hlholster.kf
+- 2hlunequip.kf
+Data:
+  Type: Robot
+  CombatSkill: 18
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 50
+  Damage: 9
+  Strength: 5
+  Perception: 5
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 96
+CombatStyle: 03A378:FalloutNV.esm
+BodyPartData: 036C18:FalloutNV.esm
+TurningSpeed: 100
+BaseScale: 1
+FootWeight: 15
+ImpactMaterialType: Metal
+SoundLevel: Normal
+InheritsSoundFrom: 04D036:FalloutNV.esm
+ImpactDataset: 05FD3F:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm

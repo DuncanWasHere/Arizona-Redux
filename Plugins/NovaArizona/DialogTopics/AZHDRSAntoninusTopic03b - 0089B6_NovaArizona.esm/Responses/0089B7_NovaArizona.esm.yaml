@@ -1,0 +1,92 @@
+FormKey: 0089B7:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Another Dissolute needing education on their place in the world.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C7574
+    UseEmotionAnimation: True
+    Unused3: 0x64696E
+  ResponseText: Very well, I will educate you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6C7574
+    UseEmotionAnimation: True
+    Unused3: 0x64696E
+  ResponseText: There is the Legion. All soldiers in Caesar's service are Legion, from the lowly child to the high legates.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: The Legion, of course, elevates wastelanders, even those not in the Legion. Caesar is generous. Those in our territory are Liberti.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x6C7574
+    UseEmotionAnimation: True
+    Unused3: 0x64696E
+  ResponseText: Then, there are those Caesar has yet to teach. Those outside his mortal realm. They are the Dissolute. Some Dissolute may be elevated. Some may not.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x6C7574
+    UseEmotionAnimation: True
+    Unused3: 0x64696E
+  ResponseText: Those who can be elevated can become Liberti or Legionaries or even slaves. Slaves can find honor as well.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x206265
+    UseEmotionAnimation: True
+    Unused3: 0x617465
+  ResponseText: Then, there are those Dissolute who believe themselves civilized and actually view us as evil. They have to be reeducated with greater difficulty. Those are Profligates.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 8
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: And finally, there are those that can only be killed. No redemption, no honor, nothing of value. Degenerates.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729663
+Choices:
+- 00C0F0:NovaArizona.esm
+- 0089B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Hold on. Is there a difference between the Dissolute and Profligates?

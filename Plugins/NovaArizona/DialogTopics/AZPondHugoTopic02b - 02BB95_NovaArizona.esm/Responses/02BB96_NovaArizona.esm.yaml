@@ -1,0 +1,58 @@
+FormKey: 02BB96:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Guy named Ruiz. Son of Ruiz. Something like that. Acts like a spoiled little boy.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x696768
+  ResponseText: I seen him have a breakdown over drinking dirty water.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696E20
+    UseEmotionAnimation: True
+    Unused3: 0x696768
+  ResponseText: Coward slipped a collar on me in the night. Got his guys to hold me down.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The thought of offing him keeps me going.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712236
+Choices:
+- 02BB97:NovaArizona.esm
+- 03B828:NovaArizona.esm
+- 03B82A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who captured you?
+ActorValuePerk: 0003ED:FalloutNV.esm

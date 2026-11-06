@@ -1,0 +1,43 @@
+FormKey: 01CBEA:NovaArizona.esm
+FormVersion: 15
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Spoken in an unhinged way}We're all going to die."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If that's what it takes to become one with Mars, then so be it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780947
+Choices:
+- 01CBAD:NovaArizona.esm
+- 01CBAE:NovaArizona.esm
+- 01CBAF:NovaArizona.esm
+- 01CBB0:NovaArizona.esm
+- 01CBB1:NovaArizona.esm
+- 01CBB2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: One with Mars? You're all going to die?

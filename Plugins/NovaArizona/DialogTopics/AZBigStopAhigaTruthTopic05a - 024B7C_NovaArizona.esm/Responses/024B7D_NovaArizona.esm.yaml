@@ -1,0 +1,44 @@
+FormKey: 024B7D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206372
+    UseEmotionAnimation: True
+    Unused3: 0x6C6974
+  ResponseText: Now, that is a good question. I suppose it's time for you to find who I work for, unless you have other questions.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B53:NovaArizona.esm
+- 024B5A:NovaArizona.esm
+- 024B72:NovaArizona.esm
+- 024B74:NovaArizona.esm
+- 024B63:NovaArizona.esm
+- 024B62:NovaArizona.esm
+- 024B64:NovaArizona.esm
+- 024B66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073070002002031
+  SourceCode: Set AZBigStopAhigaQuest01.ConfederacyQuestioning to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: If you're working against the Legion, then why are you looking for Haven?

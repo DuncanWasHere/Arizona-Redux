@@ -1,0 +1,78 @@
+FormKey: 00DD01:NovaArizona.esm
+EditorID: AZChlorideBankVaultTerminal
+FormVersion: 15
+ObjectBounds:
+  First: 0, -18, -18
+  Second: 51, 22, 38
+Name: Vault Control Terminal
+Model:
+  File: Terminals\Terminal02.NIF
+Description: 'WARNING: Disengaging lock without authorization codes will trigger alarm'
+LoopingSound: 018EC0:FalloutNV.esm
+Flags:
+- Unlocked
+ServerType: Server5
+MenuItems:
+- ItemText: Disengage Lock
+  ResultText: 'WARNING: Alarm triggered. Unlocking...'
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C00010073100200000015000A0072020073070002002031
+    SourceCode: >+
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.unlock
+
+
+      set AZChlorideBankRobberyHelperQuest.bAlarmTriggered to 1
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x20FF281B0000000000000000
+        Unknown2: 0x61706520666F72
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00DCC2:NovaArizona.esm
+- ItemText: '[Science 90] Bypass alarm'
+  ResultText: '[SUCCEEDED] Unlocking...'
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.unlock
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x60FF281B0000000000000000
+        Unknown2: 0x61706520666F72
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 90
+    Function: GetActorValue
+    FirstParameter: 40
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm

@@ -1,0 +1,65 @@
+FormKey: 00EB69:NovaArizona.esm
+EditorID: AZMalpaisEquipmentConfiscationNoEntryQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 5
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000B600000080161A000212005600000001005A000000000000E03F0707004C64000000391513000112005600000001005800000C10040000001C811608000107004CD500000080161300020B0056010100120042010407004C960000003A1517000116005202007800009E100B000100FFFF05005203002880161300020B0056010100130042010407004CC80000003A1517000116005202007800009E100B000100FFFF050052040028371009000100FFFF050052050011000000
+  SourceCode: >-
+    name AZMalpaisEquipmentConfiscationNoEntryQuestScript;
+
+
+    float fTimer;
+
+
+    int FrontTrigger;
+
+    int BackTrigger;
+
+
+    GameMode {
+    	if (fTimer < 0.5) {
+    		fTimer += GetSecondsPassed();
+    	} else {
+    		if (AZFreeformMalpais.FrontTrigger == 1) {
+    			PlayerREF.MoveTo(AZMalpaisGateGuardPlayerNoEntryMarkerREF);
+    		}
+    		if (AZFreeformMalpais.BackTrigger == 1) {
+    			Player.MoveTo(AZMalpaisGateGuardPlayerNoEntryMarker02REF);
+    		}
+    		StopQuest(AZMalpaisEquipmentConfiscationNoEntryQuest);
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: FrontTrigger
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: BackTrigger
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00C74F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C256:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB6B:NovaArizona.esm

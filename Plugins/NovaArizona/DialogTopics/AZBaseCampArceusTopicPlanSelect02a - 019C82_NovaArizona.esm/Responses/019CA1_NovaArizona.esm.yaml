@@ -1,0 +1,58 @@
+FormKey: 019CA1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: 019CA0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Very well. Let's see how this goes.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Don't wait around for me. Come back in a day or so and find me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730C000200203115000A00720100731A0002002031A3110F0003007201006E8C0000006E00000000A3110F0003007201006E910000006E0000000039100A0002007201006EA0000000
+  SourceCode: >-
+    set AZBaseCampRomanceQuest.reassignmentChosen to 1
+
+    set AZBaseCampRomanceQuest.ArceusReassignmentTimer to 1
+
+    SetObjectiveDisplayed AZBaseCampRomanceQuest 140 0
+
+    SetObjectiveDisplayed AZBaseCampRomanceQuest 145 0
+
+    setstage AZBaseCampRomanceQuest 160
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: I probably can't convince your Decanus. You're going to have to steal something.

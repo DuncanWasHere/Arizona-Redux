@@ -1,0 +1,45 @@
+FormKey: 020BF6:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 020BF5:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ave, domina Venus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100722316
+  SecondParameter: 19
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsSex
+  FirstParameter: 1
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 01F5C6:NovaArizona.esm
+- 034EC7:NovaArizona.esm
+- 020BC0:NovaArizona.esm
+- 020BC6:NovaArizona.esm
+- 020BEF:NovaArizona.esm
+- 020BF0:NovaArizona.esm
+- 020BF1:NovaArizona.esm
+- 020BF2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

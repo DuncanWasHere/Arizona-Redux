@@ -1,0 +1,34 @@
+FormKey: 00ABFC:NovaArizona.esm
+EditorID: AZLetiScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00C10000000000801639000231005201007800002F100B000100FFFF0500520200284200045203007800002F100B000100FFFF0500520200284200040207004C9C0000003A151D00011C00520300780000021011000200FFFF0500520200FFFF0400420128A31115000300FFFF0500520400FFFF0400421FFFFF04004201801621000219005201007800002F100B000100FFFF05005205002842000407004CE20000003A151D00011C00520100780000021011000200FFFF0500520500FFFF040042012811000000
+  SourceCode: >-
+    name AZLetiScript;
+
+
+    OnDeath {
+    	if (Player.GetItemCount(AZWakeemHead) == 0 && AZTribalRaiderBossREF.GetItemCount(AZWakeemHead) == 0) {
+    		AZTribalRaiderBossREF.AddItem(AZWakeemHead, 1);
+    		SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 31, 1);
+    	}
+
+    	if (Player.GetItemCount(AZLetiTribalHeirloom) == 0) {
+    		Player.AddItem(AZLetiTribalHeirloom, 1);
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014F36:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 005F98:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014F39:NovaArizona.esm

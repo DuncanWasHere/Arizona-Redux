@@ -1,0 +1,125 @@
+FormKey: 03387F:NovaArizona.esm
+EditorID: AZLvlTravelingMerchant
+FormVersion: 15
+Name: Traveling Merchant
+Model:
+  File: marker_creature.nif
+Configuration:
+  Flags:
+  - Respawn
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - ActorEffectList
+  - ModelAnimation
+  - Inventory
+Factions:
+- Faction: 0103EF:NovaArizona.esm
+  Unused: 0x4F444C
+- Faction: 01CD77:NovaArizona.esm
+  Unused: 0x4F444C
+- Faction: 0338E4:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 00002D:FalloutNV.esm
+Template: 01CD61:NovaArizona.esm
+Race: 038020:NovaArizona.esm
+UnarmedAttackAnimation: Any
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: 50
+  BuySellServices:
+  - Weapons
+  - Armor
+  - Alcohol
+  - Books
+  - Food
+  - Chems
+  - Stimpaks
+  - Miscellaneous
+  Teaches: Barter
+Packages:
+- 023619:FalloutNV.esm
+Class: 038041:NovaArizona.esm
+BaseHealth: 50
+Strength: 5
+Perception: 5
+Endurance: 5
+Charisma: 5
+Intelligence: 5
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 5
+  - Key: BigGuns
+    Value: 5
+  - Key: EnergyWeapons
+    Value: 5
+  - Key: Explosives
+    Value: 5
+  - Key: Lockpick
+    Value: 5
+  - Key: Medicine
+    Value: 5
+  - Key: MeleeWeapons
+    Value: 5
+  - Key: Repair
+    Value: 5
+  - Key: Science
+    Value: 5
+  - Key: SmallGuns
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Survival
+    Value: 5
+  - Key: Unarmed
+    Value: 5
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HairColor: '#004B3219'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+NAM5: 255
+Height: 1
+Weight: 1
+DATADataTypeState:
+- Break0

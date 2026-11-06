@@ -1,0 +1,48 @@
+FormKey: 01026B:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 020890:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x5C5939
+    UseEmotionAnimation: True
+    Unused3: 0x78353E
+  ResponseText: Security Order No. 1070. Oliver has ordered that anyone approaching the checkpoint is to be regarded as a Legion asset and treated with hostility.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x8A083D
+    UseEmotionAnimation: True
+    Unused3: 0x99993E
+  ResponseText: Wire's issued a communique that defines 'maximum hostility' as a shoot-on-sight order. Had to do it a couple of days ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x5C5939
+    UseEmotionAnimation: True
+    Unused3: 0x78353E
+  ResponseText: I, uh, couldn't bring myself to get rid of the body. Nobody could. It just sat there.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729235
+Choices:
+- 01026C:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, how come you don't let anyone in?

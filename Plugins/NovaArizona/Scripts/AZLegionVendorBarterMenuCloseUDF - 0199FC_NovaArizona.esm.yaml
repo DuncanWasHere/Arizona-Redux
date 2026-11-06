@@ -1,0 +1,231 @@
+FormKey: 0199FC:NovaArizona.esm
+EditorID: AZLegionVendorBarterMenuCloseUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 9
+    RefCount: 8
+    VariableCount: 24
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C6216000010000C000D00F503000001010A0001008016490002410058000053140A000100FFFF0400420158000053140A000100FFFF0400420F0158000053140A000100FFFF040042380158000004220A000100FFFF040042100107004C960000001E0000009B2716000300FFFF0500520300FFFF04004200FFFF0500491D0439151000010F00560400000C005604040009000039151000010F00560100000D005601040003000039151000010F00560100000E005601040004000039151000010F00560100000F005601040005000039151000010F005601000010005601040006000039151000010F005601000011005601040007000039151000010F005601000012005601040008000039151E00011D005601000013005205007800002F100B000100FFFF05005206002800391517000116005601000014005601000013005601000010000F00391513000112005601000015005601000014004219110080161300020B0056010000140042000607004C150200003A15280001270052050078000002101C000200FFFF0500520700FFFF0F00560100000F005601000015000E283A153200013100520500780000021026000200FFFF0500520800FFFF1900560100000E005601000014005601000015004219100F0E28811608000107004CE402000080161300020B0056010000140042000707004C9A0200003A15280001270052050078000002101C000200FFFF0500520700FFFF0F00560100000F005601000015000E283A153200013100520500780000021026000200FFFF0500520800FFFF1900560100000E00560100001400560100000F004219100E0E28811608000107004CE40200003A152100012000520500780000021015000200FFFF0500520800FFFF0800560100000E00283A152100012000520500780000021015000200FFFF0500520700FFFF0800560100000F00283A15270001260052050078000052101B000300FFFF0500520600FFFF0800560100001300FFFF04004201283A15270001260052050078000002101B000300FFFF0500520600FFFF0800560100000D00FFFF0400420128351422000200FFFF1300530E0073496E76656E746F727943617073FFFF090053040043617073351439000200FFFF1300530E00734E6F74456E6F75676843617073FFFF2000531B00596F7520646F6E2774206861766520656E6F75676820636170732E351428000200FFFF1000530B0073526570616972436F7374FFFF1200530D00436F73743A202564206361707370161D0029040000030800560304000F000800560100001700080056020000160039151D00011C005604000018005800002B260E000100FFFF080056020000160000AB2616000200FFFF0800560400001800FFFF08005601000017003C15000053150900010800560304000F0011000000
+  SourceCode: >-
+    name AZLegionVendorBarterMenuCloseUDF;
+
+
+    fn (int iMenuID) {
+        if (IsKeyPressed(1) ||
+            IsKeyPressed(15) ||
+            IsKeyPressed(56) ||
+            IsButtonPressed(16)) {
+            return;
+        }
+
+        SetOnMenuCloseEventHandler(AZLegionVendorBarterMenuCloseUDF, 0, 1053);
+
+        // Retrieve variables from quest
+        ref rVendor = AZLegionVendorBarterQuest.rVendor;
+        int iPlayerCaps = AZLegionVendorBarterQuest.iPlayerCaps;
+        int iPlayerDenarii = AZLegionVendorBarterQuest.iPlayerDenarii;
+        int iPlayerAurei = AZLegionVendorBarterQuest.iPlayerAurei;
+        int iPlayerLegionCoinValue = AZLegionVendorBarterQuest.iPlayerLegionCoinValue;
+        int iVendorCaps = AZLegionVendorBarterQuest.iVendorCaps;
+        int iVendorDenarii = AZLegionVendorBarterQuest.iVendorDenarii;
+
+        // Return Legion coins to player
+        int iPlayerLegionCoinValueNew = PlayerREF.GetItemCount(Caps001);
+        int iPlayerLegionCoinValueDifference = iPlayerLegionCoinValueNew - iPlayerLegionCoinValue;
+        int iPlayerAureiPayout = iPlayerLegionCoinValueDifference / 25;
+
+        if (iPlayerLegionCoinValueDifference > 0) { // If transaction was positive
+            PlayerREF.AddItem(MoneyLegion25, iPlayerAurei + iPlayerAureiPayout);
+            PlayerREF.AddItem(MoneyLegion1, iPlayerDenarii + (iPlayerLegionCoinValueDifference - (iPlayerAureiPayout * 25)));
+        } else if (iPlayerLegionCoinValueDifference < 0) { // If transaction was negative
+            PlayerREF.AddItem(MoneyLegion25, iPlayerAurei + iPlayerAureiPayout);
+            PlayerREF.AddItem(MoneyLegion1, iPlayerDenarii + (iPlayerLegionCoinValueDifference + (iPlayerAurei * 25)));
+        } else {
+            PlayerREF.AddItem(MoneyLegion1, iPlayerDenarii);
+            PlayerREF.AddItem(MoneyLegion25, iPlayerAurei);
+        }
+
+        // Return player's caps
+        PlayerREF.RemoveItem(Caps001, iPlayerLegionCoinValueNew, 1);
+        PlayerREF.AddItem(Caps001, iPlayerCaps, 1);
+
+    	// No longer changing these settings, modifying values directly now
+        // Convert item values back to caps
+        // SetNumericGameSetting("fBarterBuyBase", AZLegionVendorBarterQuest.fBarterBuyBaseDefault);
+        // SetNumericGameSetting("fBarterSellBase", AZLegionVendorBarterQuest.fBarterSellBaseDefault);
+
+        // Revert UI strings to use caps
+        con_SetGameSetting("sInventoryCaps", "Caps");
+        con_SetGameSetting("sNotEnoughCaps", "You don't have enough caps.");
+        con_SetGameSetting("sRepairCost", "Cost: %d caps");
+
+        for ([string sBaseItem, int iBaseValue] in AZLegionVendorBarterQuest.aItemValues) {
+            ref rBaseItem = StringToRef(sBaseItem);
+            SetValueAlt(rBaseItem, iBaseValue);
+        }
+
+        Ar_Erase(AZLegionVendorBarterQuest.aItemValues);
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerCaps
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerDenarii
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerAurei
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerLegionCoinValue
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerLegionCoinValueNew
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerLegionCoinValueDifference
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerAureiPayout
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorCaps
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorDenarii
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMenuID
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: rVendor
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rVendor_1
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerCaps_2
+  - Data:
+      Index: 14
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerDenarii_3
+  - Data:
+      Index: 15
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerAurei_4
+  - Data:
+      Index: 16
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerLegionCoinValue_5
+  - Data:
+      Index: 17
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iVendorCaps_6
+  - Data:
+      Index: 18
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iVendorDenarii_7
+  - Data:
+      Index: 19
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerLegionCoinValueNew_8
+  - Data:
+      Index: 20
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerLegionCoinValueDifference_9
+  - Data:
+      Index: 21
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iPlayerAureiPayout_10
+  - Data:
+      Index: 22
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 2
+      Unknown2: 0x00000000000000
+    Name: __temp_sBaseItem_11
+  - Data:
+      Index: 23
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_iBaseValue_12
+  - Data:
+      Index: 24
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rBaseItem_13
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 12
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 24
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199FC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0199FD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC7:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm

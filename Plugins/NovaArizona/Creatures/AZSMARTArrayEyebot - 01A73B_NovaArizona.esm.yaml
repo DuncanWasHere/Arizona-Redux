@@ -1,0 +1,86 @@
+FormKey: 01A73B:NovaArizona.esm
+EditorID: AZSMARTArrayEyebot
+FormVersion: 15
+Version2: 1
+ObjectBounds:
+  First: -17, -23, 0
+  Second: 17, 23, 159
+Name: Eyebot
+Model:
+  File: Creatures\Eyebot\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07D4F3:FalloutNV.esm
+- 021223:NovaArizona.esm
+UnarmedAttackAnimation: Any
+Models:
+- brain.nif
+- eyebot.nif
+ModelListTextures: 0x0200000004EEE90B65DBD36D566E690B65E0D36D56746F1974A91621F5EEDF0D65204337E76E5F0D65254337E7746F1974A91621F5F3DF0D65204337E7735F0D65254337E7746F1974A91621F5E5DF0863620B0115655F0863670B011573741074B3E1C96D09F4EF0665FB16D6C9746F06650017D6C9746F1974A91621F5EEDF0865C0F775346E5F0865C5F77534746F1974A91621F5F3DF0865C0F77534735F0865C5F77534746F1974A91621F5E5DF0863620B0115655F0863670B011573741074B3E1C96DEDE50965E9DACFDB6D650965EEDACFDB746F1974A91621F5F0E10C68FBF4023770610C6800F5023765720D74387A3871EEDF0E684AD2051D6E5F0E684FD2051D65720D74387A3871F3DF0E684AD2051D735F0E684FD2051D65720D74387A3871E7DF0865C0F77534675F0865C5F77534746F1974A91621F5
+Configuration:
+  Flags:
+  - Flies
+  - Walks
+  Fatigue: 50
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01D3FD:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 025C70:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 09C95A:FalloutNV.esm
+Destructible:
+  Data:
+    Health: 30
+    DESTCount: 1
+    VATSTargetable: True
+    Unused: 78
+  Stages:
+  - Data:
+      ModelDamageStage: 1
+      Flags:
+      - Disable
+      Explosion: 07078A:FalloutNV.esm
+      Debris: 0B8FF4:FalloutNV.esm
+      DebrisCount: 3
+Items:
+- Item:
+    Item: 022FF1:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 078CC2:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: 50
+  Mood: 842259712
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 01A73D:NovaArizona.esm
+Data:
+  Type: Robot
+  CombatSkill: 10
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 30
+  Damage: 1
+  Strength: 5
+  Perception: 5
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 96
+CombatStyle: 03A375:FalloutNV.esm
+BodyPartData: 02F870:FalloutNV.esm
+TurningSpeed: 50
+BaseScale: 1
+FootWeight: 15
+ImpactMaterialType: Metal
+SoundLevel: Normal
+InheritsSoundFrom: 05CF6E:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm

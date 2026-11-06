@@ -1,0 +1,58 @@
+FormKey: 03B7FC:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657373
+    UseEmotionAnimation: True
+    Unused3: 0x697465
+  ResponseText: Hmm. Good point, I suppose. It's been fine so far but one heavy rain and it's ruined.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E742C
+    UseEmotionAnimation: True
+    Unused3: 0x70706F
+  ResponseText: Okay. You've swayed me. DO NOT FOLD IT. If it's anything less than pristine, I will see you in Kingman's courthouse.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 30
+  Function: GetActorValue
+  FirstParameter: 44
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007203006E010000001C00020002100A0002007203006E0100000039100A0002007204006E0A000000A3110F0003007204006E1F0000006E01000000A2110F0003007204006E1E0000006E01000000
+  SourceCode: "AZDolanSpringsRuizREF.Removeitem AZChlorideRevoltQuestRuizDeed 1;\r\nPlayer.additem AZChlorideRevoltQuestRuizDeed 1;\r\nsetstage AZNeverbeFree 10;\r\nsetobjectivedisplayed azneverbefree 31 1;  \r\nsetobjectivecompleted azneverbefree 30 1;  "
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DF4D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03B807:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0331D3:NovaArizona.esm
+Prompt: What if it rains? You're risking a lot keeping it out in the elements.

@@ -1,0 +1,43 @@
+FormKey: 034201:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0341FF:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xD54B09
+    UseEmotionAnimation: True
+    Unused3: 0xD24B09
+  ResponseText: There's an intruder up there!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776316
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010033100A0002007203006E010000001C00020034100D0003007204007203006E01000000
+  SourceCode: >-
+    AZHavenDocREF.Say AZHavenIntroDialogueTopic02 1
+
+    AZHavenConvoTalkerREF.SayTo player AZHavenIntroDialogueTopic02 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034273:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034289:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034202:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

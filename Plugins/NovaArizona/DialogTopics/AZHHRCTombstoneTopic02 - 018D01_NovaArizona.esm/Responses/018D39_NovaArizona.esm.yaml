@@ -1,0 +1,39 @@
+FormKey: 018D39:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x005100
+    UseEmotionAnimation: True
+    Unused3: 0x005100
+  ResponseText: It's a little joke. It's where I'm from, back in Arizona. It got overrun by the Legion a couple decades ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x003000
+    UseEmotionAnimation: True
+    Unused3: 0x003000
+  ResponseText: At first, I thought, "well, as least the raiders are gone now". But, the Legion are just another bunch of raiders.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729243
+Choices:
+- 018CFD:NovaArizona.esm
+- 018D01:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's with the name?

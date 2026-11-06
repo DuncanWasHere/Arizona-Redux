@@ -1,0 +1,40 @@
+FormKey: 00E558:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You will some day, when you get serious about your ideals.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+Choices:
+- 039F1E:NovaArizona.esm
+- 00E4F5:NovaArizona.esm
+- 00E4FE:NovaArizona.esm
+- 00E505:NovaArizona.esm
+- 00E501:NovaArizona.esm
+- 00E508:NovaArizona.esm
+- 00E521:NovaArizona.esm
+- 00E526:NovaArizona.esm
+- 00E527:NovaArizona.esm
+- 00E52E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I don't believe you should be killed just because you disagree with me.

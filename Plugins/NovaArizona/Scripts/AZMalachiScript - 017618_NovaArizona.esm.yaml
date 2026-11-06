@@ -1,0 +1,33 @@
+FormKey: 017618:NovaArizona.esm
+EditorID: AZMalachiScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00BD00000000003A151000010F005201007800005E10040000002880162000021800580000A51111000200FFFF0500520200FFFF0400422D07004C76000000A21115000300FFFF0500520200FFFF0400422DFFFF040042018016510002490058000054100B000100FFFF0500520300420006580000A41111000200FFFF0500520400FFFF0400421A42000402580000A41111000200FFFF0500520400FFFF040042194200040207004CDE00000039100F000200FFFF0500520400FFFF040042FF11000000
+  SourceCode: >-
+    name AZMalachiScript;
+
+
+    OnDeath {
+    	AZWhiteSandsGuardREF.Evp();
+
+    	if (GetObjectiveDisplayed(AZMalpaisJournalistQuest, 45)) {
+    		SetObjectiveCompleted(AZMalpaisJournalistQuest, 45, 1);
+    	}
+
+    	if (GetDeadCount(AZChlorideJulius) > 0 && GetObjectiveCompleted(AZMalpaisAbuserQuest, 26) == 0 && GetObjectiveCompleted(AZMalpaisAbuserQuest, 25) == 0) {
+    		SetStage(AZMalpaisAbuserQuest, 255);
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175BF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E3B5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm

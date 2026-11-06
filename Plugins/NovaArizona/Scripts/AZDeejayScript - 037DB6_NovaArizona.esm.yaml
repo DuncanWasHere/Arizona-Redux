@@ -1,0 +1,167 @@
+FormKey: 037DB6:NovaArizona.esm
+EditorID: AZDeejayScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 16
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000C008500000016000F0007000B002058C61100002031203D3D5011000082110D00020019007A000000000000594082110D0002001A007A000000000000594082110D0002001B007A000000000000594082110D0002001D007A000000000000594082110D0002001C007A000000000000594082110D0002001E007A000000000000594019000000110000001000060000008700000016000D000A00090020730E00203120213D15000700730C000200203015000700730D000200203015000700730F0002002030150007007306000200203115000700730700020020301500070073080002002030150007007309000200203015000700730A000200203015000700730B000200203015000700730E00020020311900000011000000
+  SourceCode: >-
+    scn AZDeejayScript
+
+
+    ref bCurrentTarget			;for a script to swap to explosives based on target distance
+
+
+    short bCanBeHired			;introduction is finished and she can be freely hired and fired
+
+    short bCurrentlyHired		;duh
+
+    short bSentToLucky38		;duh
+
+    short bDoOnce				;redundancy to make sure her variables are correctly zeroed
+
+    short bSentToAerotech		;take a guess
+
+
+    int CombatStyleRanged
+
+    int CombatStyleMelee
+
+    int IsFollowingDefault
+
+    int IsFollowingLong
+
+    int FollowerSwitchAggressive
+
+    int Waiting
+
+
+    ;------------------------------------------------------
+
+
+    begin OnCombatEND
+
+    	if GetPlayerTeammate == 1
+    		resethealth
+    		restoreav perceptioncondition 100
+    		restoreav endurancecondition 100
+    		restoreav leftattackcondition 100
+    		restoreav leftmobilitycondition 100
+    		restoreav rightattackcondition 100
+    		restoreav rightmobilitycondition 100
+    	endif
+
+    end
+
+
+    ;---------------------------------------------------------
+
+
+    begin gamemode
+
+    	If (bDoOnce != 1)
+    		Set bCurrentlyHired to 0
+    		Set bSentToLucky38 to 0
+    		Set bSentToAerotech to 0
+    		Set CombatStyleRanged to 1
+    		Set CombatStyleMelee to 0
+    		Set IsFollowingDefault to 0
+    		Set IsFollowingLong to 0
+    		Set FollowerSwitchAggressive to 0
+    		Set Waiting to 0
+    		Set bDoOnce to 1
+    	EndIf
+
+    		;set bCurrentTarget to getcombattarget
+    			;if getdistance3d bCurrentTarget > 500
+    				;removeitem AZWeapNV357RevolverDeejay 1
+    				;if getitemcount AZWeapNVGrenadeRifleDeejay == 0
+    					;additem AZWeapNVGrenadeRifleDeejay 1
+    				;endif
+    				;equipitem AZWeapNVGrenadeRifleDeejay
+    			;endif
+    			;if getdistance3d bCurrentTarget < 500
+    				;removeitem AZWeapNVGrenadeRifleDeejay 1
+    				;if getitemcount AZWeapNV357RevolverDeejay == 0
+    					;additem AZWeapNV357RevolverDeejay 1
+    				;endif
+    				;equipitem AZWeapNV357RevolverDeejay
+    			;endif
+    end
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0x40B220120000000000000000
+      Unknown2: 0x696D466C617457
+    Name: bCurrentTarget
+  - Data:
+      Index: 6
+      Unknown: 0x80B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C665669730000
+    Name: CombatStyleRanged
+  - Data:
+      Index: 7
+      Unknown: 0x60B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734D616368696E
+    Name: CombatStyleMelee
+  - Data:
+      Index: 8
+      Unknown: 0x40B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D706C6548616C
+    Name: IsFollowingDefault
+  - Data:
+      Index: 9
+      Unknown: 0x20B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D706C65517561
+    Name: IsFollowingLong
+  - Data:
+      Index: 10
+      Unknown: 0x00B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x73000000000000
+    Name: FollowerSwitchAggressive
+  - Data:
+      Index: 11
+      Unknown: 0xE0D429120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x734C6561766573
+    Name: Waiting
+  - Data:
+      Index: 12
+      Unknown: 0x00B220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x73000000000000
+    Name: bCurrentlyHired
+  - Data:
+      Index: 13
+      Unknown: 0xE0B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x34000000000000
+    Name: bSentToLucky38
+  - Data:
+      Index: 14
+      Unknown: 0xC0B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000002010000
+    Name: bDoOnce
+  - Data:
+      Index: 15
+      Unknown: 0xA0B120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bSentToAerotech
+  - Data:
+      Index: 16
+      Unknown: 0x20B220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C665669730000
+    Name: bCanBeHired
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2

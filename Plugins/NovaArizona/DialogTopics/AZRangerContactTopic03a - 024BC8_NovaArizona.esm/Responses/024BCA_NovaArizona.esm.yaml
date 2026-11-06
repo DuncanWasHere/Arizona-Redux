@@ -1,0 +1,46 @@
+FormKey: 024BCA:NovaArizona.esm
+FormVersion: 15
+Quest: 008A16:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657075
+    UseEmotionAnimation: True
+    Unused3: 0x6E5468
+  ResponseText: Fuck, I knew I recognized you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x657075
+    UseEmotionAnimation: True
+    Unused3: 0x6E5468
+  ResponseText: Good to see a friendly face out here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698750
+Choices:
+- 024BCC:NovaArizona.esm
+- 024BCE:NovaArizona.esm
+- 024BD0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: "[NCR] Wait, you're an NCR Ranger, aren't you?"

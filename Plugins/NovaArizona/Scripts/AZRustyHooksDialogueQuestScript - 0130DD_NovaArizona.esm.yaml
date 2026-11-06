@@ -1,0 +1,158 @@
+FormKey: 0130DD:NovaArizona.esm
+EditorID: AZRustyHooksDialogueQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 41
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZRustyHooksDialogueQuestScript
+
+
+    int bPlayerKnowsBearEatsKylesShit ; Kinda self-explanatory
+
+    int bSidTalksBombs ; Sid knows the player knows about the bomb, wherever they heard it from
+
+    int bJillianExile ; Jillian left the Rusty Hooks after Kyle's death
+
+    int bBearWillKillKyle ; Bear told player he would have to kill Kyle
+
+    int iSidHelpingBearState ; 1 = Will not help ; 2 = Will help ; 3 = Has helped
+
+    int iJillianHelpingBearState ; 1 = Will not help ; 2 = Will help ; 3 = Has helped
+
+    int bBearSelfClue ; Bear dropped a clue about his own secret
+
+    int bJillianBearClue ; Jillian dropped a clue about Bear's secret
+
+    int bSidMentionedBomb ; Sid let it slip that Bear is a walking timebomb
+
+    int bSidSpilledTheBeans ; Sid opened up that Kyle planted a bomb in Bear's heart
+
+    int bPlayerKnowsAboutBomb ; Player knows about the bomb in Bear's heart
+
+    int bBearBombDisarmed ; Bear's heart bomb is disarmed
+
+    int bBearThinksBombDisarmed ; Bear thinks his heart bomb is disarmed, even if it isn't
+
+    int iPackFightState ; 0 = Pack fight not started ; 1 = Pack fight dialogue active ; 2 = Pack fight active ; 3 = Pack fight over
+
+    int iPackFightWinner ; 1 = Bear ; 2 = Kyle
+
+
+    int bGristleRecipe ; Gristle has shown the player how to scramble a Gila egg
+
+    int bGristleBackstory
+
+    int bGristleJob
+  LocalVariables:
+  - Data:
+      Index: 19
+      Unknown: 0x805D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x04781020000000
+    Name: iPackFightWinner
+  - Data:
+      Index: 20
+      Unknown: 0x605D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPackFightState
+  - Data:
+      Index: 21
+      Unknown: 0x205D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C665669730000
+    Name: bBearBombDisarmed
+  - Data:
+      Index: 22
+      Unknown: 0x005D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPlayerKnowsAboutBomb
+  - Data:
+      Index: 23
+      Unknown: 0xC05C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6F6B73426561
+    Name: bSidMentionedBomb
+  - Data:
+      Index: 26
+      Unknown: 0xA05C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bJillianBearClue
+  - Data:
+      Index: 27
+      Unknown: 0x805C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30320000000000
+    Name: bBearSelfClue
+  - Data:
+      Index: 28
+      Unknown: 0x405D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x0000008C9B7C10
+    Name: bBearThinksBombDisarmed
+  - Data:
+      Index: 31
+      Unknown: 0xA05D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00730500203120
+    Name: bGristleRecipe
+  - Data:
+      Index: 32
+      Unknown: 0xC05D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x355D1020000000
+    Name: bGristleBackstory
+  - Data:
+      Index: 33
+      Unknown: 0x80DA29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x31303030300000
+    Name: bGristleJob
+  - Data:
+      Index: 34
+      Unknown: 0x405C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x375D1010000000
+    Name: iSidHelpingBearState
+  - Data:
+      Index: 35
+      Unknown: 0x605C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30320000000000
+    Name: iJillianHelpingBearState
+  - Data:
+      Index: 36
+      Unknown: 0xE05C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3148616C665669
+    Name: bSidSpilledTheBeans
+  - Data:
+      Index: 37
+      Unknown: 0x205C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bBearWillKillKyle
+  - Data:
+      Index: 38
+      Unknown: 0x005C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30320000000000
+    Name: bJillianExile
+  - Data:
+      Index: 39
+      Unknown: 0xE05B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bSidTalksBombs
+  - Data:
+      Index: 41
+      Unknown: 0x805B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6700000000
+    Name: bPlayerKnowsBearEatsKylesShit

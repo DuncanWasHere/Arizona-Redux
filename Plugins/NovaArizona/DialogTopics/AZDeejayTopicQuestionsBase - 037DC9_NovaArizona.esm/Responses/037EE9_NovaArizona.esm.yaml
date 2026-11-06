@@ -1,0 +1,37 @@
+FormKey: 037EE9:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Random
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037DE7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ugh.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037E25:NovaArizona.esm
+- 037DCA:NovaArizona.esm
+- 037DCB:NovaArizona.esm
+- 037DCC:NovaArizona.esm
+- 037DCD:NovaArizona.esm
+- 037DCE:NovaArizona.esm
+- 037DD5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've got questions.

@@ -1,0 +1,71 @@
+FormKey: 03B82F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x766572
+  ResponseText: That was a joke. It wouldn't hurt though.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x766572
+  ResponseText: When I was being taken here, I was technically sold to some guy named Julius.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x537461
+    UseEmotionAnimation: True
+    Unused3: 0x736C61
+  ResponseText: He's a *real* asshole. Owns the quarry. I only know that because he told be 6 times in the 20 minute walk here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x206173
+    UseEmotionAnimation: True
+    Unused3: 0x2E204F
+  ResponseText: He also told me he signed an agreement with Caesar. Said it was a legal contract with the man himself.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Contract's null if the big guy is gone, right?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712236
+Choices:
+- 03B82C:NovaArizona.esm
+- 03B82D:NovaArizona.esm
+- 03B82E:NovaArizona.esm
+- 03B830:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you seriously want me to kill Caesar?

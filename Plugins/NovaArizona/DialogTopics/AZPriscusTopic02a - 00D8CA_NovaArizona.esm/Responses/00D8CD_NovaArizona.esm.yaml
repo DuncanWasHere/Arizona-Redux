@@ -1,0 +1,46 @@
+FormKey: 00D8CD:NovaArizona.esm
+FormVersion: 15
+Quest: 00D8C1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x736361
+    UseEmotionAnimation: True
+    Unused3: 0x646572
+  ResponseText: I do not miss.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x736361
+    UseEmotionAnimation: True
+    Unused3: 0x646572
+  ResponseText: The only explanation is the weapon.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x736361
+    UseEmotionAnimation: True
+    Unused3: 0x646572
+  ResponseText: Rest assured, Profligate. I am more than lethal with a faulty firearm.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718783
+Choices:
+- 00D8CE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Maybe it's you missing, not the rifle?

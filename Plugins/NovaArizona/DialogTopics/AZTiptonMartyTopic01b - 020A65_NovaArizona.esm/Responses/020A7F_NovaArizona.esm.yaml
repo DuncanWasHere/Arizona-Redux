@@ -1,0 +1,31 @@
+FormKey: 020A7F:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It does. Niemann's one of the few with the foresight to understand this. That's why he and I are partners.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785997
+Choices:
+- 020A64:NovaArizona.esm
+- 020A65:NovaArizona.esm
+- 020A66:NovaArizona.esm
+- 020A63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does ghoul supremacy extended to the chem trade?

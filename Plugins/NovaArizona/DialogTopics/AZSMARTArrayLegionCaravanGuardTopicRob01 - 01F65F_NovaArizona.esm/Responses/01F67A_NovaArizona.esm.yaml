@@ -1,0 +1,31 @@
+FormKey: 01F67A:NovaArizona.esm
+FormVersion: 15
+Quest: 01F58D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: On what authority?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791743
+Choices:
+- 01F660:NovaArizona.esm
+- 01F661:NovaArizona.esm
+- 01F668:NovaArizona.esm
+- 01F667:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Fuck this. We're demanding the medicine. Hand it over.

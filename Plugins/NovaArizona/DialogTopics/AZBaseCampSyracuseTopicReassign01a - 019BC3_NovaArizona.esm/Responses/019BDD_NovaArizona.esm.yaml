@@ -1,0 +1,67 @@
+FormKey: 019BDD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hmm. I suppose you're right. Fine. How about... Cottonwood Cove.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x652079
+    UseEmotionAnimation: True
+    Unused3: 0x207269
+  ResponseText: I'll need to get the paperwork in order, but I see no reason why it shouldn't be accepted. It's a fine post. I think he'll thrive there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Go tell him to pack his things. He'll be heading out in a day or so.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 4
+  Function: 573
+  FirstParameter: 1000413
+  SecondParameter: 1
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768678
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E9D00000015000A0072010073120002002031
+  SourceCode: >-
+    setstage AZBaseCampRomanceQuest 157
+
+    set AZBaseCampRomanceQuest.ArceusWasReassignedAsFavor to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019BB0:NovaArizona.esm
+Prompt: Caesar has personally recognized me as an asset to the Legion. Does my track record not speak for itself? Trust me on this.

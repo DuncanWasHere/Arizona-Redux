@@ -1,0 +1,70 @@
+FormKey: 03A103:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A102:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: But no body? Perhaps the death of my slave-courier was not intentional then...
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: What else?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100901046
+  SecondParameter: 6
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetHasNote
+  FirstParameter: 100901117
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100756608
+Choices:
+- 03A0ED:NovaArizona.esm
+- 03A0EE:NovaArizona.esm
+- 03A0F1:NovaArizona.esm
+- 03A0F2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x7D1105000100720100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0FD:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007305000B00207201007305002031202B15000A0072010073060002002031
+  SourceCode: >-
+    set AZMalpaisMarketSlaveQuest.iClue to AZMalpaisMarketSlaveQuest.iClue + 1
+
+    set AZMalpaisMarketSlaveQuest.iNote to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+Prompt: <Give Mini Bev-O-Rama Bill Of Sale> A missing Libertus' belongings were found with him.

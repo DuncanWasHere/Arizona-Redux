@@ -1,0 +1,45 @@
+FormKey: 022286:NovaArizona.esm
+EditorID: AZSMARTArrayTerminal03
+FormVersion: 15
+Version2: 2
+ObjectBounds: {}
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >2-
+      United States Radio Astronomy Observatory
+
+  Welcome, Dr. Meijer!
+
+
+  Connecting to SateLINK...
+
+  Request timed out.
+
+  Connection failed!
+Flags:
+- Unlocked
+ServerType: Server9
+MenuItems:
+- ItemText: Employee Control Panel
+  ResultText: ''
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: ThWACK Messenger
+  ResultText: ''
+  SubMenu: 022281:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Mailbox
+  ResultText: ''
+  SubMenu: 022280:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Documents
+  ResultText: ''
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

@@ -1,0 +1,67 @@
+FormKey: 00D1CF:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Version2: 1
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xAAAAFF
+    UseEmotionAnimation: True
+    Unused3: 0x499204
+  ResponseText: Great.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xAAAAFF
+    UseEmotionAnimation: True
+    Unused3: 0x499204
+  ResponseText: I'm making a big batch of Spicy Crambalaya, but I'm all out of Cram.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x626967
+    UseEmotionAnimation: True
+    Unused3: 0x68206F
+  ResponseText: Could you scrounge me up 10 cans of Cram?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 00D1D2:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+- 016123:NovaArizona.esm
+- 016058:NovaArizona.esm
+- 016236:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730200020020311C00010002100A0002007203006E01000000
+  SourceCode: >-
+    Set AZ3SomeCramQuest.CramQuest to 1
+
+    player.additem AZJambalayaQuestNOTE 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D1D1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0211EE:NovaArizona.esm
+Prompt: Sure.

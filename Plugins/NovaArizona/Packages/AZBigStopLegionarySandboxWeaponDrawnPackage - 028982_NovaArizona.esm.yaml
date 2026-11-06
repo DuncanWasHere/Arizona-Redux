@@ -1,0 +1,37 @@
+FormKey: 028982:NovaArizona.esm
+EditorID: AZBigStopLegionarySandboxWeaponDrawnPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- WeaponDrawn
+BehaviorFlags:
+- RandomConversations
+- ReactionToPlayerActions
+Flags:
+  MutagenObjectType: PackageSandbox
+  Flags:
+  - NoSleeping
+  - NoFurniture
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+  Radius: 4096
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

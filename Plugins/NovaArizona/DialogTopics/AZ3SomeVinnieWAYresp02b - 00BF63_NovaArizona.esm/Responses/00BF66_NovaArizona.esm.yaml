@@ -1,0 +1,43 @@
+FormKey: 00BF66:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x476C61
+    UseEmotionAnimation: True
+    Unused3: 0x6F6767
+  ResponseText: Not much for respect, are you?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x476C61
+    UseEmotionAnimation: True
+    Unused3: 0x6F6767
+  ResponseText: What rat-hole did you climb out of?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF17:NovaArizona.esm
+- 00BF48:NovaArizona.esm
+- 00BF5E:NovaArizona.esm
+- 00BF6A:NovaArizona.esm
+- 00BF6C:NovaArizona.esm
+- 00BF1B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Sorry, I was just teasing you.

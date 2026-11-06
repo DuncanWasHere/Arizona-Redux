@@ -1,0 +1,18 @@
+FormKey: 024DE8:NovaArizona.esm
+EditorID: AZBigStopAlbaNoxScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A0014000000000039150C00010B0056010100030042000011000000
+  SourceCode: >-
+    name AZBigStopAlbaNoxScript;
+
+
+    OnDeath {
+        AZBigStopAugustQuest.NoxHasTarget = 0;
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm

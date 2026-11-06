@@ -1,0 +1,187 @@
+FormKey: 024846:NovaArizona.esm
+EditorID: AZHavenMurderQuest
+FormVersion: 15
+Script: 0342A7:NovaArizona.esm
+Name: I Have Sinned
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 28018
+Stages:
+- {}
+- Index: 1
+  LogEntries:
+  - Flags: []
+    Entry: Fake Haven quest start.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E010000006E01000000
+      SourceCode: SetObjectiveDisplayed AZHavenMurderQuest 1 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024846:NovaArizona.esm
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Help Murray spread the word about the vote.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000A3110F0003007201006E0A0000006E01000000A3110F0003007201006E0B0000006E01000000A3110F0003007201006E0C0000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZHavenMurderQuest 5 1
+
+        SetObjectiveDisplayed AZHavenMurderQuest 10 1
+
+        SetObjectiveDisplayed AZHavenMurderQuest 11 1
+
+        SetObjectiveDisplayed AZHavenMurderQuest 12 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024846:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Return to Murray to call the vote.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E01000000A3110F0003007201006E0F0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZHavenMurderQuest 10 1
+
+        SetObjectiveDisplayed AZHavenMurderQuest 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 024846:NovaArizona.esm
+- Index: 88
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 99
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 5
+  Description: Make a verdict on the Job situation.
+- Index: 10
+  Description: Talk to the people about how they intend to vote.
+  Targets:
+  - Target: 024BB0:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 5
+  - Target: 01BBA7:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 6
+  - Target: 0058A9:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 14
+  - Target: 039F15:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 15
+  - Target: 022F9D:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 16
+  - Target: 0192B7:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 10
+  - Target: 01BBA6:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 7
+  - Target: 00E578:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 8
+  - Target: 019D55:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 18
+  - Target: 01BBAA:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 17
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 9
+  - Target: 01BBA5:NovaArizona.esm
+    Unused: 0x7C102A
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100812870
+      SecondParameter: 19
+- Index: 1
+  Description: Quest isn't complete, sorry!
+- Index: 11
+  Description: (Optional) Convince a majority of the people to spare Job from execution.
+- Index: 12
+  Description: (Optional) Convince a majority of the people to execute Job.
+- Index: 15
+  Description: Return to Murray once you have made a decision regarding Job.
+  Targets:
+  - Target: 01BBA6:NovaArizona.esm
+    Unused: 0x746D2C
+- Index: 20
+  Description: (Optional) Heal Sharky.
+- Index: 25
+  Description: (Optional) Find the missing water chip.
+- Index: 30
+  Description: Decide how to carry out Job's execution.
+- Index: 40
+  Description: Decide how to spare Job.
+- Index: 50
+  Description: Return to Murray.
+  Targets:
+  - Target: 01BBA6:NovaArizona.esm
+    Unused: 0x412F22

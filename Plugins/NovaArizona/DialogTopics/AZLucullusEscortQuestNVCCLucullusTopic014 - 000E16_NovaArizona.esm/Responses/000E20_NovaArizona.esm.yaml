@@ -1,0 +1,30 @@
+FormKey: 000E20:NovaArizona.esm
+FormVersion: 15
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: 000E19:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x448E1B
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, we shouldn't waste any more time.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+Choices:
+- 000E12:NovaArizona.esm
+- 000E13:NovaArizona.esm
+- 000E16:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Can you answer some more questions?

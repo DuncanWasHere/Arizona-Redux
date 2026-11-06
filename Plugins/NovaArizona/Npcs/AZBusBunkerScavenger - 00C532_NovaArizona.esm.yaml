@@ -1,0 +1,129 @@
+FormKey: 00C532:NovaArizona.esm
+EditorID: AZBusBunkerScavenger
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Lonely Wanderer
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Fatigue: 50
+  Level: 7
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 00C53A:NovaArizona.esm
+  Rank: -1
+  Unused: 0x4F444C
+Voice: 019FD2:FalloutNV.esm
+Race: 0042C3:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 00432C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 020423:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: FactionOwner
+      Faction: 00C53A:NovaArizona.esm
+      RequiredRank: -1
+    ItemCondition: 1
+- Item:
+    Item: 020799:FalloutNV.esm
+    Count: 2
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: Annoyed
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 00C53C:NovaArizona.esm
+Class: 00A679:LonesomeRoad.esm
+BaseHealth: 125
+Strength: 7
+Perception: 5
+Endurance: 5
+Intelligence: 5
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 5
+  - Key: BigGuns
+    Value: 5
+  - Key: EnergyWeapons
+    Value: 5
+  - Key: Explosives
+    Value: 5
+  - Key: Lockpick
+    Value: 5
+  - Key: Medicine
+    Value: 5
+  - Key: MeleeWeapons
+    Value: 5
+  - Key: Repair
+    Value: 5
+  - Key: Science
+    Value: 5
+  - Key: SmallGuns
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Survival
+    Value: 5
+  - Key: Unarmed
+    Value: 5
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 55
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 55
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 55
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 02E379:FalloutNV.esm
+- 073D56:FalloutNV.esm
+Hair: 02A185:FalloutNV.esm
+HairLength: 0
+Eyes: 004256:FalloutNV.esm
+HairColor: '#004B3219'
+CombatStyle: 0B2945:FalloutNV.esm
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x2BD7883E8C20193E716BB4BE2D458E3EFC25233E7CCCF3BEB09898BD32DE783F999D913F402DC63EE7DE863FDA20213FC05A04BEA08087BEDC06F83ED08131BED6BACFBFD61611BF2C46CF3E1236FABE88A0383FBC3015BFFCD3753E7C888A3EAB23093E1AA6673E05A28B3F98CC9BBFE2E11D3F2F8444C0C21B88BF22FA913EF8CDDF3ED7AEFBBECDE7DFBF886909408E86ACBEF67B2340E30E2C40E6F811BF10BC8D3E42B73BC084A10A4040961D3E60A70C3F60A3793DFAD414C0D356843FB8D6AD3F60EB183E
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x52B8BEBF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+NAM5: 255
+DATADataTypeState:
+- Break0

@@ -1,0 +1,67 @@
+FormKey: 01EFF7:NovaArizona.esm
+EditorID: AZChildrenFollowAguPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- DefensiveCombat
+Unused: 105
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 25445
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 008FB9:NovaArizona.esm
+  CountOrDistance: 128
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100789369
+  SecondParameter: 36
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100789369
+  SecondParameter: 36
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 00C45B:NovaArizona.esm
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 3
+      Enabled: 1
+    CompiledScript: 0x1C0001005E1000001C0002005E1000001C0003005E100000
+    SourceCode: >-
+      AZBigStopLegionExecutioner01Ref.evp
+
+      AZBigStopLegionExecutioner02Ref.evp
+
+      AZBigStopLegionExecutioner04Ref.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008F22:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008F86:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 008FBA:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

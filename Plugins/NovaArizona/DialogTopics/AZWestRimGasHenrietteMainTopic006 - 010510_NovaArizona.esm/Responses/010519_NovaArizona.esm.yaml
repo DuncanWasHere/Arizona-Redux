@@ -1,0 +1,49 @@
+FormKey: 010519:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Mars is the architect of everything you see around you. The rocks, the plants, all of it is His creation.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In return for having given us this world, Mars asks us to behave righteously and with good intention.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+Choices:
+- 01C1EC:NovaArizona.esm
+- 01C1ED:NovaArizona.esm
+- 01C1EE:NovaArizona.esm
+- 01C1EF:NovaArizona.esm
+- 01050D:NovaArizona.esm
+- 01050E:NovaArizona.esm
+- 010510:NovaArizona.esm
+- 01C1F0:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who is Mars?

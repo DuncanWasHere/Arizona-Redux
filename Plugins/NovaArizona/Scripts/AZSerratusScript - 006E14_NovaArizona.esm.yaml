@@ -1,0 +1,36 @@
+FormKey: 006E14:NovaArizona.esm
+EditorID: AZSerratusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00FE0000000000801621000219005800003B1011000200FFFF0500520100FFFF040042FF1507004CDD000000801619000211005800008E110A000100FFFF0400420107004C8600000002100F000200FFFF0500520200FFFF04004201811608000107004CDD00000080162100021900580000131206000100020058000013120600010004000107004CCA00000002100F000200FFFF0500520200FFFF04004201811608000107004CDD00000002100F000200FFFF0500520300FFFF0400420139150C00010B00560101000700420100A31115000300FFFF0500520100FFFF04004217FFFF04004200A31115000300FFFF0500520100FFFF04004218FFFF0400420011000000
+  SourceCode: >-
+    name AZSerratusScript;
+
+
+    OnDeath {
+        if (!GetStageDone(AZMalpaisBountyQuest, 255)) {
+            if (IsLimbGone(1)) {
+                AddItem(AZserratusHeadMangled, 1);
+            } else if (IsInCriticalStage(GooEnd) || IsInCriticalStage(DisintegrateEnd)) {
+                AddItem(AZserratusHeadMangled, 1);
+            } else {
+                AddItem(AZserratusHead, 1);
+            }
+        }
+
+        AZMalpaisBountyQuest.iSerratusDead = 1;
+
+        SetObjectiveDisplayed(AZMalpaisBountyQuest, 23, 0);
+        SetObjectiveDisplayed(AZMalpaisBountyQuest, 24, 0);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006F48:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006E2A:NovaArizona.esm

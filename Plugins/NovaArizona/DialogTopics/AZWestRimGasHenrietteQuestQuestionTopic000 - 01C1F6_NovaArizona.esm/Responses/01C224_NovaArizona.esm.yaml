@@ -1,0 +1,50 @@
+FormKey: 01C224:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01050B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A slave is a body. A Legionary is his blade. A Legatus is his name. A Centurion is his armor.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Without it, he is also without rank, and cannot lead his men in the Eternal Battle.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712179
+Choices:
+- 01C1F6:NovaArizona.esm
+- 01C1F7:NovaArizona.esm
+- 01C1F8:NovaArizona.esm
+- 01C1F9:NovaArizona.esm
+- 01C1FA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B00560101000700420100
+  SourceCode: AZFreeformWestRimGas.bLearnedEternalBattle = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01050B:NovaArizona.esm
+Prompt: May I ask why their armor is so important?

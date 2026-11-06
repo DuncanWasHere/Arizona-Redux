@@ -1,0 +1,43 @@
+FormKey: 00D076:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: 00D075:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Yeah well if you think I look funny you can always stop looking at me, the door to somewhere else is over there.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D053:NovaArizona.esm
+- 00D054:NovaArizona.esm
+- 00D055:NovaArizona.esm
+- 00D056:NovaArizona.esm
+- 00D057:NovaArizona.esm
+- 00D058:NovaArizona.esm
+- 00D05F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Just look at you, man. You're all sweaty and wet. You can't go out trading like that.
+ActorValuePerk: 0004B5:FalloutNV.esm

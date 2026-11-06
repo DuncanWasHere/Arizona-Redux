@@ -1,0 +1,160 @@
+FormKey: 013B79:NovaArizona.esm
+EditorID: AZMalpaisGateGuard01
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Malpais Gate Guard
+Model:
+  File: marker_creature.nif
+Configuration:
+  Flags:
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - ActorEffectList
+  - AIData
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1252C7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1425A7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 008C8F:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 0341E6:NovaArizona.esm
+Template: 008C4C:NovaArizona.esm
+Race: 0038E6:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 01EFA7:NovaArizona.esm
+Items:
+- Item:
+    Item: 0F26ED:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0F52B6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1252C6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165748:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165760:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Average
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+Packages:
+- 014F4C:NovaArizona.esm
+Class: 127736:FalloutNV.esm
+BaseHealth: 50
+Strength: 5
+Perception: 5
+Endurance: 5
+Charisma: 5
+Intelligence: 5
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 5
+  - Key: BigGuns
+    Value: 5
+  - Key: EnergyWeapons
+    Value: 5
+  - Key: Explosives
+    Value: 5
+  - Key: Lockpick
+    Value: 5
+  - Key: Medicine
+    Value: 5
+  - Key: MeleeWeapons
+    Value: 5
+  - Key: Repair
+    Value: 5
+  - Key: Science
+    Value: 5
+  - Key: SmallGuns
+    Value: 5
+  - Key: Sneak
+    Value: 5
+  - Key: Speech
+    Value: 5
+  - Key: Survival
+    Value: 5
+  - Key: Unarmed
+    Value: 5
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 0306BE:FalloutNV.esm
+HairLength: 0.2801437
+Eyes: 004255:FalloutNV.esm
+HairColor: '#00150E06'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x9039DFBD7A36B13F3D8E983FC8BAE63FE187553FC40441C02A2495BE061B2540B7E2C83F9271C0BDD8D8B03E11BBC1BE2C8B863FA7E26FC03D13B3BF8E3DE63FA0DA59BEF8B7143E73C60DC0ECEC74BF108E653D108022BF1CDD873FBFE00BBF887F12BF3AAC174050E121BF6ECCCABFB40C833E1073553E8407043F4D932CC0AFB9144073A55440ACDDC73F38DE373E9A4E27402080F63E969D0DC024C8CCC034850F406C1D4F3F81C2B5C0A73E93C02E869BC01F096E40981CA23E206C7240C646A14005DE7D3F
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+NAM5: 255
+DATADataTypeState:
+- Break0

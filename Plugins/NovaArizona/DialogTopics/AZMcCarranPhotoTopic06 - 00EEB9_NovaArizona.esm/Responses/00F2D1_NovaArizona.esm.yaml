@@ -1,0 +1,38 @@
+FormKey: 00F2D1:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: 00F1EA:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You've done well with the Frumentarii intel. Out of curiosity, have you encountered a Frumentarius agent named Cato Hostilius?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetQuestVariable
+  FirstParameter: 100728865
+  SecondParameter: 23
+Choices:
+- 00EECC:NovaArizona.esm
+- 00EECF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you need more Frumentarii pictures?

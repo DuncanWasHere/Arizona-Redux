@@ -1,0 +1,45 @@
+FormKey: 01023B:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01023A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] No. No, I wouldn't. Ah, hell. I'll let the refugees through. Just know, if anything happens, it's on your head."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729236
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+Choices:
+- 010253:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E16000000
+  SourceCode: setstage AZDamNQuest2 22
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+Prompt: "[NCR Rep] Look, I'm a hero in the NCR. You wouldn't say no to a hero, would you?"

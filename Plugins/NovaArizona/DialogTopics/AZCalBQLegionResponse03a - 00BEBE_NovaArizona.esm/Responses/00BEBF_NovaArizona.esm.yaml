@@ -1,0 +1,62 @@
+FormKey: 00BEBF:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20686F
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: A god, huh?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x20686F
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: That's what that egghead is calling himself these days?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x20686F
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: 'Let me tell you something: One day, that god of yours will die like any other man.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x20686F
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: We'll see how his "godhood" works out when he's coughing up blood.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 039F07:NovaArizona.esm
+- 0052BC:NovaArizona.esm
+- 0052C5:NovaArizona.esm
+- 0052C7:NovaArizona.esm
+- 0052CC:NovaArizona.esm
+- 0052CF:NovaArizona.esm
+- 0052D5:NovaArizona.esm
+- 0052D9:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: To not worship them is to deny Caesar godhood.

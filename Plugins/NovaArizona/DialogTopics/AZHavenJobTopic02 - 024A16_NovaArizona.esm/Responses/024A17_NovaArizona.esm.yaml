@@ -1,0 +1,50 @@
+FormKey: 024A17:NovaArizona.esm
+FormVersion: 15
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xFB0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I don't know. Go back to ant farming, I suppose.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xE90D00
+    UseEmotionAnimation: True
+    Unused3: 0x000800
+  ResponseText: I once read that the greatest ownership a person can have on someone is holding a debt over them. I owe a debt to everyone here.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6D20
+    UseEmotionAnimation: True
+    Unused3: 0x766174
+  ResponseText: I don't think I can ever pay this debt off.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+Choices:
+- 039F40:NovaArizona.esm
+- 01BBB8:NovaArizona.esm
+- 024A16:NovaArizona.esm
+- 039F3E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What will you do now that you have been cleared of murder?

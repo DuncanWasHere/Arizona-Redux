@@ -1,0 +1,64 @@
+FormKey: 00E028:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00DE1A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You would? Excellent.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Find Autonous, determine if he is threat to the Legion or himself, and then return to me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720529
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 4
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100720154
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100720154
+  SecondParameter: 3
+Choices:
+- 00DF9C:NovaArizona.esm
+- 00DF9E:NovaArizona.esm
+- 00DFA2:NovaArizona.esm
+- 00DFE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E05000000
+  SourceCode: SetStage AZStatioFindFriendQuest 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+Prompt: I can check in on your friend Autonous.

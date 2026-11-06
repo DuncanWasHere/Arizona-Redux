@@ -1,0 +1,61 @@
+FormKey: 00D8D8:NovaArizona.esm
+EditorID: AZWeapKnifeUnique
+FormVersion: 15
+ObjectBounds:
+  First: -1, -7, -1
+  Second: 3, 23, 1
+Name: Insidiator
+Model:
+  File: Weapons\1HandMelee\RustyKnife.NIF
+  AlternateTextures:
+  - Name: RustyKitchenKnife:0
+    NewTexture: 00D8D9:NovaArizona.esm
+LargeIconFilename: Interface\Icons\PipboyImages\Weapons\weapons_knife.dds
+ObjectEffect: 02F254:NovaArizona.esm
+RepairList: 0CC83C:FalloutNV.esm
+EquipmentType: MeleeWeapons
+PickUpSound: 0854E0:FalloutNV.esm
+DropSound: 0854DF:FalloutNV.esm
+VatsAttackName: Back Slash
+ImpactDataSet: 060A0F:FalloutNV.esm
+FirstPersonModel: 00D8F8:NovaArizona.esm
+SoundBlock: 0BF0EF:FalloutNV.esm
+SoundEquip: 08B5B2:FalloutNV.esm
+SoundUnequip: 08B5B3:FalloutNV.esm
+Value: 30
+Health: 150
+Weight: 1
+BaseDamage: 14
+ClipSize: 12
+AnimationType: Melee1Hand
+AnimationMultiplier: 1
+Reach: 0.5
+Flags:
+- NpcsUseAmmo
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+BaseVatsToHitChance: 10
+AttackAnimation: Default
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 2000
+OnHit: DismemberOnly
+AnimationAttackMultiplier: 1.3
+OverrideActionPoints: 20
+AttackShotsPerSec: 2.9999995
+Skill: 42
+LimbDamageMult: 1
+ResistType: -1
+PowerAttackAnimationOverride: AttackCustom3Power
+StrengthReq: 1
+SkillReq: 25
+CriticalDamage: 20
+CriticalPercentMult: 2
+CriticalOnDeath: True
+Vats:
+  VatsSkill: 50
+  VatsDamageMult: 0.7
+  VatsAp: 16
+  VatsSilent: True
+SoundLevel: Silent

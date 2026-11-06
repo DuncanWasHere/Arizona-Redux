@@ -1,0 +1,79 @@
+FormKey: 01746D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 01746C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xDD0D00
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, well, well. If it isn't the Legion's favorite celebrity. Heard you got invited to speak with the big guy himself.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x001900
+    UseEmotionAnimation: True
+    Unused3: 0xE50047
+  ResponseText: Oh, sorry, let me introduce myself. I'm Stanley Hartford, a reporter of Radio New Vegas, and I would like to interview you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 34
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 3
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 1474319
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 1219860
+  SecondParameter: 7
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174AF:NovaArizona.esm
+- 0174B7:NovaArizona.esm
+- 0174B9:NovaArizona.esm
+- 0174BB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A007202007315000200203115000A00720200732200020020311C000100221002000000
+  SourceCode: >-
+    set AZMalpaisJournalistQuest.bStanleyInterviewOffered to 1
+
+    set AZMalpaisJournalistQuest.bStanleyMet to 1
+
+    AZMalpaisChildGreeterREF.disable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020880:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm

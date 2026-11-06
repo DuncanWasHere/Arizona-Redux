@@ -1,0 +1,39 @@
+FormKey: 01EC8A:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x68436F
+    UseEmotionAnimation: True
+    Unused3: 0x626C65
+  ResponseText: I am a Follower. We're called that because we follow the sounds of children crying.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x68436F
+    UseEmotionAnimation: True
+    Unused3: 0x626C65
+  ResponseText: That sounded better in my head, but there is plenty of that here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01ECA0:NovaArizona.esm
+- 01ECA1:NovaArizona.esm
+- 01EC8D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are you doing here?

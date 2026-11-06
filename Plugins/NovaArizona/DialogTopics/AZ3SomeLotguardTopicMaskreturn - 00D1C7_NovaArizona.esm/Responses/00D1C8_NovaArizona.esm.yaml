@@ -1,0 +1,54 @@
+FormKey: 00D1C8:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x207468
+    UseEmotionAnimation: True
+    Unused3: 0x666F72
+  ResponseText: Thanks a lot, pal.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100685720
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100716990
+  RunOnType: Target
+Choices:
+- 00D15B:NovaArizona.esm
+- 00D15C:NovaArizona.esm
+- 00D15D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000A3110F0003007203006E1E0000006E0100000039100A0002007203006E1E000000
+  SourceCode: >-
+    player.removeitem azdamiensweldingmask 1
+
+    SetObjectiveDisplayed AZDamienMaskQuest 30 1;
+
+    SetStage AZDamienMaskQuest 30
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D1BE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D1C2:NovaArizona.esm
+Prompt: Here's your mask

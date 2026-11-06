@@ -1,0 +1,43 @@
+FormKey: 01D77E:NovaArizona.esm
+EditorID: AZInferno
+FormVersion: 15
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 6, 6, 23
+Name:
+  TargetLanguage: English
+  Value: Inferno
+Model:
+  File: AZNovaArizona\Clutter\Health\AZinferno.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_antivenom.dds
+EquipmentType: Chems
+Weight: 0.5
+Flags:
+- 0x100
+- 0x200
+- 0x400
+- 0x800
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+Effects:
+- BaseEffect: 033595:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 10
+    ActorValue: Health
+- BaseEffect: 01D799:NovaArizona.esm
+  Data:
+    Magnitude: 50
+    Duration: 60
+    ActorValue: FireResistance

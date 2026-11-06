@@ -1,0 +1,35 @@
+FormKey: 0209DC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8A4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x834F0B
+  ResponseText: Yes? I do have something for you. Not simple drug running. Are you interested?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100796571
+Choices:
+- 0209DE:NovaArizona.esm
+- 0209DF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm looking for work.

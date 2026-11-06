@@ -1,0 +1,41 @@
+FormKey: 016CA7:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, believe me, he would, *if* he were not receiving sufficient tribute regardless.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am no fool. Should the scales be uneven, I split the difference, and everyone remains satisfied. ...Until it comes time to settle debts.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 121FF0:FalloutNV.esm
+Choices:
+- 016BA5:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm surprised that Caesar hasn't already held you accountable for that.

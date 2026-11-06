@@ -1,0 +1,40 @@
+FormKey: 01752B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 01752A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742077
+    UseEmotionAnimation: True
+    Unused3: 0x626520
+  ResponseText: '[FAILED] I have no time for fame. This bridge will not repair itself. Leave me to my work.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+Choices:
+- 017523:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Come on. Think of the fame to be had.
+ActorValuePerk: 0004BB:FalloutNV.esm

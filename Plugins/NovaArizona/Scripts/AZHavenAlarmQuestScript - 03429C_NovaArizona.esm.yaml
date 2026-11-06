@@ -1,0 +1,45 @@
+FormKey: 03429C:NovaArizona.esm
+EditorID: AZHavenAlarmQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    VariableCount: 1
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000060000001C01000080161300020B0056010000010042000407004C6A0000003A151000010F005201007800002110040000002839150C00010B00560100000100420100811608000107004C3B01000080161300020B0056010000010042010407004C9D00000039150C00010B00560100000100420200811608000107004C3B01000080161300020B0056010000010042020407004CD000000039150C00010B00560100000100420300811608000107004C3B01000080161300020B0056010000010042030407004C170100003A151000010F005201007800002210040000002839150C00010B00560100000100420400811608000107004C3B01000080161300020B0056010000010042040407004C3B010000371009000100FFFF050052020011000000
+  SourceCode: >-
+    name AZHavenAlarmQuestScript;
+
+
+    int DoOnce;
+
+
+    GameMode {
+        if (DoOnce == 0) {
+            AZHavenAlarmParentMarkerREF.Enable();
+            DoOnce = 1;
+        } else if (DoOnce == 1) {
+            DoOnce = 2;
+        } else if (DoOnce == 2) {
+            DoOnce = 3;
+        } else if (DoOnce == 3) {
+            AZHavenAlarmParentMarkerREF.Disable();
+            DoOnce = 4;
+        } else if (DoOnce == 4) {
+            StopQuest(AZHavenAlarmQuest);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03429A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03429D:NovaArizona.esm

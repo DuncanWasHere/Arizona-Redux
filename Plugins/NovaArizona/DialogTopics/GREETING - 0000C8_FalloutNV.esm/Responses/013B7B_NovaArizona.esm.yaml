@@ -1,0 +1,33 @@
+FormKey: 013B7B:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 016C88:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E5468
+    UseEmotionAnimation: True
+    Unused3: 0x6C6420
+  ResponseText: Halt! You must disarm if you're to enter Camp Malpais.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsVoiceType
+  FirstParameter: 100876774
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100699588
+  SecondParameter: 1
+Choices:
+- 013B7C:NovaArizona.esm
+- 013B7D:NovaArizona.esm
+- 013B7E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

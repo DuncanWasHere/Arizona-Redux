@@ -1,0 +1,41 @@
+FormKey: 01DB34:NovaArizona.esm
+FormVersion: 15
+Quest: 00DBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Historically, I operated the comms equipment to serve various purposes for various people.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Presently, I guess I'm playing telephone with an army of hare-brained thugs who barely understand what a radio is, much less how one works.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100748893
+Choices:
+- 01DB24:NovaArizona.esm
+- 01DB25:NovaArizona.esm
+- 01DB26:NovaArizona.esm
+- 01DB27:NovaArizona.esm
+- 01DB28:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you do here?

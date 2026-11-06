@@ -1,0 +1,69 @@
+FormKey: 033B5E:NovaArizona.esm
+EditorID: AZNewtCatherineTimerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000CB00000016000D0002000900207302002030203D3D15000D00660400080020582F2802000000150007007302000200203118000D0006000900207302002031203D3D1600150001001100206601002066040020302E3034202B203C391513000112005600000001005800002F28040000000017000200020015000A007201007303000200203037100500010072020019000000190000001600230001001F0020720300582E1000002031203D3D2072030058231000002031203D3D207C7C3710050001007202001900000011000000
+  SourceCode: >-
+    scn AZNewtCatherineTimerScript
+
+
+    float iTimer
+
+    float CatherineVariable
+
+    short DoOnce
+
+
+    BEGIN GameMode
+
+
+    if DoOnce == 0
+    	Set CatherineVariable to GetGameDaysPassed
+    	Set DoOnce to 1
+    elseif DoOnce == 1
+    	if iTimer < CatherineVariable + 0.04
+    		iTimer = GetGameDaysPassed
+    	else
+    		Set AZFreeformNewt.CatherinePissed to 0
+    		StopQuest AZNewtCatherineTimer
+    	endif
+    endif
+
+
+
+
+    if AZNewtCatherineREF.GetDead == 1  || AZNewtCatherineREF.GetDisabled == 1
+    	StopQuest AZNewtCatherineTimer
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x60BB20120000000000000000
+      Unknown2: 0x31303030300000
+    Name: iTimer
+  - Data:
+      Index: 2
+      Unknown: 0x40DD29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6730310000
+    Name: DoOnce
+  - Data:
+      Index: 4
+      Unknown: 0x80BB20120000000000000000
+      Unknown2: 0x706C6173683032
+    Name: CatherineVariable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D34:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033B5F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033B60:NovaArizona.esm

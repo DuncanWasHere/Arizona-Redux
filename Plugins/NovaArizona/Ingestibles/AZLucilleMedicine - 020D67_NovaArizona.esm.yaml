@@ -1,0 +1,32 @@
+FormKey: 020D67:NovaArizona.esm
+MajorRecordFlagsRaw: 1024
+EditorID: AZLucilleMedicine
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- QuestItemPersistentReference
+Name:
+  TargetLanguage: English
+  Value: Medicine Pouch
+Model:
+  File: clutter\HealingPowder\HealingPowder.NIF
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_healing_powder.dds
+EquipmentType: Chems
+Weight: 0.03
+Value: 5
+Flags:
+- NoAutoCalc
+ConsumeSound: 026EB6:FalloutNV.esm
+Effects:
+- BaseEffect: 00014E:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 18
+    ActorValue: Health
+- BaseEffect: 032DE3:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 18
+    ActorValue: Perception
+MajorFlags:
+- QuestItem

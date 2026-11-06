@@ -1,0 +1,174 @@
+FormKey: 0121CC:NovaArizona.esm
+EditorID: AZMainHandlerQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967267
+    RefCount: 30
+    VariableCount: 2
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000A005000080161300020B0056010100010042000607004CE100000080161700020F005202007800002E10040000002807004C690000003A151000010F00520300780000221004000000283A151000010F00520400780000211004000000283A151000010F00520500780000211004000000283A151000010F00520600780000211004000000283A151000010F00520700780000211004000000283A151000010F00520800780000211004000000283A151000010F005209007800002110040000002880161A00021200470A004228085601000002004228070207004C230100003A151000010F00520B007800002110040000002839150C00010B0056010000020042280080161000020800470A00423C0607004CBC0100003A151000010F00520400780000221004000000283A151000010F00520500780000221004000000283A151000010F00520600780000221004000000283A151000010F00520700780000221004000000283A151000010F00520800780000221004000000283A151000010F0052090078000022100400000028371009000100FFFF0500520C0080162100021900520D007800002F100B000100FFFF0500520E002842000607004C3304000080163D000235005800003B1011000200FFFF0500520F00FFFF040042074200045800003B1011000200FFFF0500521000FFFF040042054200040207004CC20200003A151000010F00521100780000211004000000283A151000010F00521200780000211004000000283A151000010F00521300780000211004000000283A151000010F00521400780000211004000000283A151000010F00521500780000221004000000283A151000010F00521600780000221004000000283A151000010F00521700780000211004000000283A151000010F005218007800002210040000002880163D000235005800003B1011000200FFFF0500520F00FFFF040042074201045800003B1011000200FFFF0500521000FFFF040042054201040107004C270400003A151000010F00521100780000221004000000283A151000010F00521200780000221004000000283A151000010F00521300780000221004000000283A151000010F00521400780000221004000000283A151000010F00521500780000211004000000283A151000010F00521800780000221004000000283A151000010F00521700780000221004000000283A151000010F00521900780000221004000000283A151000010F00521A00780000211004000000283A151000010F00521B00780000221004000000283A151000010F00521C00780000211004000000283A151000010F00521D00780000221004000000283A151000010F00521E00780000211004000000283A151000010F0052160078000022100400000028111108000100FFFF04004201811608000107004CBF05000080161300020B0056010000010042000407004CBF05000080163D000235005800003B1011000200FFFF0500520F00FFFF040042074201045800003B1011000200FFFF0500521000FFFF040042054201040107004CBF0500003A151000010F00521100780000221004000000283A151000010F00521200780000221004000000283A151000010F00521300780000221004000000283A151000010F00521400780000221004000000283A151000010F00521500780000211004000000283A151000010F00521800780000221004000000283A151000010F00521700780000221004000000283A151000010F00521900780000221004000000283A151000010F00521A00780000211004000000283A151000010F00521B00780000221004000000283A151000010F00521C00780000211004000000283A151000010F00521D00780000221004000000283A151000010F00521E00780000211004000000283A151000010F0052160078000022100400000028111108000100FFFF0400420139150C00010B0056010000010042010011000000
+  SourceCode: >-
+    name AZMainHandlerQuestScript;
+
+
+    int DoOnce;
+
+    int bDidStoryState;
+
+
+    GameMode {
+    	if (VHDBattleController.iBattleState > 0) {
+    		if (FortCaesarREF.GetDead()) {
+    			AZCenturionNervaREF.Disable();
+    		}
+    		AZHDCarStack01.Enable();
+    		AZHDCarStack02.Enable();
+    		AZHDCarStack03.Enable();
+    		AZHDCollisionMarker01.Enable();
+    		AZHDCollisionMarker02.Enable();
+    		AZHDCollisionMarker03.Enable();
+    	}
+
+    	if (VStoryState >= 40 && bDidStoryState < 40) {
+    		AZLegionaryVeteranEnableMarkerREF.Enable();
+    		bDidStoryState = 40;
+    	}
+
+    	if (VStoryState > 60) {
+    		AZHDCarStack01.Disable();
+    		AZHDCarStack02.Disable();
+    		AZHDCarStack03.Disable();
+    		AZHDCollisionMarker01.Disable();
+    		AZHDCollisionMarker02.Disable();
+    		AZHDCollisionMarker03.Disable();
+    		StopQuest(AZMainHandlerQuest);
+    	}
+
+    	if (Player.GetItemCount(vMarkOfCaesar) > 0) {
+    		if ((GetStageDone(VMQ02, 7) == 0) && (GetStageDone(VMQCaesarFail, 5) == 0)) {
+    			AZCampWillowCollisionMarkerREF.Enable();
+    			AZCampWillowCollisionMarkerREF01.Enable();
+    			AZCampWillowCollisionMarkerREF02.Enable();
+    			AZCampWillowCollisionMarkerREF03.Enable();
+    			AZCWBargeREF.Disable();
+    			AZMoatWallParentREF.Disable();
+    			AZCampWillowBargeStatic.Enable();
+    			AZVanillaFortGateREF.Disable();
+    		}
+
+    		if ((GetStageDone(VMQ02, 7) == 1) || (GetStageDone(VMQCaesarFail, 5) == 1)) {
+    			AZCampWillowCollisionMarkerREF.Disable();
+    			AZCampWillowCollisionMarkerREF01.Disable();
+    			AZCampWillowCollisionMarkerREF02.Disable();
+    			AZCampWillowCollisionMarkerREF03.Disable();
+    			AZCWBargeREF.Enable();
+    			AZVanillaFortGateREF.Disable();
+    			AZCampWillowBargeStatic.Disable();
+    			AZBCMoatWallGateClosed01REF.Disable();
+    			AZBCMoatWallGateOpen01REF.Enable();
+    			AZBCMoatWallGateClosed02REF.Disable();
+    			AZBCMoatWallGateOpen02REF.Enable();
+    			AZBCMoatWallGateClosed03REF.Disable();
+    			AZBCMoatWallGateOpen03REF.Enable();
+    			AZMoatWallParentREF.Disable();
+    			EnableFastTravel(1);
+    		}
+    	} else {
+    		if (DoOnce == 0) {
+    			if ((GetStageDone(VMQ02, 7) == 1) || (GetStageDone(VMQCaesarFail, 5) == 1)) {
+    				AZCampWillowCollisionMarkerREF.Disable();
+    				AZCampWillowCollisionMarkerREF01.Disable();
+    				AZCampWillowCollisionMarkerREF02.Disable();
+    				AZCampWillowCollisionMarkerREF03.Disable();
+    				AZCWBargeREF.Enable();
+    				AZVanillaFortGateREF.Disable();
+    				AZCampWillowBargeStatic.Disable();
+    				AZBCMoatWallGateClosed01REF.Disable();
+    				AZBCMoatWallGateOpen01REF.Enable();
+    				AZBCMoatWallGateClosed02REF.Disable();
+    				AZBCMoatWallGateOpen02REF.Enable();
+    				AZBCMoatWallGateClosed03REF.Disable();
+    				AZBCMoatWallGateOpen03REF.Enable();
+    				AZMoatWallParentREF.Disable();
+    				EnableFastTravel(1);
+    				DoOnce = 1;
+    			}
+    		}
+    	}
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDidStoryState
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 133075:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 121FF0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 018CF6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121CF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121CE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 118ABC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019081:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121CB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1374AE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 129D14:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121D7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 003723:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C251:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0121CD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 131DCE:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00F781:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00F780:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 011293:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00F794:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0132EC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0132EE:NovaArizona.esm

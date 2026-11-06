@@ -1,0 +1,32 @@
+FormKey: 01BAEA:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm not happy about you being here. Don't make trouble, or you'll end up in the tank with Corvus.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776315
+Choices:
+- 039F1D:NovaArizona.esm
+- 01BA47:NovaArizona.esm
+- 01BA4B:NovaArizona.esm
+- 01BA4F:NovaArizona.esm
+- 01BA52:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

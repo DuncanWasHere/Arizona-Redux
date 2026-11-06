@@ -1,0 +1,70 @@
+FormKey: 00BF6F:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: Bad for business.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: Permit this. Taxes that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: You tell me why I gotta waste my time paying fees and reporting at checkpoints while the big guys get waved on through?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: It's because they don't want competition.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x1C9E41
+    UseEmotionAnimation: True
+    Unused3: 0x62B3B3
+  ResponseText: Bunch of corrupt communists, if you ask me. They deserve everything the Legion gives em.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF17:NovaArizona.esm
+- 00BF48:NovaArizona.esm
+- 00BF5E:NovaArizona.esm
+- 00BF6A:NovaArizona.esm
+- 00BF6C:NovaArizona.esm
+- 00BF1B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think of the NCR?

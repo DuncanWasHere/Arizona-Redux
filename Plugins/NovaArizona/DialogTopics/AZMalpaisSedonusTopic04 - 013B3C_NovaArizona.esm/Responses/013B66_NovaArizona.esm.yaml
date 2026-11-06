@@ -1,0 +1,47 @@
+FormKey: 013B66:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 013B22:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I drank them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100699395
+Choices:
+- 013B2A:NovaArizona.esm
+- 013B2D:NovaArizona.esm
+- 013B36:NovaArizona.esm
+- 013B3C:NovaArizona.esm
+- 013B3D:NovaArizona.esm
+- 013B40:NovaArizona.esm
+- 013B41:NovaArizona.esm
+- 013B98:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073080002002031
+  SourceCode: set AZMalpaisSedonusDialogueQuest.sodamentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B22:NovaArizona.esm
+Prompt: What's with all the soda bottles around your tent?

@@ -1,0 +1,54 @@
+FormKey: 006E28:NovaArizona.esm
+EditorID: AZMalpaisOptioScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967287
+    RefCount: 9
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A0019010000000080161B0002130058000022120B000100FFFF05005201001507004C5700000002100F000200FFFF0500520200FFFF04004201781010000200FFFF0500520300FFFF050052040039100F000200FFFF0500520500FFFF040042053B1215000300FFFF0500520600FFFF04004200FFFF0400426480161B0002130058000022120B000100FFFF05005207001507004CD600000039100F000200FFFF0500520700FFFF040042FF371009000100FFFF050052070080161B0002130058000022120B000100FFFF05005208001507004C0801000039100F000200FFFF0500520800FFFF040042FF80161B0002130058000022120B000100FFFF05005209001507004C3A01000039100F000200FFFF0500520900FFFF040042FF11000000
+  SourceCode: >-
+    name AZMalpaisOptioScript;
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZArizonaOpenSeason)) {
+            AddItem(AZScalpFlaviusConstantinus, 1);
+        }
+
+        SetEnemy(AZMalpaisLegionFaction, PlayerFaction);
+        SetStage(VMQCaesarFail, 5);
+        AddReputationExact(RepNVCaesarsLegion, 0, 100);
+
+        if (!GetQuestCompleted(AZMalpaisBountyQuest)) {
+            SetStage(AZMalpaisBountyQuest, 255);
+            StopQuest(AZMalpaisBountyQuest);
+        }
+
+        if (!GetQuestCompleted(AZMalpaisAbuseQuest)) {
+            SetStage(AZMalpaisAbuseQuest, 255);    
+        }
+
+        if (!GetQuestCompleted(AZMalpaisAbuserQuest)) {
+            SetStage(AZMalpaisAbuserQuest, 255);    
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293B5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293FB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0047C1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm

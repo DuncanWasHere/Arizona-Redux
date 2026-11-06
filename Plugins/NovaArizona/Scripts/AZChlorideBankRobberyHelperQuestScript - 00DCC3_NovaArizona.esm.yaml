@@ -1,0 +1,98 @@
+FormKey: 00DCC3:NovaArizona.esm
+EditorID: AZChlorideBankRobberyHelperQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 7
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000000301000016000D0002000900207307002031203D3D1C000100211002000000781008000200720500720600190000001600190002001500207301002031203D3D207303002030203D3D202626150007007306000200203115000700730300020020311900000016000D0009000900207306002031203D3D150011006605000C002066050020580C100000202B1600190001001500206605002035203E3D20660500203130203C2026261C00020021100200000018001A000100160020660500203130203E3D20660500203135203C2026261C00030021100200000018000E0002000A0020660500203135203E3D1C0004002110020000001E000000190000001900000011000000
+  SourceCode: >-
+    scn AZChlorideBankRobberyHelperQuestScript
+
+
+    short bVaultEntered
+
+    short bVaultDoOnce
+
+    short bTimerControl
+
+    short bAlarmTriggered
+
+
+    float fTimer
+
+
+    BEGIN GameMode
+
+
+    if bAlarmTriggered == 1
+    	AZChlorideBankIntAlarmREF.enable
+    	setenemy AZChlorideBankGuardFaction Playerfaction
+    endif
+
+
+    if bVaultEntered == 1 && bVaultDoOnce == 0
+    	Set bTimerControl to 1
+    	Set bVaultDoOnce to 1
+    endif
+
+
+    if bTimerControl == 1
+    	Set fTimer to fTimer + GetSecondsPassed
+    	if fTimer >= 5 && fTimer < 10
+    		AZChlorideBankRobberyResponder1.enable
+    	elseif fTimer >= 10 && fTimer < 15
+    		AZChlorideBankRobberyResponder2.enable
+    	elseif fTimer >= 15
+    		AZChlorideBankRobberyResponder3.enable
+    		Return
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x004E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x31000000000000
+    Name: bVaultEntered
+  - Data:
+      Index: 3
+      Unknown: 0x00EC29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xE74F15F8E74F15
+    Name: bVaultDoOnce
+  - Data:
+      Index: 5
+      Unknown: 0xC0EB29120000000000000000
+      Unknown2: 0x6E446570757479
+    Name: fTimer
+  - Data:
+      Index: 6
+      Unknown: 0x40E929120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7570706C794C6F
+    Name: bTimerControl
+  - Data:
+      Index: 7
+      Unknown: 0x00E929120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7273696E446F6C
+    Name: bAlarmTriggered
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DCC9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DCBD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DCC5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DCC4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DCCA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm

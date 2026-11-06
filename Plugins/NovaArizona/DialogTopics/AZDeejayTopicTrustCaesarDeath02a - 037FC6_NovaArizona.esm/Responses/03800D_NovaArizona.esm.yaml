@@ -1,0 +1,43 @@
+FormKey: 03800D:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 03800C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My best guess? Power struggle between the Frumentarii, the legates, the regional administrators, and the Cult.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nobody wins that war.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FC6:NovaArizona.esm
+- 037FC7:NovaArizona.esm
+- 037FC8:NovaArizona.esm
+- 037FC9:NovaArizona.esm
+- 037FCA:NovaArizona.esm
+- 037FCB:NovaArizona.esm
+- 037FCC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Then what happens to the Legion?

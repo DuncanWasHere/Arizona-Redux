@@ -1,0 +1,76 @@
+FormKey: 0101E1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Nerva and I are of one mind on this. I dislike the Frumentarii. The Legion has core principles. Every nation should.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ours are "nostra ab auctoritate", "qualitas potentia nostra", "quodcumque dixerit vobis, facite". Right from our might. Might from our quality. Follow orders.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But the Frumentarii are not mighty. They do not go out in battle and meet the enemy head-on. They use disgraceful tactics of deception and subterfuge.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: So, they cannot possibly be right. Still, Caesar has a plan for them, and the third principle still applies.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+Choices:
+- 0101DC:NovaArizona.esm
+- 0101DE:NovaArizona.esm
+- 0101E0:NovaArizona.esm
+- 0101E2:NovaArizona.esm
+- 0101E4:NovaArizona.esm
+- 0101E6:NovaArizona.esm
+- 01031C:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073060002002031
+  SourceCode: set AZDamNQuestMiscDialogue.NervaMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01031E:NovaArizona.esm
+Prompt: Is there anything you dislike about the Legion?

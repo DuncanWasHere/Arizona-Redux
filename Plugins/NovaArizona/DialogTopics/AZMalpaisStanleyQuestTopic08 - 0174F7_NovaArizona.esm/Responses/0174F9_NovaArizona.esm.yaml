@@ -1,0 +1,58 @@
+FormKey: 0174F9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: 00D4C1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F7274
+    UseEmotionAnimation: True
+    Unused3: 0x686520
+  ResponseText: Well, okay. I don't have any further work right now, but come back in three days. I may have something good.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 8
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x16001400010010002072010073070020720100730600203E15000A00720100730D000200203119000000
+  SourceCode: >-
+    if AZMalpaisJournalistQuest.bStanleyLegionDisapproval > AZMalpaisJournalistQuest.bStanleyLegionApproval
+    	Set AZMalpaisJournalistQuest.bStanleyIsDoomed to 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E3C00000016001900010015002058A5110A0002007201006E2D0000002031203D3DA2110F0003007201006E2D0000006E0100000019000000
+  SourceCode: >+
+    SetStage AZMalpaisJournalistQuest 60
+
+
+    if GetObjectiveDisplayed AZMalpaisJournalistQuest 45 == 1
+    	SetObjectiveCompleted AZMalpaisJournalistQuest 45 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: No, nothing.

@@ -1,0 +1,99 @@
+FormKey: 033B5D:NovaArizona.esm
+EditorID: AZFreeformNewtScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 10
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZFreeformNewtScript
+
+
+    int CatherineBrotherDiscussed
+
+    int CatherinePissed
+
+    int MusselsMentioned ; 1 = player learned about mussels, 2 = player offered job
+
+
+    ; Mussel and pearl diving variables
+
+    int MusselsGathered
+
+    int PearlsGathered
+
+    int MusselReward ; 1 = Reward given, given after 60 Mussel Meat
+
+    int PearlReward ; 1 = Reward given, given after 30 Pearls
+
+    int AllMusselsVariable
+
+    int AllPearlsVariable
+
+
+    ; Newt control variables
+
+    int NewtLeadership ; 0 = leader is Becca, 1 = leader is Oria, 2 = Becca and Oria are dead
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x00BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xB94C09E0AD4C09
+    Name: MusselsMentioned
+  - Data:
+      Index: 2
+      Unknown: 0xC0BB20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xBD4C0974BA4C09
+    Name: CatherineBrotherDiscussed
+  - Data:
+      Index: 3
+      Unknown: 0xE0BB20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C6174426C7565
+    Name: CatherinePissed
+  - Data:
+      Index: 4
+      Unknown: 0x20BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7252657475726E
+    Name: MusselsGathered
+  - Data:
+      Index: 5
+      Unknown: 0x40BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x70696330313037
+    Name: PearlsGathered
+  - Data:
+      Index: 6
+      Unknown: 0x60BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x70696330333037
+    Name: MusselReward
+  - Data:
+      Index: 7
+      Unknown: 0x80BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x61726B456E6572
+    Name: PearlReward
+  - Data:
+      Index: 8
+      Unknown: 0x40D629120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: NewtLeadership
+  - Data:
+      Index: 9
+      Unknown: 0xA0BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: AllMusselsVariable
+  - Data:
+      Index: 10
+      Unknown: 0xC0BC20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65736D6F756C64
+    Name: AllPearlsVariable

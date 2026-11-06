@@ -1,0 +1,43 @@
+FormKey: 014F49:NovaArizona.esm
+EditorID: AZMalpaisGateGuardDialoguePackage
+FormVersion: 15
+GeneralFlags:
+- ContinueIfPcNear
+- AlwaysRun
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 13899
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 1024
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100758810
+  SecondParameter: 14
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 0000C8:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

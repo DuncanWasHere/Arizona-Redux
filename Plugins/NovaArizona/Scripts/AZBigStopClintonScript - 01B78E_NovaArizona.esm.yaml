@@ -1,0 +1,129 @@
+FormKey: 01B78E:NovaArizona.esm
+EditorID: AZBigStopClintonScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 19
+    VariableCount: 13
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000030100008016100002080056010000010007004C3E01000039151300011200560400000D005800005727040000000080161700020F00560400000D005604000005000407004CDA00000080161F00021700470A00421508470A0042060701560100000400150207004CCE000000BB1012000200FFFF0800560400000600FFFF0400420039150C00010B00560100000400420100811608000107004C3E01000080161700020F00560400000D005604000008000407004C3E01000080161F00021700470A00420608470A0042150702560100000400150207004C3E010000BB1012000200FFFF0800560400000900FFFF0400420039150C00010B005601000004004201001100000010000B001A00A60000000100720B0039150D00010C00560400000500520C000039150D00010C00560400000600520D000039150D00010C00560400000700520E000039150D00010C00560400000800520F000039150D00010C005604000009005210000039150D00010C00560400000A005211000039150D00010C00560400000B005212000039150C00010B005601000001004201003A151700011600520B00780000BA110B000100FFFF05005213002811000000
+  SourceCode: "name AZBigStopClintonScript;\r\n\r\n// Door Locking Stuff\r\nint bInit;\r\n\r\nint bLockedStore;\r\nint bLockedHouse;\r\nint bGetOut;\r\n\r\nref rStorePackage;\r\nref rStoreCell;\r\nref rStoreDoorREF;\r\n\r\nref rHousePackage;\r\nref rHouseCell;\r\nref rHouseDoorREF;\r\n\r\nref rKey;\r\n\r\nGameMode {\r\n    // Door Locking Stuff\r\n    if (bInit) {\r\n        ref rCurrentPackage = GetCurrentStablePackage();\r\n        \r\n        if (rCurrentPackage == rStorePackage) {\r\n            // Have actor try to kick player out if it's past closing time.\r\n            if ((GameHour >= 21 || GameHour < 6) && !bGetOut) {\r\n                SetPublic(rStoreCell, 0);\r\n                bGetOut = 1;\r\n            }\r\n\r\n        } else if (rCurrentPackage == rHousePackage) {\r\n            // Have actor try to kick player out if they're late for work.\r\n            if ((GameHour >= 6 && GameHour < 21) && !bGetOut) {\r\n                SetPublic(rHouseCell, 0);\r\n                bGetOut = 1;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n// This is only triggered by the door locking activator during initialization.\r\nOnTriggerEnter::AZBigStopActivatorClintonDoorLockerREF {\r\n    rStorePackage = AZBigStopClintonStorePackage;\r\n    rStoreCell = AZBigStopGeneralStoreINT;\r\n    rStoreDoorREF = AZBigStopClintonStoreDoorREF;\r\n\r\n    rHousePackage = AZBigStopClintonHousePackage;\r\n    rHouseCell = AZBigStopMotelRoomINT01;\r\n    rHouseDoorREF = AZBigStopClintonHouseDoorREF;\r\n\r\n    rKey = AZKeyBigStopClinton;\r\n\r\n    bInit = 1;\r\n\r\n    AZBigStopActivatorClintonDoorLockerREF.EnterTrigger(PlayerREF);\r\n}\r\n\0"
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInit
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLockedStore
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLockedHouse
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGetOut
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStorePackage
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStoreCell
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rStoreDoorREF
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHousePackage
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHouseCell
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rHouseDoorREF
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rKey
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCurrentPackage
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rCurrentPackage_1
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 5
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 6
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 8
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 10
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 11
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 12
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 13
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000038:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B768:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ED17:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00614B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D4BF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ED4B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00889C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008991:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B78D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

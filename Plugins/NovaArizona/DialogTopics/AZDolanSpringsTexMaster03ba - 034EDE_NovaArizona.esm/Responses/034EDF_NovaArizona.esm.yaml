@@ -1,0 +1,39 @@
+FormKey: 034EDF:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Maybe. The people at Heber called it the Mogollon Monster. Many people claim to have seen such things.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F706C
+    UseEmotionAnimation: True
+    Unused3: 0x486562
+  ResponseText: How about you? Do you believe?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 034EE2:NovaArizona.esm
+- 034EE3:NovaArizona.esm
+- 034EE4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: A tall furry man that lives in the forest? You mean Bigfoot?

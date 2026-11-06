@@ -1,0 +1,36 @@
+FormKey: 016BFD:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If by "glorified" you mean highly respected and experienced, then yes.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B3E:NovaArizona.esm
+- 016B43:NovaArizona.esm
+- 016B45:NovaArizona.esm
+- 016B49:NovaArizona.esm
+- 016B4B:NovaArizona.esm
+- 016B4F:NovaArizona.esm
+- 016B3A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So you're a glorified Legion bureaucrat then.

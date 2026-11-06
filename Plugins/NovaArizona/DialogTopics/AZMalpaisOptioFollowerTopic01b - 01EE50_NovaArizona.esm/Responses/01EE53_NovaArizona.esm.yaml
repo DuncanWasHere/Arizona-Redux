@@ -1,0 +1,33 @@
+FormKey: 01EE53:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652066
+    UseEmotionAnimation: True
+    Unused3: 0x656E20
+  ResponseText: Then, you won't mind if I execute him?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 01EE8C:NovaArizona.esm
+- 01EE8D:NovaArizona.esm
+- 01EE90:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He's no one. Just kind of followed me around.

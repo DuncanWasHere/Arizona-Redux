@@ -1,0 +1,59 @@
+FormKey: 014F43:NovaArizona.esm
+FormVersion: 15
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: 00C315:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Present it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100699722
+  SecondParameter: 7
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100699722
+  SecondParameter: 6
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 90
+  Function: GetStage
+  FirstParameter: 100699722
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100699722
+  SecondParameter: 40
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100699722
+  SecondParameter: 35
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+Choices:
+- 00C304:NovaArizona.esm
+- 00C305:NovaArizona.esm
+- 00C306:NovaArizona.esm
+- 00C307:NovaArizona.esm
+- 00C308:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have evidence that there were raiders in Big Spar mine.

@@ -1,0 +1,77 @@
+FormKey: 013B80:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E5468
+    UseEmotionAnimation: True
+    Unused3: 0x6C6420
+  ResponseText: Very well. Speak to me when your business here is concluded and your belongings will be returned to you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsVoiceType
+  FirstParameter: 100876774
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 42
+  RunOnType: Target
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 986885
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39150C00010B0056010100020042010039150C00010B00560102000F0042000039150C00010B00560102000E0042010039150C00010B00560102001400420100
+  SourceCode: >-
+    AZMalpaisEquipmentConfiscationQuest.bHoldout = 1
+
+    AZFreeformMalpais.bNotGoingIntoCamp = 0
+
+    AZFreeformMalpais.bPlayerWeaponsConfiscated = 1
+
+    AZFreeformMalpais.InCamp = 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008DC4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x361005000100720100981000005E100000361005000100720200361005000100720300
+  SourceCode: >-
+    StartQuest AZMalpaisEquipmentConfiscationQuest
+
+    RemoveScriptPackage
+
+    EVP
+
+    StartQuest AZMalpaisSecurity
+
+    StartQuest AZMalpaisCheckerQuest
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008DC4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341E5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0341E4:NovaArizona.esm
+Prompt: <Keep holdout weapons.> Sure, here you go.

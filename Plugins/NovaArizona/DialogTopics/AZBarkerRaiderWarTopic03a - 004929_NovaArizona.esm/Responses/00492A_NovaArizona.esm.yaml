@@ -1,0 +1,54 @@
+FormKey: 00492A:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: Was the capital of the Great Southwest Confederacy, a powerful union of tribes older than the Great War. Was once the most powerful entity in Arizona.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: We tried to get them to join our war, but they refused. Apparently, they were having some problems.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: The Legion caught them with their pants down and made them a puppet state. It was then that we realized that the Legion had to be stopped.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100681666
+  SecondParameter: 5
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 00491F:NovaArizona.esm
+- 004925:NovaArizona.esm
+- 004927:NovaArizona.esm
+- 004954:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Where's Window Rock?

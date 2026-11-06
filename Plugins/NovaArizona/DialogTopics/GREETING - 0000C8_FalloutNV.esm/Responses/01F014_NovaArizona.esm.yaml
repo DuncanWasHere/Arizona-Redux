@@ -1,0 +1,56 @@
+FormKey: 01F014:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: 01F02F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x65725C
+    UseEmotionAnimation: True
+    Unused3: 0x6C6573
+  ResponseText: Okay, good, you made it, thank goodness. The only thing left is to load the kids onto the raft.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: Now, we have to hurry before any passing Legionaries.... Oh, no.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetStage
+  FirstParameter: 100789369
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E46000000A2110F0003007201006E370000006E01000000A3110F0003007201006E3C0000006E01000000
+  SourceCode: >-
+    SetStage AZBigStopChildSoldierQuest 70
+
+    SetObjectiveCompleted AZBigStopChildSoldierQuest 55 1
+
+    SetObjectiveDisplayed AZBigStopChildSoldierQuest 60 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm

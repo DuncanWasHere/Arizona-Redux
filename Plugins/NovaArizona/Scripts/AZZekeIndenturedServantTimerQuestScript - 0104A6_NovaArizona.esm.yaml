@@ -1,0 +1,80 @@
+FormKey: 0104A6:NovaArizona.esm
+EditorID: AZZekeIndenturedServantTimerQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000000B01000016000D0003000900207303002030203D3D15000D00730200080020582F28020000001C0001005E100000150007007303000200203118000D0007000900207303002031203D3D1600120001000E0020660100207302002037202B203C391513000112005600000001005800002F28040000000017000200030015000A00720400730700020020341C0001005E10000015000700730300020020321900000018000D0003000900207303002032203D3D1C0002002210020000001C000300221002000000371005000100720500190000001600120003000E0020720100582E1000002031203D3D3710050001007205001C0002002210020000001C0003002210020000001900000011000000
+  SourceCode: >-
+    scn AZZekeIndenturedServantTimerQuestScript
+
+
+    float Timer
+
+    int ZekeAway
+
+    int DoOnce
+
+
+    BEGIN GameMode
+
+
+    if DoOnce == 0
+    	Set ZekeAway to GetGameDaysPassed
+    	AZDolanSpringsZekeREF.evp
+    	Set DoOnce to 1
+    elseif DoOnce == 1
+    	if Timer < ZekeAway + 7
+    		Timer = GetGameDaysPassed
+    	else
+    		Set AZChlorideTaxQuest.ZekeIndenturedServant to 4
+    		AZDolanSpringsZekeREF.evp
+    		Set DoOnce to 2
+    	endif
+    elseif DoOnce == 2
+    	AZZekeChlorideWorkMarker01REF.disable
+    	AZZekeChlorideWorkMarker02REF.disable
+    	StopQuest AZZekeIndenturedServantTimerQuest
+    endif
+
+
+    if AZDolanSpringsZekeREF.GetDead == 1
+    	StopQuest AZZekeIndenturedServantTimerQuest
+    	AZZekeChlorideWorkMarker01REF.disable
+    	AZZekeChlorideWorkMarker02REF.disable
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x20DF29120000000000000000
+      Unknown2: 0x6E7453616E6479
+    Name: Timer
+  - Data:
+      Index: 2
+      Unknown: 0x20DD29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6572507265506F
+    Name: ZekeAway
+  - Data:
+      Index: 3
+      Unknown: 0x40DE29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6572506F737450
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01998D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0104B2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0104B3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC1C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0104A7:NovaArizona.esm

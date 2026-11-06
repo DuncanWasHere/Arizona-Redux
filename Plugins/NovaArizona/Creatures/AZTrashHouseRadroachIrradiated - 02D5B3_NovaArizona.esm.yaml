@@ -1,0 +1,95 @@
+FormKey: 02D5B3:NovaArizona.esm
+EditorID: AZTrashHouseRadroachIrradiated
+FormVersion: 15
+ObjectBounds:
+  First: -16, -37, 0
+  Second: 16, 37, 27
+Name: Irradiated Radroach
+Model:
+  File: Creatures\Radroach\skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 0617BE:FalloutNV.esm
+- 08AF5C:FalloutNV.esm
+UnarmedAttackEffect: 133039:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- roach.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - 0x100
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 50
+  Level: 5
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021478:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 13215A:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Script: 13303C:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Cautious
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2162635008
+  Teaches: Barter
+  AggroRadiusBehavior: True
+  AggroRadius: 256
+Packages:
+- 025482:FalloutNV.esm
+- 025754:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 25
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 240
+  Damage: 10
+  Strength: 6
+  Perception: 3
+  Endurance: 8
+  Charisma: 5
+  Intelligence: 6
+  Agility: 5
+  Luck: 5
+AttackReach: 64
+CombatStyle: 03A382:FalloutNV.esm
+BodyPartData: 014ACF:FalloutNV.esm
+TurningSpeed: 150
+BaseScale: 1
+FootWeight: 1
+ImpactMaterialType: OrganicBug
+SoundLevel: Silent
+SoundTypes:
+- Type: LeftFoot
+  Sounds:
+  - Sound: 01E0CB:FalloutNV.esm
+    Chance: 100
+- Type: RightFoot
+  Sounds:
+  - Sound: 01E0CC:FalloutNV.esm
+    Chance: 100
+- Type: Idle
+  Sounds:
+  - Sound: 01F218:FalloutNV.esm
+    Chance: 100
+- Type: Attack
+  Sounds:
+  - Sound: 01F3D7:FalloutNV.esm
+    Chance: 100
+- Type: Death
+  Sounds:
+  - Sound: 020571:FalloutNV.esm
+    Chance: 100

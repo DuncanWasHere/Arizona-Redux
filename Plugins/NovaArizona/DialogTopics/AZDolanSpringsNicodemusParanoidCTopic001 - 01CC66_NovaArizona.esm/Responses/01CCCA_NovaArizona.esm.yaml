@@ -1,0 +1,36 @@
+FormKey: 01CCCA:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Relax. You can just take it off when you're ready for the procedure.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+Choices:
+- 01CC65:NovaArizona.esm
+- 01CC66:NovaArizona.esm
+- 01CC67:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Keep your degaussers the hell away from me! You'll wipe my damn Pip-Boy!

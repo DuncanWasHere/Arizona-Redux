@@ -1,0 +1,44 @@
+FormKey: 01D797:NovaArizona.esm
+EditorID: AZGilaMonsterVenom
+FormVersion: 15
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 6, 6, 23
+Name:
+  TargetLanguage: English
+  Value: Gila Venom
+Model:
+  File: clutter\health\AntivenomGen.NIF
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_silver_sting.dds
+EquipmentType: Chems
+Weight: 0.5
+Value: 50
+Flags:
+- 0x100
+- 0x200
+- 0x400
+- 0x800
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+Effects:
+- BaseEffect: 033595:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 120
+    ActorValue: Health
+- BaseEffect: 01D79B:NovaArizona.esm
+  Data:
+    Magnitude: 80
+    Duration: 5
+    ActorValue: Fatigue

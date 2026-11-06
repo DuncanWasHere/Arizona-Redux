@@ -1,0 +1,50 @@
+FormKey: 02F0AC:NovaArizona.esm
+EditorID: AZSpillwayEntranceTriggerSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 8
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000100008001A00C500000000001600100001000C00207205007303002030203D3D1C00010056100800020072060072070019000000160028000300240020583A1005000100720800203339203E3D20583A1005000100720800203730203C2026261C0002002210020000001C0003002110020000001C000400221002000000180029000300250020583A1005000100720800203730203E3D20583A100500010072080020313030203C2026261C0002002210020000001C0003002210020000001C0004002110020000001900000011000000
+  SourceCode: >-
+    SCN AZSpillwayEntranceTriggerSCRIPT
+
+
+    BEGIN OnTriggerEnter
+
+
+    if AZFreeformArizonaSpillway.iMetRufo == 0
+    	AZSpillwayRufoREF.StartConversation Player GREETING
+    endif
+
+
+    if GetStage VMQ02 >= 39 && GetStage VMQ02 < 70
+    	AZSpillwayMiningProgress01REF.disable
+    	AZSpillwayMiningProgress02REF.enable
+    	AZSpillwayMiningProgress03REF.disable
+    elseif GetStage VMQ02 >= 70 && GetStage VMQ02 < 100
+    	AZSpillwayMiningProgress01REF.disable
+    	AZSpillwayMiningProgress02REF.disable
+    	AZSpillwayMiningProgress03REF.enable
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02EF73:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02F0AD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02F0AE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02F0B4:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006E3E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0000C8:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 129D14:FalloutNV.esm

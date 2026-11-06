@@ -1,0 +1,40 @@
+FormKey: 033AF7:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: 033AF6:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I need time to speak to the raiders. Give me some.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100874950
+  SecondParameter: 8
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 9
+  Function: GetStage
+  FirstParameter: 100874950
+- Fluff: 0x000000
+  Function: IsActorTalkingThroughActivator
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

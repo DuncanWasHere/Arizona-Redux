@@ -1,0 +1,58 @@
+FormKey: 020DFB:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x2C2062
+  ResponseText: Mars looks kindly on your loyalty. We have been anticipating this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x2C2062
+  ResponseText: We've known about the medicine woman's operation for several weeks now. A sentry reported her out past curfew last month carrying a satchel into town from the East.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x746865
+    UseEmotionAnimation: True
+    Unused3: 0x2C2062
+  ResponseText: Mars sees all.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100797750
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797744
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 99
+  Function: GetStage
+  FirstParameter: 100797750
+Choices:
+- 020DFA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I was just asked to smuggle something into Newt.

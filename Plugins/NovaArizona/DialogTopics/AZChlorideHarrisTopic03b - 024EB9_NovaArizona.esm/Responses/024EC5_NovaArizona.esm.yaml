@@ -1,0 +1,39 @@
+FormKey: 024EC5:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I mean, look, I like Calvin, he seems nice, you know? But you look at White Sands, and they're just irreversibly linked to the Legion. Which is fine, obviously, you have to stand up to the NCR, but I don't know about him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Then, you look at Luke, and he's kind of a jerk, talking about how he's going to make some changes, but it's the Legion. I don't really know if he's going to be able to do anything.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718664
+Choices:
+- 024EB8:NovaArizona.esm
+- 024EB9:NovaArizona.esm
+- 024EBA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How are both candidates the same?

@@ -1,0 +1,78 @@
+FormKey: 020E80:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204F6E
+    UseEmotionAnimation: True
+    Unused3: 0x206C65
+  ResponseText: A coward recently abandoned his post and attempted to take his own life.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x204F6E
+    UseEmotionAnimation: True
+    Unused3: 0x206C65
+  ResponseText: My Centurion has assigned the medicine woman to keep this man alive, against the insistance of every nerve in his body.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x686173
+    UseEmotionAnimation: True
+    Unused3: 0x676E65
+  ResponseText: The coward is pulled back into Caesar's service, saved by a weak old woman.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x204F6E
+    UseEmotionAnimation: True
+    Unused3: 0x206C65
+  ResponseText: The witch in turn spends every minute of the day tending to him, keeping her under our constant watch.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Two problems solved at once.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: All we've had to do is wait for her to make a move; here you are.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797744
+Choices:
+- 020DFD:NovaArizona.esm
+- 025062:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the plan?
+ActorValuePerk: 0003ED:FalloutNV.esm

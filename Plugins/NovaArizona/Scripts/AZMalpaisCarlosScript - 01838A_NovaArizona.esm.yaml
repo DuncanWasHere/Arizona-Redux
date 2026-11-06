@@ -1,0 +1,21 @@
+FormKey: 01838A:NovaArizona.esm
+EditorID: AZMalpaisCarlosScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A0038000000000080161D000215005800003A100B000100FFFF050052010042460707004C5900000039100F000200FFFF0500520100FFFF0400429611000000
+  SourceCode: >-
+    name AZMalpaisCarlosScript;
+
+
+    OnDeath {
+    	if (GetStage(AZMalpaisJournalistQuest) < 70) {
+    		SetStage(AZMalpaisJournalistQuest, 150);
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm

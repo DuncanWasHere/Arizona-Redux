@@ -1,0 +1,30 @@
+FormKey: 0059BB:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61206D
+    UseEmotionAnimation: True
+    Unused3: 0x6C792E
+  ResponseText: Is that so? Pretty far from Shady Sands. You go AWOL?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005707:NovaArizona.esm
+- 005901:NovaArizona.esm
+- 005902:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm an agent of the NCR.

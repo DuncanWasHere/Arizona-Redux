@@ -1,0 +1,33 @@
+FormKey: 016CA9:NovaArizona.esm
+FormVersion: 15
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They must. That is why I am hiring you. Use whatever methods you wish, but do not do physical harm to them or anything else that should reflect poorly on me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 016B9C:NovaArizona.esm
+- 016BA6:NovaArizona.esm
+- 016BA7:NovaArizona.esm
+- 016B95:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What if they can't offer enough tribute?

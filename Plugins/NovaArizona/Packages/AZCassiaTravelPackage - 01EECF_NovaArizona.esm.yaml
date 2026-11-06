@@ -1,0 +1,55 @@
+FormKey: 01EECF:NovaArizona.esm
+EditorID: AZCassiaTravelPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+Unused: 117
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 30789
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01EECD:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100789369
+  SecondParameter: 7
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100789369
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x15000A00720200730800020020311C0001005E100000
+    SourceCode: >-
+      Set AZBigStopChildSoldierQuest.NatalieReadytoTalk to 1
+
+      AZAspirantCassiaREF.evp
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00C45B:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01EC79:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,40 @@
+FormKey: 01EF2B:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: 01EF2C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x637475
+    UseEmotionAnimation: True
+    Unused3: 0x636B77
+  ResponseText: Of course. We are lucky that Sedonus is only involved in logistical manners.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x637475
+    UseEmotionAnimation: True
+    Unused3: 0x636B77
+  ResponseText: Had Sedonus been given a combat posting, things may have been disastrous. Still, this is a matter only for Caesar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 01EF2A:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is that it?

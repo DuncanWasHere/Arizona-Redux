@@ -1,0 +1,32 @@
+FormKey: 039F37:NovaArizona.esm
+FormVersion: 15
+Quest: 00E4F4:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: How will I be voting, you mean? In a true society, murder is always inevitable. What matters is how we treat those murders.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721907
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100812870
+  SecondParameter: 8
+Choices:
+- 039F36:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think should be done about Job?

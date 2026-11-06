@@ -1,0 +1,15 @@
+FormKey: 024F89:NovaArizona.esm
+EditorID: AZMalpaisScaffoldClimbActivatorMsg
+FormVersion: 15
+Description: It would take an acrobat to climb this rickety thing without falling.
+Flags:
+- MessageBox
+MenuButtons:
+- Text: '[Agility 7] Slip through the bars and ascend to the top.'
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 7
+    Function: GetActorValue
+    FirstParameter: 10
+- Text: Leave it alone.

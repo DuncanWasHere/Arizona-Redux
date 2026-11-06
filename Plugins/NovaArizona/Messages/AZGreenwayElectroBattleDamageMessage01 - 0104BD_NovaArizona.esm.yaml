@@ -1,0 +1,18 @@
+FormKey: 0104BD:NovaArizona.esm
+EditorID: AZGreenwayElectroBattleDamageMessage01
+FormVersion: 15
+Description: The Electro Beetles have chewed through much of the wiring. It will need to be replaced to get the substation back online,.
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing.
+- Text: '[Electrical Gloves, 4x Scrap Electronics, 4x Scrap Metal] Repair with parts.'
+- Text: '[Repair, Electrical Gloves] Repair without parts.'
+- Text: Have Raul fix it for you.
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetInCell
+    FirstParameter: 100720931
+    RunOnType: Reference
+    Reference: 0E6105:FalloutNV.esm

@@ -1,0 +1,53 @@
+FormKey: 0102A8:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F2E20
+    UseEmotionAnimation: True
+    Unused3: 0x747275
+  ResponseText: Okay? Holy shit, I thought I was going to die today. Thank you so much!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 35
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729242
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E1E00000015000A00720200730100020020311C0001007711070001006E50000000
+  SourceCode: >-
+    setstage AZDamNQuest3 30
+
+    set AZDamNQuest3.bBomberDisarmed to 1
+
+
+    player.rewardxp 80
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018F:NovaArizona.esm
+Prompt: Alright, I've disarmed you. I'll go talk to Wire so you can be waved through.
+ActorValuePerk: 0004B3:FalloutNV.esm

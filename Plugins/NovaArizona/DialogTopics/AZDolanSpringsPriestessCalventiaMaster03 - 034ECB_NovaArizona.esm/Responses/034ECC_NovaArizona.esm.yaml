@@ -1,0 +1,31 @@
+FormKey: 034ECC:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x735072
+    UseEmotionAnimation: True
+    Unused3: 0x737343
+  ResponseText: Not one. I do not consider this a problem for us, just a nuisance. I haven't bothered to investigate.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 034EC9:NovaArizona.esm
+- 034ECB:NovaArizona.esm
+- 034ECD:NovaArizona.esm
+- 034ECF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you have any leads?

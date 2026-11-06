@@ -1,0 +1,96 @@
+FormKey: 01EE89:NovaArizona.esm
+EditorID: AZMalpaisMarcellusSedonusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967285
+    RefCount: 12
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100008000A00A9030000000080161B0002130058000022120B000100FFFF05005201001507004C7300000002100F000200FFFF0500520200FFFF0400420180161300020B0056010300030042010407004C9A00000039150C00010B0056010400020042010039151300011200560104000F005800002F280400000000361009000100FFFF050052050080161D000215005800003A100B000100FFFF050052040042320407004C6302000080161600020E005800004A270400000042000607004CCF010000801611000209005601040002001507004C8201000039100F000200FFFF0500520600FFFF040042053B1215000300FFFF0500520700FFFF04004200FFFF04004264781010000200FFFF0500520800FFFF0500520900781010000200FFFF0500520A00FFFF0500520900781010000200FFFF0500520800FFFF0500520B00811608000107004CC301000080161300020B0056010400020042010407004CC301000039100F000200FFFF0500520400FFFF0400426439151300011200560104000F005800002F280400000000811608000107004C5702000080161400020C005800004A27040000001507004C57020000781010000200FFFF0500520800FFFF0500520900781010000200FFFF0500520A00FFFF0500520900781010000200FFFF0500520800FFFF0500520B0080161D000215005800003A100B000100FFFF050052040042320407004C5702000039100F000200FFFF0500520400FFFF04004264811608000107004C6003000080161D000215005800003A100B000100FFFF050052040042320507004C6003000080161400020C005800004A27040000001507004CF702000039100F000200FFFF0500520600FFFF04004201781010000200FFFF0500520800FFFF0500520900781010000200FFFF0500520A00FFFF0500520900781010000200FFFF0500520800FFFF0500520B00811608000107004C6003000080161600020E005800004A270400000042000607004C6003000039100F000200FFFF0500520600FFFF04004205781010000200FFFF0500520800FFFF0500520900781010000200FFFF0500520A00FFFF0500520900781010000200FFFF0500520800FFFF0500520B0080163700022F00580000A51111000200FFFF0500520400FFFF04004233580000A41111000200FFFF0500520400FFFF040042330207004CB4030000A31115000300FFFF0500520400FFFF04004233FFFF0400420080161B0002130058000022120B000100FFFF0500520C001507004CE603000039100F000200FFFF0500520C00FFFF040042FF11000000
+  SourceCode: >-
+    name AZMalpaisMarcellusSedonusScript;
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZArizonaOpenSeason)) {
+            AddItem(AZScalpMarcellusSedonus, 1);
+        }
+
+        if (AZMalpaisSedonusSunsetSasparillaREF.SasSpiked == 1) {
+            AZMalpaisAbuseQuest.MarcellusSedonusPoisoned = 1;
+        }
+
+        AZMalpaisAbuseQuest.MalpaisCooldown = GetGameDaysPassed();
+        StartQuest(AZSedonusKillQuest);
+
+        if (GetStage(AZMalpaisAbuseQuest) == 50) {
+            if (GetPCDetectionState() > 0) {
+                if (!AZMalpaisAbuseQuest.MarcellusSedonusPoisoned) {
+                    SetStage(VMQCaesarFail, 5);
+                    AddReputationExact(RepNVCaesarsLegion, 0, 100);
+
+                    SetEnemy(AZMalpaisLegionFaction, PlayerFaction);
+                    SetEnemy(AZMalpaisAdjutantFaction, PlayerFaction);
+                    SetEnemy(AZMalpaisLegionFaction, AZSedonusSlaveFaction);
+                } else if (AZMalpaisAbuseQuest.MarcellusSedonusPoisoned == 1) {
+                    SetStage(AZMalpaisAbuseQuest, 100);
+                    AZMalpaisAbuseQuest.MalpaisCooldown = GetGameDaysPassed();
+                }
+            } else if (!GetPCDetectionState()) {
+                SetEnemy(AZMalpaisLegionFaction, PlayerFaction);
+                SetEnemy(AZMalpaisAdjutantFaction, PlayerFaction);
+                SetEnemy(AZMalpaisLegionFaction, AZSedonusSlaveFaction);
+
+                if (GetStage(AZMalpaisAbuseQuest) == 50) {
+                    SetStage(AZMalpaisAbuseQuest, 100);
+                }
+            }
+        } else if (GetStage(AZMalpaisAbuseQuest) != 50) {
+            if (!GetPCDetectionState()) {
+                SetStage(VMQCaesarFail, 1);
+
+                SetEnemy(AZMalpaisLegionFaction, PlayerFaction);
+                SetEnemy(AZMalpaisAdjutantFaction, PlayerFaction);
+                SetEnemy(AZMalpaisLegionFaction, AZSedonusSlaveFaction);
+            } else if (GetPCDetectionState() > 0) {
+                SetStage(VMQCaesarFail, 5);
+
+                SetEnemy(AZMalpaisLegionFaction, PlayerFaction);
+                SetEnemy(AZMalpaisAdjutantFaction, PlayerFaction);
+                SetEnemy(AZMalpaisLegionFaction, AZSedonusSlaveFaction);
+            }
+        }
+
+        if (GetObjectiveDisplayed(AZMalpaisAbuseQuest, 51) && GetObjectiveCompleted(AZMalpaisAbuseQuest, 51)) {
+            SetObjectiveDisplayed(AZMalpaisAbuseQuest, 51, 0);
+        }
+
+        if (!GetQuestCompleted(AZMalpaisAbuserQuest)) {
+            SetStage(AZMalpaisAbuserQuest, 255);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293B5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0293F9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEA3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EEF0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008C8F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EF78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F034:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm

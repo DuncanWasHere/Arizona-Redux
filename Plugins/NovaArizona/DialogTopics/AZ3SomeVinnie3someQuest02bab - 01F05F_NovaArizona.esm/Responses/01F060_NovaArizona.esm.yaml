@@ -1,0 +1,38 @@
+FormKey: 01F060:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x616C6F
+    UseEmotionAnimation: True
+    Unused3: 0x303031
+  ResponseText: Are you calling me a coward?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6767
+    UseEmotionAnimation: True
+    Unused3: 0x633032
+  ResponseText: I'll beat you so hard you'll wish you never learned that word, you piece of shit.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: No, I understand it. It's just seems cowardly not to call them slaves.

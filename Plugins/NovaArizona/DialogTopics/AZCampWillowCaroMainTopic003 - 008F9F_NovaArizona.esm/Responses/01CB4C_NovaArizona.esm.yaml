@@ -1,0 +1,51 @@
+FormKey: 01CB4C:NovaArizona.esm
+FormVersion: 15
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: 008FA0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 20
+    ResponseNumber: 1
+    Unused2: 0x496E64
+    UseEmotionAnimation: True
+    Unused3: 0x616C53
+  ResponseText: Look across the water. Do you see the NCR? Where might they set up an outpost? On those mountains?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x686520
+    UseEmotionAnimation: True
+    Unused3: 0x2E2044
+  ResponseText: They were foolish to let us take this place. With Cottonwood Cove and Nelson under our control, the Colorado is ours.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6D7077
+  ResponseText: We feed our army right in their backyard. Dozens of their men lie beneath the water surface. Should they assault us again, there will be dozens more.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100688606
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100700052
+  SecondParameter: 2
+Choices:
+- 008FA1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How can you get this close to the river? Isn't the NCR on the other side?

@@ -1,0 +1,32 @@
+FormKey: 01CD40:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You don't know? We're not supposed to speak his name. Though I can tell you that it begins with a J.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721881
+Choices:
+- 01CD23:NovaArizona.esm
+- 01CD24:NovaArizona.esm
+- 01CD25:NovaArizona.esm
+- 01CD26:NovaArizona.esm
+- 01CD27:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: A second time? What was the first?

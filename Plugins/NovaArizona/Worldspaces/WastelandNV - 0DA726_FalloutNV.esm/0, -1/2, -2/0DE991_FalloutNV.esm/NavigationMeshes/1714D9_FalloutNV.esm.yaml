@@ -1,0 +1,89 @@
+FormKey: 1714D9:FalloutNV.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DE991:FalloutNV.esm
+  VertexCount: 10
+  TriangleCount: 8
+  EdgeLinkCount: 2
+Vertices:
+- 92280.5, -52130.754, 371.3589
+- 92305.266, -52569.426, 345.58447
+- 91767.09, -51962.953, 367.68457
+- 91778.64, -52614.6, 351.09277
+- 91201.87, -52232.426, 380.1167
+- 90736.49, -52775.875, 167.24756
+- 90112, -52097.33, 5.92334
+- 90112, -52739.082, -24.385254
+- 90112, -52602.992, -22.748047
+- 90112, -52224.223, 15.986084
+Triangles:
+- Vertices: 0, 2, 1
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 1, 2, 3
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 2, 4, 3
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: 1
+  Flags:
+  - Found
+- Vertices: 3, 4, 5
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: 4
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 4, 6, 5
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: 3
+  Flags:
+  - Found
+- Vertices: 8, 7, 5
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 6
+  Flags:
+  - Found
+- Vertices: 9, 8, 5
+  EdgeLink_1_2: 5
+  EdgeLink_2_0: 7
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 5, 6, 9
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: 6
+  Flags:
+  - EdgeLink_1_2
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 2193.2656
+  MaxDistanceY: 812.9219
+  Min: 90112, -52775.875, -24.385254
+  Max: 92305.266, -51962.953, 380.1167
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+EdgeLinks:
+- Mesh: 1714DA:FalloutNV.esm
+  Triangle: 22
+- Mesh: 1714DA:FalloutNV.esm
+  Triangle: 21

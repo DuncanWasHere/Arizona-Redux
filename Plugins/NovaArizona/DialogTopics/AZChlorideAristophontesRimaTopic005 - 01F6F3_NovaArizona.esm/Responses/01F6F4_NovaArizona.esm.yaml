@@ -1,0 +1,50 @@
+FormKey: 01F6F4:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2041
+    UseEmotionAnimation: True
+    Unused3: 0x6E5370
+  ResponseText: Oh. That's worrying. Something like that could cause quite the panic.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x727279
+    UseEmotionAnimation: True
+    Unused3: 0x536F6D
+  ResponseText: Though, it seems nobody has noticed. Isaiah himself certainly didn't bring this to my attention, and he would know Rima's body better than anyone.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Thank you, wastelander. I'll ruminate on this.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+Choices:
+- 01F6F3:NovaArizona.esm
+- 01F6F1:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Rima is sick. It's probably syphilis. She may have spread it to others.

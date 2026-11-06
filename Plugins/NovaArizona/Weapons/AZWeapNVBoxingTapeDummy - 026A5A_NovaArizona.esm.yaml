@@ -1,0 +1,50 @@
+FormKey: 026A5A:NovaArizona.esm
+EditorID: AZWeapNVBoxingTapeDummy
+FormVersion: 15
+ObjectBounds: {}
+Name: Boxing Tape
+Model:
+  File: weapons\hand2hand\BoxingTape_L.NIF
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_boxing_tape.dds
+Script: 1489CF:FalloutNV.esm
+ObjectEffect: 168A6E:FalloutNV.esm
+RepairList: 169B88:FalloutNV.esm
+EquipmentType: UnarmedWeapon
+BipedModelList: 12D855:FalloutNV.esm
+WorldModel:
+  File: weapons\hand2hand\BoxingTape_GO.NIF
+ImpactDataSet: 07DB64:FalloutNV.esm
+SoundEquip: 0C2F5B:FalloutNV.esm
+SoundUnequip: 0C2F5C:FalloutNV.esm
+Value: 100
+Health: 500
+Weight: 0.25
+ClipSize: 12
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+BaseVatsToHitChance: 12
+AttackAnimation: Default
+ProjectileCount: 1
+MaxRange: 500
+OnHit: NoDismemberExplode
+AnimationAttackMultiplier: 0.8
+FireRate: 5
+OverrideActionPoints: 28
+AttackShotsPerSec: 1.2631572
+ReloadTime: 1.3
+JamTime: 1.4
+Skill: 45
+LimbDamageMult: 1
+ResistType: -1
+StrengthReq: 1
+CriticalDamage: 4
+CriticalPercentMult: 1
+CriticalOnDeath: True
+Vats:
+  VatsSilent: True
+  VatsUnused: 49097
+SoundLevel: Normal

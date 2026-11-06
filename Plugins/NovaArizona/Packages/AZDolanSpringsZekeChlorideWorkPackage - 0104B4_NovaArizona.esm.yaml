@@ -1,0 +1,44 @@
+FormKey: 0104B4:NovaArizona.esm
+EditorID: AZDolanSpringsZekeChlorideWorkPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 101
+BehaviorFlags:
+- HellosToPlayer
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+- AllowIdleChatter
+Flags:
+  MutagenObjectType: PackageSandbox
+Unused2: 19541
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0104B3:NovaArizona.esm
+  Radius: 256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetQuestVariable
+  FirstParameter: 100723740
+  SecondParameter: 7
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

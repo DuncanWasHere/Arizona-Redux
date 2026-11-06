@@ -1,0 +1,95 @@
+FormKey: 00A84A:NovaArizona.esm
+EditorID: AZSpillwayTurretLegion
+FormVersion: 15
+ObjectBounds:
+  First: -33, -46, 0
+  Second: 33, 46, 107
+Name: Mark VI Turret
+Model:
+  File: Creatures\SentryTurret\skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07D4F3:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- SentryTurret.NIF
+ModelListTextures: 0x0100000003F4E50C733811B43D74650C733D11B43D74651F74D853798FEEDF0E7307A1F6C26E5F0E730CA1F6C274651F74D853798FF3DF0E7307A1F6C2735F0E730CA1F6C274651F74D853798F
+Configuration:
+  Flags:
+  - NoLowLevelProcessing
+  - NoHead
+  - NoRightArm
+  - NoLeftArm
+  - Immobile
+  - NotPushable
+  Fatigue: 100
+  Level: 12
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - ActorEffectList
+  - AIPackages
+  - ModelAnimation
+  - BaseData
+  - Inventory
+Factions:
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 006F69:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 09C95E:FalloutNV.esm
+Voice: 040D41:FalloutNV.esm
+Template: 07B23C:FalloutNV.esm
+Destructible:
+  Data:
+    Health: 100
+    DESTCount: 1
+    VATSTargetable: True
+  Stages:
+  - Data:
+      Flags:
+      - Disable
+      Explosion: 07078A:FalloutNV.esm
+      Debris: 0B8FF4:FalloutNV.esm
+      DebrisCount: 5
+Items:
+- Item:
+    Item: 078CC2:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 07B23A:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2263606528
+  Teaches: Barter
+Packages:
+- 0251AB:FalloutNV.esm
+Data:
+  Type: Robot
+  CombatSkill: 90
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 400
+  Damage: 1
+  Strength: 1
+  Perception: 10
+  Endurance: 10
+  Charisma: 1
+  Intelligence: 5
+  Agility: 5
+  Luck: 10
+AttackReach: 96
+CombatStyle: 07B238:FalloutNV.esm
+BodyPartData: 055E75:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 1
+FootWeight: 1
+ImpactMaterialType: Metal
+SoundLevel: Normal
+InheritsSoundFrom: 01E821:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm

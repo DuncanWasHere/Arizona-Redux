@@ -1,0 +1,86 @@
+FormKey: 00494D:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: Another Ranger passed through. She told me that she determined to get some valuable piece of technology that the beast had been guarding.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: She told me that, if I didn't fight it, she would. Rangers never turn their backs on each other. So, I found my resolve.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: She and I fixed up an artillery piece to use on the beast. I gave her my gun, fully expecting to die.  I took an old fire axe lying around and prepared to fight.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: The fight was a blur, but I'm fairly sure I was thrown into the air at one point.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: After I was sure that 30 seconds had passed, I screamed her to open fire and kill the thing. She simply stared at me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0xF6E71C
+    UseEmotionAnimation: True
+    Unused3: 0xF5E71C
+  ResponseText: I looked and saw that I had killed it in one blow. In that moment, I realized that my becoming a Desert Ranger wasn't a fluke.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C7061
+  ResponseText: That's when I truly earned that armor.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004B69:NovaArizona.esm
+- 004B75:NovaArizona.esm
+- 004B8D:NovaArizona.esm
+- 004BA0:NovaArizona.esm
+- 004BA2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Four years is a pretty long time. What changed?

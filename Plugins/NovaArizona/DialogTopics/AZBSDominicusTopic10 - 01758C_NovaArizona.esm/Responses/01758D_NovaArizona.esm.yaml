@@ -1,0 +1,60 @@
+FormKey: 01758D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x79732E
+    UseEmotionAnimation: True
+    Unused3: 0x6C6579
+  ResponseText: Now, shall we continue the interview?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetStage
+  FirstParameter: 100758634
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x39100A0002007203006E640000001C0001009E10050001007204001C0002009E10050001007205001C0002005E1000001C0002000F100900020001006E04000000
+  SourceCode: >-
+    setstage AZMalpaisJournalistQuest 100
+
+    player.moveto AZPostInterviewMarker
+
+    AZStanleyHartfordREF.moveto AZBigStopTravelMarkerStanleyREF
+
+    AZStanleyHartfordREF.evp
+
+    AZStanleyHartfordREF.setav confidence 4
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175E2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017643:NovaArizona.esm

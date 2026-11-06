@@ -1,0 +1,39 @@
+FormKey: 0089C0:NovaArizona.esm
+EditorID: AZReservationBighornersFollowPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- DefensiveCombat
+Unused: 97
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 44764
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetLinkedReference
+  CountOrDistance: 250
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100697662
+  SecondParameter: 4
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

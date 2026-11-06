@@ -1,0 +1,44 @@
+FormKey: 008611:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3EF:NovaArizona.esm
+PreviousInfo: 00B3FC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x00803F
+    UseEmotionAnimation: True
+    Unused3: 0x00803F
+  ResponseText: Didn't I already tell you not to talk to me, swine?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100697662
+  SecondParameter: 100
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100697662
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704548
+Choices:
+- 020DBE:NovaArizona.esm
+- 008756:NovaArizona.esm
+- 008758:NovaArizona.esm
+- 00B3F0:NovaArizona.esm
+- 00B3F2:NovaArizona.esm
+- 0086F3:NovaArizona.esm
+- 00B3FA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

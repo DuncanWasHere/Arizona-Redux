@@ -1,0 +1,84 @@
+FormKey: 00EB16:NovaArizona.esm
+EditorID: AZNewtFishingQuestDynamiteRemovalQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 4
+    VariableCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000003401000016000D0004000900207301002030203D3D611002000000150013007302000E0020720100582F100500010072020015000900730300040020313030150007007301000200203118000D000D000900207301002031203D3D160016000300120020720100582F10050001007203002030203E1C00010052100A0002007203006E01000000150013007302000E0020720100582F100500010072020015000D007304000800207304002031202B180017000300130020720100582F10050001007203002030203D3D1C00010052100A0002007204006E01000000150013007302000E0020720100582F100500010072020015000D007304000800207304002031202B1900000016000F0002000B002073040020313030203D3D6010020000001500070073010002002032190000001900000011000000
+  SourceCode: >-
+    scn AZNewtFishingQuestDynamiteRemovalQuestScript
+
+
+    int DoOnce
+
+    int Dynamite
+
+    int DynamiteDemand
+
+    int DynamiteRemoved
+
+
+    BEGIN GameMode
+
+
+    if DoOnce == 0
+    	DisablePlayerControls
+    	Set Dynamite to Player.GetItemCount AZDynamiteFormList
+    	Set DynamiteDemand to 100
+    	Set DoOnce to 1
+    elseif DoOnce == 1
+    	if Player.GetItemCount WeapNVDynamite > 0
+    		Player.RemoveItem WeapNVDynamite 1
+    		Set Dynamite to Player.GetItemCount AZDynamiteFormlist
+    		Set DynamiteRemoved to DynamiteRemoved + 1
+    	elseif Player.GetItemCount WeapNVDynamite == 0
+    		Player.RemoveItem WeapNVLongFuseDynamite 1
+    		Set Dynamite to Player.GetItemCount AZDynamiteFormlist
+    		Set DynamiteRemoved to DynamiteRemoved + 1
+    	endif
+    	if DynamiteRemoved == 100
+    		EnablePlayerControls
+    		Set DoOnce to 2
+    		;StopQuest AZNewtFishingQuestDynamiteRemovalQuest
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC04820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x525A0FF0595A0F
+    Name: DoOnce
+  - Data:
+      Index: 2
+      Unknown: 0xA04820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x8CD90000000000
+    Name: Dynamite
+  - Data:
+      Index: 3
+      Unknown: 0x804820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x405A0F5898540F
+    Name: DynamiteDemand
+  - Data:
+      Index: 4
+      Unknown: 0xA0DD29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x5C5A0F6C535A0F
+    Name: DynamiteRemoved
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB15:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0BA0F3:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 109A0C:FalloutNV.esm

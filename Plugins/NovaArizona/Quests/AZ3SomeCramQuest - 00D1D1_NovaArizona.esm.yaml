@@ -1,0 +1,43 @@
+FormKey: 00D1D1:NovaArizona.esm
+EditorID: AZ3SomeCramQuest
+FormVersion: 15
+Script: 01841D:NovaArizona.esm
+Name: Jambalaya
+QuestData:
+  Priority: 55
+  Unused: 19953
+Stages:
+- Index: 10
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E01000000
+      SourceCode: SetObjectiveDisplayed AZ3SomeCramQuest 10 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D1D1:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E010000007711070001006EFA000000
+      SourceCode: >-
+        SetObjectiveCompleted AZ3someCramquest 10 1 
+
+        RewardXP 250
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D1D1:NovaArizona.esm
+Objectives:
+- Index: 10
+  Description: Bring Joel 10 cans of Cram.
+  Targets:
+  - Target: 016267:NovaArizona.esm
+    Unused: 0x814C24

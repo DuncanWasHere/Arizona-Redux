@@ -1,0 +1,22 @@
+FormKey: 01C264:NovaArizona.esm
+EditorID: AZPlasmaGooificationUniqueInitQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 1
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C621600001000060000002800000080161300020B00580000A8140400000007004C63000000412809000100FFFF050052010011000000
+  SourceCode: >-
+    name AZPlasmaGooificationUniqueInitQuestScript;
+
+
+    GameMode {
+        if (GetGameRestarted()) {
+            MarkActivatorAshPile(AZPlasmaGooPileUnique);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01C266:NovaArizona.esm

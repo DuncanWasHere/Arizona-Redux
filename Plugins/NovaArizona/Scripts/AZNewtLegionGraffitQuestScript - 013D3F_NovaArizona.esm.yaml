@@ -1,0 +1,158 @@
+FormKey: 013D3F:NovaArizona.esm
+EditorID: AZNewtLegionGraffitQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 11
+    VariableCount: 17
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000006001000016001D0001001900207303002031203D3D2058AA1000002073040020213D202626150007007303000200203019000000160019000B001500207308002031203D3D20730A002030203D3D2026261C0001009E10050001007207001C00010002100A0002007208006E010000001C000100EE100F0003007208006E000000006E010000001C00010002100A0002007209006E010000001C000100EE100F0003007209006E000000006E0100000016001400030010002058541005000100720A002030203D3D1C0002002110020000001C0003002110020000001C0004002110020000001900000015000700730A00020020311900000016002C0005002800207309002031203D3D20730A002030203D3D2026262058541005000100720B002030203D3D2026261C0005002210020000001C0002002110020000001C0003002110020000001C00060021100200000015000700730A00020020311900000011000000
+  SourceCode: >-
+    scn AZNewtLegionGraffitQuestScript
+
+
+    int iMetPincturus
+
+    int iPabloSneak
+
+    int iPabloDayLastSnuck
+
+    int bHankHelp
+
+
+    short bHuntsGoatsPunished
+
+    short bPabloFound
+
+    short bPabloPunished
+
+    short bReservationTradersPunished
+
+    short bPabloSneaking
+
+    short DoOnce
+
+    short bGraffitiEnabled
+
+
+
+    begin GameMode
+
+    	if (iPabloSneak == 1) && (GetDayOfWeek != iPabloDayLastSnuck)
+    		set iPabloSneak to 0
+    	endif
+
+    	if (bPabloPunished == 1) && (DoOnce == 0)
+    			AZNewtPabloREF.MoveTo AZMalpaisChildrenQuartersMarkerREF
+    			AZNewtPabloREF.AddItem WithAmmoHuntingRifleLoot 1
+    			AZNewtPabloREF.EquipItem WithAmmoHuntingRifleLoot 0 1
+    			AZNewtPabloREF.AddItem ArmorNVCLRecruit 1
+    			AZNewtPabloREF.EquipItem ArmorNVCLRecruit 0 1
+    		if (GetDeadCount AZNewtIsabela == 0)
+    			AZNewtLegionGraffitiCrucifixREF01.enable
+    			AZNewtLegionGraffitiCrucifixFurnitureREF01.enable
+    			AZNewtIsabelaCrucifiedREF.enable
+    		endif
+    		Set DoOnce to 1
+    	endif
+
+    	if (bHuntsGoatsPunished == 1) && (DoOnce == 0) && (GetDeadCount AZBaseCampHuntsGoats == 0)
+    			AZHuntsGoatsREF.disable
+    			AZNewtLegionGraffitiCrucifixREF01.enable
+    			AZNewtLegionGraffitiCrucifixFurnitureREF01.enable
+    			AZHuntsGoatsCrucifiedREF.enable
+    		set DoOnce to 1
+    	endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0x805920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPabloSneaking
+  - Data:
+      Index: 3
+      Unknown: 0xA05820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPabloSneak
+  - Data:
+      Index: 4
+      Unknown: 0xC05820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPabloDayLastSnuck
+  - Data:
+      Index: 5
+      Unknown: 0x805820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iMetPincturus
+  - Data:
+      Index: 7
+      Unknown: 0x605920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bReservationTradersPunished
+  - Data:
+      Index: 8
+      Unknown: 0x405920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPabloPunished
+  - Data:
+      Index: 9
+      Unknown: 0x005920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bHuntsGoatsPunished
+  - Data:
+      Index: 10
+      Unknown: 0xA05920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 11
+      Unknown: 0x40DD29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGraffitiEnabled
+  - Data:
+      Index: 12
+      Unknown: 0x205920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPabloFound
+  - Data:
+      Index: 17
+      Unknown: 0xE05820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bHankHelp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D44:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D36:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D3A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013E1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D46:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013DFC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013DFF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0302A6:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE47C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D41:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D45:NovaArizona.esm

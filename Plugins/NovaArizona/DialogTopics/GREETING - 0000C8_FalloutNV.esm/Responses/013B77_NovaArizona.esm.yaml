@@ -1,0 +1,60 @@
+FormKey: 013B77:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: 0103A8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Aw, howdy, partner! If you're here to make a purchase, I'm sorry to say, but I'm all sold out.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 03DA7B:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But if you give me your details, I will absolutely be able to slot you in for my next shipment.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Happy
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Assuming of course that you can take advantage of my low, low prices.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 03DA82:FalloutNV.esm
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729754
+Choices:
+- 017557:NovaArizona.esm
+- 01039D:NovaArizona.esm
+- 01039E:NovaArizona.esm
+- 01039F:NovaArizona.esm
+- 0103A0:NovaArizona.esm
+- 0103A1:NovaArizona.esm
+- 0103A2:NovaArizona.esm
+- 0103A3:NovaArizona.esm
+- 0103A4:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

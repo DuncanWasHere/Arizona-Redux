@@ -1,0 +1,37 @@
+FormKey: 013154:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 013153:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x276C6C
+    UseEmotionAnimation: True
+    Unused3: 0x20746F
+  ResponseText: What-the-fuck-ever. You bring that up again, and you're not walking out of this camp alive.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702069
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Lie.> Nobody told me anything. I just have good intuition.
+ActorValuePerk: 0004BB:FalloutNV.esm

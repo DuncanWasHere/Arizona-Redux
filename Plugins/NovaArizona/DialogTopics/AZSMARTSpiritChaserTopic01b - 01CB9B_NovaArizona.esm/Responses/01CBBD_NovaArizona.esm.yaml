@@ -1,0 +1,51 @@
+FormKey: 01CBBD:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{Laughs}No, that's not my name. I was referring to the Mark of Caesar you have."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, no, my name is Spirit Chaser. It's a pleasure to meet you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+Choices:
+- 01CB96:NovaArizona.esm
+- 01CB9C:NovaArizona.esm
+- 01CB9F:NovaArizona.esm
+- 01CBA4:NovaArizona.esm
+- 01CBA5:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002031
+  SourceCode: Set AZFreeformSMARTArray.SpiritChaserIntroduced to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CB95:NovaArizona.esm
+Prompt: Nice to meet you, Mark.

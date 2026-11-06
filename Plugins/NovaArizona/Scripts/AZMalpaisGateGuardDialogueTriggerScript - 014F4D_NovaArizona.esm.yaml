@@ -1,0 +1,30 @@
+FormKey: 014F4D:NovaArizona.esm
+EditorID: AZMalpaisGateGuardDialogueTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A0056000000010072010039150C00010B0056010200120042010039150C00010B0056010200130042000080161300020B00560102000E0042000407004C7A0000003A15170001160052030078000097100B000100FFFF05005204002811000000
+  SourceCode: >-
+    name AZMalpaisGateGuardDialogueTriggerScript;
+
+
+    OnTriggerEnter::Player {
+    	AZFreeformMalpais.FrontTrigger = 1;
+    	AZFreeformMalpais.BackTrigger = 0;
+
+    	if (AZFreeformMalpais.bPlayerWeaponsConfiscated == 0) {
+    		AZMalpaisGateGuardREF.AddScriptPackage(AZMalpaisGateGuardDialoguePackage);
+    	}
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013B7A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 014F49:NovaArizona.esm

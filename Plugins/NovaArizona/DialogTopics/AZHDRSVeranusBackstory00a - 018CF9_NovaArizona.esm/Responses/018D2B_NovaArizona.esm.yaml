@@ -1,0 +1,40 @@
+FormKey: 018D2B:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 018D2A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] Probably, but then the NCR couldn't see them, so it'd be a moot point."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 7
+  Function: GetActorValue
+  FirstParameter: 6
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744745
+Choices:
+- 018CF7:NovaArizona.esm
+- 0101DA:NovaArizona.esm
+- 0101E8:NovaArizona.esm
+- 0101EE:NovaArizona.esm
+- 00C6C9:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Yeah, but wouldn't it demoralize them more if they were slaves?
+ActorValuePerk: 0003E9:FalloutNV.esm

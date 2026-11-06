@@ -1,0 +1,28 @@
+FormKey: 034279:NovaArizona.esm
+EditorID: AZHavenArrivalTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B001A005900000001007201003A151D00011C00520200780000331011000200FFFF0500520300FFFF04004201283A152400012300520400780000341018000300FFFF0500520100FFFF0500520300FFFF0400420128221002000000BB110200000011000000
+  SourceCode: >-
+    name AZHavenArrivalTriggerScript;
+
+
+    OnTriggerEnter::Player {
+        AZHavenSerwaREF.Say(AZHavenIntroDialogueTopic01, 1);
+        AZHavenConvoTalkerREF.SayTo(Player, AZHavenIntroDialogueTopic01, 1);
+        Disable();
+        MarkForDelete();
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBAA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034200:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034289:NovaArizona.esm

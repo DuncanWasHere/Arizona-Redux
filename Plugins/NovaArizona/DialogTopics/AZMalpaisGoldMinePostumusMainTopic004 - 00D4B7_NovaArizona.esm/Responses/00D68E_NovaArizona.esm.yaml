@@ -1,0 +1,36 @@
+FormKey: 00D68E:NovaArizona.esm
+FormVersion: 15
+Quest: 00D474:NovaArizona.esm
+PreviousInfo: 00D68D:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And you're usually dull for a freebie.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100710244
+Choices:
+- 00D508:NovaArizona.esm
+- 00D4B9:NovaArizona.esm
+- 00D4B3:NovaArizona.esm
+- 00D4B4:NovaArizona.esm
+- 00D4B5:NovaArizona.esm
+- 00D4B6:NovaArizona.esm
+- 00D4B7:NovaArizona.esm
+- 00D4B8:NovaArizona.esm
+- 00D4BB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're unusually bold for a slave.

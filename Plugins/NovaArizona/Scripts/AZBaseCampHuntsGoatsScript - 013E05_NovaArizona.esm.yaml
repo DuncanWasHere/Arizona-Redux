@@ -1,0 +1,23 @@
+FormKey: 013E05:NovaArizona.esm
+EditorID: AZBaseCampHuntsGoatsScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C800004061000080002002A000000000080161300020B0056010100090042010407004C4B00000059100B00010072020000000000000011000000
+  SourceCode: >-
+    name AZBaseCampHuntsGoatsScript;
+
+
+    OnActivate {
+    	if (AZNewtLegionGraffitiQuest.bHuntsGoatsPunished == 1) {
+    		ShowMessage(NiptonCrucifiedMSG);
+    	}
+
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D30:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 168F56:FalloutNV.esm

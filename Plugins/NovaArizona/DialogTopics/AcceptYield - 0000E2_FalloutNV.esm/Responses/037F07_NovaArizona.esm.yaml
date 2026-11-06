@@ -1,0 +1,29 @@
+FormKey: 037F07:NovaArizona.esm
+FormVersion: 15
+Data:
+  Type: Combat
+  Flags:
+  - Random
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037F08:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You're lucky I'm in a good mood today.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

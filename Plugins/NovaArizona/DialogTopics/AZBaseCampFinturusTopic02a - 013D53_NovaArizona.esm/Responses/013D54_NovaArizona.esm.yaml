@@ -1,0 +1,51 @@
+FormKey: 013D54:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x030105
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: My superiors do not believe this to be an issue. The Fort and Base Camp are so far from the frontline that they do not even bother posting guards.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x656420
+    UseEmotionAnimation: True
+    Unused3: 0x746F20
+  ResponseText: They apparently cannot understand that if Caesar's will is affronted even the smallest bit, then the Legion is weakened.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x110700
+    UseEmotionAnimation: True
+    Unused3: 0x000053
+  ResponseText: Justice is justice, order is order, and the law is the law. We must enforce it even if it be inconvenient to us.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D53:NovaArizona.esm
+- 013D55:NovaArizona.esm
+- 013D57:NovaArizona.esm
+- 013D5B:NovaArizona.esm
+- 013D68:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: How is that even possible? This place is swarming with Legionaries.

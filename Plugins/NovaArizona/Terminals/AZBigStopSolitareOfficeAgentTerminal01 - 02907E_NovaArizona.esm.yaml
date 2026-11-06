@@ -1,0 +1,49 @@
+FormKey: 02907E:NovaArizona.esm
+EditorID: AZBigStopSolitareOfficeAgentTerminal01
+FormVersion: 15
+ObjectBounds:
+  First: -18, -20, 0
+  Second: 24, 20, 37
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >-
+  PoseidoNet Remote Uplink
+
+
+  Local files
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: Realtime Encrypted Messaging System
+  ResultText: ''
+  DisplayNote: 02907D:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: Hiram wiretap transcription
+  ResultText: ''
+  DisplayNote: 02907C:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0xA03C28160000000000000000
+        Unknown2: 0x67205379737465
+      Name: mylink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+- ItemText: Recent unsaved Auto-dictator transcript
+  ResultText: Opening...
+  MenuItemFlags:
+  - AddNote
+  SubMenu: 029082:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

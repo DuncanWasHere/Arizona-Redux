@@ -1,0 +1,36 @@
+FormKey: 039F4A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x76656E
+  ResponseText: I do not. Whatever the community votes to do, they will do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+Choices:
+- 039F42:NovaArizona.esm
+- 039F43:NovaArizona.esm
+- 039F44:NovaArizona.esm
+- 039F45:NovaArizona.esm
+- 039F46:NovaArizona.esm
+- 039F47:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Do you know who's doing to execute you?

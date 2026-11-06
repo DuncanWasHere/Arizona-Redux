@@ -1,0 +1,218 @@
+FormKey: 02089A:NovaArizona.esm
+EditorID: AZBrushQuest01
+FormVersion: 15
+Script: 0209BD:NovaArizona.esm
+Name: This Is So Nice
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Starts quest; Enables the stoner scene.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x1C0001002110020000001C0002002110020000001C000300211002000000A3110F0003007204006E050000006E010000001600230001001F0020720500582E1000002030203D3D2072050058321000002030203D3D202626A3110F0003007204006E060000006E0100000019000000
+      SourceCode: >-
+        AZGilaMonsterDead01REF.enable
+
+        AZGilaMonsterDead02REF.enable
+
+        AZMutilatedBrahminREF.enable
+
+        SetObjectiveDisplayed AZBrushQuest01 5 1
+
+
+        if AZMineLegionary.GetDead == 0 && AZMineLegionary.GetTalkedToPC == 0
+        	SetObjectiveDisplayed AZBrushQuest01 6 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209C0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209CB:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 006D93:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Return to the Decanus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A2110F0003007201006E0A0000006E01000000A3110F0003007201006E0F0000006E01000000A3110F0003007201006E100000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZBrushQuest01 5 1
+
+        SetObjectiveCompleted AZBrushQuest01 10 1
+
+        SetObjectiveDisplayed AZBrushQuest01 15 1
+
+        SetObjectiveDisplayed AZBrushQuest01 16 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089A:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Completes quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 9
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E96000000A2110F0003007207006E100000006E010000001C00010002100A0002007208006E140000001C0002002210020000001C0003002210020000001C0004002210020000001C0005005E1000001C0006005E100000160014000800100020583A10050001007209002035203D3D1600100001000C00207207007301002031203D3D39100A0002007209006E1E000000190000001600100003000C00207207007302002031203D3DA3110F0003007209006E0C0000006E01000000A3110F0003007209006E050000006E00000000A3110F0003007209006E060000006E000000001900000019000000
+      SourceCode: >-
+        Player.RewardXP 150
+
+        SetObjectiveCompleted AZBrushQuest01 16 1
+
+        Player.AddItem MoneyLegion1 20
+
+        AZGilaMonsterDead01REF.disable
+
+        AZGilaMonsterDead02REF.disable
+
+        AZMutilatedBrahminREF.disable
+
+        AZCowFieldAsherREF.evp
+
+        AZCowFieldFicusREF.evp
+
+
+        if GetStage AZBrushQuest02 == 5
+        	if AZBrushQuest01.BrushAllowed == 1
+        		SetStage AZBrushQuest02 30
+        	endif
+        	if AZBrushQuest01.BrushBanned == 1
+        		SetObjectiveDisplayed AZBrushQuest02 12 1
+        		SetObjectiveDisplayed AZBrushQuest02 5 0
+        		SetObjectiveDisplayed AZBrushQuest02 6 0
+        	endif
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209C0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209CB:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209B9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02089B:NovaArizona.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Fails quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x1C0001002210020000001C0002002210020000001C0003002210020000001C0004005E1000001C0005005E100000
+      SourceCode: >-
+        AZGilaMonsterDead01REF.disable
+
+        AZGilaMonsterDead02REF.disable
+
+        AZMutilatedBrahminREF.disable
+
+        AZCowFieldAsherREF.evp
+
+        AZCowFieldFicusREF.evp
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209C0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209CB:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209B9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0209BA:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Speak to Asher and Ficus about why they support using Brush.
+  Targets:
+  - Target: 0209B9:NovaArizona.esm
+    Unused: 0x786D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100796570
+      SecondParameter: 7
+  - Target: 0209BA:NovaArizona.esm
+    Unused: 0x786D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetQuestVariable
+      FirstParameter: 100796570
+      SecondParameter: 6
+- Index: 6
+  Description: (Optional) Find Callum and bring him back to Decanus Quintus.
+  Targets:
+  - Target: 006D93:NovaArizona.esm
+    Unused: 0x786D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+      RunOnType: Reference
+      Reference: 006D93:NovaArizona.esm
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 006D93:NovaArizona.esm
+- Index: 10
+  Description: Help Asher and Ficus clean up the cattle mutilation.
+  Targets:
+  - Target: 0209C0:NovaArizona.esm
+    Unused: 0x25102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 0209C0:NovaArizona.esm
+  - Target: 0209CB:NovaArizona.esm
+    Unused: 0x25102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 0209CB:NovaArizona.esm
+  - Target: 0209BF:NovaArizona.esm
+    Unused: 0x25102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 0209BF:NovaArizona.esm
+- Index: 15
+  Description: (Optional) Burn the Brush with Asher and Ficus.
+  Targets:
+  - Target: 0209B9:NovaArizona.esm
+    Unused: 0x132529
+- Index: 16
+  Description: Speak to Decanus Quintus about your decision on Brush.
+  Targets:
+  - Target: 00C2F8:NovaArizona.esm
+    Unused: 0x24102B

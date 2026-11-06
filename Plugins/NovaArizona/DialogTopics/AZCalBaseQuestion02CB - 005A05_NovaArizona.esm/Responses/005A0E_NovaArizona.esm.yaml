@@ -1,0 +1,49 @@
+FormKey: 005A0E:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F6D
+  ResponseText: Inonotus obliquus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6C686F
+  ResponseText: Grows on birch and other woods.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x657368
+    UseEmotionAnimation: True
+    Unused3: 0x6F6F6D
+  ResponseText: It's the primary source of the coffee taste of our... er... coffee.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 005A04:NovaArizona.esm
+- 005A05:NovaArizona.esm
+- 005A09:NovaArizona.esm
+- 00556D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Chaga?

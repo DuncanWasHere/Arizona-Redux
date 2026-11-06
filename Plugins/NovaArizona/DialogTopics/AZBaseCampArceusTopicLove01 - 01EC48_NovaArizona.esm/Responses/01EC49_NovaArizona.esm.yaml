@@ -1,0 +1,84 @@
+FormKey: 01EC49:NovaArizona.esm
+FormVersion: 15
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Ha! Is that sanctimony or disgust? Yes, perhaps it would be better if I could fuck some {with contempt}woman and enjoy it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Disgust
+    EmotionValue: 100
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "{anger, self-hatred}It would indeed be better, if being sent to the rest camps for my 'holy duty' didn't make me want to crawl out of my skin."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But that's not the life I was given. What do I see in him? I see gentleness... and wonder. And an eye for details, for beauty. There is no one else like him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And yes, he is weak. That's why it's my duty to protect him. There is no other purpose for strength. It exists to protect the weak from evil.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x651A17
+    UseEmotionAnimation: True
+    Unused3: 0x5C1A17
+  ResponseText: That's my answer.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 180
+  Function: GetStage
+  FirstParameter: 100768688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 45
+  Function: GetStage
+  FirstParameter: 100768688
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768685
+Choices:
+- 00875C:NovaArizona.esm
+- 019C79:NovaArizona.esm
+- 01EC48:NovaArizona.esm
+- 019C77:NovaArizona.esm
+- 019C6E:NovaArizona.esm
+- 01EC60:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you see in Flemus?

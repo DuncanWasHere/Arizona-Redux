@@ -1,0 +1,29 @@
+FormKey: 0174C7:NovaArizona.esm
+FormVersion: 15
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x626565
+    UseEmotionAnimation: True
+    Unused3: 0x6E2074
+  ResponseText: Great! Alright, so the rate's going to be 100 caps per interview. Another 100 caps for any major scoops. Pretty simple, right?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174C9:NovaArizona.esm
+- 0174CC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Sure, why not?

@@ -1,0 +1,63 @@
+FormKey: 013D97:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Ah. I suspected as much. His mother will be crucified under lex talionis, and he himself will need honest discipline in Caesar's service.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x77744C
+  ResponseText: Here is your reward.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E1F0000001C00010002100A0002007203006E3200000015000A007202007308000200203116001900010015002058A5110A0002007202006E160000002031203D3DA3110F0003007202006E160000006E0000000019000000
+  SourceCode: >-
+    SetStage AZNewtLegionGraffitiQuest 31
+
+    Player.AddItem MoneyLegion1 50
+
+
+    Set AZNewtLegionGraffitiQuest.bPabloPunished to 1
+
+
+    if GetObjectiveDisplayed AZNewtLegionGraffitiQuest 22 == 1
+    	SetObjectiveDisplayed AZNewtLegionGraffitiQuest 22 0
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D30:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC4:FalloutNV.esm
+Prompt: There is a child in Newt, named Pablo. He was responsible.

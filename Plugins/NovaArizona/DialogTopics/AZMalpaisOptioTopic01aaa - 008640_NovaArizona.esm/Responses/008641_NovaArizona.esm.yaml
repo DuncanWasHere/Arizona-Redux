@@ -1,0 +1,32 @@
+FormKey: 008641:NovaArizona.esm
+FormVersion: 15
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: It's difficult. None of the targets' exact locations are known to us. Well, except the caravan, they radioed in their position.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+Choices:
+- 0056E0:NovaArizona.esm
+- 0056DF:NovaArizona.esm
+- 0056DB:NovaArizona.esm
+- 0071BB:NovaArizona.esm
+- 0071A7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: So, tell me about my targets.

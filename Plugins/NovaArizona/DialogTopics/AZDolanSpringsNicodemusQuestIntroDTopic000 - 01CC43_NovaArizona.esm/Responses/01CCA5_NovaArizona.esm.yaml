@@ -1,0 +1,54 @@
+FormKey: 01CCA5:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Alright, listen up cause I'm only gonna say this once.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: 'I need: a haunted artifact, a magnificent beast rendered stuffed...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...couture of a cutting-edge style, and a *perfect* fucking rock.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+Choices:
+- 01CC46:NovaArizona.esm
+- 01CC47:NovaArizona.esm
+- 01CC48:NovaArizona.esm
+- 01CC49:NovaArizona.esm
+- 01CC4A:NovaArizona.esm
+- 01CC4B:NovaArizona.esm
+- 01CC4C:NovaArizona.esm
+- 01CC4D:NovaArizona.esm
+- 01CC4E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Depends. What are you looking for?

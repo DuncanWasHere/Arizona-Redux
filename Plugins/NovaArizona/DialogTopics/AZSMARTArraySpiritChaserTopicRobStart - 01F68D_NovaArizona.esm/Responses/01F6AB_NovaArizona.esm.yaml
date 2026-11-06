@@ -1,0 +1,73 @@
+FormKey: 01F6AB:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Get ready.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 10
+    Enabled: 1
+  CompiledScript: 0x15000A00720700730400020020317910080002007208007209001C000100801105000100720A001C000200801105000100720A001C000300801105000100720A001C000400801105000100720A001C0005000814070001006EF40100001C0006000814070001006EF4010000A2110F0003007207006E090000006E01000000
+  SourceCode: >-
+    set AZChlorideAntibioticsQuest.bConvincedSpiritChaser to 1
+
+    setally AZSMARTArrayLegionFaction PlayerFaction
+
+    AZSmartArrayLegionCaravanGuardREF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArrayLegionCaravanGuardBackupREF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArrayLegionCaravanGuardBackup03REF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArrayLegionCaravanGuardBackup02REF.removefromfaction vcaesarslegionfaction
+
+    AZSMARTArraySpiritChaserREF.sethealth 500
+
+    AZSmartArrayBelliusREF.sethealth 500
+
+    setobjectivecompleted AZChlorideAntibioticsQuest 9 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5C0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5C2:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5FD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5FB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC20:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC1F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F6C6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0EE68A:FalloutNV.esm
+Prompt: Okay. Let's do it.

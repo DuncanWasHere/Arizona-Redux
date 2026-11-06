@@ -1,0 +1,37 @@
+FormKey: 00D071:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah. I'll just hire every stranger that comes in here and talks my ear off. What makes you think I even want your help, big shot?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100716610
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 00D053:NovaArizona.esm
+- 00D054:NovaArizona.esm
+- 00D055:NovaArizona.esm
+- 00D056:NovaArizona.esm
+- 00D057:NovaArizona.esm
+- 00D058:NovaArizona.esm
+- 00D05F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You need any help?

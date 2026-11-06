@@ -1,0 +1,537 @@
+FormKey: 01CC27:NovaArizona.esm
+EditorID: AZDolanSpringsNicodemusQuest
+FormVersion: 15
+Name: Bat Country
+QuestData:
+  Priority: 55
+  Unused: 29285
+Stages:
+- Index: 1
+  LogEntries:
+  - Flags: []
+    Entry: Player accepted quest from Nicodemus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E010000006E01000000A3110F0003007201006E0A0000006E01000000A3110F0003007201006E140000006E01000000A3110F0003007201006E1E0000006E01000000A3110F0003007201006E280000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 1 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 10 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 20 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 30 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 40 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Player got phonautograph.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E0100000016001400010010002058A5110A0002007201006E0C000000A2110F0003007201006E0C0000006E0100000019000000A3110F0003007201006E0F0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 10 1
+
+
+        if GetObjectiveDisplayed AZDolanSpringsNicodemusQuest 12
+          SetObjectiveCompleted AZDolanSpringsNicodemusQuest 12 1
+        endif
+
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Player has phonautograph and needs to get it certified.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E100000006E01000000
+      SourceCode: SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 16 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 16
+  LogEntries:
+  - Flags: []
+    Entry: Player has phonautograph and certificate.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E100000006E01000000
+      SourceCode: >+
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 16 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 17
+  LogEntries:
+  - Flags: []
+    Entry: Player gave phonautograph to Nicodemus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E0F0000006E010000001C00010052100A0002007204006E010000001C00010052100A0002007205006E010000001C00010002100A0002007206006E0500000039120F0003007207006E010000006E0100000016003A000100360020583B100A0002007203006E1B00000020583B100A0002007203006E1E00000020262620583B100A0002007203006E3000000020262639100A0002007203006E32000000190000001C000200211002000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 15 1
+
+
+        Player.RemoveItem AZWhiteHillsPhonautograph 1
+
+        Player.RemoveItem AZCertificateOfParanormalAuthenticity 1
+
+
+        Player.AddItem MoneyLegion1 5
+
+        AddReputation AZRepDolanSprings 1 1
+
+
+        if (GetStageDone AZDolanSpringsNicodemusQuest 27 && GetStageDone AZDolanSpringsNicodemusQuest 30 && GetStageDone AZDolanSpringsNicodemusQuest 48)
+          SetStage AZDolanSpringsNicodemusQuest 50
+        endif
+
+
+        AZWhiteHillsPhonautographDolanSpringsREF.Enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CD0E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0176F3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC29:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004366:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    Entry: Player found Pimp Guai.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Player is looking for transportation for the Pimp Guai.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E190000006E01000000
+      SourceCode: SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 26
+  LogEntries:
+  - Flags: []
+    Entry: Pimp Guai is en route to Nicodemus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E190000006E010000001C000100211002000000160019000100150020720200582F100500010072040020323030203E3D1C00020052100A0002007204006EC80000001700020001001C00020052100A0002007205006E0800000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 25 1
+
+        AZMountPerkinsPimpGuaiDolanSpringsREF.Enable
+
+        if Player.GetItemCount MoneyLegion1 >= 200
+        	Player.RemoveItem MoneyLegion1 200
+        else
+        	Player.RemoveItem MoneyLegion25 8
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CD0D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC7:FalloutNV.esm
+- Index: 27
+  LogEntries:
+  - Flags: []
+    Entry: Pimp Guai was delivered to Nicodemus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E140000006E010000001C00010002100A0002007203006E0500000039120F0003007204006E010000006E0100000016003A000100360020583B100A0002007202006E1100000020583B100A0002007202006E1E00000020262620583B100A0002007202006E3000000020262639100A0002007202006E3200000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 20 1
+
+
+        Player.AddItem MoneyLegion1 5
+
+        AddReputation AZRepDolanSprings 1 1
+
+
+        if (GetStageDone AZDolanSpringsNicodemusQuest 17  && GetStageDone AZDolanSpringsNicodemusQuest 30 && GetStageDone AZDolanSpringsNicodemusQuest 48)
+          SetStage AZDolanSpringsNicodemusQuest 50
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004366:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags: []
+    Entry: Player sold fashion accessory to Nicodemus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E1E0000006E010000001C00010002100A0002007203006E0500000039120F0003007204006E010000006E0100000016003A000100360020583B100A0002007202006E1100000020583B100A0002007202006E1B00000020262620583B100A0002007202006E3000000020262639100A0002007202006E3200000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 30 1
+
+
+        Player.AddItem MoneyLegion1 5
+
+        AddReputation AZRepDolanSprings 1 1
+
+
+        if (GetStageDone AZDolanSpringsNicodemusQuest 17  && GetStageDone AZDolanSpringsNicodemusQuest 27 && GetStageDone AZDolanSpringsNicodemusQuest 48)
+          SetStage AZDolanSpringsNicodemusQuest 50
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004366:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    Entry: Player found perfect rock.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+      SourceCode: >2+
+
+- Index: 45
+  LogEntries:
+  - Flags: []
+    Entry: Player got perfect rock.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E280000006E0100000016001400010010002058A5110A0002007201006E29000000A2110F0003007201006E290000006E0100000019000000A3110F0003007201006E2D0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 40 1
+
+
+        if GetObjectiveDisplayed AZDolanSpringsNicodemusQuest 41
+          SetObjectiveCompleted AZDolanSpringsNicodemusQuest 41 1
+        endif
+
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 45 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 46
+  LogEntries:
+  - Flags: []
+    Entry: Player needs to wash rock.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E2D0000006E01000000A3110F0003007202006E2E0000006E010000001C00010002100A0002007203006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 45 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 46 1
+
+
+        Player.AddItem AZComb 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 011ADE:NovaArizona.esm
+- Index: 47
+  LogEntries:
+  - Flags: []
+    Entry: Player washed rock.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2E0000006E01000000A3110F0003007201006E2F0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 46 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 47 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 48
+  LogEntries:
+  - Flags: []
+    Entry: Nicodemus adopted Roger.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 8
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007203006E2F0000006E010000001C00010052100A0002007204006E020000001C00010052100A0002007205006E010000001C00010052100A0002007206006E010000001C00010002100A0002007207006E0300000039120F0003007208006E010000006E010000001C00020021100200000016003A000100360020583B100A0002007203006E1100000020583B100A0002007203006E1B00000020262620583B100A0002007203006E1E00000020262639100A0002007203006E3200000019000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 47 1
+
+
+        Player.RemoveItem AZDolanSpringsNicodemusGooglyEye 2
+
+        Player.RemoveItem WonderGlue 1
+
+        Player.RemoveItem AZPondPerfectRock 1
+
+
+
+        Player.AddItem MoneyLegion1 3
+
+        AddReputation AZRepDolanSprings 1 1
+
+
+        AZDolanSpringsRogerEnableMarkerREF.Enable
+
+
+        if (GetStageDone AZDolanSpringsNicodemusQuest 17  && GetStageDone AZDolanSpringsNicodemusQuest 27 && GetStageDone AZDolanSpringsNicodemusQuest 30)
+          SetStage AZDolanSpringsNicodemusQuest 50
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC36:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC2C:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02210A:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC23:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004366:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Player acquired all items.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E010000006E01000000
+      SourceCode: SetObjectiveCompleted AZDolanSpringsNicodemusQuest 1 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry: Player paid off Nicodemus's debt.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E320000006E01000000
+      SourceCode: SetObjectiveCompleted AZDolanSpringsNicodemusQuest 50 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 70
+  LogEntries:
+  - Flags: []
+    Entry: Player is taking Roger to the vet.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E3C0000006E01000000
+      SourceCode: SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 60 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 75
+  LogEntries:
+  - Flags: []
+    Entry: Player took Roger to the vet.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E3C0000006E01000000A3110F0003007201006E410000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZDolanSpringsNicodemusQuest 60 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 65 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 80
+  LogEntries:
+  - Flags: []
+    Entry: Player has to dispose of Roger.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E460000006E01000000A3110F0003007201006E4B0000006E01000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 70 1
+
+        SetObjectiveDisplayed AZDolanSpringsNicodemusQuest 75 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+- Index: 90
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Nicodemus died.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Player got reward from Nicodemus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0xAD11050001007202001C0001007711070001006EFA0000001C00010002100A0002007203006E0A00000039120F0003007204006E010000006E02000000160016000100120020720100582F10050001007205002030203E1C00010052100A0002007205006E0100000019000000
+      SourceCode: >-
+        CompleteAllObjectives AZDolanSpringsNicodemusQuest
+
+        Player.RewardXP 250
+
+        Player.AddItem MoneyLegion1 10
+
+        AddReputation AZRepDolanSprings 1 2
+
+        if Player.GetItemCount AZDolanSpringsNicodemusCheckbook > 0
+        	Player.RemoveItem AZDolanSpringsNicodemusCheckbook 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC27:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 004366:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01CC2B:NovaArizona.esm
+Objectives:
+- Index: 1
+  Description: Procure items for Nicodemus's Collection.
+- Index: 10
+  Description: Acquire a haunted artifact.
+  Targets:
+  - Target: 00485A:NovaArizona.esm
+    Unused: 0x974C24
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetQuestVariable
+      FirstParameter: 100722316
+      SecondParameter: 24
+    - Fluff: 0x000000
+      Function: 421
+      FirstParameter: 100781095
+      SecondParameter: 12
+- Index: 12
+  Description: Search White Hills for a haunted artifact.
+  Targets:
+  - Target: 0098C8:NovaArizona.esm
+    Unused: 0x191428
+- Index: 15
+  Description: Bring the phonautograph to Nicodemus.
+  Targets:
+  - Target: 000805:NovaArizona.esm
+    Unused: 0xB21527
+- Index: 16
+  Description: Find someone to certify that the phonautograph is haunted.
+  Targets:
+  - Target: 00E4DA:NovaArizona.esm
+    Unused: 0x7C6D2C
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+- Index: 20
+  Description: Bring Nicodemus a taxidermied animal.
+- Index: 25
+  Description: Hire someone to transport the taxidermy to Dolan Springs.
+  Targets:
+  - Target: 013905:NovaArizona.esm
+    Unused: 0x7C6D2C
+  - Target: 00D422:NovaArizona.esm
+    Unused: 0x7C6D2C
+- Index: 30
+  Description: Bring Nicodemus a fancy outfit.
+- Index: 40
+  Description: Acquire a "perfect" rock.
+  Targets:
+  - Target: 00A93A:NovaArizona.esm
+    Unused: 0x964C24
+    Conditions:
+    - Fluff: 0x000000
+      ComparisonValue: 1
+      Function: GetQuestVariable
+      FirstParameter: 100722316
+      SecondParameter: 27
+- Index: 45
+  Description: Return to Nicodemus with the perfect rock.
+  Targets:
+  - Target: 000805:NovaArizona.esm
+    Unused: 0x191428
+- Index: 46
+  Description: Wash the rock in the Dolan Springs Springhouse.
+  Targets:
+  - Target: 014132:NovaArizona.esm
+    Unused: 0x152529
+- Index: 47
+  Description: Return to Nicodemus with the clean rock.
+  Targets:
+  - Target: 000805:NovaArizona.esm
+    Unused: 0x191428

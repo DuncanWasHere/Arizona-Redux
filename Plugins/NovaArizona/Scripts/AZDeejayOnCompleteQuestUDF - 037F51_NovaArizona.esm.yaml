@@ -1,0 +1,44 @@
+FormKey: 037F51:NovaArizona.esm
+EditorID: AZDeejayOnCompleteQuestUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000C000D004D0000000101010004001600100001000C0020720100730C00203120213D1E00000017000200030016000F0001000B0020660100205A0300203D3D1C000100561008000200720400720500190000001900000011000000
+  SourceCode: >-
+    scn AZDeejayOnCompleteQuestUDF
+
+
+    ref rQuest
+
+
+    begin Function {rQuest}
+
+    	if AZDeejayREF.bCurrentlyHired != 1
+    		return
+    	else
+    		if (rQuest == VMS47)
+    			AZDeejayREF.startconversation player AZDeejayTopicTrustCryMeARiver01
+    		endif
+
+    	endif
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0D129120000000000000000
+      Unknown2: 0x65725472696767
+    Name: rQuest
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 140C3C:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03809C:NovaArizona.esm

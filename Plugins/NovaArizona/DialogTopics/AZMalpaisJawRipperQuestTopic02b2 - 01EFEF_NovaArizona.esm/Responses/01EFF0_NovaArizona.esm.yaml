@@ -1,0 +1,61 @@
+FormKey: 01EFF0:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: '[SUCCEEDED] Without proof, I am not obliged to believe you. But, I can appreciate you wanting to protect our children. Very well.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x25530C
+    UseEmotionAnimation: True
+    Unused3: 0xF52F4E
+  ResponseText: 'Know this: I offer no second chances.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C0001007711070001006E3C000000A2110F0003007202006E280000006E0100000039100A0002007202006EC8000000
+  SourceCode: >-
+    Player.RewardXP 60
+
+    SetObjectiveCompleted AZBigStopChildSoldierQuest 40 1
+
+    SetStage AZBigStopChildSoldierQuest 200
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: I apologize. I acted on instinct to protect the children.
+ActorValuePerk: 0004BB:FalloutNV.esm

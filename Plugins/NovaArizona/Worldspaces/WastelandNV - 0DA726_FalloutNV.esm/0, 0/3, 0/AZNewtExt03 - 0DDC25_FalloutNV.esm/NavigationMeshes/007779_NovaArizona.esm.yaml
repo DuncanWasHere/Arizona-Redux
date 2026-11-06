@@ -1,0 +1,113 @@
+FormKey: 007779:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DDC25:FalloutNV.esm
+  VertexCount: 12
+  TriangleCount: 10
+  EdgeLinkCount: 3
+  DoorLinkCount: 1
+Vertices:
+- 123372.35, 28672, 2785.1143
+- 123091.01, 28672, 2790.5635
+- 123214.19, 28489.434, 2800.4253
+- 123295.4, 28524.572, 2795.744
+- 123306.086, 28377.355, 2789.2607
+- 123390.79, 28472.43, 2792.8706
+- 123244.17, 28291.84, 2797.3728
+- 123133.19, 28342.926, 2801.3962
+- 123291.94, 28672, 2783.198
+- 122996.98, 28627.361, 2786.1636
+- 122932.29, 28672, 2786.1636
+- 122983.9, 28570.994, 2786.1636
+Triangles:
+- Vertices: 8, 1, 2
+  EdgeLink_0_1: 1
+  EdgeLink_1_2: 9
+  EdgeLink_2_0: 6
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 0, 2, 3
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 2, 4, 3
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: 1
+  Flags:
+  - Found
+- Vertices: 3, 4, 5
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 2, 6, 4
+  EdgeLink_0_1: 5
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 2
+  Flags:
+  - Door
+  - Found
+- Vertices: 2, 7, 6
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 4
+  Flags:
+  - Found
+- Vertices: 2, 0, 8
+  EdgeLink_0_1: 1
+  Flags:
+  - EdgeLink_1_2
+  - Found
+- Vertices: 1, 10, 9
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 9
+  Flags:
+  - EdgeLink_0_1
+  - Found
+- Vertices: 9, 11, 2
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 9
+  Flags:
+  - Found
+- Vertices: 2, 1, 9
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: 8
+  Flags:
+  - Found
+DoorLinks:
+- DoorReference: 005A07:NovaArizona.esm
+  Triangle: 4
+  Unused: 3255
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 458.5
+  MaxDistanceY: 380.16016
+  Min: 122932.29, 28291.84, 2783.198
+  Max: 123390.79, 28672, 2801.3962
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+EdgeLinks:
+- Mesh: 00777D:NovaArizona.esm
+  Triangle: 418
+- Mesh: 00777D:NovaArizona.esm
+  Triangle: 428
+- Mesh: 00777D:NovaArizona.esm
+  Triangle: 432

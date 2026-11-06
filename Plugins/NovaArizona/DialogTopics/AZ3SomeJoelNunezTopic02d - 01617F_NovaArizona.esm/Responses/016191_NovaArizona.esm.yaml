@@ -1,0 +1,59 @@
+FormKey: 016191:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: Now that is a difficult question.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: The NCR is a rock that's been rolling downhill for quite some time
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: Do I like the idea of the NCR? Sure.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x697220
+    UseEmotionAnimation: True
+    Unused3: 0x6F2074
+  ResponseText: But with jagoffs like Kimball at the helm, it's tough to make the case that they're much better than anyone else.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717623
+Choices:
+- 01615C:NovaArizona.esm
+- 016175:NovaArizona.esm
+- 01617E:NovaArizona.esm
+- 01617F:NovaArizona.esm
+- 016180:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think of the NCR?

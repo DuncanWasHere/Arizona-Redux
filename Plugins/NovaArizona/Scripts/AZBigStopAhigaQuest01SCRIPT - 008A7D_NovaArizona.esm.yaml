@@ -1,0 +1,221 @@
+FormKey: 008A7D:NovaArizona.esm
+EditorID: AZBigStopAhigaQuest01SCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    VariableCount: 27
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000
+  SourceCode: >-
+    scn AZBigStopAhigaQuest01Script
+
+
+    short iDiscoveredPartsBroken
+
+    short iRedRiversInformed
+
+    short iAhigaPressed
+
+    short iAhigaQuestioned ; Used in the deadend section of the quest 1 = Questioning allowed, 2 = Questioning is complete
+
+    short iAhigaAccused ; 1 = Ahiga went hostile, 2 = Ahiga claims he is NCR, 3 = Ahiga claims he is Legion, 4 = Ahiga claims he is Lanius
+
+
+    short iAlbaNoxGunPartsFound
+
+    short iAlbaNoxFramed
+
+    short iLogbookInvestigated
+
+    short iScrewdriverFound
+
+    short iToolboxInvestigated ; 1 = Toolbox Found, 2 = Screwdriver is Paired with Toolbox
+
+    short iAlbaNoxAccused
+
+    int iBothInforQuestioning
+
+
+    short RangerRevealed ; 1 = Revealed through NCR, 2 = Revealed through Perception or Survival
+
+    short RangerOffer
+
+    short DineMentioned ; 1 = Ranger drops the hint, 2 = Hint needs to be developed; 3 = Hint answered
+
+    short RangerPackageVariable ; Used for moving the Ranger to where he needs to go
+
+    short ParkerPlansPermission ; 1 = You have been given authorization to look at the real Parker war plans
+
+    short ParkerIntel
+
+
+    short AhigaMeeting ; 1 = Meeting normal, 2 = Meeting through holotape
+
+    short AhigaHouseCheck ; Used for Ahiga to investigate the holotape
+
+
+    ; Ahiga Truth Variables 
+
+    short ConfederacyQuestioning
+
+    short HavenQuestioning
+
+    short SUHQuestioning
+
+
+    short HavenInfo ; Used after accepting the job 
+
+
+    short AhoteReadytoLeave
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC03920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iDiscoveredPartsBroken
+  - Data:
+      Index: 2
+      Unknown: 0xE03920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x61726B00000000
+    Name: iRedRiversInformed
+  - Data:
+      Index: 3
+      Unknown: 0x003A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30303000000000
+    Name: iAhigaPressed
+  - Data:
+      Index: 4
+      Unknown: 0x203A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iAhigaQuestioned
+  - Data:
+      Index: 5
+      Unknown: 0x403A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iAhigaAccused
+  - Data:
+      Index: 7
+      Unknown: 0x403C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E6730310000
+    Name: ConfederacyQuestioning
+  - Data:
+      Index: 9
+      Unknown: 0x803C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x75656661737466
+    Name: SUHQuestioning
+  - Data:
+      Index: 10
+      Unknown: 0x603C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: HavenQuestioning
+  - Data:
+      Index: 11
+      Unknown: 0xA03C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000090120000
+    Name: HavenInfo
+  - Data:
+      Index: 12
+      Unknown: 0x00E929120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000030060000
+    Name: AhoteReadytoLeave
+  - Data:
+      Index: 13
+      Unknown: 0x403B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x67317831000000
+    Name: RangerRevealed
+  - Data:
+      Index: 14
+      Unknown: 0x603B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x67327831303030
+    Name: RangerOffer
+  - Data:
+      Index: 15
+      Unknown: 0x803B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x12000024C25900
+    Name: DineMentioned
+  - Data:
+      Index: 16
+      Unknown: 0x603A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30310000000000
+    Name: iAlbaNoxGunPartsFound
+  - Data:
+      Index: 17
+      Unknown: 0x803A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x326872756E6571
+    Name: iAlbaNoxFramed
+  - Data:
+      Index: 18
+      Unknown: 0xA03A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iLogbookInvestigated
+  - Data:
+      Index: 19
+      Unknown: 0xE03A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x733031616E696D
+    Name: iToolboxInvestigated
+  - Data:
+      Index: 20
+      Unknown: 0x003B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6C6C646F776E00
+    Name: iAlbaNoxAccused
+  - Data:
+      Index: 21
+      Unknown: 0xC03A20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x32687272656C6F
+    Name: iScrewdriverFound
+  - Data:
+      Index: 22
+      Unknown: 0xA03B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3148616C665669
+    Name: RangerPackageVariable
+  - Data:
+      Index: 23
+      Unknown: 0xC03B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x31320000000000
+    Name: ParkerPlansPermission
+  - Data:
+      Index: 24
+      Unknown: 0xE03B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ParkerIntel
+  - Data:
+      Index: 25
+      Unknown: 0x003C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x75656661737466
+    Name: AhigaMeeting
+  - Data:
+      Index: 26
+      Unknown: 0x203C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x316C6D686F6C73
+    Name: AhigaHouseCheck
+  - Data:
+      Index: 27
+      Unknown: 0x203B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F777570000000
+    Name: iBothInforQuestioning

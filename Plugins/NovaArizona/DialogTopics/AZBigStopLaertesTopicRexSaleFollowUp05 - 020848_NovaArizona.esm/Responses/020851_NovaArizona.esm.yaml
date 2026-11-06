@@ -1,0 +1,33 @@
+FormKey: 020851:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Cerberus? No, of course not. After all, there's no indication that he's Caesar's dog. I just know a good Cyber-Dog when I see it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+- Fluff: 0x000000
+  Function: GetDisabled
+  RunOnType: Reference
+  Reference: 00DC1A:NovaArizona.esm
+Choices:
+- 020853:NovaArizona.esm
+- 020854:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What about your dog I got for you already?

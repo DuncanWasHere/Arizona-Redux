@@ -1,0 +1,47 @@
+FormKey: 039F2D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 024C73:NovaArizona.esm
+PreviousInfo: 024CCC:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x617665
+  ResponseText: Seriously, I don't care. Tell you what. You can pick for me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100813743
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100812870
+  SecondParameter: 5
+Choices:
+- 039F2E:NovaArizona.esm
+- 039F2F:NovaArizona.esm
+- 039F30:NovaArizona.esm
+- 039F31:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073050002002031
+  SourceCode: Set AZHavenMurderQuest.AhoteDecision to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024846:NovaArizona.esm
+Prompt: I'm trying to figure about how to deal with Job. I need some answer.

@@ -1,0 +1,32 @@
+FormKey: 01DB31:NovaArizona.esm
+FormVersion: 15
+Quest: 00DBB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, I'm sorry to disappoint you, but there isn't anything interesting going on here. The tower is damaged.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100748893
+Choices:
+- 01DB24:NovaArizona.esm
+- 01DB25:NovaArizona.esm
+- 01DB26:NovaArizona.esm
+- 01DB27:NovaArizona.esm
+- 01DB28:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm just exploring this mountain.

@@ -1,0 +1,29 @@
+FormKey: 014F38:NovaArizona.esm
+EditorID: AZHeadWakeemScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0003008B00000001007201003A151D00011C005202007800008B1011000200FFFF0500520100FFFF0400420128A21115000300FFFF0500520300FFFF0400421EFFFF04004201A31115000300FFFF0500520300FFFF04004223FFFF04004201A21115000300FFFF0500520300FFFF0400421FFFFF040042013A15170001160052040078000016100B000100FFFF05005201002811000000
+  SourceCode: >-
+    name AZHeadWakeemScript;
+
+
+    OnAdd::Player {
+        AZTribalRaiderBossREF.Kill(Player, 1);
+        SetObjectiveCompleted(AZWhiteHillsMineDialogue, 30, 1);
+        SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 35, 1);
+        SetObjectiveCompleted(AZWhiteHillsMineDialogue, 31, 1);
+        AZBigSparMineLetiREF.StartCombat(Player);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 005F98:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A76F:NovaArizona.esm

@@ -1,0 +1,31 @@
+FormKey: 03808A:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It makes me wish Mars was real. Then, maybe there'd be some punishment for these people. But no, nothing is ever that easy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037FB3:NovaArizona.esm
+- 038084:NovaArizona.esm
+- 038088:NovaArizona.esm
+- 038089:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It's terrible that the Legion is allowing this to happen.

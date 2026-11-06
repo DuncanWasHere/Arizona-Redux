@@ -1,0 +1,54 @@
+FormKey: 039A77:NovaArizona.esm
+EditorID: AZElephantHillCartRideLightEnablerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B001A002C000000010072030015000B00660100060020586B11000015000B0066020006002058CD1000001C0001002110020000001100000010000B001B002C000000010072030015000B00660100060020586B11000015000B0066020006002058CD1000001C00010022100200000011000000
+  SourceCode: >-
+    scn AZElephantHillCartRideLightEnablerScript
+
+
+
+    ref myLink
+
+    ref myActor
+
+
+    begin ontriggerenter player
+
+    		set myLink to getLinkedRef
+    		set myActor to getActionRef
+    		myLink.enable
+
+    end
+
+
+
+    begin ontriggerleave player
+
+    		set myLink to getLinkedRef
+    		set myActor to getActionRef
+    		myLink.disable
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xC0C920120000000000000000
+      Unknown2: 0x2F203137372E30
+    Name: myLink
+  - Data:
+      Index: 2
+      Unknown: 0x60D429120000000000000000
+      Unknown2: 0x0000007B000000
+    Name: myActor
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 2
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

@@ -1,0 +1,47 @@
+FormKey: 00EF78:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: 00EF72:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It does, doesn't it? I can't prove it, but I'm pretty sure it's because General Oliver hates us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Officially, it's because all of our outposts are being overwhelmed by the Legion, but I know he considers McCarran his base, even if he's at the Dam right now.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+Choices:
+- 00EE9E:NovaArizona.esm
+- 00EEAF:NovaArizona.esm
+- 00EE48:NovaArizona.esm
+- 00EE4C:NovaArizona.esm
+- 00EE6E:NovaArizona.esm
+- 00EE6F:NovaArizona.esm
+- 00EE8D:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why aren't there many Rangers at McCarran? That seems like a big blind spot.

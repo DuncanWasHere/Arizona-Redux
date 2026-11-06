@@ -1,0 +1,14 @@
+FormKey: 020AA3:NovaArizona.esm
+EditorID: AZBrushQuest02WaterPrePoisoned
+FormVersion: 15
+Description: This is one of the main water valves of Malpais. Poisoning the water supply here will likely cripple Legion activities in the area for a while, if possibly not for long.
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing.
+- Text: Dump the Smooch cannister into the water valve.
+  Conditions:
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetItemCount
+    FirstParameter: 100797085

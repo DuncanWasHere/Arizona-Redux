@@ -1,0 +1,120 @@
+FormKey: 00C523:NovaArizona.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 00C4E8:NovaArizona.esm
+  VertexCount: 14
+  TriangleCount: 12
+  DoorLinkCount: 1
+Vertices:
+- 1874.8152, 1916.8752, 7031.8003
+- 1739.6198, 1917.6714, 7031.8003
+- 1871.7103, 1990.5883, 7031.88
+- 1748.5282, 1989.9232, 7031.88
+- 1791.3326, 2088.1772, 7031.8003
+- 1732.5664, 2085.6455, 7031.8003
+- 1873.6094, 2085.5261, 7031.8003
+- 1799.6941, 2174.6565, 7031.8003
+- 1873.251, 2177.8079, 7031.88
+- 1798.7313, 2287.5928, 7031.8003
+- 1869.3657, 2287.2974, 7031.8003
+- 1872.1063, 2389.3005, 7032
+- 1725.7582, 2397.4382, 7031.992
+- 1735.2493, 2301.7302, 7031.9995
+Triangles:
+- Vertices: 0, 2, 1
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 1, 2, 3
+  EdgeLink_1_2: 2
+  EdgeLink_2_0: -1
+  Flags:
+  - Door
+  - Found
+- Vertices: 2, 4, 3
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 3
+  EdgeLink_2_0: 1
+  Flags:
+  - Found
+- Vertices: 3, 4, 5
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 4, 2, 6
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 5
+  Flags:
+  - Found
+- Vertices: 4, 6, 7
+  EdgeLink_0_1: 4
+  EdgeLink_1_2: 6
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 6, 8, 7
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 7
+  EdgeLink_2_0: 5
+  Flags:
+  - Found
+- Vertices: 7, 8, 9
+  EdgeLink_0_1: 6
+  EdgeLink_1_2: 8
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 8, 10, 9
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 9
+  EdgeLink_2_0: 7
+  Flags:
+  - Found
+- Vertices: 9, 10, 11
+  EdgeLink_0_1: 8
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 10
+  Flags:
+  - Found
+- Vertices: 9, 11, 12
+  EdgeLink_0_1: 9
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 11
+  Flags:
+  - Found
+- Vertices: 9, 12, 13
+  EdgeLink_0_1: 10
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+DoorLinks:
+- DoorReference: 00C52D:NovaArizona.esm
+  Triangle: 1
+  Unused: 3254
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 149.057
+  MaxDistanceY: 480.563
+  Min: 1725.7582, 1916.8752, 7031.8003
+  Max: 1874.8152, 2397.4382, 7032
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11

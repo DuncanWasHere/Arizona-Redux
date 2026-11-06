@@ -1,0 +1,50 @@
+FormKey: 00EB9E:NovaArizona.esm
+EditorID: AZAmmonRaTalkPackage
+FormVersion: 15
+GeneralFlags:
+- MustComplete
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 16256
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 256
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100874956
+  SecondParameter: 1
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100874956
+  SecondParameter: 1
+DialogueData:
+  DialogueFOV: 100
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

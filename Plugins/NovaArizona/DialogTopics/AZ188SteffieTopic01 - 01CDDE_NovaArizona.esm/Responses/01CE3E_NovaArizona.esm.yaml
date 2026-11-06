@@ -1,0 +1,32 @@
+FormKey: 01CE3E:NovaArizona.esm
+FormVersion: 15
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: 01CDF0:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's really fine. I don't want you to waste your money on me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789163
+Choices:
+- 01CDE3:NovaArizona.esm
+- 01CDE4:NovaArizona.esm
+- 01CDE5:NovaArizona.esm
+- 01CDE6:NovaArizona.esm
+- 01CDE7:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: About your caps situation...

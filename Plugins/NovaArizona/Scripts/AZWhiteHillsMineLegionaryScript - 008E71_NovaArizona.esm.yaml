@@ -1,0 +1,40 @@
+FormKey: 008E71:NovaArizona.esm
+EditorID: AZWhiteHillsMineLegionaryScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967292
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A006C000000000039100F000200FFFF0500520100FFFF0400425A80163800023000580000A51111000200FFFF0500520200FFFF04004206580000A41111000200FFFF0500520200FFFF04004206150207004C8D000000A21115000300FFFF0500520200FFFF04004206FFFF04004200110000001000060000007300000080161D000215005800003A100B000100FFFF0500520100425F0407004C0A0100008016100002080056010100070007004C0A01000080162200021A0052030078000001100B000100FFFF0500520400284910270607004C0A0100003A151000010F005204007800002210040000002811000000
+  SourceCode: >-
+    name AZWhiteHillsMineLegionaryScript;
+
+
+    OnDeath {
+        SetStage(AZWhiteHillsMineDialogue, 90);
+
+        if (GetObjectiveDisplayed(AZBrushQuest01, 6) && !GetObjectiveCompleted(AZBrushQuest01, 6)) {
+            SetObjectiveCompleted(AZBrushQuest01, 6, 0);
+        }
+    }
+
+
+    GameMode {
+        if (GetStage(AZWhiteHillsMineDialogue) == 95) {
+            if (AZWhiteHillsMineDialogue.killedcallum) {
+                if (Player.GetDistance(AZBigSparMineCallumREF) > 10000) {
+                    AZBigSparMineCallumREF.Disable();
+                }
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006D93:NovaArizona.esm

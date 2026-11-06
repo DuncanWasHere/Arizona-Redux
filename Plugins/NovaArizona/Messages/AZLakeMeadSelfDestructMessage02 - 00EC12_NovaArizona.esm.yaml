@@ -1,0 +1,85 @@
+FormKey: 00EC12:NovaArizona.esm
+EditorID: AZLakeMeadSelfDestructMessage02
+FormVersion: 15
+Description: ''
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Think about your options.
+- Text: Smash your head into the junction box.
+  Conditions:
+  - CompareOperator: LessThan
+    Fluff: 0x000000
+    ComparisonValue: 4
+    Function: GetActorValue
+    FirstParameter: 9
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Punch the junction box.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 7
+    Function: GetActorValue
+    FirstParameter: 5
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+  - CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 70
+    Function: GetActorValue
+    FirstParameter: 45
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Shoot the junction box.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetItemCount
+    FirstParameter: 1486506
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Smash the junction box.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetItemCount
+    FirstParameter: 1486505
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Pull some wires.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 8
+    Function: GetActorValue
+    FirstParameter: 11
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Rewire the junction box.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 50
+    Function: GetActorValue
+    FirstParameter: 40
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+  - CompareOperator: GreaterThanOrEqualTo
+    Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 50
+    Function: GetActorValue
+    FirstParameter: 39
+    RunOnType: Reference
+    Reference: 000014:FalloutNV.esm
+- Text: Just start ripping out some wires.

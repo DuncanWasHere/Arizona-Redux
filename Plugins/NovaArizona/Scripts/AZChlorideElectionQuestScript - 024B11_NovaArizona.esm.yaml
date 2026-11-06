@@ -1,0 +1,143 @@
+FormKey: 024B11:NovaArizona.esm
+EditorID: AZChlorideElectionQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 16
+    VariableCount: 16
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406
+  SourceCode: >-
+    name AZChlorideElectionQuestScript;
+
+
+    int CalvinRunningMate;
+
+    int LukeRunningMate;
+
+    int MerchantsKilled; // Leads to Aetius declaring martial law if over three are killed
+
+    int CalvinShares;
+
+    int LukeShares;
+
+    int ElectionWinner; // 1 = Calvin, 2 = Luke
+
+
+    int BelwetherSupport; // 1 = Calvin, 2 = Luke
+
+    int CalvinBaseShares; // Should initially start as three
+
+    int HankBethSupport; // 1 = Calvin (used if the player is working with Luke), 2 = Luke (used if the player is working with Calvin)
+
+    int JuliusShares; // 0 = 0 shares, 1 = 1 share, 2 = 2 shares, 3 = 3 shares
+
+    int ManinBlackSupport; // 1 = Calvin, 2 = Luke
+
+    int MiliaSupport; // 1 = Calvin, 2 = Luke
+
+    int OmarSupport; // 0 = Uncommitted, 1 = Calvin, 2 = Luke
+
+    int RuizSupport; // 0 = Uncommitted, 1 = Calvin, 2 = Luke
+
+    int TexSupport;// 1 = Calvin, 2 = Luke
+
+    int TresLechesSupport; // 0 = Uncommitted, 1 = Calvin, 2 = Luke
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CalvinRunningMate
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: LukeRunningMate
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: MerchantsKilled
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CalvinShares
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: LukeShares
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ElectionWinner
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: BelwetherSupport
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: CalvinBaseShares
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: HankBethSupport
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: JuliusShares
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ManinBlackSupport
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: MiliaSupport
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: OmarSupport
+  - Data:
+      Index: 14
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: RuizSupport
+  - Data:
+      Index: 15
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: TexSupport
+  - Data:
+      Index: 16
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: TresLechesSupport

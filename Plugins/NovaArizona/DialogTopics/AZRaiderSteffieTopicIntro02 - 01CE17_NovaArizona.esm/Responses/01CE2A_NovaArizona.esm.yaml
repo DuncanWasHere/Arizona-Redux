@@ -1,0 +1,56 @@
+FormKey: 01CE2A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00DC3D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 100
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Wait. Holy shit. It's you!
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 08747D:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh my god, it's so good to see you again. How have you been?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100719760
+Choices:
+- 01CE19:NovaArizona.esm
+- 01CE1A:NovaArizona.esm
+- 01CE1B:NovaArizona.esm
+- 01CE1C:NovaArizona.esm
+- 01CE1D:NovaArizona.esm
+- 01CE1E:NovaArizona.esm
+- 01CE24:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E01000000
+  SourceCode: AZRaiderSteffieREF.removeitem ArmorRaider03Helmet 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDF8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 078645:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Bring it on.

@@ -1,0 +1,68 @@
+FormKey: 0130B6:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Kyle is dead. I almost can't believe it. I'll never have to fear him ever again.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: I only wish I could have made him suffer the way I have, as a slave. But it's enough to know he's dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x726565
+  ResponseText: I suppose I'm the leader of the Hooks now. For that, I can't thank you enough.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetStage
+  FirstParameter: 100806563
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+  CompiledScript: 0x39100A0002007201006E05000000
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022FA3:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E640000001C00010050110000
+  SourceCode: >+
+    SetStage AZRustyHooksPackFightQuest 100
+
+    AZRustyHooksBearREF.ResetHealth
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00977A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022FA3:NovaArizona.esm

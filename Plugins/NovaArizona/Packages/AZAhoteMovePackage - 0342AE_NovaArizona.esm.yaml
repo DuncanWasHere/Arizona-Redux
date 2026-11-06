@@ -1,0 +1,39 @@
+FormKey: 0342AE:NovaArizona.esm
+EditorID: AZAhoteMovePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- AlwaysRun
+- WeaponDrawn
+Unused: 85
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 28225
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0342A8:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 21
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

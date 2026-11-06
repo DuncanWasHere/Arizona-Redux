@@ -1,0 +1,55 @@
+FormKey: 024D9A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x260006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I am the senior Centurion of the Fort's Base Camp, and this is the War Room.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x260006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In this room, I plan the great battles of the Legion. Not just the upcoming battle at the Dam, but of the conquests from Freeside to Primm.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x260006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In addition, all soldiers in the shadow of the Fort report to me. In exchange for their absolute loyalty, I provide them the bounties of Newt.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+Choices:
+- 025065:NovaArizona.esm
+- 020DDC:NovaArizona.esm
+- 024DAF:NovaArizona.esm
+- 020E01:NovaArizona.esm
+- 020E04:NovaArizona.esm
+- 024D99:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you do here?

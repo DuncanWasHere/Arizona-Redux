@@ -1,0 +1,73 @@
+FormKey: 024E01:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: This is satisfactory. Nox will be taken in for questioning. You did well to report this. The Legion thanks you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100698646
+  SecondParameter: 21
+BeginScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007202006E6400000015000A0072030073030002002030
+  SourceCode: >-
+    Player.RemoveItem AZAhigaScrewdriver 100
+
+    Set AZBigStopAugustQuest.NoxHasTarget to 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024C1E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x3B12130003007202006E010000007A0000000000000040A3110F0003007203006E090000006E00000000A2110F0003007203006E0D0000006E01000000A3110F0003007203006E0E0000006E01000000A3110F0003007203006E110000006E00000000A3110F0003007203006E140000006E000000001C000100221002000000
+  SourceCode: >-
+    AddReputationExact RepNVCaesarsLegion 1 2
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 9 0
+
+    SetObjectiveCompleted AZBigStopAhigaQuest01 13 1
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 14 1
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 17 0
+
+    SetObjectiveDisplayed AZBigStopAhigaQuest01 20 0
+
+    AZBigStopAlbaNoxREF.disable
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A67:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: I found the screwdriver used to break the guns in Alba Nox's home.

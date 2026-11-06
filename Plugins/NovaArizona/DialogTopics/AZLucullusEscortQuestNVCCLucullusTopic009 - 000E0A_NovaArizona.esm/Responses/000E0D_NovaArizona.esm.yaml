@@ -1,0 +1,32 @@
+FormKey: 000E0D:NovaArizona.esm
+FormVersion: 15
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As you know, I am Lucullus. I serve with the speculatores as a cursor. My duty is to conduct reconaissance and facilitate transport across the river.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+Choices:
+- 0019F1:NovaArizona.esm
+- 0019F8:NovaArizona.esm
+- 0019FC:NovaArizona.esm
+- 0019FE:NovaArizona.esm
+- 000E0A:NovaArizona.esm
+- 000E17:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,63 @@
+FormKey: 00ED61:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00EC1C:NovaArizona.esm
+PreviousInfo: 00ED4A:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, this collateral will serve the purpose it needs to.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: In my generosity, owing to legal ambiguity, I hereby waive the remainder of her payment.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100723740
+  SecondParameter: 6
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 103
+  Function: GetItemCount
+  FirstParameter: 1534660
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetStageDone
+  FirstParameter: 100723740
+  SecondParameter: 7
+Choices:
+- 00EC2D:NovaArizona.esm
+- 00DECA:NovaArizona.esm
+- 00EC3D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073090002002033
+  SourceCode: Set AZChlorideTaxQuest.SandyWaiveStatus to 3
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC1C:NovaArizona.esm
+Prompt: Sandy Rhodes told me that she already paid taxes to the Meridiem authorities. She has collateral.

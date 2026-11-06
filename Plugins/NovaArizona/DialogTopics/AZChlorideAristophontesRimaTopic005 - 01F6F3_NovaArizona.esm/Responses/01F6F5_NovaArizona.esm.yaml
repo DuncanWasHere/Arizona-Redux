@@ -1,0 +1,67 @@
+FormKey: 01F6F5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0104A0:NovaArizona.esm
+PreviousInfo: 01F6F4:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E2041
+    UseEmotionAnimation: True
+    Unused3: 0x6E5370
+  ResponseText: Perhaps. I'm not sure. Sometimes it's best to do nothing at all.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x727279
+    UseEmotionAnimation: True
+    Unused3: 0x536F6D
+  ResponseText: Still, I'm glad you brought this to my attention. Here, a reward for your trouble. I trust you'll tell no one else of this.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If that's all, I bid you farewell.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721906
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007202006E0F0000006E0100000039100A0002007202006E0A0000001C00010002100A0002007203006E050000007711070001006E96000000
+  SourceCode: >-
+    setobjectivecompleted AZChlorideAntibioticsQuest 15 1
+
+    setstage AZChlorideAntibioticsQuest 10
+
+    player.additem MoneyLegion25 5
+
+    rewardxp 150
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 176AC7:FalloutNV.esm
+Prompt: So, are you going to do something about it?

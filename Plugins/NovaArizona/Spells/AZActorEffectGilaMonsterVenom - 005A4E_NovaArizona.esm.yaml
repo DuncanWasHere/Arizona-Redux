@@ -1,0 +1,33 @@
+FormKey: 005A4E:NovaArizona.esm
+EditorID: AZActorEffectGilaMonsterVenom
+FormVersion: 15
+Name: Gila Monster Venom
+Type: Poison
+Effects:
+- BaseEffect: 031851:FalloutNV.esm
+  Data:
+    Magnitude: 2
+    Duration: 120
+    Type: Touch
+    ActorValue: Health
+  Conditions:
+  - Flags:
+    - OR
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetIsReference
+    FirstParameter: 20
+  - Fluff: 0x000000
+    ComparisonValue: 1
+    Function: 586
+- BaseEffect: 035F08:FalloutNV.esm
+  Data:
+    Magnitude: 1
+    Duration: 10
+    Type: Touch
+    ActorValue: ActionPoints
+- BaseEffect: 032DE3:FalloutNV.esm
+  Data:
+    Magnitude: 3
+    Type: Touch
+    ActorValue: Perception

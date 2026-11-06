@@ -1,0 +1,35 @@
+FormKey: 020A98:NovaArizona.esm
+EditorID: AZCallumCrucifiedPackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- ContinueIfPcNear
+- SkipFalloutBehavior
+- HeadTrackingOff
+- ContinueDuringCombat
+Unused: 114
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 24939
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearLinkedReference
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

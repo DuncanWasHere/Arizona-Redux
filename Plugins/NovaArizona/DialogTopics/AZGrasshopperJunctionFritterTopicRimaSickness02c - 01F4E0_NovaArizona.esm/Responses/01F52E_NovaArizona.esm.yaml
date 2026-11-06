@@ -1,0 +1,58 @@
+FormKey: 01F52E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Good question. If I recall, there was a lawman around here who was doing some sort of investigation into mercury. I think his name was Donald Springer.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x4A756E
+    UseEmotionAnimation: True
+    Unused3: 0x467269
+  ResponseText: Wait, no, I'm sorry. He was in Donald Springs. I would go there. Maybe there's something that could lead you somewhere useful.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718668
+Choices:
+- 01F4E0:NovaArizona.esm
+- 01F4E1:NovaArizona.esm
+- 01F4E2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1C000100211002000000A3110F0003007202006E030000006E01000000A2110F0003007202006E010000006E01000000
+  SourceCode: >-
+    AZChlorideAntibioticsQuestLawNoteREF.enable
+
+    setobjectivedisplayed AZChlorideAntibioticsQuest 3 1
+
+    setobjectivecompleted AZChlorideAntibioticsQuest 1 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F5F6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F58D:NovaArizona.esm
+Prompt: Well? Where am I supposed to go?

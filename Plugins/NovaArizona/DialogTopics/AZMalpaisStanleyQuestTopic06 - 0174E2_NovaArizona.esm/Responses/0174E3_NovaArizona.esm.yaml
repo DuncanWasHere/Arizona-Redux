@@ -1,0 +1,33 @@
+FormKey: 0174E3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4A6F75
+    UseEmotionAnimation: True
+    Unused3: 0x737451
+  ResponseText: What, no! That's insane. Are you trying to get me killed?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 0174E4:NovaArizona.esm
+- 0174E6:NovaArizona.esm
+- 0174EB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: We should call for the slaves to rise up against the Legion.

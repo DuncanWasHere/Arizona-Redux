@@ -1,0 +1,55 @@
+FormKey: 00B3CF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: The future.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: A nation for all Born Ghouls to congregate and share our millenia of collective experise and knowledge.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: Or so they say. I spend most of my time outside the radiation blanket these days.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 00B3D1:NovaArizona.esm
+- 00B3D2:NovaArizona.esm
+- 00B3D0:NovaArizona.esm
+- 00B3D3:NovaArizona.esm
+- 00B3D9:NovaArizona.esm
+- 00B3D8:NovaArizona.esm
+- 00B3EA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's the Reservation?

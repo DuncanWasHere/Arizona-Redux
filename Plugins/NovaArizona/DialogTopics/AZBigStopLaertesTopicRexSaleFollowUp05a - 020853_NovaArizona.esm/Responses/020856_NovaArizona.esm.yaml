@@ -1,0 +1,86 @@
+FormKey: 020856:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] Very well, I already gave a reward for bringing Cerberus back to me, so don't expect another one. Here, boy!"
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x32342C
+  ResponseText: Still, here's a modest pittance.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713543
+BeginScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010002100A0002007202006E6400000039100A0002007203006E190000001C0001007711070001006E3C000000160014000100100020582212050001007204002030203D3D39100A0002007204006E6E00000019000000
+  SourceCode: >-
+    Player.AddItem Caps001 100
+
+    SetStage AZLaertesSellDogQuest 25
+
+    Player.RewardXP 60
+
+    if GetQuestCompleted VMS24 == 0
+    	SetStage VMS24 110
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00000F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02083D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 1176B8:FalloutNV.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x9111050001007202001C0001008B10020000001C000100221002000000261005000100720300
+  SourceCode: >-
+    ApplyImageSpaceModifier FadeToBlackAndBackISFX
+
+    AZCrLaertesDogReturnedREF.KillActor
+
+    AZCrLaertesDogReturnedREF.Disable
+
+    PlaySound NPCDogDeath
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 08F0BC:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 059C80:FalloutNV.esm
+Prompt: Why take a chance?
+ActorValuePerk: 0004B0:FalloutNV.esm

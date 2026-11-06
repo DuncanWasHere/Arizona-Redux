@@ -1,0 +1,62 @@
+FormKey: 037DB7:NovaArizona.esm
+EditorID: AZWeapGrenadeFragDeejay
+FormVersion: 15
+ObjectBounds: {}
+Name: Frag Grenade
+Model:
+  File: weapons\1handgrenadethrow\grenadefrag.nif
+LargeIconFilename: Interface\Icons\PipboyImages\Weapons\weapons_frag_grenade.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_frag_grenade.dds
+EquipmentType: ThrownWeapons
+PickUpSound: 087D64:FalloutNV.esm
+DropSound: 087D65:FalloutNV.esm
+ShellCasingModel:
+  File: Weapons\1handGrenadeThrow\GrenadeFrag.NIF
+ImpactDataSet: 0CA77E:FalloutNV.esm
+FirstPersonModel: 025B7B:FalloutNV.esm
+SoundEquip: 003A03:FalloutNV.esm
+SoundUnequip: 003A04:FalloutNV.esm
+Value: 150
+Health: 5
+Weight: 0.5
+BaseDamage: 1
+ClipSize: 12
+AnimationType: GrenadeThrow1Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- CantDrop
+- DontUse1stPersonISAnimations
+- NonPlayable
+- OverrideActionPoints
+- DontUse3rdPersonISAnimations
+GripAnimation: 255
+AmmoUse: 1
+Spread: 5
+DnamUnused1: 1065353216
+SightFov: 65
+Projectile: 0043F9:FalloutNV.esm
+BaseVatsToHitChance: 50
+AttackAnimation: 114
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 1024
+OnHit: NoDismemberExplode
+AnimationAttackMultiplier: 1
+FireRate: 1
+OverrideActionPoints: 24
+AttackShotsPerSec: 0.65217394
+ReloadTime: 1.3
+JamTime: 1.4
+Skill: 35
+LimbDamageMult: 1
+ResistType: -1
+SemiAutomaticFireDelayMin: 0.1
+SemiAutomaticFireDelayMax: 0.5
+DnamUnknownFloat: 0.1
+StrengthReq: 2
+SkillReq: 25
+CriticalPercentMult: 1
+Vats:
+  VatsSilent: True
+SoundLevel: Silent

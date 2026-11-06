@@ -1,0 +1,70 @@
+FormKey: 01CC9C:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 01CC9B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I think so, too!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Thank you, friend, I'm sure the customers will be pouring in now that we've livened this place up.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As promised, your bonus commission.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- Fluff: 0x000000
+  ComparisonValue: 50
+  Function: GetStage
+  FirstParameter: 100781095
+Choices:
+- 00EC5F:NovaArizona.esm
+- 020B7A:NovaArizona.esm
+- 020B7E:NovaArizona.esm
+- 01CC3D:NovaArizona.esm
+- 01CC3E:NovaArizona.esm
+- 020B7F:NovaArizona.esm
+- 020B85:NovaArizona.esm
+- 020B88:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E64000000
+  SourceCode: SetStage AZDolanSpringsNicodemusQuest 100
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CC27:NovaArizona.esm
+Prompt: I think my job here is done.

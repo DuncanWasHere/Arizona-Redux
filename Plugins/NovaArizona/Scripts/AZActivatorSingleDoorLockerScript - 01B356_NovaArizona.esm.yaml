@@ -1,0 +1,195 @@
+FormKey: 01B356:NovaArizona.esm
+EditorID: AZActivatorSingleDoorLockerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4
+    RefCount: 10
+    VariableCount: 14
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000C7020000801611000209005601000002001507004CAF00000039151300011200560400000B00580000CE100400000000391513000112005604000001005800006B1104000000003A151D00011C00560400000100780000BA110E000100FFFF0800560400000B0028811608000107004C0203000039151A00011900560400000C00560400000100780000572704000000280039152800012700560100000D005604000001007800002E1512000100FFFF0C00530700624C6F636B6564280039152800012700560100000E005604000001007800002E1512000100FFFF0C00530700624765744F7574280080161700020F00560400000C005604000003000507004C4302000080161100020900560100000D001507004C3702000080161100020900560100000E001507004CAB010000BB1012000200FFFF0800560400000400FFFF040042003A152700012600560400000100780000BE1518000200FFFF0C00530700624765744F7574FFFF04004201288016400002380056040000010078000043100E000100FFFF080056040000040028155604000001007800002F100E000100FFFF0800560400000600280207004C370200003A15190001180056040000050078000072100A000100FFFF04004232283A152700012600560400000100780000BE1518000200FFFF0C00530700624C6F636B6564FFFF0400420128811608000107004C0203000080161000020800560100000D0007004C0203000080162400021C0056040000010078000043100E000100FFFF08005604000004002807004C020300003A15130001120056040000050078000073100400000028BB1012000200FFFF0800560400000400FFFF040042013A152700012600560400000100780000BE1518000200FFFF0C00530700624C6F636B6564FFFF04004200283A152700012600560400000100780000BE1518000200FFFF0C00530700624765744F7574FFFF04004200281100000010000B001A00640100000100720A00391529000128005604000003005604000001007800002E1513000100FFFF0D00530800725061636B6167652800391526000125005604000004005604000001007800002E1510000100FFFF0A005305007243656C6C2800391529000128005604000005005604000001007800002E1513000100FFFF0D0053080072446F6F725245462800391525000124005604000006005604000001007800002E150F000100FFFF0900530400724B6579280080162500021D0056040000010078000043100E000100FFFF0800560400000400281507004C380400003A152700012600560400000100780000BE1518000200FFFF0C00530700624C6F636B6564FFFF0400420128BB1012000200FFFF0800560400000400FFFF04004200811608000107004C650400003A15130001120056040000050078000073100400000028BB1012000200FFFF0800560400000400FFFF0400420139150C00010B0056010000020042010011000000
+  SourceCode: >-
+    name AZActivatorSingleDoorLockerScript;
+
+
+    ref rLinkedREF; //The cell owner actor linked to the activator.
+
+    int bInit;
+
+
+    // Variables read from the linked actor. They must be defined in its script.
+
+    ref rPackage;
+
+    ref rCell;
+
+    ref rDoorREF;
+
+
+    ref rKey;
+
+
+
+    GameMode {
+    	if (!bInit) {
+    		ref rSelf = GetSelf();
+    		rLinkedREF = GetLinkedRef();
+    		rLinkedREF.EnterTrigger(rSelf); //Force the actor to initialize its variables if it hasn't been loaded yet.
+    	} else {
+    		ref rCurrentPackage = rLinkedREF.GetCurrentStablePackage();
+    		int bLocked = rLinkedREF.GetVariable("bLocked");
+    		int bGetOut = rLinkedREF.GetVariable("bGetOut");
+    	
+    		if (rCurrentPackage != rPackage) {
+    			// Lock cell if actor left.
+    			if (!bLocked) {
+    				if (!bGetOut) {
+    					SetPublic(rCell, 0);
+    					rLinkedREF.SetVariable("bGetOut", 1);			
+    				}
+
+    				if (!rLinkedREF.GetInCell(rCell) && rLinkedREF.GetItemCount(rKey)) {
+    					rDoorREF.Lock(50);
+    					rLinkedREF.SetVariable("bLocked", 1);
+    				}
+    			}
+    		} else {
+    			// Allow guests if actor is in cell.
+    			if (bLocked) {
+    				if (rLinkedREF.GetInCell(rCell)) {
+    					rDoorREF.Unlock();
+    					SetPublic(rCell, 1);
+    					rLinkedREF.SetVariable("bLocked", 0);
+    					rLinkedREF.SetVariable("bGetOut", 0);
+    				}
+    			}
+    		}
+    	}
+    }
+
+
+    // The linked actor's script manually triggers this activator when it's done initializing its variables.
+
+    OnTriggerEnter::PlayerREF {
+    	rPackage = rLinkedREF.GetVariable("rPackage");
+    	rCell = rLinkedREF.GetVariable("rCell");
+    	rDoorREF = rLinkedREF.GetVariable("rDoorREF");
+
+    	rKey = rLinkedREF.GetVariable("rKey");
+
+    	if (!rLinkedREF.GetInCell(rCell)) {
+    		rLinkedREF.SetVariable("bLocked", 1);
+    		SetPublic(rCell, 0);
+    	} else {
+    		rDoorREF.Unlock();
+    		SetPublic(rCell, 1);
+    	}
+
+    	bInit = 1;
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rLinkedREF
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bInit
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rPackage
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCell
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rDoorREF
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rKey
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rSelf
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rCurrentPackage
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bLocked
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bGetOut
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rSelf_1
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: __temp_rCurrentPackage_2
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_bLocked_3
+  - Data:
+      Index: 14
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: __temp_bGetOut_4
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 3
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 4
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 5
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 6
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 7
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 8
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 11
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 12
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

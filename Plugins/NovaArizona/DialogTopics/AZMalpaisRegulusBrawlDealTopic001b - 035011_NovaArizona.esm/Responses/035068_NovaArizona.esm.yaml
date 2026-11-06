@@ -1,0 +1,53 @@
+FormKey: 035068:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So that's how it is... I promise I won't go down that easily.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x39150C00010B005601020015004202001C00010082110D00020010007A00000000000059401C00010016100500010072030039150C00010B005601010002004200001C0001005E1000006010250007006E010000006E000000006E010000006E010000006E010000006E010000006E01000000
+  SourceCode: >-
+    AZMalpaisSniperQuest.iBrawlStage = 2
+
+    AZMalpaisRegulusREF.RestoreAV Health 100
+
+    AZMalpaisRegulusREF.StartCombat PlayerREF
+
+    AZMalpaisRegulusREF.bDoTwice = 0
+
+    AZMalpaisRegulusREF.EVP
+
+    EnablePlayerControls 1 0 1 1 1 1 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 034F35:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: No way. You're going to take this beating like a man.

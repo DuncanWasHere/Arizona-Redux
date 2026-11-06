@@ -1,0 +1,253 @@
+FormKey: 013D30:NovaArizona.esm
+EditorID: AZNewtLegionGraffitiQuest
+FormVersion: 15
+Script: 013D3F:NovaArizona.esm
+Name: Keepin' Out of Mischief Now
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 1
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Find out who's been leaving graffiti at Primus Stationem.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E050000006E010000001C000100211002000000
+      SourceCode: >-
+        setobjectivedisplayed AZNewtLegionGraffitiQuest 5 1
+
+        AZPabloPaintGunREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D8F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D30:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Confront the child.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A2110F0003007201006E0A0000006E01000000A3110F0003007201006E0F0000006E01000000A3110F0003007201006E140000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZNewtLegionGraffitiQuest 5 1
+
+        setobjectivecompleted AZNewtLegionGraffitiQuest 10 1
+
+        setobjectivedisplayed AZNewtLegionGraffitiQuest 15 1
+
+        setobjectivedisplayed AZNewtLegionGraffitiQuest 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D30:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Return to Finturus.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A2110F0003007201006E0A0000006E01000000A2110F0003007201006E0F0000006E01000000A3110F0003007201006E190000006E0100000016001900010015002058A5110A0002007201006E150000002031203D3DA2110F0003007201006E150000006E0100000019000000
+      SourceCode: >-
+        setobjectivecompleted AZNewtLegionGraffitiQuest 5 1
+
+        setobjectivecompleted AZNewtLegionGraffitiQuest 10 1
+
+        setobjectivecompleted AZNewtLegionGraffitiQuest 15 1
+
+        setobjectivedisplayed AZNewtLegionGraffitiQuest 25 1
+
+
+        if getobjectivedisplayed AZNewtLegionGraffitiQuest 21 == 1
+
+        setobjectivecompleted AZNewtLegionGraffitiQuest 21 1
+
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D30:NovaArizona.esm
+- Index: 30
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: You've told Finturus to collectively punish Newt.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 14
+        Enabled: 1
+      CompiledScript: 0xA2110F000300720D006E190000006E01000000A3110F000300720D006E1E0000006E01000000A2110F000300720D006E1E0000006E010000001C0001007711070001006E640000001C0002002210020000001C0003002210020000001C00010052100A000200720E006E010000001C0004002110020000001C0005002110020000001C0006002110020000001C0007002110020000001C0008002110020000001C0009002110020000001C000A002110020000001C000B002110020000001C000C00211002000000
+      SourceCode: >-
+        setobjectivecompleted AZNewtLegionGraffitiQuest 25 1
+
+        setobjectivedisplayed AZNewtLegionGraffitiQuest 30 1
+
+        setobjectivecompleted AZNewtLegionGraffitiQuest 30 1
+
+        player.rewardxp 100
+
+        AZPabloPaintGunREF.disable
+
+        AZNewtGraffitiREF.disable
+
+        Player.RemoveItem AZNewtQuestPaintGun 1
+
+
+        AZNewtLegionGraffitiCrucifixREF01.enable
+
+        AZNewtLegionGraffitiCrucifixREF02.enable
+
+        AZNewtLegionGraffitiCrucifixREF03.enable
+
+        AZNewtLegionGraffitiCrucifixFurnitureREF01.enable
+
+        AZNewtLegionGraffitiCrucifixFurnitureREF02.enable
+
+        AZNewtLegionGraffitiCrucifixFurnitureREF03.enable
+
+        AZNewtVictimCrucified01REF.enable
+
+        AZNewtVictimCrucified02REF.enable
+
+        AZNewtVictimCrucified03REF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D8F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00C980:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D36:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D38:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D37:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D3A:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D3B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D39:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013DF9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013DFB:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013DFA:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D30:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D66:NovaArizona.esm
+- Index: 31
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: The fate of the artist has been decided.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007204006E190000006E01000000A3110F0003007204006E1F0000006E01000000A2110F0003007204006E1F0000006E010000001C0001007711070001006EC80000001C0002002210020000001C0003002210020000001C00010052100A0002007205006E010000003B12130003007206006E010000007A0000000000001840
+      SourceCode: >-
+        setobjectivecompleted AZNewtLegionGraffitiQuest 25 1
+
+        setobjectivedisplayed AZNewtLegionGraffitiQuest 31 1
+
+        setobjectivecompleted AZNewtLegionGraffitiQuest 31 1
+
+        player.rewardxp 200
+
+        AZPabloPaintGunREF.disable
+
+        AZNewtGraffitiREF.disable
+
+        Player.RemoveItem AZNewtQuestPaintGun 1
+
+        AddReputationExact RepNVCaesarsLegion 1 6
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D8F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00C980:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D30:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D66:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0F43DD:FalloutNV.esm
+- Index: 200
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Quest has failed. Fincturus is dead, or he doesn't believe you, or the Legion is hostile.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0x1C0001002210020000001C0002002210020000001C00030052100A0002007204006E01000000
+      SourceCode: >-
+        AZPabloPaintGunREF.disable
+
+        AZNewtGraffitiREF.disable
+
+        Player.RemoveItem AZNewtQuestPaintGun 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D8F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00C980:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 013D66:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Find out who's been leaving graffiti at Primus Stationem.
+  Targets:
+  - Target: 006382:NovaArizona.esm
+    Unused: 0x606D2C
+- Index: 15
+  Description: Confront Pablo.
+  Targets:
+  - Target: 013D44:NovaArizona.esm
+    Unused: 0xF45221
+- Index: 25
+  Description: Return to Finturus.
+  Targets:
+  - Target: 013D48:NovaArizona.esm
+    Unused: 0x392F22
+- Index: 20
+  Description: (Optional) Confront Pablo's mother.
+  Targets:
+  - Target: 013D42:NovaArizona.esm
+    Unused: 0x961D26
+- Index: 30
+  Description: You've told Finturus to collectively punish Newt.
+- Index: 31
+  Description: The fate of the artist has been decided.
+- Index: 10
+  Description: (Optional) Investigate Newt for clues.
+  Targets:
+  - Target: 006604:NovaArizona.esm
+    Unused: 0xB61527
+- Index: 21
+  Description: Stake out the Primus Stationem.
+  Targets:
+  - Target: 006382:NovaArizona.esm
+    Unused: 0x122925
+- Index: 22
+  Description: (Optional) Lie to Finturus about who's responsible.
+  Targets:
+  - Target: 013D48:NovaArizona.esm
+    Unused: 0x62102A

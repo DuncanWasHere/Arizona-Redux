@@ -1,0 +1,34 @@
+FormKey: 02F225:NovaArizona.esm
+FormVersion: 15
+Quest: 006E3E:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You'd best shut your mouth before I crack the concrete with the fragments of your skull.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100691485
+Choices:
+- 00716E:NovaArizona.esm
+- 00716F:NovaArizona.esm
+- 010341:NovaArizona.esm
+- 02F152:NovaArizona.esm
+- 02F151:NovaArizona.esm
+- 007170:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Like you lost the first battle for Hoover Dam?

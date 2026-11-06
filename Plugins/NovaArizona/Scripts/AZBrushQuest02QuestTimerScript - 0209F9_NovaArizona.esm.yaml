@@ -1,0 +1,51 @@
+FormKey: 0209F9:NovaArizona.esm
+EditorID: AZBrushQuest02QuestTimerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967295
+    RefCount: 2
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C621600001000060000007D00000080162200021A005601000002001556000000030056010100010042030E070207004C88000000391513000112005600000003005800002F280400000000811608000107004CB800000039150C00010B0056010000020042010039100F000200FFFF0500520100FFFF0400423C371009000100FFFF050052020011000000
+  SourceCode: >-
+    name AZBrushQuest02QuestTimerScript;
+
+
+    float ITimer;
+
+    int DoOnce;
+
+
+    GameMode {
+        if (!DoOnce && ITimer < AZBrushQuest02.BrushTimer + 3) {
+            ITimer = GetGameDaysPassed();
+        } else {
+            DoOnce = 1;
+            SetStage(AZBrushQuest02, 60);
+            StopQuest(AZBrushQuest02QuestTimer);
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: iTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: ITimer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0209FA:NovaArizona.esm

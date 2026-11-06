@@ -1,0 +1,71 @@
+FormKey: 00D7A5:NovaArizona.esm
+EditorID: AZWeapRechargerRifleUnique
+FormVersion: 15
+ObjectBounds:
+  First: -19, -5, -3
+  Second: 47, 9, 3
+Name: Recharger Rifle
+Model:
+  File: weapons\2handrifle\RechargerRifle.nif
+LargeIconFilename: interface\icons\pipboyimages\weapons\weapons_recharger_rifle.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_laser_rifle.dds
+Ammo: 121155:FalloutNV.esm
+RepairList: 02262D:FalloutNV.esm
+EquipmentType: EnergyWeapons
+PickUpSound: 087D63:FalloutNV.esm
+DropSound: 087D62:FalloutNV.esm
+FirstPersonModel: 0AEDEC:FalloutNV.esm
+SoundGunShoot3D: 12982F:FalloutNV.esm
+SoundGunShootDist: 130111:FalloutNV.esm
+SoundGunShoot2D: 12982E:FalloutNV.esm
+SoundMeleeSwingGunNoAmmo: 173E72:FalloutNV.esm
+SoundEquip: 01CCC7:FalloutNV.esm
+SoundUnequip: 01D4BE:FalloutNV.esm
+Value: 250
+Health: 200
+Weight: 15
+BaseDamage: 7
+ClipSize: 24
+AnimationType: RifleAutomatic2Hand
+AnimationMultiplier: 1
+Reach: 9
+Flags:
+- IsAutomatic
+- OverrideActionPoints
+GripAnimation: 255
+AmmoUse: 1
+ReloadAnimation: ReloadB
+MinSpread: 0.05
+Spread: 0.03
+SightFov: 40
+Projectile: 0246F6:NovaArizona.esm
+BaseVatsToHitChance: 45
+AttackAnimation: Attack3
+ProjectileCount: 1
+MinRange: 512
+MaxRange: 1750
+OnHit: NoDismemberExplode
+AnimationAttackMultiplier: 0.71
+FireRate: 0.3
+OverrideActionPoints: 19
+RumbleLeftMotorStrength: 0.2
+RumbleRightMotorStrength: 0.5
+RumbleDuration: 0.25
+AttackShotsPerSec: 0.15123
+ReloadTime: 3
+JamTime: 1.6667
+Skill: 34
+RumblePattern: Sawtooth
+RumbleWavelength: 0.25
+LimbDamageMult: 1
+ResistType: 60
+SightUsage: 1.5
+StrengthReq: 5
+RegenRate: 1
+SkillReq: 70
+CriticalDamage: 12
+CriticalPercentMult: 7
+CriticalEffect: 01E004:FalloutNV.esm
+Vats:
+  VatsSilent: True
+SoundLevel: Silent

@@ -1,0 +1,67 @@
+FormKey: 020E8F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x200006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Right under our nose.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x596F75
+    UseEmotionAnimation: True
+    Unused3: 0x207175
+  ResponseText: Thrax will value this information greatly. I will turn it in to him myself.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100797744
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100798086
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x39100A0002007202006E62000000A2110F0003007202006E0D0000006E010000007711070001006E2C0100001C00010052100A0002007203006E0100000039120F0003007204006E030000006E00000000
+  SourceCode: >+
+    setstage azsmugglingquest 98;
+
+    setobjectivecompleted azsmugglingquest 13 1; 
+
+    rewardxp 300;
+
+    player.removeitem azDrclaysmugglinglog 1
+
+    addreputation repNVcaesarslegion 3 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D36:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020E86:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: Doctor Clay's been using that old boat as a hideout. She's got a radio in there.

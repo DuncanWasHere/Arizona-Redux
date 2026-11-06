@@ -1,0 +1,51 @@
+FormKey: 024C58:NovaArizona.esm
+EditorID: AZSearchlightAhigaRangerContactScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A001B010000000080161B0002130058000022120B000100FFFF05005201001507004C3C01000080166500025D00580000A41111000200FFFF0500520100FFFF04004222580000A41111000200FFFF0500520100FFFF0400422501580000A51111000200FFFF0500520100FFFF0400422601580000A51111000200FFFF0500520100FFFF040042270107004CE5000000A31115000300FFFF0500520100FFFF0400421EFFFF0400420039100F000200FFFF0500520100FFFF040042FF811608000107004C3C01000080162100021900580000A41111000200FFFF0500520100FFFF040042221507004C3C010000A31115000300FFFF0500520100FFFF0400421EFFFF04004200A31115000300FFFF0500520100FFFF0400423DFFFF040042011100000010000B000200B4000000010072020080163800023000580000A51111000200FFFF0500520100FFFF0400423E580000A41111000200FFFF0500520100FFFF0400423E150207004CF901000059100B0001007203000000000000003A151D00011C00520200780000521011000200FFFF0500520400FFFF0400420128A21115000300FFFF0500520100FFFF0400423EFFFF04004201A31115000300FFFF0500520100FFFF0400423FFFFF04004201811608000107004CFF0100000D100200000011000000
+  SourceCode: >-
+    name AZSearchlightAhigaRangerContactScript;
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZBigStopAhigaQuest01)) {
+            if (GetObjectiveCompleted(AZBigStopAhigaQuest01, 34) ||
+                GetObjectiveCompleted(AZBigStopAhigaQuest01, 37) ||
+                GetObjectiveDisplayed(AZBigStopAhigaQuest01, 38) ||
+                GetObjectiveDisplayed(AZBigStopAhigaQuest01, 39)) {
+
+                SetObjectiveDisplayed(AZBigStopAhigaQuest01, 30, 0);
+                SetStage(AZBigStopAhigaQuest01, 255);
+            } else if (!GetObjectiveCompleted(AZBigStopAhigaQuest01, 34)) {
+                SetObjectiveDisplayed(AZBigStopAhigaQuest01, 30, 0);
+                SetObjectiveDisplayed(AZBigStopAhigaQuest01, 61, 1);
+            }
+        }
+    }
+
+
+    OnActivate::player {
+        if (GetObjectiveDisplayed(AZBigStopAhigaQuest01, 62) && 
+            !GetObjectiveCompleted(AZBigStopAhigaQuest01, 62)) {
+
+            ShowMessage(AZRangerFailsafeMessage);
+            Player.RemoveItem(AZAhigaQuestHolotape, 1);
+            SetObjectiveCompleted(AZBigStopAhigaQuest01, 62, 1);
+            SetObjectiveDisplayed(AZBigStopAhigaQuest01, 63, 1);
+        } else {
+            Activate();
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024EDE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008B96:NovaArizona.esm

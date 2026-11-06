@@ -1,0 +1,48 @@
+FormKey: 01F01A:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742079
+    UseEmotionAnimation: True
+    Unused3: 0x6B6520
+  ResponseText: Lanius ordered this?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Why? Why would he do this? Is this some trick?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 121FF0:FalloutNV.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100771415
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 1
+Choices:
+- 01F01C:NovaArizona.esm
+- 01F01D:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: "[Legion]  I'm not an enemy of the Legion. You know this. Lanius himself has ordered this."

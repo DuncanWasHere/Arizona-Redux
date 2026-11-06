@@ -1,0 +1,40 @@
+FormKey: 01EC93:NovaArizona.esm
+FormVersion: 15
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E6F74
+    UseEmotionAnimation: True
+    Unused3: 0x617920
+  ResponseText: I know back west it's called the "Battle of Bitter Springs," and it's just another battle with the Khans. But, it was a massacre, make no mistake.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6E6F74
+    UseEmotionAnimation: True
+    Unused3: 0x617920
+  ResponseText: NCR and the Khans go way back, and there's a lot of bad blood. NCR decided to settle accounts. They killed the men, women and children alike.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01EC95:NovaArizona.esm
+- 01EC96:NovaArizona.esm
+- 01EC97:NovaArizona.esm
+- 01EC98:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Massacre?

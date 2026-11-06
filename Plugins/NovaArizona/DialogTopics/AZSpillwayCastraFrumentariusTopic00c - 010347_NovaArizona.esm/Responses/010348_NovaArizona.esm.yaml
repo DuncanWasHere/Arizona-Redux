@@ -1,0 +1,51 @@
+FormKey: 010348:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: My superior, Cato Hostilius, has several plans for weakening NCR morale at the dam. Operation Lincoln, Operation Scarcity and Operation Colorado.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Of these, it is Operation Colorado that is of the most interest. It details the assassination of Captain Wire or Colonel Moore.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x697573
+    UseEmotionAnimation: True
+    Unused3: 0x6E7573
+  ResponseText: Kill one of them, and the Frumentarii will place Omar under our protection.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729692
+Choices:
+- 010349:NovaArizona.esm
+- 01034B:NovaArizona.esm
+- 01034E:NovaArizona.esm
+- 01034D:NovaArizona.esm
+- 010353:NovaArizona.esm
+- 010355:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Well, I'm going to need something beyond vague notions. What do you want me to do?

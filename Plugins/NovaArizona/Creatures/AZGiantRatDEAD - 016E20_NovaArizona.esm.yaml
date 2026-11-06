@@ -1,0 +1,77 @@
+FormKey: 016E20:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZGiantRatDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -15, -41, 0
+  Second: 15, 41, 40
+Name: Giant Rat
+Model:
+  File: creatures\NVgiantrat\skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- nvgiantrat.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - AllowPickpocket
+  Fatigue: 50
+  Level: 2
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E26B:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 14F3FB:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 151F7E:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2263608576
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 700
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 40
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 15
+  Strength: 2
+  Perception: 4
+  Endurance: 3
+  Charisma: 1
+  Intelligence: 2
+  Agility: 4
+  Luck: 1
+AttackReach: 25
+CombatStyle: 14F407:FalloutNV.esm
+BodyPartData: 0E8E96:FalloutNV.esm
+TurningSpeed: 200
+BaseScale: 1
+FootWeight: 2
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 14615F:FalloutNV.esm
+ImpactDataset: 145A47:FalloutNV.esm
+MajorFlags:
+- 0x80000

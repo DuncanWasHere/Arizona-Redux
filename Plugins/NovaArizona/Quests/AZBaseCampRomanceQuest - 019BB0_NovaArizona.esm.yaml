@@ -1,0 +1,344 @@
+FormKey: 019BB0:NovaArizona.esm
+EditorID: AZBaseCampRomanceQuest
+FormVersion: 15
+Script: 019D06:NovaArizona.esm
+Name: Somethin' Stupid
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E050000006E010000001C00010002100A0002007203006E01000000
+      SourceCode: >-
+        setobjectivedisplayed AZBaseCampRomanceQuest 5 1
+
+        AZBaseCampArceusREF.additem AZBaseCampArceusLetter 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BAF:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019D46:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E01000000
+      SourceCode: setobjectivedisplayed AZBaseCampRomanceQuest 10 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0F0000006E01000000
+      SourceCode: setobjectivedisplayed AZBaseCampRomanceQuest 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 20
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0F0000006E01000000A3110F0003007201006E140000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 15 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 20 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 40
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A2110F0003007201006E0A0000006E01000000A2110F0003007201006E0F0000006E01000000A2110F0003007201006E140000006E01000000A3110F0003007201006E280000006E0100000016001900010015002058A5110A0002007201006E1E0000002031203D3DA2110F0003007201006E1E0000006E0100000019000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 5 1
+
+        setobjectivecompleted AZBaseCampRomanceQuest 10 1
+
+        setobjectivecompleted AZBaseCampRomanceQuest 15 1
+
+        setobjectivecompleted AZBaseCampRomanceQuest 20 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 40 1
+
+
+        if getObjectiveDisplayed AZBaseCampRomanceQuest 30 == 1
+
+        SetObjectiveCompleted AZBaseCampRomanceQuest 30 1
+
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 45
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E280000006E01000000A3110F0003007201006E2D0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 40 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 45 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E320000006E01000000
+      SourceCode: setobjectivedisplayed AZBaseCampRomanceQuest 50 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 140
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E8C0000006E01000000
+      SourceCode: setobjectivedisplayed AZBaseCampRomanceQuest 140 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 145
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E910000006E01000000
+      SourceCode: setobjectivedisplayed AZBaseCampRomanceQuest 145 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 150
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2D0000006E01000000A3110F0003007201006E960000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 45 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 150 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 155
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2D0000006E01000000A2110F0003007201006E320000006E01000000A3110F0003007201006E9B0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 45 1
+
+        setobjectivecompleted AZBaseCampRomanceQuest 50 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 155 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 157
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E9B0000006E01000000A3110F0003007201006E9D0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 155 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 157 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 160
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E2D0000006E01000000A2110F0003007201006E320000006E01000000A3110F0003007201006EA00000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 45 1
+
+        setobjectivecompleted AZBaseCampRomanceQuest 50 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 160 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 165
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006EA00000006E01000000A3110F0003007201006EA50000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampRomanceQuest 160 1
+
+        setobjectivedisplayed AZBaseCampRomanceQuest 165 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 019BB0:NovaArizona.esm
+- Index: 180
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EC8000000
+      SourceCode: player.rewardxp 200
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 190
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EC8000000
+      SourceCode: player.rewardxp 200
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+- Index: 250
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 5
+  Description: Ask around Base Camp to find out what Arceus and Flemus are hiding.
+  Targets:
+  - Target: 019BAF:NovaArizona.esm
+    Unused: 0x7E2F30
+  - Target: 019BAE:NovaArizona.esm
+    Unused: 0x7E2F30
+- Index: 10
+  Description: (Optional) Speak to Corella about Arceus.
+  Targets:
+  - Target: 019BAB:NovaArizona.esm
+    Unused: 0x1B1428
+- Index: 40
+  Description: Tell Iulia what you've discovered.
+  Targets:
+  - Target: 019BA8:NovaArizona.esm
+    Unused: 0x921D26
+- Index: 45
+  Description: Decide Arceus' and Flemus' fate.
+  Targets:
+  - Target: 019BAE:NovaArizona.esm
+    Unused: 0x911D26
+  - Target: 019BAF:NovaArizona.esm
+    Unused: 0x911D26
+- Index: 50
+  Description: (Optional) Speak to Arceus about getting reassigned to another camp.
+  Targets:
+  - Target: 019BAF:NovaArizona.esm
+    Unused: 0x8F052D
+- Index: 15
+  Description: (Optional) Investigate the campfire north of Base Camp.
+  Targets:
+  - Target: 00978C:NovaArizona.esm
+    Unused: 0x2A102B
+- Index: 20
+  Description: (Optional) Ask around in Newt to see if anyone has information about the campfire.
+  Targets:
+  - Target: 006604:NovaArizona.esm
+    Unused: 0xD53B32
+- Index: 155
+  Description: Speak to Decanus Syracuse about getting Arceus reassigned to another camp.
+  Targets:
+  - Target: 019BA9:NovaArizona.esm
+    Unused: 0x4C042F
+- Index: 145
+  Description: (Optional) Kill Iulia or convince her to keep Arceus' and Flemus' secret.
+  Targets:
+  - Target: 019BA8:NovaArizona.esm
+    Unused: 0x4C042F
+- Index: 150
+  Description: Stand guard while Arceus kills Iulia.
+- Index: 160
+  Description: Wait one day for Arceus to get himself punished for theft.
+- Index: 165
+  Description: Check in on Arceus to see if he's gotten himself reassigned.
+  Targets:
+  - Target: 019BAF:NovaArizona.esm
+    Unused: 0x7E6D2C
+- Index: 140
+  Description: (Optional) Tell Decanus Syracuse about Arceus and Flemus.
+  Targets:
+  - Target: 019BA9:NovaArizona.esm
+    Unused: 0x7D6D2C
+- Index: 157
+  Description: Tell Arceus that he'll be reassigned.
+  Targets:
+  - Target: 019BAF:NovaArizona.esm
+    Unused: 0xB41527
+- Index: 141
+  Description: Tell Decanus Syracuse about Arceus and Flemus.
+  Targets:
+  - Target: 019BA9:NovaArizona.esm
+    Unused: 0x162529
+- Index: 30
+  Description: (Optional) Speak to Tix.
+  Targets:
+  - Target: 019C15:NovaArizona.esm
+    Unused: 0x9A4C24
+- Index: 7
+  Description: (Optional) Speak to Decanus Syracuse about Arceus.
+  Targets:
+  - Target: 019BA9:NovaArizona.esm
+    Unused: 0x7F102A

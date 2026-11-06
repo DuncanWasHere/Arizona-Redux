@@ -1,0 +1,126 @@
+FormKey: 02083D:NovaArizona.esm
+EditorID: AZLaertesSellDogQuest
+FormVersion: 15
+Script: 02083F:NovaArizona.esm
+Name: Mr. Hound Dog Is In Town
+QuestData:
+  Priority: 55
+  Unused: 25939
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Starts Quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000
+      SourceCode: SetObjectiveDisplayed AZLaertesSellDogQuest 5 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02083D:NovaArizona.esm
+- Index: 15
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E0F0000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZLaertesSellDogQuest 5 1
+
+        SetObjectiveDisplayed AZLaertesSellDogQuest 15 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02083D:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Completes quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 6
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA000000A2110F0003007202006E0F0000006E010000001C00010052100A0002007203006E010000001C00010052100A0002007204006E010000001C00010052100A0002007205006E010000001C00010052100A0002007206006E01000000
+      SourceCode: >-
+        Player.RewardXP 250
+
+        SetObjectiveCompleted AZLaertesSellDogQuest 15 1
+
+        Player.RemoveItem AZQuestCerberusBrain 1
+
+        Player.RemoveItem VMS24BrainRey 1
+
+        Player.RemoveItem VMS24BrainVioletta 1
+
+        Player.RemoveItem VMS24BrainLupa 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02083D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02083E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13D852:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13E5BA:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13D851:FalloutNV.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Fails quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0x1600220004001E0020583A10050001007202002035203E207203007303002030203D3D2026261C00010052100A0002007204006E010000001C00010052100A0002007205006E010000001C00010052100A0002007206006E010000001C00010052100A0002007207006E0100000019000000
+      SourceCode: >-
+        if GetStage AZLaertesSellDogQuest > 5 && AZVanillaDialogueQuest.RexReturnedtoCaesar == 0
+        	Player.RemoveItem AZQuestCerberusBrain 1
+        	Player.RemoveItem VMS24BrainRey 1
+        	Player.RemoveItem VMS24BrainVioletta 1
+        	Player.RemoveItem VMS24BrainLupa 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02083D:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EEA6:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 02083E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13D852:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13E5BA:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 13D851:FalloutNV.esm
+Objectives:
+- Index: 5
+  Description: Find a brain for Rex.
+  Targets:
+  - Target: 084204:FalloutNV.esm
+    Unused: 0x4C3523
+  - Target: 00E269:NovaArizona.esm
+    Unused: 0x4C3523
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 00E269:NovaArizona.esm
+  - Target: 13E5BB:FalloutNV.esm
+    Unused: 0x4C3523
+  - Target: 12B4A8:FalloutNV.esm
+    Unused: 0x4C3523
+- Index: 15
+  Description: Bring Rex's replacement brain to Laertes.
+  Targets:
+  - Target: 00C448:NovaArizona.esm
+    Unused: 0x171428

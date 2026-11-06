@@ -1,0 +1,58 @@
+FormKey: 020961:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I've seen the whole front, from Yuma to Big Stop. All I really have to say about it is that's it bad for business.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: NCR blew up Parker Dam, and had to give up a bunch of runners to the Legion in Dry Wells to get the Frumentarii off my back.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x2C2069
+    UseEmotionAnimation: True
+    Unused3: 0x206469
+  ResponseText: And business isn't possible at all in Bullhead. There isn't a Bullhead left.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: On the other hand, both sides have been using my runners in the Sonora to keep their operations money out of the hands of both Congress and Caesar.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+Choices:
+- 020926:NovaArizona.esm
+- 020927:NovaArizona.esm
+- 020928:NovaArizona.esm
+- 02092B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What are your thoughts on the war?

@@ -1,0 +1,28 @@
+FormKey: 02C0A5:NovaArizona.esm
+EditorID: AZCallesSprings03GhoulSpawnerSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B001A001800000001007202001C000100211002000000221002000000BB11000011000000
+  SourceCode: >-
+    SCN AZCallesSprings03GhoulSpawnerSCRIPT
+
+
+    BEGIN OnTriggerEnter Player
+
+
+    AZCallesSprings03GhoulSpawnerREF.Enable
+
+    Disable
+
+    MarkForDelete
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02C0A3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm

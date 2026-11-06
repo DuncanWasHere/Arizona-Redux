@@ -1,0 +1,70 @@
+FormKey: 019415:NovaArizona.esm
+EditorID: AZIrradiatedBunkerFeralGhoulGlowingOne
+FormVersion: 15
+ObjectBounds:
+  First: -30, -30, 0
+  Second: 30, 30, 130
+Name: Glowing One
+Model:
+  File: Creatures\Ghoul\Skeleton.nif
+ActorEffects:
+- 0617BE:FalloutNV.esm
+- 06E770:FalloutNV.esm
+- 08AF5C:FalloutNV.esm
+UnarmedAttackEffect: 06191A:FalloutNV.esm
+UnarmedAttackAnimation: AttackBackPower
+Models:
+- glowingone.nif
+ModelListTextures: 0x0100000007E5EE0A6786FDF363656E0A678BFDF363656E1D74B20D487DEEDF0C677D4872166E5F0C6782487216656E1D74B20D487DF3DF0C677D487216735F0C6782487216656E1D74B20D487DE7DF0C66D209DF67675F0C66D709DF67656E1D74B20D487DB2F9126DE906549E3279126DEE06549E65720D74387A3871EEDF0F6D7B0EB15D6E5F0F6D800EB15D65720D74387A3871F3DF0F6D7B0EB15D735F0F6D800EB15D65720D74387A3871
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - AllowPCDialogue
+  Fatigue: 50
+  Level: 9
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 01C6D3:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 019412:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 095984:FalloutNV.esm
+Voice: 07AE96:FalloutNV.esm
+Script: 13303B:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 168634624
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: FeralGhoul
+  CombatSkill: 60
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 240
+  Damage: 32
+  Strength: 7
+  Perception: 5
+  Endurance: 10
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 108
+CombatStyle: 03A370:FalloutNV.esm
+BodyPartData: 0A18F6:FalloutNV.esm
+TurningSpeed: 75
+BaseScale: 1
+FootWeight: 5
+ImpactMaterialType: OrganicGlow
+SoundLevel: Normal
+InheritsSoundFrom: 1523FE:FalloutNV.esm
+ImpactDataset: 07532A:FalloutNV.esm

@@ -1,0 +1,30 @@
+FormKey: 01EFCC:NovaArizona.esm
+FormVersion: 15
+Quest: 00D042:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4C6F6F
+    UseEmotionAnimation: True
+    Unused3: 0x616C72
+  ResponseText: It absolutely is. As far as I know, the legate wouldn't be sending his lackey to drug-dealers if he didn't
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698575
+Choices:
+- 01EFCD:NovaArizona.esm
+- 01EFD0:NovaArizona.esm
+- 01EFD2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: This isn't really something you can turn down.

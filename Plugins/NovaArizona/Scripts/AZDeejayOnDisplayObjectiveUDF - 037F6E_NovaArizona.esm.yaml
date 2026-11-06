@@ -1,0 +1,46 @@
+FormKey: 037F6E:NovaArizona.esm
+EditorID: AZDeejayOnDisplayObjectiveUDF
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 4
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D00000010000F000D00600000000102010004020001001600100001000C0020720200730C00203120213D1E00000018001C000000180020730100205A0300203D3D20730200203630203D3D20262618001C000000180020730100205A0400203D3D20730200203530203D3D2026261900000011000000
+  SourceCode: >-
+    scn AZDeejayOnDisplayObjectiveUDF
+
+
+    begin Function { ref rQuest, int iObjective }
+    	If AZDeejayREF.bCurrentlyHired != 1
+
+    		Return
+    	elseif (rQuest == VMS08) && (iObjective == 60)
+    		; AZDeejayREF.say AZDeejayTopicBarkMonorail01
+    	elseif (rQuest == VMS15) && (iObjective == 50)
+    		;AZDeejayREF.say AZDeejayTopicBarkVolare
+    	endif
+
+    end
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA0CC20120000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x65656368203E3D
+    Name: rQuest
+  - Data:
+      Index: 2
+      Unknown: 0xC0D129120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6974746C655765
+    Name: iObjective
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 1
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E54:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0E790F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0FF5DF:FalloutNV.esm

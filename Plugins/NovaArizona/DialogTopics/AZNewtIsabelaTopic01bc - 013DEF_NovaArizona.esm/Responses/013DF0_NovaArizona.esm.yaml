@@ -1,0 +1,44 @@
+FormKey: 013DF0:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D34:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x404222
+    UseEmotionAnimation: True
+    Unused3: 0x434222
+  ResponseText: I won't let you. The Legion has taken everything else. I won't let you take Pablo.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744513
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E140000006E01000000161005000100720200
+  SourceCode: >-
+    SetObjectiveCompleted AZNewtLegionGraffitiQuest 20 1
+
+
+    StartCombat player
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D30:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+Prompt: No. I am telling the Legion.

@@ -1,0 +1,38 @@
+FormKey: 024EAA:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Then how come it's {Kai-zar}Caesar? I'm pretty sure that's spelled with a C. Look, this is what the Legion is built on, okay?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100716089
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 3
+  Function: GetActorValue
+  FirstParameter: 9
+  RunOnType: Target
+Choices:
+- 024E6B:NovaArizona.esm
+- 024E6D:NovaArizona.esm
+- 024E6E:NovaArizona.esm
+- 024E6F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: All of those begin with K.

@@ -1,0 +1,39 @@
+FormKey: 03B809:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x476C61
+    UseEmotionAnimation: True
+    Unused3: 0x6F6767
+  ResponseText: That happens every day. I couldn't tell you what goes where even if I tried.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x476C61
+    UseEmotionAnimation: True
+    Unused3: 0x6F6767
+  ResponseText: The bank hosts several Scribonii. They'll likely be able to find the ledger entry for that cargo.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStage
+  FirstParameter: 100872659
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm hoping to track down some cargo that the Legion confiscated recently.

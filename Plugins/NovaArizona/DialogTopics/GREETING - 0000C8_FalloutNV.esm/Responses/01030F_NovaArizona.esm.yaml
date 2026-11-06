@@ -1,0 +1,66 @@
+FormKey: 01030F:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 010376:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I hope you're not thinking of going across the Dam. Everyone there's so twitchy, they'll shoot you when you walk through that door, even if the brass do love you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 37
+  Function: GetStage
+  FirstParameter: 100729231
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 36
+  Function: GetStage
+  FirstParameter: 100729231
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 35
+  Function: GetStage
+  FirstParameter: 100729231
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 30
+  Function: GetStage
+  FirstParameter: 100729231
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100729231
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 15
+  Function: GetStage
+  FirstParameter: 100729231
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729694
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 575
+  FirstParameter: 1000414
+  SecondParameter: 1
+Choices:
+- 01031F:NovaArizona.esm
+- 010323:NovaArizona.esm
+- 010327:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

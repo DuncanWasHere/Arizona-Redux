@@ -1,0 +1,50 @@
+FormKey: 01D77D:NovaArizona.esm
+EditorID: AZBlisteringBane
+FormVersion: 15
+ObjectBounds:
+  First: -6, -6, 0
+  Second: 6, 6, 23
+Name:
+  TargetLanguage: English
+  Value: Blistering Bane
+Model:
+  File: AZNovaArizona\Clutter\Health\AZblisteringbane.nif
+Icons:
+  LargeIconFilename: interface\icons\pipboyimages\items\item_mother_darkness.dds
+EquipmentType: Chems
+Weight: 0.5
+Flags:
+- 0x100
+- 0x200
+- 0x400
+- 0x800
+- 0x1000
+- 0x2000
+- 0x4000
+- 0x8000
+- 0x10000
+- 0x20000
+- 0x40000
+- 0x80000
+- 0x100000
+- 0x200000
+- 0x400000
+- 0x800000
+Effects:
+- BaseEffect: 033595:FalloutNV.esm
+  Data:
+    Magnitude: 8
+    Duration: 10
+    ActorValue: Health
+- BaseEffect: 01D79A:NovaArizona.esm
+  Data:
+    Magnitude: 50
+    Duration: 60
+    ActorValue: PoisonResistance
+  Conditions:
+  - CompareOperator: NotEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetIsCreatureType
+    FirstParameter: 6
+    RunOnType: CombatTarget

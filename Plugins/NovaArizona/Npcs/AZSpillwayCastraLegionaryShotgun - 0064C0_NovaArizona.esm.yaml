@@ -1,0 +1,172 @@
+FormKey: 0064C0:NovaArizona.esm
+EditorID: AZSpillwayCastraLegionaryShotgun
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Veteran Legionary
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 24
+  CalcMin: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0EE68A:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 140A7D:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 140D4E:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 00718D:NovaArizona.esm
+  Unused: 0x4F444C
+Voice: 019FCA:FalloutNV.esm
+Race: 000019:FalloutNV.esm
+ActorEffects:
+- 138296:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 08ECF5:FalloutNV.esm
+    Count: 17
+- Item:
+    Item: 08ED0B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0EE47E:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.76
+- Item:
+    Item: 13F3AD:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.85
+- Item:
+    Item: 13F3AE:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.85
+- Item:
+    Item: 165747:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16575C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165761:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165763:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 1657FE:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 023619:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Class: 127736:FalloutNV.esm
+BaseHealth: 10
+Strength: 6
+Perception: 5
+Endurance: 6
+Charisma: 4
+Intelligence: 4
+Agility: 5
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 13
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 13
+  - Key: MeleeWeapons
+    Value: 100
+  - Key: Repair
+    Value: 13
+  - Key: Science
+    Value: 13
+  - Key: SmallGuns
+    Value: 100
+  - Key: Sneak
+    Value: 15
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 100
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+Hair: 02BFDB:FalloutNV.esm
+HairLength: 0.5712
+HairColor: '#00181007'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xD0BF7D3DA246053F42610EBF0859453F99C356BF09D9933F0CF76B3D40E681BE6465F13EF026E73E32EC87BFD867013F74458FBFB8A8DFBEA06C32BFEDAD1BBFB6D16B3FE01CAFBD883A8C3FC9806FBF402495BE6474A83D4F11A9BF6CA5A8BFC0F49CBD009ADB3F7EBFE23E4CFE223F14073C3F709A11BFC0941C3C989461BF4A82A53F0156B5BF84005CBF808B3B3D5CD05ABF287AC5BE74062FBF70402ABFE8DA523F609615BEA0B5E7BE00D5A9BE361A9FBF5400B63E642C4FBF10C4D73EF079DCBE682B0240
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x386979BF02FD893F6D608DBFDF59D93F072F623FCA4CBBBF3411293E1DDE4DBFF448323F120C3F3FDEBC983E89A433BFA02D2D3FB658BDBECE5C053F402EAB3DF18DC33F3ECD53BF6500593FAE94CFBED0F1B33DC83E743FD49B6FBF8613C4BEF237303FCB0A8ABFDA7101BF2C9B073F1754973F5A49433FC4B18CBE8C298E3FA8DAA53F94ED983E8F2E47BFDC8AE9BECFA69DBFFA5828BF30735ABFC869D33F9CD8DF3EF0439BBD44795B3EB050633E8E1A03BFD8DF983F1AE541BFAAA9A23EE6E206BFAA2A88BF
+NAM5: 255
+Height: 1
+Weight: 1
+DATADataTypeState:
+- Break0

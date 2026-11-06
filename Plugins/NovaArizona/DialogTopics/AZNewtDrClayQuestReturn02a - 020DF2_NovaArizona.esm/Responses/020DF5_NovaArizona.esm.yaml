@@ -1,0 +1,71 @@
+FormKey: 020DF5:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 002D61:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: What are you trying to do? Fix me?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Throw it out, keep it, I don't care.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x796F75
+    UseEmotionAnimation: True
+    Unused3: 0x6B2079
+  ResponseText: I've got bigger problems.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100674911
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1C00010052100A0002007203006E01000000A2110F0003007204006E0F0000006E0100000039100A0002007204006E620000001C0002002210020000007711070001006EC8000000
+  SourceCode: >-
+    player.removeitem AZLucilleMedicine 1
+
+    setobjectivecompleted azsmugglingquest 15 1
+
+    setstage azsmugglingquest 98
+
+    AZSmugglerCampAbandonMarkerREF.Disable
+
+    rewardxp 200
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020DEB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D67:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D36:NovaArizona.esm
+Prompt: Just read it. Please.

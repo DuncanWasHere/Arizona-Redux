@@ -1,0 +1,56 @@
+FormKey: 00BF49:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: It's Tres Leches Caravan Co. What are you? Blind?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: It's only the fastest growing caravan company this side of the Colorado. Rival of the Crimson Caravan Company.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: Thank you very much.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: You got a lot of nerve strolling in here like you never heard of us. You know that?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+Choices:
+- 00BF4A:NovaArizona.esm
+- 00BF70:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What is this place?

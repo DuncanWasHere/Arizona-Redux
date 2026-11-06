@@ -1,0 +1,43 @@
+FormKey: 00E611:NovaArizona.esm
+EditorID: AZLGVExplosivesManualActivatorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B000200570100000100720100160039000100350020720100580E10040001002300203530203C20720100580E100400010006002035203C202626207202007309002030203D3D20262659100B00010072030000000000000018002B000200270020720100580E10040001002300203530203E3D20720100580E100400010006002035203C20262659100B00010072040000000000000039100A0002007202006E1900000018003A000200360020720100580E10040001002300203530203C20720100580E100400010006002035203E3D207202007309002031203D3D207C7C20262659100B00010072050000000000000039100A0002007202006E1900000018003B000200370020720100580E10040001002300203530203E3D20720100580E100400010006002035203E3D207202007309002031203D3D207C7C20262659100B00010072060000000000000039100A0002007202006E190000001900000011000000
+  SourceCode: >-
+    scn AZLGVExplosivesManualActivatorScript
+
+
+    BEGIN OnActivate player
+
+
+    if Player.GetAV Explosives < 50 && Player.GetAV Perception < 5 && AZStatioFindFriendQuest.CarlosClue == 0
+    	ShowMessage AZLGVMineMessage03
+    elseif Player.GetAV Explosives >= 50 && Player.GetAV Perception < 5
+    	ShowMessage AZLGVMineMessage04
+    	SetStage AZStatioFindFriendQuest 25
+    elseif Player.GetAV Explosives < 50 && (Player.GetAV Perception >= 5 || AZStatioFindFriendQuest.CarlosClue == 1)
+    	ShowMessage AZLGVMineMessage01
+    	SetStage AZStatioFindFriendQuest 25
+    elseif Player.GetAV Explosives >= 50 && (Player.GetAV Perception >= 5 || AZStatioFindFriendQuest.CarlosClue == 1) 
+    	ShowMessage AZLGVMineMessage02
+    	SetStage AZStatioFindFriendQuest 25
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5DC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E5DD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1E:NovaArizona.esm

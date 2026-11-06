@@ -1,0 +1,49 @@
+FormKey: 017553:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E54
+    UseEmotionAnimation: True
+    Unused3: 0x6F6C64
+  ResponseText: Your quota will be reduced by 5%. Now give the reporter what they want.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758815
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A00720200731200020020321C0001005E10000016001F0001001B00207202007301002030203D3D207202007312002031203D3D2026261C0001009E100500010072030019000000
+  SourceCode: >-
+    set AZMalpaisJournalistQuest.bChainwayForemanBroughttoNestor to 2
+
+    AZMalpaisChainwayForemanREF.evp
+
+
+    if (AZMalpaisJournalistQuest.bChainwayForemanPresent == 0) && (AZMalpaisJournalistQuest.bChainwayForemanBroughttoNestor == 1)
+    	AZMalpaisChainwayForemanREF.moveto AZChainwayForemanAwayREF
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175C5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175F5:NovaArizona.esm

@@ -1,0 +1,121 @@
+FormKey: 0209BD:NovaArizona.esm
+EditorID: AZBrushQuest01Script
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    VariableCount: 11
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000004F00000016001F0003001B00207201007303002032203D3D207201007304002031203D3D20262639100A0002007201006E0F000000150007007306000200203115000700730700020020311900000011000000
+  SourceCode: >-
+    scn AZBrushQuest01Script
+
+
+    short BrushAllowed
+
+    short BrushBanned
+
+    short GilaMonsterClean
+
+    short BrahminClean
+
+    short BrushToke
+
+    short BrushTokeOffer
+
+    short HatchetGive
+
+
+    short FicusSpeak
+
+    short AsherSpeak
+
+
+    short FicusReturn
+
+    short AsherReturn
+
+
+
+    BEGIN GameMode
+
+
+    if AZBrushQuest01.GilaMonsterClean == 2 && AZBrushQuest01.BrahminClean == 1
+    	SetStage AZBrushQuest01 15
+    	Set FicusSpeak to 1
+    	Set AsherSpeak to 1
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x009B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x000000B00A0000
+    Name: BrushAllowed
+  - Data:
+      Index: 2
+      Unknown: 0x209B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6D706C65517561
+    Name: BrushBanned
+  - Data:
+      Index: 3
+      Unknown: 0x409B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x3E4F0B643E4F0B
+    Name: GilaMonsterClean
+  - Data:
+      Index: 4
+      Unknown: 0x609B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000050100000
+    Name: BrahminClean
+  - Data:
+      Index: 5
+      Unknown: 0x809B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xE4224420FA2244
+    Name: BrushToke
+  - Data:
+      Index: 6
+      Unknown: 0xE09B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x784E0BA48D4E0B
+    Name: FicusSpeak
+  - Data:
+      Index: 7
+      Unknown: 0x009C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFC22448CFA2244
+    Name: AsherSpeak
+  - Data:
+      Index: 8
+      Unknown: 0xA09B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x864E0B90864E0B
+    Name: BrushTokeOffer
+  - Data:
+      Index: 9
+      Unknown: 0x209C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x274C0B14274C0B
+    Name: FicusReturn
+  - Data:
+      Index: 10
+      Unknown: 0xC0D029120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x274E0B782C4C0B
+    Name: AsherReturn
+  - Data:
+      Index: 11
+      Unknown: 0xC09B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x8D4E0B1C884E0B
+    Name: HatchetGive
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm

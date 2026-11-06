@@ -1,0 +1,65 @@
+FormKey: 01EE5E:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 004BC3:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x466F6C
+  ResponseText: You speak with authority on this issue.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x747465
+    UseEmotionAnimation: True
+    Unused3: 0x5C415A
+  ResponseText: I am not happy about this, but if that is the case, then this forsaken will treat Noctis until his weakness is purged.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100682688
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+Choices:
+- 01EE64:NovaArizona.esm
+- 01EE65:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x36100500010072010039100A0002007202006EC8000000
+  SourceCode: >-
+    StartQuest AZFollowerReturnQuest
+
+    SetStage AZMalpaisAbuseQuest 200
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F035:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1C0001005E100000
+  SourceCode: AZMalpaisOptioREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 004BC2:NovaArizona.esm
+Prompt: Noctis will be not be able to fight at peak performance until his soldier's heart is cured.
+ActorValuePerk: 0004B5:FalloutNV.esm

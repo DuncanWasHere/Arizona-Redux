@@ -1,0 +1,29 @@
+FormKey: 0209CD:NovaArizona.esm
+EditorID: AZCowFieldAsherScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A0089000000000080161B0002130058000022120B000100FFFF05005201001507004C5700000039100F000200FFFF0500520100FFFF040042FF80161B0002130058000022120B000100FFFF05005202001507004CAA00000080161D000215005800003A100B000100FFFF050052020042280707004CAA00000039100F000200FFFF0500520100FFFF040042FF11000000
+  SourceCode: >-
+    name AZCowFieldAsherScript;
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZBrushQuest01)) {
+            SetStage(AZBrushQuest01, 255);
+        }
+
+        if (!GetQuestCompleted(AZBrushQuest02)) {
+            if (GetStage(AZBrushQuest02) < 40) {
+                SetStage(AZBrushQuest01, 255);
+            }
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm

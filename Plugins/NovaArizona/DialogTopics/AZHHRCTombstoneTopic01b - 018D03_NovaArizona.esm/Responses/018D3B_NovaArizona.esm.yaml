@@ -1,0 +1,49 @@
+FormKey: 018D3B:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x005100
+    UseEmotionAnimation: True
+    Unused3: 0x005100
+  ResponseText: We tried to cross three or four days ago, but the soldiers opened fire. Killed one of us, injured four others.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x005100
+    UseEmotionAnimation: True
+    Unused3: 0x005100
+  ResponseText: Omar told us that the NCR captain thinks we might be Legion spies in disguise. I can't believe that.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x005100
+    UseEmotionAnimation: True
+    Unused3: 0x005100
+  ResponseText: I mean, doesn't the NCR know what Legionaries look like? The answer is not like us.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729243
+Choices:
+- 018D05:NovaArizona.esm
+- 018D07:NovaArizona.esm
+- 018D09:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why haven't you gone over to the NCR?

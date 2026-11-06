@@ -1,0 +1,54 @@
+FormKey: 01F69C:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01CB95:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And you're telling me this why?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 5
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 3
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100791693
+  SecondParameter: 4
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100791693
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100791693
+  SecondParameter: 8
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100780948
+Choices:
+- 01F686:NovaArizona.esm
+- 01F687:NovaArizona.esm
+- 01F68E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There's a Legion caravan that's going to be coming through here. I need something from it.

@@ -1,0 +1,29 @@
+FormKey: 013D5C:NovaArizona.esm
+FormVersion: 15
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656420
+    UseEmotionAnimation: True
+    Unused3: 0x746F20
+  ResponseText: Only a man would be so bold as you directly affront a Legionary, and even if a woman were of that boldness, we keep a close watch on all of them  in the area.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744519
+Choices:
+- 013D5D:NovaArizona.esm
+- 013D63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why are you assuming the vandal is a 'he?'

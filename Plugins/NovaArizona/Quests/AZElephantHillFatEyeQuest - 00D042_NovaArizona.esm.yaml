@@ -1,0 +1,67 @@
+FormKey: 00D042:NovaArizona.esm
+EditorID: AZElephantHillFatEyeQuest
+FormVersion: 15
+Script: 00D082:NovaArizona.esm
+Name: Running Gun
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 17253
+Stages:
+- LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Starts the quest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E050000006E01000000
+      SourceCode: SetObjectiveDisplayed AZElephantHillFatEyeQuest 5 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D042:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+      CompiledScript: 0x7711070001006EC8000000
+      SourceCode: rewardxp 200
+Objectives:
+- Index: 22
+  Description: Return to Fat Eye.
+  Targets:
+  - Target: 00D041:NovaArizona.esm
+    Unused: 0x222F22
+- Index: 5
+  Description: Retrieve Fat Eye's delivery from his secret stash.
+  Targets:
+  - Target: 00D085:NovaArizona.esm
+    Unused: 0x66102A
+- Index: 10
+  Description: Return with the package to Fat Eye.
+  Targets:
+  - Target: 00D041:NovaArizona.esm
+    Unused: 0x851D26
+- Index: 15
+  Description: Take the delivery to the drop-off point in Dolan Springs.
+  Targets:
+  - Target: 00D08F:NovaArizona.esm
+    Unused: 0x676D2C
+- Index: 20
+  Description: Return to Fat Eye.
+  Targets:
+  - Target: 00D041:NovaArizona.esm
+    Unused: 0x222F22
+- Description: ''

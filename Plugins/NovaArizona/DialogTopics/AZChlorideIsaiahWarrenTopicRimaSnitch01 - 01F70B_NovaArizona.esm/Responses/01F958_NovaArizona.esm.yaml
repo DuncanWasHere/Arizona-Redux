@@ -1,0 +1,45 @@
+FormKey: 01F958:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Fuck. That's not good. Julius will be pissed. Shit, every man who touched her will be pissed. That dirty fucking slag.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100791693
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100791693
+  SecondParameter: 1
+- Fluff: 0x000000
+  Function: 421
+  FirstParameter: 100791693
+  SecondParameter: 18
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718662
+Choices:
+- 01F70C:NovaArizona.esm
+- 01F70D:NovaArizona.esm
+- 01F70E:NovaArizona.esm
+- 01F70F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Rima is sick. It seems like something bad.

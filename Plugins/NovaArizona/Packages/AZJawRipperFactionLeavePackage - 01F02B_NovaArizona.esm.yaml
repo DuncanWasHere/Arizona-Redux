@@ -1,0 +1,42 @@
+FormKey: 01F02B:NovaArizona.esm
+EditorID: AZJawRipperFactionLeavePackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+- AlwaysRun
+Unused: 62
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 23049
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01F02A:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x2210020000001C000100221002000000
+    SourceCode: >-
+      disable
+
+      AZJawRipperSpawnMarkerREF.disable
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 01F003:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

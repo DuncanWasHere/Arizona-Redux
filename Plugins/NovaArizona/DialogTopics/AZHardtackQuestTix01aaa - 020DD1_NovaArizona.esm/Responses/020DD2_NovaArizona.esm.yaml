@@ -1,0 +1,40 @@
+FormKey: 020DD2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 013D35:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x140006
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He'll beat you up for sure!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768788
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073030002002031
+  SourceCode: Set AZBaseCampHardTackQuest.TixWorker to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D97:NovaArizona.esm
+Prompt: I'll go talk to him.

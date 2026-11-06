@@ -1,0 +1,82 @@
+FormKey: 01EEBA:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01EEA6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4C6567
+    UseEmotionAnimation: True
+    Unused3: 0x792068
+  ResponseText: Hmm. Caveat Samaritanus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x4C6567
+    UseEmotionAnimation: True
+    Unused3: 0x792068
+  ResponseText: I can't say I understand your obsession, but I'll give you the benefit of the doubt. I'll head back to the Old Mormon Fort when I'm done.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x4C6567
+    UseEmotionAnimation: True
+    Unused3: 0x792068
+  ResponseText: Don't expect me to do this again.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1099623
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007203006E960000006E01000000A2110F0003007203006E9C0000006E01000000A3110F0003007203006E9B0000006E00000000A3110F0003007203006EA00000006E00000000A3110F0003007203006EBF0000006E0100000015000A00720300731100020020311C0001002110020000001C0002007711070001006E50000000
+  SourceCode: >-
+    SetObjectiveCompleted AZMalpaisAbuseQuest 150 1
+
+    SetObjectiveCompleted AZMalpaisAbuseQuest 156 1
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 155 0
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 160 0
+
+    SetObjectiveDisplayed AZMalpaisAbuseQuest 191 1
+
+    Set AZMalpaisAbuseQuest.ArcadeAccepted to 1
+
+    AZMalpaisGateGuardDialogueTriggerREF.enable
+
+    Player.RewardXP 80
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008DC6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+Prompt: There is so much evil in the world that I can't help but want to fix some of it. Why don't you?
+ActorValuePerk: 0004BB:FalloutNV.esm

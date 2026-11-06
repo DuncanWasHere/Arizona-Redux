@@ -1,0 +1,51 @@
+FormKey: 00C32D:NovaArizona.esm
+EditorID: AZWhiteHillsMineLegionaryAutoTalkPackage02
+FormVersion: 15
+GeneralFlags:
+- AlwaysRun
+Unused: 101
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 16724
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 1000
+Conditions:
+- CompareOperator: GreaterThan
+  Fluff: 0x000000
+  ComparisonValue: 25
+  Function: GetStage
+  FirstParameter: 100699722
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100699722
+  SecondParameter: 1
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 00C31E:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

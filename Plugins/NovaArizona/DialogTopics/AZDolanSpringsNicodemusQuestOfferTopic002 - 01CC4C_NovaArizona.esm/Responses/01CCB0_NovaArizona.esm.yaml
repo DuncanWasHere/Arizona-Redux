@@ -1,0 +1,59 @@
+FormKey: 01CCB0:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 01CCAF:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] No can do! That's just the cost of doing business, I'm afraid."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As long as you're thrifty, I guarantee you'll make your money back tenfold!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 35
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100781095
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100722316
+  SecondParameter: 29
+Choices:
+- 01CC46:NovaArizona.esm
+- 01CC47:NovaArizona.esm
+- 01CC48:NovaArizona.esm
+- 01CC49:NovaArizona.esm
+- 01CC4A:NovaArizona.esm
+- 01CC4B:NovaArizona.esm
+- 01CC4C:NovaArizona.esm
+- 01CC4D:NovaArizona.esm
+- 01CC4E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: A couple of these sound awfully pricey. I want my payment up front.
+ActorValuePerk: 0004B0:FalloutNV.esm

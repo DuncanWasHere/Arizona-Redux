@@ -1,0 +1,51 @@
+FormKey: 02083B:NovaArizona.esm
+EditorID: AZRexWaitingPackage
+FormVersion: 15
+GeneralFlags:
+- AlwaysRun
+- DefensiveCombat
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 16256
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 121FF0:FalloutNV.esm
+  CountOrDistance: 75
+Conditions:
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 121FF0:FalloutNV.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100789926
+  SecondParameter: 3
+IdleAnimations:
+  AnimationCount: 0x05
+  Animations:
+  - 02ABCD:FalloutNV.esm
+  - 02ABCC:FalloutNV.esm
+  - 0AA491:FalloutNV.esm
+  - 055B51:FalloutNV.esm
+  - 0298E0:FalloutNV.esm
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

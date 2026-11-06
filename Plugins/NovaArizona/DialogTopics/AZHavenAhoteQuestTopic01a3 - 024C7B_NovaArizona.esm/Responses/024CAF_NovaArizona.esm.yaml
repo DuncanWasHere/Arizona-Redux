@@ -1,0 +1,63 @@
+FormKey: 024CAF:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 024C73:NovaArizona.esm
+PreviousInfo: 024CAE:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The fucking treaty capped our army and put Legion soldiers in some of our cities.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If the Legion and the government can't handle a couple terrorists, then they'd need to uncap the army. Let us start operating militias in the open.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Or the Legion could send more resources to the garrison, but they're not going to do that with all the frontier wars the Legion's dealing with.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And they're especially not going to pull them off the NCR.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100813743
+Choices:
+- 024C79:NovaArizona.esm
+- 024C7A:NovaArizona.esm
+- 024C7B:NovaArizona.esm
+- 024C7C:NovaArizona.esm
+- 024C7D:NovaArizona.esm
+- 024C7E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why would your government do that?

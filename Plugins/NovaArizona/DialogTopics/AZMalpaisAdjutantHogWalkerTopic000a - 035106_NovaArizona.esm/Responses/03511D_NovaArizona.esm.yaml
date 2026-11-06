@@ -1,0 +1,38 @@
+FormKey: 03511D:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Correct. I am the Adjutant to the Legatus of Legio II.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100744048
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100780695
+  SecondParameter: 20
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100780695
+  SecondParameter: 26
+Choices:
+- 035107:NovaArizona.esm
+- 01ED41:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You're not a normal Legionary, right? You're like, special?

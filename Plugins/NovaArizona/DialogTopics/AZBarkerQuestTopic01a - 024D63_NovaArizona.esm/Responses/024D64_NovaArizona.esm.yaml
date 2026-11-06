@@ -1,0 +1,68 @@
+FormKey: 024D64:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x8A0280
+    UseEmotionAnimation: True
+    Unused3: 0xA44C12
+  ResponseText: Yeah, whatever. The Diné is what the Navajo call themselves.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x722E20
+    UseEmotionAnimation: True
+    Unused3: 0x696EE9
+  ResponseText: One of the founding nations of the Great Southwest Confederacy. Quite probably one of the only civilized parts of Arizona.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x722E20
+    UseEmotionAnimation: True
+    Unused3: 0x696EE9
+  ResponseText: Officially, they're an ally of the Legion, but given what the Legion's doing to them, I would not be surprised if they're opening a line to the NCR.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x722E20
+    UseEmotionAnimation: True
+    Unused3: 0x696EE9
+  ResponseText: Of course, I wouldn't trust the NCR, so they probably don't either.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004854:NovaArizona.esm
+- 004857:NovaArizona.esm
+- 004877:NovaArizona.esm
+- 0048B6:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E4B000000
+  SourceCode: SetStage AZBigStopAhigaQuest01 75
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+Prompt: No, not either. Following a lead.

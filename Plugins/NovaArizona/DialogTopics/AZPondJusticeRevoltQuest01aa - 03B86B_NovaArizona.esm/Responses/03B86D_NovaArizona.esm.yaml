@@ -1,0 +1,44 @@
+FormKey: 03B86D:NovaArizona.esm
+FormVersion: 15
+Quest: 01CDC4:NovaArizona.esm
+PreviousInfo: 03B86C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: I see. I am not as familiar with the gun market as you then.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x726520
+    UseEmotionAnimation: True
+    Unused3: 0x6D6973
+  ResponseText: I suppose any pistol would do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100712240
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetActorValue
+  FirstParameter: 41
+Choices:
+- 03B866:NovaArizona.esm
+- 03B879:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Does it *need* to be a .45 Auto? Those are pretty hard to come-by, you know.

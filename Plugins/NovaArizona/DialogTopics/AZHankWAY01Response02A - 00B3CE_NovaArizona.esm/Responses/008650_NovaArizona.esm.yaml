@@ -1,0 +1,60 @@
+FormKey: 008650:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: 00B3CF:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: It's place for ghouls to gather, survive and thrive. It's we achieve our rebirth and recognize our rightful place above our inferiors.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: That's you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6C6C50
+    UseEmotionAnimation: True
+    Unused3: 0x415A59
+  ResponseText: There's a giant radiation blanket surrounding the place. Only the waste's chosen may enter.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x43616D
+  ResponseText: That's us.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 00860F:NovaArizona.esm
+- 00B3D0:NovaArizona.esm
+- 00B3D3:NovaArizona.esm
+- 00B3D9:NovaArizona.esm
+- 00B3D8:NovaArizona.esm
+- 00B3EA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Tell me about The Reservation again.

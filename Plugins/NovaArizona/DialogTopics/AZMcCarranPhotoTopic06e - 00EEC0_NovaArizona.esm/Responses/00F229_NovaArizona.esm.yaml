@@ -1,0 +1,69 @@
+FormKey: 00F229:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00EE0F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Hmm, that's not a name we recognize. This is pretty far from the frontlines, so he must be part of the Frumentarii's internal security unit.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Good work.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724242
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100728865
+  SecondParameter: 4
+Choices:
+- 00EEBA:NovaArizona.esm
+- 00EEBB:NovaArizona.esm
+- 00EEBD:NovaArizona.esm
+- 00EEBE:NovaArizona.esm
+- 00EEC0:NovaArizona.esm
+- 00EEC1:NovaArizona.esm
+- 00EEC2:NovaArizona.esm
+- 00EEC3:NovaArizona.esm
+- 00EEC4:NovaArizona.esm
+- 00EEC5:NovaArizona.esm
+- 00EEC6:NovaArizona.esm
+- 00EEC7:NovaArizona.esm
+- 00EEC8:NovaArizona.esm
+- 00EEC9:NovaArizona.esm
+- 00EECA:NovaArizona.esm
+- 00EECB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073040002002032150013007201007317000B00207201007317002031202B
+  SourceCode: >-
+    Set AZMcCarranReconQuest.BelliusPicture to 2
+
+    Set AZMcCarranReconQuest.FrumentariiPictures to (AZMcCarranReconQuest.FrumentariiPictures + 1)
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 010021:NovaArizona.esm
+Prompt: Bellius.

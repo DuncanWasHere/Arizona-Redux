@@ -1,0 +1,71 @@
+FormKey: 02AFB4:NovaArizona.esm
+EditorID: AZBeetleElectro
+FormVersion: 15
+ObjectBounds:
+  First: -16, -37, 0
+  Second: 16, 37, 27
+Name: Electro Beetle
+Model:
+  File: creatures\Radroach\skeleton.nif
+ActorEffects:
+- 01D796:NovaArizona.esm
+UnarmedAttackEffect: 00CCCC:NovaArizona.esm
+UnarmedAttackAnimation: Any
+Models:
+- azelectrobeetle.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  - TiltLeftRight
+  Fatigue: 80
+  Level: 18
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 021478:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 01D785:NovaArizona.esm
+Voice: 094EED:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 90
+  Responsibility: 50
+  Mood: 842297600
+  Teaches: Barter
+  AggroRadiusBehavior: True
+  AggroRadius: 256
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedInsect
+  CombatSkill: 100
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 75
+  Damage: 24
+  Strength: 4
+  Perception: 6
+  Endurance: 5
+  Charisma: 1
+  Intelligence: 3
+  Agility: 4
+  Luck: 3
+AttackReach: 64
+CombatStyle: 03A382:FalloutNV.esm
+BodyPartData: 036A64:NovaArizona.esm
+TurningSpeed: 200
+BaseScale: 2
+FootWeight: 2
+ImpactMaterialType: OrganicBug
+SoundLevel: Normal
+InheritsSoundFrom: 03AEF7:FalloutNV.esm

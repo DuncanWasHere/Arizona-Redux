@@ -1,0 +1,36 @@
+FormKey: 01838E:NovaArizona.esm
+FormVersion: 15
+Data:
+  Type: Conversation
+Quest: 020AF1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x656566
+  ResponseText: Ah, Cram's a Pre-War food full of preservatives and stuff. You shouldn't be eating it anyways.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796580
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+Choices:
+- 01838F:NovaArizona.esm
+LinkFrom:
+- 01838B:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

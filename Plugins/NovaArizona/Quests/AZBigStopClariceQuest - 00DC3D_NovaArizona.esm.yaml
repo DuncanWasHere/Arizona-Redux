@@ -1,0 +1,37 @@
+FormKey: 00DC3D:NovaArizona.esm
+EditorID: AZBigStopClariceQuest
+FormVersion: 15
+Script: 01EBE7:NovaArizona.esm
+Name: Our Love Will Never Go
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 16128
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 10
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 1
+  Description: Pick up Clarice's letter.
+  Targets:
+  - Target: 00B2F2:NovaArizona.esm
+    Unused: 0x804C24
+- Index: 2
+  Description: Deliver Clarice's letter to her daughter.
+  Targets:
+  - Target: 00EC90:NovaArizona.esm
+    Unused: 0x1D1428

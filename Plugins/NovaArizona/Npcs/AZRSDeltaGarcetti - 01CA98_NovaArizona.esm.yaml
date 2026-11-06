@@ -1,0 +1,154 @@
+FormKey: 01CA98:NovaArizona.esm
+EditorID: AZRSDeltaGarcetti
+FormVersion: 15
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Ranger Garcetti
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - AutoCalcStats
+  - PCLevelMult
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1000
+  CalcMin: 21
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - Inventory
+Factions:
+- Faction: 0A46E7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 12676F:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6C:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13ABDA:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13F8B7:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 13C8D6:FalloutNV.esm
+Template: 174084:FalloutNV.esm
+Race: 000019:FalloutNV.esm
+ActorEffects:
+- 10C0BD:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Script: 033832:NovaArizona.esm
+Items:
+- Item:
+    Item: 123054:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 13A643:FalloutNV.esm
+    Count: 5
+- Item:
+    Item: 1403A5:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 145EC6:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 15441B:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 174085:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 03382F:NovaArizona.esm
+- 03382E:NovaArizona.esm
+- 033833:NovaArizona.esm
+Class: 08D424:FalloutNV.esm
+BaseHealth: 100
+Strength: 5
+Perception: 6
+Endurance: 6
+Charisma: 4
+Intelligence: 5
+Agility: 6
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 13
+  - Key: BigGuns
+    Value: 17
+  - Key: EnergyWeapons
+    Value: 17
+  - Key: Explosives
+    Value: 17
+  - Key: Lockpick
+    Value: 17
+  - Key: Medicine
+    Value: 15
+  - Key: MeleeWeapons
+    Value: 15
+  - Key: Repair
+    Value: 15
+  - Key: Science
+    Value: 15
+  - Key: SmallGuns
+    Value: 100
+  - Key: Sneak
+    Value: 100
+  - Key: Speech
+    Value: 13
+  - Key: Survival
+    Value: 17
+  - Key: Unarmed
+    Value: 100
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 0B5BEA:FalloutNV.esm
+Hair: 02BFDB:FalloutNV.esm
+HairLength: 0
+Eyes: 004253:FalloutNV.esm
+HairColor: '#00211812'
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x9E1F803E32E1F83F72DA0D3F7B362DBF78788BBE32DD15C0234D023F31A5C13FDF656FBF753D41BFDCE0A0BEBD27743EB4585B3F0B3315C07DA3CA3D4657453FCA9F40BFB8A653BEF946153F1C926DBE342A0ABF38953FC050FCAABE54D7953E30198ABE76C8843F1A16563F67109EBF08AB64BE422BBBBEE9E027401C4934BF40A296BD775AA1BEEC6D2BBFEF73E03EF0B0BBBE900CF6BEC016ACBD06CDB0BFFC9D48C022C72840F411D4BFE55B0C40892A30C043D2D13F985E0140D99145C020A61B3FF4B08DBF
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0xA616FCBF00EF33BED6891EBF5022D5BE302C7BBD12C1683F4305DD3FA4C20BBF159DA9BF4386EC3F082FA9BFA02305405187EA3F2472443EA4F586BF6F2E02BF7A8EE6BF82F880BEF8C83E3E03662C40F8966BBEFB40EFBFAA80E6BF98FB77BF64550A3F1440FBBE867E2AC012DBC13F44CD30BFB072E73E88A084BD584EAC3FFCB425BF763DF2BFEC766A3F9AAB1E3F9AE3B43F01DFA83FA003C23DD90120BF04FD613FC5D3E2BE464A46BFF4FD393F3022203E554425BFD0B54B3FB8BA153F376B02C040A3E6BD
+NAM5: 255
+DATADataTypeState:
+- Break0

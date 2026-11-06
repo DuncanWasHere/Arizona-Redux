@@ -1,0 +1,62 @@
+FormKey: 00CBDD:NovaArizona.esm
+FormVersion: 15
+Quest: 00D7EA:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Cyanide Springs is most of the merchants are, both local and caravan. Both mine and Luke's. If you need to buy something, buy it there.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x677320
+    UseEmotionAnimation: True
+    Unused3: 0x737420
+  ResponseText: There's an inn, run by a wonderful woman named Miss Wen.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm also obliged to tell you about Dolan Springs as part of our little partnership with them. I can highly recommend the Big Dog.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: And Doc D has an animal clinic. Don't be alarmed by the name. Humans are animals, too.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100721576
+Choices:
+- 00C701:NovaArizona.esm
+- 00C6FA:NovaArizona.esm
+- 00C6FD:NovaArizona.esm
+- 00C700:NovaArizona.esm
+- 00C71B:NovaArizona.esm
+- 00C85E:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Looking for nearby goods and services.

@@ -1,0 +1,32 @@
+FormKey: 01314F:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: 0130B7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: The name is Bear. I'm the second-in-command here. I handle our contact with the Legion, trade negotiations, and generally make sure everyone is on the same page.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+Choices:
+- 0130C0:NovaArizona.esm
+- 036E4E:NovaArizona.esm
+- 036E4F:NovaArizona.esm
+- 036E52:NovaArizona.esm
+- 036E54:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who are you?

@@ -1,0 +1,80 @@
+FormKey: 020D36:NovaArizona.esm
+EditorID: AZSmugglingQuest
+FormVersion: 15
+Name: Walkin' After Midnight
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: "Pick up Doctor Clay's smuggled medicine shipment. "
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 6
+  LogEntries:
+  - Flags: []
+    Entry: Speak with Lucille
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Deliver medicine to Doctor Clay
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 15
+  LogEntries:
+  - Flags: []
+    Entry: Investigate Dr. Clay's smuggling.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 98
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 99
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 10
+  Description: Pick up Doctor Clay's smuggled medicine shipment
+  Targets:
+  - Target: 022FA7:NovaArizona.esm
+    Unused: 0x7C102A
+- Index: 13
+  Description: '(Optional) Investigate how Doctor Clay is organizing her smuggling runs. '
+- Index: 11
+  Description: (Optional) Report Doctor Clay's Smuggling to the Legion
+  Targets:
+  - Target: 00D911:NovaArizona.esm
+    Unused: 0x23102B
+- Index: 12
+  Description: Speak with Lucille
+  Targets:
+  - Target: 023013:NovaArizona.esm
+    Unused: 0x432F22
+- Index: 15
+  Description: Deliver medicine back to Doctor Clay.
+  Targets:
+  - Target: 002D60:NovaArizona.esm
+    Unused: 0xCF1527
+- Index: 14
+  Description: (Optional) Speak to Centurion Thrax about Dr. Clay's smuggling operation.
+  Targets:
+  - Target: 00DDA0:NovaArizona.esm
+    Unused: 0x49042F

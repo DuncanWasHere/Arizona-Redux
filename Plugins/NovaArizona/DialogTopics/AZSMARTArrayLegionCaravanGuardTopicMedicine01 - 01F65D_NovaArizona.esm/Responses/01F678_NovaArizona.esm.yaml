@@ -1,0 +1,38 @@
+FormKey: 01F678:NovaArizona.esm
+FormVersion: 15
+Quest: 01F58D:NovaArizona.esm
+PreviousInfo: 01F677:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[FAILED] Disgusting. I don't care about your defecation."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetActorValue
+  FirstParameter: 37
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791743
+Choices:
+- 01F659:NovaArizona.esm
+- 01F65D:NovaArizona.esm
+- 01F65F:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I have really bad diarrhea and that medicine is the only thing that can cure it. Please help!
+ActorValuePerk: 0004B5:FalloutNV.esm

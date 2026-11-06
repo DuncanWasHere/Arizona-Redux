@@ -1,0 +1,60 @@
+FormKey: 020D62:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Surprise
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x736565
+    UseEmotionAnimation: True
+    Unused3: 0x20616E
+  ResponseText: Ooh, you're interesting.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x736565
+    UseEmotionAnimation: True
+    Unused3: 0x20616E
+  ResponseText: I see why Marcia chose you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x736565
+    UseEmotionAnimation: True
+    Unused3: 0x20616E
+  ResponseText: Speak of us to the Legion and we will slit your throat in your sleep.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100711888
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E0C0000006E01000000A3110F0003007201006E0F0000006E01000000
+  SourceCode: >-
+    SetObjectiveCompleted AZSmugglingquest 12 1
+
+    SetObjectiveDisplayed AZSmugglingquest 15 1;
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D36:NovaArizona.esm
+Prompt: '[Show Mark of Caesar] I have an in.'

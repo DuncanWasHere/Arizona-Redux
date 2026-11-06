@@ -1,0 +1,60 @@
+FormKey: 024DA0:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x646F75
+    UseEmotionAnimation: True
+    Unused3: 0x652073
+  ResponseText: '[SUCCEEDED] You think so? {Considering the merits} It is true that children can oftentimes do the impossible. Tix could probably work them better.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x646F75
+    UseEmotionAnimation: True
+    Unused3: 0x652073
+  ResponseText: Very well. Tix will work in the mess hall.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A007202007303000200203215000A00720300730200020020311C0001007711070001006E3C000000
+  SourceCode: >-
+    Set AZBaseCampHardTackQuest.TixWorker to 2
+
+    Set AZFreeformBaseCamp.bTixGoToMessHall to 1
+
+    Player.RewardXP 60
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020D97:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 013D35:NovaArizona.esm
+Prompt: I've seen the inside of your mess hall. The capsarius is a terrible master. Tix would make a better
+ActorValuePerk: 0004BB:FalloutNV.esm

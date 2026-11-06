@@ -1,0 +1,31 @@
+FormKey: 0350DC:NovaArizona.esm
+FormVersion: 15
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: So He made my life full of torment because I deserve it? How is that supposed to make me feel better?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880122
+Choices:
+- 0350B6:NovaArizona.esm
+- 0350B7:NovaArizona.esm
+- 0350B8:NovaArizona.esm
+- 0350BC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He decides your fate. Everything that happens to you is exactly what you deserve.

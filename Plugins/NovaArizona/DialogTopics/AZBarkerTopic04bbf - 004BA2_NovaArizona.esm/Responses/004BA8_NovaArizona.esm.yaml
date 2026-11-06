@@ -1,0 +1,49 @@
+FormKey: 004BA8:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x642074
+  ResponseText: This is Arizona. You're walking in a land full of legends. You're nothing special. Neither am I.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x642074
+  ResponseText: You can't become a legend until you're gone from this earth, anyways. And then it's up to who's left. Not me. Not you.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x6F6E20
+    UseEmotionAnimation: True
+    Unused3: 0x642074
+  ResponseText: Remember that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004854:NovaArizona.esm
+- 004877:NovaArizona.esm
+- 0048B6:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm something of a legend, too.

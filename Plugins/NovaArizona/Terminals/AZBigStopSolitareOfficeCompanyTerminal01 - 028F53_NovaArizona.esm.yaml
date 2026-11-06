@@ -1,0 +1,40 @@
+FormKey: 028F53:NovaArizona.esm
+EditorID: AZBigStopSolitareOfficeCompanyTerminal01
+FormVersion: 15
+ObjectBounds:
+  First: -18, -20, 0
+  Second: 24, 20, 37
+Name: Terminal
+Model:
+  File: terminals\terminaldesk01.nif
+Description: >-
+  S.T.A.R. File Management Software
+
+
+  Solitare. Red White and Blue.
+
+
+  Welcome back, Lydia!
+
+  You have files in your Recycle Bin.
+Flags:
+- Unlocked
+MenuItems:
+- ItemText: Recycle Bin
+  ResultText: Opening...
+  SubMenu: 028F54:NovaArizona.esm
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0xE01328150000000000000000
+        Unknown2: 0xB54D1160EF4C11
+      Name: mylink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1

@@ -1,0 +1,41 @@
+FormKey: 01BB69:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He's a pretty good guy. He's a good supply runner, and it seems he likes me. I'm glad that at least one person doesn't think I'm an idiot.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100776314
+Choices:
+- 01BAB2:NovaArizona.esm
+- 01BAB3:NovaArizona.esm
+- 01BAB4:NovaArizona.esm
+- 01BAB5:NovaArizona.esm
+- 01BAB6:NovaArizona.esm
+- 01BAB7:NovaArizona.esm
+- 01BABE:NovaArizona.esm
+- 01BABF:NovaArizona.esm
+- 01BAC0:NovaArizona.esm
+- 01BAC1:NovaArizona.esm
+- 01BAC2:NovaArizona.esm
+- 01BAC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Benjamin.

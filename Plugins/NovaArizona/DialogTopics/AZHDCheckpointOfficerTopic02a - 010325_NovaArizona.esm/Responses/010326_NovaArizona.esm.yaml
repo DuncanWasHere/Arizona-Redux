@@ -1,0 +1,51 @@
+FormKey: 010326:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: You probably haven't been on the Dam long enough. Legion is always looking to pull some shit.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x686176
+    UseEmotionAnimation: True
+    Unused3: 0x626565
+  ResponseText: Had to execute one of our engineers because he was a Legion spy just yesterday. Wasn't the first time either.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x686176
+    UseEmotionAnimation: True
+    Unused3: 0x626565
+  ResponseText: Anyone of those refugees could be a Frumentarius. Anyone of them could try to go out in a blaze of glory and take us with them. It's us or them.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729694
+Choices:
+- 01031F:NovaArizona.esm
+- 010323:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why won't you let people through the checkpoint?

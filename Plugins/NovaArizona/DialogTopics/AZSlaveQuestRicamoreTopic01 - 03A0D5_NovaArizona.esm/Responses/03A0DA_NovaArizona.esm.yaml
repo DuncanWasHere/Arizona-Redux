@@ -1,0 +1,45 @@
+FormKey: 03A0DA:NovaArizona.esm
+FormVersion: 15
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A0D7:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x656473
+    UseEmotionAnimation: True
+    Unused3: 0x616C6B
+  ResponseText: That so? Well keep at it, kiddo. I'm sure he's out there somewheres.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetHasNote
+  FirstParameter: 100901117
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 20
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100730730
+Choices:
+- 03A0D5:NovaArizona.esm
+- 006E3A:NovaArizona.esm
+- 021061:NovaArizona.esm
+- 020B40:NovaArizona.esm
+- 020B41:NovaArizona.esm
+- 020B44:NovaArizona.esm
+- 020B4C:NovaArizona.esm
+- 020B4D:NovaArizona.esm
+- 020B4E:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've been keeping an eye out for that missing trader, but no news as of yet.

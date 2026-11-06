@@ -1,0 +1,51 @@
+FormKey: 008B8E:NovaArizona.esm
+EditorID: AZAugustQuestBarrelSCRIPT
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000200DE0000000000801611000209005601000001001507004CFF0000003A151000010F00520100780000211004000000283A151000010F005201007800005E100400000028111114000300FFFF04004200FFFF04004201FFFF040042003A15170001160052020078000016100B000100FFFF05005201002859100B000100720300000000000000A21115000300FFFF0500520400FFFF04004202FFFF04004201A21115000300FFFF0500520400FFFF04004206FFFF04004201A31115000300FFFF0500520400FFFF04004208FFFF0400420139150C00010B0056010000010042010011000000
+  SourceCode: >-
+    name AZAugustQuestBarrelSCRIPT;
+
+
+    int doonce;
+
+
+    OnActivate {
+        if (!doonce) {
+            AZAugustQuestAssassinREF.Enable();
+            AZAugustQuestAssassinREF.EVP();
+
+            EnableFastTravel(0, 1, 0);
+
+            PlayerREF.StartCombat(AZAugustQuestAssassinREF);
+
+            ShowMessage(AZAugustQuestBarrelMessage);
+
+            SetObjectiveCompleted(AZBigStopAugustQuest, 2, 1);
+            SetObjectiveCompleted(AZBigStopAugustQuest, 6, 1);
+            SetObjectiveDisplayed(AZBigStopAugustQuest, 8, 1);
+
+            doonce = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: doonce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008B8C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008B8D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm

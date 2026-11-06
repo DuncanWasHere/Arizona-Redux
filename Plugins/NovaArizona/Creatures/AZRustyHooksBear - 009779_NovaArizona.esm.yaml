@@ -1,0 +1,66 @@
+FormKey: 009779:NovaArizona.esm
+EditorID: AZRustyHooksBear
+FormVersion: 15
+ObjectBounds:
+  First: -41, -43, 0
+  Second: 41, 43, 152
+Name: Bear
+Model:
+  File: Creatures\SMSpineBreaker\Skeleton.nif
+UnarmedAttackAnimation: Any
+Models:
+- nv_sm_v1_1_base.nif
+- smspinebreakerbare.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - AllowPCDialogue
+  Fatigue: 50
+  Level: 20
+  SpeedMultiplier: 110
+  Karma: -500
+  DispositionBase: 35
+Factions:
+- Faction: 00977B:NovaArizona.esm
+  Unused: 0x49465A
+- Faction: 013148:NovaArizona.esm
+  Unused: 0x49465A
+Voice: 14377B:FalloutNV.esm
+Template: 01CF93:FalloutNV.esm
+Script: 022FA4:NovaArizona.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Brave
+  EnergyLevel: 2
+  Responsibility: 50
+  Mood: 1835099904
+  Teaches: Barter
+Packages:
+- 036E4A:NovaArizona.esm
+- 01313C:NovaArizona.esm
+- 036E49:NovaArizona.esm
+- 02BFF1:NovaArizona.esm
+Data:
+  Type: SuperMutant
+  CombatSkill: 120
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 500
+  Damage: 55
+  Strength: 10
+  Perception: 5
+  Endurance: 10
+  Charisma: 5
+  Intelligence: 7
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+BodyPartData: 02026E:FalloutNV.esm
+BaseScale: 1
+FootWeight: 3
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 01FF5F:FalloutNV.esm
+ImpactDataset: 075A49:FalloutNV.esm
+MeleeWeaponList: 03A15E:FalloutNV.esm

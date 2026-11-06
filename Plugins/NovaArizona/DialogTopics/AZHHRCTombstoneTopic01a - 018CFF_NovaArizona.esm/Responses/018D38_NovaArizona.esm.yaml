@@ -1,0 +1,49 @@
+FormKey: 018D38:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x003000
+    UseEmotionAnimation: True
+    Unused3: 0x003000
+  ResponseText: No. It's never been good in Legion territory, but things got bad five or six years ago.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x001400
+    UseEmotionAnimation: True
+    Unused3: 0x001C00
+  ResponseText: The Legion lost a war against ghouls from a place called 'Reservation'. They've been taking it out on us.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x005100
+    UseEmotionAnimation: True
+    Unused3: 0x005100
+  ResponseText: Or, maybe, it's because we don't fall for their crap? I don't know.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729243
+Choices:
+- 018CFF:NovaArizona.esm
+- 018D03:NovaArizona.esm
+- 018D01:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Legion doesn't treat ghouls well?

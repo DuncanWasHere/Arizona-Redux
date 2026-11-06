@@ -1,0 +1,55 @@
+FormKey: 01CCA9:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Yeah, man, you know what I'm talking about. Some kind of huge animal with five or even ten legs.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Only not still alive so I don't get fucking eaten. We're looking for a taxidermal magnum opus.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: But yeah, get one with as many legs as you can find.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+Choices:
+- 01CC46:NovaArizona.esm
+- 01CC47:NovaArizona.esm
+- 01CC48:NovaArizona.esm
+- 01CC49:NovaArizona.esm
+- 01CC4A:NovaArizona.esm
+- 01CC4B:NovaArizona.esm
+- 01CC4C:NovaArizona.esm
+- 01CC4D:NovaArizona.esm
+- 01CC4E:NovaArizona.esm
+- 01CD09:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: A magnificent beast rendered stuffed?

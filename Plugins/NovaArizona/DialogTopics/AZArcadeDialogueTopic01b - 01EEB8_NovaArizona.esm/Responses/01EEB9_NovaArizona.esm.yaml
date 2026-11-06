@@ -1,0 +1,30 @@
+FormKey: 01EEB9:NovaArizona.esm
+FormVersion: 15
+Quest: 01EEA6:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No. It isn't enough to mean well if you don't do good. He's a big part of what's happening out here.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1099623
+Choices:
+- 01EEB3:NovaArizona.esm
+- 01EEB4:NovaArizona.esm
+- 01EEB6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: It's not his fault.

@@ -1,0 +1,82 @@
+FormKey: 00861F:NovaArizona.esm
+FormVersion: 15
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x742072
+    UseEmotionAnimation: True
+    Unused3: 0x616E64
+  ResponseText: Listen close. Only going to say this once. Albuquerque's got a crapton of names now. Albuquerque is its correct name.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x204F6E
+    UseEmotionAnimation: True
+    Unused3: 0x696E67
+  ResponseText: Since the city got overrun by tribals, it's been called Albosqkayqe. The final syllable can be said as "key," "kay" and "kuh".
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xFF7FFF
+    UseEmotionAnimation: True
+    Unused3: 0xFF7FFF
+  ResponseText: The people who lived there were lazy, and sometimes, they just called it "El Burque".
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0xFF7FFF
+    UseEmotionAnimation: True
+    Unused3: 0xFF7FFF
+  ResponseText: Legion took it over and is Latinizing it to "Albus Quercus," which is just a stupid name.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0xFF7FFF
+    UseEmotionAnimation: True
+    Unused3: 0xFF7FFF
+  ResponseText: Well, actually, sometimes the military still call it "High River". So, whatever.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0xFF7FFF
+    UseEmotionAnimation: True
+    Unused3: 0xFF7FFF
+  ResponseText: None of the other traders can keep up with all this shit. They just it call ABQ.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 7
+    Unused2: 0xFF7FFF
+    UseEmotionAnimation: True
+    Unused3: 0xFF7FFF
+  ResponseText: Got all that, smoothskin?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 008620:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Um, okay? But what is it?

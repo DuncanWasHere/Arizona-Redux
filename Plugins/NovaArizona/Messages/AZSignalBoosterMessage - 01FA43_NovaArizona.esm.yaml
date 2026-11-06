@@ -1,0 +1,16 @@
+FormKey: 01FA43:NovaArizona.esm
+EditorID: AZSignalBoosterMessage
+FormVersion: 15
+Description: 'The booster is connected to the inside via cable. Severing the cable will immediately cease the Slave Collar frequency from being broadcast throughout the work camp. '
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Point the booster towards the Atlas Tower
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 70
+    Function: GetActorValue
+    FirstParameter: 40
+- Text: Sever the Cable
+- Text: Leave it alone

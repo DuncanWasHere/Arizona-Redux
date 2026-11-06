@@ -1,0 +1,38 @@
+FormKey: 03B7F2:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: 03B7F1:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x5C4475
+    UseEmotionAnimation: True
+    Unused3: 0x735C44
+  ResponseText: Yeah right. You don't scare me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: NotEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1099469
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720460
+Choices:
+- 03B804:NovaArizona.esm
+- 033085:NovaArizona.esm
+- 033081:NovaArizona.esm
+- 03308A:NovaArizona.esm
+- 03B7F3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Give me everything you have. Right now

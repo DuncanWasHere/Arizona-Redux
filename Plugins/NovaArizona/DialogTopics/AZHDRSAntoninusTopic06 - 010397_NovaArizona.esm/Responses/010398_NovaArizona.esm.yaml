@@ -1,0 +1,34 @@
+FormKey: 010398:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x617469
+  ResponseText: To civilize it in Caesar's name, of course. To end degeneracy and profligacy, and to instill obedience and servitude into every man, woman and child.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729663
+Choices:
+- 010336:NovaArizona.esm
+- 010338:NovaArizona.esm
+- 01033A:NovaArizona.esm
+- 01033C:NovaArizona.esm
+- 010387:NovaArizona.esm
+- 010397:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why is the Legion in the Mojave?

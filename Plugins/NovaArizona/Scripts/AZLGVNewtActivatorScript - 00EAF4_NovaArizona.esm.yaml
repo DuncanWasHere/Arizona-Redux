@@ -1,0 +1,89 @@
+FormKey: 00EAF4:NovaArizona.esm
+EditorID: AZLGVNewtActivatorScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 11
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000B00020013000000010072030059100B000100720400000000000000110000001000060000006B01000015000B00730100060020581F10000016000D0006000900207301002031203D3D160016000200120020720300580E100400010006002036203E3D59100B00010072050000000000000015000A00720600730B000200203117000200010059100B0001007207000000000000001900000018000D0006000900207301002032203D3D160016000200120020720300580E100400010005002036203E3D59100B00010072080000000000000015000A00720600730B000200203117000200010059100B0001007209000000000000001900000018000D0006000900207301002033203D3D160017000200130020720300580E10040001002700203430203E3D59100B000100720A0000000000000015000A00720600730B000200203117000200010059100B000100720B000000000000001900000018000D0003000900207301002034203D3D1C0001002210020000001C00020021100200000015000700730100020020301900000011000000
+  SourceCode: >-
+    scn AZLGVNewtActivatorScript
+
+
+    int Button
+
+
+    BEGIN OnActivate player
+
+
+    ShowMessage AZLGVNewtActivatorMessage01
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+    Set Button to GetButtonPressed
+
+    if Button == 1
+    	if Player.GetAV Perception >= 6
+    		ShowMessage AZLGVNewtActivatorMessage01a
+    		Set AZStatioFindFriendQuest.ShelfKnowledge to 1
+    	else
+    		ShowMessage AZLGVNewtActivatorMessage01b
+    	endif
+    elseif Button == 2
+    	if Player.GetAV Strength >= 6
+    		ShowMessage AZLGVNewtActivatorMessage02a
+    		Set AZStatioFindFriendQuest.ShelfKnowledge to 1
+    	else
+    		ShowMessage AZLVGNewtActivatorMessage02b
+    	endif
+    elseif Button == 3
+    	if Player.GetAV Repair >= 40
+    		ShowMessage AZLVGNewtActivatorMessage03a
+    		Set AZStatioFindFriendQuest.ShelfKnowledge to 1
+    	else
+    		ShowMessage AZLVGNewtActivatorMessage03b
+    	endif
+    elseif Button == 4
+    	AZLGVNewtActivatorREF.disable
+    	AZLGVNewtBasementDoorREF.enable
+    	Set Button to 0
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x00DB29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6973584C353132
+    Name: Button
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E81F:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00E821:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAE9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAEA:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DE1A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAEF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAF0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAF1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAF3:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EAF2:NovaArizona.esm

@@ -1,0 +1,293 @@
+FormKey: 01EC77:NovaArizona.esm
+EditorID: AZMalpaisAbuseQuest
+FormVersion: 15
+Script: 01EE6A:NovaArizona.esm
+Name: It's Bad for Me
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    Entry: Start quest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Spoke to the Optio
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: It is now obvious that you must kill Sedonus to proceed.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 7
+        Enabled: 1
+      CompiledScript: 0x1C000100211002000000A3110F0003007202006E320000006E01000000160017000600130020720300587E11050001007204002031203D3D1600300001002C0020720500582E1000002030203D3D207206007304002030203D3D202626207207007301002030203D3D202626A3110F0003007202006E330000006E01000000190000001600100001000C00207206007304002031203D3DA3110F0003007202006E370000006E01000000190000001900000016001900010015002058A4110A0002007202006E230000002030203D3DA3110F0003007202006E230000006E000000001900000016001900010015002058A4110A0002007202006E240000002030203D3DA3110F0003007202006E240000006E000000001900000016001900010015002058A4110A0002007202006E250000002030203D3DA3110F0003007202006E250000006E0000000019000000
+      SourceCode: >-
+        AZMalpaisSedonusSunsetSasparillaREF.enable
+
+        SetObjectiveDisplayed AZMalpaisAbuseQuest 50 1
+
+
+        if Player.GetHasNote AZMalpaisSedonusQuestNote == 1
+        	if AZBigStopJemREF.GetDead == 0 && AZElephantHillFatEyeQuest.FatEyeJem == 0 && AZBigStopAugustQuest.GossipReject == 0
+        		SetObjectiveDisplayed AZMalpaisAbuseQuest 51 1
+        	endif
+        	if AZElephantHillFatEyeQuest.FatEyeJem == 1
+        		SetObjectiveDisplayed AZMalpaisAbuseQuest 55 1
+        	endif
+        endif
+
+
+        if GetObjectiveCompleted AZMalpaisAbuseQuest 35 == 0
+        	SetObjectiveDisplayed AZMalpaisAbuseQuest 35 0
+        endif
+
+
+        if GetObjectiveCompleted AZMalpaisAbuseQuest 36 == 0
+        	SetObjectiveDisplayed AZMalpaisAbuseQuest 36 0
+        endif
+
+
+        if GetObjectiveCompleted AZMalpaisAbuseQuest 37 == 0
+        	SetObjectiveDisplayed AZMalpaisAbuseQuest 37 0
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EEA3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EC77:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EE76:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01365F:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00D042:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 008A17:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags: []
+    Entry: Sedonus has been killed.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E320000006E01000000A3110F0003007201006E3C0000006E0100000015001000720100730F00080020582F2802000000
+      SourceCode: >-
+        SetObjectiveCompleted AZMalpaisAbuseQuest 50 1
+
+        SetObjectiveDisplayed AZMalpaisAbuseQuest 60 1
+
+        Set AZMalpaisAbuseQuest.MalpaisCooldown to GetGameDaysPassed
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EC77:NovaArizona.esm
+- Index: 150
+  LogEntries:
+  - Flags: []
+    Entry: Get Noctis treatment.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x1600120001000E0020720100582E1000002030203D3DA3110F0003007202006E9B0000006E01000000190000001600100001000C0020720300730D002031203D3DA3110F0003007202006E9C0000006E0100000019000000160025000100210020720400582E1000002030203D3D20582212050001007205002030203D3D202626A3110F0003007202006EA00000006E0100000019000000
+      SourceCode: >-
+        if AZOldMormonFortGregoryREF.GetDead == 0
+        	SetObjectiveDisplayed AZMalpaisAbuseQuest 155 1
+        endif
+
+
+        if VNPCFollowers.ArcadeAvailable == 1
+        	SetObjectiveDisplayed AZMalpaisAbuseQuest 156 1
+        endif
+
+
+        if AZAspirantCassiaREF.GetDead == 0 && GetQuestCompleted AZBigStopChildSoldierQuest == 0
+        	SetObjectiveDisplayed AZMalpaisAbuseQuest 160 1
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EE06:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EC77:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0B16D0:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00C45B:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EC79:NovaArizona.esm
+- Index: 200
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 5
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006EFA0000003610050001007203001C00010052100A0002007204006E010000001600100002000C00207205007309002031203D3D15001000720300730100080020582F28020000001C0002005E10000019000000
+      SourceCode: >-
+        Player.RewardXP 250
+
+        StartQuest AZFollowerReturnQuest
+
+        Player.RemoveItem AZOldMormonFortGregoryKidnapped 1
+
+
+        if AZMalpaisAbuseQuest.GregoryAccepted == 1
+        	Set AZFollowerReturnQuest.GregoryHealthComplete to GetGameDaysPassed
+        	AZOldMormonFortGregoryREF.evp
+        endif
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EE06:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F035:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EEBE:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EC77:NovaArizona.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1C00010052100A0002007203006E010000001C000200221002000000
+      SourceCode: >-
+        Player.RemoveItem AZOldMormonFortGregoryKidnapped 1
+
+        AZMalpaisFollowerArriveTriggerREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EEC9:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01EEBE:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Speak to Flavius Constantinus about transferring Noctis to the front.
+  Targets:
+  - Target: 004BC2:NovaArizona.esm
+    Unused: 0x8E052D
+- Index: 25
+  Description: Remove Marcellus Sedonus from command.
+- Index: 30
+  Description: (Optional) Speak to Caesar about removing Marcellus Sedonus from command.
+  Targets:
+  - Target: 121FF0:FalloutNV.esm
+    Unused: 0x4B042F
+- Index: 35
+  Description: (Optional) Speak to Flavius about Marcellus Sedonus's drug addiction.
+  Targets:
+  - Target: 004BC2:NovaArizona.esm
+    Unused: 0x8E052D
+- Index: 37
+  Description: (Optional) Speak to Sedonus's adjutant about transferring Noctis from Malpais.
+  Targets:
+  - Target: 013B71:NovaArizona.esm
+    Unused: 0x7D2F30
+- Index: 50
+  Description: The Legion has left no other options for dealing with Marcellus Sedonus without killing him. Do so in a way that does not attract attention.
+  Targets:
+  - Target: 008D04:NovaArizona.esm
+    Unused: 0x9C2D9C
+- Index: 55
+  Description: (Optional) Spike Marcellus Sedonus's Sunset Sasparilla with a high-quality drug.
+  Targets:
+  - Target: 01EEA3:NovaArizona.esm
+    Unused: 0xD33B32
+- Index: 100
+  Description: Return to Noctis.
+  Targets:
+  - Target: 01EE07:NovaArizona.esm
+    Unused: 0x302F22
+- Index: 150
+  Description: Find treatment for Noctis's trauma.
+- Index: 155
+  Description: (Optional) Speak to the Followers about treating Noctis's post-traumatic stress disorder.
+  Targets:
+  - Target: 01EE06:NovaArizona.esm
+    Unused: 0x950531
+- Index: 160
+  Description: (Optional) Speak to the Cult of Mars about treating Noctis's post-traumatic stress disorder.
+  Targets:
+  - Target: 00C45B:NovaArizona.esm
+    Unused: 0xD33B32
+- Index: 165
+  Description: Escort Gregory to Malpais.
+  Targets:
+  - Target: 01EEC9:NovaArizona.esm
+    Unused: 0x964C24
+  - Target: 01EE06:NovaArizona.esm
+    Unused: 0x964C24
+- Index: 166
+  Description: Forcibly transport Gregory to Malpais.
+  Targets:
+  - Target: 01F037:NovaArizona.esm
+    Unused: 0xB11527
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDisabled
+      RunOnType: Reference
+      Reference: 01EE06:NovaArizona.esm
+  - Target: 01EEC9:NovaArizona.esm
+    Unused: 0xB11527
+- Index: 171
+  Description: Return to Noctis.
+  Targets:
+  - Target: 01EE07:NovaArizona.esm
+    Unused: 0x4F2F22
+- Index: 175
+  Description: Convince Flavius to spare Gregory.
+  Targets:
+  - Target: 004BC2:NovaArizona.esm
+    Unused: 0xA81D26
+- Index: 180
+  Description: Speak to Noctis.
+  Targets:
+  - Target: 01EE07:NovaArizona.esm
+    Unused: 0x4F2F22
+- Index: 190
+  Description: Return to Noctis.
+  Targets:
+  - Target: 01EE07:NovaArizona.esm
+    Unused: 0x4F2F22
+- Index: 191
+  Description: Secure permission from Flavius.
+  Targets:
+  - Target: 004BC2:NovaArizona.esm
+    Unused: 0x102925
+- Index: 51
+  Description: (Optional) Investigate the Jem connection.
+  Targets:
+  - Target: 01365F:NovaArizona.esm
+    Unused: 0x191428
+- Index: 156
+  Description: (Optional) Speak to Arcade about treating Noctis's trauma.
+  Targets:
+  - Target: 10D8EB:FalloutNV.esm
+    Unused: 0x7B6D2C
+- Index: 60
+  Description: Sedonus is dead. Wait three days for the violence at Malpais to calm down.
+- Index: 161
+  Description: Secure permission from Flavius.
+  Targets:
+  - Target: 004BC2:NovaArizona.esm
+    Unused: 0x102925

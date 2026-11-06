@@ -1,0 +1,62 @@
+FormKey: 024B67:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No. They are spineless, multicultural fools, not willing to do what needs to be done.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They let the smaller nations lead its policy and attitude. If not for them, we wouldn't have even had to sign the Window Rock treaty abomination.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: No, I am with my own group, real Diné soldiers capable of fighting the Legion and the NCR at every level.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024B56:NovaArizona.esm
+- 024B57:NovaArizona.esm
+- 024B58:NovaArizona.esm
+- 024B59:NovaArizona.esm
+- 024B66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x150013007201007307000B00207201007307002031202B
+  SourceCode: Set AZBigStopAhigaQuest01.ConfederacyQuestioning to (AZBigStopAhigaQuest01.ConfederacyQuestioning + 1)
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Are you with the Confederate government, then?

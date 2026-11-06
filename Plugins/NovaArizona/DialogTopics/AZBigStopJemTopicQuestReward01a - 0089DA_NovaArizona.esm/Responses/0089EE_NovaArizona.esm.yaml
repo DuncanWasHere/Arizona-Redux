@@ -1,0 +1,85 @@
+FormKey: 0089EE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Um, well. Okay.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Marcellus Sedonus, the legate in Malpais... I think he's an addict. Or he used to be. Not anymore. I don't know.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He sent his assistant here one day, a while ago. He said he wanted to make sure I didn't have any forbidden chems.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: He threw open all my drawers and started rifling through them, but he was looking for something, I could tell.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You should talk to Fat-Eye, in Elephant Hill. He would know more.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100742750
+Choices:
+- 0089DC:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A007201007304000200203116001900040015002058A5110A0002007202006E380000002031203D3DA2110F0003007202006E380000006E010000001600120001000E0020720300582E1000002030203D3DA3110F0003007202006E390000006E010000001900000019000000
+  SourceCode: >-
+    set AZElephantHillFatEyeQuest.FatEyeJem to 1
+
+    if GetObjectiveDisplayed AZMalpaisAbuserQuest 56 == 1
+    	SetObjectiveCompleted AZMalpaisAbuserQuest 56 1
+    	if AZElephantHillFatEyeREF.GetDead == 0
+    		SetObjectiveDisplayed AZMalpaisAbuserQuest 57 1
+    	endif
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D042:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC78:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00D041:NovaArizona.esm
+Prompt: Tell me. I'm interested.

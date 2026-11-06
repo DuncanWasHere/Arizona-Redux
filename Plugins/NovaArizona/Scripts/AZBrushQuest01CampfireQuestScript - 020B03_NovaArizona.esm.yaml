@@ -1,0 +1,62 @@
+FormKey: 020B03:NovaArizona.esm
+EditorID: AZBrushQuest01CampfireQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 2
+    VariableCount: 4
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000DE00000080161D000215005800003A100B000100FFFF050052010042010407004CFD00000080161300020B0056000000030042030707004C7E000000391513000112005600000003005800000C10040000001C811608000107004CFD00000080161300020B0056000000030042050707004CEA000000391513000112005600000003005800000C10040000001C801611000209005601000004001507004CDE000000261009000100FFFF050052020039150C00010B00560100000400420100811608000107004CFD00000039100F000200FFFF0500520100FFFF0400420511000000
+  SourceCode: >-
+    name AZBrushQuest01CampfireQuestScript;
+
+
+    float FTimer;
+
+    int BDoOnce;
+
+
+    GameMode {
+        if (GetStage(AZBrushQuest01CampfireQuest) == 1) {
+            if (FTimer < 3) {
+                FTimer += GetSecondsPassed();
+            } else if (FTimer < 5) {
+                FTimer += GetSecondsPassed();
+                if (!BDoOnce) {
+                    PlaySound(WPNDynamiteThrow);
+                    BDoOnce = 1;
+                }
+            } else {
+                SetStage(AZBrushQuest01CampfireQuest, 5);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fTimer
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDoOnce
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: FTimer
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: BDoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020AF1:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0FFC8D:FalloutNV.esm

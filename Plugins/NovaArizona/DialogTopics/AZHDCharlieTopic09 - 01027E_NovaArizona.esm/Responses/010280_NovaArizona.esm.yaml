@@ -1,0 +1,33 @@
+FormKey: 010280:NovaArizona.esm
+FormVersion: 15
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: 01027F:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x4A9133
+    UseEmotionAnimation: True
+    Unused3: 0x1FC63E
+  ResponseText: Oh, uh, no, sorry. I'm not really interested in that sort of stuff. I mean, you seem nice and all, but I would not be willing to do, um, sex.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 609976
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729235
+Choices:
+- 010281:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: You must have needs, right? Let me be your quartermaster, honey.
+ActorValuePerk: 094EB8:FalloutNV.esm

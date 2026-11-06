@@ -1,0 +1,79 @@
+FormKey: 01941D:NovaArizona.esm
+EditorID: AZIrradiatedBunkerFeralGhoulReaver
+FormVersion: 15
+ObjectBounds:
+  First: -30, -30, 0
+  Second: 30, 30, 130
+Name: Feral Ghoul Reaver
+Model:
+  File: Creatures\Ghoul\Skeleton.nif
+ActorEffects:
+- 0617BD:FalloutNV.esm
+- 0617BE:FalloutNV.esm
+- 0E29CE:FalloutNV.esm
+UnarmedAttackEffect: 0E29D1:FalloutNV.esm
+UnarmedAttackAnimation: AttackForwardPower
+Models:
+- ghoulreaver.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  - AllowPCDialogue
+  Fatigue: 150
+  Level: 17
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - Inventory
+  - Script
+Factions:
+- Faction: 01C6D3:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 019412:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 095984:FalloutNV.esm
+Voice: 07AE96:FalloutNV.esm
+Template: 167ED7:FalloutNV.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2269401344
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: FeralGhoul
+  CombatSkill: 55
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 180
+  Damage: 40
+  Strength: 8
+  Perception: 7
+  Endurance: 7
+  Charisma: 5
+  Intelligence: 6
+  Agility: 7
+  Luck: 5
+AttackReach: 96
+CombatStyle: 03A36F:FalloutNV.esm
+BodyPartData: 0E2C4B:FalloutNV.esm
+TurningSpeed: 150
+BaseScale: 1.1
+FootWeight: 5
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 065712:FalloutNV.esm
+ImpactDataset: 07532A:FalloutNV.esm

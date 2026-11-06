@@ -1,0 +1,151 @@
+FormKey: 01DACE:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZRaider2MeleeAMDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Raider
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Respawn
+  - AutoCalcStats
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 4
+  CalcMin: 1
+  SpeedMultiplier: 100
+  Karma: -500
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - ActorEffectList
+  - AIPackages
+  - BaseData
+  - Inventory
+  - Script
+Factions:
+- Faction: 0B87B3:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A4:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0448D1:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 021476:FalloutNV.esm
+  Unused: 0x4F444C
+DeathItem: 0B7CC0:FalloutNV.esm
+Voice: 094EEE:FalloutNV.esm
+Template: 02F6C2:FalloutNV.esm
+Race: 04BF71:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 02935C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 043907:FalloutNV.esm
+    Count: 2
+- Item:
+    Item: 0A84C8:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0BDA3B:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 023619:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Class: 01945C:FalloutNV.esm
+Strength: 7
+Perception: 5
+Endurance: 5
+Charisma: 3
+Intelligence: 3
+Agility: 6
+Luck: 5
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 11
+  - Key: BigGuns
+    Value: 15
+  - Key: EnergyWeapons
+    Value: 15
+  - Key: Explosives
+    Value: 15
+  - Key: Lockpick
+    Value: 15
+  - Key: Medicine
+    Value: 11
+  - Key: MeleeWeapons
+    Value: 45
+  - Key: Repair
+    Value: 11
+  - Key: Science
+    Value: 11
+  - Key: SmallGuns
+    Value: 43
+  - Key: Sneak
+    Value: 17
+  - Key: Speech
+    Value: 11
+  - Key: Survival
+    Value: 15
+  - Key: Unarmed
+    Value: 41
+  SkillOffsets:
+  - Key: Barter
+    Value: 0
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 0
+  - Key: Explosives
+    Value: 0
+  - Key: Lockpick
+    Value: 0
+  - Key: Medicine
+    Value: 0
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 0
+  - Key: Science
+    Value: 0
+  - Key: SmallGuns
+    Value: 0
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 0
+  - Key: Survival
+    Value: 0
+  - Key: Unarmed
+    Value: 0
+HeadParts:
+- 066FCE:FalloutNV.esm
+Hair: 06FC1A:FalloutNV.esm
+HairLength: 0
+HairColor: '#001A1109'
+CombatStyle: 085EC9:FalloutNV.esm
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0xC9588ABE801AC93D8E0A0F3F2CF6E4BEDB0A693F67DF583FD9AE8ABFCA7D6A3FD4526BBFDE46943FB7FD683F25071EBF878CA43E20162AC0B8AD83C0E641FFBF8CE302BF7B56A13FDCB182BFD891B43FAB8F263F20F1B83FC5F403C0881CB2BEF24EC83F4831CFBE0058B43A0A583940C041A0BF22CF43C034C74CBF2E1ADD3F1A7FC53FB23DABBEFE3AB43F6037563E3DEE4ABF585E61BF868BB3BFF01C30C0279D25C1C3CE6C40A60A25C0F84733403C7411403234A7BF9F31C1C031AF75405DCF1C3F12D43140
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0xD87651BF1869D93E7084A6BD76036E3FB0CB06BFBDC7CF3FE328B63EE1988A3EF9510340C63E6CBE4050FA3DEACB953E1D7A55BFBE31B03F28380B3EEE3C55BF3DDD81BE79204D3F667DB93EAB6D70BFB0AC05BE1A3B863FBD6109BFE0D1233F00E048B8F3F1463E3BBB3B3FD913FFBF79240ABFC04C65BE10C8033D5384F83F2A9BC7BF5C4A49BEC8158F3F0124C6BFD46607C00625173F7EF3B9BEF8A0EEBF3EEEC5BFDD5A1D3F7189113F1C7AC8BF198F59C042E5DB3FC032C1BE70FF943FEDE420C0DCB214C0
+NAM5: 255
+DATADataTypeState:
+- Break0
+MajorFlags:
+- 0x80000

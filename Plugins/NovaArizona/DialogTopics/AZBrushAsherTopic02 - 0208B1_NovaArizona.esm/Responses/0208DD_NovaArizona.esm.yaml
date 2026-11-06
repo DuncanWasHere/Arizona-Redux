@@ -1,0 +1,53 @@
+FormKey: 0208DD:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Right now, it's terrible. We're supposed to be on the frontlines, exterminating the Profligates and crushing the weak in the name of the son of Mars.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Right now, we're guarding cattle in the name of Mars. Not even useful cattle that have hands and know their place, but dumb cattle that get spooked by dust storms.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I mean, this isn't what Mars meant for us to do.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+Choices:
+- 020ACB:NovaArizona.esm
+- 0208A5:NovaArizona.esm
+- 0208AD:NovaArizona.esm
+- 0208B0:NovaArizona.esm
+- 0208B1:NovaArizona.esm
+- 0208B2:NovaArizona.esm
+- 0208B3:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's it like being a Legionary?

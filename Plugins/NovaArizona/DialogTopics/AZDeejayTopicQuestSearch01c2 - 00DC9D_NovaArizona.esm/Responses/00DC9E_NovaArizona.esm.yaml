@@ -1,0 +1,41 @@
+FormKey: 00DC9E:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm not {distaste for the word}with anybody but myself. The Legion pays me.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x616E79
+    UseEmotionAnimation: True
+    Unused3: 0x627574
+  ResponseText: Actually, right now, I think I'd be safer over there than I am in Arizona. I'm going to be {latin}persona non grata here until I get my slave back.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037E28:NovaArizona.esm
+- 037E52:NovaArizona.esm
+- 00DC9D:NovaArizona.esm
+- 037E29:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is it safe for you to search the other side of the river? You're with the Legion, aren't you?

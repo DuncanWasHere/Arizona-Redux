@@ -1,0 +1,299 @@
+FormKey: 01746B:NovaArizona.esm
+EditorID: AZMalpaisJournalistQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 35
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000100006000000A0010000160014000700100020582212050001007203002030203D3D160014000100100020582212050001007204002031203D3D39100A0002007203006EA000000019000000160026000200220020582212050001007204002030203D3D20585410050001007205002030203E20262639100A0002007203006EAA0000001C00010002100A0002007206006E0100000019000000190000001600190001001500207312002031203D3D207312002032203D3D207C7C1C0002005E10000019000000160015000800110020583A1005000100720300203630203D3D16000D000600090020731F002031203D3D1600120001000E0020661E0020730F002033202B203C39151300011200560000001E005800002F28040000000017000200020015000700731F000200203239100A0002007203006E4100000019000000190000001900000016002D000300290020583A1005000100720300203430203D3D2058A5110A0002007203006E290000002031203D3D20262616000D0001000900207308002031203D3DA2110F0003007203006E290000006E01000000190000001900000011000000
+  SourceCode: >-
+    scn AZMalpaisJournalistQuestScript
+
+
+    Float iTimer
+
+
+    int iDoOnce1
+
+    int bDoOnce2
+
+
+    short DoOnceBigStop
+
+    short bChainwayForemanBroughttoNestor
+
+    short bChainwayForemanPresent
+
+    short bChainwayForemanTask
+
+    short bDominicusAngry
+
+    short bDominicusInterviewVeryPositive
+
+    short bDominicusInterviewPositive
+
+    short bDominicusInterviewNotPositive
+
+    short bDominicusInterviewNoInterview
+
+    short bDominicusInterviewOver
+
+    short bKnowsAboutMalachi
+
+    short bKnowsAboutSlaves
+
+    short bLegionInformedAboutMalachi
+
+    short bStanleyFate
+
+    short bStanleyFateHelper
+
+    short bStanleyInterviewOffered
+
+    short bStanleyInterviewOne
+
+    short bStanleyInterviewTwo
+
+    short bStanleyJobOffered
+
+    short bStanleyIsDoomed
+
+    short bStanleyMet
+
+    short bStanleyPaysMore
+
+    short bStanleyLegionApproval
+
+    short bStanleyLegionDisapproval
+
+    short bWhiteSandsGuardAngered
+
+
+    short ChildGreetDoOnce
+
+
+    BEGIN GameMode
+
+
+    if GetQuestCompleted AZMalpaisJournalistQuest == 0
+    	if GetQuestCompleted VMQCaesarFail == 1
+    		SetStage AZMalpaisJournalistQuest 160
+    	endif
+    	if GetQuestCompleted VMQCaesarFail == 0 && GetDeadCount FortCaesar > 0
+    		SetStage AZMalpaisJournalistQuest 170
+    		AZStanleyHartfordREF.AddItem AZStanleyDeathNote 1
+    	endif
+    endif
+    	
+    if bChainwayForemanBroughttoNestor == 1 || bChainwayForemanBroughttoNestor == 2
+    	AZMalpaisNestorREF.EVP
+    endif
+    	
+    if GetStage AZMalpaisJournalistQuest == 60
+    	if iDoOnce1 == 1
+    		if iTimer < bStanleyFateHelper + 3
+    				iTimer = GetGameDaysPassed
+    		else
+    			Set iDoOnce1 to 2
+    			SetStage AZMalpaisJournalistQuest 65
+    		endif
+    	endif
+    endif
+    	
+    if GetStage AZMalpaisJournalistQuest == 40 && GetObjectiveDisplayed AZMalpaisJournalistQuest 41 == 1
+    	if bKnowsAboutMalachi == 1
+    		SetObjectiveCompleted AZMalpaisJournalistQuest 41 1
+    	endif
+    endif
+
+
+    End
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xE05020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F496E74
+    Name: bChainwayForemanPresent
+  - Data:
+      Index: 2
+      Unknown: 0x205120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F74506F
+    Name: bDominicusAngry
+  - Data:
+      Index: 3
+      Unknown: 0x205320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bStanleyInterviewOne
+  - Data:
+      Index: 4
+      Unknown: 0x405320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F496E74
+    Name: bStanleyInterviewTwo
+  - Data:
+      Index: 6
+      Unknown: 0xE05320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F496E74
+    Name: bStanleyLegionApproval
+  - Data:
+      Index: 7
+      Unknown: 0x005420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65775665727950
+    Name: bStanleyLegionDisapproval
+  - Data:
+      Index: 8
+      Unknown: 0x405220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x726F7567687474
+    Name: bKnowsAboutMalachi
+  - Data:
+      Index: 9
+      Unknown: 0xA05220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F496E74
+    Name: bLegionInformedAboutMalachi
+  - Data:
+      Index: 10
+      Unknown: 0x805220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x726F7567687474
+    Name: bKnowsAboutSlaves
+  - Data:
+      Index: 12
+      Unknown: 0x205420120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bWhiteSandsGuardAngered
+  - Data:
+      Index: 13
+      Unknown: 0x805320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F496E74
+    Name: bStanleyIsDoomed
+  - Data:
+      Index: 14
+      Unknown: 0xC05220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F74506F
+    Name: bStanleyFate
+  - Data:
+      Index: 15
+      Unknown: 0xE05220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F74506F
+    Name: bStanleyFateHelper
+  - Data:
+      Index: 17
+      Unknown: 0x405120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F496E74
+    Name: bChainwayForemanTask
+  - Data:
+      Index: 18
+      Unknown: 0xC05020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bChainwayForemanBroughttoNestor
+  - Data:
+      Index: 19
+      Unknown: 0xC05320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bStanleyPaysMore
+  - Data:
+      Index: 21
+      Unknown: 0x005320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bStanleyInterviewOffered
+  - Data:
+      Index: 22
+      Unknown: 0x605320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F74506F
+    Name: bStanleyJobOffered
+  - Data:
+      Index: 23
+      Unknown: 0xA05020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnceBigStop
+  - Data:
+      Index: 24
+      Unknown: 0x605120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65774E6F74506F
+    Name: bDominicusInterviewVeryPositive
+  - Data:
+      Index: 25
+      Unknown: 0x805120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65775665727950
+    Name: bDominicusInterviewPositive
+  - Data:
+      Index: 26
+      Unknown: 0xC05120120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65775665727950
+    Name: bDominicusInterviewNotPositive
+  - Data:
+      Index: 27
+      Unknown: 0x005220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDominicusInterviewNoInterview
+  - Data:
+      Index: 28
+      Unknown: 0x605220120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x726F7567687474
+    Name: bDominicusInterviewOver
+  - Data:
+      Index: 30
+      Unknown: 0x405020120000000000000000
+      Unknown2: 0x00000000000000
+    Name: iTimer
+  - Data:
+      Index: 31
+      Unknown: 0x605020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x726F7567687474
+    Name: iDoOnce1
+  - Data:
+      Index: 32
+      Unknown: 0x805020120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDoOnce2
+  - Data:
+      Index: 34
+      Unknown: 0xA05320120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x65775665727950
+    Name: bStanleyMet
+  - Data:
+      Index: 35
+      Unknown: 0xE0DF29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ChildGreetDoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00B155:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175C6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 167F0F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 121FEF:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 017645:NovaArizona.esm

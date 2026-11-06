@@ -1,0 +1,66 @@
+FormKey: 01759D:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x746573
+    UseEmotionAnimation: True
+    Unused3: 0x204974
+  ResponseText: That is... a grave crime. Some of the Scribonii have raised questions about his operation in the past, but no one suspected chattel-slavery.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: If what you say is true, that would certainly explain how he's able to supply us with the quantity of slaves he does.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616C70
+  ResponseText: We will open an investigation. In the meantime, Malachi will be detained for questioning.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100758634
+  SecondParameter: 8
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100758933
+Choices:
+- 01759B:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A00720200730900020020311C0001005E100000
+  SourceCode: >-
+    set AZMalpaisJournalistQuest.bLegionInformedAboutMalachi to 1
+
+    AZWhiteSandsGuardREF.evp
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0175BF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01746A:NovaArizona.esm
+Prompt: Malachi has confessed to me that he is a chattel slaver. That is a crime, right?

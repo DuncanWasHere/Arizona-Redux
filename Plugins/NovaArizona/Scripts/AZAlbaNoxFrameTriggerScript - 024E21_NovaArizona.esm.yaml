@@ -1,0 +1,55 @@
+FormKey: 024E21:NovaArizona.esm
+EditorID: AZAlbaNoxFrameTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967294
+    RefCount: 4
+    VariableCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B00020013000000010072010059100B00010072020000000000000011000000100006000000BA000000391513000112005601000001005800001F10040000000080161300020B0056010000010042010407004CF70000003A151000010F0052030078000021100400000028A21115000300FFFF0500520400FFFF0400420CFFFF04004201A31115000300FFFF0500520400FFFF0400420DFFFF04004201A31115000300FFFF0500520400FFFF04004210FFFF04004200A31115000300FFFF0500520400FFFF04004211FFFF04004200221002000000BB11020000001E00000011000000
+  SourceCode: >-
+    name AZAlbaNoxFrameTriggerScript;
+
+
+    int Button;
+
+
+    OnActivate::PlayerREF {
+        ShowMessage(AZNoxFrameMessage);
+    }
+
+
+    GameMode {
+        Button = GetButtonPressed();
+
+        if (Button == 1) {
+            AZAlbaNoxFrameMarkerREF.Enable();
+
+            SetObjectiveCompleted(AZBigStopAhigaQuest01, 12, 1);
+            SetObjectiveDisplayed(AZBigStopAhigaQuest01, 13, 1);
+            SetObjectiveDisplayed(AZBigStopAhigaQuest01, 16, 0);
+            SetObjectiveDisplayed(AZBigStopAhigaQuest01, 17, 0);
+
+            Disable();
+            MarkForDelete();
+        }
+
+        return;
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: Button
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024E22:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024BB8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm

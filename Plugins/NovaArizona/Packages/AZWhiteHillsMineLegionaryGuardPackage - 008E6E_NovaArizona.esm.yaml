@@ -1,0 +1,51 @@
+FormKey: 008E6E:NovaArizona.esm
+EditorID: AZWhiteHillsMineLegionaryGuardPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+- NoWarnAttackBehavior
+Unused: 32
+Flags:
+  MutagenObjectType: PackageGuard
+Unused2: 30033
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 0E73A0:FalloutNV.esm
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100699722
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 10
+  Function: GetStage
+  FirstParameter: 100699722
+- Fluff: 0x000000
+  Function: GetQuestVariable
+  FirstParameter: 100699722
+  SecondParameter: 1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

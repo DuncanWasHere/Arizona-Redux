@@ -1,0 +1,81 @@
+FormKey: 01CD65:NovaArizona.esm
+EditorID: AZ3SomeCaravanBrahminPackLamp
+FormVersion: 15
+ObjectBounds:
+  First: -40, -80, 0
+  Second: 40, 80, 80
+Name: Brahmin
+Model:
+  File: Creatures\Brahmin\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- brahminpack.nif
+- lamp.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - BaseData
+  - Inventory
+  - Script
+Factions:
+- Faction: 021472:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E268:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 00436B:NovaArizona.esm
+  Unused: 0x49465A
+DeathItem: 09D413:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 01CD63:NovaArizona.esm
+Script: 038705:FalloutNV.esm
+AIData:
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 1835099904
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 0200D5:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 25
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 40
+  Damage: 8
+  Strength: 5
+  Perception: 3
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+CombatStyle: 03A371:FalloutNV.esm
+BodyPartData: 015833:FalloutNV.esm
+TurningSpeed: 30
+BaseScale: 1.25
+FootWeight: 20
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 028047:FalloutNV.esm
+ImpactDataset: 07DB64:FalloutNV.esm

@@ -1,0 +1,44 @@
+FormKey: 0342AF:NovaArizona.esm
+EditorID: AZHavenAntCheckerQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967289
+    RefCount: 8
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100006000000C000000080166300025B005201007800002E1004000000285202007800002E100400000028025203007800002E100400000028025204007800002E100400000028025205007800002E100400000028420104015206007800002E1004000000284201040107004CDF00000039150C00010B0056010700140042030039150C00010B005601070015004202003A151000010F005205007800005E1004000000283A151000010F005206007800005E100400000028371009000100FFFF050052080011000000
+  SourceCode: >-
+    name AZHavenAntCheckerQuestScript;
+
+
+    GameMode {
+        if (
+            (AZHavenAnt01REF.GetDead() && AZHavenAnt02REF.GetDead() && AZHavenAnt03REF.GetDead() && AZHavenAnt04REF.GetDead())
+            || AZHavenWierzbowskiREF.GetDead() == 1
+            || AZHavenAhoteREF.GetDead() == 1
+        ) {
+            AZFreeformHaven.WierzbowskiMove = 3;
+            AZFreeformHaven.AhoteMove = 2;
+            AZHavenWierzbowskiREF.Evp();
+            AZHavenAhoteREF.Evp();
+            StopQuest(AZHavenAntCheckerQuest);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019746:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019745:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019765:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 019764:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01BBA5:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 024BB0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B980:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0342B0:NovaArizona.esm

@@ -1,0 +1,65 @@
+FormKey: 0262FD:NovaArizona.esm
+EditorID: AZWeapWWFireball
+FormVersion: 15
+ObjectBounds:
+  First: -117, -28, -117
+  Second: 117, 28, 117
+Name: Fireball Spellbook
+LargeIconFilename: Interface\Icons\PipboyImages\Weapons\weapons_frag_grenade.dds
+SmallIconFilename: Interface\Icons\PipboyImages_small\Weapons_small\glow_weapons_frag_grenade.dds
+Ammo: 166F63:FalloutNV.esm
+EquipmentType: ThrownWeapons
+PickUpSound: 087D64:FalloutNV.esm
+DropSound: 087D65:FalloutNV.esm
+WorldModel:
+  File: AZNovaArizona\clutter\WW\AZWWFireballSpellbook.nif
+ImpactDataSet: 019084:FalloutNV.esm
+SoundGunShoot3D: 026805:NovaArizona.esm
+SoundGunShootDist: 026805:NovaArizona.esm
+SoundGunShoot2D: 026805:NovaArizona.esm
+SoundEquip: 003A03:FalloutNV.esm
+SoundUnequip: 003A04:FalloutNV.esm
+Value: 946
+Health: 100
+Weight: 0.5
+BaseDamage: 43
+ClipSize: 5
+AnimationType: Thrown1Hand
+AnimationMultiplier: 1
+Reach: 1
+Flags:
+- DontUse1stPersonISAnimations
+- NpcsUseAmmo
+- OverrideActionPoints
+- DontUse3rdPersonISAnimations
+GripAnimation: 255
+AmmoUse: 1
+MinSpread: 13
+Spread: 5
+DnamUnused1: 1065353216
+SightFov: 65
+Projectile: 026678:NovaArizona.esm
+BaseVatsToHitChance: 50
+AttackAnimation: AttackThrow6
+ProjectileCount: 1
+MinRange: 500
+MaxRange: 1024
+OnHit: ExplodeOnly
+AnimationAttackMultiplier: 1
+FireRate: 5
+OverrideActionPoints: 14
+AttackShotsPerSec: 0.7317
+ReloadTime: 1.3
+JamTime: 1.4
+Skill: 35
+LimbDamageMult: 1
+ResistType: -1
+StrengthReq: 2
+RegenRate: 1
+SkillReq: 25
+CriticalDamage: 50
+CriticalPercentMult: 13
+CriticalEffect: 044AF6:FalloutNV.esm
+Vats:
+  VatsSilent: True
+SoundLevel: Silent

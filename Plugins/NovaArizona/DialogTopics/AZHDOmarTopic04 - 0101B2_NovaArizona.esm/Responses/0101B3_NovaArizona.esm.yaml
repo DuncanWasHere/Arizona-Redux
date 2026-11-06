@@ -1,0 +1,54 @@
+FormKey: 0101B3:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 018CFC:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x204E43
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: Security concerns, they said. I said, "Fuck your security concerns, you're watching those people starve".
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x204E43
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: They told me it wasn't their problem, that they'd shoot any unauthorized persons who tried to cross. Pigs. Bunch of soldiers afraid of refugees.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x204E43
+    UseEmotionAnimation: True
+    Unused3: 0x207468
+  ResponseText: As if the Legion would bother sending a Frumentarius here to play sick and hungry. Like he's gonna blow himself up at the checkpoint? Give me a break.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100729229
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729233
+Choices:
+- 0101B4:NovaArizona.esm
+- 018CEF:NovaArizona.esm
+- 018CEE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why won't the NCR let the refugees through the checkpoint?

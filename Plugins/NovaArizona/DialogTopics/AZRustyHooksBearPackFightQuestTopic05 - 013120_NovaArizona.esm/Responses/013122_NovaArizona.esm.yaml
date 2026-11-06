@@ -1,0 +1,38 @@
+FormKey: 013122:NovaArizona.esm
+FormVersion: 15
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Uh, no. I don't think it does. I'd prefer not to bet my life on tin foil.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetActorValue
+  FirstParameter: 40
+  RunOnType: Target
+Choices:
+- 036E7B:NovaArizona.esm
+- 01311C:NovaArizona.esm
+- 013120:NovaArizona.esm
+- 013123:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Doesn't tin foil block frequencies? We can try that.
+ActorValuePerk: 0004B8:FalloutNV.esm

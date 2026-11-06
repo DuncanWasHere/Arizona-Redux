@@ -1,0 +1,75 @@
+FormKey: 01F709:NovaArizona.esm
+EditorID: AZGOMAssassinationQuest
+FormVersion: 15
+Script: 020F11:NovaArizona.esm
+Name: Never Get Out of This World Alive
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+  Unused: 9012
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+- Index: 10
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0x1C000100221002000000
+      SourceCode: AZGOMChickHadleyREF.disable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01F702:NovaArizona.esm
+Objectives:
+- Index: 1
+  Description: Kill Chick Hadley.
+  Targets:
+  - Target: 01F702:NovaArizona.esm
+    Unused: 0x482F22
+- Index: 5
+  Description: (Optional) Get Chick shitfaced drunk.
+- Index: 6
+  Description: (Optional) Pose as a prostitute to get Chick alone.
+- Index: 7
+  Description: (Optional) Spike Chick's alcohol with Psycho.
+- Index: 8
+  Description: Wait two days for Minnie to kill Chick.
+- Index: 2
+  Description: (Optional) Learn more about Chick from Minnie.
+  Targets:
+  - Target: 01F708:NovaArizona.esm
+    Unused: 0x142529
+- Index: 3
+  Description: (Optional) Find someone to prosecute Chick for desertion.
+- Index: 4
+  Description: (Optional) Lure Chick into Freeside.
+- Index: 9
+  Description: Check up on Minnie.
+  Targets:
+  - Target: 020F8E:NovaArizona.esm
+    Unused: 0x472F22
+- Index: 10
+  Description: Follow Claude.
+  Targets:
+  - Target: 020F8E:NovaArizona.esm
+    Unused: 0x1C5321
+- Index: 15
+  Description: Return to Isaiah.
+  Targets:
+  - Target: 00D847:NovaArizona.esm
+    Unused: 0x472F22
+- Index: 11
+  Description: Report back to Benowitz.
+  Targets:
+  - Target: 01FF09:NovaArizona.esm
+    Unused: 0x924C24

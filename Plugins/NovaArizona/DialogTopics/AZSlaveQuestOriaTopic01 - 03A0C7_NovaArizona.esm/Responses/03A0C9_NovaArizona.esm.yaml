@@ -1,0 +1,73 @@
+FormKey: 03A0C9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - SayOnce
+Quest: 03A0B6:NovaArizona.esm
+PreviousInfo: 03A0C8:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I have known her since she was small. A strong young woman, receptive to Mars and His principles.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She took kindly to a libertus from the south, a trader with White Sands. She left to see him at their office in Chloride, but has not returned.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Truth be told, I'm beginning to wish I had never granted her position to leave. I even wrote her a letter to give her the Cult's blessing.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  Function: GetHasNote
+  FirstParameter: 100901084
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100901046
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713546
+Choices:
+- 03A0C7:NovaArizona.esm
+- 00C44C:NovaArizona.esm
+- 00C44E:NovaArizona.esm
+- 01AAD8:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA2110F0003007201006E0A0000006E01000000A3110F0003007201006E0F0000006E01000000
+  SourceCode: >-
+    setobjectivecompleted AZMalpaisMarketSlaveQuest 10 1
+
+    setobjectivedisplayed AZMalpaisMarketSlaveQuest 15 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 03A0B6:NovaArizona.esm
+Prompt: Tell me more about the missing fisherwoman.

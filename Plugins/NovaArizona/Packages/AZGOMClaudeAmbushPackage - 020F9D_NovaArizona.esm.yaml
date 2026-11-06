@@ -1,0 +1,39 @@
+FormKey: 020F9D:NovaArizona.esm
+EditorID: AZGOMClaudeAmbushPackage
+FormVersion: 15
+Unused: 59
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 25972
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 020F9C:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  Function: 420
+  FirstParameter: 100792073
+  SecondParameter: 10
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 421
+  FirstParameter: 100792073
+  SecondParameter: 10
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

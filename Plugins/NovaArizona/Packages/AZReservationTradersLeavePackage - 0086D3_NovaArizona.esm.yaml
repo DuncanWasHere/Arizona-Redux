@@ -1,0 +1,44 @@
+FormKey: 0086D3:NovaArizona.esm
+EditorID: AZReservationTradersLeavePackage
+FormVersion: 15
+GeneralFlags:
+- MustReachLocation
+- MustComplete
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 0086D2:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 2
+      Enabled: 1
+    CompiledScript: 0x1600100001000C00207201007307002030203D3D15000A007202007305000200203119000000
+    SourceCode: >-
+      if (AZNewtLegionGraffitiQuest.bReservationTradersPunished == 0)
+
+      set AZBaseCampReservationQuest.iReservationTradersinDolanGood to 1
+
+      endif
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 013D30:NovaArizona.esm
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 00863E:NovaArizona.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

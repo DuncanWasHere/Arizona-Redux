@@ -1,0 +1,52 @@
+FormKey: 00FFEC:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00F50D:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: A cursed baby. It makes me sad that in an environment like this, she will grow up fundamentally tainted by degeneracies of all stripes.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: She should be killed. It is a pity, but it needs to be done.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100724241
+Choices:
+- 00FA40:NovaArizona.esm
+- 00FA8B:NovaArizona.esm
+- 00FAAA:NovaArizona.esm
+- 00FCD2:NovaArizona.esm
+- 00FD64:NovaArizona.esm
+- 00FD6A:NovaArizona.esm
+- 00FD7A:NovaArizona.esm
+- 00FD7B:NovaArizona.esm
+- 00FD94:NovaArizona.esm
+- 00FD95:NovaArizona.esm
+- 00FDC8:NovaArizona.esm
+- 00FDCD:NovaArizona.esm
+- 00FDE2:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Evelina.

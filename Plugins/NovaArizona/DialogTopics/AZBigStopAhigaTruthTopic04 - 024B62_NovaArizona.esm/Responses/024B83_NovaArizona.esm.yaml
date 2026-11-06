@@ -1,0 +1,41 @@
+FormKey: 024B83:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 024B79:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206372
+    UseEmotionAnimation: True
+    Unused3: 0x6C6974
+  ResponseText: Cato Hostilius, the man without a face. Literally, since you've met him.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetDead
+Choices:
+- 024B53:NovaArizona.esm
+- 024B5A:NovaArizona.esm
+- 024B72:NovaArizona.esm
+- 024B74:NovaArizona.esm
+- 024B63:NovaArizona.esm
+- 024B62:NovaArizona.esm
+- 024B64:NovaArizona.esm
+- 024B66:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Who's Cato?

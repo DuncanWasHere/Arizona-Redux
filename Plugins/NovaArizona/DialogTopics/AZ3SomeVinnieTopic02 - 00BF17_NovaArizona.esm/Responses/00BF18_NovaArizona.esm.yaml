@@ -1,0 +1,44 @@
+FormKey: 00BF18:NovaArizona.esm
+FormVersion: 15
+Quest: 0175F7:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: I run the general store. I mostly just re-sell whatever junk caravans try to pawn off.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: If you're looking for work, talk to Gustavo.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0xEDF448
+    UseEmotionAnimation: True
+    Unused3: 0xD33C44
+  ResponseText: He's the numbers guy. I'm just the fucking junk guy.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100717601
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you do here?

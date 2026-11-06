@@ -1,0 +1,42 @@
+FormKey: 0209E0:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: Good. Merchants and Legionaries from Colorado have brought a new drug known as Brush with them. It's a potent psychoative drug.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x9F4F0B
+    UseEmotionAnimation: True
+    Unused3: 0x9F4F0B
+  ResponseText: My goal is to introduce the compound to mass Legion use, and I want your assistance with this.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+- Fluff: 0x000000
+  Function: GetStage
+  FirstParameter: 100796571
+Choices:
+- 0209E2:NovaArizona.esm
+- 0209E4:NovaArizona.esm
+- 0209E6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm interested.

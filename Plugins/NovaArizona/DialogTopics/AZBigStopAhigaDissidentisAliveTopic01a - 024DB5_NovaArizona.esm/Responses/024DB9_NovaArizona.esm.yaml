@@ -1,0 +1,47 @@
+FormKey: 024DB9:NovaArizona.esm
+FormVersion: 15
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: You claim moral reasons? Moral reasons such as dooming an entire country to ruin?
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x506163
+    UseEmotionAnimation: True
+    Unused3: 0x415A42
+  ResponseText: You don't understand. The government's taking control of the plan. Too many cooks in the kitchen will kill us all.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'm not paying you for this.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+Choices:
+- 024DC2:NovaArizona.esm
+- 024DC3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I believed that killing her was wrong, and so I refused to do it.

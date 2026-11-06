@@ -1,0 +1,20 @@
+FormKey: 00DCC8:NovaArizona.esm
+EditorID: AZChlorideBankTripwireTriggerScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D00000010000800020012000000000015000A007201007307000200203111000000
+  SourceCode: >-
+    scn AZChlorideBankTripwireTriggerScript
+
+
+    begin onactivate
+
+    	set AZChlorideBankRobberyHelperQuest.bAlarmTriggered to 1
+
+    end
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DCC2:NovaArizona.esm

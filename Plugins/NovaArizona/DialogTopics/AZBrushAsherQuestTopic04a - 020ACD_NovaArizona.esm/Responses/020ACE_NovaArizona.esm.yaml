@@ -1,0 +1,71 @@
+FormKey: 020ACE:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 0208A1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "[SUCCEEDED] Hmm. You're not wrong. All this talk about what he's allowing us to do in our free time."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x6F7420
+    UseEmotionAnimation: True
+    Unused3: 0x2E2041
+  ResponseText: '{Disgusted}Free time. I never had that problem before Quintus. I should be on the frontlines. Yeah, he needs to die.'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll move against him if you can get another to support it.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 80
+  Function: GetActorValue
+  FirstParameter: 43
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100796579
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x150013007202007307000B00207202007307002031202B15000A00720200730800020020311C0001007711070001006E50000000
+  SourceCode: >-
+    Set AZBrushQuest02.MutineersAssembled to AZBrushQuest02.MutineersAssembled + 1
+
+    Set AZBrushQuest02.AsherAccept to 1
+
+    Player.RewardXP 80
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+Prompt: If the Decanus can't put down a mutiny from his Legionaries, then he was never fit to command.
+ActorValuePerk: 0004BB:FalloutNV.esm

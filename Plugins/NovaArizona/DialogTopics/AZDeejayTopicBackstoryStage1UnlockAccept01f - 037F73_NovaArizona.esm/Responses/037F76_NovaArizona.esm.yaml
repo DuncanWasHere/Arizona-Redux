@@ -1,0 +1,31 @@
+FormKey: 037F76:NovaArizona.esm
+FormVersion: 15
+Quest: 037DBC:NovaArizona.esm
+PreviousInfo: 037F74:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I wasn't close to him. Not ever. I wasn't close to anyone. The Twin Mothers don't mean shit to me. This is just a job.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100892082
+Choices:
+- 037F56:NovaArizona.esm
+- 037F73:NovaArizona.esm
+- 037F6F:NovaArizona.esm
+- 037F71:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: There's no hard feelings about having to hunt down someone you were close to?

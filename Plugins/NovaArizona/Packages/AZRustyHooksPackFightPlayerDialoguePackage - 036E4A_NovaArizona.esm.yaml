@@ -1,0 +1,57 @@
+FormKey: 036E4A:NovaArizona.esm
+EditorID: AZRustyHooksPackFightPlayerDialoguePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 250
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 9251
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+Location2:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 1024
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 128
+Conditions:
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 60
+  Function: GetStage
+  FirstParameter: 100806563
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 70
+  Function: GetStage
+  FirstParameter: 100806563
+DialogueData:
+  DialogueFOV: 100
+  DialogueTopic: 0000C8:FalloutNV.esm
+DialogueLocation:
+  Location:
+    MutagenObjectType: PackageLocationNearCurrentLocation
+  Radius: 1024
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

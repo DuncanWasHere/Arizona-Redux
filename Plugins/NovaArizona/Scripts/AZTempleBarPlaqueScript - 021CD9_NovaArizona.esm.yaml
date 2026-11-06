@@ -1,0 +1,18 @@
+FormKey: 021CD9:NovaArizona.esm
+EditorID: AZTempleBarPlaqueScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000800020013000000000059100B00010072010000000000000011000000
+  SourceCode: >-
+    name AZTempleBarPlaqueScript;
+
+
+    OnActivate {
+    	ShowMessage(AZTempleBarPlaqueMessage);
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 021CD8:NovaArizona.esm

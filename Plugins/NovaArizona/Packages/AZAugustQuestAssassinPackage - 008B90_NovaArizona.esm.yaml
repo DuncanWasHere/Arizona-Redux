@@ -1,0 +1,54 @@
+FormKey: 008B90:NovaArizona.esm
+EditorID: AZAugustQuestAssassinPackage
+FormVersion: 15
+GeneralFlags:
+- WeaponDrawn
+Flags:
+  MutagenObjectType: PackageUseWeapon
+Unused2: 3
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetObjectType
+    ObjectType: WeaponsNone
+WeaponData:
+  WeaponFlags:
+  - AlwaysHit
+  - CrouchToReload
+  FireRate: VolleyFire
+  NumberOfBursts: 1
+  ShootsPerVolleyMin: 1
+  ShootsPerVolleyMax: 1
+Target2:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      Enabled: 1
+    CompiledScript: 0x1610050001007201001111110003006E010000006E010000006E01000000
+    SourceCode: >-
+      startcombat player
+
+      EnableFastTravel 1 1 1
+    References:
+    - MutagenObjectType: ScriptObjectReference
+      Reference: 000014:FalloutNV.esm
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

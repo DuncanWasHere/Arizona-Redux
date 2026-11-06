@@ -1,0 +1,49 @@
+FormKey: 020D5A:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: That's Parker's decision to make.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: Things are getting a little too hot around these parts, and we've already been here too long.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x727365
+    UseEmotionAnimation: True
+    Unused3: 0x776F75
+  ResponseText: Every day we see more and more Skirts marching down the roads. Fresh troops. I reckon we're days away from the next battle for the Dam.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100711888
+Choices:
+- 020D59:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Is this the last medicine shipment?

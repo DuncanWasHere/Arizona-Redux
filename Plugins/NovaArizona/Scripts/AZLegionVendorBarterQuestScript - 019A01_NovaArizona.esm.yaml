@@ -1,0 +1,139 @@
+FormKey: 019A01:NovaArizona.esm
+EditorID: AZLegionVendorBarterQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 16
+    RefCount: 2
+    VariableCount: 16
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406
+  SourceCode: >-
+    name AZLegionVendorBarterQuestScript;
+
+
+    float fBarterBuyBaseDefault;
+
+    float fBarterSellBaseDefault;
+
+    int iPlayerCaps;
+
+    int iPlayerDenarii;
+
+    int iPlayerAurei;
+
+    int iPlayerLegionCoinValue;
+
+    int iVendorCaps;
+
+    int iVendorDenarii;
+
+    ref rVendor;
+
+    ref rVendorChest;
+
+    int iVendorChestCaps;
+
+    int iVendorChestDenarii;
+
+    array aItemValues;
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fBarterBuyBaseDefault
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: fBarterSellBaseDefault
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerCaps
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerDenarii
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerAurei
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iPlayerLegionCoinValue
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorCaps
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorDenarii
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rVendor
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: poop
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: aItems
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 4
+      Unknown2: 0x00000000000000
+    Name: rVendorChest
+  - Data:
+      Index: 13
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorChestCaps
+  - Data:
+      Index: 14
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iVendorChestDenarii
+  - Data:
+      Index: 15
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 3
+      Unknown2: 0x00000000000000
+    Name: aItemValues
+  - Data:
+      Index: 16
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPaused
+  References:
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 9
+  - MutagenObjectType: ScriptVariableReference
+    VariableIndex: 12

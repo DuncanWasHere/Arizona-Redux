@@ -1,0 +1,27 @@
+FormKey: 020ABB:NovaArizona.esm
+EditorID: AZDecanusQuintusSupplyLockerMessagePre
+FormVersion: 15
+Description: The supply locker of Decanus Quintus is easy enough to plant drugs into. Any of the hard drugs should suffice.
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing.
+- Text: Plant alcohol.
+  Conditions:
+  - CompareOperator: GreaterThan
+    Fluff: 0x000000
+    Function: GetItemCount
+    FirstParameter: 377701
+- Text: Plant chems.
+  Conditions:
+  - CompareOperator: GreaterThan
+    Fluff: 0x000000
+    Function: GetItemCount
+    FirstParameter: 997332
+- Text: Plant a couple of Super-Stimpaks.
+  Conditions:
+  - CompareOperator: GreaterThan
+    Fluff: 0x000000
+    ComparisonValue: 3
+    Function: GetItemCount
+    FirstParameter: 839410

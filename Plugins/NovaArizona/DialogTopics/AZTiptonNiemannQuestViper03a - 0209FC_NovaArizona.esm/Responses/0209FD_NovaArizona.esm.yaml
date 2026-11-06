@@ -1,0 +1,58 @@
+FormKey: 0209FD:NovaArizona.esm
+FormVersion: 15
+Quest: 0208A2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6C6C20
+    UseEmotionAnimation: True
+    Unused3: 0x666665
+  ResponseText: The Optio in Malpais is showing strong resistance to our efforts to introduce Brush to combat units.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: His overcautiousness is a major problem, so what you are going to do is spike the camp's water supply with Smooch powder.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Once some of his Legionaries are suffering from withdrawal, we will swoop in and offer Brush as a care.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Of course, the Brush will be partially spiked with Smooch, and once the Legion becomes more accepting of Brush, we will spike with lethal amounts.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100785995
+Choices:
+- 0209FC:NovaArizona.esm
+- 0209FE:NovaArizona.esm
+- 020A03:NovaArizona.esm
+- 020A01:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why are we poisoning the Legion?

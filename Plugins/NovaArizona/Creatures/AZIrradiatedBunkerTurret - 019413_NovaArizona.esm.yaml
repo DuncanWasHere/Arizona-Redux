@@ -1,0 +1,103 @@
+FormKey: 019413:NovaArizona.esm
+MajorRecordFlagsRaw: 536870912
+EditorID: AZIrradiatedBunkerTurret
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x20000000
+ObjectBounds:
+  First: -19, -23, -31
+  Second: 21, 22, 32
+Name: Mark III Turret
+Model:
+  File: Creatures\MiniSentryTurret\Skeleton.nif
+ActorEffects:
+- 060C16:FalloutNV.esm
+- 07D4F3:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- MiniSentryTurret.NIF
+ModelListTextures: 0x0100000003F4E5106D2C5711617465106D315711617465267420729912EEDF126DFB2C287A6E5F126D002D287A7465267420729912F3DF126DFB2C287A735F126D002D287A7465267420729912
+Configuration:
+  Flags:
+  - NoLowLevelProcessing
+  - NoHead
+  - NoRightArm
+  - NoLeftArm
+  - NoVATSMelee
+  - CantOpenDoors
+  - Immobile
+  - NotPushable
+  Fatigue: 100
+  Level: 5
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 01FFB6:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 019412:NovaArizona.esm
+  Unused: 0x49465A
+Voice: 040D41:FalloutNV.esm
+Template: 0A84B8:FalloutNV.esm
+Destructible:
+  Data:
+    Health: 40
+    DESTCount: 1
+    VATSTargetable: True
+  Stages:
+  - Data:
+      Flags:
+      - Disable
+      Explosion: 07078A:FalloutNV.esm
+      Debris: 0B8FF4:FalloutNV.esm
+      DebrisCount: 3
+Items:
+- Item:
+    Item: 018E53:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 078CC4:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 1835099904
+  Teaches: Barter
+  AggroRadiusBehavior: True
+  AggroRadius: 1536
+Packages:
+- 0251AB:FalloutNV.esm
+Data:
+  Type: Robot
+  CombatSkill: 70
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 60
+  Damage: 1
+  Strength: 1
+  Perception: 10
+  Endurance: 10
+  Charisma: 1
+  Intelligence: 5
+  Agility: 5
+  Luck: 10
+AttackReach: 96
+CombatStyle: 07B238:FalloutNV.esm
+BodyPartData: 0A6452:FalloutNV.esm
+TurningSpeed: 100
+BaseScale: 1
+FootWeight: 3
+ImpactMaterialType: Metal
+SoundLevel: Normal
+InheritsSoundFrom: 01E821:FalloutNV.esm
+MeleeWeaponList: 03A3F1:FalloutNV.esm
+MajorFlags:
+- 0x20000000

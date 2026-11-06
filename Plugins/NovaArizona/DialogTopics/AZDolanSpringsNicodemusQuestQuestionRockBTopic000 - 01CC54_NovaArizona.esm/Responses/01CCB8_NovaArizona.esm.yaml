@@ -1,0 +1,60 @@
+FormKey: 01CCB8:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Is that what I said? Silver isn't a fucking rock, you dingbat. Rocks aren't shiny.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Bring me a rock that's buttery to the touch.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100665347
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetMapMarkerVisible
+  RunOnType: Reference
+  Reference: 009E0E:NovaArizona.esm
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetMapMarkerVisible
+  RunOnType: Reference
+  Reference: 00A93A:NovaArizona.esm
+Choices:
+- 01CC46:NovaArizona.esm
+- 01CC47:NovaArizona.esm
+- 01CC48:NovaArizona.esm
+- 01CC49:NovaArizona.esm
+- 01CC4A:NovaArizona.esm
+- 01CC4B:NovaArizona.esm
+- 01CC4C:NovaArizona.esm
+- 01CC4D:NovaArizona.esm
+- 01CC4E:NovaArizona.esm
+- 01CD09:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I've been to Chloride; they mine silver there. Is that what you're looking for?

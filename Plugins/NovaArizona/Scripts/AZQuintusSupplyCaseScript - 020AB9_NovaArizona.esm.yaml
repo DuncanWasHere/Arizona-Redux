@@ -1,0 +1,99 @@
+FormKey: 020AB9:NovaArizona.esm
+EditorID: AZQuintusSupplyCaseScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967291
+    RefCount: 7
+    VariableCount: 2
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B00020061000000010072010080161A0002120058000069100B000100FFFF050052010007004C85000000801611000209005601020006001507004C7600000059100B000100720300000000000000811608000107004C8500000059100B0001007204000000000000001100000010000800020061000000000080161A0002120058000069100B000100FFFF050052010007004CF2000000801611000209005601020006001507004CE300000059100B000100720300000000000000811608000107004CF200000059100B0001007204000000000000001100000010000600000047020000391513000112005601000001005800001F100400000000801611000209005601020006001507004C0803000080161300020B0056010000010042000407004C530100001E000000811608000107004CFC02000080161300020B0056010000010042010407004CDE010000361009000100FFFF050052050039150C00010B00560102000600420100A21115000300FFFF0500520200FFFF04004211FFFF04004201A31115000300FFFF0500520200FFFF04004212FFFF04004201A31115000300FFFF0500520200FFFF04004210FFFF04004200811608000107004CFC02000080161300020B0056010000010042020407004C69020000361009000100FFFF050052060039150C00010B00560102000600420100A21115000300FFFF0500520200FFFF04004211FFFF04004201A31115000300FFFF0500520200FFFF04004212FFFF04004201A31115000300FFFF0500520200FFFF04004210FFFF04004200811608000107004CFC02000080161300020B0056010000010042030407004CFC0200003A151D00011C00520100780000521011000200FFFF0500520700FFFF040042022839150C00010B00560102000600420100A21115000300FFFF0500520200FFFF04004211FFFF04004201A31115000300FFFF0500520200FFFF04004212FFFF04004201A31115000300FFFF0500520200FFFF04004210FFFF04004200811608000107004C4303000080161800021000560102000600560100000200150207004C4303000059100B00010072040000000000000039150C00010B0056010000020042010011000000
+  SourceCode: >-
+    name AZQuintusSupplyCaseScript;
+
+
+    int QuintusButton;
+
+    int DoOnce;
+
+
+    OnActivate::Player {
+        if (IsActionRef(Player)) {
+            if (!AZBrushQuest02.QuintusTampered) {
+                ShowMessage(AZDecanusQuintusSupplyLockerMessagePre);
+            } else {
+                ShowMessage(AZDecanusQuintusSupplyLockerMessagePost);
+            }
+        }
+    }
+
+
+    OnActivate {
+        if (IsActionRef(Player)) {
+            if (!AZBrushQuest02.QuintusTampered) {
+                ShowMessage(AZDecanusQuintusSupplyLockerMessagePre);
+            } else {
+                ShowMessage(AZDecanusQuintusSupplyLockerMessagePost);
+            }
+        }
+    }
+
+
+    GameMode {
+        QuintusButton = GetButtonPressed();
+
+        if (!AZBrushQuest02.QuintusTampered) {
+            if (QuintusButton == 0) {
+                return;
+            } else if (QuintusButton == 1) {
+                StartQuest(AZBrushQuest02AlcoholHelperQuest);
+                AZBrushQuest02.QuintusTampered = 1;
+                SetObjectiveCompleted(AZBrushQuest02, 17, 1);
+                SetObjectiveDisplayed(AZBrushQuest02, 18, 1);
+                SetObjectiveDisplayed(AZBrushQuest02, 16, 0);
+            } else if (QuintusButton == 2) {
+                StartQuest(AZBrushQuest02ChemHelperQuest);
+                AZBrushQuest02.QuintusTampered = 1;
+                SetObjectiveCompleted(AZBrushQuest02, 17, 1);
+                SetObjectiveDisplayed(AZBrushQuest02, 18, 1);
+                SetObjectiveDisplayed(AZBrushQuest02, 16, 0);
+            } else if (QuintusButton == 3) {
+                Player.RemoveItem(NVSuperStimpak, 2);
+                AZBrushQuest02.QuintusTampered = 1;
+                SetObjectiveCompleted(AZBrushQuest02, 17, 1);
+                SetObjectiveDisplayed(AZBrushQuest02, 18, 1);
+                SetObjectiveDisplayed(AZBrushQuest02, 16, 0);
+            }
+        } else if (AZBrushQuest02.QuintusTampered && !DoOnce) {
+            ShowMessage(AZDecanusQuintusSupplyLockerMessagePost);
+            DoOnce = 1;
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: QuintusButton
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020ABB:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020ABC:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020ABD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 020ABE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0CCEF2:FalloutNV.esm

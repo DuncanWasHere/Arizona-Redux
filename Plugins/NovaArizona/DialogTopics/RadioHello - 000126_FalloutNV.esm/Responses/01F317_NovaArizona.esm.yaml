@@ -1,0 +1,32 @@
+FormKey: 01F317:NovaArizona.esm
+FormVersion: 15
+Data:
+  Type: Radio
+  Flags:
+  - RunImmediately
+Quest: 01F2F9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    ResponseSound: 01F315:NovaArizona.esm
+    UseEmotionAnimation: True
+    Unused3: 0x616469
+  ResponseText: Sound Collage 01
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100791032
+Choices:
+- 01F308:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

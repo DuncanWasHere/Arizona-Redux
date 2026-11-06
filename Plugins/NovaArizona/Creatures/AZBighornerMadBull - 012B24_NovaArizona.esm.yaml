@@ -1,0 +1,76 @@
+FormKey: 012B24:NovaArizona.esm
+EditorID: AZBighornerMadBull
+FormVersion: 15
+ObjectBounds:
+  First: -35, -32, 0
+  Second: 35, 79, 110
+Name: Mad Bighorner Bull
+Model:
+  File: creatures\NVBigHorner\skeleton.nif
+UnarmedAttackEffect: 13DE70:FalloutNV.esm
+UnarmedAttackAnimation: AttackForwardPower
+Models:
+- azqradhorner.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Respawn
+  - Swims
+  - Walks
+  - NoLowLevelProcessing
+  - CantOpenDoors
+  - TiltFrontBack
+  Fatigue: 150
+  Level: 20
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 0FF697:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 14F422:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 17412F:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Items:
+- Item:
+    Item: 171620:FalloutNV.esm
+    Count: 1
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Foolhardy
+  EnergyLevel: 20
+  Responsibility: 50
+  Mood: 2162635014
+  Teaches: Barter
+  Assistance: HelpsAllies
+  AggroRadius: 2000
+Packages:
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 40
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 220
+  Damage: 90
+  Strength: 8
+  Perception: 10
+  Endurance: 7
+  Charisma: 4
+  Intelligence: 3
+  Agility: 4
+  Luck: 5
+AttackReach: 45
+CombatStyle: 14F437:FalloutNV.esm
+BodyPartData: 108021:FalloutNV.esm
+TurningSpeed: 40
+BaseScale: 1.7
+FootWeight: 30
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 137A11:FalloutNV.esm
+ImpactDataset: 173E76:FalloutNV.esm

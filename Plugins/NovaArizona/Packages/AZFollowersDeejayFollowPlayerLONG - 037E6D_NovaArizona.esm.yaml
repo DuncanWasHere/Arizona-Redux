@@ -1,0 +1,56 @@
+FormKey: 037E6D:NovaArizona.esm
+EditorID: AZFollowersDeejayFollowPlayerLONG
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- AlwaysRun
+- AllowSwimming
+- AllowFalls
+- ContinueDuringCombat
+Unused: 48
+BehaviorFlags:
+- HellosToPlayer
+- RandomConversations
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+- AllowIdleChatter
+- AvoidRadiation
+Flags:
+  MutagenObjectType: PackageFollow
+Unused2: 8260
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 500
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 16
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100892244
+  SecondParameter: 9
+FollowStartLocationTriggerRadius: 0
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

@@ -1,0 +1,64 @@
+FormKey: 017603:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Well, I could hardly be in business if I didn't.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I'll let you in on a secret, just 'cause I like you so much. Legion has a contract with me, because they recognize great value when they see it.
+  ScriptNotes: ''
+  Edits: ''
+  SpeakerAnimation: 08944E:FalloutNV.esm
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I come out here on a regular basis to make deliveries.  I'll be heading into Phoenix, so you better take advantage of these prices while they're hot!
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729754
+Choices:
+- 01039D:NovaArizona.esm
+- 01039E:NovaArizona.esm
+- 01039F:NovaArizona.esm
+- 0103A0:NovaArizona.esm
+- 0103A1:NovaArizona.esm
+- 0103A2:NovaArizona.esm
+- 0103A3:NovaArizona.esm
+- 0103A4:NovaArizona.esm
+- 0101B8:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002031
+  SourceCode: set AZFreeformMalpais.iPhoenixMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01751A:NovaArizona.esm
+Prompt: Do you make a lot of sales?

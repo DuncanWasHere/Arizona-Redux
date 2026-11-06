@@ -1,0 +1,41 @@
+FormKey: 01EDC4:NovaArizona.esm
+FormVersion: 15
+Quest: 01EDA5:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6B696E
+    UseEmotionAnimation: True
+    Unused3: 0x20766F
+  ResponseText: Who could give that order? We have no leader and no means of punishing. We're an outreach program, not an army.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x6E7443
+  ResponseText: We let the NCR know decades ago, and they didn't feel like fixing it, either. Until now, when there was something in it for them, of course.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713562
+Choices:
+- 01EDB9:NovaArizona.esm
+- 01EDBB:NovaArizona.esm
+- 01EDBF:NovaArizona.esm
+- 01EDC0:NovaArizona.esm
+- 01EDD4:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Why not?

@@ -1,0 +1,39 @@
+FormKey: 000E1D:NovaArizona.esm
+FormVersion: 15
+Quest: 0019F0:NovaArizona.esm
+PreviousInfo: 000E1C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652068
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: Excellent. Just stay close to me until we reach Fortification Hill.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x652068
+    UseEmotionAnimation: True
+    Unused3: 0x204361
+  ResponseText: Oh, and uh... don't worry about the other legionaries. You are under the protection of Caesar, and I will make sure of that.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsSex
+  FirstParameter: 1
+  RunOnType: Target
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 1226005
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

@@ -1,0 +1,883 @@
+FormKey: 0099FC:NovaArizona.esm
+EditorID: AZSunkenBoatINT
+FormVersion: 15
+Name: SS Van Buren Belowdecks
+Flags:
+- IsInteriorCell
+- HasWater
+Lighting:
+  AmbientColor: '#001E2E3E'
+  DirectionalColor: '#0088894B'
+  FogColor: '#00131523'
+  FogNear: 820
+  FogFar: 16000
+  DirectionalRotationXY: 120
+  DirectionalRotationZ: 270
+  DirectionalFade: 1
+  FogClipDistance: 17000
+  FogPower: 0.6
+LightTemplate: 06B25E:FalloutNV.esm
+LightInheritFlags:
+- AmbientColor
+- DirectionalColor
+- DirectionalRotation
+- DirectionalFade
+- FogPower
+WaterHeight: 14095.908
+WaterNoiseTexture: Data\Textures\Water\waterflowripplenoise01.dds
+ImageSpace: 06A0A2:FalloutNV.esm
+AcousticSpace: 00C6FC:NovaArizona.esm
+MusicType: 08A6D4:FalloutNV.esm
+Persistent:
+- MutagenObjectType: PlacedObject
+  FormKey: 009A28:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 10C4A7:FalloutNV.esm
+  Placement:
+    Position: 3346.0918, 2652.6904, 14236.503
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedObject
+  FormKey: 009A29:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 01F55A:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3458.7307, 2488.901, 14207.241
+    Rotation: 6.223188, 0.12000011, 3.1415944
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedCreature
+  FormKey: 009A2F:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 145EDB:FalloutNV.esm
+  Position: 4086.331, 3276.4868, 13912.1
+- MutagenObjectType: PlacedCreature
+  FormKey: 009A30:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 145EDB:FalloutNV.esm
+  Position: 3838.743, 2515.8792, 14236.503
+- MutagenObjectType: PlacedCreature
+  FormKey: 009A47:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 145EDB:FalloutNV.esm
+  Position: 3329.3477, 3020.7925, 14236.503
+  Rotation: 0, 0, 5.183188
+- MutagenObjectType: PlacedObject
+  FormKey: 009A4B:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 060730:FalloutNV.esm
+  TeleportDestination:
+    Door: 009A4D:NovaArizona.esm
+    Position: 124305.375, 46206.51, 2780.6187
+    Rotation: 0.06489309, 0.08314225, -2.3800852
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  NavigationDoorLink:
+    Navmesh: 009A41:NovaArizona.esm
+    TriangleIndex: 14
+  Placement:
+    Position: 3016, 1704, 14080
+    Rotation: -0.059997506, 0.12000019, 1.5707964
+  MajorFlags:
+  - Persistent
+- MutagenObjectType: PlacedObject
+  FormKey: 0308AF:NovaArizona.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Base: 0E2A1E:FalloutNV.esm
+  Placement:
+    Position: 3024, 1760, 14048
+    Rotation: -0.06981319, 0.12000019, 5.223186
+  MajorFlags:
+  - Persistent
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 0099FD:NovaArizona.esm
+  FormVersion: 15
+  Base: 02F1E7:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 1714.8005, 14077.107
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0099FE:NovaArizona.esm
+  FormVersion: 15
+  Base: 031E45:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 1970.3396, 14092.457
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0099FF:NovaArizona.esm
+  FormVersion: 15
+  Base: 026381:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 2225.8792, 14107.806
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A00:NovaArizona.esm
+  FormVersion: 15
+  Base: 031E41:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 2481.4185, 14123.155
+    Rotation: 6.223188, 0.12000011, 3.4906584E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 009A01:NovaArizona.esm
+  FormVersion: 15
+  Base: 031E45:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 2736.9583, 14138.505
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A02:NovaArizona.esm
+  FormVersion: 15
+  Base: 026381:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 2992.498, 14153.856
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A03:NovaArizona.esm
+  FormVersion: 15
+  Base: 02F1E6:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3021.2078, 3248.0366, 14169.207
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A04:NovaArizona.esm
+  FormVersion: 15
+  Base: 038908:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3593.066, 2221.7449, 14176.636
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A05:NovaArizona.esm
+  FormVersion: 15
+  Base: 02FAD8:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3180.0571, 2224.7305, 14126.926
+    Rotation: 6.223188, 0.12000011, 1.570798
+- MutagenObjectType: PlacedObject
+  FormKey: 009A06:NovaArizona.esm
+  FormVersion: 15
+  Base: 03BE3A:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3338.9067, 2223.582, 14146.044
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A07:NovaArizona.esm
+  FormVersion: 15
+  Base: 038909:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3593.066, 2477.284, 14191.984
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A08:NovaArizona.esm
+  FormVersion: 15
+  Base: 038908:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3338.9067, 2479.1213, 14161.395
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A09:NovaArizona.esm
+  FormVersion: 15
+  Base: 02FAD8:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3180.0571, 2991.3489, 14172.978
+    Rotation: 6.223188, 0.12000011, 1.570798
+- MutagenObjectType: PlacedObject
+  FormKey: 009A0A:NovaArizona.esm
+  FormVersion: 15
+  Base: 03BE3A:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3338.9067, 2990.2002, 14192.096
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A0B:NovaArizona.esm
+  FormVersion: 15
+  Base: 038908:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3338.9067, 3245.7393, 14207.446
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A0C:NovaArizona.esm
+  FormVersion: 15
+  Base: 0AB15E:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3438.8088, 2953.7676, 14428.002
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A0D:NovaArizona.esm
+  FormVersion: 15
+  Base: 0AB15E:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3438.827, 3253.6152, 14446.018
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A0E:NovaArizona.esm
+  FormVersion: 15
+  Base: 028951:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3593.066, 2988.3628, 14222.685
+    Rotation: 6.223188, 0.12000011, 3.1415944
+- MutagenObjectType: PlacedObject
+  FormKey: 009A0F:NovaArizona.esm
+  FormVersion: 15
+  Base: 028952:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3593.066, 3243.9019, 14238.033
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A10:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A7:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3433.4248, 3228.6284, 14492.3
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A11:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A7:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3433.4248, 2973.0894, 14476.946
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A12:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A5:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3464.0715, 3355.6672, 14245.3125
+    Rotation: 6.223188, 0.12000011, 3.1415944
+- MutagenObjectType: PlacedObject
+  FormKey: 009A13:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A5:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3464.0715, 2876.5312, 14216.53
+    Rotation: 6.223188, 0.12000011, 3.1415944
+- MutagenObjectType: PlacedObject
+  FormKey: 009A14:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A7:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3460.8247, 3114.484, 14257.797
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A15:NovaArizona.esm
+  FormVersion: 15
+  Base: 16AD2B:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3909.0796, 3296.7517, 13891.904
+    Rotation: 6.223188, 0.12000011, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 009A16:NovaArizona.esm
+  FormVersion: 15
+  Base: 028950:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3847.225, 2986.5254, 14253.277
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A17:NovaArizona.esm
+  FormVersion: 15
+  Base: 028954:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3593.2253, 2988.3594, 14222.525
+    Rotation: 6.223188, 0.12000011, 3.1415927
+- MutagenObjectType: PlacedObject
+  FormKey: 009A18:NovaArizona.esm
+  FormVersion: 15
+  Base: 028953:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3847.225, 3242.065, 14268.628
+    Rotation: -0.059997384, 0.12000011, 1.4408735E-06
+- MutagenObjectType: PlacedObject
+  FormKey: 009A19:NovaArizona.esm
+  FormVersion: 15
+  Base: 02894F:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 4101.384, 3240.2275, 14299.219
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A1A:NovaArizona.esm
+  FormVersion: 15
+  Base: 02894F:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 4101.384, 2984.6875, 14283.868
+    Rotation: 6.223188, 0.12000011, 1.5707964
+- MutagenObjectType: PlacedObject
+  FormKey: 009A1B:NovaArizona.esm
+  FormVersion: 15
+  Base: 028954:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 4101.384, 2984.6875, 14283.563
+    Rotation: 6.223188, 0.12000011, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 009A1C:NovaArizona.esm
+  FormVersion: 15
+  Base: 028950:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3847.225, 2730.9863, 14237.927
+    Rotation: 6.223188, 0.12000011, 1.570798
+- MutagenObjectType: PlacedObject
+  FormKey: 009A1D:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A5:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3728.4973, 2857.609, 14279.789
+    Rotation: 6.223188, 0.12000011, 3.141596
+- MutagenObjectType: PlacedObject
+  FormKey: 009A1E:NovaArizona.esm
+  FormVersion: 15
+  Base: 0357A5:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3954.4224, 2855.0564, 14306.556
+    Rotation: 6.223188, 0.12000011, 3.141596
+- MutagenObjectType: PlacedObject
+  FormKey: 009A20:NovaArizona.esm
+  FormVersion: 15
+  Base: 028956:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3849.1409, 2460.4272, 14205.762
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A21:NovaArizona.esm
+  FormVersion: 15
+  Base: 028957:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3849.1409, 2204.888, 14190.411
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A22:NovaArizona.esm
+  FormVersion: 15
+  Base: 028958:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3849.1409, 1949.3484, 14175.061
+    Rotation: 6.223188, 0.12000011, 4.712391
+- MutagenObjectType: PlacedObject
+  FormKey: 009A23:NovaArizona.esm
+  FormVersion: 15
+  Base: 02895B:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3594.9814, 1951.186, 14144.469
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A24:NovaArizona.esm
+  FormVersion: 15
+  Base: 02895A:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3594.9814, 1951.186, 14144.469
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A25:NovaArizona.esm
+  FormVersion: 15
+  Base: 05F9AF:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3364.4873, 3117.476, 14359.561
+- MutagenObjectType: PlacedObject
+  FormKey: 009A26:NovaArizona.esm
+  FormVersion: 15
+  Base: 05F9AF:FalloutNV.esm
+  Radius: -24.779877
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3370.3906, 2343.549, 14342.048
+- MutagenObjectType: PlacedObject
+  FormKey: 009A27:NovaArizona.esm
+  FormVersion: 15
+  Base: 05F9AF:FalloutNV.esm
+  Radius: -48.73076
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3548.2869, 2340.4336, 14342.048
+- MutagenObjectType: PlacedObject
+  FormKey: 009A2A:NovaArizona.esm
+  FormVersion: 15
+  Base: 0D7258:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3581.6003, 2445.214, 14221.547
+    Rotation: 1.4331737, 0.68724257, 4.4703574
+- MutagenObjectType: PlacedObject
+  FormKey: 009A2B:NovaArizona.esm
+  FormVersion: 15
+  Base: 01CC27:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3476.5242, 2128.371, 14158.284
+    Rotation: 6.223188, 0.12000011, 4.673194
+- MutagenObjectType: PlacedObject
+  FormKey: 009A2C:NovaArizona.esm
+  FormVersion: 15
+  Base: 0CE6F0:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3623.391, 2202.033, 14179.321
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A2D:NovaArizona.esm
+  FormVersion: 15
+  Base: 17433B:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Scale: 0.59
+  Placement:
+    Position: 3930.9255, 2971.7783, 13875.029
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A2E:NovaArizona.esm
+  FormVersion: 15
+  Base: 085908:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Scale: 0.88
+  Placement:
+    Position: 3635.1458, 3246.6282, 13853.175
+    Rotation: 6.223188, 0.12000011, 4.80819
+- MutagenObjectType: PlacedObject
+  FormKey: 009A31:NovaArizona.esm
+  FormVersion: 15
+  Base: 07CBCE:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3056.7922, 3298.0054, 14261.684
+    Rotation: 6.223188, 0.12000011, 0.005012586
+- MutagenObjectType: PlacedObject
+  FormKey: 009A32:NovaArizona.esm
+  FormVersion: 15
+  Base: 08C55E:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3383.3535, 2162.8362, 14149.102
+    Rotation: 4.398647, 1.1145481, 5.608752
+- MutagenObjectType: PlacedObject
+  FormKey: 009A33:NovaArizona.esm
+  FormVersion: 15
+  Base: 08C55E:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3437.8687, 2155.482, 14162.77
+    Rotation: 0.012863076, 4.831904, 0.76865345
+- MutagenObjectType: PlacedObject
+  FormKey: 009A34:NovaArizona.esm
+  FormVersion: 15
+  Base: 08C55E:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3443.423, 2145.8953, 14161.582
+    Rotation: 3.0814817, 6.16019, 4.0544243
+- MutagenObjectType: PlacedObject
+  FormKey: 009A35:NovaArizona.esm
+  FormVersion: 15
+  Base: 03409C:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3600.663, 2217.7808, 14251.269
+    Rotation: 6.2219, 0.12102462, 4.520193
+- MutagenObjectType: PlacedObject
+  FormKey: 009A36:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406E:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3482.3013, 2242.1228, 14166.577
+    Rotation: 6.2235737, 0.12041899, 5.6638446
+- MutagenObjectType: PlacedObject
+  FormKey: 009A37:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406C:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3398.3752, 2184.1838, 14155.833
+    Rotation: 6.1187754, 4.837002, 5.9816236
+- MutagenObjectType: PlacedObject
+  FormKey: 009A38:NovaArizona.esm
+  FormVersion: 15
+  Base: 025421:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3454.9077, 2265.8738, 14171.379
+    Rotation: 4.4834037, 0.9470907, 4.115659
+- MutagenObjectType: PlacedObject
+  FormKey: 009A39:NovaArizona.esm
+  FormVersion: 15
+  Base: 04525D:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3738.4321, 3124.714, 13876.588
+    Rotation: 6.223188, 0.12000011, 2.575003
+- MutagenObjectType: PlacedObject
+  FormKey: 009A3A:NovaArizona.esm
+  FormVersion: 15
+  Base: 01EFF7:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3850.0957, 3078.2195, 13871.65
+    Rotation: 6.223188, 0.12000011, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 009A3B:NovaArizona.esm
+  FormVersion: 15
+  Base: 0CCF91:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3125.0737, 2558.6125, 14252.66
+    Rotation: 6.223188, 0.12000011, 4.7100067
+- MutagenObjectType: PlacedObject
+  FormKey: 009A3C:NovaArizona.esm
+  FormVersion: 15
+  Base: 058714:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3435.0393, 1930.1532, 14118.453
+    Rotation: 6.139185, 0.5478449, 1.3718114
+- MutagenObjectType: PlacedObject
+  FormKey: 009A3E:NovaArizona.esm
+  FormVersion: 15
+  Base: 009A40:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3379.5205, 1978.4073, 14119.982
+    Rotation: 6.225764, 0.10526954, 1.6114887
+- MutagenObjectType: PlacedObject
+  FormKey: 009A42:NovaArizona.esm
+  FormVersion: 15
+  Base: 0695B8:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3018.8052, 2784.2634, 14250.416
+- MutagenObjectType: PlacedObject
+  FormKey: 009A43:NovaArizona.esm
+  FormVersion: 15
+  Base: 0695B8:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3025.9434, 2049.3877, 14250.416
+- MutagenObjectType: PlacedObject
+  FormKey: 009A44:NovaArizona.esm
+  FormVersion: 15
+  Base: 0695B8:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3858.35, 2393.047, 14286.812
+- MutagenObjectType: PlacedObject
+  FormKey: 009A45:NovaArizona.esm
+  FormVersion: 15
+  Base: 0695B8:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3606.7754, 1966.8593, 14257.969
+- MutagenObjectType: PlacedObject
+  FormKey: 009A48:NovaArizona.esm
+  FormVersion: 15
+  Base: 0695B8:FalloutNV.esm
+  Radius: 80.3504
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3930.3481, 3161.8533, 14286.812
+- MutagenObjectType: PlacedObject
+  FormKey: 009A49:NovaArizona.esm
+  FormVersion: 15
+  Base: 0348D1:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3473.3635, 2278.6494, 14236.888
+- MutagenObjectType: PlacedObject
+  FormKey: 009A4C:NovaArizona.esm
+  FormVersion: 15
+  Base: 07B21F:FalloutNV.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Scale: 0.59
+  Placement:
+    Position: 3919.7542, 2931.9312, 14233.668
+    Rotation: 0.11399793, 0.083845615, 0.9282289
+- MutagenObjectType: PlacedObject
+  FormKey: 009B46:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C680:DeadMoney.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 4018.7686, 3070.1199, 13893.908
+    Rotation: 6.2229733, 0.10905864, 4.776755
+- MutagenObjectType: PlacedObject
+  FormKey: 028959:NovaArizona.esm
+  FormVersion: 15
+  Base: 028955:NovaArizona.esm
+  Reflections:
+  - WaterReference: 009A28:NovaArizona.esm
+    Type:
+    - Refraction
+  Placement:
+    Position: 3849.1409, 2715.967, 14221.112
+    Rotation: 6.223188, 0.12000012, 4.7123904
+- MutagenObjectType: PlacedObject
+  FormKey: 034D05:NovaArizona.esm
+  FormVersion: 15
+  Base: 0AB15E:FalloutNV.esm
+  Scale: 1.14
+  Placement:
+    Position: 3569.455, 2953.3843, 14436.749
+    Rotation: 3.081595, 1.4507968, 4.712389

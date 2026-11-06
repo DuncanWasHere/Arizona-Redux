@@ -1,0 +1,52 @@
+FormKey: 14C4F4:FalloutNV.esm
+FormVersion: 15
+Version: 11
+Data:
+  Cell: 0DDD2F:FalloutNV.esm
+  VertexCount: 5
+  TriangleCount: 3
+  EdgeLinkCount: 3
+Vertices:
+- 86016, 24294.531, 3380.882
+- 86016, 24576, 3380.724
+- 85836.3, 24575.986, 3380.7256
+- 85838.73, 24296.422, 3380.8813
+- 86016, 24014.645, 3344.1392
+Triangles:
+- Vertices: 0, 1, 2
+  EdgeLink_0_1: 1
+  EdgeLink_2_0: 1
+  Flags:
+  - EdgeLink_0_1
+  - EdgeLink_1_2
+  - Found
+- Vertices: 0, 2, 3
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 2
+  Flags:
+  - Found
+- Vertices: 4, 0, 3
+  EdgeLink_0_1: 2
+  EdgeLink_1_2: 1
+  EdgeLink_2_0: -1
+  Flags:
+  - EdgeLink_0_1
+  - Found
+NavmeshGrid:
+  Divisor: 1
+  MaxDistanceX: 179.70312
+  MaxDistanceY: 561.35547
+  Min: 85836.3, 24014.645, 3344.1392
+  Max: 86016, 24576, 3380.882
+  Cells:
+  - Triangles:
+    - 0
+    - 1
+    - 2
+EdgeLinks:
+- Mesh: 14B289:FalloutNV.esm
+  Triangle: 7
+- Mesh: 14B28B:FalloutNV.esm
+  Triangle: 27
+- Mesh: 14B28B:FalloutNV.esm
+  Triangle: 29

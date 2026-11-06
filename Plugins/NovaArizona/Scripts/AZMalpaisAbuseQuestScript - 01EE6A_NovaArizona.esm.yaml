@@ -1,0 +1,206 @@
+FormKey: 01EE6A:NovaArizona.esm
+EditorID: AZMalpaisAbuseQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 5
+    VariableCount: 19
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000006601000016001F0005001B0020720100733E002031203D3D207202007305002031203D3D207C7C160014000300100020582212050001007203002031203D3D160014000100100020585410050001007204002031203E3D39100A0002007205006EFF000000190000001900000019000000160028000100240020720100733E002031203D3D2058A5110A0002007205006E9C0000002031203D3D202626A3110F0003007205006E9C0000006E000000001900000016005C000100580020720100730D002031203D3D2058A5110A0002007205006E9C0000002030203D3D20262620582212050001007205002030203D3D20262620730D002030203D3D20262620583A100500010072050020313530203D3D202626A3110F0003007205006E9C0000006E010000001900000016000D0003000900207311002031203D3D1600100001000C0020720100733E002031203D3D39100A0002007205006EFF000000190000001900000011000000
+  SourceCode: >-
+    scn AZMalpaisAbuseQuestScript
+
+
+    short ArcadeVisitedMalpais
+
+    short MarcellusSedonusPoisoned
+
+    short MalpaisCooldown
+
+    short TempSmoochKnown
+
+
+    short NoctisKillSedonus
+
+    short NoctisDiscomfort
+
+    short NoctisMentionSedonus
+
+    short NoctisTreatment
+
+    short NoctisFail
+
+    short NoctisLock
+
+
+    short GregoryAccepted
+
+    short GregoryKidnapped
+
+    short GregoryReady
+
+    short GregoryArrived
+
+    short GregoryReturned
+
+    short GregorySentBack
+
+
+    short ArcadeAccepted
+
+
+    int iTimer
+
+
+
+    BEGIN GameMode
+
+
+    if VNPCFollowers.bArcadeDead == 1 || VDialogueArcadeGannon.bArcadeQuit == 1
+    	if GetQuestCompleted AZBigStopChildSoldierQuest == 1
+    		if GetDeadCount AZOldMormonFortGregory >= 1
+    			SetStage AZMalpaisAbuseQuest 255
+    		endif
+    	endif
+    endif
+
+
+    if VNPCFollowers.bArcadeDead == 1 && GetObjectiveDisplayed AZMalpaisAbuseQuest 156 == 1
+    	SetObjectiveDisplayed AZMalpaisAbuseQuest 156 0
+    endif
+
+
+    if VNPCFollowers.ArcadeAvailable == 1 && GetObjectiveDisplayed AZMalpaisAbuseQuest 156 == 0 && GetQuestCompleted AZMalpaisAbuseQuest == 0 && NoctisTreatment == 0 && GetStage AZMalpaisAbuseQuest == 150
+    	SetObjectiveDisplayed AZMalpaisAbuseQuest 156 1
+    endif
+
+
+    if ArcadeAccepted == 1
+    	if VNPCFollowers.bArcadeDead == 1
+    		SetStage AZMalpaisAbuseQuest 255
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0xA08720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F69736F6E6564
+    Name: ArcadeVisitedMalpais
+  - Data:
+      Index: 2
+      Unknown: 0xC08720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: MarcellusSedonusPoisoned
+  - Data:
+      Index: 3
+      Unknown: 0x008820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x30310000000000
+    Name: TempSmoochKnown
+  - Data:
+      Index: 4
+      Unknown: 0x208820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xF7480B98F1480B
+    Name: NoctisKillSedonus
+  - Data:
+      Index: 5
+      Unknown: 0x208920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GregoryReady
+  - Data:
+      Index: 6
+      Unknown: 0x408920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GregoryArrived
+  - Data:
+      Index: 7
+      Unknown: 0x608920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GregoryReturned
+  - Data:
+      Index: 8
+      Unknown: 0x008920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GregoryKidnapped
+  - Data:
+      Index: 9
+      Unknown: 0xE08820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFB621018000000
+    Name: GregoryAccepted
+  - Data:
+      Index: 10
+      Unknown: 0x408820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: NoctisDiscomfort
+  - Data:
+      Index: 11
+      Unknown: 0x608820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000001684B6E
+    Name: NoctisMentionSedonus
+  - Data:
+      Index: 13
+      Unknown: 0x808820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: NoctisTreatment
+  - Data:
+      Index: 14
+      Unknown: 0xA08820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: NoctisFail
+  - Data:
+      Index: 15
+      Unknown: 0xE08720120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x0000006561746D
+    Name: MalpaisCooldown
+  - Data:
+      Index: 16
+      Unknown: 0xA0DC29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x4D616C70616973
+    Name: iTimer
+  - Data:
+      Index: 17
+      Unknown: 0xA08920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x194A0BB41C4A0B
+    Name: ArcadeAccepted
+  - Data:
+      Index: 18
+      Unknown: 0x808920120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GregorySentBack
+  - Data:
+      Index: 19
+      Unknown: 0xC08820120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6E6E6F6E002072
+    Name: NoctisLock
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0B16D0:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 16117F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01ED95:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm

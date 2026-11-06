@@ -1,0 +1,103 @@
+FormKey: 024B31:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 024B19:NovaArizona.esm
+PreviousInfo: 024ED2:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: Okay, good, first, your information. Fair is fair.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: "As for your missing person: Alba Nox served as Dominicus Rex's advisor during the interrogations."
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: If August was interrogated by the Frumentarii, Alba Nox would be the one to have handled it.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: Nox is thorough with his chosen prey. August is dead.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 5
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x696753
+  ResponseText: But that leads me to my second, worrying conclusion, which is that Nox is involved some way in the sabotage of the Confederate weapons.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 6
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: I would like your help in my investigation of this matter.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100698574
+- Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetStage
+  FirstParameter: 100698646
+- Fluff: 0x000000
+  Function: GetQuestCompleted
+  FirstParameter: 100698647
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100698646
+  SecondParameter: 3
+Choices:
+- 024B26:NovaArizona.esm
+- 024B27:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x39100A0002007201006E0A000000A2110F0003007201006E060000006E01000000A2110F0003007202006E030000006E01000000A3110F0003007202006E080000006E01000000
+  SourceCode: >-
+    SetStage AZBigStopAhigaQuest01 10
+
+    SetObjectiveCompleted AZBigStopAhigaQuest01 6 1
+
+    SetObjectiveCompleted AZBigStopAugustQuest 3 1
+
+    SetObjectiveDisplayed AZBigStopAugustQuest 8 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A16:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008A17:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I delivered the Legion shipment like you asked.

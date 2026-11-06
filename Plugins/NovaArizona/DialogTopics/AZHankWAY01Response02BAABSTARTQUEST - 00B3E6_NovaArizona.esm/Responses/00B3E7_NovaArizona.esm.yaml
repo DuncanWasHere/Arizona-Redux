@@ -1,0 +1,65 @@
+FormKey: 00B3E7:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 00B3BD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x737572
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: The skirts over there don't like dealing with us unless it's official business. They think we're tryin' to rip em off with junk.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x737572
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: I've got some Displacer Gloves that Beth and I picked up somewhere near Santa Fe.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: If you can arrange the sale of these to their guy up in the armory, I'll split the sale with you. 80/20.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x737572
+    UseEmotionAnimation: True
+    Unused3: 0x656420
+  ResponseText: He'll respect your less-evolved complexion. What do you think?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100704533
+Choices:
+- 008626:NovaArizona.esm
+- 008628:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073060002002031
+  SourceCode: set AZBaseCampReservationQuest.iDealMentioned to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00863E:NovaArizona.esm
+Prompt: What do you need?

@@ -1,0 +1,110 @@
+FormKey: 00B76D:NovaArizona.esm
+EditorID: AZFreeformMalpaisGoldMineScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 12
+    VariableCount: 12
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406
+  SourceCode: >-
+    name AZFreeformMalpaisGoldMineScript;
+
+
+    int iHelpingPostumus; // 0 = Default // 1 = Agreed to help // 2 = Postumus told boulder was demolished
+
+    int bHeardAboutAccident; // Player heard about the accident from Castulus
+
+    int bToldSqueezingUseless; // Postumus told player not to bother squeezing through
+
+    int bPostumusPissed; // Postumus refuses to talk to player
+
+    int bHeardAboutRespirators; // Postumus told player the slaves don't get respirators
+
+    int bPostumusWentPostal; // 0 = Default // 1 = Postumus is/was going to kill Castulus // 2 = Player told Castulus he killed Postumus
+
+    int bPlayerKillingCastulus; // Player offered to kill Castulus
+
+    int bCastulusToldIdea; // Castulus told player about his pulley idea
+
+    int bPostumusWillEat; // Postumus agreed to start eating
+
+    int bCastulusKnowsClear; // Player told Castulus they cleared the rubble
+
+    int bCastulusWarned; // 0 = Default // 1 = Castulus will fight Postumus // 2 = Postumus will be crucified
+
+    int bBoulderDemolished; // Player demolish the boulder
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: iHelpingPostumus
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bHeardAboutAccident
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bToldSqueezingUseless
+  - Data:
+      Index: 4
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPostumusPissed
+  - Data:
+      Index: 5
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bHeardAboutRespirators
+  - Data:
+      Index: 6
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPostumusWentPostal
+  - Data:
+      Index: 7
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPlayerKillingCastulus
+  - Data:
+      Index: 8
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bCastulusToldIdea
+  - Data:
+      Index: 9
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPostumusWillEat
+  - Data:
+      Index: 10
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bCastulusKnowsClear
+  - Data:
+      Index: 11
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bCastulusWarned
+  - Data:
+      Index: 12
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bBoulderDemolished

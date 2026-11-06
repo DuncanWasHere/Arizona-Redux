@@ -1,0 +1,192 @@
+FormKey: 01998E:NovaArizona.esm
+EditorID: AZGreenwayWindFarmQuest
+FormVersion: 15
+Script: 01999B:NovaArizona.esm
+Name: Let the Four Winds Blow
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Priority: 55
+Stages:
+- Index: 10
+  LogEntries:
+  - Flags: []
+    Entry: Speak with the mechanic in Dolan Springs. Ask for work. He wants you to go optimize the windmills.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007201006E0A0000006E01000000
+      SourceCode: setobjectivedisplayed AZGreenwayWindFarmQuest 10 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01998E:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    Entry: Repair the windmills with a Repair 75, Science 75 or a collection of spare parts, scrap electronics, duct tape, fission batteries and sensor modules.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E0A0000006E01000000A3110F0003007202006E190000006E010000001C00010002100A0002007203006E010000001C00010002100A0002007204006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZGreenwayWindFarmQuest 10 1
+
+        setobjectivedisplayed AZGreenwayWindFarmQuest 25 1
+
+        Player.AddItem AZKeyGreenwaySubstation02 1
+
+        Player.AddItem AZGreenwayJunctionBoxNote 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01998E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E5DB:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E5E2:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    Entry: Activate power at the Transmission Station.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E190000006E01000000
+      SourceCode: setobjectivecompleted AZGreenwayWindFarmQuest 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01998E:NovaArizona.esm
+- Index: 55
+  LogEntries:
+  - Flags: []
+    Entry: Sets up stuff
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007203006E1E0000006E010000001C0001002110020000001C000200211002000000
+      SourceCode: >-
+        SetObjectiveDisplayed AZGreenwayWindFarmQuest 30 1
+
+        AZGreenwayBeetleEnableParentREF.enable
+
+        AZGreenwayWiresREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E5D5:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00E5E3:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01998E:NovaArizona.esm
+- Index: 60
+  LogEntries:
+  - Flags: []
+    Entry: True active power at Greenway Substation
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E190000006E01000000A2110F0003007201006E280000006E01000000A3110F0003007201006E320000006E01000000
+      SourceCode: >-
+        SetObjectiveCompleted AZGreenwayWindFarmQuest 25 1
+
+        SetObjectiveCompleted AZGreenwayWindFarmQuest 40 1
+
+        SetObjectiveDisplayed AZGreenwayWindFarmQuest 50 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01998E:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    Entry: Return to Zeke for the reward.
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007202006E320000006E01000000A3110F0003007202006E640000006E01000000A3110F0003007202006E640000006E010000001C0001007711070001006EFA0000001C00010002100A0002007203006E0F000000
+      SourceCode: >-
+        setobjectivecompleted AZGreenwayWindFarmQuest 50 1
+
+        setobjectivedisplayed AZGreenwayWindFarmQuest 100 1
+
+        setobjectivedisplayed AZGreenwayWindFarmQuest 100 1
+
+
+        Player.RewardXP 250
+
+        Player.Additem MoneyLegion1 15
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 01998E:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 176AC4:FalloutNV.esm
+- Index: 200
+  LogEntries:
+  - Flags:
+    - FailQuest
+    Entry: Zeke is dead.
+    EmbeddedScript:
+      MetadataSummary:
+        Enabled: 1
+Objectives:
+- Index: 10
+  Description: Fix the Greenway Wind Farm main station.
+  Targets:
+  - Target: 0199C5:NovaArizona.esm
+    Unused: 0x1B1428
+- Index: 25
+  Description: Activate the relay at Greenway Substation MO-09.
+  Targets:
+  - Target: 0199D3:NovaArizona.esm
+    Unused: 0x60102A
+- Index: 50
+  Description: Return to Zeke for your reward.
+  Targets:
+  - Target: 01998D:NovaArizona.esm
+    Unused: 0x112925
+- Index: 100
+  Description: I've successfully optimized the Dolan Springs Wind Farm.
+- Index: 30
+  Description: Find the cause of the substation electrical failure.
+  Targets:
+  - Target: 00E361:NovaArizona.esm
+    Unused: 0x2A102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+  - Target: 00E362:NovaArizona.esm
+    Unused: 0x2A102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+  - Target: 00E397:NovaArizona.esm
+    Unused: 0x2A102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+  - Target: 00E4DD:NovaArizona.esm
+    Unused: 0x2A102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+  - Target: 00E4E0:NovaArizona.esm
+    Unused: 0x2A102B
+    Conditions:
+    - Fluff: 0x000000
+      Function: GetDead
+- Index: 35
+  Description: Fix the broken line.
+- Index: 40
+  Description: The Greenway Substation MO-09 relay should be functional now. Return to activate it.
+  Targets:
+  - Target: 0199D3:NovaArizona.esm
+    Unused: 0xD63B32

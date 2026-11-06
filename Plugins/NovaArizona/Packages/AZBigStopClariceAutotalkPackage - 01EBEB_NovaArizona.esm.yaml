@@ -1,0 +1,42 @@
+FormKey: 01EBEB:NovaArizona.esm
+EditorID: AZBigStopClariceAutotalkPackage
+FormVersion: 15
+GeneralFlags:
+- AlwaysRun
+Flags:
+  MutagenObjectType: PackageDialogue
+Unused2: 21076
+Location:
+  Location:
+    MutagenObjectType: PackageLocationNearEditorLocation
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Target:
+  Target:
+    MutagenObjectType: PackageTargetReference
+    Reference: 000014:FalloutNV.esm
+  CountOrDistance: 512
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100719677
+  SecondParameter: 7
+DialogueData:
+  DialogueFOV: 100
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

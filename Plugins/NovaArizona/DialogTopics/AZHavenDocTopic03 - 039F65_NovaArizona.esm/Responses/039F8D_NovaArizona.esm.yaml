@@ -1,0 +1,45 @@
+FormKey: 039F8D:NovaArizona.esm
+FormVersion: 15
+Quest: 01B980:NovaArizona.esm
+PreviousInfo: 039F8C:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Which ones do you want to know about?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100876902
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetQuestVariable
+  FirstParameter: 100776320
+  SecondParameter: 24
+Choices:
+- 039F66:NovaArizona.esm
+- 039F67:NovaArizona.esm
+- 039F68:NovaArizona.esm
+- 039F69:NovaArizona.esm
+- 039F6A:NovaArizona.esm
+- 039F6B:NovaArizona.esm
+- 039F6C:NovaArizona.esm
+- 039F6D:NovaArizona.esm
+- 039F6E:NovaArizona.esm
+- 039F6F:NovaArizona.esm
+- 039F70:NovaArizona.esm
+- 039F71:NovaArizona.esm
+- 039F75:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What do you think of the other people here?

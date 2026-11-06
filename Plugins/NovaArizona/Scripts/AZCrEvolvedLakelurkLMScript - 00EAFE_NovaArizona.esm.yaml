@@ -1,0 +1,41 @@
+FormKey: 00EAFE:NovaArizona.esm
+EditorID: AZCrEvolvedLakelurkLMScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A001B0000000000150013007201007307000B00207201007307002031202B11000000100006000000A200000016001D0008001900207201007305002039203E207201007307002031203E202626160015000200110020583A1005000100720100203530203D3D39100A0002007201006E3C00000015000A007201007308000200203118000D0001000900205A0100203530203C15000A007201007308000200203118000F0001000B00205A010020313030203D3D15000A0072010073080002002032190000001900000011000000
+  SourceCode: >-
+    scn AZCrEvolvedLakelurkLMScript
+
+
+    BEGIN OnDeath
+
+
+    Set AZNewtFishingQuest.BossLakelurksKilled to AZNewtFishingQuest.BossLakelurksKilled + 1
+
+
+    END
+
+
+
+    BEGIN GameMode
+
+
+    if AZNewtFishingQuest.LakelurksKilled > 9 && AZNewtFishingQuest.BossLakelurksKilled > 1
+    	if GetStage AZNewtFishingQuest == 50
+    		SetStage AZNewtFishingQuest 60
+    		Set AZNewtFishingQuest.HiveCleared to 1
+    	elseif AZNewtFishingQuest < 50
+    		Set AZNewtFishingQuest.HiveCleared to 1
+    	elseif AZNewtFishingQuest == 100
+    		Set AZNewtFishingQuest.HiveCleared to 2
+    	endif
+    endif
+
+
+    END
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm

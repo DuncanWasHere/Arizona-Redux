@@ -1,0 +1,49 @@
+FormKey: 013E0D:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01746A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x69646E
+    UseEmotionAnimation: True
+    Unused3: 0x6F7720
+  ResponseText: Oh, I didn't know that. The man actually attempted to murder me with a Sunset Sasparilla bottle when I tried to interview him.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x69646E
+    UseEmotionAnimation: True
+    Unused3: 0x6F7720
+  ResponseText: You must have caught him on a good day.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetTalkedToPC
+  RunOnType: Reference
+  Reference: 008D04:NovaArizona.esm
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708670
+Choices:
+- 01748D:NovaArizona.esm
+- 017490:NovaArizona.esm
+- 017491:NovaArizona.esm
+- 01748F:NovaArizona.esm
+- 01F4AE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: He's a legate.

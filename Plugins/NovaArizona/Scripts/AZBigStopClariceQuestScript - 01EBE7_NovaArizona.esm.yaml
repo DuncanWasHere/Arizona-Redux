@@ -1,0 +1,158 @@
+FormKey: 01EBE7:NovaArizona.esm
+EditorID: AZBigStopClariceQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 6
+    VariableCount: 13
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000000C0100001600310010002D0020583B100A0002007205006E160000002031203D3D20583B100A0002007205006E2D0000002031203D3D207C7C16001900040015002058A5110A0002007206006E010000002031203D3D160019000200150020583B100A0002007206006E050000002030203D3D39100A0002007206006E0A0000001C000100221002000000190000001900000016000D0008000900207308002031203D3D16000D0001000900207302002031203D3D1C00020021100200000018000D0001000900207303002031203D3D1C00030021100200000018000D0001000900207304002031203D3D1C000400211002000000190000001500070073080002002032190000001900000011000000
+  SourceCode: >-
+    scn AZBigStopClariceQuestScript
+
+
+    short doonce
+
+
+    short bClariceAutotalk
+
+
+    short bDonated
+
+
+    short bDonatedGun
+
+    short bDonatedSupplies
+
+    short bDonatedAll
+
+    short bPostSteffie
+
+
+    short bPaidSteffieAgain
+
+    short bKnowSteffieRobbed
+
+    short bSteffieMoneyBack
+
+
+    short bRaiderSteffieAutotalk
+
+
+    short bPostSteffieTravel
+
+
+
+    begin gamemode
+
+
+    if GetStageDone AZDamNQuest2 22 == 1  || GetStageDone AZDamNQuest2 45 == 1
+        if GetObjectiveDisplayed AZBigStopClariceQuest 1 ==1
+            if GetStageDone AZBigStopClariceQuest 5 ==0
+                SetStage AZBigStopClariceQuest 10
+    			AZBigStopClariceREF.disable
+            endif
+        endif
+
+    	if bPostSteffie ==1
+    		if bDonatedGun ==1
+    			AZRaiderSteffieREF.enable
+    		elseif bDonatedSupplies ==1
+    			AZMOSteffieREF.enable
+    		elseif bDonatedAll ==1
+    			AZ188SteffieREF.enable
+    		endif
+
+    		set bPostSteffie to 2
+    	endif
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x408D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bDonated
+  - Data:
+      Index: 2
+      Unknown: 0x608D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x7F000080CC7C10
+    Name: bDonatedGun
+  - Data:
+      Index: 3
+      Unknown: 0x808D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xF0B59A00000000
+    Name: bDonatedSupplies
+  - Data:
+      Index: 4
+      Unknown: 0xA08D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00007F80CC7C10
+    Name: bDonatedAll
+  - Data:
+      Index: 5
+      Unknown: 0x008D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: doonce
+  - Data:
+      Index: 7
+      Unknown: 0x208D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF7FFFFFFF7FFF
+    Name: bClariceAutotalk
+  - Data:
+      Index: 8
+      Unknown: 0xC08D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bPostSteffie
+  - Data:
+      Index: 9
+      Unknown: 0x008E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bKnowSteffieRobbed
+  - Data:
+      Index: 10
+      Unknown: 0x208E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xFF7FFFFFFF7FFF
+    Name: bSteffieMoneyBack
+  - Data:
+      Index: 11
+      Unknown: 0xE08D20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x33000000000000
+    Name: bPaidSteffieAgain
+  - Data:
+      Index: 12
+      Unknown: 0x408E20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: bRaiderSteffieAutotalk
+  - Data:
+      Index: 13
+      Unknown: 0x20EB29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x58A5110A000200
+    Name: bPostSteffieTravel
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EC8C:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDF8:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDF9:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CDF7:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm

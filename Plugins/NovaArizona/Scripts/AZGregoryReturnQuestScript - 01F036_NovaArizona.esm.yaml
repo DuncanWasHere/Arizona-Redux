@@ -1,0 +1,63 @@
+FormKey: 01F036:NovaArizona.esm
+EditorID: AZGregoryReturnQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967293
+    RefCount: 4
+    VariableCount: 3
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040676161800021000530B006A6970206C6E206E76736507004C62160000100006000000B6000000801611000209005601000002001507004CF100000080161A0002120056000000030056010000010042060E0707004C95000000391513000112005600000003005800002F280400000000811608000107004CF10000003A1517000116005201007800009E100B000100FFFF0500520200283A151000010F005201007800005E10040000002839150C00010B0056010300070042010039150C00010B00560100000200420100371009000100FFFF050052040011000000
+  SourceCode: >-
+    name AZGregoryReturnQuestScript;
+
+
+    int GregoryHealthComplete;
+
+    int DoOnce;
+
+
+    float iTimer;
+
+
+    GameMode {
+        if (!DoOnce) {
+            if (iTimer < GregoryHealthComplete + 6) {
+                iTimer = GetGameDaysPassed();
+            } else {	
+                AZOldMormonFortGregoryREF.MoveTo(AZGregoryFortMarkerREF);
+                AZOldMormonFortGregoryREF.Evp();
+                AZMalpaisAbuseQuest.GregoryReturned = 1;
+                DoOnce = 1;
+                StopQuest(AZFollowerReturnQuest);
+            }
+        }
+    }
+  LocalVariables:
+  - Data:
+      Index: 1
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: GregoryHealthComplete
+  - Data:
+      Index: 2
+      Unknown: 0x000000000000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DoOnce
+  - Data:
+      Index: 3
+      Unknown: 0x000000000000000000000000
+      Unknown2: 0x00000000000000
+    Name: iTimer
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE06:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F037:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC77:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01F035:NovaArizona.esm

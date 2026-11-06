@@ -1,0 +1,66 @@
+FormKey: 0209CA:NovaArizona.esm
+EditorID: AZMineQuestDecanusScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    Unknown: 4294967290
+    RefCount: 6
+    Enabled: 1
+  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A00C5020000000080161B0002130058000022120B000100FFFF05005201001507004C6B01000080163800023000580000A51111000200FFFF0500520100FFFF04004207580000A41111000200FFFF0500520100FFFF04004207150207004C900000001E000000811608000107004C6B010000A31115000300FFFF0500520100FFFF04004219FFFF04004200A31115000300FFFF0500520100FFFF0400421EFFFF04004200A31115000300FFFF0500520100FFFF0400421FFFFF04004200A31115000300FFFF0500520100FFFF04004221FFFF04004200A31115000300FFFF0500520100FFFF04004223FFFF04004200A31115000300FFFF0500520100FFFF04004224FFFF04004200A31115000300FFFF0500520100FFFF04004228FFFF04004200A31115000300FFFF0500520100FFFF0400425FFFFF0400420039100F000200FFFF0500520100FFFF0400425A80161800021000520200780000231004000000281507004C9B0100003A151000010F005202007800008B10040000002880161B0002130058000022120B000100FFFF05005203001507004CF501000039100F000200FFFF0500520300FFFF040042FF3A151000010F00520400780000221004000000283A151000010F005205007800002210040000002880161D000215005800003A100B000100FFFF050052060042280707004CA902000080162900022100580000A41111000200FFFF0500520600FFFF0400421015560106000300150207004C6202000039100F000200FFFF0500520600FFFF040042FF811608000107004CA902000080162000021800580000A41111000200FFFF0500520600FFFF0400421007004CA902000039100F000200FFFF0500520600FFFF0400422339150C00010B0056010600020042010080162000021800580000A51111000200FFFF0500520600FFFF0400421307004CE6020000A21115000300FFFF0500520600FFFF04004213FFFF0400420111000000
+  SourceCode: >-
+    name AZMineQuestDecanusScript;
+
+
+    OnDeath {
+        if (!GetQuestCompleted(AZWhiteHillsMineDialogue)) {
+            if (GetObjectiveDisplayed(AZWhiteHillsMineDialogue, 7) && !GetObjectiveCompleted(AZWhiteHillsMineDialogue, 7)) {
+                return;
+            } else {
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 25, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 30, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 31, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 33, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 35, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 36, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 40, 0);
+                SetObjectiveDisplayed(AZWhiteHillsMineDialogue, 95, 0);
+                SetStage(AZWhiteHillsMineDialogue, 90);
+            }
+        }
+
+        if (!AZBigSparMineCallumREF.GetDisabled()) {
+            AZBigSparMineCallumREF.Kill();
+        }
+
+        if (!GetQuestCompleted(AZBrushQuest01)) {
+            SetStage(AZBrushQuest01, 255);
+            AZGilaMonsterDead01REF.Disable();
+            AZGilaMonsterDead02REF.Disable();
+        }
+
+        if (GetStage(AZBrushQuest02) < 40) {
+            if (!GetObjectiveCompleted(AZBrushQuest02, 16) && !AZBrushQuest02.QuintusBlamed) {
+                SetStage(AZBrushQuest02, 255);
+            } else if (GetObjectiveCompleted(AZBrushQuest02, 16)) {
+                SetStage(AZBrushQuest02, 35);
+                AZBrushQuest02.QuintusMutiny = 1;
+            }
+        }
+
+        if (GetObjectiveDisplayed(AZBrushQuest02, 19)) {
+            SetObjectiveCompleted(AZBrushQuest02, 19, 1);
+        }
+    }
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 006D93:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0209C0:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0209BF:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 02089B:NovaArizona.esm

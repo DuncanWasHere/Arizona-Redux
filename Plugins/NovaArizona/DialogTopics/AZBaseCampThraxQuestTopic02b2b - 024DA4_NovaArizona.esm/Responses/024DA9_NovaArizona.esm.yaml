@@ -1,0 +1,47 @@
+FormKey: 024DA9:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 0199D9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x20796F
+    UseEmotionAnimation: True
+    Unused3: 0x726520
+  ResponseText: '[FAILED] Honesty is a not a word associated with liars like you. If you lie to us so easily, what need does Caesar have for you?  Guards!'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100720031
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 6
+  Function: GetActorValue
+  FirstParameter: 8
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x1610050001007201003B12130003007202006E000000007A0000000000000840
+  SourceCode: >-
+    StartCombat player
+
+    AddReputationExact RepNVCaesarsLegion 0 3
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0F43DD:FalloutNV.esm
+Prompt: Charisma - No, honest!
+ActorValuePerk: 0003EB:FalloutNV.esm

@@ -1,0 +1,40 @@
+FormKey: 020D58:NovaArizona.esm
+FormVersion: 15
+Quest: 00F524:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x206A75
+    UseEmotionAnimation: True
+    Unused3: 0x64206E
+  ResponseText: That's none of your business.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x206A75
+    UseEmotionAnimation: True
+    Unused3: 0x64206E
+  ResponseText: Just give it to her.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100711888
+Choices:
+- 020D55:NovaArizona.esm
+- 020D57:NovaArizona.esm
+- 020D59:NovaArizona.esm
+- 020D63:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What's in the note?

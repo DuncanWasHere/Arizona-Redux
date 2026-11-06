@@ -1,0 +1,40 @@
+FormKey: 0058E5:NovaArizona.esm
+FormVersion: 15
+Quest: 0052B9:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionType: Pained
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x642077
+    UseEmotionAnimation: True
+    Unused3: 0x6F2068
+  ResponseText: Ah.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x642077
+    UseEmotionAnimation: True
+    Unused3: 0x6F2068
+  ResponseText: Now, why would you serve someone like Caesar?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100764348
+Choices:
+- 0058E6:NovaArizona.esm
+- 0058EA:NovaArizona.esm
+- 0058EB:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'm a servant of Caesar.

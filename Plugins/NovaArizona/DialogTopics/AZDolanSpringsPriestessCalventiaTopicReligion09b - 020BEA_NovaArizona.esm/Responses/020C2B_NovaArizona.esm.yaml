@@ -1,0 +1,57 @@
+FormKey: 020C2B:NovaArizona.esm
+FormVersion: 15
+Quest: 00E68C:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Some years ago, the most devoted of us would celebrate the day of the Cleansing Fire by painting our foreheads with ash.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: After Hoover Dam, it became a fad among slaves. They wore ash with no respect to Mars. They said it was the ashes of the Burned Man!
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionType: Anger
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They were doing it to mock us, as if that traitor still lives because they wear him on their faces. So Caesar banned the practice in its entirety.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100722315
+Choices:
+- 020BC7:NovaArizona.esm
+- 020BCC:NovaArizona.esm
+- 020BDC:NovaArizona.esm
+- 020BE4:NovaArizona.esm
+- 020BE5:NovaArizona.esm
+- 020BE6:NovaArizona.esm
+- 020BE7:NovaArizona.esm
+- 020BE8:NovaArizona.esm
+- 020BE9:NovaArizona.esm
+- 020BEB:NovaArizona.esm
+- 020BF3:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: <Keep listening.>

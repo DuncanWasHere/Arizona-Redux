@@ -1,0 +1,72 @@
+FormKey: 00ABE2:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: I knew I could depend on you, friend. You had the look of a real go-getter to ya. Here's the map - oh, and take my shovel with you too.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: You'll want to keep your head on a swivel while you're down there, critters love old mines because of the cool air. Good luck to ya.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100707274
+Choices:
+- 00ABD7:NovaArizona.esm
+- 00ABCD:NovaArizona.esm
+- 00ABCE:NovaArizona.esm
+- 00ABCF:NovaArizona.esm
+- 00ABD6:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x5510050001007202001C00010002100A0002007203006E010000001C00010002100A0002007204006E01000000
+  SourceCode: >-
+    ShowMap AZBigSparMapMarkerREF
+
+    player.additem WeapShovel 1
+
+    player.additem AZMineQuestMap 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00A760:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 11E46F:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ABF1:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E050000006E0100000039100A0002007201006E05000000
+  SourceCode: >-
+    setobjectivedisplayed AZWhiteHillsMineDialogue 5 1
+
+    setstage AZWhiteHillsMineDialogue 5
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+Prompt: You've got yourself a partner.

@@ -1,0 +1,78 @@
+FormKey: 020837:NovaArizona.esm
+EditorID: AZRex
+FormVersion: 15
+ObjectBounds:
+  First: -12, -62, 0
+  Second: 13, 62, 70
+Name: Rex
+Model:
+  File: Creatures\Dog\Skeleton.nif
+ActorEffects:
+- 118E7A:FalloutNV.esm
+UnarmedAttackEffect: 118E7B:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Models:
+- eyessetyellow.nif
+- rex.nif
+- rex_skullcap.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Swims
+  - Walks
+  - PCLevelMult
+  - AllowPCDialogue
+  - TiltFrontBack
+  Fatigue: 200
+  Level: 750
+  CalcMin: 8
+  CalcMax: 40
+  SpeedMultiplier: 100
+  DispositionBase: 35
+Factions:
+- Faction: 07E26A:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 111484:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 11EB46:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 1736FF:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 03A58B:FalloutNV.esm
+Voice: 14F3EA:FalloutNV.esm
+Template: 118E71:FalloutNV.esm
+Script: 02083C:NovaArizona.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Foolhardy
+  EnergyLevel: 50
+  Responsibility: 50
+  Mood: 2163497728
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+Packages:
+- 02083B:NovaArizona.esm
+Data:
+  CombatSkill: 60
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 22
+  Damage: 30
+  Strength: 6
+  Perception: 8
+  Endurance: 8
+  Charisma: 4
+  Intelligence: 2
+  Agility: 8
+  Luck: 5
+AttackReach: 48
+CombatStyle: 033DE3:FalloutNV.esm
+BodyPartData: 17626D:FalloutNV.esm
+TurningSpeed: 90
+BaseScale: 1
+FootWeight: 1
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 16572D:FalloutNV.esm
+ImpactDataset: 07E640:FalloutNV.esm
+MeleeWeaponList: 118F1B:FalloutNV.esm

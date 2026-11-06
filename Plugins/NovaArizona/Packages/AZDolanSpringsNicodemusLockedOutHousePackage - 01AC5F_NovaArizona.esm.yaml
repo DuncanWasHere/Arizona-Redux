@@ -1,0 +1,57 @@
+FormKey: 01AC5F:NovaArizona.esm
+EditorID: AZDolanSpringsNicodemusLockedOutHousePackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+- HeadTrackingOff
+BehaviorFlags:
+- ObserveCombatBehavior
+- ReactionToPlayerActions
+- FriendlyFireComments
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 0
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 01AC60:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: 20
+Duration: 12
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetScriptVariable
+  FirstParameter: 100665349
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetLocked
+  RunOnType: Reference
+  Reference: 013B06:NovaArizona.esm
+- Fluff: 0x000000
+  Function: GetItemCount
+  FirstParameter: 100772462
+IdleAnimations:
+  AnimationCount: 0x04
+  Animations:
+  - 05E9B6:FalloutNV.esm
+  - 05E9B7:FalloutNV.esm
+  - 008F1B:NovaArizona.esm
+  - 008F1C:NovaArizona.esm
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

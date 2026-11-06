@@ -1,0 +1,137 @@
+FormKey: 01EC7A:NovaArizona.esm
+EditorID: AZBigStopChildSoldierQuestScript
+FormVersion: 15
+Fields:
+  MetadataSummary:
+    RefCount: 3
+    VariableCount: 14
+    Type: Quest
+    Enabled: 1
+  CompiledScript: 0x1D0000001000060000000401000016001900030015002058A5110A0002007201006E140000002031203D3D16000D000100090020730A002033203D3DA2110F0003007201006E140000006E0100000019000000190000001600310003002D002058A4110A0002007201006E0F0000002031203D3D2058A4110A0002007201006E140000002031203D3D202626A3110F0003007201006E190000006E01000000A3110F0003007201006E150000006E00000000A3110F0003007201006E160000006E000000001900000016002A00010026002058A5110A0002007201006E160000002031203D3D20720200587E1105000100720300202626A2110F0003007201006E160000006E010000001900000011000000
+  SourceCode: >-
+    scn AZBigStopChildSoldierQuestScript
+
+
+    short NatalieRevealed
+
+    short DesmondOffer
+
+    short LookingforNatalie
+
+    short NatalieSuspicion
+
+    short NatalieReadytoTalk
+
+    short DesmondKnow
+
+    short RiteJoin
+
+    short AguSpeech
+
+
+    short ExecutionComplete
+
+
+    short TempleBarConfrontation ; 1 = Legionaries go hostile, 2 = Legionaries killed by the children, 3 = Legionaries leave
+
+
+    short RaftsRepaired ; Needs to be three to advance the quest.
+
+
+    BEGIN GameMode
+
+
+    if GetObjectiveDisplayed AZBigStopChildSoldierQuest 20 == 1
+    	if RaftsRepaired == 3
+    		SetObjectiveCompleted AZBigStopChildSoldierQuest 20 1
+    	endif
+    endif
+
+
+    if GetObjectiveCompleted AZBigStopChildSoldierQuest 15 == 1 && GetObjectiveCompleted AZBigStopChildSoldierQuest 20 == 1
+    	SetObjectiveDisplayed AZBigStopChildSoldierQuest 25 1
+    	SetObjectiveDisplayed AZBigStopChildSoldierQuest 21 0
+    	SetObjectiveDisplayed AZBigStopChildSoldierQuest 22 0
+    endif
+
+
+    if GetObjectiveDisplayed AZBigStopChildSoldierQuest 22 == 1 && Player.GetHasNote AZNatalieNote
+    	SetObjectiveCompleted AZBigStopChildSoldierQuest 22 1
+    endif
+
+
+    END
+  LocalVariables:
+  - Data:
+      Index: 2
+      Unknown: 0xA08B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: DesmondOffer
+  - Data:
+      Index: 3
+      Unknown: 0xC08B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: LookingforNatalie
+  - Data:
+      Index: 4
+      Unknown: 0x808C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: ExecutionComplete
+  - Data:
+      Index: 6
+      Unknown: 0x808B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: NatalieRevealed
+  - Data:
+      Index: 7
+      Unknown: 0xE08B20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: NatalieSuspicion
+  - Data:
+      Index: 8
+      Unknown: 0x008C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x00000000000000
+    Name: NatalieReadytoTalk
+  - Data:
+      Index: 9
+      Unknown: 0x208C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x64726F6163685C
+    Name: DesmondKnow
+  - Data:
+      Index: 10
+      Unknown: 0x00EB29120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xAC460BC0C6480B
+    Name: RaftsRepaired
+  - Data:
+      Index: 11
+      Unknown: 0x408C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x6F6E466C61672E
+    Name: RiteJoin
+  - Data:
+      Index: 12
+      Unknown: 0xA08C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0x4D65617430312E
+    Name: TempleBarConfrontation
+  - Data:
+      Index: 13
+      Unknown: 0x608C20120000000000000000
+      IsLongOrShort: 1
+      Unknown2: 0xB5480B84C6480B
+    Name: AguSpeech
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EE79:NovaArizona.esm

@@ -1,0 +1,64 @@
+FormKey: 00C313:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 008E4A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: As you like. I'll make an example of him. Deserters are less than scum.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Flags:
+  - OR
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100713207
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730B0002002031
+  SourceCode: Set AZWhiteHillsMineDialogue.CallumDecimated to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 3
+    Enabled: 1
+  CompiledScript: 0x15000A00720100730700020020311600100007000C00207201007309002030203D3D160016000500120020720200582F10050001007203002030203E1600610001005D002058A5110A0002007201006E050000002031203D3D2058A4110A0002007201006E050000002030203D3D2026262058A5110A0002007201006E070000002031203D3D2058A4110A0002007201006E070000002030203D3D202626207C7C39100A0002007201006E28000000180017000100130020720200582F10050001007203002030203D3D39100A0002007201006E5F00000019000000190000001800100001000C00207201007309002031203D3D39100A0002007201006E5F00000019000000
+  SourceCode: >-
+    set AZWhiteHillsMineDialogue.killedcallum to 1
+
+
+    if AZWhiteHillsMineDialogue.SlipperyWillComplete == 0
+    	if Player.GetItemCount AZMineQuestMap > 0
+    		if (GetObjectiveDisplayed AZWhiteHillsMineDialogue 5 == 1 && GetObjectiveCompleted AZWhiteHillsMineDialogue 5 == 0) || (GetObjectiveDisplayed AZWhiteHillsMineDialogue 7 == 1 && GetObjectiveCompleted AZWhiteHillsMineDialogue 7 == 0)
+    			SetStage AZWhiteHillsMineDialogue 40
+    		elseif Player.GetItemCount AZMineQuestMap == 0
+    			SetStage AZWhiteHillsMineDialogue 95
+    		endif
+    	endif
+    elseif AZWhiteHillsMineDialogue.SlipperyWillComplete == 1
+    	SetStage AZWhiteHillsMineDialogue 95
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 008E4A:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00ABF1:NovaArizona.esm
+Prompt: I don't really care what happens to Callum.

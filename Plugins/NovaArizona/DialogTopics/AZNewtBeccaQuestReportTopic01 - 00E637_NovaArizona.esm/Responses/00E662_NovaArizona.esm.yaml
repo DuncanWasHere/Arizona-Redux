@@ -1,0 +1,87 @@
+FormKey: 00E662:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 019BB0:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Great! Here's your reward, as promised.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: Oh, hey, you should come back in a couple days. Depending on how this goes, I might have some more work for you.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100768786
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 100
+  Function: GetItemCount
+  FirstParameter: 100723477
+  RunOnType: Target
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 5
+  Function: GetStage
+  FirstParameter: 100874950
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 20
+  Function: GetStage
+  FirstParameter: 100874950
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0xA3110F0003007201006E070000006E00000000A3110F0003007201006E0A0000006E00000000A3110F0003007201006E0B0000006E00000000A3110F0003007201006E0C0000006E00000000A3110F0003007201006E0D0000006E00000000A3110F0003007201006E0E0000006E00000000
+  SourceCode: >-
+    SetObjectiveDisplayed AZNewtFishingQuest 7 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 10 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 11 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 12 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 13 0
+
+    SetObjectiveDisplayed AZNewtFishingQuest 14 0
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    RefCount: 2
+    Enabled: 1
+  CompiledScript: 0x15000A007201007306000200203239100A0002007201006E14000000361005000100720200
+  SourceCode: >-
+    Set AZNewtFishingQuest.DynamiteMethod to 2
+
+    SetStage AZNewtFishingQuest 20
+
+    StartQuest AZNewtFishingQuestDynamiteRemovalQuest
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 033AC6:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00EB17:NovaArizona.esm
+Prompt: I have managed to obtain 100 sticks of dynamite.

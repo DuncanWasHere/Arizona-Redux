@@ -1,0 +1,66 @@
+FormKey: 037E78:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 01018F:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x61626C
+    UseEmotionAnimation: True
+    Unused3: 0x616D4E
+  ResponseText: Was he a tribal refugee? Yeah, a couple people saw something like that. I was convinced it was just driftwood.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x324C15
+    UseEmotionAnimation: True
+    Unused3: 0x434C15
+  ResponseText: Gotta warn you - don't get your hopes up. The bodies that float across the river usually aren't very talkative.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x324C15
+    UseEmotionAnimation: True
+    Unused3: 0x434C15
+  ResponseText: If the Veterans have arrived at Station Delta, I'd go check with one of them. If not, maybe someone at Bitter Springs noticed something.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 4
+    Unused2: 0x6F4C15
+    UseEmotionAnimation: True
+    Unused3: 0x6F4C15
+  ResponseText: "{think the player's looking for dead family member}I'll, uh, keep you in my thoughts. This part is always tough."
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100729572
+BeginScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073010002002031
+  SourceCode: set AZDeejayQuest.bHooverDamSoldierSpoken to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 037E6B:NovaArizona.esm
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I was wondering if any of the troops around here had seen someone cross Lake Mead. A tribal refugee, to be specific.

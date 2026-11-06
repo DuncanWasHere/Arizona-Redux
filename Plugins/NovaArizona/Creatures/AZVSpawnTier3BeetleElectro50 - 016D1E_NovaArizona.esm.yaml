@@ -1,0 +1,53 @@
+FormKey: 016D1E:NovaArizona.esm
+EditorID: AZVSpawnTier3BeetleElectro50
+FormVersion: 15
+ObjectBounds:
+  First: -41, -25, 0
+  Second: 41, 72, 86
+UnarmedAttackAnimation: Any
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - NoLowLevelProcessing
+  Fatigue: 50
+  Level: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Stats
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+  - BaseData
+  - Inventory
+  - Script
+Template: 016D18:NovaArizona.esm
+AIData:
+  Aggression: Aggressive
+  Confidence: Average
+  EnergyLevel: 2
+  Responsibility: 50
+  Teaches: Barter
+Data:
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Health: 50
+  Strength: 5
+  Perception: 5
+  Endurance: 5
+  Charisma: 5
+  Intelligence: 5
+  Agility: 5
+  Luck: 5
+AttackReach: 32
+CombatStyle: 00003D:FalloutNV.esm
+BodyPartData: 00001D:FalloutNV.esm
+BaseScale: 1
+FootWeight: 3
+ImpactMaterialType: Organic
+SoundLevel: Normal

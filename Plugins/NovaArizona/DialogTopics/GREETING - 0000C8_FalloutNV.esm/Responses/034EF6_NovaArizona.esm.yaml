@@ -1,0 +1,47 @@
+FormKey: 034EF6:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - Goodbye
+  - SayOnce
+Quest: 008F94:NovaArizona.esm
+PreviousInfo: 008FAB:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x686176
+    UseEmotionAnimation: True
+    Unused3: 0x696E65
+  ResponseText: Halt. Civilian crossings are strictly regulated in the Mojave Orientum region, and you haven't been cleared to cross.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x8A5715
+    UseEmotionAnimation: True
+    Unused3: 0xC74A15
+  ResponseText: This gate shall remain closed to you until you've been cleared. Proceed to Topock near Dry Wells if you seek immediate passage.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 3
+    Unused2: 0x9E5715
+    UseEmotionAnimation: True
+    Unused3: 0x8D5715
+  ResponseText: Consider this your first warning.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880115
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

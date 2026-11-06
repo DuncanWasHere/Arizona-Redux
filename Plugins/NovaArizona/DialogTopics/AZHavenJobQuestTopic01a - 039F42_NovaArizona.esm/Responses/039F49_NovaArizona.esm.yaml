@@ -1,0 +1,36 @@
+FormKey: 039F49:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 01BBB0:NovaArizona.esm
+PreviousInfo: 039F48:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696365
+    UseEmotionAnimation: True
+    Unused3: 0x76656E
+  ResponseText: I am. It is what I deserve. Life for a life.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100766392
+Choices:
+- 039F42:NovaArizona.esm
+- 039F43:NovaArizona.esm
+- 039F44:NovaArizona.esm
+- 039F45:NovaArizona.esm
+- 039F46:NovaArizona.esm
+- 039F47:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: If you don't want it to happen again, then just don't do it anymore.

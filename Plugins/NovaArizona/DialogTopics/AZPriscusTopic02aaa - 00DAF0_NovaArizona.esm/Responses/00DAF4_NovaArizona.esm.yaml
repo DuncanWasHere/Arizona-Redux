@@ -1,0 +1,39 @@
+FormKey: 00DAF4:NovaArizona.esm
+FormVersion: 15
+Quest: 00D8C1:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x2E207C
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E6C
+  ResponseText: Well, let's see what you've brought for me.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100718783
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetItemCount
+  FirstParameter: 100716045
+  RunOnType: Reference
+  Reference: 010592:NovaArizona.esm
+Choices:
+- 00DAF5:NovaArizona.esm
+- 00DAF7:NovaArizona.esm
+- 00DAF9:NovaArizona.esm
+- 00DAFB:NovaArizona.esm
+- 00DAFF:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: I'd like to trade for your rifle.

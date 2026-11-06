@@ -1,0 +1,45 @@
+FormKey: 025862:NovaArizona.esm
+EditorID: AZDefaultUnlockTermWALL3HardCallesSpring
+FormVersion: 15
+ObjectBounds:
+  First: -12, -18, -23
+  Second: 52, 22, 19
+Name: Waste Storage Terminal
+Model:
+  File: Terminals\Terminal01.NIF
+Description: >-
+  CALLES SPRING WASTE DISPOSAL SITE
+
+  NW Disposal Systems, Arizona Branch #3
+
+  >\ Welcome, USER!
+LoopingSound: 018EC0:FalloutNV.esm
+PasswordNote: 025861:NovaArizona.esm
+BaseHackingDifficulty: Hard
+ServerType: Server6
+MenuItems:
+- ItemText: Disengage Lock
+  ResultText: Clearance granted, Unlocking...
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.unlock
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x80D726440000000000000000
+        Unknown2: 0xF7773FF9F7773F
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1

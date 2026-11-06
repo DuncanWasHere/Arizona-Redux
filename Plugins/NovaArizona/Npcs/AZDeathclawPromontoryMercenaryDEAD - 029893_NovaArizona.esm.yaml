@@ -1,0 +1,179 @@
+FormKey: 029893:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZDeathclawPromontoryMercenaryDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -23, -17, 0
+  Second: 23, 17, 132
+Name: Dead Mercenary
+Model:
+  File: Characters\_Male\Skeleton.NIF
+Configuration:
+  Flags:
+  - Female
+  - NoLowLevelProcessing
+  Fatigue: 150
+  Level: 8
+  CalcMin: 1
+  SpeedMultiplier: 100
+  DispositionBase: 35
+  TemplateFlags:
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - Inventory
+Factions:
+- Faction: 13F8B6:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 13F8B4:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 134B6C:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0A46E7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 0711A6:FalloutNV.esm
+  Unused: 0x4F444C
+Voice: 13C8D0:FalloutNV.esm
+Template: 165046:FalloutNV.esm
+Race: 000019:FalloutNV.esm
+UnarmedAttackAnimation: Any
+Items:
+- Item:
+    Item: 12D511:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 12D512:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 12D513:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 162959:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295A:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295D:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16295F:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 162960:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165018:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 165019:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16501C:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16501D:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 16501F:FalloutNV.esm
+    Count: 1
+AIData:
+  Confidence: Brave
+  EnergyLevel: 100
+  Responsibility: 50
+  Teaches: Barter
+  Assistance: HelpsAllies
+Packages:
+- 0FDA92:FalloutNV.esm
+- 025754:FalloutNV.esm
+Class: 033DDA:FalloutNV.esm
+Strength: 6
+Perception: 7
+Endurance: 5
+Charisma: 3
+Intelligence: 4
+Agility: 6
+Luck: 4
+PlayerSkills:
+  SkillValues:
+  - Key: Barter
+    Value: 12
+  - Key: BigGuns
+    Value: 47
+  - Key: EnergyWeapons
+    Value: 14
+  - Key: Explosives
+    Value: 14
+  - Key: Lockpick
+    Value: 14
+  - Key: Medicine
+    Value: 12
+  - Key: MeleeWeapons
+    Value: 51
+  - Key: Repair
+    Value: 12
+  - Key: Science
+    Value: 12
+  - Key: SmallGuns
+    Value: 51
+  - Key: Sneak
+    Value: 51
+  - Key: Speech
+    Value: 12
+  - Key: Survival
+    Value: 12
+  - Key: Unarmed
+    Value: 12
+  SkillOffsets:
+  - Key: Barter
+    Value: 15
+  - Key: BigGuns
+    Value: 0
+  - Key: EnergyWeapons
+    Value: 20
+  - Key: Explosives
+    Value: 30
+  - Key: Lockpick
+    Value: 10
+  - Key: Medicine
+    Value: 5
+  - Key: MeleeWeapons
+    Value: 0
+  - Key: Repair
+    Value: 25
+  - Key: Science
+    Value: 5
+  - Key: SmallGuns
+    Value: 4
+  - Key: Sneak
+    Value: 0
+  - Key: Speech
+    Value: 10
+  - Key: Survival
+    Value: 40
+  - Key: Unarmed
+    Value: 20
+HeadParts:
+- 0B6DE4:FalloutNV.esm
+Hair: 032D37:FalloutNV.esm
+HairLength: 0
+Eyes: 004252:FalloutNV.esm
+HairColor: '#006F520F'
+CombatStyle: 0B2945:FalloutNV.esm
+ImpactMaterialType: Organic
+FaceGenGeometrySymmetric: 0x5A4B853FB9B1243F6ADDBB3F2A2C5A3F804C353EB06F063F1C923B40346DE63FE0DDE73F6924A3BF141F8FBEEB7EE53F2A21BB3EBC2F943F3274EF3F7898D6BF1332DA4090A23C3F479EFCBF911639BF88C719BE6402FA3FA0ACD03E88FF8F3E270BD4BF247BBA3E6A75373FE5D283C0F8F97C3F541C11C0787E84BF3C7AB440AFCE3840205870C01433C7BF00D3CFBC70F2BB40F7632940293194C0F5F58E4047D3F6C047A02AC0F9E68B40F7734B409A015A404A67EA3E4B82C8C02E3DA23FE4254DBF1122C440
+FaceGenGeometryAsymmetric: 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+FaceGenTextureSymmetric: 0x129EB1BEC41C5EBFA216A93EF49A0BBF840A88BE649AA63F94EFFF3E0600D7BEE43CC13F88B5A73EF018A63FCA2A2EBF28501C3FC0AEDD3EBB5460BF92C9CFBE48478ABF65A328BEAA54BC3E00C8673F022FF0BE47B753BFBF1EB4BFB817923E309580BF6CE972BF2D5124C0D2B11ABFDF19ABBEF7BB113F2AB30140385D733D5349C4BFDF0EFF3E1AED203EB093BFBFBA24633E3E07813E24F11840908E35BF2573563F7240A23F4CB389C0FAA47DBFC23017C0A746A8BFB6F384BFDAA65140FAF70B3F380155BE
+NAM5: 255
+Height: 1
+Weight: 1
+DATADataTypeState:
+- Break0
+MajorFlags:
+- 0x80000

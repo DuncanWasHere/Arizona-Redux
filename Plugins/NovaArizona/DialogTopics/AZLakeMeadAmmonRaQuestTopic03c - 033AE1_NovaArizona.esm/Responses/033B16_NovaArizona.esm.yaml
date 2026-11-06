@@ -1,0 +1,43 @@
+FormKey: 033B16:NovaArizona.esm
+FormVersion: 15
+Data:
+  Flags:
+  - SayOnce
+Quest: 033ACC:NovaArizona.esm
+PreviousInfo: 033B17:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '[FAILED] Ammo is worthless without the guns to fire them. The 5mm is a frustrating cartridge.'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100874954
+- CompareOperator: LessThan
+  Fluff: 0x000000
+  ComparisonValue: 65
+  Function: GetActorValue
+  FirstParameter: 32
+  RunOnType: Target
+Choices:
+- 033AE3:NovaArizona.esm
+- 033ADF:NovaArizona.esm
+- 033AE0:NovaArizona.esm
+- 033AE1:NovaArizona.esm
+- 033AE2:NovaArizona.esm
+- 033AEA:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: What about a bunch of ammo instead?
+ActorValuePerk: 0004B0:FalloutNV.esm

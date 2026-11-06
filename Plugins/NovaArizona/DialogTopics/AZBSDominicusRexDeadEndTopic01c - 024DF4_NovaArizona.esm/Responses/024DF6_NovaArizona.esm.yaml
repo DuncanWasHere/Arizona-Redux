@@ -1,0 +1,39 @@
+FormKey: 024DF6:NovaArizona.esm
+FormVersion: 15
+Quest: 017560:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x696E65
+    UseEmotionAnimation: True
+    Unused3: 0x6F6E27
+  ResponseText: Do tell.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100708631
+- CompareOperator: GreaterThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 2
+  Function: GetQuestVariable
+  FirstParameter: 100698646
+  SecondParameter: 5
+- Fluff: 0x000000
+  Function: GetDead
+  RunOnType: Reference
+  Reference: 008A66:NovaArizona.esm
+Choices:
+- 024E0E:NovaArizona.esm
+- 024E0F:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Ahiga is playing his own game, and I can prove it.

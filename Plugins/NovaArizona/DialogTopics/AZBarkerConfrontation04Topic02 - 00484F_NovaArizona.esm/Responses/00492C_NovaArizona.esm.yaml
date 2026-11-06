@@ -1,0 +1,32 @@
+FormKey: 00492C:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x652056
+    UseEmotionAnimation: True
+    Unused3: 0x203720
+  ResponseText: He wasn't so mighty, was he?
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 004934:NovaArizona.esm
+- 004935:NovaArizona.esm
+- 004936:NovaArizona.esm
+- 004937:NovaArizona.esm
+- 004932:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: Wanted to meet the mighty Caesar.

@@ -1,0 +1,55 @@
+FormKey: 036E7F:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 0130AD:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x64206E
+    UseEmotionAnimation: True
+    Unused3: 0x207365
+  ResponseText: '...'
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 5
+    Enabled: 1
+  CompiledScript: 0x39150C00010B005601020015004201001C00010052100A0002007203006E010000001C00010052100A0002007204006E0100000039100A0002007205006E1E000000
+  SourceCode: >+
+    AZRustyHooksDialogueQuest.bBearBombDisarmed = 1
+
+
+    Player.RemoveItem SensorModule 1
+
+    Player.RemoveItem ScrapElectronics 1
+
+
+    SetStage AZRustyHooksPackFightQuest 30
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 000014:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0130AD:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022109:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 13B2B1:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 022FA3:NovaArizona.esm
+Prompt: <Create the bomb jammer.>

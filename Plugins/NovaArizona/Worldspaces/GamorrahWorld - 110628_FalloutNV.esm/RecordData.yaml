@@ -1,0 +1,102 @@
+FormKey: 110628:FalloutNV.esm
+EditorID: GamorrahWorld
+FormVersion: 15
+Name: Courtyard
+Parent:
+  Worldspace: 0DA726:FalloutNV.esm
+  Flags:
+  - UseMapData
+Climate: 174006:FalloutNV.esm
+Water: 030009:FalloutNV.esm
+LodWater: 030009:FalloutNV.esm
+LodWaterHeight: 0
+LandData:
+  DefaultLandHeight: 1000
+WorldMapScale: 0.7
+CellXOffset: -23000
+CellYOffset: 90000
+ImageSpace: 08809D:FalloutNV.esm
+Flags:
+- SmallWorld
+- CannotFastTravel
+ObjectBoundsMin: -36864, -24576
+ObjectBoundsMax: 32768, 49152
+CanopyShadow: ''
+WaterNoiseTexture: Data\Textures\Water\wastelandwaterpotomac.dds
+TopCell:
+  FormKey: 1106AC:FalloutNV.esm
+  MajorRecordFlagsRaw: 1024
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - QuestItemPersistentReference
+  Flags:
+  - HasWater
+  Grid: {}
+  LightTemplate: Null
+  LightInheritFlags:
+  - AmbientColor
+  - DirectionalColor
+  - FogColor
+  - FogNear
+  - FogFar
+  - ClipDistance
+  WaterHeight: 3.4028235E+38
+  WaterNoiseTexture: ''
+  Persistent:
+  - MutagenObjectType: PlacedObject
+    FormKey: 11C3EC:FalloutNV.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 10D2CC:FalloutNV.esm
+    Placement:
+      Position: 984, 3116, 1000
+      Rotation: 0, 0, 2.7052612
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedNpc
+    FormKey: 01F708:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: AZGOMMinnieREF
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 01F707:NovaArizona.esm
+    Position: 2294.9473, 2755.493, 1000
+    Rotation: 0, 0, 3.1415927
+  - MutagenObjectType: PlacedObject
+    FormKey: 020F1F:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    EditorID: AZGOMChickHadleySeduceBedMarkerREF
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 00003B:FalloutNV.esm
+    Target: 020F34:NovaArizona.esm
+    LinkedReference: 020F1F:NovaArizona.esm
+    Placement:
+      Position: 2064.1309, -435.33478, 1384.0509
+      Rotation: 0, 0, 4.2931957
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 020F35:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 012AF1:NovaArizona.esm
+    TeleportDestination:
+      Door: 020F34:NovaArizona.esm
+      Position: -1532.8135, -3326.9934, 2205.3015
+      Rotation: 0, 0, 3.1415927
+    Scale: 0.22
+    Placement:
+      Position: 936.7443, 550.37024, 1383.8562
+      Rotation: 0, 0, 0.7200018
+    MajorFlags:
+    - Persistent
+  MajorFlags:
+  - Persistent
+SubCellsUnknownGroupData: -2141294536

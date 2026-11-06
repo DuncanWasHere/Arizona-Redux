@@ -1,0 +1,81 @@
+FormKey: 01A8FE:NovaArizona.esm
+MajorRecordFlagsRaw: 524288
+EditorID: AZYaoGuaiSmallDEAD
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- CantWait
+ObjectBounds:
+  First: -60, -95, 0
+  Second: 60, 94, 145
+Name: Dead Yao Guai Cub
+Model:
+  File: NVDLC02\Creatures\YaoGuai\Skeleton.nif
+UnarmedAttackAnimation: AttackPower
+Models:
+- nvdlc02yaoguai.nif
+ModelListTextures: 0x00000000
+Configuration:
+  Flags:
+  - Walks
+  - TiltFrontBack
+  Fatigue: 200
+  Level: 14
+  SpeedMultiplier: 125
+  DispositionBase: 35
+  TemplateFlags:
+  - Traits
+  - Factions
+  - ActorEffectList
+  - AIData
+  - AIPackages
+  - ModelAnimation
+Factions:
+- Faction: 000013:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 02147C:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 05FF9F:FalloutNV.esm
+  Unused: 0x49465A
+- Faction: 07E275:FalloutNV.esm
+  Unused: 0x49465A
+DeathItem: 03A58E:FalloutNV.esm
+Voice: 094EED:FalloutNV.esm
+Template: 00DF8E:NovaArizona.esm
+AIData:
+  Aggression: VeryAggressive
+  Confidence: Brave
+  EnergyLevel: 20
+  Responsibility: 50
+  Mood: 842257664
+  Teaches: Barter
+  Assistance: HelpsFriendsAndAllies
+  AggroRadiusBehavior: True
+  AggroRadius: 700
+Packages:
+- 025482:FalloutNV.esm
+- 074FE6:FalloutNV.esm
+Data:
+  Type: MutatedAnimal
+  CombatSkill: 50
+  MagicSkill: 50
+  StealthSkill: 50
+  Damage: 60
+  Strength: 7
+  Perception: 5
+  Endurance: 6
+  Charisma: 5
+  Intelligence: 7
+  Agility: 6
+  Luck: 6
+AttackReach: 100
+CombatStyle: 0116BE:HonestHearts.esm
+BodyPartData: 009F6D:HonestHearts.esm
+TurningSpeed: 200
+BaseScale: 0.5
+FootWeight: 3
+ImpactMaterialType: Organic
+SoundLevel: Normal
+InheritsSoundFrom: 03FB04:FalloutNV.esm
+ImpactDataset: 07E684:FalloutNV.esm
+MajorFlags:
+- 0x80000

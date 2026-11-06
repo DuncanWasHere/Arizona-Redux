@@ -1,0 +1,69 @@
+FormKey: 021D39:NovaArizona.esm
+EditorID: AZPilgrimMineDefaultUnlockTermWALL4VeryHard
+FormVersion: 15
+ObjectBounds:
+  First: -12, -18, -23
+  Second: 52, 22, 19
+Name: Katherine's Treasure Vault Terminal
+Model:
+  File: Terminals\Terminal01.NIF
+Description: >2+
+        SoftLock Solutions, Inc
+  "Your Security is Our Security"
+
+  >\ Welcome, KATHERINE!
+LoopingSound: 018EC0:FalloutNV.esm
+PasswordNote: 021F80:NovaArizona.esm
+BaseHackingDifficulty: VeryHard
+ServerType: Server6
+MenuItems:
+- ItemText: Disengage Lock
+  ResultText: Clearance granted, Unlocking...
+  MenuItemFlags:
+  - ForceRedraw
+  EmbeddedScript:
+    MetadataSummary:
+      RefCount: 1
+      VariableCount: 1
+      Enabled: 1
+    CompiledScript: 0x15000B00660100060020586B1100001C000100731002000000
+    SourceCode: >-
+      ref myLink
+
+      set myLink to getLinkedRef
+
+      myLink.unlock
+    LocalVariables:
+    - Data:
+        Index: 1
+        Unknown: 0x608E27440000000000000000
+        Unknown2: 0x00000000000000
+      Name: myLink
+    References:
+    - MutagenObjectType: ScriptVariableReference
+      VariableIndex: 1
+- ItemText: 10/18/2281
+  ResultText: Loading entry...
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: 9/20/2281
+  ResultText: Loading entry...
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: 8/7/2281
+  ResultText: Loading entry...
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: 7/12/2281
+  ResultText: Loading entry...
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+- ItemText: 6/18/2281
+  ResultText: Loading entry...
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1

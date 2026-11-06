@@ -1,0 +1,142 @@
+FormKey: 00863E:NovaArizona.esm
+EditorID: AZBaseCampReservationQuest
+FormVersion: 15
+Script: 00863D:NovaArizona.esm
+Name: Praise the Lord and Pass the Ammunition
+QuestData:
+  Flags:
+  - StartGameEnabled
+  - DefaultScriptProcessingDelay
+  Unused: 65407
+Stages:
+- Index: 5
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 2
+        Enabled: 1
+      CompiledScript: 0xA3110F0003007202006E050000006E010000001C000100211002000000
+      SourceCode: >-
+        setobjectivedisplayed AZBaseCampReservationQuest 5 1
+
+
+        AZReservationDisplacerGlovesREF.enable
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0086D1:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00863E:NovaArizona.esm
+- Index: 10
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E050000006E01000000A3110F0003007201006E0A0000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampReservationQuest 5 1
+
+        setobjectivedisplayed AZBaseCampReservationQuest 10 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00863E:NovaArizona.esm
+- Index: 25
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E01000000A3110F0003007201006E190000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampReservationQuest 10 1
+
+        setobjectivedisplayed AZBaseCampReservationQuest 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00863E:NovaArizona.esm
+- Index: 50
+  LogEntries:
+  - Flags: []
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 1
+        Enabled: 1
+      CompiledScript: 0xA2110F0003007201006E0A0000006E01000000A3110F0003007201006E190000006E01000000
+      SourceCode: >-
+        setobjectivecompleted AZBaseCampReservationQuest 10 1
+
+        setobjectivedisplayed AZBaseCampReservationQuest 25 1
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00863E:NovaArizona.esm
+- Index: 100
+  LogEntries:
+  - Flags:
+    - CompleteQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 4
+        Enabled: 1
+      CompiledScript: 0x1C0001007711070001006E640000001C0002009710050001007204001C000300971005000100720400
+      SourceCode: >-
+        Player.RewardXP 100
+
+
+        AZBaseCampBethREF.AddScriptPackage AZReservationTradersLeavePackage
+
+        AZBaseCampHankREF.AddScriptPackage AZReservationTradersLeavePackage
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 000014:FalloutNV.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00B3FE:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00C402:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0086D3:NovaArizona.esm
+- Index: 255
+  LogEntries:
+  - Flags:
+    - FailQuest
+    EmbeddedScript:
+      MetadataSummary:
+        RefCount: 3
+        Enabled: 1
+      CompiledScript: 0x1C0001009710050001007203001C000200971005000100720300
+      SourceCode: >-
+        AZBaseCampHankREF.AddScriptPackage AZReservationTradersLeavePackage
+
+        AZBaseCampBethREF.AddScriptPackage AZReservationTradersLeavePackage
+      References:
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00C402:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 00B3FE:NovaArizona.esm
+      - MutagenObjectType: ScriptObjectReference
+        Reference: 0086D3:NovaArizona.esm
+Objectives:
+- Index: 5
+  Description: Speak to Beth about Hank's deal with Caesar's Legion.
+  Targets:
+  - Target: 00B3FE:NovaArizona.esm
+    Unused: 0x11102B
+- Index: 25
+  Description: Red Rivers has agreed to purchase the supply of Displacer Gloves. Return to Hank.
+  Targets:
+  - Target: 00C402:NovaArizona.esm
+    Unused: 0xC13B32
+- Index: 50
+  Description: Red Rivers has refused to purchase the supply of Displacer Gloves. Return to Hank.
+  Targets:
+  - Target: 00C402:NovaArizona.esm
+    Unused: 0xC13B32
+- Index: 100
+  Description: Your business with Alamos Co-operative has concluded.
+- Index: 10
+  Description: Speak to Red Rivers about purchasing a supply of Displacer Gloves from Hank and Beth.
+  Targets:
+  - Target: 013565:NovaArizona.esm
+    Unused: 0xC03B32

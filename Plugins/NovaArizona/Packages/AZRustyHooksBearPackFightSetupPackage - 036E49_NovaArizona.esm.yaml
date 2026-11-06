@@ -1,0 +1,36 @@
+FormKey: 036E49:NovaArizona.esm
+EditorID: AZRustyHooksBearPackFightSetupPackage
+FormVersion: 15
+GeneralFlags:
+- SkipFalloutBehavior
+Unused: 40
+Flags:
+  MutagenObjectType: PackageTravel
+Unused2: 24948
+Location:
+  Location:
+    MutagenObjectType: PackageLocationReference
+    Reference: 036E44:NovaArizona.esm
+ScheduleMonth: -1
+ScheduleDayOfWeek: Any
+ScheduleTime: -1
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 40
+  Function: GetStage
+  FirstParameter: 100806563
+OnBegin:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnEnd:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null
+OnChange:
+  EmbeddedScript:
+    MetadataSummary:
+      Enabled: 1
+  Topic: Null

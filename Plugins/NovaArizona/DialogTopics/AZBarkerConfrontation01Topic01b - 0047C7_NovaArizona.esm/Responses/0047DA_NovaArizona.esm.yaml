@@ -1,0 +1,41 @@
+FormKey: 0047DA:NovaArizona.esm
+FormVersion: 15
+Quest: 0047C2:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x640105
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: They're not wrong.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- CompareOperator: LessThanOrEqualTo
+  Fluff: 0x000000
+  ComparisonValue: 1
+  Function: 575
+  FirstParameter: 1000413
+  SecondParameter: 2
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetStageDone
+  FirstParameter: 100681665
+  SecondParameter: 50
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100681668
+Choices:
+- 013B42:NovaArizona.esm
+- 0047DD:NovaArizona.esm
+- 0047DE:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1
+Prompt: The Legion says that someone in this area has been attacking caravans.

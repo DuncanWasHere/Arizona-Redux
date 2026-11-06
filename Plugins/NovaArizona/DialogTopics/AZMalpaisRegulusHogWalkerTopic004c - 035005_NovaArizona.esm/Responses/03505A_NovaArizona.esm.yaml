@@ -1,0 +1,58 @@
+FormKey: 03505A:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Data:
+  Flags:
+  - Goodbye
+Quest: 01751A:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: '...'
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 2
+    Unused2: 0x000000
+    UseEmotionAnimation: True
+    Unused3: 0x000000
+  ResponseText: "...Y-you're serious, aren't you? Fine, fine, okay. I'll do whatever you want. Just keep this between us, please!"
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100880180
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: HasPerk
+  FirstParameter: 1099469
+  RunOnType: Target
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x39150C00010B0056010100100042010016001400010010002058A5110A0002007201006E0A000000A2110F0003007201006E0A0000006E0100000019000000
+  SourceCode: >-
+    AZMalpaisSniperQuest.bTerrifiedRegulus = 1
+
+    if GetObjectiveDisplayed AZMalpaisSniperQuest 10
+      SetObjectiveCompleted AZMalpaisSniperQuest 10 1
+    endif
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01CA97:NovaArizona.esm
+Prompt: I will tear your jaw so wide open that they'll be using your skull as a novelty toilet.
+ActorValuePerk: 10C6CD:FalloutNV.esm

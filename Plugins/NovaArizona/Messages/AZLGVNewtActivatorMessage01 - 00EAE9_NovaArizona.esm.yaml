@@ -1,0 +1,34 @@
+FormKey: 00EAE9:NovaArizona.esm
+EditorID: AZLGVNewtActivatorMessage01
+FormVersion: 15
+Description: ''
+Flags:
+- MessageBox
+MenuButtons:
+- Text: Do nothing.
+- Text: '[Perception] Investigate closely.'
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetQuestVariable
+    FirstParameter: 100720154
+    SecondParameter: 11
+- Text: '[Strength] Push the shelf.'
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetQuestVariable
+    FirstParameter: 100720154
+    SecondParameter: 11
+- Text: '[Repair] Investigate the shelf.'
+  Conditions:
+  - Fluff: 0x000000
+    Function: GetQuestVariable
+    FirstParameter: 100720154
+    SecondParameter: 11
+- Text: Pull the bookshelf open.
+  Conditions:
+  - CompareOperator: GreaterThanOrEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetQuestVariable
+    FirstParameter: 100720154
+    SecondParameter: 11

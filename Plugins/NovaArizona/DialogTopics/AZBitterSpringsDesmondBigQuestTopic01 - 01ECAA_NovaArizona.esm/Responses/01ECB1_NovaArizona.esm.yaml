@@ -1,0 +1,44 @@
+FormKey: 01ECB1:NovaArizona.esm
+MajorRecordFlagsRaw: 8192
+FormVersion: 15
+Fallout3MajorRecordFlags:
+- 0x2000
+Quest: 01EC7B:NovaArizona.esm
+PreviousInfo: Null
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x533336
+    UseEmotionAnimation: True
+    Unused3: 0x302E30
+  ResponseText: I, uh, where did you...? It doesn't matter.
+  ScriptNotes: ''
+  Edits: ''
+- ResponseData:
+    Unused2: 0x000000
+    Unused3: 0x000000
+  ResponseText: It doesn't matter. I need someone to do something really dangerous, but that Mark there might help you with my friend.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100789372
+Choices:
+- 01ECAB:NovaArizona.esm
+- 01EE74:NovaArizona.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    RefCount: 1
+    Enabled: 1
+  CompiledScript: 0x15000A0072010073020002002031
+  SourceCode: set AZBigStopChildSoldierQuest.DesmondOffer to 1
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01EC79:NovaArizona.esm
+Prompt: I have this. Why'd you ask? <You show him the Mark of Caesar.>
