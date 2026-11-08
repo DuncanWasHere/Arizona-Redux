@@ -1,3 +1,3 @@
 @echo off
-title Rebuild NovaArizona.esm
+title Build NovaArizona.esm
 "%~dp0fo-git.exe" build-esm --window
