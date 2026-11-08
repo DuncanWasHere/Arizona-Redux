@@ -1,4 +1,4 @@
-name: plugin-check
+name: plugin-validate
 on:
   pull_request:
     paths: ["Plugins/**", "fo-git.json", "Tools/fo-git.exe"]
@@ -6,7 +6,7 @@ on:
     branches: [main]
     paths: ["Plugins/**", "fo-git.json", "Tools/fo-git.exe"]
 jobs:
-  check:
+  validate:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,5 +17,13 @@ jobs:
             fo-git.json
             .gitattributes
           sparse-checkout-cone-mode: false
-      - name: Check the master text
-        run: Tools/fo-git.exe check --text
+      - uses: actions/cache@v4
+        with:
+          path: .fo-git/spriggit-cli
+          key: spriggit-${{ hashFiles('fo-git.json') }}
+      - name: Validate the Spriggit text
+        run: Tools/fo-git.exe validate --text
+      - name: Build the ESM
+        run: Tools/fo-git.exe build-esm
+      - name: Validate the ESM
+        run: Tools/fo-git.exe validate --esm --round-trip
