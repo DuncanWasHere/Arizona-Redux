@@ -26,71 +26,54 @@ jobs:
         id: version
         shell: bash
         run: echo "name=$(tr -d '[:space:]' < VERSION)-nightly.$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
-      - uses: actions/cache@v4
+      - uses: ./.github/actions/package
         if: steps.changed.outputs.skip != 'true'
+        id: package
         with:
-          path: .fo-git/spriggit-cli
-          key: spriggit-${{ hashFiles('fo-git.json') }}
-      - name: Validate Spriggit text
-        if: steps.changed.outputs.skip != 'true'
-        run: Tools/fo-git.exe validate --text
-      - name: Build ESM
-        if: steps.changed.outputs.skip != 'true'
-        run: Tools/fo-git.exe build-esm
-      - name: Validate ESM
-        if: steps.changed.outputs.skip != 'true'
-        run: Tools/fo-git.exe validate --esm --round-trip
-      - name: Get BSArch
-        if: steps.changed.outputs.skip != 'true'
-        run: |
-          curl.exe -sSL -o "$env:RUNNER_TEMP\xEdit.7z" https://github.com/TES5Edit/TES5Edit/releases/download/xedit-4.1.5f/xEdit.4.1.5f.7z
-          7z e -y "-o$env:RUNNER_TEMP" "$env:RUNNER_TEMP\xEdit.7z" BSArch64.exe
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-      - name: Pack BSA
-        if: steps.changed.outputs.skip != 'true'
-        run: |
-          $bsa = "$env:RUNNER_TEMP\bsa"
-          $out = "$env:RUNNER_TEMP\release"
-          New-Item -ItemType Directory $bsa, $out | Out-Null
-          foreach ($f in "Meshes", "Sound", "Textures") {
-            Copy-Item $f $bsa -Recurse
-          }
-          # Loose assets
-          Remove-Item "$bsa\Textures\Interface\WorldMap" -Recurse
-          Remove-Item "$bsa\Sound\Songs" -Recurse
-          & "$env:RUNNER_TEMP\BSArch64.exe" pack $bsa "$out\NovaArizona - Main.bsa" -fnv -mt
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-      - name: Zip
-        if: steps.changed.outputs.skip != 'true'
-        run: |
-          $out = "$env:RUNNER_TEMP\release"
-          $skip = "Meshes", "Sound", "Textures", "Plugins", "Tools", "README.md", "fo-git.json", "VERSION"
-          Get-ChildItem -Force | Where-Object { $_.Name -notin $skip -and -not $_.Name.StartsWith(".") } | Copy-Item -Destination $out -Recurse
-          New-Item -ItemType Directory "$out\Textures\Interface", "$out\Sound" | Out-Null
-          Copy-Item Textures\Interface\WorldMap "$out\Textures\Interface" -Recurse
-          Copy-Item Sound\Songs "$out\Sound" -Recurse
-          7z a -tzip "$env:RUNNER_TEMP\NovaArizona-${{ steps.version.outputs.name }}.zip" "$out\*"
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          name: ${{ steps.version.outputs.name }}
       - name: Write changelog
         if: steps.changed.outputs.skip != 'true'
+        id: changelog
         shell: bash
         env:
           LAST: ${{ steps.changed.outputs.last }}
         run: |
+          changes="$RUNNER_TEMP/changes.md"
+          : > "$changes"
+          if [ -n "$LAST" ] && [ "$LAST" != "$GITHUB_SHA" ]; then
+            sh .github/changelog.sh "$LAST" "$GITHUB_SHA" > "$changes"
+          fi
           notes="$RUNNER_TEMP/notes.md"
           echo "Built from $GITHUB_SHA." > "$notes"
-          echo >> "$notes"
-          if [ -n "$LAST" ] && [ "$LAST" != "$GITHUB_SHA" ]; then
+          if [ -s "$changes" ]; then
+            echo >> "$notes"
             echo "## Changelog" >> "$notes"
             echo >> "$notes"
-            # Merge commits left out
-            gh api "repos/$GITHUB_REPOSITORY/compare/$LAST...$GITHUB_SHA" \
-              --jq '.commits[] | select(.parents | length == 1) | "- \(.commit.message | split("\n")[0]) (\(.sha[0:7]))"' >> "$notes"
+            cat "$changes" >> "$notes"
           fi
+          {
+            echo "text<<EOF"
+            cat "$changes"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
       - name: Publish nightly release
         if: steps.changed.outputs.skip != 'true'
         shell: bash
         run: |
           gh release delete nightly --yes --cleanup-tag || true
-          gh release create nightly "$RUNNER_TEMP/NovaArizona-${{ steps.version.outputs.name }}.zip" --prerelease --target "$GITHUB_SHA" \
+          gh release create nightly "${{ steps.package.outputs.zip }}" --prerelease --target "$GITHUB_SHA" \
             --title "Nova Arizona ${{ steps.version.outputs.name }}" --notes-file "$RUNNER_TEMP/notes.md"
+      - name: Upload to Nexus
+        if: steps.changed.outputs.skip != 'true'
+        uses: Nexus-Mods/upload-action@v1.0.0-beta.11
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUS_NIGHTLY_FILE_ID }}
+          filename: ${{ steps.package.outputs.zip }}
+          version: ${{ steps.version.outputs.name }}
+          display_name: Nova Arizona Nightly (EXPERIMENTAL)
+          description: Automated nightly build from ${{ github.sha }}. Does not include pre-generated LOD.
+          category: miscellaneous
+          archive_existing_version: true
+          mod_id: ${{ vars.NEXUS_MOD_ID }}
+          changelog: ${{ steps.changelog.outputs.text }}

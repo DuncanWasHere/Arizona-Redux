@@ -1,0 +1,54 @@
+name: release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read version
+        id: version
+        shell: bash
+        run: echo "version=$(tr -d '[:space:]' < VERSION)" >> "$GITHUB_OUTPUT"
+      - uses: ./.github/actions/package
+        id: package
+        with:
+          name: ${{ steps.version.outputs.version }}
+      - name: Write changelog
+        id: changelog
+        shell: bash
+        run: |
+          # Latest release that isn't a prerelease
+          last=$(gh api "repos/$GITHUB_REPOSITORY/releases/latest" --jq .tag_name 2>/dev/null || true)
+          changes="$RUNNER_TEMP/changes.md"
+          if [ -n "$last" ]; then
+            sh .github/changelog.sh "$last" "$GITHUB_SHA" > "$changes"
+          else
+            echo "$changes"
+          fi
+          {
+            echo "text<<EOF"
+            cat "$changes"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+      - name: Publish release
+        shell: bash
+        run: |
+          gh release create "v${{ steps.version.outputs.version }}" "${{ steps.package.outputs.zip }}" --target "$GITHUB_SHA" \
+            --title "Nova Arizona ${{ steps.version.outputs.version }}" --notes-file "$RUNNER_TEMP/changes.md"
+      - name: Upload to Nexus
+        uses: Nexus-Mods/upload-action@v1.0.0-beta.11
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUS_MAIN_FILE_ID }}
+          filename: ${{ steps.package.outputs.zip }}
+          version: ${{ steps.version.outputs.version }}
+          display_name: Nova Arizona
+          category: main
+          update_mod_version: true
+          mod_id: ${{ vars.NEXUS_MOD_ID }}
+          changelog: ${{ steps.changelog.outputs.text }}
