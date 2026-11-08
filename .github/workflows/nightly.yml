@@ -17,9 +17,15 @@ jobs:
         shell: bash
         run: |
           last=$(git ls-remote origin refs/tags/nightly | cut -f1)
+          echo "last=$last" >> "$GITHUB_OUTPUT"
           if [ "$last" = "$GITHUB_SHA" ] && [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
             echo "skip=true" >> "$GITHUB_OUTPUT"
           fi
+      - name: Read version
+        if: steps.changed.outputs.skip != 'true'
+        id: version
+        shell: bash
+        run: echo "name=$(tr -d '[:space:]' < VERSION)-nightly.$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
       - uses: actions/cache@v4
         if: steps.changed.outputs.skip != 'true'
         with:
@@ -58,17 +64,33 @@ jobs:
         if: steps.changed.outputs.skip != 'true'
         run: |
           $out = "$env:RUNNER_TEMP\release"
-          $skip = "Meshes", "Sound", "Textures", "Plugins", "Tools", "README.md", "fo-git.json"
+          $skip = "Meshes", "Sound", "Textures", "Plugins", "Tools", "README.md", "fo-git.json", "VERSION"
           Get-ChildItem -Force | Where-Object { $_.Name -notin $skip -and -not $_.Name.StartsWith(".") } | Copy-Item -Destination $out -Recurse
           New-Item -ItemType Directory "$out\Textures\Interface", "$out\Sound" | Out-Null
           Copy-Item Textures\Interface\WorldMap "$out\Textures\Interface" -Recurse
           Copy-Item Sound\Songs "$out\Sound" -Recurse
-          7z a -tzip "$env:RUNNER_TEMP\NovaArizona-nightly.zip" "$out\*"
+          7z a -tzip "$env:RUNNER_TEMP\NovaArizona-${{ steps.version.outputs.name }}.zip" "$out\*"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Write changelog
+        if: steps.changed.outputs.skip != 'true'
+        shell: bash
+        env:
+          LAST: ${{ steps.changed.outputs.last }}
+        run: |
+          notes="$RUNNER_TEMP/notes.md"
+          echo "Built from $GITHUB_SHA." > "$notes"
+          echo >> "$notes"
+          if [ -n "$LAST" ] && [ "$LAST" != "$GITHUB_SHA" ]; then
+            echo "## Changelog" >> "$notes"
+            echo >> "$notes"
+            # Merge commits left out
+            gh api "repos/$GITHUB_REPOSITORY/compare/$LAST...$GITHUB_SHA" \
+              --jq '.commits[] | select(.parents | length == 1) | "- \(.commit.message | split("\n")[0]) (\(.sha[0:7]))"' >> "$notes"
+          fi
       - name: Publish nightly release
         if: steps.changed.outputs.skip != 'true'
         shell: bash
         run: |
           gh release delete nightly --yes --cleanup-tag || true
-          gh release create nightly "$RUNNER_TEMP/NovaArizona-nightly.zip" --prerelease --target "$GITHUB_SHA" \
-            --title "Nightly build" --notes "Built from $GITHUB_SHA."
+          gh release create nightly "$RUNNER_TEMP/NovaArizona-${{ steps.version.outputs.name }}.zip" --prerelease --target "$GITHUB_SHA" \
+            --title "Nova Arizona ${{ steps.version.outputs.name }}" --notes-file "$RUNNER_TEMP/notes.md"
