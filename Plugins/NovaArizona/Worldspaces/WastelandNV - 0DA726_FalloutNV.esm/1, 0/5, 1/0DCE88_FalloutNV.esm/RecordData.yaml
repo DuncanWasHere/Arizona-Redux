@@ -99,7 +99,7 @@ Landscape:
     - [-1, 2, 1, 0, -1, -2, 0, 1, 1, -1, 1, 0, -1, 1, 1, -2, -1, 1, 2, 1, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     - [0, 2, 2, -1, -2, -1, 0, 0, 1, 0, 0, 0, 0, 2, -1, -1, -2, 1, 2, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     - [-1, 2, 2, 0, -2, -2, -1, 0, 1, 2, 0, 1, 0, 2, 0, -2, -1, 1, 1, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    Unknown: 112, 94, 128
+    Unknown: 117, 94, 128
   VertexColors:
   - ['255, 255, 255', '254, 254, 254', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '254, 254, 254', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '254, 254, 254', '254, 254, 254', '254, 254, 254', '254, 253, 253', '251, 251, 250', '251, 251, 250', '253, 253, 253', '254, 254, 254', '254, 254, 254']
   - ['255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '255, 255, 255', '254, 254, 254', '254, 254, 254', '254, 254, 254', '254, 254, 254', '252, 251, 251', '252, 252, 252', '254, 254, 254', '254, 254, 254', '254, 254, 254']
@@ -138,13 +138,13 @@ Landscape:
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 103FF7:FalloutNV.esm
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 103FF7:FalloutNV.esm
       Quadrant: BottomRight
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -458,11 +458,49 @@ Landscape:
     Header:
       Texture: 103FF7:FalloutNV.esm
       Quadrant: TopLeft
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 103FF7:FalloutNV.esm
       Quadrant: TopRight
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
+Temporary:
+- MutagenObjectType: PlacedObject
+  FormKey: 030000:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 1058A2:FalloutNV.esm
+  Placement:
+    Position: 183688.27, 32951.113, 1767.3198
+    Rotation: 0, 0, 2.600001
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 030001:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 1058A0:FalloutNV.esm
+  Placement:
+    Position: 183142.16, 32796.45, 1513.6552
+    Rotation: 0, 0, 2.9000006
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 030002:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 1058A0:FalloutNV.esm
+  Scale: 1.22
+  Placement:
+    Position: 184139.31, 34722.465, 1444.7516
+    Rotation: 0, 0, 1.6050074
+  MajorFlags:
+  - VisibleWhenDistant

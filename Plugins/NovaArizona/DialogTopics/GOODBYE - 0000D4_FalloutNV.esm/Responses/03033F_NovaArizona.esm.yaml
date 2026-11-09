@@ -1,0 +1,37 @@
+FormKey: 03033F:NovaArizona.esm
+FormVersion: 15
+Data:
+  Type: Conversation
+  Flags:
+  - Goodbye
+  - Random
+Quest: 03032A:NovaArizona.esm
+PreviousInfo: 03033B:NovaArizona.esm
+Responses:
+- ResponseData:
+    EmotionValue: 50
+    ResponseNumber: 1
+    Unused2: 0x6E4661
+    UseEmotionAnimation: True
+    Unused3: 0x20415A
+  ResponseText: Indeed.
+  ScriptNotes: ''
+  Edits: ''
+Conditions:
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetIsID
+  FirstParameter: 100702073
+- Fluff: 0x000000
+  ComparisonValue: 1
+  Function: GetInFaction
+  FirstParameter: 100860716
+  RunOnType: Target
+LinkFrom:
+- 0000D2:FalloutNV.esm
+BeginScript:
+  MetadataSummary:
+    Enabled: 1
+EndScript:
+  MetadataSummary:
+    Enabled: 1

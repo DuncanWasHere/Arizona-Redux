@@ -21,7 +21,6 @@ Vertices:
 - 155221.73, 12288, 5723.1416
 Triangles:
 - Vertices: 0, 1, 2
-  EdgeLink_0_1: 2
   EdgeLink_1_2: 1
   EdgeLink_2_0: -1
   Flags:
@@ -39,7 +38,7 @@ Triangles:
   Flags:
   - Found
 - Vertices: 9, 5, 4
-  EdgeLink_0_1: 4
+  EdgeLink_0_1: 1
   EdgeLink_1_2: 4
   EdgeLink_2_0: 7
   Flags:
@@ -52,14 +51,14 @@ Triangles:
   Flags:
   - Found
 - Vertices: 10, 7, 6
-  EdgeLink_0_1: 6
+  EdgeLink_0_1: 2
   EdgeLink_1_2: 9
   EdgeLink_2_0: 8
   Flags:
   - EdgeLink_0_1
   - Found
 - Vertices: 11, 8, 6
-  EdgeLink_0_1: 1
+  EdgeLink_0_1: 5
   EdgeLink_1_2: -1
   EdgeLink_2_0: 9
   Flags:
@@ -74,13 +73,14 @@ Triangles:
   - Found
 - Vertices: 6, 5, 10
   EdgeLink_0_1: 4
-  EdgeLink_1_2: 5
+  EdgeLink_1_2: 4
   EdgeLink_2_0: 5
   Flags:
   - EdgeLink_1_2
   - Found
 - Vertices: 6, 7, 11
   EdgeLink_0_1: 5
+  EdgeLink_1_2: 6
   EdgeLink_2_0: 6
   Flags:
   - EdgeLink_1_2
@@ -104,17 +104,17 @@ NavmeshGrid:
     - 8
     - 9
 EdgeLinks:
-- Mesh: 00C1F3:NovaArizona.esm
-  Triangle: 64
-- Mesh: 00C1F3:NovaArizona.esm
-  Triangle: 61
 - Mesh: 00C1F9:NovaArizona.esm
   Triangle: 38
 - Mesh: 00C1F9:NovaArizona.esm
-  Triangle: 40
-- Mesh: 00C1F9:NovaArizona.esm
   Triangle: 42
 - Mesh: 00C1F9:NovaArizona.esm
-  Triangle: 44
-- Mesh: 00C1F9:NovaArizona.esm
   Triangle: 46
+- Mesh: 00C1F9:NovaArizona.esm
+  Triangle: 40
+- Mesh: 00C1F9:NovaArizona.esm
+  Triangle: 44
+- Mesh: 00C1F3:NovaArizona.esm
+  Triangle: 61
+- Mesh: 00C1F3:NovaArizona.esm
+  Triangle: 64

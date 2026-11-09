@@ -7,7 +7,7 @@ Fields:
     RefCount: 4
     Enabled: 1
   CompiledScript: 0x1D000000761611000209005304006E76736507004C8000040610000B0002006D0000000100720100A21115000300FFFF0500520200FFFF0400422EFFFF04004201A31115000300FFFF0500520200FFFF0400422FFFFF040042013A151000010F005203007800002110040000002839150C00010B00560102001A00420100361009000100FFFF050052040022100200000011000000
-  SourceCode: "name AZAhigaMessageActivatorScript;\r\n\r\nOnActivate::PlayerREF {\r\n    SetObjectiveCompleted(AZBigStopAhigaQuest01, 46, 1);\r\n    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 47, 1);\r\n\r\n    AZAhigaMessageStaticREF.enable();\r\n    \r\n    AZBigStopAhigaQuest01.AhigaHouseCheck = 1;\r\n\r\n    StartQuest(AZBigStopAhigaAmbushQuest);\r\n\r\n    Disable();\r\n}\r\n\0"
+  SourceCode: "name AZAhigaMessageActivatorScript;\r\n\r\nOnActivate::PlayerREF {\r\n    SetObjectiveCompleted(AZBigStopAhigaQuest01, 46, 1);\r\n    SetObjectiveDisplayed(AZBigStopAhigaQuest01, 47, 1);\r\n\r\n    AZAhigaMessageStaticREF.enable();\r\n    \r\n    AZBigStopAhigaQuest01.AhigaHouseCheck = 1;\r\n\r\n    StartQuest(AZBigStopAhigaAmbushQuest);\r\n\r\n    Disable();\r\n}\r\n"
   References:
   - MutagenObjectType: ScriptObjectReference
     Reference: 000014:FalloutNV.esm

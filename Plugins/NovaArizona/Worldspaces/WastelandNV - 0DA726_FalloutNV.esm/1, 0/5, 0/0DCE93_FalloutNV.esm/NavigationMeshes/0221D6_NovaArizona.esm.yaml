@@ -3,29 +3,29 @@ FormVersion: 15
 Version: 11
 Data:
   Cell: 0DCE93:FalloutNV.esm
-  VertexCount: 30
-  TriangleCount: 37
-  EdgeLinkCount: 5
+  VertexCount: 83
+  TriangleCount: 100
+  EdgeLinkCount: 6
 Vertices:
-- 169514, 28672, 3946.625
+- 169513.66, 28672, 3946.6035
 - 169837.78, 28672.004, 3974.8618
 - 169654.64, 28925.67, 3987.1238
 - 169962.8, 28971.777, 3985.325
 - 169661.12, 29103.887, 3992.828
 - 169844.83, 29268.707, 3974.1099
-- 169655.62, 29366.459, 4040.4834
+- 169667.81, 29379.664, 3986.4514
 - 169919.14, 29564.738, 3963.9575
-- 169706.3, 29695.92, 3984
-- 169968.56, 29814.848, 3975.8203
-- 170286.69, 29614.89, 3936.0127
-- 170242.27, 29938.9, 3900.629
+- 169728.64, 29704.795, 3984
+- 169977.38, 29910.592, 3954.766
+- 170323.94, 29666, 3933.7285
+- 170324.72, 29870.035, 3915.5637
 - 170090.48, 29679.512, 3940.0342
 - 170153.11, 29596.664, 3937.7915
 - 170081.36, 29586.873, 3941.0098
 - 170206.1, 29408.418, 3931.9478
-- 170392.75, 29414.184, 3920.0671
+- 170405.45, 29354.55, 3922.9998
 - 170240.53, 29251.857, 3939.7253
-- 170421.44, 29254.482, 3930.5405
+- 170506.25, 29203.006, 3938.8384
 - 170262.39, 29016.492, 3949.2012
 - 170465.34, 29009.441, 3935.7356
 - 170366.47, 28793.055, 3951.3237
@@ -37,8 +37,62 @@ Vertices:
 - 170064.47, 28672, 3970.9707
 - 169415.23, 28942.205, 3971.5674
 - 169319.19, 28672, 3934.4492
+- 169411.2, 29696.08, 3993
+- 169349.28, 29349.818, 3999.157
+- 169252.39, 29654.992, 3997.6265
+- 169202.9, 29895.61, 4017.1848
+- 169066.47, 29747.32, 4032.96
+- 169081.77, 30046.014, 3954.3765
+- 168865.8, 29977.08, 4023.7166
+- 168800.36, 30175.615, 3895.1892
+- 168974.73, 30318.607, 3850.9238
+- 169253.73, 30203.627, 3871.9749
+- 169206.77, 30029.521, 3945.091
+- 169422.66, 29084.71, 3984
+- 170444.27, 29785.877, 3928.9104
+- 170505.03, 30035.26, 3966.6365
+- 170530.64, 29706.99, 3972.937
+- 170732.08, 29925.805, 3990.0671
+- 170690.55, 29507.658, 4039.0583
+- 170862.3, 29681.158, 4049.391
+- 170909.48, 29531.42, 4058.1946
+- 170472.31, 29618.51, 3969.8481
+- 170618.94, 29440.178, 4025.2263
+- 170979.05, 29852.842, 4008.672
+- 170915.31, 30139.719, 3968.8433
+- 171196.12, 30018.74, 3976.7412
+- 171100.02, 30252.53, 3936.7307
+- 171372.08, 30121.57, 3960.0972
+- 171212, 30336.639, 3927.131
+- 171005.89, 30497.283, 3878.4338
+- 171202.2, 30434.902, 3905.5728
+- 170813.47, 30330.602, 3890.8118
+- 170889.45, 30240.045, 3934.4924
+- 170731.38, 30424.023, 3824.2268
+- 170657.64, 30264.594, 3913.8967
+- 170563.84, 30339.635, 3836.0854
+- 170539.88, 30166.035, 3933.0977
+- 170388.42, 30181.307, 3865.749
+- 170414.1, 29898.73, 3924.3276
+- 170543.58, 29914.92, 3981.214
+- 171084.03, 29670.072, 4035.8318
+- 170992.08, 29373.582, 4034.758
+- 171189.89, 29554.244, 4054.8018
+- 171369.25, 29696.877, 4030.1924
+- 171259.98, 29839.012, 4000.1228
+- 171464.3, 29936.873, 3985.5808
+- 171559.69, 30018.852, 3978.4482
+- 171491.16, 29692.498, 4032.4163
+- 171827.89, 29754.055, 4048.2183
+- 171646.28, 29641.43, 4044.9321
+- 171827.17, 29618.457, 4060.7095
+- 171501.31, 29590.094, 4046.5186
+- 170649.66, 29058.535, 3928
+- 170552.19, 29364.055, 3918.3728
+- 170447.89, 29509.783, 3918.0142
 Triangles:
 - Vertices: 0, 1, 2
+  EdgeLink_0_1: 3
   EdgeLink_1_2: 1
   EdgeLink_2_0: 29
   Flags:
@@ -64,7 +118,7 @@ Triangles:
 - Vertices: 4, 5, 6
   EdgeLink_0_1: 3
   EdgeLink_1_2: 5
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 49
   Flags:
   - Found
 - Vertices: 5, 7, 6
@@ -76,7 +130,7 @@ Triangles:
 - Vertices: 6, 7, 8
   EdgeLink_0_1: 5
   EdgeLink_1_2: 7
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 37
   Flags:
   - Found
 - Vertices: 7, 9, 8
@@ -87,7 +141,7 @@ Triangles:
   - Found
 - Vertices: 12, 10, 11
   EdgeLink_0_1: 10
-  EdgeLink_1_2: -1
+  EdgeLink_1_2: 51
   EdgeLink_2_0: 9
   Flags:
   - Found
@@ -124,7 +178,7 @@ Triangles:
 - Vertices: 10, 15, 16
   EdgeLink_0_1: 13
   EdgeLink_1_2: 15
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 99
   Flags:
   - Found
 - Vertices: 15, 17, 16
@@ -136,7 +190,7 @@ Triangles:
 - Vertices: 16, 17, 18
   EdgeLink_0_1: 15
   EdgeLink_1_2: 17
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 98
   Flags:
   - Found
 - Vertices: 17, 19, 18
@@ -148,7 +202,7 @@ Triangles:
 - Vertices: 18, 19, 20
   EdgeLink_0_1: 17
   EdgeLink_1_2: 19
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 97
   Flags:
   - Found
 - Vertices: 19, 21, 20
@@ -160,7 +214,7 @@ Triangles:
 - Vertices: 20, 21, 22
   EdgeLink_0_1: 19
   EdgeLink_1_2: 21
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 96
   Flags:
   - Found
 - Vertices: 21, 23, 22
@@ -171,7 +225,7 @@ Triangles:
   - Found
 - Vertices: 22, 23, 24
   EdgeLink_0_1: 21
-  EdgeLink_1_2: 1
+  EdgeLink_1_2: 4
   EdgeLink_2_0: -1
   Flags:
   - EdgeLink_1_2
@@ -203,7 +257,6 @@ Triangles:
   - Found
 - Vertices: 3, 1, 27
   EdgeLink_0_1: 1
-  EdgeLink_1_2: 3
   EdgeLink_2_0: 26
   Flags:
   - EdgeLink_1_2
@@ -211,7 +264,7 @@ Triangles:
 - Vertices: 25, 26, 27
   EdgeLink_0_1: -1
   EdgeLink_1_2: 26
-  EdgeLink_2_0: 4
+  EdgeLink_2_0: 1
   Flags:
   - EdgeLink_2_0
   - Found
@@ -223,8 +276,9 @@ Triangles:
 - Vertices: 0, 28, 29
   EdgeLink_0_1: 29
   EdgeLink_1_2: -1
-  EdgeLink_2_0: -1
+  EdgeLink_2_0: 5
   Flags:
+  - EdgeLink_2_0
   - Found
 - Vertices: 13, 14, 15
   EdgeLink_0_1: -1
@@ -262,32 +316,417 @@ Triangles:
   EdgeLink_2_0: 17
   Flags:
   - Found
+- Vertices: 8, 30, 6
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 38
+  EdgeLink_2_0: 6
+  Flags:
+  - Found
+- Vertices: 6, 30, 31
+  EdgeLink_0_1: 37
+  EdgeLink_1_2: 39
+  EdgeLink_2_0: 49
+  Flags:
+  - Found
+- Vertices: 30, 32, 31
+  EdgeLink_0_1: 40
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 38
+  Flags:
+  - Found
+- Vertices: 30, 33, 32
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 41
+  EdgeLink_2_0: 39
+  Flags:
+  - Found
+- Vertices: 32, 33, 34
+  EdgeLink_0_1: 40
+  EdgeLink_1_2: 42
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 33, 35, 34
+  EdgeLink_0_1: 48
+  EdgeLink_1_2: 43
+  EdgeLink_2_0: 41
+  Flags:
+  - Found
+- Vertices: 34, 35, 36
+  EdgeLink_0_1: 42
+  EdgeLink_1_2: 44
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 35, 37, 36
+  EdgeLink_0_1: 45
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 43
+  Flags:
+  - Found
+- Vertices: 35, 38, 37
+  EdgeLink_0_1: 46
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 44
+  Flags:
+  - Found
+- Vertices: 35, 39, 38
+  EdgeLink_0_1: 47
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 45
+  Flags:
+  - Found
+- Vertices: 35, 40, 39
+  EdgeLink_0_1: 48
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 46
+  Flags:
+  - Found
+- Vertices: 33, 40, 35
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 47
+  EdgeLink_2_0: 42
+  Flags:
+  - Found
+- Vertices: 6, 31, 4
+  EdgeLink_0_1: 38
+  EdgeLink_1_2: 50
+  EdgeLink_2_0: 4
+  Flags:
+  - Found
+- Vertices: 31, 41, 4
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 49
+  Flags:
+  - Found
+- Vertices: 10, 42, 11
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 74
+  EdgeLink_2_0: 8
+  Flags:
+  - Found
+- Vertices: 62, 63, 64
+  EdgeLink_0_1: 73
+  EdgeLink_1_2: 54
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 64, 65, 43
+  EdgeLink_0_1: 54
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 63, 65, 64
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 53
+  EdgeLink_2_0: 52
+  Flags:
+  - Found
+- Vertices: 44, 46, 45
+  EdgeLink_0_1: 58
+  EdgeLink_1_2: 56
+  EdgeLink_2_0: 77
+  Flags:
+  - Found
+- Vertices: 45, 46, 47
+  EdgeLink_0_1: 55
+  EdgeLink_1_2: 57
+  EdgeLink_2_0: 60
+  Flags:
+  - Found
+- Vertices: 46, 48, 47
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 78
+  EdgeLink_2_0: 56
+  Flags:
+  - Found
+- Vertices: 44, 49, 46
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 59
+  EdgeLink_2_0: 55
+  Flags:
+  - Found
+- Vertices: 46, 49, 50
+  EdgeLink_0_1: 58
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 45, 47, 51
+  EdgeLink_0_1: 56
+  EdgeLink_1_2: 83
+  EdgeLink_2_0: 61
+  Flags:
+  - Found
+- Vertices: 45, 51, 52
+  EdgeLink_0_1: 60
+  EdgeLink_1_2: 62
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 51, 53, 52
+  EdgeLink_0_1: 85
+  EdgeLink_1_2: 63
+  EdgeLink_2_0: 61
+  Flags:
+  - Found
+- Vertices: 52, 53, 54
+  EdgeLink_0_1: 62
+  EdgeLink_1_2: 64
+  EdgeLink_2_0: 70
+  Flags:
+  - Found
+- Vertices: 53, 55, 54
+  EdgeLink_0_1: 87
+  EdgeLink_1_2: 65
+  EdgeLink_2_0: 63
+  Flags:
+  - Found
+- Vertices: 54, 55, 56
+  EdgeLink_0_1: 64
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 66
+  Flags:
+  - Found
+- Vertices: 54, 56, 57
+  EdgeLink_0_1: 65
+  EdgeLink_1_2: 67
+  EdgeLink_2_0: 68
+  Flags:
+  - Found
+- Vertices: 56, 58, 57
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 66
+  Flags:
+  - Found
+- Vertices: 57, 59, 54
+  EdgeLink_0_1: 71
+  EdgeLink_1_2: 69
+  EdgeLink_2_0: 66
+  Flags:
+  - Found
+- Vertices: 54, 59, 60
+  EdgeLink_0_1: 68
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 70
+  Flags:
+  - Found
+- Vertices: 52, 54, 60
+  EdgeLink_0_1: 63
+  EdgeLink_1_2: 69
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 57, 61, 59
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 72
+  EdgeLink_2_0: 68
+  Flags:
+  - Found
+- Vertices: 59, 61, 62
+  EdgeLink_0_1: 71
+  EdgeLink_1_2: 73
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 61, 63, 62
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 52
+  EdgeLink_2_0: 72
+  Flags:
+  - Found
+- Vertices: 11, 42, 66
+  EdgeLink_0_1: 51
+  EdgeLink_1_2: 75
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 42, 67, 66
+  EdgeLink_0_1: 76
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 74
+  Flags:
+  - Found
+- Vertices: 42, 44, 67
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 77
+  EdgeLink_2_0: 75
+  Flags:
+  - Found
+- Vertices: 44, 45, 67
+  EdgeLink_0_1: 55
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 76
+  Flags:
+  - Found
+- Vertices: 47, 48, 68
+  EdgeLink_0_1: 57
+  EdgeLink_1_2: 79
+  EdgeLink_2_0: 83
+  Flags:
+  - Found
+- Vertices: 48, 69, 68
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 80
+  EdgeLink_2_0: 78
+  Flags:
+  - Found
+- Vertices: 68, 69, 70
+  EdgeLink_0_1: 79
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 81
+  Flags:
+  - Found
+- Vertices: 68, 70, 71
+  EdgeLink_0_1: 80
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 82
+  Flags:
+  - Found
+- Vertices: 71, 72, 68
+  EdgeLink_0_1: 94
+  EdgeLink_1_2: 84
+  EdgeLink_2_0: 81
+  Flags:
+  - Found
+- Vertices: 47, 68, 51
+  EdgeLink_0_1: 78
+  EdgeLink_1_2: 84
+  EdgeLink_2_0: 60
+  Flags:
+  - Found
+- Vertices: 51, 68, 72
+  EdgeLink_0_1: 83
+  EdgeLink_1_2: 82
+  EdgeLink_2_0: 85
+  Flags:
+  - Found
+- Vertices: 51, 72, 53
+  EdgeLink_0_1: 84
+  EdgeLink_1_2: 86
+  EdgeLink_2_0: 62
+  Flags:
+  - Found
+- Vertices: 72, 73, 53
+  EdgeLink_0_1: 94
+  EdgeLink_1_2: 87
+  EdgeLink_2_0: 85
+  Flags:
+  - Found
+- Vertices: 53, 73, 55
+  EdgeLink_0_1: 86
+  EdgeLink_1_2: 88
+  EdgeLink_2_0: 64
+  Flags:
+  - Found
+- Vertices: 73, 74, 55
+  EdgeLink_0_1: 89
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 87
+  Flags:
+  - Found
+- Vertices: 73, 75, 74
+  EdgeLink_0_1: 95
+  EdgeLink_1_2: 90
+  EdgeLink_2_0: 88
+  Flags:
+  - Found
+- Vertices: 74, 75, 76
+  EdgeLink_0_1: 89
+  EdgeLink_1_2: 91
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 75, 77, 76
+  EdgeLink_0_1: 93
+  EdgeLink_1_2: 92
+  EdgeLink_2_0: 90
+  Flags:
+  - Found
+- Vertices: 76, 77, 78
+  EdgeLink_0_1: 91
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 75, 79, 77
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 91
+  Flags:
+  - Found
+- Vertices: 73, 72, 71
+  EdgeLink_0_1: 86
+  EdgeLink_1_2: 82
+  EdgeLink_2_0: 95
+  Flags:
+  - Found
+- Vertices: 71, 75, 73
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 89
+  EdgeLink_2_0: 94
+  Flags:
+  - Found
+- Vertices: 20, 22, 80
+  EdgeLink_0_1: 20
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 97
+  Flags:
+  - Found
+- Vertices: 18, 20, 80
+  EdgeLink_0_1: 18
+  EdgeLink_1_2: 96
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 16, 18, 81
+  EdgeLink_0_1: 16
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 10, 16, 82
+  EdgeLink_0_1: 14
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
 NavmeshGrid:
-  Divisor: 2
-  MaxDistanceX: 609.9453
-  MaxDistanceY: 633.4502
-  Min: 169319.19, 28672, 3900.629
-  Max: 170539.08, 29938.9, 4040.4834
+  Divisor: 4
+  MaxDistanceX: 756.8828
+  MaxDistanceY: 456.3208
+  Min: 168800.36, 28672, 3824.2268
+  Max: 171827.89, 30497.283, 4060.7095
   Cells:
+  - Triangles:
+    - 0
+    - 29
+    - 30
+    - 50
   - Triangles:
     - 0
     - 1
     - 2
     - 3
     - 4
-    - 5
+    - 17
+    - 18
+    - 19
+    - 23
+    - 24
+    - 25
+    - 26
     - 27
+    - 28
     - 29
-    - 30
-    - 33
-    - 34
     - 35
+    - 36
+    - 49
+    - 50
   - Triangles:
-    - 1
-    - 2
-    - 3
-    - 15
-    - 16
     - 17
     - 18
     - 19
@@ -296,24 +735,71 @@ NavmeshGrid:
     - 22
     - 23
     - 24
-    - 25
-    - 26
-    - 27
-    - 28
-    - 33
-    - 34
-    - 35
-    - 36
+    - 96
+    - 97
+  - {}
   - Triangles:
+    - 37
+    - 38
+    - 39
+    - 49
+    - 50
+  - Triangles:
+    - 3
     - 4
     - 5
     - 6
     - 7
     - 11
     - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 31
     - 32
     - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 49
+    - 50
   - Triangles:
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 78
+    - 79
+    - 80
+    - 97
+    - 98
+    - 99
+  - Triangles:
+    - 80
+    - 81
+  - Triangles:
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 47
+    - 48
+  - Triangles:
+    - 6
     - 7
     - 8
     - 9
@@ -322,20 +808,104 @@ NavmeshGrid:
     - 12
     - 13
     - 14
-    - 15
-    - 16
     - 31
     - 32
-    - 33
-    - 34
+    - 37
+  - Triangles:
+    - 8
+    - 9
+    - 10
+    - 13
+    - 14
+    - 51
+    - 53
+    - 55
+    - 56
+    - 57
+    - 58
+    - 59
+    - 60
+    - 61
+    - 62
+    - 74
+    - 75
+    - 76
+    - 77
+    - 78
+    - 79
+    - 80
+    - 83
+    - 84
+    - 85
+    - 99
+  - Triangles:
+    - 62
+    - 63
+    - 64
+    - 78
+    - 79
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 85
+    - 86
+    - 87
+    - 88
+    - 89
+    - 90
+    - 91
+    - 92
+    - 93
+    - 94
+    - 95
+  - Triangles:
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+  - {}
+  - Triangles:
+    - 52
+    - 53
+    - 54
+    - 61
+    - 62
+    - 63
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+    - 73
+  - Triangles:
+    - 62
+    - 63
+    - 64
+    - 65
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 87
+    - 88
 EdgeLinks:
+- Mesh: 00CE01:NovaArizona.esm
+  Triangle: 384
+- Mesh: 00CE01:NovaArizona.esm
+  Triangle: 386
+- Mesh: 00CE01:NovaArizona.esm
+  Triangle: 387
 - Mesh: 00CE01:NovaArizona.esm
   Triangle: 397
 - Mesh: 00CE01:NovaArizona.esm
   Triangle: 398
 - Mesh: 00CE01:NovaArizona.esm
-  Triangle: 387
-- Mesh: 00CE01:NovaArizona.esm
-  Triangle: 384
-- Mesh: 00CE01:NovaArizona.esm
-  Triangle: 386
+  Triangle: 409
