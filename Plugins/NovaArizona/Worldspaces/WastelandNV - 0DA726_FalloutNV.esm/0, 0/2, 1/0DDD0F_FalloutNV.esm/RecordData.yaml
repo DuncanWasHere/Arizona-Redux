@@ -101,7 +101,7 @@ Landscape:
     - [9, 5, 6, 5, 5, 2, 0, -1, 0, 1, 6, 7, 7, 8, 7, 5, 3, 0, -2, -3, -5, -6, -6, -6, -6, -5, -2, 0, 2, 4, 3, 3, 3]
     - [10, 6, 7, 7, 5, 3, -1, -4, -1, 0, 5, 6, 8, 8, 7, 6, 2, 1, -2, -4, -5, -6, -6, -6, -6, -4, -2, 1, 1, 2, 2, 2, 2]
     - [11, 8, 8, 8, 6, 4, -3, -6, -3, -1, 2, 7, 7, 9, 6, 6, 2, 1, -3, -3, -5, -5, -6, -6, -5, -3, -1, -1, 1, 1, 1, 0, 0]
-    Unknown: 112, 94, 128
+    Unknown: 117, 94, 128
   VertexColors:
   - ['122, 107, 103', '104, 87, 84', '104, 86, 83', '104, 86, 83', '104, 86, 83', '104, 86, 83', '105, 87, 84', '108, 91, 88', '111, 94, 92', '109, 91, 89', '109, 91, 88', '121, 105, 102', '140, 127, 122', '169, 161, 153', '174, 162, 157', '166, 152, 149', '166, 151, 149', '174, 160, 157', '222, 217, 214', '251, 251, 250', '207, 205, 194', '207, 205, 194', '207, 205, 194', '207, 205, 194', '206, 204, 193', '169, 158, 154', '166, 151, 149', '166, 151, 149', '169, 155, 153', '179, 166, 165', '196, 187, 185', '244, 242, 242', '234, 233, 228']
   - ['115, 98, 95', '104, 86, 83', '105, 87, 84', '106, 88, 85', '105, 87, 84', '104, 86, 83', '104, 86, 83', '104, 86, 83', '104, 86, 83', '104, 86, 83', '108, 91, 88', '132, 118, 113', '170, 161, 154', '181, 171, 165', '173, 160, 158', '176, 164, 162', '166, 152, 150', '193, 184, 179', '234, 233, 229', '245, 245, 242', '207, 205, 194', '207, 205, 194', '218, 216, 209', '206, 204, 193', '196, 191, 182', '203, 201, 190', '166, 151, 149', '166, 151, 149', '170, 155, 153', '192, 185, 178', '194, 188, 180', '199, 191, 188', '247, 246, 245']
@@ -140,7 +140,7 @@ Landscape:
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 038A26:FalloutNV.esm
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -906,7 +906,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: BottomRight
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -1961,7 +1961,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopLeft
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -2742,7 +2742,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopRight
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -3283,7 +3283,7 @@ Temporary:
   BoundHalfExtents: 3680.275, 0, 1472.4497
   Placement:
     Position: 85184.95, 39005.055, 5364.8706
-    Rotation: 0, 0, 2.4184778
+    Rotation: 0, -0, 2.4184778
   MajorFlags:
   - InitiallyDisabled
 - MutagenObjectType: PlacedObject
@@ -3316,6 +3316,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85438.805, 38482, 4692.755
     Rotation: 0, 0, 1.5000023
@@ -3346,6 +3352,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85493.41, 37459.668, 4686.236
     Rotation: 0, 0, 1.5000005
@@ -3431,6 +3443,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85354.66, 37332.242, 4916.358
     Rotation: 1.7453292E-06, 6.223188, 5.583188
@@ -3447,6 +3465,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85359.28, 37326.016, 4984.24
     Rotation: 1.7453292E-06, 6.223188, 0
@@ -3463,6 +3487,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85363.3, 37330.438, 5063.064
     Rotation: 1.7453292E-06, 6.223188, 5.583188
@@ -3479,6 +3509,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85401.516, 37644.79, 4924.255
     Rotation: 0, 0, 4.583189
@@ -3495,6 +3531,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Placement:
     Position: 85362.93, 38237.934, 4924.255
     Rotation: 0, 0, 4.583189
@@ -3539,6 +3581,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Scale: 0.86
   Placement:
     Position: 83504.055, 38381.586, 5227.8
@@ -3556,6 +3604,12 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x100
+    - 0x400
+    - 0x800
+    - 0x20000
+    - 0x40000
+    - 0x4000000
   Scale: 0.97
   Placement:
     Position: 83475.945, 38323.727, 5212.205

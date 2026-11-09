@@ -17,8 +17,8 @@ LightInheritFlags:
 WaterHeight: 2600
 WaterNoiseTexture: ''
 Regions:
-- 037272:NovaArizona.esm
 - 037273:NovaArizona.esm
+- 037272:NovaArizona.esm
 AcousticSpace: 113D62:FalloutNV.esm
 Landscape:
   FormKey: 0DE78C:FalloutNV.esm
@@ -99,7 +99,7 @@ Landscape:
     - [8, -8, -10, -14, -14, -12, -7, -5, -3, -2, -4, -4, -8, -6, -6, 0, 5, 8, 8, 7, 5, 2, -1, 0, 0, 0, 7, 9, 13, 14, 18, 16, 13]
     - [8, -7, -11, -14, -14, -12, -9, -5, -4, -4, -4, -6, -7, -9, -6, -1, 4, 8, 8, 8, 5, 2, 0, -1, 1, 0, 6, 12, 12, 17, 18, 16, 13]
     - [6, -5, -10, -14, -14, -12, -12, -5, -6, -5, -5, -6, -8, -9, -6, -2, 2, 7, 8, 8, 6, 3, 0, 0, 0, 1, 5, 11, 12, 19, 18, 17, 13]
-    Unknown: 112, 94, 128
+    Unknown: 117, 94, 128
   VertexColors:
   - ['132, 81, 66', '129, 83, 70', '129, 84, 70', '132, 81, 66', '133, 80, 64', '133, 80, 64', '142, 93, 77', '166, 127, 111', '172, 136, 120', '181, 147, 131', '189, 159, 143', '206, 184, 167', '205, 182, 165', '210, 191, 176', '209, 191, 178', '200, 178, 165', '191, 165, 152', '168, 129, 115', '164, 124, 108', '204, 181, 166', '204, 182, 168', '205, 186, 172', '211, 197, 186', '223, 215, 208', '225, 215, 205', '223, 212, 201', '172, 136, 122', '162, 120, 104', '179, 145, 131', '166, 110, 94', '178, 117, 99', '188, 139, 122', '198, 165, 149']
   - ['134, 93, 81', '133, 80, 65', '133, 80, 64', '133, 80, 64', '133, 80, 64', '134, 80, 64', '160, 120, 105', '170, 132, 116', '178, 143, 126', '189, 159, 141', '191, 161, 144', '203, 179, 161', '205, 183, 166', '207, 186, 171', '200, 178, 165', '186, 158, 145', '170, 133, 119', '140, 89, 74', '149, 102, 87', '160, 119, 104', '185, 155, 142', '204, 184, 171', '210, 199, 188', '228, 217, 209', '220, 204, 193', '197, 176, 160', '152, 106, 90', '145, 96, 80', '166, 126, 110', '175, 115, 98', '181, 120, 102', '193, 149, 132', '200, 171, 155']
@@ -138,7 +138,7 @@ Landscape:
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 038A26:FalloutNV.esm
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -1622,7 +1622,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: BottomRight
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -2708,7 +2708,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopLeft
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -3951,7 +3951,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopRight
-      Unused: 2
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -5170,6 +5170,13 @@ Temporary:
     Position: 159417.7, 21522.549, 4908.6787
     Rotation: 0, 0, 1.1645727
 - MutagenObjectType: PlacedObject
+  FormKey: 01777F:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E8B32:FalloutNV.esm
+  Placement:
+    Position: 159727.56, 23030.832, 4919.9346
+    Rotation: 0, 0, 4.1484537
+- MutagenObjectType: PlacedObject
   FormKey: 017780:NovaArizona.esm
   FormVersion: 15
   Base: 0E8AA1:FalloutNV.esm
@@ -5564,7 +5571,7 @@ Temporary:
   Scale: 1.12
   Placement:
     Position: 157767.88, 22092.623, 3938.496
-    Rotation: 0.18533866, 0, 5.887338
+    Rotation: 0.18533866, -0, 5.887338
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -5627,7 +5634,7 @@ Temporary:
   Scale: 0.93
   Placement:
     Position: 158235.17, 22410.3, 3917.0935
-    Rotation: 0, 0.18534796, 5.8883157
+    Rotation: -0, 0.18534796, 5.8883157
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -5691,7 +5698,7 @@ Temporary:
   Base: 0EC016:FalloutNV.esm
   Placement:
     Position: 157994.2, 22824.508, 3877.4683
-    Rotation: 0.06241116, 0, 5.8888154
+    Rotation: 0.06241116, -0, 5.8888154
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject

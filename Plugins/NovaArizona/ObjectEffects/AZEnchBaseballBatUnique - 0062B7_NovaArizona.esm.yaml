@@ -25,9 +25,16 @@ Effects:
   Data:
     Type: Touch
     ActorValue: None
-- BaseEffect: 031851:FalloutNV.esm
+- BaseEffect: 02F253:NovaArizona.esm
   Data:
     Magnitude: 2
-    Duration: 6
+    Duration: 8
     Type: Touch
     ActorValue: Health
+  Conditions:
+  - CompareOperator: NotEqualTo
+    Fluff: 0x000000
+    ComparisonValue: 1
+    Function: GetIsCreatureType
+    FirstParameter: 6
+    RunOnType: Target

@@ -17,11 +17,11 @@ LightInheritFlags:
 WaterHeight: 3.4028235E+38
 WaterNoiseTexture: ''
 Regions:
-- 169BD2:FalloutNV.esm
-- 006F45:NovaArizona.esm
-- 014461:NovaArizona.esm
-- 037272:NovaArizona.esm
 - 037273:NovaArizona.esm
+- 037272:NovaArizona.esm
+- 014461:NovaArizona.esm
+- 006F45:NovaArizona.esm
+- 169BD2:FalloutNV.esm
 AcousticSpace: 16737C:FalloutNV.esm
 Landscape:
   FormKey: 0DE2AE:FalloutNV.esm
@@ -102,7 +102,7 @@ Landscape:
     - [1, -1, 0, 0, 0, -1, -5, -7, -8, -3, -3, -5, -5, -4, -1, -1, 0, -1, -1, 0, 0, 0, -1, 0, -1, 1, 0, 0, -1, 0, 0, 1, 1]
     - [-1, 1, -1, 0, 0, 0, -5, -5, -7, -5, -1, -4, -7, -5, -2, -1, -1, -1, 0, -1, 0, 0, 0, 0, 0, -1, 0, 1, 2, 0, -2, 0, 0]
     - [0, -1, 0, 1, 1, -1, -3, -7, -3, -6, -2, -3, -8, -5, -3, -1, -2, -1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, -2, 0, 0]
-    Unknown: 250, 90, 16
+    Unknown: 117, 94, 128
   VertexColors:
   - ['195, 190, 186', '140, 140, 140', '141, 141, 141', '153, 153, 153', '173, 173, 173', '188, 188, 188', '141, 132, 116', '132, 121, 102', '132, 121, 102', '167, 159, 146', '223, 222, 214', '205, 204, 191', '201, 200, 185', '201, 200, 185', '202, 201, 187', '202, 200, 185', '135, 135, 133', '120, 120, 120', '120, 120, 120', '120, 120, 120', '120, 120, 120', '120, 120, 120', '119, 119, 119', '135, 135, 134', '172, 171, 163', '212, 210, 198', '204, 202, 192', '197, 196, 188', '196, 195, 185', '203, 201, 187', '234, 232, 226', '224, 216, 208', '230, 221, 213']
   - ['240, 230, 221', '239, 230, 221', '174, 171, 168', '149, 148, 148', '174, 174, 174', '180, 180, 180', '136, 126, 109', '132, 121, 102', '132, 121, 102', '220, 218, 212', '219, 218, 209', '206, 205, 192', '202, 201, 187', '207, 207, 194', '203, 201, 187', '122, 122, 122', '120, 120, 120', '149, 145, 140', '187, 179, 167', '187, 181, 169', '225, 222, 216', '255, 255, 255', '210, 198, 182', '188, 188, 187', '175, 174, 166', '225, 224, 216', '183, 182, 177', '138, 138, 137', '151, 151, 150', '214, 207, 200', '182, 177, 173', '138, 138, 138', '133, 133, 132']
@@ -141,6 +141,7 @@ Landscape:
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 038A26:FalloutNV.esm
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -1462,6 +1463,7 @@ Landscape:
     Header:
       Texture: 103FF4:FalloutNV.esm
       Quadrant: BottomRight
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -2650,6 +2652,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopLeft
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -3950,6 +3953,7 @@ Landscape:
     Header:
       Texture: 103FF4:FalloutNV.esm
       Quadrant: TopRight
+      Unused: 196
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -6011,7 +6015,7 @@ Temporary:
   Base: 125BD7:FalloutNV.esm
   Placement:
     Position: 107343.195, 42054.49, 3759.7788
-    Rotation: 0, 0, 4.783189
+    Rotation: 0, -0, 4.783189
 - MutagenObjectType: PlacedObject
   FormKey: 0045EE:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -6021,7 +6025,7 @@ Temporary:
   Base: 08D47F:FalloutNV.esm
   RagdollData:
   - Position: 107199.01, 41439.74, 4055.2688
-    Rotation: 0, 0, 1.0851127
+    Rotation: -0, -0, 1.0851127
   Placement:
     Position: 107199.016, 41439.74, 4055.2688
     Rotation: 0, 0, 1.0851114
@@ -6033,7 +6037,7 @@ Temporary:
   Base: 125BD8:FalloutNV.esm
   Placement:
     Position: 107366.33, 41621.445, 3771.5137
-    Rotation: 0, 0, 1.5000025
+    Rotation: 0, -0, 1.5000025
 - MutagenObjectType: PlacedObject
   FormKey: 004BE4:NovaArizona.esm
   FormVersion: 15
@@ -6042,14 +6046,14 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109908.62, 41461.715, 3164.2688
-    Rotation: 0, 0, 1.2800119
+    Rotation: 0, -0, 1.2800119
 - MutagenObjectType: PlacedObject
   FormKey: 004BF7:NovaArizona.esm
   FormVersion: 15
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 110468.31, 42288.555, 3166.1082
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004BFA:NovaArizona.esm
   FormVersion: 15
@@ -6058,7 +6062,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 110421.16, 42290.83, 3166.6099
-    Rotation: 0, 0, 1.2800119
+    Rotation: 0, -0, 1.2800119
 - MutagenObjectType: PlacedObject
   FormKey: 004BFB:NovaArizona.esm
   FormVersion: 15
@@ -6067,14 +6071,14 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 110546.18, 42294.418, 3166.3481
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 004BFE:NovaArizona.esm
   FormVersion: 15
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 110462.15, 41418.633, 3171.974
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004BFF:NovaArizona.esm
   FormVersion: 15
@@ -6101,21 +6105,21 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 110016.016, 41487.74, 3169.4763
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 004C0A:NovaArizona.esm
   FormVersion: 15
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 109923.484, 41434.67, 3173.327
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004C62:NovaArizona.esm
   FormVersion: 15
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 108697.375, 43189.92, 3165.804
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004C64:NovaArizona.esm
   FormVersion: 15
@@ -6142,7 +6146,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109322.84, 43243.613, 3166.4504
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 004C6A:NovaArizona.esm
   FormVersion: 15
@@ -6158,7 +6162,7 @@ Temporary:
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 109236.04, 43173.883, 3166.4177
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004C6F:NovaArizona.esm
   FormVersion: 15
@@ -6167,7 +6171,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109320.07, 44049.668, 3166.428
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 004C70:NovaArizona.esm
   FormVersion: 15
@@ -6176,14 +6180,14 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109195.05, 44046.08, 3166.6897
-    Rotation: 0, 0, 1.2800119
+    Rotation: 0, -0, 1.2800119
 - MutagenObjectType: PlacedObject
   FormKey: 004C71:NovaArizona.esm
   FormVersion: 15
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 109242.2, 44043.805, 3162.9478
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004C73:NovaArizona.esm
   FormVersion: 15
@@ -6192,7 +6196,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 108803.625, 44125.734, 3163.264
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 004C76:NovaArizona.esm
   FormVersion: 15
@@ -6201,14 +6205,14 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 108678.6, 44122.145, 3163.5256
-    Rotation: 0, 0, 1.2800119
+    Rotation: 0, -0, 1.2800119
 - MutagenObjectType: PlacedObject
   FormKey: 004C78:NovaArizona.esm
   FormVersion: 15
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 108716.82, 44056.004, 3165.208
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
 - MutagenObjectType: PlacedObject
   FormKey: 004D44:NovaArizona.esm
   FormVersion: 15
@@ -6229,14 +6233,14 @@ Temporary:
   Base: 07C24C:FalloutNV.esm
   Placement:
     Position: 106965.05, 42139.297, 4068.8003
-    Rotation: 0, 0, 5.713187
+    Rotation: 0, -0, 5.713187
 - MutagenObjectType: PlacedObject
   FormKey: 004D47:NovaArizona.esm
   FormVersion: 15
   Base: 07C24C:FalloutNV.esm
   Placement:
     Position: 106959.38, 41846.82, 4072.0105
-    Rotation: 0, 0, 0.6000016
+    Rotation: 0, -0, 0.6000016
 - MutagenObjectType: PlacedObject
   FormKey: 004D48:NovaArizona.esm
   FormVersion: 15
@@ -6250,6 +6254,14 @@ Temporary:
   Base: 07CBD5:FalloutNV.esm
   EnableParent:
     Reference: 004D43:NovaArizona.esm
+    Flags:
+    - 0x8000
+    - 0x10000
+    - 0x40000
+    - 0x200000
+    - 0x1000000
+    - 0x4000000
+    - 0x40000000
   Placement:
     Position: 106796.67, 41976.91, 4173.8447
     Rotation: 0, 0.10002128, 5.2883563
@@ -6269,7 +6281,7 @@ Temporary:
   Base: 08D480:FalloutNV.esm
   RagdollData:
   - Position: 106921.96, 43301.953, 4003.1328
-    Rotation: 0, 0, -0.09998295
+    Rotation: -0, -0, -0.09998295
   Placement:
     Position: 106921.97, 43301.953, 4003.133
     Rotation: 0, 0, 6.183192
@@ -6408,6 +6420,14 @@ Temporary:
   Base: 076D9E:FalloutNV.esm
   EnableParent:
     Reference: 005547:NovaArizona.esm
+    Flags:
+    - 0x8000
+    - 0x10000
+    - 0x40000
+    - 0x200000
+    - 0x1000000
+    - 0x4000000
+    - 0x40000000
   Placement:
     Position: 106625.65, 44893.414, 3606.9885
     Rotation: 0, 0, 5.2883563
@@ -6446,16 +6466,24 @@ Temporary:
   Base: 13E3FD:FalloutNV.esm
   Placement:
     Position: 108261.48, 43596.977, 3172.6497
-    Rotation: 0, 0, 5.288356
+    Rotation: 0, -0, 5.288356
 - MutagenObjectType: PlacedObject
   FormKey: 005560:NovaArizona.esm
   FormVersion: 15
   Base: 07CBD5:FalloutNV.esm
   EnableParent:
     Reference: 00555E:NovaArizona.esm
+    Flags:
+    - 0x8000
+    - 0x10000
+    - 0x40000
+    - 0x200000
+    - 0x1000000
+    - 0x4000000
+    - 0x40000000
   Placement:
     Position: 108258.58, 43594.094, 3267.5066
-    Rotation: 0, 0, 5.288356
+    Rotation: 0, -0, 5.288356
 - MutagenObjectType: PlacedObject
   FormKey: 005561:NovaArizona.esm
   FormVersion: 15
@@ -6469,21 +6497,21 @@ Temporary:
   Base: 07C24C:FalloutNV.esm
   Placement:
     Position: 108462.47, 43417.46, 3166.4407
-    Rotation: 0, 0, 0.6000016
+    Rotation: 0, -0, 0.6000016
 - MutagenObjectType: PlacedObject
   FormKey: 005563:NovaArizona.esm
   FormVersion: 15
   Base: 07C24C:FalloutNV.esm
   Placement:
     Position: 108468.13, 43709.938, 3166.7542
-    Rotation: 0, 0, 5.713187
+    Rotation: 0, -0, 5.713187
 - MutagenObjectType: PlacedObject
   FormKey: 005564:NovaArizona.esm
   FormVersion: 15
   Base: 07C24C:FalloutNV.esm
   Placement:
     Position: 108185.266, 43847.492, 3166.632
-    Rotation: 0, 0, 1.4700007
+    Rotation: 0, -0, 1.4700007
 - MutagenObjectType: PlacedObject
   FormKey: 005565:NovaArizona.esm
   FormVersion: 15
@@ -6497,7 +6525,7 @@ Temporary:
   Base: 0155AB:FalloutNV.esm
   Placement:
     Position: 108344.37, 44235.008, 3163.6711
-    Rotation: 0, 0, 0.9000016
+    Rotation: 0, -0, 0.9000016
 - MutagenObjectType: PlacedObject
   FormKey: 005572:NovaArizona.esm
   FormVersion: 15
@@ -6513,7 +6541,7 @@ Temporary:
   Scale: 0.8
   Placement:
     Position: 108283.77, 44124.74, 3169.49
-    Rotation: 0, 0, 3.2000208
+    Rotation: 0, -0, 3.2000208
 - MutagenObjectType: PlacedObject
   FormKey: 005574:NovaArizona.esm
   FormVersion: 15
@@ -6528,7 +6556,7 @@ Temporary:
   Base: 167ACE:FalloutNV.esm
   Placement:
     Position: 108264.3, 44069.055, 3169.082
-    Rotation: 0, 0, 1.683211
+    Rotation: 0, -0, 1.683211
 - MutagenObjectType: PlacedObject
   FormKey: 005576:NovaArizona.esm
   FormVersion: 15
@@ -6581,7 +6609,7 @@ Temporary:
   Base: 127E85:FalloutNV.esm
   Placement:
     Position: 109084.77, 43785.93, 3170.509
-    Rotation: 0, 0, 1.601545
+    Rotation: 0, -0, 1.601545
 - MutagenObjectType: PlacedObject
   FormKey: 005582:NovaArizona.esm
   FormVersion: 15
@@ -6589,7 +6617,7 @@ Temporary:
   Scale: 1.2
   Placement:
     Position: 109084.05, 43784.58, 3161.7024
-    Rotation: 0, 0, 1.5794804
+    Rotation: 0, -0, 1.5794804
 - MutagenObjectType: PlacedObject
   FormKey: 0055EC:NovaArizona.esm
   MajorRecordFlagsRaw: 2048
@@ -6601,6 +6629,13 @@ Temporary:
     Reference: 000014:FalloutNV.esm
     Flags:
     - SetEnableStateToOppositeOfParent
+    - 0x8000
+    - 0x10000
+    - 0x40000
+    - 0x200000
+    - 0x1000000
+    - 0x4000000
+    - 0x40000000
   Placement:
     Position: 109854.2, 43921.363, 3085.9429
     Rotation: 6.228298, 0.1653455, 6.2313404
@@ -6620,7 +6655,7 @@ Temporary:
   Base: 10A720:FalloutNV.esm
   Placement:
     Position: 110412.62, 43570.895, 3150.9866
-    Rotation: 0, 0, 5.396824
+    Rotation: 0, -0, 5.396824
 - MutagenObjectType: PlacedObject
   FormKey: 005606:NovaArizona.esm
   FormVersion: 15
@@ -6646,7 +6681,7 @@ Temporary:
   Base: 13409F:FalloutNV.esm
   Placement:
     Position: 110549.516, 43804.832, 3151.208
-    Rotation: 0, 0, 3.142402
+    Rotation: 0, -0, 3.142402
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6655,21 +6690,21 @@ Temporary:
   Base: 134099:FalloutNV.esm
   Placement:
     Position: 110549.516, 43804.832, 3151.208
-    Rotation: 0, 0, 3.142402
+    Rotation: 0, -0, 3.142402
 - MutagenObjectType: PlacedObject
   FormKey: 00B15F:NovaArizona.esm
   FormVersion: 15
   Base: 134099:FalloutNV.esm
   Placement:
     Position: 110549.51, 43804.805, 3151.208
-    Rotation: 0, 0, 4.7132053
+    Rotation: 0, -0, 4.7132053
 - MutagenObjectType: PlacedObject
   FormKey: 00B16D:NovaArizona.esm
   FormVersion: 15
   Base: 015832:FalloutNV.esm
   Placement:
     Position: 110573.74, 43485.16, 3177.3047
-    Rotation: 0, 0, 1.7700064
+    Rotation: 0, -0, 1.7700064
 - MutagenObjectType: PlacedObject
   FormKey: 01555A:NovaArizona.esm
   FormVersion: 15
@@ -6683,21 +6718,21 @@ Temporary:
   Base: 015832:FalloutNV.esm
   Placement:
     Position: 110554.91, 43393.41, 3177.3047
-    Rotation: 0, 0, 1.7750045
+    Rotation: 0, -0, 1.7750045
 - MutagenObjectType: PlacedObject
   FormKey: 019D0B:NovaArizona.esm
   FormVersion: 15
   Base: 091720:FalloutNV.esm
   Placement:
     Position: 110563.5, 43504.312, 3218.3286
-    Rotation: 0, 0, 1.5300002
+    Rotation: 0, -0, 1.5300002
 - MutagenObjectType: PlacedObject
   FormKey: 019D0C:NovaArizona.esm
   FormVersion: 15
   Base: 090F3B:FalloutNV.esm
   Placement:
     Position: 110550.55, 43421.76, 3218.723
-    Rotation: 0, 0, 1.5300002
+    Rotation: 0, -0, 1.5300002
 - MutagenObjectType: PlacedObject
   FormKey: 02435E:NovaArizona.esm
   FormVersion: 15
@@ -6752,14 +6787,14 @@ Temporary:
   Scale: 1.2
   Placement:
     Position: 109205.734, 42061.25, 3161.7024
-    Rotation: 0, 0, 1.5794804
+    Rotation: 0, -0, 1.5794804
 - MutagenObjectType: PlacedObject
   FormKey: 0269FE:NovaArizona.esm
   FormVersion: 15
   Base: 127E85:FalloutNV.esm
   Placement:
     Position: 109206.46, 42062.6, 3170.509
-    Rotation: 0, 0, 1.601545
+    Rotation: 0, -0, 1.601545
 - MutagenObjectType: PlacedObject
   FormKey: 0269FF:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -6782,7 +6817,7 @@ Temporary:
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 108838.51, 42332.676, 3165.208
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6793,7 +6828,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 108800.29, 42398.816, 3163.5256
-    Rotation: 0, 0, 1.2800119
+    Rotation: 0, -0, 1.2800119
 - MutagenObjectType: PlacedObject
   FormKey: 026A02:NovaArizona.esm
   FormVersion: 15
@@ -6802,7 +6837,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 108925.31, 42402.406, 3163.264
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 026A03:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -6812,7 +6847,7 @@ Temporary:
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 109363.89, 42320.477, 3162.9478
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6823,7 +6858,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109316.734, 42322.75, 3166.6897
-    Rotation: 0, 0, 1.2800119
+    Rotation: 0, -0, 1.2800119
 - MutagenObjectType: PlacedObject
   FormKey: 026A05:NovaArizona.esm
   FormVersion: 15
@@ -6832,7 +6867,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109441.76, 42326.34, 3166.428
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 026A06:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -6842,7 +6877,7 @@ Temporary:
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 109357.73, 41450.555, 3166.4177
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6862,7 +6897,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 109444.53, 41520.285, 3166.4504
-    Rotation: 0, 0, 1.5631987
+    Rotation: 0, -0, 1.5631987
 - MutagenObjectType: PlacedObject
   FormKey: 026A09:NovaArizona.esm
   FormVersion: 15
@@ -6890,7 +6925,7 @@ Temporary:
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 108819.06, 41466.594, 3165.804
-    Rotation: 0, 0, 1.5742763
+    Rotation: 0, -0, 1.5742763
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6902,7 +6937,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109934.06, 43232.445, 3146.161
-    Rotation: 0, 0, 4.7131987
+    Rotation: 0, -0, 4.7131987
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6914,7 +6949,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109933.89, 43040.395, 3146.161
-    Rotation: 0, 0, 1.5716091
+    Rotation: 0, -0, 1.5716091
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6926,7 +6961,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109933.72, 42464.42, 3146.161
-    Rotation: 0, 0, 1.5716091
+    Rotation: 0, -0, 1.5716091
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6938,7 +6973,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109933.84, 42656.426, 3146.161
-    Rotation: 0, 0, 4.7131987
+    Rotation: 0, -0, 4.7131987
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6950,7 +6985,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109933.695, 42464.414, 3146.161
-    Rotation: 0, 0, 4.7131987
+    Rotation: 0, -0, 4.7131987
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6962,7 +6997,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109933.555, 42272.406, 3146.161
-    Rotation: 0, 0, 1.5716091
+    Rotation: 0, -0, 1.5716091
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6974,7 +7009,7 @@ Temporary:
   Base: 134099:FalloutNV.esm
   Placement:
     Position: 109933.555, 42272.42, 3146.161
-    Rotation: 0, 0, 1.5716091
+    Rotation: 0, -0, 1.5716091
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6986,7 +7021,7 @@ Temporary:
   Base: 134099:FalloutNV.esm
   Placement:
     Position: 109933.53, 42272.4, 3146.161
-    Rotation: 0, 0, 3.1424036
+    Rotation: 0, -0, 3.1424036
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -6998,7 +7033,7 @@ Temporary:
   Base: 134099:FalloutNV.esm
   Placement:
     Position: 109934.03, 43232.45, 3146.161
-    Rotation: 0, 0, 0.00081637513
+    Rotation: 0, -0, 0.00081637513
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7010,7 +7045,7 @@ Temporary:
   Base: 134099:FalloutNV.esm
   Placement:
     Position: 109934.06, 43232.445, 3146.161
-    Rotation: 0, 0, 4.7131987
+    Rotation: 0, -0, 4.7131987
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7022,7 +7057,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109934.03, 42656.45, 3146.161
-    Rotation: 0, 0, 1.5716091
+    Rotation: 0, -0, 1.5716091
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7034,7 +7069,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109934.16, 42848.453, 3146.161
-    Rotation: 0, 0, 4.7131987
+    Rotation: 0, -0, 4.7131987
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7046,7 +7081,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109934.03, 42848.45, 3146.161
-    Rotation: 0, 0, 1.5716091
+    Rotation: 0, -0, 1.5716091
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7058,7 +7093,7 @@ Temporary:
   Base: 13409B:FalloutNV.esm
   Placement:
     Position: 109934.16, 43040.453, 3146.161
-    Rotation: 0, 0, 4.7131987
+    Rotation: 0, -0, 4.7131987
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7078,210 +7113,210 @@ Temporary:
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109952.71, 42364.574, 3178.2087
-    Rotation: 0, 0, 0.18000104
+    Rotation: 0, -0, 0.18000104
 - MutagenObjectType: PlacedObject
   FormKey: 026A1C:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109952.62, 42364.926, 3198.5308
-    Rotation: 0, 0, 0.15000105
+    Rotation: 0, -0, 0.15000105
 - MutagenObjectType: PlacedObject
   FormKey: 026A1D:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109952.71, 42364.574, 3218.8528
-    Rotation: 0, 0, 0.15000105
+    Rotation: 0, -0, 0.15000105
 - MutagenObjectType: PlacedObject
   FormKey: 026A1E:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109894.734, 42365.48, 3218.8528
-    Rotation: 0, 0, 6.0131903
+    Rotation: 0, -0, 6.0131903
 - MutagenObjectType: PlacedObject
   FormKey: 026A1F:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109894.64, 42365.637, 3198.5308
-    Rotation: 0, 0, 6.058189
+    Rotation: 0, -0, 6.058189
 - MutagenObjectType: PlacedObject
   FormKey: 026A20:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109895.2, 42365.152, 3178.2087
-    Rotation: 0, 0, 6.058189
+    Rotation: 0, -0, 6.058189
 - MutagenObjectType: PlacedObject
   FormKey: 026A21:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109958.36, 42673.24, 3218.8528
-    Rotation: 0, 0, 2.9631922
+    Rotation: 0, -0, 2.9631922
 - MutagenObjectType: PlacedObject
   FormKey: 026A22:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109958.36, 42673.24, 3198.5308
-    Rotation: 0, 0, 2.7381947
+    Rotation: 0, -0, 2.7381947
 - MutagenObjectType: PlacedObject
   FormKey: 026A23:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109958.66, 42673.793, 3178.2087
-    Rotation: 0, 0, 2.8581922
+    Rotation: 0, -0, 2.8581922
 - MutagenObjectType: PlacedObject
   FormKey: 026A24:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109900.664, 42671.21, 3218.8528
-    Rotation: 0, 0, 3.2331903
+    Rotation: 0, -0, 3.2331903
 - MutagenObjectType: PlacedObject
   FormKey: 026A25:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109900.43, 42670.76, 3198.5308
-    Rotation: 0, 0, 3.2631903
+    Rotation: 0, -0, 3.2631903
 - MutagenObjectType: PlacedObject
   FormKey: 026A26:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109900.43, 42670.76, 3178.2087
-    Rotation: 0, 0, 3.3531902
+    Rotation: 0, -0, 3.3531902
 - MutagenObjectType: PlacedObject
   FormKey: 026A27:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109927.73, 42524.293, 3198.5308
-    Rotation: 0, 0, 3.1431932
+    Rotation: 0, -0, 3.1431932
 - MutagenObjectType: PlacedObject
   FormKey: 026A28:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109927.73, 42524.293, 3218.8528
-    Rotation: 0, 0, 3.2781923
+    Rotation: 0, -0, 3.2781923
 - MutagenObjectType: PlacedObject
   FormKey: 026A29:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109927.49, 42524.43, 3178.2087
-    Rotation: 0, 0, 3.1881924
+    Rotation: 0, -0, 3.1881924
 - MutagenObjectType: PlacedObject
   FormKey: 026A2A:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109934.18, 42995.72, 3178.2087
-    Rotation: 0, 0, 3.1881924
+    Rotation: 0, -0, 3.1881924
 - MutagenObjectType: PlacedObject
   FormKey: 026A2B:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109934.414, 42995.582, 3218.8528
-    Rotation: 0, 0, 3.2781923
+    Rotation: 0, -0, 3.2781923
 - MutagenObjectType: PlacedObject
   FormKey: 026A2C:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109934.414, 42995.582, 3198.5308
-    Rotation: 0, 0, 3.1431932
+    Rotation: 0, -0, 3.1431932
 - MutagenObjectType: PlacedObject
   FormKey: 026A2D:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109907.12, 43142.05, 3178.2087
-    Rotation: 0, 0, 3.3531902
+    Rotation: 0, -0, 3.3531902
 - MutagenObjectType: PlacedObject
   FormKey: 026A2E:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109907.12, 43142.05, 3198.5308
-    Rotation: 0, 0, 3.2631903
+    Rotation: 0, -0, 3.2631903
 - MutagenObjectType: PlacedObject
   FormKey: 026A2F:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109907.35, 43142.5, 3218.8528
-    Rotation: 0, 0, 3.2331903
+    Rotation: 0, -0, 3.2331903
 - MutagenObjectType: PlacedObject
   FormKey: 026A30:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109965.34, 43145.082, 3178.2087
-    Rotation: 0, 0, 2.8581922
+    Rotation: 0, -0, 2.8581922
 - MutagenObjectType: PlacedObject
   FormKey: 026A31:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109965.05, 43144.527, 3198.5308
-    Rotation: 0, 0, 2.7381947
+    Rotation: 0, -0, 2.7381947
 - MutagenObjectType: PlacedObject
   FormKey: 026A32:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109965.05, 43144.527, 3218.8528
-    Rotation: 0, 0, 2.9631922
+    Rotation: 0, -0, 2.9631922
 - MutagenObjectType: PlacedObject
   FormKey: 026A33:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109901.89, 42836.44, 3178.2087
-    Rotation: 0, 0, 6.058189
+    Rotation: 0, -0, 6.058189
 - MutagenObjectType: PlacedObject
   FormKey: 026A34:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109901.33, 42836.926, 3198.5308
-    Rotation: 0, 0, 6.058189
+    Rotation: 0, -0, 6.058189
 - MutagenObjectType: PlacedObject
   FormKey: 026A35:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109901.42, 42836.77, 3218.8528
-    Rotation: 0, 0, 6.0131903
+    Rotation: 0, -0, 6.0131903
 - MutagenObjectType: PlacedObject
   FormKey: 026A36:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109959.4, 42835.863, 3218.8528
-    Rotation: 0, 0, 0.15000105
+    Rotation: 0, -0, 0.15000105
 - MutagenObjectType: PlacedObject
   FormKey: 026A37:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109959.305, 42836.215, 3198.5308
-    Rotation: 0, 0, 0.15000105
+    Rotation: 0, -0, 0.15000105
 - MutagenObjectType: PlacedObject
   FormKey: 026A38:NovaArizona.esm
   FormVersion: 15
   Base: 0762A7:FalloutNV.esm
   Placement:
     Position: 109959.4, 42835.863, 3178.2087
-    Rotation: 0, 0, 0.18000104
+    Rotation: 0, -0, 0.18000104
 - MutagenObjectType: PlacedObject
   FormKey: 026A39:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -7357,28 +7392,30 @@ Temporary:
   Base: 03BC6C:FalloutNV.esm
   Placement:
     Position: 110539.75, 43040.46, 3173.3982
-    Rotation: 0, 0, 1.5707964
+    Rotation: 0, -0, 1.5707964
 - MutagenObjectType: PlacedObject
   FormKey: 026AA6:NovaArizona.esm
   FormVersion: 15
   Base: 13E3FE:FalloutNV.esm
   Placement:
     Position: 110585.31, 43056.742, 3149.5188
-    Rotation: 0, 0, 4.668195
+    Rotation: 0, -0, 4.668195
 - MutagenObjectType: PlacedObject
   FormKey: 026AAC:NovaArizona.esm
   FormVersion: 15
   Base: 1613BF:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
   Placement:
     Position: 110589.07, 43013.883, 3224.996
-    Rotation: 0, 0, 5.953187
+    Rotation: 0, -0, 5.953187
 - MutagenObjectType: PlacedObject
   FormKey: 026AC2:NovaArizona.esm
   FormVersion: 15
   Base: 12A9A8:FalloutNV.esm
   Placement:
     Position: 109318.055, 44590.535, 3143.0093
-    Rotation: 0, 0, 1.1550103
+    Rotation: 0, -0, 1.1550103
 - MutagenObjectType: PlacedObject
   FormKey: 026AC5:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -7402,7 +7439,7 @@ Temporary:
   Scale: 1.12
   Placement:
     Position: 108229.13, 44557.035, 3168
-    Rotation: 0, 0, 2.0836155
+    Rotation: -0, -0, 2.0836155
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7422,7 +7459,7 @@ Temporary:
   Scale: 0.84
   Placement:
     Position: 107406.91, 42032.78, 3814.327
-    Rotation: 0, 0, 1.735002
+    Rotation: 0, -0, 1.735002
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7434,7 +7471,7 @@ Temporary:
   Base: 0F1DFE:FalloutNV.esm
   Placement:
     Position: 107113.445, 42683.383, 4433.45
-    Rotation: 0, 0, 4.3163843
+    Rotation: 0, -0, 4.3163843
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7456,8 +7493,8 @@ Temporary:
   Ownership:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
-    Position: 106851.92, 44151.16, 3518.692
-    Rotation: 0, 0, 1.5650189
+    Position: 106851.92, 44151.16, 3505.1548
+    Rotation: 0, -0, 1.5650189
 - MutagenObjectType: PlacedObject
   FormKey: 026BB4:NovaArizona.esm
   FormVersion: 15
@@ -7465,8 +7502,8 @@ Temporary:
   Ownership:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
-    Position: 106711.016, 44184.01, 3520.6868
-    Rotation: 0, 0, 1.2818322
+    Position: 106711.016, 44184.01, 3511.3164
+    Rotation: 0, -0, 1.2818322
 - MutagenObjectType: PlacedObject
   FormKey: 026BB5:NovaArizona.esm
   MajorRecordFlagsRaw: 32768
@@ -7488,7 +7525,7 @@ Temporary:
   Base: 128F26:FalloutNV.esm
   Placement:
     Position: 106792.34, 41203.07, 4043.8457
-    Rotation: 0, 0, 1.5760963
+    Rotation: 0, -0, 1.5760963
   MajorFlags:
   - VisibleWhenDistant
 - MutagenObjectType: PlacedObject
@@ -7499,7 +7536,7 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 106882.016, 41208.13, 4060.6846
-    Rotation: 0, 0, 1.5650189
+    Rotation: 0, -0, 1.5650189
 - MutagenObjectType: PlacedObject
   FormKey: 026BE7:NovaArizona.esm
   FormVersion: 15
@@ -7508,7 +7545,746 @@ Temporary:
     Owner: 0EE68A:FalloutNV.esm
   Placement:
     Position: 106756.984, 41204.766, 4058.96
-    Rotation: 0, 0, 1.2818322
+    Rotation: 0, -0, 1.2818322
+- MutagenObjectType: PlacedObject
+  FormKey: 03004A:NovaArizona.esm
+  FormVersion: 15
+  Base: 015832:FalloutNV.esm
+  Placement:
+    Position: 107203.164, 42587.727, 4370.013
+    Rotation: 0, -0, 5.2831907
+- MutagenObjectType: PlacedObject
+  FormKey: 03004B:NovaArizona.esm
+  FormVersion: 15
+  Base: 10A720:FalloutNV.esm
+  Placement:
+    Position: 107152.34, 42533.875, 4342.2124
+    Rotation: 0, -0, 2.2668316
+- MutagenObjectType: PlacedObject
+  FormKey: 03004C:NovaArizona.esm
+  FormVersion: 15
+  Base: 10A720:FalloutNV.esm
+  Placement:
+    Position: 107018.086, 42754.78, 4341.1133
+    Rotation: 0, -0, 2.2668316
+- MutagenObjectType: PlacedObject
+  FormKey: 030053:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 0BFBD2:FalloutNV.esm
+  Placement:
+    Position: 107553, 41209.41, 3972.3188
+    Rotation: -0.09408186, -0.36571494, 2.7492657
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 030054:NovaArizona.esm
+  FormVersion: 15
+  Base: 040C41:FalloutNV.esm
+  Scale: 1.9
+  Placement:
+    Position: 107694.82, 41273.297, 3941.4517
+    Rotation: 0.099237, -0.40161204, 3.3144114
+- MutagenObjectType: PlacedObject
+  FormKey: 030055:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 0BFBD2:FalloutNV.esm
+  Placement:
+    Position: 107508.18, 41571.25, 3981.3628
+    Rotation: -0.09408186, -0.36571494, 0.16608007
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 030056:NovaArizona.esm
+  FormVersion: 15
+  Base: 01E0A2:FalloutNV.esm
+  Placement:
+    Position: 107441.22, 41570.53, 4039.431
+    Rotation: -1.0353234, 0.7825744, 2.1942444
+- MutagenObjectType: PlacedObject
+  FormKey: 030057:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 0BFBD2:FalloutNV.esm
+  Placement:
+    Position: 107479.89, 42066.582, 3971.3088
+    Rotation: 0.008995588, -0.30514935, 3.3114097
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 030058:NovaArizona.esm
+  FormVersion: 15
+  Base: 040C41:FalloutNV.esm
+  Scale: 1.9
+  Placement:
+    Position: 107538.9, 41984.43, 3971.7751
+    Rotation: 0.099237, -0.40161204, 0.8312262
+- MutagenObjectType: PlacedObject
+  FormKey: 030059:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 0BFBD2:FalloutNV.esm
+  Placement:
+    Position: 107379.27, 42418.36, 3988.4255
+    Rotation: -0.022095155, -0.075076275, 5.907329
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 03007B:NovaArizona.esm
+  FormVersion: 15
+  Base: 07C24B:FalloutNV.esm
+  Placement:
+    Position: 110543.2, 41303.79, 3160.0322
+    Rotation: 0, -0, 6.2181916
+- MutagenObjectType: PlacedObject
+  FormKey: 03007C:NovaArizona.esm
+  FormVersion: 15
+  Base: 07C24B:FalloutNV.esm
+  Placement:
+    Position: 110573.16, 41304.145, 3160.6897
+    Rotation: 0, -0, 6.218192
+- MutagenObjectType: PlacedObject
+  FormKey: 03007D:NovaArizona.esm
+  FormVersion: 15
+  Base: 07C24B:FalloutNV.esm
+  Placement:
+    Position: 110553.21, 41302.84, 3175.8423
+    Rotation: 0, -0, 6.018194
+- MutagenObjectType: PlacedObject
+  FormKey: 03007E:NovaArizona.esm
+  FormVersion: 15
+  Base: 01CBD4:FalloutNV.esm
+  Scale: 1.81
+  Placement:
+    Position: 110539.516, 41425.387, 3168.5342
+    Rotation: 0, -0, 5.68319
+- MutagenObjectType: PlacedObject
+  FormKey: 03007F:NovaArizona.esm
+  MajorRecordFlagsRaw: 32768
+  FormVersion: 15
+  Fallout3MajorRecordFlags:
+  - VisibleWhenDistant
+  Base: 0039D0:FalloutNV.esm
+  Scale: 0.65
+  Placement:
+    Position: 110448.75, 41299.633, 3168.9607
+    Rotation: 0, -0, 6.1831937
+  MajorFlags:
+  - VisibleWhenDistant
+- MutagenObjectType: PlacedObject
+  FormKey: 030080:NovaArizona.esm
+  FormVersion: 15
+  Base: 11A8E4:FalloutNV.esm
+  RagdollData:
+  - Position: -1.6464844, -0.6269531, -0.1015625
+    Rotation: -9.293355E-06, 2.8289855E-05, -6.0490606E-06
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 110551.86, 41290.594, 3202.0645
+    Rotation: 2.134188, -1.3382308, 4.499623
+- MutagenObjectType: PlacedObject
+  FormKey: 030081:NovaArizona.esm
+  FormVersion: 15
+  Base: 03BC6C:FalloutNV.esm
+  Scale: 0.58
+  Placement:
+    Position: 109369.375, 43029.81, 3182.9646
+    Rotation: 0, -0, 4.712389
+- MutagenObjectType: PlacedObject
+  FormKey: 030082:NovaArizona.esm
+  FormVersion: 15
+  Base: 140FB3:FalloutNV.esm
+  Scale: 1.3
+  Placement:
+    Position: 109213.164, 43037.21, 3168.5874
+    Rotation: 0, -0, 1.3
+- MutagenObjectType: PlacedObject
+  FormKey: 030084:NovaArizona.esm
+  FormVersion: 15
+  Base: 0AB37F:FalloutNV.esm
+  Scale: 0.66
+  Placement:
+    Position: 109258.52, 43145.53, 3168.0425
+    Rotation: 0, -0, 0.20000237
+- MutagenObjectType: PlacedObject
+  FormKey: 030085:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.36
+  Placement:
+    Position: 109208, 43020.938, 3168.5605
+    Rotation: 0, -0, 0.30000225
+- MutagenObjectType: PlacedObject
+  FormKey: 030087:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109223.33, 43024.492, 3168.0488
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 030088:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613BD:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 2.09
+  Placement:
+    Position: 109358.305, 43062.887, 3167.1125
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 030089:NovaArizona.esm
+  FormVersion: 15
+  Base: 030DC1:NovaArizona.esm
+  Scale: 1.26
+  Placement:
+    Position: 109189.45, 43173.445, 3166.6477
+- MutagenObjectType: PlacedObject
+  FormKey: 03008A:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613BD:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.34
+  Placement:
+    Position: 109357.28, 42988.12, 3165.798
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 03008B:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 0.67
+  Placement:
+    Position: 109189.3, 43021.023, 3168.6191
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 03008C:NovaArizona.esm
+  FormVersion: 15
+  Base: 0AB37F:FalloutNV.esm
+  Scale: 0.79
+  Placement:
+    Position: 109290.78, 42989.926, 3168.0237
+    Rotation: 0, -0, 5.183193
+- MutagenObjectType: PlacedObject
+  FormKey: 030097:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.68
+  Placement:
+    Position: 109929.734, 42426.117, 3236.4875
+    Rotation: 0, -0, 1.3000033
+- MutagenObjectType: PlacedObject
+  FormKey: 030098:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.92
+  Placement:
+    Position: 109935.03, 42596.188, 3235.2356
+    Rotation: 0, -0, 2.0000029
+- MutagenObjectType: PlacedObject
+  FormKey: 030099:NovaArizona.esm
+  FormVersion: 15
+  Base: 01CBD4:FalloutNV.esm
+  Scale: 2.16
+  Placement:
+    Position: 109924.23, 42508.8, 3235.1487
+    Rotation: 0, -0, 1.0000043
+- MutagenObjectType: PlacedObject
+  FormKey: 03009A:NovaArizona.esm
+  FormVersion: 15
+  Base: 01993F:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 2.01
+  Placement:
+    Position: 109917.35, 42519.867, 3240.088
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 03009B:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109964.45, 42552.555, 3233.0576
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 03009C:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 0.48
+  Placement:
+    Position: 109890.73, 42654.582, 3234.085
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 03009D:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 0.89
+  Placement:
+    Position: 109934.914, 42623.23, 3235.541
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 03009E:NovaArizona.esm
+  FormVersion: 15
+  Base: 015199:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.31
+  Placement:
+    Position: 109926.37, 42603.457, 3237.3152
+    Rotation: 0, -0, 4.0000005
+- MutagenObjectType: PlacedObject
+  FormKey: 03009F:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613C1:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.2
+  Placement:
+    Position: 109934.33, 42579.348, 3239.0762
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A0:NovaArizona.esm
+  FormVersion: 15
+  Base: 01519A:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.58
+  Placement:
+    Position: 109934.83, 42596.19, 3239.5537
+    Rotation: 0, -0, 5.783188
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A1:NovaArizona.esm
+  FormVersion: 15
+  Base: 01519C:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109894.59, 42479.97, 3241.176
+    Rotation: 1.3000003, -0, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A2:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E2F67:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.43
+  Placement:
+    Position: 109892.7, 42394.7, 3234.4937
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A3:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E2F67:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.43
+  Placement:
+    Position: 109911.45, 42473.13, 3234.6704
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A4:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E9AD1:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109920.54, 42443.984, 3239.367
+    Rotation: 0, -0, 3.783192
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A6:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E9AD1:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.22
+  Placement:
+    Position: 109926.82, 42413.62, 3238.9163
+    Rotation: 0, -0, 1.0000008
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A8:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.94
+  Placement:
+    Position: 109942.96, 42972.008, 3234.8167
+    Rotation: 0, -0, 2.0000029
+- MutagenObjectType: PlacedObject
+  FormKey: 0300A9:NovaArizona.esm
+  FormVersion: 15
+  Base: 13B2B9:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109927.1, 42960.246, 3247.7144
+    Rotation: 0.98363996, -0.6115453, 0.36494145
+- MutagenObjectType: PlacedObject
+  FormKey: 0300AA:NovaArizona.esm
+  FormVersion: 15
+  Base: 015199:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.71
+  Placement:
+    Position: 109941.11, 42969.41, 3237.163
+    Rotation: 0, -0, 2.9000032
+- MutagenObjectType: PlacedObject
+  FormKey: 0300AB:NovaArizona.esm
+  FormVersion: 15
+  Base: 015199:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.54
+  Placement:
+    Position: 109951.83, 42993.85, 3236.9055
+    Rotation: 0, -0, 5.500001
+- MutagenObjectType: PlacedObject
+  FormKey: 0300AC:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E2F67:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.43
+  Placement:
+    Position: 109952.65, 42967.12, 3235.7078
+- MutagenObjectType: PlacedObject
+  FormKey: 0300AD:NovaArizona.esm
+  FormVersion: 15
+  Base: 08C55E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109916.766, 43112.61, 3240.1123
+- MutagenObjectType: PlacedObject
+  FormKey: 0300AE:NovaArizona.esm
+  FormVersion: 15
+  Base: 08C55E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109942.97, 43063.18, 3240.0269
+- MutagenObjectType: PlacedObject
+  FormKey: 0300AF:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613D0:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.35
+  Placement:
+    Position: 109909.31, 42997.9, 3233.272
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B0:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109931.36, 43082.48, 3234.1433
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B1:NovaArizona.esm
+  FormVersion: 15
+  Base: 00C446:NovaArizona.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109930.83, 42858.793, 3233.5005
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B2:NovaArizona.esm
+  FormVersion: 15
+  Base: 034070:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109966.59, 42898.43, 3235.8804
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B4:NovaArizona.esm
+  FormVersion: 15
+  Base: 034070:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109912.48, 43038.91, 3236.2415
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B5:NovaArizona.esm
+  FormVersion: 15
+  Base: 034070:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109900.2, 42624.863, 3235.9397
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B6:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613BF:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109898.26, 42623.242, 3234.6934
+    Rotation: 0, -0, 5.953187
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B7:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613BF:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109911.766, 43038.8, 3235.4104
+    Rotation: 0, -0, 0.77000165
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B8:NovaArizona.esm
+  FormVersion: 15
+  Base: 01519A:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.58
+  Placement:
+    Position: 109965.79, 42900.785, 3240.5237
+    Rotation: 0, -0, 1.6000024
+- MutagenObjectType: PlacedObject
+  FormKey: 0300B9:NovaArizona.esm
+  FormVersion: 15
+  Base: 015199:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.71
+  Placement:
+    Position: 109932.28, 42873.395, 3235.487
+    Rotation: 0, -0, 0.9000078
+- MutagenObjectType: PlacedObject
+  FormKey: 0300BA:NovaArizona.esm
+  FormVersion: 15
+  Base: 15D9B1:FalloutNV.esm
+  Scale: 1.89
+  Placement:
+    Position: 110543.45, 42507.133, 3175.5095
+    Rotation: 0.09917102, 0.012864178, 4.583828
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C3:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406E:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.15
+  Placement:
+    Position: 110554.73, 43375.742, 3208.4304
+    Rotation: 0, -0, 2.600006
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C4:NovaArizona.esm
+  FormVersion: 15
+  Base: 0E9AD1:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.08
+  Placement:
+    Position: 110543.91, 43366.977, 3210.9639
+    Rotation: 0, -0, 2.3000038
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C5:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613BF:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 0.88
+  Placement:
+    Position: 110554.54, 43376.816, 3209.277
+    Rotation: 0, -0, 4.883189
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C6:NovaArizona.esm
+  FormVersion: 15
+  Base: 1613BD:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 2.55
+  Placement:
+    Position: 110470.24, 43584.28, 3200.2156
+    Rotation: 0, -0, 5.4831877
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C7:NovaArizona.esm
+  FormVersion: 15
+  Base: 1340A2:FalloutNV.esm
+  Placement:
+    Position: 109472.04, 42193.977, 3162.8599
+    Rotation: 0, -0, 3.9500043
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C8:NovaArizona.esm
+  FormVersion: 15
+  Base: 02541B:FalloutNV.esm
+  RagdollData:
+  - Position: 0, 0, -0.0007324219
+    Rotation: -0, -0, 3.5757995E-07
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109481.32, 42231.074, 3176.6243
+    Rotation: 0, -0, 5.9831862
+- MutagenObjectType: PlacedObject
+  FormKey: 0300C9:NovaArizona.esm
+  FormVersion: 15
+  Base: 0A9E70:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.12
+  Placement:
+    Position: 109462.62, 42304.46, 3169.3992
+    Rotation: 0, -0, 4.88319
+- MutagenObjectType: PlacedObject
+  FormKey: 0300CA:NovaArizona.esm
+  FormVersion: 15
+  Base: 0A9E69:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109462.77, 42304.863, 3172.5925
+    Rotation: 0, -0, 1.983192
+- MutagenObjectType: PlacedObject
+  FormKey: 0300CB:NovaArizona.esm
+  FormVersion: 15
+  Base: 034069:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109482, 42228.8, 3171.3865
+    Rotation: 1.5000017, -0, 0
+- MutagenObjectType: PlacedObject
+  FormKey: 0300CC:NovaArizona.esm
+  FormVersion: 15
+  Base: 05B52C:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109456.836, 42213.875, 3196.013
+    Rotation: 3.1200562, 1.2941198, 1.8425597
+- MutagenObjectType: PlacedObject
+  FormKey: 0300CE:NovaArizona.esm
+  FormVersion: 15
+  Base: 025421:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109416.74, 42300.81, 3181.9448
+    Rotation: 0, -0, 0.8
+- MutagenObjectType: PlacedObject
+  FormKey: 0300CF:NovaArizona.esm
+  FormVersion: 15
+  Base: 0AB37F:FalloutNV.esm
+  Scale: 0.66
+  Placement:
+    Position: 109406.305, 42268.58, 3168.2576
+    Rotation: 0, -0, 4.9831924
+- MutagenObjectType: PlacedObject
+  FormKey: 0300D0:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406C:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109383.22, 42292.91, 3176.818
+    Rotation: 0, -0, 0.90000004
+- MutagenObjectType: PlacedObject
+  FormKey: 0300D1:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406C:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109401.07, 42252.53, 3175.776
+    Rotation: 0, -0, 6.1831884
+- MutagenObjectType: PlacedObject
+  FormKey: 0300D2:NovaArizona.esm
+  FormVersion: 15
+  Base: 03406C:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 109469.875, 42352.1, 3177.5452
+    Rotation: 0, -0, 1.0000029
+- MutagenObjectType: PlacedObject
+  FormKey: 0300E3:NovaArizona.esm
+  FormVersion: 15
+  Base: 16163C:FalloutNV.esm
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Scale: 1.63
+  Placement:
+    Position: 109920.65, 42342.49, 3165.0913
+    Rotation: 0, -0, 6.183192
+- MutagenObjectType: PlacedObject
+  FormKey: 0300F4:NovaArizona.esm
+  FormVersion: 15
+  Base: 14D2AC:FalloutNV.esm
+  Placement:
+    Position: 110321.89, 43878.62, 3206.7004
+    Rotation: 1.307889, 1.2881652, 2.7993443
+- MutagenObjectType: PlacedObject
+  FormKey: 0300F5:NovaArizona.esm
+  FormVersion: 15
+  Base: 14D2AC:FalloutNV.esm
+  Placement:
+    Position: 110319.375, 43859.047, 3203.9104
+    Rotation: 1.5542113, 0.8035524, 3.1691926
+- MutagenObjectType: PlacedObject
+  FormKey: 0300F6:NovaArizona.esm
+  FormVersion: 15
+  Base: 127B85:FalloutNV.esm
+  Scale: 1.2
+  Placement:
+    Position: 110450.39, 44183.984, 3145.8538
+    Rotation: 0.09581307, 0.02867708, 1.2808585
+- MutagenObjectType: PlacedObject
+  FormKey: 0300FA:NovaArizona.esm
+  FormVersion: 15
+  Base: 0CE569:FalloutNV.esm
+  RagdollData:
+  - Position: 0, 0, -0.0012207031
+    Rotation: 0.08860172, 0.0466706, 0.005845277
+  Placement:
+    Position: 110457.95, 44154.887, 3207.2258
+    Rotation: 0, -0, 0.2
+- MutagenObjectType: PlacedObject
+  FormKey: 0300FB:NovaArizona.esm
+  FormVersion: 15
+  Base: 0CE569:FalloutNV.esm
+  RagdollData:
+  - Rotation: 0.09651109, 0.027463667, 0.000810834
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 110450.945, 44169.477, 3205.6233
+- MutagenObjectType: PlacedObject
+  FormKey: 0300FD:NovaArizona.esm
+  FormVersion: 15
+  Base: 0CE569:FalloutNV.esm
+  RagdollData:
+  - Position: -0.0234375, -0.0703125, 0.0053710938
+    Rotation: -9.777577E-08, -2.9802322E-08, 3.026393E-08
+  Ownership:
+    Owner: 019D50:NovaArizona.esm
+  Placement:
+    Position: 110425.69, 44210.11, 3199.283
+    Rotation: 0.26564282, 0.13776545, 1.0882615
 - MutagenObjectType: PlacedObject
   FormKey: 030DC3:NovaArizona.esm
   FormVersion: 15

@@ -7,7 +7,7 @@ Fields:
     VariableCount: 4
     Enabled: 1
   CompiledScript: 0x1D000000100009000D006B00000001000039151300011200560300000200580100662704000000003D15140078000000010F005603000003005603000002001A3915190001180056040000040056030000030053050076616C75651800391513000112005600000001005802000414040000001C3C15000011000000
-  SourceCode: "scn ArmorBackpackScriptUDF\r\n\r\nBEGIN function {}\r\n    float fTotalWeight\r\n\r\n    array_var aItems = AZPlayerForeignCurrencyStorageREF.GetAllItems\r\n    array_var aEntry\r\n	ref rItem\r\n    \r\n    foreach aEntry <- aItems\r\n		rItem = aEntry[\"value\"]\r\n        fTotalWeight += rItem.GetWeight\r\n    loop\r\n\r\nEND\0"
+  SourceCode: "scn ArmorBackpackScriptUDF\r\n\r\nBEGIN function {}\r\n    float fTotalWeight\r\n\r\n    array_var aItems = AZPlayerForeignCurrencyStorageREF.GetAllItems\r\n    array_var aEntry\r\n	ref rItem\r\n    \r\n    foreach aEntry <- aItems\r\n		rItem = aEntry[\"value\"]\r\n        fTotalWeight += rItem.GetWeight\r\n    loop\r\n\r\nEND"
   LocalVariables:
   - Data:
       Index: 1
