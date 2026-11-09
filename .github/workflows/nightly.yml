@@ -1,0 +1,79 @@
+name: nightly
+on:
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  nightly:
+    runs-on: windows-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Skip if main hasn't changed
+        id: changed
+        shell: bash
+        run: |
+          last=$(git ls-remote origin refs/tags/nightly | cut -f1)
+          echo "last=$last" >> "$GITHUB_OUTPUT"
+          if [ "$last" = "$GITHUB_SHA" ] && [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Read version
+        if: steps.changed.outputs.skip != 'true'
+        id: version
+        shell: bash
+        run: echo "name=$(tr -d '[:space:]' < VERSION)-nightly.$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
+      - uses: ./.github/actions/package
+        if: steps.changed.outputs.skip != 'true'
+        id: package
+        with:
+          name: ${{ steps.version.outputs.name }}
+      - name: Write changelog
+        if: steps.changed.outputs.skip != 'true'
+        id: changelog
+        shell: bash
+        env:
+          LAST: ${{ steps.changed.outputs.last }}
+        run: |
+          changes="$RUNNER_TEMP/changes.md"
+          : > "$changes"
+          if [ -n "$LAST" ] && [ "$LAST" != "$GITHUB_SHA" ]; then
+            sh .github/changelog.sh "$LAST" "$GITHUB_SHA" > "$changes"
+          fi
+          notes="$RUNNER_TEMP/notes.md"
+          echo "Built from $GITHUB_SHA." > "$notes"
+          if [ -s "$changes" ]; then
+            echo >> "$notes"
+            echo "## Changelog" >> "$notes"
+            echo >> "$notes"
+            cat "$changes" >> "$notes"
+          fi
+          {
+            echo "text<<EOF"
+            cat "$changes"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+      - name: Publish nightly release
+        if: steps.changed.outputs.skip != 'true'
+        shell: bash
+        run: |
+          gh release delete nightly --yes --cleanup-tag || true
+          gh release create nightly "${{ steps.package.outputs.zip }}" --prerelease --target "$GITHUB_SHA" \
+            --title "Nova Arizona ${{ steps.version.outputs.name }}" --notes-file "$RUNNER_TEMP/notes.md"
+      - name: Upload to Nexus
+        if: steps.changed.outputs.skip != 'true'
+        uses: Nexus-Mods/upload-action@v1.0.0-beta.11
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUS_NIGHTLY_FILE_ID }}
+          filename: ${{ steps.package.outputs.zip }}
+          version: ${{ steps.version.outputs.name }}
+          display_name: Nova Arizona Nightly (EXPERIMENTAL)
+          description: Automated nightly build from ${{ github.sha }}. Does not include pre-generated LOD.
+          category: miscellaneous
+          archive_existing_version: true
+          mod_id: ${{ vars.NEXUS_MOD_ID }}
+          changelog: ${{ steps.changelog.outputs.text }}

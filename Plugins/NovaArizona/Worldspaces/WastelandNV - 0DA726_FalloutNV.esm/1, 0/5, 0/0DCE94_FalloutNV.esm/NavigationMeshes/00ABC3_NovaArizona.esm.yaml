@@ -3,9 +3,9 @@ FormVersion: 15
 Version: 11
 Data:
   Cell: 0DCE94:FalloutNV.esm
-  VertexCount: 185
-  TriangleCount: 287
-  EdgeLinkCount: 41
+  VertexCount: 189
+  TriangleCount: 294
+  EdgeLinkCount: 42
 Vertices:
 - 165261.2, 28672, 2996.126
 - 163840, 28672, 2840
@@ -20,7 +20,7 @@ Vertices:
 - 163840, 29494.12, 2599.4106
 - 163840, 30208, 1928.74
 - 163840, 29952, 2136
-- 165871.55, 28712.916, 3231.7734
+- 165730.64, 28672, 3171.1553
 - 164096, 30208, 2025.6523
 - 163840, 30720, 1927.4636
 - 163840, 30976, 1669.1211
@@ -31,7 +31,7 @@ Vertices:
 - 164123.4, 29542.236, 2561.7637
 - 163840, 32256, 1616.3042
 - 163840, 32512, 1684.8905
-- 166006.27, 29500.99, 3001.7222
+- 165876.7, 29439.795, 2995.9316
 - 164352, 30976, 1558.1499
 - 164096, 30976, 1482.1799
 - 164096, 31232, 1498.1531
@@ -81,7 +81,7 @@ Vertices:
 - 165376, 30976, 1589.615
 - 165639.31, 30208.273, 2074.8787
 - 165632, 29952, 2272
-- 165540.6, 28672, 3088.0098
+- 165546.64, 28672, 3090.6553
 - 165376, 32512, 1437.212
 - 165376, 32256, 1465.9952
 - 165376, 32000, 1645.0177
@@ -105,7 +105,7 @@ Vertices:
 - 165632, 31232, 1483.593
 - 165632, 31488, 1499.5535
 - 165376, 31488, 1422.9976
-- 166270.67, 28672, 3433.5051
+- 167936, 31168.87, 2240.4219
 - 165888, 32768, 1508.1788
 - 165888, 32512, 1516.6742
 - 165888, 31744, 1559.8767
@@ -114,8 +114,8 @@ Vertices:
 - 165888, 29952, 2384
 - 165754.56, 29796.375, 2605.379
 - 165895.08, 29231.318, 3150.8499
-- 165991.6, 28905.492, 3296.746
-- 166016.36, 28672, 3312.2021
+- 165809.95, 28920.783, 3192.6694
+- 167078.25, 31516.322, 1415.2172
 - 165632, 32768, 1465.1676
 - 165632, 32256, 1539.6841
 - 165632, 32000, 1687.4879
@@ -190,8 +190,12 @@ Vertices:
 - 167279.52, 32053.436, 1545.9084
 - 167936, 31947.664, 1124.729
 - 167423.52, 31658.15, 1490.3379
-- 167078.25, 31516.322, 1415.2172
-- 167936, 31168.87, 2240.4219
+- 165925.97, 28762.252, 3261.3557
+- 166016.64, 28886.658, 3312.4404
+- 165959.7, 29059.928, 3260.791
+- 166109.1, 29187.01, 3320.1094
+- 165982.12, 29288.254, 3169.6655
+- 166123.05, 29002.254, 3412.153
 Triangles:
 - Vertices: 8, 1, 7
   EdgeLink_0_1: 10
@@ -201,14 +205,14 @@ Triangles:
   - EdgeLink_0_1
   - Found
 - Vertices: 1, 2, 4
-  EdgeLink_0_1: 7
+  EdgeLink_0_1: 33
   EdgeLink_1_2: 2
   EdgeLink_2_0: 5
   Flags:
   - EdgeLink_0_1
   - Found
 - Vertices: 2, 3, 4
-  EdgeLink_0_1: 6
+  EdgeLink_0_1: 39
   EdgeLink_1_2: 224
   EdgeLink_2_0: 1
   Flags:
@@ -303,7 +307,7 @@ Triangles:
   - Found
 - Vertices: 100, 99, 109
   EdgeLink_0_1: 165
-  EdgeLink_1_2: 35
+  EdgeLink_1_2: 5
   EdgeLink_2_0: 17
   Flags:
   - EdgeLink_1_2
@@ -316,11 +320,12 @@ Triangles:
   Flags:
   - Water
   - Found
-- Vertices: 107, 108, 98
-  EdgeLink_0_1: 148
+- Vertices: 178, 176, 98
+  EdgeLink_0_1: 269
   EdgeLink_1_2: -1
-  EdgeLink_2_0: -1
   Flags:
+  - EdgeLink_2_0
+  - Water
   - Found
 - Vertices: 95, 90, 89
   EdgeLink_0_1: 160
@@ -408,9 +413,10 @@ Triangles:
   - Found
 - Vertices: 107, 74, 13
   EdgeLink_0_1: 214
-  EdgeLink_1_2: -1
-  EdgeLink_2_0: 148
+  EdgeLink_1_2: 41
+  EdgeLink_2_0: 285
   Flags:
+  - EdgeLink_1_2
   - Found
 - Vertices: 27, 17, 16
   EdgeLink_0_1: 35
@@ -492,7 +498,7 @@ Triangles:
   - Water
   - Found
 - Vertices: 109, 86, 75
-  EdgeLink_0_1: 34
+  EdgeLink_0_1: 6
   EdgeLink_1_2: 131
   EdgeLink_2_0: 44
   Flags:
@@ -1109,7 +1115,7 @@ Triangles:
   - Water
   - Found
 - Vertices: 86, 69, 56
-  EdgeLink_0_1: 33
+  EdgeLink_0_1: 7
   EdgeLink_1_2: 112
   EdgeLink_2_0: 131
   Flags:
@@ -1235,11 +1241,12 @@ Triangles:
   Flags:
   - Water
   - Found
-- Vertices: 13, 108, 107
-  EdgeLink_0_1: -1
-  EdgeLink_1_2: 18
-  EdgeLink_2_0: 31
+- Vertices: 170, 180, 162
+  EdgeLink_0_1: 284
+  EdgeLink_1_2: 271
+  EdgeLink_2_0: 256
   Flags:
+  - Water
   - Found
 - Vertices: 139, 106, 137
   EdgeLink_0_1: 213
@@ -1255,7 +1262,7 @@ Triangles:
   - Found
 - Vertices: 140, 106, 24
   EdgeLink_0_1: 150
-  EdgeLink_1_2: -1
+  EdgeLink_1_2: 290
   EdgeLink_2_0: 22
   Flags:
   - Found
@@ -1402,7 +1409,7 @@ Triangles:
   - Found
 - Vertices: 135, 34, 0
   EdgeLink_0_1: 208
-  EdgeLink_1_2: 5
+  EdgeLink_1_2: 36
   EdgeLink_2_0: 210
   Flags:
   - EdgeLink_1_2
@@ -1621,13 +1628,13 @@ Triangles:
   - Found
 - Vertices: 135, 136, 34
   EdgeLink_0_1: 217
-  EdgeLink_1_2: 4
+  EdgeLink_1_2: 38
   EdgeLink_2_0: 172
   Flags:
   - EdgeLink_1_2
   - Found
 - Vertices: 0, 74, 137
-  EdgeLink_0_1: 3
+  EdgeLink_0_1: 37
   EdgeLink_1_2: 113
   EdgeLink_2_0: 206
   Flags:
@@ -1652,7 +1659,7 @@ Triangles:
   Flags:
   - Found
 - Vertices: 107, 106, 139
-  EdgeLink_0_1: -1
+  EdgeLink_0_1: 288
   EdgeLink_1_2: 149
   EdgeLink_2_0: 214
   Flags:
@@ -1696,14 +1703,14 @@ Triangles:
 - Vertices: 136, 141, 142
   EdgeLink_0_1: 218
   EdgeLink_1_2: 221
-  EdgeLink_2_0: 2
+  EdgeLink_2_0: 35
   Flags:
   - EdgeLink_2_0
   - Found
 - Vertices: 142, 141, 143
   EdgeLink_0_1: 220
   EdgeLink_1_2: 222
-  EdgeLink_2_0: 1
+  EdgeLink_2_0: 40
   Flags:
   - EdgeLink_2_0
   - Found
@@ -1715,6 +1722,7 @@ Triangles:
   - Found
 - Vertices: 144, 3, 143
   EdgeLink_0_1: 225
+  EdgeLink_1_2: 34
   EdgeLink_2_0: 222
   Flags:
   - EdgeLink_1_2
@@ -1864,7 +1872,7 @@ Triangles:
 - Vertices: 63, 160, 161
   EdgeLink_0_1: 147
   EdgeLink_1_2: 247
-  EdgeLink_2_0: 40
+  EdgeLink_2_0: 22
   Flags:
   - EdgeLink_2_0
   - Water
@@ -1879,7 +1887,7 @@ Triangles:
 - Vertices: 161, 162, 163
   EdgeLink_0_1: 247
   EdgeLink_1_2: 249
-  EdgeLink_2_0: 39
+  EdgeLink_2_0: 23
   Flags:
   - EdgeLink_2_0
   - Water
@@ -1887,7 +1895,7 @@ Triangles:
 - Vertices: 163, 162, 164
   EdgeLink_0_1: 248
   EdgeLink_1_2: 250
-  EdgeLink_2_0: 38
+  EdgeLink_2_0: 24
   Flags:
   - EdgeLink_2_0
   - Water
@@ -1902,7 +1910,7 @@ Triangles:
 - Vertices: 164, 165, 166
   EdgeLink_0_1: 250
   EdgeLink_1_2: 252
-  EdgeLink_2_0: 37
+  EdgeLink_2_0: 25
   Flags:
   - EdgeLink_2_0
   - Water
@@ -1917,14 +1925,14 @@ Triangles:
 - Vertices: 166, 167, 168
   EdgeLink_0_1: 252
   EdgeLink_1_2: 254
-  EdgeLink_2_0: 36
+  EdgeLink_2_0: 26
   Flags:
   - EdgeLink_2_0
   - Water
   - Found
 - Vertices: 167, 169, 168
   EdgeLink_0_1: 274
-  EdgeLink_1_2: 26
+  EdgeLink_1_2: 4
   EdgeLink_2_0: 253
   Flags:
   - EdgeLink_1_2
@@ -1940,7 +1948,7 @@ Triangles:
 - Vertices: 162, 78, 170
   EdgeLink_0_1: 255
   EdgeLink_1_2: 257
-  EdgeLink_2_0: 285
+  EdgeLink_2_0: 148
   Flags:
   - Water
   - Found
@@ -2029,7 +2037,7 @@ Triangles:
   - Water
   - Found
 - Vertices: 176, 178, 177
-  EdgeLink_0_1: 286
+  EdgeLink_0_1: 18
   EdgeLink_1_2: 270
   EdgeLink_2_0: 268
   Flags:
@@ -2037,14 +2045,14 @@ Triangles:
   - Found
 - Vertices: 177, 178, 179
   EdgeLink_0_1: 269
-  EdgeLink_1_2: 23
+  EdgeLink_1_2: 1
   EdgeLink_2_0: 275
   Flags:
   - EdgeLink_1_2
   - Water
   - Found
 - Vertices: 162, 180, 165
-  EdgeLink_0_1: 285
+  EdgeLink_0_1: 148
   EdgeLink_1_2: 272
   EdgeLink_2_0: 250
   Flags:
@@ -2066,7 +2074,7 @@ Triangles:
   - Found
 - Vertices: 167, 181, 169
   EdgeLink_0_1: 273
-  EdgeLink_1_2: 25
+  EdgeLink_1_2: 3
   EdgeLink_2_0: 254
   Flags:
   - EdgeLink_1_2
@@ -2075,7 +2083,7 @@ Triangles:
 - Vertices: 181, 177, 179
   EdgeLink_0_1: 276
   EdgeLink_1_2: 270
-  EdgeLink_2_0: 24
+  EdgeLink_2_0: 2
   Flags:
   - EdgeLink_2_0
   - Water
@@ -2094,7 +2102,7 @@ Triangles:
   Flags:
   - Water
   - Found
-- Vertices: 182, 180, 183
+- Vertices: 182, 180, 108
   EdgeLink_0_1: 277
   EdgeLink_1_2: 284
   EdgeLink_2_0: 280
@@ -2108,62 +2116,101 @@ Triangles:
   Flags:
   - Water
   - Found
-- Vertices: 182, 183, 175
+- Vertices: 182, 108, 175
   EdgeLink_0_1: 278
   EdgeLink_1_2: 281
   EdgeLink_2_0: 279
   Flags:
   - Water
   - Found
-- Vertices: 175, 183, 172
+- Vertices: 175, 108, 172
   EdgeLink_0_1: 280
   EdgeLink_1_2: 282
   EdgeLink_2_0: 266
   Flags:
   - Water
   - Found
-- Vertices: 183, 171, 172
+- Vertices: 108, 171, 172
   EdgeLink_0_1: 283
   EdgeLink_1_2: 261
   EdgeLink_2_0: 281
   Flags:
   - Water
   - Found
-- Vertices: 183, 170, 171
+- Vertices: 108, 170, 171
   EdgeLink_0_1: 284
   EdgeLink_1_2: 258
   EdgeLink_2_0: 282
   Flags:
   - Water
   - Found
-- Vertices: 183, 180, 170
+- Vertices: 108, 180, 170
   EdgeLink_0_1: 278
-  EdgeLink_1_2: 285
+  EdgeLink_1_2: 148
   EdgeLink_2_0: 283
   Flags:
   - Water
   - Found
-- Vertices: 170, 180, 162
-  EdgeLink_0_1: 284
-  EdgeLink_1_2: 271
-  EdgeLink_2_0: 256
-  Flags:
-  - Water
-  - Found
-- Vertices: 178, 176, 184
-  EdgeLink_0_1: 269
+- Vertices: 107, 13, 183
+  EdgeLink_0_1: 31
   EdgeLink_1_2: -1
-  EdgeLink_2_0: 22
+  EdgeLink_2_0: 286
   Flags:
-  - EdgeLink_2_0
-  - Water
+  - Found
+- Vertices: 107, 183, 184
+  EdgeLink_0_1: 285
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 287
+  Flags:
+  - Found
+- Vertices: 107, 184, 185
+  EdgeLink_0_1: 286
+  EdgeLink_1_2: 292
+  EdgeLink_2_0: 288
+  Flags:
+  - Found
+- Vertices: 106, 107, 185
+  EdgeLink_0_1: 213
+  EdgeLink_1_2: 287
+  EdgeLink_2_0: 289
+  Flags:
+  - Found
+- Vertices: 106, 185, 186
+  EdgeLink_0_1: 288
+  EdgeLink_1_2: 293
+  EdgeLink_2_0: 291
+  Flags:
+  - Found
+- Vertices: 24, 106, 187
+  EdgeLink_0_1: 151
+  EdgeLink_1_2: 291
+  EdgeLink_2_0: -1
+  Flags:
+  - Found
+- Vertices: 106, 186, 187
+  EdgeLink_0_1: 289
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 290
+  Flags:
+  - Found
+- Vertices: 184, 188, 185
+  EdgeLink_0_1: -1
+  EdgeLink_1_2: 293
+  EdgeLink_2_0: 287
+  Flags:
+  - Found
+- Vertices: 185, 188, 186
+  EdgeLink_0_1: 292
+  EdgeLink_1_2: -1
+  EdgeLink_2_0: 289
+  Flags:
   - Found
 NavmeshGrid:
   Divisor: 7
   MaxDistanceX: 585.1429
   MaxDistanceY: 585.1429
   Min: 163840, 28672, 1104
-  Max: 167936, 32768, 3433.5051
+  Max: 167936, 32768, 3412.153
   Cells:
   - Triangles:
     - 0
@@ -2240,18 +2287,24 @@ NavmeshGrid:
     - 212
     - 214
   - Triangles:
-    - 18
     - 31
     - 113
     - 114
-    - 148
     - 149
     - 150
     - 151
     - 213
     - 214
-  - Triangles:
-    - 18
+    - 285
+    - 286
+    - 287
+    - 288
+    - 289
+    - 290
+    - 291
+    - 292
+    - 293
+  - {}
   - {}
   - {}
   - Triangles:
@@ -2336,6 +2389,8 @@ NavmeshGrid:
     - 150
     - 151
     - 216
+    - 290
+    - 291
   - {}
   - {}
   - {}
@@ -2585,6 +2640,7 @@ NavmeshGrid:
     - 283
     - 284
   - Triangles:
+    - 18
     - 266
     - 267
     - 268
@@ -2595,7 +2651,6 @@ NavmeshGrid:
     - 279
     - 280
     - 281
-    - 286
   - Triangles:
     - 8
     - 9
@@ -2665,6 +2720,7 @@ NavmeshGrid:
     - 167
     - 168
   - Triangles:
+    - 148
     - 161
     - 164
     - 166
@@ -2678,8 +2734,8 @@ NavmeshGrid:
     - 259
     - 283
     - 284
-    - 285
   - Triangles:
+    - 148
     - 271
     - 272
     - 273
@@ -2688,7 +2744,6 @@ NavmeshGrid:
     - 280
     - 283
     - 284
-    - 285
   - Triangles:
     - 272
     - 273
@@ -2763,6 +2818,7 @@ NavmeshGrid:
     - 245
   - Triangles:
     - 147
+    - 148
     - 164
     - 165
     - 245
@@ -2774,15 +2830,14 @@ NavmeshGrid:
     - 255
     - 256
     - 271
-    - 285
   - Triangles:
+    - 148
     - 249
     - 250
     - 251
     - 252
     - 271
     - 272
-    - 285
   - Triangles:
     - 251
     - 252
@@ -2792,22 +2847,21 @@ NavmeshGrid:
     - 273
     - 274
 EdgeLinks:
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 56
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 87
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 58
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 62
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 63
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 60
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 65
-- Mesh: 00C1E4:NovaArizona.esm
-  Triangle: 54
+- Mesh: 01857B:NovaArizona.esm
+  Triangle: 10
+- Mesh: 01857B:NovaArizona.esm
+  Triangle: 8
+- Mesh: 01857B:NovaArizona.esm
+  Triangle: 5
+- Mesh: 01857B:NovaArizona.esm
+  Triangle: 3
+- Mesh: 01857B:NovaArizona.esm
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 137
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 121
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 113
 - Mesh: 00ABB9:NovaArizona.esm
   Triangle: 58
 - Mesh: 00ABB9:NovaArizona.esm
@@ -2836,15 +2890,16 @@ EdgeLinks:
   Triangle: 32
 - Mesh: 00ABB9:NovaArizona.esm
   Triangle: 34
-- Mesh: 01857B:NovaArizona.esm
-  Triangle: 10
-- Mesh: 01857B:NovaArizona.esm
-  Triangle: 8
-- Mesh: 01857B:NovaArizona.esm
-  Triangle: 5
-- Mesh: 01857B:NovaArizona.esm
-  Triangle: 3
-- Mesh: 01857B:NovaArizona.esm
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 218
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 191
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 189
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 187
+- Mesh: 00ABBA:NovaArizona.esm
+  Triangle: 185
 - Mesh: 00ABBA:NovaArizona.esm
 - Mesh: 00ABBA:NovaArizona.esm
   Triangle: 27
@@ -2856,19 +2911,21 @@ EdgeLinks:
   Triangle: 81
 - Mesh: 00ABBA:NovaArizona.esm
   Triangle: 95
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 113
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 121
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 137
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 185
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 187
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 189
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 191
-- Mesh: 00ABBA:NovaArizona.esm
-  Triangle: 218
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 54
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 56
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 58
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 60
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 62
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 63
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 65
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 87
+- Mesh: 00C1E4:NovaArizona.esm
+  Triangle: 141

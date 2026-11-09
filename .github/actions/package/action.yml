@@ -1,0 +1,60 @@
+name: Package
+description: Build release 
+inputs:
+  name:
+    description: Version name
+    required: true
+outputs:
+  zip:
+    description: Path to zip
+    value: ${{ steps.zip.outputs.zip }}
+runs:
+  using: composite
+  steps:
+    - uses: actions/cache@v4
+      with:
+        path: .fo-git/spriggit-cli
+        key: spriggit-${{ hashFiles('fo-git.json') }}
+    - name: Validate Spriggit text
+      shell: pwsh
+      run: Tools/fo-git.exe validate --text
+    - name: Build ESM
+      shell: pwsh
+      run: Tools/fo-git.exe build-esm
+    - name: Validate ESM
+      shell: pwsh
+      run: Tools/fo-git.exe validate --esm --round-trip
+    - name: Get BSArch
+      shell: pwsh
+      run: |
+        curl.exe -sSL -o "$env:RUNNER_TEMP\xEdit.7z" https://github.com/TES5Edit/TES5Edit/releases/download/xedit-4.1.5f/xEdit.4.1.5f.7z
+        7z e -y "-o$env:RUNNER_TEMP" "$env:RUNNER_TEMP\xEdit.7z" BSArch64.exe
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+    - name: Pack BSA
+      shell: pwsh
+      run: |
+        $bsa = "$env:RUNNER_TEMP\bsa"
+        $out = "$env:RUNNER_TEMP\release"
+        New-Item -ItemType Directory $bsa, $out | Out-Null
+        foreach ($f in "Meshes", "Sound", "Textures") {
+          Copy-Item $f $bsa -Recurse
+        }
+        # Loose assets
+        Remove-Item "$bsa\Textures\Interface\WorldMap" -Recurse
+        Remove-Item "$bsa\Sound\Songs" -Recurse
+        & "$env:RUNNER_TEMP\BSArch64.exe" pack $bsa "$out\NovaArizona - Main.bsa" -fnv -mt
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+    - name: Zip
+      id: zip
+      shell: pwsh
+      run: |
+        $out = "$env:RUNNER_TEMP\release"
+        $zip = "$env:RUNNER_TEMP\NovaArizona-${{ inputs.name }}.zip"
+        $skip = "Meshes", "Sound", "Textures", "Plugins", "Tools", "README.md", "fo-git.json", "VERSION"
+        Get-ChildItem -Force | Where-Object { $_.Name -notin $skip -and -not $_.Name.StartsWith(".") } | Copy-Item -Destination $out -Recurse
+        New-Item -ItemType Directory "$out\Textures\Interface", "$out\Sound" | Out-Null
+        Copy-Item Textures\Interface\WorldMap "$out\Textures\Interface" -Recurse
+        Copy-Item Sound\Songs "$out\Sound" -Recurse
+        7z a -tzip $zip "$out\*"
+        if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+        "zip=$zip" >> $env:GITHUB_OUTPUT

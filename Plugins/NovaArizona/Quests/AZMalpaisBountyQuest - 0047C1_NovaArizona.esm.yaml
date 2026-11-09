@@ -19,7 +19,7 @@ Stages:
         RefCount: 1
         Enabled: 1
       CompiledScript: 0xA3110F0003007201006E050000006E01000000
-      SourceCode: "SetObjectiveDisplayed AZMalpaisBountyQuest 5 1\0"
+      SourceCode: SetObjectiveDisplayed AZMalpaisBountyQuest 5 1
       References:
       - MutagenObjectType: ScriptObjectReference
         Reference: 0047C1:NovaArizona.esm
@@ -83,50 +83,50 @@ Objectives:
   Description: Optio Flavius Constantinus has bounties available. Speak to him about receiving a mission or turning in a bounty.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0x0E1D55
+    Unused: 0x0C1D37
 - Index: 11
   Description: Kill Screaming Eagle and acquire his head - preferrably intact.
 - Index: 20
   Description: Return to Flavius Constantius with Screaming Eagle's head and collect the bounty.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0xCC3B50
+    Unused: 0xC03B32
 - Index: 10
   Description: (Optional) Speak to the Rusty Hooks about the location of Screaming Eagle.
   Targets:
   - Target: 00977A:NovaArizona.esm
-    Unused: 0x34044D
+    Unused: 0x31042F
   - Target: 009F02:NovaArizona.esm
-    Unused: 0x34044D
+    Unused: 0x31042F
 - Index: 21
   Description: Kill Serratus and acquire his head - preferrably intact.
   Targets:
   - Target: 02EF73:NovaArizona.esm
-    Unused: 0x6D6D4A
+    Unused: 0x636D2C
 - Index: 25
   Description: Return to Flavius Constantius with Serratus's head and collect the bounty.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0x34044D
+    Unused: 0x31042F
 - Index: 30
   Description: Rescue the missing caravaneers.
   Targets:
   - Target: 006E23:NovaArizona.esm
-    Unused: 0x102943
+    Unused: 0x322925
     Conditions:
     - Fluff: 0x000000
       Function: GetDead
       RunOnType: Reference
       Reference: 006E23:NovaArizona.esm
   - Target: 006E25:NovaArizona.esm
-    Unused: 0x102943
+    Unused: 0x322925
     Conditions:
     - Fluff: 0x000000
       Function: GetDead
       RunOnType: Reference
       Reference: 006E25:NovaArizona.esm
   - Target: 006E24:NovaArizona.esm
-    Unused: 0x102943
+    Unused: 0x322925
     Conditions:
     - Fluff: 0x000000
       Function: GetDead
@@ -136,14 +136,14 @@ Objectives:
   Description: Return to Flavius Constantius with news of the caravaneers.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0x6D6D4A
+    Unused: 0x636D2C
 - Index: 40
   Description: Kill the Ranger and acquire his head.
 - Index: 45
   Description: Return to Flavius Constantius with the Ranger's head and collect the bounty.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0x682F4E
+    Unused: 0x7E2F30
 - Index: 100
   Description: Optio Flavius Constantinus has no more bounties available.
 - Index: 255
@@ -152,41 +152,41 @@ Objectives:
   Description: The three bounties have been completed. Speak to Flavius Constantinus about the fourth bounty.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0xCD3B50
+    Unused: 0xC03B32
 - Index: 13
   Description: (Optional) Screaming Eagle wishes to return to Malpais. See if this is possible.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0xCD3B50
+    Unused: 0xDF3B32
 - Index: 23
   Description: (Optional) Serratus wishes to return to Malpais. See if this is possible.
   Targets:
   - Target: 004BC2:NovaArizona.esm
-    Unused: 0x34044D
+    Unused: 0x31042F
 - Index: 12
   Description: Kill Screaming Eagle and acquire his head - preferrably intact.
   Targets:
   - Target: 006E22:NovaArizona.esm
-    Unused: 0x6E6D4A
+    Unused: 0x626D2C
 - Index: 22
   Description: Kill Serratus and acquire his head - preferrably intact.
   Targets:
   - Target: 02F085:NovaArizona.esm
-    Unused: 0x6E6D4A
+    Unused: 0x626D2C
 - Index: 41
   Description: Kill the Ranger and acquire his head.
   Targets:
   - Target: 006F6A:NovaArizona.esm
-    Unused: 0xA51545
+    Unused: 0xB81527
 - Index: 42
   Description: (Optional) Speak to Glass-Eyes Ricamore at Elephant Hill about the location of the Ranger.
   Targets:
   - Target: 01076C:NovaArizona.esm
-    Unused: 0x9A054F
+    Unused: 0x930531
 - Index: 14
   Description: Inform Screaming Eagle that the Optio will forgive his crimes and allow his transfer.
 - Index: 24
   Description: Inform Serratus that the Optio will forgive his crimes and allow his transfer.
   Targets:
   - Target: 02F085:NovaArizona.esm
-    Unused: 0x692F4E
+    Unused: 0x7D2F30

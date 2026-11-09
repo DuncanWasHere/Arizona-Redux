@@ -137,6 +137,14 @@ TopCell:
       Reference: 156BE0:FalloutNV.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     NavigationDoorLink:
       Navmesh: 13925D:FalloutNV.esm
       TriangleIndex: 63
@@ -348,7 +356,7 @@ TopCell:
       Navmesh: 004238:NovaArizona.esm
       TriangleIndex: 219
     Placement:
-      Position: 106635.86, 46359.465, 3584.8318
+      Position: 106635.86, 46359.465, 3567.0867
       Rotation: 0, 0, 4.6715937
     MajorFlags:
     - Persistent
@@ -1048,6 +1056,15 @@ TopCell:
     Base: 156784:FalloutNV.esm
     EnableParent:
       Reference: 01F000:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 146405.88, 34250.242, 2684.5583
     Rotation: 0, 0, 2.1873968
   - MutagenObjectType: PlacedObject
@@ -1135,7 +1152,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 025FA7:NovaArizona.esm
-    Position: 153605.53, 8743.817, 6443.0444
+    Position: 153605.53, 8743.817, 6392.18
     Rotation: 0, 0, 5.2831903
   - MutagenObjectType: PlacedCreature
     FormKey: 003E35:NovaArizona.esm
@@ -1144,7 +1161,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 025FA8:NovaArizona.esm
-    Position: 153119.89, 8740.931, 6443.0444
+    Position: 153119.89, 8740.931, 6381.8486
     Rotation: 0, 0, 0.3999998
   - MutagenObjectType: PlacedCreature
     FormKey: 003E3A:NovaArizona.esm
@@ -1361,18 +1378,6 @@ TopCell:
     Placement:
       Position: 84246.77, 8853.637, 3880.1602
       Rotation: 0, 0, 5.8663883
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
-    FormKey: 003FAA:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 056AB3:FalloutNV.esm
-    Placement:
-      Position: 94440.02, -38155.29, 5365.5977
-      Rotation: 0, 0, 1.3600007
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -2097,18 +2102,6 @@ TopCell:
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
-    FormKey: 00432C:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 0288BD:FalloutNV.esm
-    Placement:
-      Position: 94935.99, -38653.535, 5374.8423
-      Rotation: 0, 0, 0.8000101
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
     FormKey: 00434D:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     FormVersion: 15
@@ -2211,9 +2204,9 @@ TopCell:
       Position: 2940.9487, 1340.1744, 8960
       Rotation: 0, 0, 5.235988E-06
     Lock:
-      Level: 10003762
+      Level: 8756018
       Key: 01B6FF:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 016416:NovaArizona.esm
@@ -2223,33 +2216,6 @@ TopCell:
       Rotation: 0, 0, 2.633213
     MajorFlags:
     - Persistent
-  - MutagenObjectType: PlacedCreature
-    FormKey: 004690:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 156786:FalloutNV.esm
-    Position: 91857.875, -48336.492, 3234.0615
-    Rotation: 0, 0, 4.6477227
-  - MutagenObjectType: PlacedCreature
-    FormKey: 004691:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C679:FalloutNV.esm
-    Position: 91118.85, -47206.633, 3281.1033
-    Rotation: 0, 0, 6.195919
-  - MutagenObjectType: PlacedCreature
-    FormKey: 004692:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C685:FalloutNV.esm
-    Position: 90805.75, -47966.918, 3232.3179
-    Rotation: 0, 0, 1.6406095
   - MutagenObjectType: PlacedObject
     FormKey: 004693:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -3350,7 +3316,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 108801.7, 44282.17, 3166.7776
+      Position: 108801.7, 44282.17, 3158.8528
       Rotation: 0, 0, 0.033199213
     MajorFlags:
     - Persistent
@@ -3375,7 +3341,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 108668.2, 44286.41, 3166.7776
+      Position: 108668.2, 44286.41, 3160.995
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -3411,7 +3377,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 111542.164, 45605.465, 3160.908
+      Position: 111541.875, 45603.895, 3157.7053
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -3423,7 +3389,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 111675.766, 45613.64, 3162.3464
+      Position: 111675.766, 45613.64, 3156.2888
       Rotation: 0, 0, 0.033199653
     MajorFlags:
     - Persistent
@@ -3507,7 +3473,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 111023.05, 46500, 3161.1655
+      Position: 111023.05, 46500, 3159.4558
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -3619,9 +3585,9 @@ TopCell:
       Position: 2616.7056, -1347.5084, -367.8169
       Rotation: 0.0050108405, 6.2819095, 6.2548323
     Lock:
-      Level: 9995620
+      Level: 8756068
       Key: 024C25:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 016E3E:NovaArizona.esm
@@ -4251,8 +4217,8 @@ TopCell:
     Ownership:
       Owner: 0EE68A:FalloutNV.esm
     Lock:
-      Level: 9990475
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 006495:NovaArizona.esm
@@ -4889,8 +4855,8 @@ TopCell:
     Ownership:
       Owner: 008C8F:NovaArizona.esm
     Lock:
-      Level: 9986073
-      Unused: 0x000000
+      Level: 8755993
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 013B85:NovaArizona.esm
@@ -5165,6 +5131,15 @@ TopCell:
     Base: 004BBF:NovaArizona.esm
     EnableParent:
       Reference: 016CC6:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119958.66, -100981.48, 7447.799
   - MutagenObjectType: PlacedNpc
     FormKey: 006E24:NovaArizona.esm
@@ -5177,6 +5152,15 @@ TopCell:
     Base: 004BAB:NovaArizona.esm
     EnableParent:
       Reference: 016CC6:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119906.15, -100775.984, 7497.7354
     Rotation: 0, 0, 1.9000003
   - MutagenObjectType: PlacedNpc
@@ -5190,6 +5174,15 @@ TopCell:
     Base: 004BAA:NovaArizona.esm
     EnableParent:
       Reference: 016CC6:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119875.34, -100914.79, 7470.059
     Rotation: 0, 0, 1.5000005
   - MutagenObjectType: PlacedCreature
@@ -5295,6 +5288,15 @@ TopCell:
       Rotation: -0.010213787, 0.09356162, 0.2290484
     EnableParent:
       Reference: 016CC6:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 120196.76, -101011, 7449.4463
   - MutagenObjectType: PlacedCreature
     FormKey: 006E27:NovaArizona.esm
@@ -5398,6 +5400,15 @@ TopCell:
       Rotation: 0.018929737, 0.023466954, 0.2270126
     EnableParent:
       Reference: 016CC6:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119779.97, -101182.32, 7438.9795
   - MutagenObjectType: PlacedObject
     FormKey: 006E4C:NovaArizona.esm
@@ -5862,7 +5873,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 110712.234, 39102.176, 3173.8772
+      Position: 110712.234, 39102.176, 3165.5232
       Rotation: 0, 0, 0.033199213
     MajorFlags:
     - Persistent
@@ -5874,7 +5885,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 110578.734, 39106.414, 3173.8772
+      Position: 110578.734, 39106.414, 3165.9602
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -6291,6 +6302,15 @@ TopCell:
     Base: 006E2D:NovaArizona.esm
     EnableParent:
       Reference: 016CC6:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 119965.34, -101159.95, 7405.595
       Rotation: 6.0388393, 6.2482786, 0
@@ -6725,7 +6745,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 018F9A:NovaArizona.esm
     LinkedReference: 00CCBB:NovaArizona.esm
-    Position: 92006.875, -41109.516, 4576.54
+    Position: 90300.97, -43694.387, 3823.6096
     Rotation: 0, 0, 4.9632225
   - MutagenObjectType: PlacedNpc
     FormKey: 0074E1:NovaArizona.esm
@@ -6743,7 +6763,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 018F9A:NovaArizona.esm
-    Position: 95666.37, -37110.555, 5461.182
+    Position: 95398.99, -38000.242, 5380.874
     Rotation: 0, 0, 5.858196
   - MutagenObjectType: PlacedNpc
     FormKey: 0074E6:NovaArizona.esm
@@ -8385,9 +8405,9 @@ TopCell:
       Position: 2943.4016, 1321.086, 8960
       Rotation: 0, 0, 5.235988E-06
     Lock:
-      Level: 9961778
+      Level: 8756018
       Key: 01B7CC:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 016423:NovaArizona.esm
@@ -8429,9 +8449,9 @@ TopCell:
       Position: 2942.4875, 1312.647, 8960
       Rotation: 0, 0, 5.235988E-06
     Lock:
-      Level: 9961522
+      Level: 8756018
       Key: 01B78D:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 016423:NovaArizona.esm
@@ -10164,9 +10184,9 @@ TopCell:
       Position: -557.16656, 511.9408, 766.82635
       Rotation: 0, 0, 1.5969781
     Lock:
-      Level: 9950002
+      Level: 8756018
       Key: 02D833:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00C083:NovaArizona.esm
@@ -10367,17 +10387,6 @@ TopCell:
     Position: 95288.86, -38370.555, 5353.8403
     Rotation: 0, 0, 2.499999
   - MutagenObjectType: PlacedObject
-    FormKey: 009781:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 06D086:FalloutNV.esm
-    Placement:
-      Position: 95377.39, -38817.39, 5335.868
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
     FormKey: 009782:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     FormVersion: 15
@@ -10529,8 +10538,8 @@ TopCell:
     Ownership:
       Owner: 0EE68A:FalloutNV.esm
     Lock:
-      Level: 9947467
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 008C61:NovaArizona.esm
@@ -10615,11 +10624,11 @@ TopCell:
       Owner: 009775:NovaArizona.esm
     NavigationDoorLink:
       Navmesh: 009780:NovaArizona.esm
-      TriangleIndex: 45
+      TriangleIndex: 44
     Scale: 1.1
     Placement:
-      Position: 95699.11, -39611.73, 5334.6577
-      Rotation: 0, 0, 5.7846165
+      Position: 94605.99, -38273.945, 5349.0527
+      Rotation: -0.0019000187, 0.04495719, 0.92435026
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -11832,6 +11841,15 @@ TopCell:
     Base: 00C05E:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 118757.71, -40988.03, 5296
     Rotation: 0, 0, 3.6027977
   - MutagenObjectType: PlacedCreature
@@ -11843,6 +11861,15 @@ TopCell:
     Base: 00C05E:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 121354.664, -42353.63, 5312
     Rotation: 0, 0, 3.632004
   - MutagenObjectType: PlacedCreature
@@ -11854,6 +11881,15 @@ TopCell:
     Base: 00C05E:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 120879.05, -41571.062, 5312
     Rotation: 0, 0, 3.7028034
   - MutagenObjectType: PlacedCreature
@@ -11865,6 +11901,15 @@ TopCell:
     Base: 00C05E:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 120574.734, -39603.375, 5299.29
     Rotation: 0, 0, 5.4028044
   - MutagenObjectType: PlacedCreature
@@ -11876,6 +11921,15 @@ TopCell:
     Base: 00C05E:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 118826.76, -42243.047, 5317.964
     Rotation: 0, 0, 5.102798
   - MutagenObjectType: PlacedCreature
@@ -11887,6 +11941,15 @@ TopCell:
     Base: 007150:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 120296.26, -42005.742, 5304
     Rotation: 0, 0, 5.0881934
   - MutagenObjectType: PlacedCreature
@@ -12093,6 +12156,15 @@ TopCell:
     Base: 007154:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 121229.38, -42315.074, 5312
     Rotation: 0, 0, 2.8050058
   - MutagenObjectType: PlacedCreature
@@ -12104,6 +12176,15 @@ TopCell:
     Base: 007154:NovaArizona.esm
     EnableParent:
       Reference: 00E26A:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 121164.94, -42416.5, 5312
     Rotation: 0, 0, 2.2050054
   - MutagenObjectType: PlacedNpc
@@ -12115,7 +12196,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 00A124:NovaArizona.esm
     LinkedReference: 00C402:NovaArizona.esm
-    Position: 114332.8, 36781.457, 3238.1816
+    Position: 114644.82, 36868.42, 3255.4053
   - MutagenObjectType: PlacedCreature
     FormKey: 00B45E:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -12262,6 +12343,15 @@ TopCell:
     Base: 15C680:FalloutNV.esm
     EnableParent:
       Reference: 01F000:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 146497.95, 30135.645, 2695.423
     Rotation: 0, 0, 4.7831936
   - MutagenObjectType: PlacedCreature
@@ -12274,6 +12364,15 @@ TopCell:
     Base: 15C67E:FalloutNV.esm
     EnableParent:
       Reference: 01F000:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 146940.64, 34280.234, 2677.0925
     Rotation: 0, 0, 0.10000213
   - MutagenObjectType: PlacedCreature
@@ -12333,6 +12432,15 @@ TopCell:
     Base: 15C67F:FalloutNV.esm
     EnableParent:
       Reference: 01F000:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 145839.22, 29095.479, 2669.291
     Rotation: 0, 0, 2.6250083
   - MutagenObjectType: PlacedObject
@@ -12745,6 +12853,14 @@ TopCell:
       Reference: 01F6F7:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 167658.14, -109608.766, 7926.5884
       Rotation: 0, 0, 4.6744018
@@ -12994,62 +13110,62 @@ TopCell:
     FormVersion: 15
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
-    Base: 0A11F5:FalloutNV.esm
+    Base: 0A11F3:FalloutNV.esm
     RagdollData:
     - BoneId: 2
-      Position: 0, 0, -0.012207031
-      Rotation: -0.19047518, -0.038184922, -1.585561
+      Position: 0, 0, -0.013183594
+      Rotation: -0.19045751, -0.038184892, -1.5855569
     - BoneId: 1059451912
-      Position: 0.3256836, -0.20703125, 6.7578125
-      Rotation: -3.105855, 0.008595353, -3.0473323
+      Position: 0.32861328, -0.2265625, 6.734375
+      Rotation: -3.1058648, 0.008595972, -3.0473533
     - BoneId: 996443657
-      Position: 31.969238, 0.00390625, 0.109375
-      Rotation: 0.00063386414, 0.0008633499, 0.40294158
+      Position: 31.969727, 0.0078125, 0.1328125
+      Rotation: 0.00063334836, 0.00086411496, 0.40296298
     - BoneId: 1040746506
-      Position: 29.042969, 0.08203125, -0.03125
-      Rotation: 0.143467, 0.015153059, 0.15097205
+      Position: 29.041016, 0.08203125, -0.0390625
+      Rotation: 0.14344442, 0.015153314, 0.1509498
     - BoneId: 994851854
-      Position: -0.4897461, 0.04296875, -7.0859375
-      Rotation: -3.0922322, 0.010901646, -3.0521514
+      Position: -0.48876953, 0.03125, -7.1015625
+      Rotation: -3.0922453, 0.010902327, -3.052172
     - BoneId: 1061291535
-      Position: 31.961914, -0.0546875, 0.1171875
-      Rotation: 0.0014218794, 0.00048412246, 0.40376458
+      Position: 31.961914, -0.0625, 0.1328125
+      Rotation: 0.0014206391, 0.00048438486, 0.40378606
     - BoneId: 1059573008
-      Position: 29.064453, -0.0625, 0.015625
-      Rotation: -0.14471781, -0.013442821, 0.02987358
+      Position: 29.064453, -0.0625, 0.0234375
+      Rotation: -0.14469497, -0.013442413, 0.029865766
     - BoneId: 996597506
-      Position: 1.484375, -0.0703125, 6.309082
-      Rotation: 1.6026716, -0.005996171, 1.3732142
+      Position: 1.4765625, -0.078125, 6.3115234
+      Rotation: 1.6026636, -0.005995628, 1.3732308
     - BoneId: 1052490499
-      Position: 7.601074, -0.0234375, 0.03125
-      Rotation: -0.067152575, -0.013750377, -0.033512007
+      Position: 7.6000977, -0.01953125, 0.0390625
+      Rotation: -0.067136325, -0.013750196, -0.033503283
     - BoneId: 994590212
-      Position: 9.129883, -0.06640625, -0.0078125
-      Rotation: -0.13203129, 0.043669123, -0.28565514
+      Position: 9.130371, -0.0546875, 0.0078125
+      Rotation: -0.13200861, 0.04366942, -0.28566295
     - BoneId: 1061080064
-      Position: 2.59375, -0.97265625, 0.09375
-      Rotation: -0.32488844, -0.36527634, -0.87520134
+      Position: 2.5917969, -0.96875, 0.1171875
+      Rotation: -0.3249053, -0.3652761, -0.8751782
     - BoneId: 1059857153
-      Position: 5.6445312, -0.02734375, -0.0546875
-      Rotation: 0.18981567, -0.27963388, 0.15597673
+      Position: 5.640625, -0.02734375, -0.05859375
+      Rotation: 0.18979746, -0.27963364, 0.15595423
     - BoneId: 996915973
-      Position: 11.1015625, 0.2890625, 2.0507812
-      Rotation: -1.0967765, -0.44610706, 0.9265294
+      Position: 11.109375, 0.28125, 2.0546875
+      Rotation: -1.0967743, -0.4461068, 0.92652524
     - BoneId: 1058642182
-      Position: 17.396973, -0.051757812, -0.0703125
-      Rotation: 0.0002215441, 0.0050150254, 0.44697878
+      Position: 17.396973, -0.051757812, -0.0390625
+      Rotation: 0.0002212912, 0.0050143865, 0.44699016
     - BoneId: 994139655
-      Position: 18.121094, 0.009765625, -0.0546875
-      Rotation: 2.1507483, 0.1625217, 0.08417966
+      Position: 18.120605, 0.009765625, -0.046875
+      Rotation: 2.1507268, 0.16252185, 0.08416131
     - BoneId: 1060730891
-      Position: 10.96875, 0.1484375, -2.5541992
-      Rotation: 1.0770066, 0.38802227, 0.9296165
+      Position: 10.953125, 0.1484375, -2.5546875
+      Rotation: 1.0770123, 0.38802168, 0.9296141
     - BoneId: 1060268044
-      Position: 17.390625, 0.0234375, 0.040527344
-      Rotation: 0.0005555591, -0.00405759, 0.44728068
+      Position: 17.382812, 0, 0.040527344
+      Rotation: 0.0005534435, -0.004054617, 0.44728962
     - BoneId: 997357325
-      Position: 18.14746, -0.1953125, -0.03186035
-      Rotation: -1.7350502, -0.110077605, -0.08226015
+      Position: 18.149414, -0.2109375, -0.03479004
+      Rotation: -1.7350273, -0.110076874, -0.082240224
     RagdollBipedRotation: 0, 0, -1.5707978
     Position: 92262.25, 4468.6274, 5117.027
     Rotation: 0, 0, 4.148192
@@ -13170,7 +13286,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 00A115:NovaArizona.esm
     MerchantContainer: 00FE5F:NovaArizona.esm
-    Position: 114749.74, 37095.04, 3266.2988
+    Position: 114542.44, 37027.31, 3266.2988
     Rotation: 0, 0, 0.21500362
   - MutagenObjectType: PlacedObject
     FormKey: 00C441:NovaArizona.esm
@@ -13482,6 +13598,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 143110.78, -113786.65, 7908.1875
     Rotation: 0, 0, 3.5289946
   - MutagenObjectType: PlacedCreature
@@ -13519,6 +13644,14 @@ TopCell:
       Reference: 01EEDE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 144295.83, 31623.025, 2584.112
       Rotation: 0, 0, 3.308203
@@ -13540,6 +13673,14 @@ TopCell:
       Reference: 01EF1E:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 144063.8, 35340.215, 2612.4841
       Rotation: 0, 0, 0.3000221
@@ -13971,8 +14112,8 @@ TopCell:
       Position: 960, 0, 2E-06
       Rotation: 0, 0, 4.712391
     Lock:
-      Level: 9923147
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x94A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E4A:NovaArizona.esm
@@ -13994,8 +14135,8 @@ TopCell:
       Position: -256, 448, 2.592976
       Rotation: 0, 0, 3.1415927
     Lock:
-      Level: 9923072
-      Unused: 0x000000
+      Level: 8755968
+      Unused: 0x94A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E4A:NovaArizona.esm
@@ -14027,8 +14168,8 @@ TopCell:
     - QuestItemPersistentReference
     Base: 0099C4:NovaArizona.esm
     Lock:
-      Level: 9922866
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x94A503
       Unknown: 0x0000000000000000
     Scale: 0.72
     Placement:
@@ -14119,6 +14260,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 93232.86, 3811.5806, 5039.209
     Rotation: 0, 0, 0.65001124
   - MutagenObjectType: PlacedObject
@@ -14142,6 +14292,15 @@ TopCell:
     Base: 15C67F:FalloutNV.esm
     EnableParent:
       Reference: 01F000:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 149134.9, 33746.152, 2692.511
     Rotation: 0, 0, 4.583196
   - MutagenObjectType: PlacedCreature
@@ -14161,6 +14320,15 @@ TopCell:
     Base: 15C67F:FalloutNV.esm
     EnableParent:
       Reference: 01F000:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 145218.33, 34525.258, 2720.914
     Rotation: 0, 0, 2.6000082
   - MutagenObjectType: PlacedCreature
@@ -14345,7 +14513,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 06D086:FalloutNV.esm
     Placement:
-      Position: 92009.37, -41116.89, 4575.2686
+      Position: 90303.46, -43701.76, 3822.3381
       Rotation: 0, 0, 4.1831946
     MajorFlags:
     - Persistent
@@ -15577,9 +15745,9 @@ TopCell:
       Position: -1487.5399, -4070.7366, 975.99994
       Rotation: 0, 0, 1.7453292E-06
     Lock:
-      Level: 9911346
+      Level: 8756018
       Key: 01B78D:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 01640B:NovaArizona.esm
@@ -15587,18 +15755,6 @@ TopCell:
     Placement:
       Position: 107855.05, -3319.0479, 5790.838
       Rotation: 0, 0, 2.6179957
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
-    FormKey: 00D591:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 08D34F:FalloutNV.esm
-    Placement:
-      Position: 95746.766, -37261.027, 5491.8794
-      Rotation: -0.07060242, 0.0119151315, 4.854061
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -16237,6 +16393,15 @@ TopCell:
     Base: 0123E9:DeadMoney.esm
     EnableParent:
       Reference: 00DD07:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 167184.19, -108701.31, 8217.972
     MajorFlags:
@@ -16250,6 +16415,15 @@ TopCell:
     Base: 00DCBC:NovaArizona.esm
     EnableParent:
       Reference: 00DD07:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 165258.08, -107537.63, 7950.334
     Rotation: 0, 0, 0.09
   - MutagenObjectType: PlacedNpc
@@ -16261,6 +16435,15 @@ TopCell:
     Base: 00DCBC:NovaArizona.esm
     EnableParent:
       Reference: 00DD07:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 166742.02, -106831.1, 7950.334
     Rotation: 0, 0, 5.3381886
   - MutagenObjectType: PlacedNpc
@@ -16272,6 +16455,15 @@ TopCell:
     Base: 00DCBC:NovaArizona.esm
     EnableParent:
       Reference: 00DD07:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 165057.02, -104696.31, 7950.334
     Rotation: 0, 0, 2.8931952
   - MutagenObjectType: PlacedObject
@@ -16297,6 +16489,15 @@ TopCell:
     Base: 00DCBC:NovaArizona.esm
     EnableParent:
       Reference: 00DD07:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 165451.1, -110546.88, 7950.334
     Rotation: 0, 0, 0.09
   - MutagenObjectType: PlacedNpc
@@ -16308,6 +16509,15 @@ TopCell:
     Base: 00DCBC:NovaArizona.esm
     EnableParent:
       Reference: 00DD07:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 161181.69, -106345.27, 7647.3623
     Rotation: 0, 0, 1.38
   - MutagenObjectType: PlacedNpc
@@ -16505,9 +16715,9 @@ TopCell:
       Position: 0, 0, -8.06101
       Rotation: 0, 0, 3.1415944
     Lock:
-      Level: 9905227
+      Level: 8756043
       Key: 00B806:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00B2F9:NovaArizona.esm
@@ -16905,6 +17115,14 @@ TopCell:
       Reference: 000014:FalloutNV.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 127340.22, -23644.695, 5857.5693
     Rotation: 0, 0, 5.5831895
   - MutagenObjectType: PlacedNpc
@@ -17072,6 +17290,14 @@ TopCell:
       Reference: 00E26A:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119653.664, -42171.105, 5296
     Rotation: 0, 0, 5.7931895
   - MutagenObjectType: PlacedObject
@@ -17098,6 +17324,14 @@ TopCell:
       Reference: 00E26A:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119593.23, -42271.66, 5296
     Rotation: 0, 0, 5.698188
   - MutagenObjectType: PlacedCreature
@@ -17112,6 +17346,14 @@ TopCell:
       Reference: 00E26A:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119722.54, -42377.285, 5296
     Rotation: 0, 0, 5.8981886
   - MutagenObjectType: PlacedCreature
@@ -17126,6 +17368,14 @@ TopCell:
       Reference: 00E26A:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119779.81, -42267.887, 5296
     Rotation: 0, 0, 5.8981886
   - MutagenObjectType: PlacedObject
@@ -17229,6 +17479,15 @@ TopCell:
     Base: 00E6AF:NovaArizona.esm
     EnableParent:
       Reference: 00E6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 140428.33, 809.6042, 6495.3135
       Rotation: 0, 0, 4.78319
@@ -17312,6 +17571,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 00E6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 133626.38, -2148.2505, 6137.463
     Rotation: 0, 0, 4.38319
   - MutagenObjectType: PlacedObject
@@ -17323,6 +17591,15 @@ TopCell:
     Base: 00E627:NovaArizona.esm
     EnableParent:
       Reference: 00E6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.06
     Placement:
       Position: 131730, -4443.247, 6180.9297
@@ -17499,6 +17776,15 @@ TopCell:
     Base: 00E626:NovaArizona.esm
     EnableParent:
       Reference: 00E6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.08
     Placement:
       Position: 138465.33, 962.57715, 6081.3027
@@ -17572,8 +17858,8 @@ TopCell:
       Position: 0, 0, -16.000008
       Rotation: 0, 0, 4.712389
     Lock:
-      Level: 9896959
-      Unused: 0x000000
+      Level: 8756223
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 005A3C:NovaArizona.esm
@@ -17768,6 +18054,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 00EB0F:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 127197.83, 30726.67, 2825.453
   - MutagenObjectType: PlacedObject
     FormKey: 00EB40:NovaArizona.esm
@@ -17798,6 +18093,15 @@ TopCell:
     Base: 00EC8F:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83754.3, 10522.298, 3875.7986
     Rotation: 0, 0, 1.9350011
   - MutagenObjectType: PlacedNpc
@@ -18340,6 +18644,15 @@ TopCell:
     Base: 0FF5E5:FalloutNV.esm
     EnableParent:
       Reference: 020DEB:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 142952.47, -13497.41, 8001.4033
     Rotation: 0, 0, 0.60000056
   - MutagenObjectType: PlacedObject
@@ -18799,6 +19112,15 @@ TopCell:
     Base: 010195:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83487.54, 10116.282, 3878.3596
   - MutagenObjectType: PlacedNpc
     FormKey: 0102D4:NovaArizona.esm
@@ -18810,6 +19132,15 @@ TopCell:
     Base: 010196:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83793.984, 9943.733, 3880.404
   - MutagenObjectType: PlacedNpc
     FormKey: 0102D5:NovaArizona.esm
@@ -18821,6 +19152,15 @@ TopCell:
     Base: 010197:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83673.63, 10277.848, 3887.1174
   - MutagenObjectType: PlacedNpc
     FormKey: 0102D6:NovaArizona.esm
@@ -18832,6 +19172,15 @@ TopCell:
     Base: 01019B:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83960.36, 9406.309, 3889.6624
   - MutagenObjectType: PlacedNpc
     FormKey: 0102D7:NovaArizona.esm
@@ -18843,6 +19192,15 @@ TopCell:
     Base: 01019C:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 84251.89, 9495.887, 3873.7786
     Rotation: 0, 0, 3.88319
   - MutagenObjectType: PlacedNpc
@@ -18855,6 +19213,15 @@ TopCell:
     Base: 01019D:NovaArizona.esm
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83847.72, 8823.2, 3879.1785
   - MutagenObjectType: PlacedNpc
     FormKey: 0102D9:NovaArizona.esm
@@ -19487,9 +19854,9 @@ TopCell:
       Position: -176, -672, 0
       Rotation: 0, 0, 4.712391
     Lock:
-      Level: 9883698
+      Level: 8756018
       Key: 01B7D5:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E48:NovaArizona.esm
@@ -19544,9 +19911,9 @@ TopCell:
       Position: 0, 960, 0
       Rotation: 0, 0, -3.1415925
     Lock:
-      Level: 9883186
+      Level: 8756018
       Key: 02C484:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00AE9B:NovaArizona.esm
@@ -19589,9 +19956,9 @@ TopCell:
       Position: 65.60737, 2, 3.122236
       Rotation: 0, 0, 1.570798
     Lock:
-      Level: 9882930
+      Level: 8756018
       Key: 02EBBF:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E37:NovaArizona.esm
@@ -19613,8 +19980,8 @@ TopCell:
       Door: 0164DD:NovaArizona.esm
       Position: 0, -457.40567, 0.250033
     Lock:
-      Level: 9882624
-      Unused: 0x000000
+      Level: 8755968
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E37:NovaArizona.esm
@@ -19695,9 +20062,9 @@ TopCell:
       Position: -1.648404, 7.64187, -61.120113
       Rotation: 0, 0, 6.253986
     Lock:
-      Level: 9882418
+      Level: 8756018
       Key: 02EBBF:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E49:NovaArizona.esm
@@ -19921,9 +20288,9 @@ TopCell:
       Position: 438.93817, 260.613, 0.005071
       Rotation: 0, 0, 1.5707964
     Lock:
-      Level: 9880626
+      Level: 8756018
       Key: 01AA6E:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E49:NovaArizona.esm
@@ -21062,62 +21429,62 @@ TopCell:
     Base: 01313D:NovaArizona.esm
     RagdollData:
     - BoneId: 1262698754
-      Position: 0.0078125, 0.0234375, 0
-      Rotation: -0.12528954, 0.03518514, -1.3385484
+      Position: 0.1171875, 1.0625, -0.049804688
+      Rotation: -0.12423326, 0.035167076, -1.3390746
     - BoneId: 1514209288
-      Position: 0.30029297, -0.21484375, 7.0234375
-      Rotation: -3.1116846, 0.06813699, -3.0883093
+      Position: 0.17773438, -0.71875, 6.9375
+      Rotation: -3.1117785, 0.06803944, -3.0889015
     - BoneId: 1263534089
-      Position: 31.958008, -0.12109375, 0.046875
-      Rotation: 0.00051258487, 0.00031529553, 0.40342572
+      Position: 31.896484, -0.4296875, 0.203125
+      Rotation: 0.00059283787, 0.00027463678, 0.4043733
     - BoneId: 10
-      Position: 29.048828, -0.01171875, -0.0390625
-      Rotation: 0.143756, 0.014258823, 0.1919443
+      Position: 29.007812, 0.1640625, 0.03125
+      Rotation: 0.14274667, 0.014275626, 0.19115606
     - BoneId: 14
-      Position: -0.5, 0.04296875, -6.9296875
-      Rotation: -3.0841572, 0.028767828, -3.1005003
+      Position: -0.69140625, -0.3125, -7.0234375
+      Rotation: -3.084562, 0.028669713, -3.100959
     - BoneId: 1065353231
-      Position: 32.00293, -0.1171875, 0.0859375
-      Rotation: -0.001499503, -0.00061488344, 0.40305886
+      Position: 32.01465, 0.1015625, 0.15625
+      Rotation: -0.0014132117, -0.0006591585, 0.4039941
     - BoneId: 16
-      Position: 29.041992, 0.046875, -0.0234375
-      Rotation: -0.14347893, -0.014589928, 0.24988677
+      Position: 28.945312, 0.109375, 0.06640625
+      Rotation: -0.14218824, -0.014500974, 0.2497443
     - BoneId: 1413677058
-      Position: 1.6484375, -0.0546875, 6.294922
-      Rotation: 1.5573189, -0.0136435265, 1.4817567
+      Position: 1.453125, -0.68359375, 6.216797
+      Rotation: 1.5575227, -0.013980303, 1.4826713
     - BoneId: 3
-      Position: 7.5996094, -0.01953125, -0.0234375
-      Rotation: -0.0037466572, -0.015185879, -0.04634607
+      Position: 7.6054688, 0.1328125, -0.3359375
+      Rotation: -0.003695659, -0.015172451, -0.045778383
     - BoneId: 4
-      Position: 9.128418, -0.08203125, -0.0234375
-      Rotation: 0.002799183, 0.042439323, -0.041708913
+      Position: 9.114014, -0.1171875, -0.21484375
+      Rotation: 0.002754636, 0.042430665, -0.041213565
     - BoneId: 1331712
-      Position: 2.3579102, -0.50390625, 0.1328125
-      Rotation: 0.43784174, 0.24504548, -0.5895766
+      Position: 2.3398438, -0.546875, 0.02734375
+      Rotation: 0.43816915, 0.24505134, -0.58862585
     - BoneId: 1376257
-      Position: 7.3496094, 1.3322754, 1.15625
-      Rotation: -0.6807793, 0.17229539, -0.16558228
+      Position: 7.6953125, 1.78125, 1.2558594
+      Rotation: -0.68166685, 0.1722476, -0.16458888
     - BoneId: 1701147141
-      Position: 11.0234375, 0.34375, 2.1015625
-      Rotation: -1.1969688, -0.35954648, 0.8552626
+      Position: 10.8671875, 0.171875, 2.0449219
+      Rotation: -1.1959484, -0.3596232, 0.85451084
     - BoneId: 1635020550
-      Position: 17.423828, 0.033203125, -0.15625
-      Rotation: -0.00400441, -0.006845334, 0.44779652
+      Position: 17.478516, 0.171875, -0.38085938
+      Rotation: -0.0036222688, -0.0070110685, 0.44820663
     - BoneId: 1342177287
-      Position: 18.19336, 0.08984375, 0.1796875
-      Rotation: 2.4442344, 0.28401724, 0.09470944
+      Position: 18.138672, -0.1484375, 0.12695312
+      Rotation: 2.4429924, 0.28376278, 0.09373299
     - BoneId: 11
-      Position: 10.9375, 0.30078125, -2.6054688
-      Rotation: 1.1908883, 0.2907001, 0.8633444
+      Position: 11.078125, 0.3203125, -2.6083984
+      Rotation: 1.1897343, 0.29037446, 0.8625249
     - BoneId: 4277004
-      Position: 17.44336, -0.078125, -0.075683594
-      Rotation: 0.00519954, 0.008647863, 0.44848815
+      Position: 17.445312, -0.09716797, 0.0703125
+      Rotation: 0.00508196, 0.008655895, 0.44899294
     - BoneId: 13
-      Position: 18.179688, 0.0078125, 0.04345703
-      Rotation: -2.4352834, -0.26746857, 0.06490938
+      Position: 18.121094, 0.12109375, 0.3671875
+      Rotation: -2.434267, -0.26788166, 0.06400507
     RagdollBipedRotation: 0, 0, -1.5707978
-    Position: 96089.65, -37435.03, 5940.3657
-    Rotation: 0, 0, 1.1231965
+    Position: 95813.016, -38395.633, 5728.7266
+    Rotation: 0, 0, 5.7863913
   - MutagenObjectType: PlacedObject
     FormKey: 0131DB:NovaArizona.esm
     MajorRecordFlagsRaw: 3072
@@ -21290,6 +21657,15 @@ TopCell:
     Base: 013456:NovaArizona.esm
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 3.29
     Placement:
       Position: 115424.445, 59924.355, 1844.9213
@@ -21309,9 +21685,9 @@ TopCell:
       Position: 1934.2311, 1347.1638, 7648
       Rotation: 0, 0, 1.5708016
     Lock:
-      Level: 9871154
+      Level: 8756018
       Key: 01B6FF:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 01640B:NovaArizona.esm
@@ -21412,9 +21788,9 @@ TopCell:
       Position: 48.000057, -5.340576E-05, 1.4433708
       Rotation: 0, 0, -1.5707972
     Lock:
-      Level: 9870386
+      Level: 8756018
       Key: 01B7D3:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00E631:NovaArizona.esm
@@ -21437,8 +21813,8 @@ TopCell:
       Position: -816, -512, 9.536743E-07
       Rotation: 0, 0, 1.5707964
     Lock:
-      Level: 9870411
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00E632:NovaArizona.esm
@@ -21612,9 +21988,9 @@ TopCell:
       Position: 1868.8376, 2054.9902, 6144
       Rotation: 0, 0, 4.712391
     Lock:
-      Level: 9869106
+      Level: 8756018
       Key: 01B353:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E49:NovaArizona.esm
@@ -21638,9 +22014,9 @@ TopCell:
       Position: 1882.0995, 2066.8767, 6131.7666
       Rotation: 0, 0, 4.712389
     Lock:
-      Level: 9868850
+      Level: 8756018
       Key: 01AA6E:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E37:NovaArizona.esm
@@ -22311,8 +22687,8 @@ TopCell:
     Ownership:
       Owner: 00C946:NovaArizona.esm
     Lock:
-      Level: 9864217
-      Unused: 0x000000
+      Level: 8755993
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00ABAE:NovaArizona.esm
@@ -22461,9 +22837,9 @@ TopCell:
       Position: -1023.6698, 797.4249, 6190.5522
       Rotation: 0, 0, 3.1415927
     Lock:
-      Level: 9863243
+      Level: 8756043
       Key: 0074AF:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00D3D4:NovaArizona.esm
@@ -22603,8 +22979,8 @@ TopCell:
       Position: -566.1897, -251.21416, 4E-06
       Rotation: 0, 0, 1.5707964
     Lock:
-      Level: 9862475
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00CC75:NovaArizona.esm
@@ -23463,7 +23839,7 @@ TopCell:
     FormVersion: 15
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
-    Base: 141123:FalloutNV.esm
+    Base: 14842D:FalloutNV.esm
     TeleportDestination:
       Door: 018088:NovaArizona.esm
       Position: -1649.5027, -3774.935, 12515.285
@@ -23471,10 +23847,10 @@ TopCell:
     NavigationDoorLink:
       Navmesh: 00C1FA:NovaArizona.esm
       TriangleIndex: 111
-    Scale: 1.02
+    Scale: 0.5
     Placement:
-      Position: 152796.42, 8192.822, 6516.0083
-      Rotation: 0.9834616, 6.1414595, 2.8404133
+      Position: 152519.11, 8224.728, 6308.6816
+      Rotation: -0.34494624, -0.006220128, 3.1242833
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedNpc
@@ -23597,6 +23973,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 100558.61, 48846.22, 4462.58
     Rotation: 0, 0, 2.8000045
   - MutagenObjectType: PlacedObject
@@ -24159,8 +24544,8 @@ TopCell:
       Position: 49.96058, -122.65625, 1.5E-05
       Rotation: 0, 0, 4.712389
     Lock:
-      Level: 9851211
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00CC77:NovaArizona.esm
@@ -26547,6 +26932,15 @@ TopCell:
     Base: 0175DE:NovaArizona.esm
     EnableParent:
       Reference: 0187FF:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 106049.09, -4548.2686, 5752.201
     Rotation: 0, 0, 5.183188
   - MutagenObjectType: PlacedObject
@@ -27070,6 +27464,15 @@ TopCell:
       Rotation: 0, 0, 1.5292121
     EnableParent:
       Reference: 0187FF:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     NavigationDoorLink:
       Navmesh: 016402:NovaArizona.esm
       TriangleIndex: 461
@@ -27107,7 +27510,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 0285CE:NovaArizona.esm
-    Position: 153402.06, 8891.793, 6395.583
+    Position: 153402.06, 8891.793, 6363.029
     Rotation: 0, 0, 6.083186
   - MutagenObjectType: PlacedCreature
     FormKey: 017DB6:NovaArizona.esm
@@ -27597,6 +28000,15 @@ TopCell:
     Base: 0187FD:NovaArizona.esm
     EnableParent:
       Reference: 0187FF:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 106069.27, -4886.432, 5746.448
     MajorFlags:
@@ -27741,6 +28153,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 83112.69, 9519.667, 3786.9275
   - MutagenObjectType: PlacedNpc
     FormKey: 018D20:NovaArizona.esm
@@ -27806,6 +28227,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 008004:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 79233.45, 8909.783, -2130.4685
   - MutagenObjectType: PlacedObject
     FormKey: 018F40:NovaArizona.esm
@@ -28389,6 +28819,15 @@ TopCell:
     LinkedReference: 0190C2:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 78404.16, -4463.5522, -2096
     Rotation: 0, 0, 2
   - MutagenObjectType: PlacedNpc
@@ -28401,6 +28840,15 @@ TopCell:
     LinkedReference: 0190BE:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 77729.805, -4024.0005, -2064
     Rotation: 0, 0, 1.7000011
   - MutagenObjectType: PlacedObject
@@ -28466,6 +28914,15 @@ TopCell:
     Base: 0378D5:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 81332.95, -250.4732, -1996.5662
     Rotation: 0, 0, 0.25000215
   - MutagenObjectType: PlacedObject
@@ -28490,6 +28947,15 @@ TopCell:
     LinkedReference: 0190EA:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 90630.875, -16963.791, 4168.4736
     Rotation: 0, 0, 1.6500026
   - MutagenObjectType: PlacedNpc
@@ -28501,6 +28967,15 @@ TopCell:
     Base: 0190F7:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 91109.055, -16537.014, 4131.127
     Rotation: 0, 0, 2.0500011
   - MutagenObjectType: PlacedNpc
@@ -28512,6 +28987,15 @@ TopCell:
     Base: 0190F7:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 91120.09, -16167.225, 4136
     Rotation: 0, 0, 1.6500013
   - MutagenObjectType: PlacedNpc
@@ -28523,6 +29007,15 @@ TopCell:
     Base: 0190F7:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 91129.516, -16343.367, 4146.2104
     Rotation: 0, 0, 1.7500013
   - MutagenObjectType: PlacedNpc
@@ -28535,6 +29028,15 @@ TopCell:
     LinkedReference: 019147:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 91517.93, -15123.922, 4214.755
   - MutagenObjectType: PlacedNpc
     FormKey: 019146:NovaArizona.esm
@@ -28546,6 +29048,15 @@ TopCell:
     LinkedReference: 01914B:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 91514.01, -14959.056, 4218.8027
     Rotation: 0, 0, 3.0831869
   - MutagenObjectType: PlacedObject
@@ -28580,6 +29091,15 @@ TopCell:
     Base: 0378D6:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 137835.95, -90609.016, 6342.2695
     Rotation: 0, 0, 2.7061937
   - MutagenObjectType: PlacedNpc
@@ -28591,6 +29111,15 @@ TopCell:
     Base: 0378D8:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 129779.96, 29740.66, 3578.9514
     Rotation: 0, 0, 4.6831875
   - MutagenObjectType: PlacedNpc
@@ -28602,6 +29131,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119579.164, 16454.504, 5401.209
     Rotation: 0, 0, 5.233186
   - MutagenObjectType: PlacedNpc
@@ -28613,6 +29151,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 73600.96, 47985.42, 3532.643
     Rotation: 0, 0, 6.083185
   - MutagenObjectType: PlacedNpc
@@ -28757,6 +29304,15 @@ TopCell:
     LinkedReference: 01929D:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119265.89, 14519.124, 5379.784
     Rotation: 0, 0, 3.4500005
   - MutagenObjectType: PlacedNpc
@@ -28769,6 +29325,15 @@ TopCell:
     LinkedReference: 01927D:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119344.53, 14879.562, 5376
     Rotation: 0, 0, 2.933189
   - MutagenObjectType: PlacedNpc
@@ -28781,6 +29346,15 @@ TopCell:
     LinkedReference: 0191AF:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119312.09, 15065.073, 5376
     Rotation: 0, 0, 2.983191
   - MutagenObjectType: PlacedObject
@@ -28813,6 +29387,15 @@ TopCell:
     LinkedReference: 0191AA:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 119340.69, 14685.08, 5383.2773
     Rotation: 0, 0, 3.5831885
   - MutagenObjectType: PlacedObject
@@ -29555,6 +30138,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 104337.195, 45332.293, 3485.657
   - MutagenObjectType: PlacedNpc
     FormKey: 019BA3:NovaArizona.esm
@@ -29565,6 +30157,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 104390.27, 42586.92, 3986.3174
   - MutagenObjectType: PlacedNpc
     FormKey: 019BA4:NovaArizona.esm
@@ -29575,6 +30176,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 106377.695, 45089.023, 3526.339
   - MutagenObjectType: PlacedNpc
     FormKey: 019BA5:NovaArizona.esm
@@ -29585,6 +30195,15 @@ TopCell:
     Base: 0378D3:NovaArizona.esm
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 106015.945, 42266.28, 4062.0034
   - MutagenObjectType: PlacedNpc
     FormKey: 019BA8:NovaArizona.esm
@@ -30401,6 +31020,14 @@ TopCell:
       Reference: 021034:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 174961.39, -40109.18, 6834.96
     Rotation: 0, 0, 1.1400005
   - MutagenObjectType: PlacedNpc
@@ -31136,8 +31763,8 @@ TopCell:
     - QuestItemPersistentReference
     Base: 0FB730:FalloutNV.esm
     Lock:
-      Level: 9799986
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     Placement:
       Position: 157448.98, -67078.516, 7522.2964
@@ -31279,6 +31906,14 @@ TopCell:
       Reference: 000014:FalloutNV.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 88596.02, -25141.467, 4550.831
       Rotation: 0, 0, 3.9142156
@@ -31411,9 +32046,9 @@ TopCell:
       Position: -60.326313, -4.925285, -1E-06
       Rotation: 0, 0, 0.009210102
     Lock:
-      Level: 9798194
+      Level: 8756018
       Key: 01B353:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00E722:NovaArizona.esm
@@ -31922,6 +32557,15 @@ TopCell:
     Base: 13DD44:FalloutNV.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 80488.984, -7133.832, -114.60463
       Rotation: 0.16577369, -0.11241744, 0.09065283
@@ -31936,6 +32580,15 @@ TopCell:
     Base: 13DD44:FalloutNV.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 81008.95, -7175.5063, -176.77364
       Rotation: 0.16577369, -0.11241744, 0.5906517
@@ -31950,6 +32603,15 @@ TopCell:
     Base: 13DD44:FalloutNV.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 81442.26, -7491.7817, -176.77364
       Rotation: 0.16577369, -0.11241744, 1.2906517
@@ -31984,6 +32646,15 @@ TopCell:
     Base: 13DD44:FalloutNV.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 80460.02, -8059.332, 69.563736
       Rotation: 0.16577369, -0.11241744, 5.023847
@@ -31998,6 +32669,15 @@ TopCell:
     Base: 13DD44:FalloutNV.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 80569.086, -7666.3003, 12.691208
       Rotation: 0.16577369, -0.11241744, 4.4738474
@@ -32012,6 +32692,15 @@ TopCell:
     Base: 13DD44:FalloutNV.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 79878.32, -8756.668, 339.13287
       Rotation: 0.16577369, -0.11241744, 5.173849
@@ -32236,6 +32925,15 @@ TopCell:
     Base: 01CA98:NovaArizona.esm
     EnableParent:
       Reference: 179AFE:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 66578.53, 590.0917, 2933.4358
     Rotation: 0, 0, 4.9623885
   - MutagenObjectType: PlacedNpc
@@ -33386,6 +34084,14 @@ TopCell:
       Reference: 00B2C1:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 146230.47, 32741.455, 2635.3638
       Rotation: 0, 0, 0.17453292
@@ -33586,6 +34292,15 @@ TopCell:
     Base: 008C71:NovaArizona.esm
     EnableParent:
       Reference: 01F003:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 145018.98, 29120.232, 2664
     Rotation: 0, 0, 4.8831906
   - MutagenObjectType: PlacedNpc
@@ -33599,6 +34314,15 @@ TopCell:
     Base: 008C73:NovaArizona.esm
     EnableParent:
       Reference: 01F003:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 144889.62, 29225.852, 2664
     Rotation: 0, 0, 4.8831906
   - MutagenObjectType: PlacedNpc
@@ -33611,6 +34335,15 @@ TopCell:
     Base: 0378D1:NovaArizona.esm
     EnableParent:
       Reference: 01F003:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 144928.86, 28973.77, 2664
     Rotation: 0, 0, 4.8831906
   - MutagenObjectType: PlacedObject
@@ -33829,6 +34562,15 @@ TopCell:
     LinkedReference: 02101C:NovaArizona.esm
     EnableParent:
       Reference: 01F6BA:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 179464.2, -21237.818, 6239.294
     Rotation: 0, 0, 3.0532012
   - MutagenObjectType: PlacedNpc
@@ -33843,6 +34585,15 @@ TopCell:
     LinkedReference: 01F5C0:NovaArizona.esm
     EnableParent:
       Reference: 01F6BA:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 179421.66, -21043.889, 6247.866
     Rotation: 0, 0, 3.1532037
   - MutagenObjectType: PlacedObject
@@ -33888,6 +34639,15 @@ TopCell:
     LinkedReference: 01F5C2:NovaArizona.esm
     EnableParent:
       Reference: 01F6BA:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 179446.95, -20930.162, 6234.251
     Rotation: 0, 0, 3.0581992
   - MutagenObjectType: PlacedNpc
@@ -33902,6 +34662,15 @@ TopCell:
     LinkedReference: 01F5FB:NovaArizona.esm
     EnableParent:
       Reference: 01F6BA:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 179453.12, -20811.969, 6235.464
     Rotation: 0, 0, 3.5532014
   - MutagenObjectType: PlacedObject
@@ -33953,6 +34722,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.77
     Placement:
       Position: 170066.95, -108666.46, 8027.3804
@@ -33970,6 +34747,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.77
     Placement:
       Position: 170034.95, -108666.46, 8027.831
@@ -33987,6 +34772,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.77
     Placement:
       Position: 170098.95, -108666.46, 8027.3804
@@ -34004,6 +34797,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.36
     Placement:
       Position: 170066.95, -108692.87, 8022.1787
@@ -34022,6 +34823,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Emittance: 0B362F:FalloutNV.esm
     Placement:
       Position: 170078.83, -108617.695, 8039.2646
@@ -34039,6 +34848,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.36
     Placement:
       Position: 170374.7, -108691.99, 8022.461
@@ -34056,6 +34873,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.77
     Placement:
       Position: 170343.05, -108666.3, 8028.1133
@@ -34074,6 +34899,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Emittance: 0B362F:FalloutNV.esm
     Placement:
       Position: 170361.2, -108617.695, 8039.2646
@@ -34091,6 +34924,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.77
     Placement:
       Position: 170374.69, -108666.3, 8028.1133
@@ -34108,6 +34949,14 @@ TopCell:
       Reference: 01F6FE:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.77
     Placement:
       Position: 170405.81, -108666.3, 8028.1133
@@ -34150,6 +34999,15 @@ TopCell:
     Base: 09B590:FalloutNV.esm
     EnableParent:
       Reference: 01F6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 167658.14, -109608.766, 7926.5884
       Rotation: 0, 0, 4.6744018
@@ -34222,6 +35080,15 @@ TopCell:
     RagdollBipedRotation: 0, 0, -1.5707978
     EnableParent:
       Reference: 01F6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 167644.67, -109567.56, 7956.015
     Rotation: 0, 0, 2.8974423
   - MutagenObjectType: PlacedObject
@@ -34234,6 +35101,15 @@ TopCell:
     Base: 015857:FalloutNV.esm
     EnableParent:
       Reference: 01F6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.86
     Placement:
       Position: 167664.34, -109619.55, 7962.22
@@ -34251,6 +35127,15 @@ TopCell:
     Base: 091720:FalloutNV.esm
     EnableParent:
       Reference: 01F6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 167717.44, -109583.35, 7957.703
       Rotation: 0, 0, 3.4031992
@@ -34267,6 +35152,15 @@ TopCell:
     Base: 156BDB:FalloutNV.esm
     EnableParent:
       Reference: 01F6F7:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.6
     Placement:
       Position: 167658.98, -109616.555, 8001.956
@@ -34298,6 +35192,15 @@ TopCell:
     Base: 078578:FalloutNV.esm
     EnableParent:
       Reference: 01F6FE:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.67
     Placement:
       Position: 170362.33, -108740.195, 8004.927
@@ -34315,6 +35218,15 @@ TopCell:
     Base: 078578:FalloutNV.esm
     EnableParent:
       Reference: 01F6FE:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Scale: 0.67
     Placement:
       Position: 170078, -108740.47, 8127.2725
@@ -34998,6 +35910,15 @@ TopCell:
     LinkedReference: 01FD52:NovaArizona.esm
     EnableParent:
       Reference: 01FEF8:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 77371.1, -3029.8818, -2088
     Rotation: 0, 0, 1.5707964
   - MutagenObjectType: PlacedNpc
@@ -35011,6 +35932,15 @@ TopCell:
     LinkedReference: 01FEFF:NovaArizona.esm
     EnableParent:
       Reference: 01FEF8:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 59930.844, -4019.9478, 6220.582
     Rotation: 0, 0, 6.283185
   - MutagenObjectType: PlacedObject
@@ -35052,6 +35982,14 @@ TopCell:
       Reference: 01C251:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 76802.8, -3274.248, -1243.1328
     MajorFlags:
@@ -35444,6 +36382,15 @@ TopCell:
     BoundHalfExtents: 170.45908, 1388.2499, 265.7764
     EnableParent:
       Reference: 020880:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 85447.336, -10667.59, 3862.6755
       Rotation: 0, 0, 0.18540053
@@ -35764,6 +36711,15 @@ TopCell:
     Base: 12A252:FalloutNV.esm
     EnableParent:
       Reference: 020A94:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 136687.47, -90961.05, 6341.9297
       Rotation: 0, 0, 1.6831938
@@ -35781,6 +36737,15 @@ TopCell:
     LinkedReference: 020A95:NovaArizona.esm
     EnableParent:
       Reference: 020A94:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 136647.78, -90913.43, 6344
   - MutagenObjectType: PlacedObject
     FormKey: 020A9C:NovaArizona.esm
@@ -36601,6 +37566,15 @@ TopCell:
     Base: 021030:NovaArizona.esm
     EnableParent:
       Reference: 021034:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 174740.77, -40509.77, 6824
     Rotation: 0, 0, 0.88501155
   - MutagenObjectType: PlacedNpc
@@ -36613,6 +37587,15 @@ TopCell:
     Base: 021030:NovaArizona.esm
     EnableParent:
       Reference: 021034:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 174822.58, -40309.492, 6816.9805
     Rotation: 0, 0, 0.88501155
   - MutagenObjectType: PlacedNpc
@@ -36625,6 +37608,15 @@ TopCell:
     Base: 021030:NovaArizona.esm
     EnableParent:
       Reference: 021034:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 174598.84, -40349.566, 6831.0137
     Rotation: 0, 0, 0.88501155
   - MutagenObjectType: PlacedObject
@@ -37051,6 +38043,15 @@ TopCell:
     Base: 021181:NovaArizona.esm
     EnableParent:
       Reference: 021189:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 108322.55, 48439.39, 2721.296
     Rotation: 0, 0, 5.658189
   - MutagenObjectType: PlacedNpc
@@ -37063,6 +38064,15 @@ TopCell:
     Base: 021182:NovaArizona.esm
     EnableParent:
       Reference: 021189:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 108129.11, 48769.336, 2701.625
     Rotation: 0, 0, 2.6100018
   - MutagenObjectType: PlacedObject
@@ -37075,6 +38085,15 @@ TopCell:
     Base: 07E418:FalloutNV.esm
     EnableParent:
       Reference: 021189:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 108790.57, 48417.586, 2721.9404
       Rotation: 0, 0, 4.9781885
@@ -37091,6 +38110,15 @@ TopCell:
     Base: 07E418:FalloutNV.esm
     EnableParent:
       Reference: 021189:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 108286.33, 49312.457, 2649.3132
       Rotation: 0, 0, 3.333195
@@ -37107,6 +38135,15 @@ TopCell:
     Base: 07E418:FalloutNV.esm
     EnableParent:
       Reference: 021189:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 108810.88, 48045.49, 2850.283
       Rotation: 0, 0, 5.308187
@@ -37123,6 +38160,15 @@ TopCell:
     Base: 07E418:FalloutNV.esm
     EnableParent:
       Reference: 021189:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 107871.56, 49149.555, 2745.6042
       Rotation: 0, 0, 2.6231914
@@ -39268,8 +40314,8 @@ TopCell:
       Position: 168, -424, 8
       Rotation: 0, 0, 4.712389
     Lock:
-      Level: 2610
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 025034:NovaArizona.esm
@@ -39423,9 +40469,9 @@ TopCell:
       Position: 184, -424, 8
       Rotation: 0, 0, 4.712389
     Lock:
-      Level: 2815
+      Level: 8756223
       Key: 03AFF3:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 025034:NovaArizona.esm
@@ -40454,7 +41500,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 15C67E:FalloutNV.esm
-    Position: 161422.44, 46597.336, 3171.384
+    Position: 161422.44, 46597.336, 3192.8042
     Rotation: 0, 0, 4.633193
   - MutagenObjectType: PlacedCreature
     FormKey: 02326F:NovaArizona.esm
@@ -41297,6 +42343,15 @@ TopCell:
     LevelModifier: 2
     EnableParent:
       Reference: 019081:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 100722.92, 59284.598, 5343.231
     Rotation: 0, 0, 5.6331882
   - MutagenObjectType: PlacedCreature
@@ -41394,7 +42449,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 110581.35, 45604.92, 3151.4485
+      Position: 110581.35, 45604.92, 3136.385
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -41407,7 +42462,8 @@ TopCell:
     Ownership:
       Owner: 0EE68A:FalloutNV.esm
     Placement:
-      Position: 110454.375, 45591.227, 3156.2544
+      Position: 110454.375, 45591.227, 3141.4807
+      Rotation: 0.10000164, 0, 0
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -41418,7 +42474,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 110596.695, 46155.426, 3159.8752
+      Position: 110596.695, 46155.426, 3156.5315
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -41430,7 +42486,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 110588.61, 46496.098, 3160.7375
+      Position: 110588.61, 46496.098, 3159.1729
       Rotation: 0, 0, 0.033199653
     MajorFlags:
     - Persistent
@@ -41454,7 +42510,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 110455.11, 46500.336, 3160.7375
+      Position: 110455.63, 46494.27, 3159.249
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -41490,7 +42546,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 109917.13, 46499.938, 3161.1655
+      Position: 109917.13, 46499.938, 3156.0098
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -41514,7 +42570,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 110050.63, 46495.7, 3161.1655
+      Position: 110052.33, 46495.426, 3154.2861
       Rotation: 0, 0, 0.033199653
     MajorFlags:
     - Persistent
@@ -41610,7 +42666,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 103335.86, 47319.76, 3512.2825
+      Position: 103335.86, 47319.76, 3498.129
       Rotation: 0, 0, 3.1789951
     MajorFlags:
     - Persistent
@@ -41646,7 +42702,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 103469.34, 47314.95, 3512.2825
+      Position: 103469.34, 47314.95, 3497.2163
       Rotation: 0, 0, 3.0889955
     MajorFlags:
     - Persistent
@@ -41682,7 +42738,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 104944.02, 47603.887, 3505.9036
+      Position: 104944.02, 47603.887, 3503.3489
       Rotation: 0, 0, 3.0832026
     MajorFlags:
     - Persistent
@@ -41718,7 +42774,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 105075.2, 47601.844, 3502.8635
+      Position: 105075.2, 47601.844, 3497.865
       Rotation: 6.283089, 6.2231846, 3.1432054
     MajorFlags:
     - Persistent
@@ -41730,7 +42786,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 104943.766, 47271.926, 3504.125
+      Position: 104943.766, 47271.926, 3495.0403
       Rotation: 0, 0, 3.1732023
     MajorFlags:
     - Persistent
@@ -41766,7 +42822,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 105077.27, 47267.887, 3504.4607
+      Position: 105077.27, 47267.887, 3496.756
       Rotation: 0, 0, 3.0832026
     MajorFlags:
     - Persistent
@@ -41778,7 +42834,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 103879.1, 47291.55, 3505.6785
+      Position: 103879.1, 47291.55, 3502.6968
       Rotation: 0, 0, 3.1732023
     MajorFlags:
     - Persistent
@@ -41790,7 +42846,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 104012.63, 47287.566, 3505.6785
+      Position: 104012.63, 47287.566, 3502.5164
       Rotation: 0, 0, 3.0832026
     MajorFlags:
     - Persistent
@@ -41802,7 +42858,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 108805.64, 45279.11, 3168.8608
+      Position: 108805.64, 45279.11, 3151.1353
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -41826,7 +42882,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 108668.3, 46132.953, 3167.681
+      Position: 108668.3, 46132.953, 3152.6616
       Rotation: 0.00019198621, 0.06000093, 0.0032044244
     MajorFlags:
     - Persistent
@@ -41850,7 +42906,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 108799.484, 46130.7, 3165.9722
+      Position: 108799.484, 46130.7, 3154.3726
       Rotation: 0, 0, 6.226385
     MajorFlags:
     - Persistent
@@ -41875,7 +42931,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 108810.71, 45638.25, 3166.0955
+      Position: 108810.71, 45638.25, 3160.2646
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -41890,8 +42946,8 @@ TopCell:
       Position: -422.5398, 260.68582, 3456
       Rotation: 0, 0, 1.5708016
     Lock:
-      Level: 9727307
-      Unused: 0x000000
+      Level: 8756043
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 00E631:NovaArizona.esm
@@ -41913,8 +42969,8 @@ TopCell:
       Door: 0246A4:NovaArizona.esm
       Position: -631.01807, -709.3894, 128
     Lock:
-      Level: 2610
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 03B299:NovaArizona.esm
@@ -41935,8 +42991,8 @@ TopCell:
       Door: 0246A3:NovaArizona.esm
       Position: 128, -702.869, 136
     Lock:
-      Level: 9727026
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x9BA503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 03B29B:NovaArizona.esm
@@ -42121,6 +43177,15 @@ TopCell:
     Base: 00AD59:NovaArizona.esm
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 87590.79, -15071.685, 4961.4326
     MajorFlags:
@@ -42136,6 +43201,15 @@ TopCell:
     Base: 00AD59:NovaArizona.esm
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 87610.75, -15034.58, 4961.4326
       Rotation: 0, 0, 1.7000004
@@ -42152,6 +43226,15 @@ TopCell:
     Base: 00AD59:NovaArizona.esm
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 87595.04, -15059.856, 4954.858
       Rotation: 1.3730916, 1.439051, 2.945558
@@ -42168,6 +43251,15 @@ TopCell:
     Base: 13E442:FalloutNV.esm
     EnableParent:
       Reference: 0ED563:FalloutNV.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 87572.734, -15086.225, 4950.3296
       Rotation: 0, 0, 0.9150003
@@ -43864,7 +44956,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 106704.56, 44311.76, 3516.4563
+      Position: 106704.56, 44311.76, 3512.028
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -43876,7 +44968,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 106852.734, 44303.56, 3516.7554
+      Position: 106852.734, 44303.56, 3510.9597
       Rotation: 0, 0, 0.0350197
     MajorFlags:
     - Persistent
@@ -43888,7 +44980,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 106343.18, 44281.73, 3512.468
+      Position: 106343.18, 44281.73, 3501.3274
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -43900,7 +44992,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 106201.33, 44277.113, 3512.135
+      Position: 106201.33, 44277.113, 3496.5298
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -43912,7 +45004,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 105832.04, 44309.152, 3516.7554
+      Position: 105832.04, 44309.152, 3499.419
       Rotation: 0, 0, 0.0350197
     MajorFlags:
     - Persistent
@@ -43924,8 +45016,8 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 105683.87, 44317.355, 3516.4563
-      Rotation: 0, 0, 6.2282057
+      Position: 105689.945, 44318.383, 3510.7278
+      Rotation: 0.011138743, -0.19969177, 6.22709
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -43936,7 +45028,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 105759.9, 45116.023, 3516.7554
+      Position: 105759.9, 45116.023, 3510.41
       Rotation: 0, 0, 0.0350197
     MajorFlags:
     - Persistent
@@ -43948,7 +45040,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 105611.73, 45124.227, 3516.4563
+      Position: 105611.73, 45124.227, 3509.291
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -43960,7 +45052,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 106166.75, 41366.9, 4055.87
+      Position: 106166.75, 41366.9, 4054.593
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -43972,7 +45064,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347CA:FalloutNV.esm
     Placement:
-      Position: 106308.6, 41371.516, 4056.2031
+      Position: 106308.6, 41371.516, 4051.3303
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -43984,7 +45076,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 1347C9:FalloutNV.esm
     Placement:
-      Position: 106746.875, 41369.066, 4055.87
+      Position: 106746.875, 41369.066, 4054.3064
       Rotation: 0, 0, 6.2282057
     MajorFlags:
     - Persistent
@@ -44150,33 +45242,6 @@ TopCell:
     Base: 15C688:FalloutNV.esm
     Position: 103538.64, -56725.09, 5418.0796
     Rotation: 0, 0, 5.2831883
-  - MutagenObjectType: PlacedCreature
-    FormKey: 027311:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C688:FalloutNV.esm
-    Position: 101563.586, -47576.438, 5334.799
-    Rotation: 0, 0, 5.158187
-  - MutagenObjectType: PlacedCreature
-    FormKey: 027312:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C687:FalloutNV.esm
-    Position: 99536.83, -51113.61, 5234.718
-    Rotation: 0, 0, 4.6081877
-  - MutagenObjectType: PlacedCreature
-    FormKey: 027314:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C687:FalloutNV.esm
-    Position: 104241.03, -49841.727, 5761.4043
-    Rotation: 0, 0, 4.908188
   - MutagenObjectType: PlacedCreature
     FormKey: 02732C:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -44364,24 +45429,6 @@ TopCell:
     Position: 105640, -55960, 6104
     Rotation: 0, 0, 5.208188
   - MutagenObjectType: PlacedCreature
-    FormKey: 0278AE:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C687:FalloutNV.esm
-    Position: 98427.75, -52607.125, 4358.2417
-    Rotation: 0, 0, 0.52500004
-  - MutagenObjectType: PlacedCreature
-    FormKey: 0278AF:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C688:FalloutNV.esm
-    Position: 101981.31, -54420.098, 4895.1646
-    Rotation: 0, 0, 5.5081873
-  - MutagenObjectType: PlacedCreature
     FormKey: 027942:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     FormVersion: 15
@@ -44435,15 +45482,6 @@ TopCell:
     Base: 15C67B:FalloutNV.esm
     Position: 104651.98, -54631.645, 5591.0654
     Rotation: 0, 0, 5.908186
-  - MutagenObjectType: PlacedCreature
-    FormKey: 027DE8:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 15C67D:FalloutNV.esm
-    Position: 102524.17, -51122.934, 5051.8447
-    Rotation: 0, 0, 5.633187
   - MutagenObjectType: PlacedCreature
     FormKey: 027DE9:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -45109,9 +46147,9 @@ TopCell:
       Position: 992, 12080, 6500.475
       Rotation: 0, 0, -3.086875
     Lock:
-      Level: 9706496
+      Level: 8755968
       Key: 029E32:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     Placement:
       Position: 127874.36, 37061.42, 1314
@@ -45166,9 +46204,9 @@ TopCell:
       Position: 1720, 2032, 6410
       Rotation: 0, 0, 1.5707964
     Lock:
-      Level: 9706290
+      Level: 8756018
       Key: 02DFBF:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     Placement:
       Position: 147325.4, 67920.02, 5336
@@ -45183,7 +46221,7 @@ TopCell:
     - QuestItemPersistentReference
     Base: 000034:FalloutNV.esm
     Placement:
-      Position: 144862.94, 65738.875, 4115.9785
+      Position: 144862.94, 65738.875, 4083.7642
       Rotation: 0, 0, 1.525001
     MajorFlags:
     - Persistent
@@ -45458,34 +46496,6 @@ TopCell:
     Position: 179688.08, -118803.125, 8679.875
     Rotation: 0, 0, 4.883189
   - MutagenObjectType: PlacedObject
-    FormKey: 02BFE6:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 1347C9:FalloutNV.esm
-    Ownership:
-      Owner: 00977B:NovaArizona.esm
-    Placement:
-      Position: 95874.66, -38463.35, 5435.2573
-      Rotation: -0.06505627, 0.10090441, 0.99671656
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
-    FormKey: 02BFE7:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 1347C9:FalloutNV.esm
-    Ownership:
-      Owner: 00977B:NovaArizona.esm
-    Placement:
-      Position: 94549.56, -37966.26, 5366.431
-      Rotation: 0, 0, 0.9600001
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
     FormKey: 02BFF2:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     EditorID: AZBearSandboxREF
@@ -45495,30 +46505,6 @@ TopCell:
     Base: 00003B:FalloutNV.esm
     Placement:
       Position: 95396.664, -38479.625, 5369.8364
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
-    FormKey: 02BFF3:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 0288BD:FalloutNV.esm
-    Placement:
-      Position: 94431, -39192, 5298.2734
-      Rotation: 0, 0, 5.9232044
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
-    FormKey: 02BFF4:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 0288BD:FalloutNV.esm
-    Placement:
-      Position: 95895.84, -38752, 5422.2954
-      Rotation: 0, 0, 4.803201
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -45536,18 +46522,6 @@ TopCell:
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
-    FormKey: 02BFFD:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 09BE62:FalloutNV.esm
-    Placement:
-      Position: 95089.22, -38363.277, 5368.597
-      Rotation: 0, 0, 4.48319
-    MajorFlags:
-    - Persistent
-  - MutagenObjectType: PlacedObject
     FormKey: 02BFFE:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     FormVersion: 15
@@ -45555,8 +46529,8 @@ TopCell:
     - QuestItemPersistentReference
     Base: 09BE62:FalloutNV.esm
     Placement:
-      Position: 95715.52, -38894.47, 5403.8193
-      Rotation: 0, 0, 2.4431891
+      Position: 95482.03, -39000.797, 5361.341
+      Rotation: 0, 0, 0.34319592
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -45567,8 +46541,8 @@ TopCell:
     - QuestItemPersistentReference
     Base: 09BE62:FalloutNV.esm
     Placement:
-      Position: 95495.06, -37856.38, 5424.0225
-      Rotation: 0, 0, 0.08000769
+      Position: 95600.32, -37629.527, 5444.129
+      Rotation: 0, 0, 0.90500814
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -46341,6 +47315,15 @@ TopCell:
     LinkedReference: 02CEFF:NovaArizona.esm
     EnableParent:
       Reference: 02CEFF:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171679.27, -127037.46, 7256.51
   - MutagenObjectType: PlacedNpc
     FormKey: 02CF01:NovaArizona.esm
@@ -46352,6 +47335,15 @@ TopCell:
     LinkedReference: 02CEFF:NovaArizona.esm
     EnableParent:
       Reference: 02CEFF:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171696.05, -127269.78, 7256.51
     Rotation: 0, 0, 5.908187
   - MutagenObjectType: PlacedCreature
@@ -46364,6 +47356,15 @@ TopCell:
     LinkedReference: 02CEFF:NovaArizona.esm
     EnableParent:
       Reference: 02CEFF:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171825.95, -127334.805, 7267.7847
     Rotation: 0, 0, 5.4731884
   - MutagenObjectType: PlacedObject
@@ -46989,8 +47990,8 @@ TopCell:
       Position: -128, -48, 136
       Rotation: 0, 0, 3.1415944
     Lock:
-      Level: 2610
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 025034:NovaArizona.esm
@@ -47024,8 +48025,8 @@ TopCell:
       Position: -640, -40, 136
       Rotation: 0, 0, 3.1415927
     Lock:
-      Level: 2610
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 025034:NovaArizona.esm
@@ -48169,8 +49170,8 @@ TopCell:
       Position: 15397.232, 3166.1335, 15851.634
       Rotation: 0, 0, -1.5707957
     Lock:
-      Level: 9686066
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 0078FC:NovaArizona.esm
@@ -48943,15 +49944,6 @@ TopCell:
       Rotation: 0, 0, 3.5000002
     MajorFlags:
     - Persistent
-  - MutagenObjectType: PlacedNpc
-    FormKey: 02F965:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 0092BE:NovaArizona.esm
-    Position: 96778.4, -53608.375, 6153.459
-    Rotation: 0, 0, 5.883196
   - MutagenObjectType: PlacedObject
     FormKey: 02F966:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -48985,17 +49977,6 @@ TopCell:
     Base: 0378C8:NovaArizona.esm
     Position: 96671.72, -52662.3, 6157.9863
     Rotation: 0, 0, 4.283189
-  - MutagenObjectType: PlacedNpc
-    FormKey: 02F969:NovaArizona.esm
-    MajorRecordFlagsRaw: 1024
-    FormVersion: 15
-    Fallout3MajorRecordFlags:
-    - QuestItemPersistentReference
-    Base: 0378D4:NovaArizona.esm
-    EnableParent:
-      Reference: 019081:NovaArizona.esm
-    Position: 95881.11, -49919.047, 6104.679
-    Rotation: 0, 0, 5.0831923
   - MutagenObjectType: PlacedNpc
     FormKey: 02F96B:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -49067,6 +50048,106 @@ TopCell:
       Rotation: 0.025000483, 0.050094467, 0.397503
     MajorFlags:
     - Persistent
+  - MutagenObjectType: PlacedNpc
+    FormKey: 030039:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 009001:NovaArizona.esm
+    Position: 111729.516, 37533.887, 3548.3535
+    Rotation: 0, 0, 3.5831954
+  - MutagenObjectType: PlacedNpc
+    FormKey: 03003A:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 009001:NovaArizona.esm
+    Position: 112742.68, 37540.055, 3534.1318
+    Rotation: 0, 0, 2.700002
+  - MutagenObjectType: PlacedNpc
+    FormKey: 03003B:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 009001:NovaArizona.esm
+    Position: 114527.08, 37743.895, 3528.4321
+    Rotation: 0, 0, 3.3000002
+  - MutagenObjectType: PlacedObject
+    FormKey: 03003F:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 030042:NovaArizona.esm
+      Position: 107023.23, 42631.277, 4348.2812
+      Rotation: 0.011685996, 0.005439413, 1.1993895
+    Placement:
+      Position: 106900.97, 42632.21, 3969.9336
+      Rotation: 0.04806557, -0.08772411, 5.781077
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 030040:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 030041:NovaArizona.esm
+      Position: 106736.945, 40718.715, 4497.631
+      Rotation: 0, 0, 2.7
+    Scale: 1.03
+    Placement:
+      Position: 106684.914, 40784.85, 4082.6265
+      Rotation: -0.070391215, -0.023036484, 4.5816307
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 030041:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 030040:NovaArizona.esm
+      Position: 106634.82, 40837.082, 3896.7568
+      Rotation: -0.070391215, -0.023036484, -1.7015548
+    Placement:
+      Position: 106534.984, 40693.727, 3640.9224
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 030042:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 03003F:NovaArizona.esm
+      Position: 106838.68, 42600.63, 3822.664
+      Rotation: 0.04806557, -0.08772411, -0.5021087
+    Placement:
+      Position: 106780.51, 42431.086, 3536.2512
+      Rotation: 0.04806557, -0.08772411, 5.781077
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedNpc
+    FormKey: 030049:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 009001:NovaArizona.esm
+    Position: 106821.84, 40585.926, 4502.5454
+    Rotation: 0, 0, 2.700002
   - MutagenObjectType: PlacedObject
     FormKey: 030100:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -49387,6 +50468,211 @@ TopCell:
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
+    FormKey: 030149:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 03014A:NovaArizona.esm
+      Position: 112662.336, 37717.074, 3522.0012
+      Rotation: 0.026236989, 0.0027343591, 2.880655
+    Scale: 1.03
+    Placement:
+      Position: 112655.305, 37824.95, 3125.2693
+      Rotation: -0.07039122, -0.023036484, 4.381633
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03014A:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 030149:NovaArizona.esm
+      Position: 112655.305, 37824.95, 3000.857
+      Rotation: -0.07039122, -0.023036484, -1.9015527
+    Scale: 1.03
+    Placement:
+      Position: 112529.09, 37797.645, 2774.1384
+      Rotation: -0.07039122, -0.023036484, 4.381633
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03014B:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 03014C:NovaArizona.esm
+      Position: 114535.36, 37954.387, 3526.3477
+      Rotation: 0.023185326, 0.012235196, -3.1020527
+    Scale: 1.03
+    Placement:
+      Position: 114498.98, 38022.13, 3109.1118
+      Rotation: -0.07039123, -0.023036484, 4.681633
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03014C:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 03014B:NovaArizona.esm
+      Position: 114463.76, 38086.3, 2918.0264
+      Rotation: -0.07039123, -0.023036484, -1.6015524
+    Scale: 1.03
+    Placement:
+      Position: 114578.19, 38022.895, 2699.2776
+      Rotation: -0.07039123, -0.023036484, 4.681633
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03014D:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 03014E:NovaArizona.esm
+      Position: 111819.39, 37724.977, 3511.9333
+      Rotation: -0.048950758, 0.028301924, -2.4856923
+    Scale: 1.03
+    Placement:
+      Position: 111912.07, 37832.863, 3147.8198
+      Rotation: -0.101147555, 0.11489289, 5.175213
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03014E:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0103BB:NovaArizona.esm
+    TeleportDestination:
+      Door: 03014D:NovaArizona.esm
+      Position: 111916.44, 37835.742, 2946.951
+      Rotation: -0.101147555, 0.11489289, -1.1079724
+    Scale: 1.03
+    Placement:
+      Position: 111899.54, 37993.53, 2718.5989
+      Rotation: -0.101147555, 0.11489289, 5.175213
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedCreature
+    FormKey: 03016E:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 008BC9:NovaArizona.esm
+    Position: 100739.6, 44602.074, 3997.826
+    Rotation: 0, 0, 4.430007
+  - MutagenObjectType: PlacedObject
+    FormKey: 030313:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 00003B:FalloutNV.esm
+    Placement:
+      Position: 96616.75, -36950.117, 6294.2905
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 030314:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 00003B:FalloutNV.esm
+    Placement:
+      Position: 96279.734, -37102.18, 6362.976
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 030319:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 09BE62:FalloutNV.esm
+    Placement:
+      Position: 96135.5, -38145.37, 5542.8228
+      Rotation: 0, 0, 4.7281966
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03031A:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 09BE62:FalloutNV.esm
+    Placement:
+      Position: 93963.25, -38710.72, 5301.8574
+      Rotation: 0, 0, 4.906385
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
+    FormKey: 03031B:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 0B24DE:FalloutNV.esm
+    Placement:
+      Position: 95590.31, -39468.86, 5642.378
+      Rotation: 0, 0, 4.918189
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedCreature
+    FormKey: 03039B:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 15C671:FalloutNV.esm
+    Position: 98829.88, -53135.2, 4270.968
+    Rotation: 0, 0, 4.183188
+  - MutagenObjectType: PlacedCreature
+    FormKey: 03039D:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 15C671:FalloutNV.esm
+    Position: 97302.84, -51267.676, 4914.802
+    Rotation: 0, 0, 4.183188
+  - MutagenObjectType: PlacedCreature
+    FormKey: 03039E:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 15C660:FalloutNV.esm
+    Position: 98021.68, -52600.08, 4340.841
+    Rotation: 0, 0, 3.2831893
+  - MutagenObjectType: PlacedCreature
+    FormKey: 03039F:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 15C648:FalloutNV.esm
+    Position: 98866.93, -54469.11, 4199.5024
+    Rotation: 0, 0, 6.183193
+  - MutagenObjectType: PlacedObject
     FormKey: 0308A6:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     FormVersion: 15
@@ -49678,6 +50964,15 @@ TopCell:
     LinkedReference: 0316DD:NovaArizona.esm
     EnableParent:
       Reference: 0316DD:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171401.25, -127359.22, 7271.166
     Rotation: 0, 0, 5.863188
   - MutagenObjectType: PlacedNpc
@@ -49690,6 +50985,15 @@ TopCell:
     LinkedReference: 0316DE:NovaArizona.esm
     EnableParent:
       Reference: 0316DD:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171518.77, -127446.086, 7273.406
     Rotation: 0, 0, 5.5931883
   - MutagenObjectType: PlacedNpc
@@ -49702,6 +51006,15 @@ TopCell:
     LinkedReference: 0316DF:NovaArizona.esm
     EnableParent:
       Reference: 0316DD:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171605.55, -127550.42, 7277.67
     Rotation: 0, 0, 5.7581863
   - MutagenObjectType: PlacedNpc
@@ -49726,6 +51039,15 @@ TopCell:
     LinkedReference: 0316E1:NovaArizona.esm
     EnableParent:
       Reference: 0316E1:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171505.56, -127357.77, 7280.3467
     Rotation: 0, 0, 5.628188
   - MutagenObjectType: PlacedNpc
@@ -49738,6 +51060,15 @@ TopCell:
     LinkedReference: 0316E2:NovaArizona.esm
     EnableParent:
       Reference: 0316E1:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171566.56, -127454.88, 7280.3467
     Rotation: 0, 0, 5.628188
   - MutagenObjectType: PlacedNpc
@@ -49750,6 +51081,15 @@ TopCell:
     LinkedReference: 0316E3:NovaArizona.esm
     EnableParent:
       Reference: 0316E1:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171677.06, -127526.516, 7286.3374
     Rotation: 0, 0, 5.563187
   - MutagenObjectType: PlacedNpc
@@ -49774,6 +51114,15 @@ TopCell:
     LinkedReference: 0316E5:NovaArizona.esm
     EnableParent:
       Reference: 0316E5:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171518.83, -127208.97, 7264.8804
     Rotation: 0, 0, 5.113189
   - MutagenObjectType: PlacedNpc
@@ -49786,6 +51135,15 @@ TopCell:
     LinkedReference: 0316E6:NovaArizona.esm
     EnableParent:
       Reference: 0316E5:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171591.75, -127282.68, 7264.145
     Rotation: 0, 0, 5.5181875
   - MutagenObjectType: PlacedNpc
@@ -49798,6 +51156,15 @@ TopCell:
     LinkedReference: 0316E7:NovaArizona.esm
     EnableParent:
       Reference: 0316E5:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171671.7, -127366.59, 7268.726
     Rotation: 0, 0, 5.623187
   - MutagenObjectType: PlacedNpc
@@ -49810,6 +51177,15 @@ TopCell:
     LinkedReference: 0316E8:NovaArizona.esm
     EnableParent:
       Reference: 0316E5:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 171776.02, -127449.47, 7282.47
     Rotation: 0, 0, 5.578188
   - MutagenObjectType: PlacedNpc
@@ -51328,9 +52704,9 @@ TopCell:
       Position: 89.61461, -395.1457, 4.575882
       Rotation: 0, 0, -2.6822093E-07
     Lock:
-      Level: 9666866
+      Level: 8756018
       Key: 02D833:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     NavigationDoorLink:
       Navmesh: 009E41:NovaArizona.esm
@@ -51354,9 +52730,9 @@ TopCell:
     Ownership:
       Owner: 00D7E5:NovaArizona.esm
     Lock:
-      Level: 9666891
+      Level: 8756043
       Key: 03B3DD:NovaArizona.esm
-      Unused: 0x000000
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     Placement:
       Position: 168914.19, -108925.37, 7931.9126
@@ -52055,6 +53431,15 @@ TopCell:
     Base: 034EF3:NovaArizona.esm
     EnableParent:
       Reference: 01C251:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Position: 79133.26, -4936.748, -1973.653
     Rotation: 0, 0, 5.6081867
   - MutagenObjectType: PlacedNpc
@@ -54227,6 +55612,15 @@ TopCell:
     Base: 151A7D:FalloutNV.esm
     EnableParent:
       Reference: 03766D:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101304.08, 53333.652, 5351.3877
       Rotation: 0, 0, 5.933185
@@ -54265,6 +55659,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 100906.9, 54269.57, 5414.7637
       Rotation: 0, 0, 5.9331846
@@ -54279,6 +55682,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101013.586, 54311.96, 5414.8047
       Rotation: 0, 0, 5.9331846
@@ -54293,6 +55705,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101118.08, 54349.53, 5414.7637
       Rotation: 0, 0, 5.9331846
@@ -54307,6 +55728,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101154.61, 54134.215, 5414.8667
       Rotation: 0, 0, 2.7915914
@@ -54321,6 +55751,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101024.43, 54086.684, 5415.2983
       Rotation: 0, 0, 2.7915914
@@ -54335,6 +55774,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 100911.25, 54036.867, 5414.8535
       Rotation: 0, 0, 2.7915914
@@ -54361,6 +55809,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101089.914, 54104.09, 5415.5913
       Rotation: 0, 0, 2.7915914
@@ -54375,6 +55832,15 @@ TopCell:
     Base: 0157E5:FalloutNV.esm
     EnableParent:
       Reference: 03766C:NovaArizona.esm
+      Flags:
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 100962.24, 54062.875, 5415.2983
       Rotation: 0, 0, 2.7915914
@@ -54625,6 +56091,14 @@ TopCell:
       Reference: 0376A2:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 100924.15, 53654.02, 5390.0557
       Rotation: 0, 0, 2.7915914
@@ -54641,6 +56115,14 @@ TopCell:
       Reference: 0376A2:NovaArizona.esm
       Flags:
       - SetEnableStateToOppositeOfParent
+      - 0x400
+      - 0x800
+      - 0x1000
+      - 0x4000
+      - 0x8000
+      - 0x10000
+      - 0x80000
+      - 0x100000
     Placement:
       Position: 101219.2, 53759.055, 5390.0557
       Rotation: 0, 0, 2.7915914
@@ -55072,8 +56554,8 @@ TopCell:
     Ownership:
       Owner: 01CD8A:NovaArizona.esm
     Lock:
-      Level: 9643058
-      Unused: 0x000000
+      Level: 8756018
+      Unused: 0x93A503
       Unknown: 0x0000000000000000
     Placement:
       Position: 164672.31, -107340.79, 7953.558
@@ -55468,4 +56950,4 @@ TopCell:
     - Persistent
   MajorFlags:
   - Persistent
-SubCellsUnknownGroupData: -2141294536
+SubCellsUnknownGroupData: -2141293188

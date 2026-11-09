@@ -56,8 +56,9 @@ Vertices:
 - 168712.94, 32768, 1217.6758
 Triangles:
 - Vertices: 0, 1, 2
+  EdgeLink_0_1: 1
   EdgeLink_1_2: 1
-  EdgeLink_2_0: 5
+  EdgeLink_2_0: 6
   Flags:
   - EdgeLink_0_1
   - EdgeLink_2_0
@@ -77,7 +78,7 @@ Triangles:
   - Water
   - Found
 - Vertices: 1, 5, 4
-  EdgeLink_0_1: 1
+  EdgeLink_0_1: 2
   EdgeLink_1_2: 4
   EdgeLink_2_0: 2
   Flags:
@@ -92,7 +93,7 @@ Triangles:
   - Water
   - Found
 - Vertices: 5, 7, 6
-  EdgeLink_0_1: 2
+  EdgeLink_0_1: 3
   EdgeLink_1_2: 6
   EdgeLink_2_0: 4
   Flags:
@@ -114,7 +115,7 @@ Triangles:
   - Water
   - Found
 - Vertices: 7, 10, 9
-  EdgeLink_0_1: 3
+  EdgeLink_0_1: 4
   EdgeLink_1_2: 9
   EdgeLink_2_0: 7
   Flags:
@@ -130,7 +131,7 @@ Triangles:
   - Found
 - Vertices: 11, 10, 12
   EdgeLink_0_1: 9
-  EdgeLink_1_2: 4
+  EdgeLink_1_2: 5
   EdgeLink_2_0: -1
   Flags:
   - EdgeLink_1_2
@@ -356,7 +357,7 @@ Triangles:
 - Vertices: 33, 32, 34
   EdgeLink_0_1: 41
   EdgeLink_1_2: 43
-  EdgeLink_2_0: 6
+  EdgeLink_2_0: 7
   Flags:
   - EdgeLink_2_0
   - Water
@@ -434,7 +435,7 @@ Triangles:
 - Vertices: 40, 39, 41
   EdgeLink_0_1: 52
   EdgeLink_1_2: -1
-  EdgeLink_2_0: 7
+  EdgeLink_2_0: 8
   Flags:
   - EdgeLink_2_0
   - Water
@@ -442,7 +443,7 @@ Triangles:
 - Vertices: 34, 35, 40
   EdgeLink_0_1: 43
   EdgeLink_1_2: 52
-  EdgeLink_2_0: 8
+  EdgeLink_2_0: 9
   Flags:
   - EdgeLink_2_0
   - Water
@@ -450,7 +451,7 @@ Triangles:
 - Vertices: 42, 23, 33
   EdgeLink_0_1: 56
   EdgeLink_1_2: 41
-  EdgeLink_2_0: 9
+  EdgeLink_2_0: 10
   Flags:
   - EdgeLink_2_0
   - Water
@@ -465,7 +466,7 @@ Triangles:
 - Vertices: 43, 22, 42
   EdgeLink_0_1: 58
   EdgeLink_1_2: 56
-  EdgeLink_2_0: 10
+  EdgeLink_2_0: 11
   Flags:
   - EdgeLink_2_0
   - Water
@@ -480,7 +481,7 @@ Triangles:
 - Vertices: 44, 21, 43
   EdgeLink_0_1: 60
   EdgeLink_1_2: 58
-  EdgeLink_2_0: 11
+  EdgeLink_2_0: 12
   Flags:
   - EdgeLink_2_0
   - Water
@@ -516,7 +517,7 @@ Triangles:
 - Vertices: 46, 45, 44
   EdgeLink_0_1: 63
   EdgeLink_1_2: 60
-  EdgeLink_2_0: 12
+  EdgeLink_2_0: 13
   Flags:
   - EdgeLink_2_0
   - Water
@@ -524,7 +525,6 @@ Triangles:
 - Vertices: 2, 3, 46
   EdgeLink_0_1: 1
   EdgeLink_1_2: 63
-  EdgeLink_2_0: 13
   Flags:
   - EdgeLink_2_0
   - Water
@@ -693,6 +693,8 @@ NavmeshGrid:
     - 53
     - 54
 EdgeLinks:
+- Mesh: 01857A:NovaArizona.esm
+  Triangle: 78
 - Mesh: 00ABC3:NovaArizona.esm
   Triangle: 254
 - Mesh: 00ABC3:NovaArizona.esm
@@ -702,7 +704,7 @@ EdgeLinks:
 - Mesh: 00ABC3:NovaArizona.esm
   Triangle: 270
 - Mesh: 00ABC3:NovaArizona.esm
-  Triangle: 286
+  Triangle: 18
 - Mesh: 01857A:NovaArizona.esm
   Triangle: 76
 - Mesh: 01857A:NovaArizona.esm
@@ -719,5 +721,3 @@ EdgeLinks:
   Triangle: 82
 - Mesh: 01857A:NovaArizona.esm
   Triangle: 80
-- Mesh: 01857A:NovaArizona.esm
-  Triangle: 78
