@@ -16,12 +16,12 @@ LightInheritFlags:
 WaterHeight: 3.4028235E+38
 WaterNoiseTexture: ''
 Regions:
-- 006F45:NovaArizona.esm
-- 008DAC:NovaArizona.esm
-- 014460:NovaArizona.esm
-- 014465:NovaArizona.esm
-- 037272:NovaArizona.esm
 - 03726C:NovaArizona.esm
+- 037272:NovaArizona.esm
+- 014465:NovaArizona.esm
+- 014460:NovaArizona.esm
+- 008DAC:NovaArizona.esm
+- 006F45:NovaArizona.esm
 AcousticSpace: 0211DD:NovaArizona.esm
 Landscape:
   FormKey: 0E045F:FalloutNV.esm
@@ -104,10 +104,10 @@ Landscape:
     - [16, 0, -1, 1, -1, 0, 0, 0, 0, -2, 0, -1, -1, -1, -1, -1, -1, -4, 0, 0, 0, 1, 0, 0, 0, 0, -2, -2, -4, -3, -3, -3, -2]
     Unknown: 117, 94, 128
   VertexColors:
-  - ['240, 230, 219', '198, 190, 172', '178, 170, 148', '229, 221, 212', '204, 198, 182', '170, 163, 138', '213, 209, 199', '223, 217, 207', '233, 225, 215', '240, 230, 221', '240, 230, 221', '179, 172, 150', '168, 160, 134', '188, 182, 162', '234, 224, 214', '211, 202, 186', '137, 136, 133', '113, 113, 112', '124, 123, 121', '124, 123, 123', '112, 112, 112', '105, 105, 105', '129, 128, 128', '199, 195, 185', '210, 207, 205', '208, 206, 204', '207, 205, 203', '205, 204, 203', '205, 203, 202', '183, 178, 163', '171, 164, 141', '199, 197, 192', '173, 165, 143']
-  - ['231, 223, 213', '172, 164, 141', '180, 173, 152', '216, 212, 201', '195, 189, 172', '168, 160, 135', '214, 210, 200', '223, 217, 207', '234, 225, 216', '240, 230, 221', '240, 230, 221', '168, 160, 134', '180, 172, 149', '171, 163, 137', '171, 163, 138', '168, 160, 134', '162, 155, 136', '160, 154, 133', '156, 150, 131', '158, 153, 138', '162, 156, 136', '157, 151, 132', '168, 160, 134', '168, 160, 134', '200, 195, 186', '211, 208, 206', '209, 207, 205', '208, 206, 204', '207, 205, 203', '188, 184, 171', '174, 167, 145', '206, 205, 203', '172, 164, 141']
-  - ['224, 217, 207', '212, 209, 198', '207, 205, 194', '210, 207, 197', '206, 200, 187', '173, 166, 143', '224, 218, 208', '229, 222, 212', '238, 228, 219', '197, 190, 184', '169, 161, 137', '168, 160, 134', '240, 230, 221', '240, 230, 221', '240, 230, 221', '216, 207, 193', '168, 160, 134', '168, 160, 134', '168, 160, 134', '174, 166, 143', '168, 160, 134', '179, 171, 149', '184, 177, 157', '191, 185, 170', '168, 160, 134', '214, 210, 207', '212, 209, 206', '211, 208, 205', '210, 207, 205', '179, 172, 154', '171, 163, 140', '209, 207, 205', '170, 162, 138']
-  - ['224, 218, 207', '209, 206, 195', '206, 203, 192', '203, 200, 188', '191, 187, 170', '170, 163, 138', '225, 216, 204', '240, 230, 221', '213, 204, 197', '138, 137, 134', '167, 159, 133', '179, 176, 168', '236, 224, 213', '237, 225, 214', '240, 230, 221', '240, 230, 221', '239, 230, 221', '200, 192, 174', '169, 161, 135', '232, 224, 217', '228, 221, 214', '225, 219, 213', '223, 217, 212', '220, 215, 211', '168, 160, 134', '217, 213, 209', '215, 212, 208', '214, 211, 208', '174, 166, 144', '170, 162, 138', '212, 209, 206', '191, 186, 173', '178, 170, 150']
+  - ['240, 230, 219', '198, 190, 172', '178, 170, 148', '229, 221, 212', '204, 198, 182', '170, 163, 138', '213, 209, 199', '223, 217, 207', '233, 225, 215', '240, 230, 221', '240, 230, 221', '179, 172, 150', '168, 160, 134', '188, 182, 162', '234, 224, 214', '211, 202, 186', '137, 136, 133', '138, 137, 134', '198, 194, 184', '200, 195, 178', '198, 194, 180', '196, 192, 178', '193, 186, 162', '196, 190, 170', '210, 207, 205', '208, 206, 204', '207, 205, 203', '205, 204, 203', '205, 203, 202', '183, 178, 163', '171, 164, 141', '199, 197, 192', '173, 165, 143']
+  - ['231, 223, 213', '172, 164, 141', '180, 173, 152', '216, 212, 201', '195, 189, 172', '168, 160, 135', '214, 210, 200', '223, 217, 207', '234, 225, 216', '240, 230, 221', '240, 230, 221', '168, 160, 134', '180, 172, 149', '171, 163, 137', '171, 163, 138', '168, 160, 134', '162, 155, 136', '177, 172, 155', '188, 184, 171', '178, 174, 161', '162, 156, 136', '157, 151, 132', '168, 160, 134', '168, 160, 134', '200, 195, 186', '211, 208, 206', '209, 207, 205', '208, 206, 204', '207, 205, 203', '188, 184, 171', '174, 167, 145', '206, 205, 203', '172, 164, 141']
+  - ['224, 217, 207', '212, 209, 198', '207, 205, 194', '210, 207, 197', '206, 200, 187', '173, 166, 143', '224, 218, 208', '229, 222, 212', '238, 228, 219', '197, 190, 184', '169, 161, 137', '168, 160, 134', '240, 230, 221', '240, 230, 221', '240, 230, 221', '216, 207, 193', '168, 160, 134', '185, 179, 160', '201, 197, 184', '190, 185, 168', '168, 160, 134', '179, 171, 149', '184, 177, 157', '191, 185, 170', '168, 160, 134', '214, 210, 207', '212, 209, 206', '211, 208, 205', '210, 207, 205', '179, 172, 154', '171, 163, 140', '209, 207, 205', '170, 162, 138']
+  - ['224, 218, 207', '209, 206, 195', '206, 203, 192', '203, 200, 188', '191, 187, 170', '170, 163, 138', '225, 216, 204', '240, 230, 221', '213, 204, 197', '138, 137, 134', '167, 159, 133', '179, 176, 168', '236, 224, 213', '237, 225, 214', '240, 230, 221', '240, 230, 221', '239, 230, 221', '201, 193, 177', '182, 176, 155', '227, 220, 212', '228, 221, 214', '225, 219, 213', '223, 217, 212', '220, 215, 211', '168, 160, 134', '217, 213, 209', '215, 212, 208', '214, 211, 208', '174, 166, 144', '170, 162, 138', '212, 209, 206', '191, 186, 173', '178, 170, 150']
   - ['179, 173, 152', '192, 188, 171', '197, 193, 179', '200, 196, 181', '229, 221, 211', '178, 171, 147', '170, 163, 138', '232, 218, 204', '213, 204, 193', '154, 153, 148', '148, 147, 143', '186, 184, 176', '233, 220, 207', '234, 221, 209', '236, 225, 213', '240, 230, 221', '240, 230, 221', '196, 188, 168', '169, 161, 135', '235, 227, 218', '232, 224, 217', '229, 222, 215', '226, 220, 214', '168, 160, 134', '168, 160, 135', '220, 215, 211', '219, 214, 210', '218, 213, 209', '217, 213, 209', '217, 213, 209', '217, 212, 209', '186, 179, 163', '171, 163, 140']
   - ['240, 230, 221', '177, 170, 147', '170, 163, 138', '240, 230, 221', '240, 231, 221', '241, 231, 222', '171, 164, 139', '170, 163, 138', '233, 220, 207', '210, 207, 195', '207, 205, 194', '213, 208, 197', '233, 220, 207', '233, 220, 207', '234, 221, 209', '228, 218, 206', '171, 162, 137', '168, 160, 134', '238, 228, 217', '239, 229, 221', '236, 227, 218', '212, 203, 189', '168, 160, 134', '177, 170, 147', '226, 219, 213', '223, 218, 213', '223, 217, 211', '222, 216, 211', '221, 216, 211', '221, 215, 211', '189, 183, 167', '171, 163, 139', '170, 162, 138']
   - ['240, 230, 221', '210, 201, 186', '170, 163, 138', '240, 230, 221', '241, 231, 222', '241, 231, 222', '171, 164, 139', '170, 163, 138', '233, 220, 207', '234, 221, 208', '234, 221, 208', '234, 220, 207', '234, 221, 208', '233, 220, 207', '176, 167, 143', '168, 160, 134', '168, 160, 134', '168, 160, 134', '184, 176, 154', '240, 230, 221', '239, 229, 220', '176, 167, 144', '172, 164, 139', '232, 224, 217', '230, 222, 215', '228, 220, 214', '226, 220, 213', '226, 219, 213', '225, 219, 213', '217, 211, 202', '170, 162, 138', '170, 162, 138', '176, 168, 146']
@@ -141,7 +141,7 @@ Landscape:
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 038A28:FalloutNV.esm
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -165,13 +165,13 @@ Landscape:
       Unused: 57578
       Opacity: 1
     - Position: 6
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.032411583
     - Position: 9
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.00989468
     - Position: 11
-      Unused: 32897
+      Unused: 47809
       Opacity: 1
     - Position: 12
       Unused: 53453
@@ -204,7 +204,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.9031432
     - Position: 22
-      Unused: 33686
+      Unused: 43960
       Opacity: 1
     - Position: 25
       Unused: 38813
@@ -240,7 +240,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.013331851
     - Position: 36
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.016682
     - Position: 37
       Unused: 41128
@@ -279,7 +279,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.64340323
     - Position: 52
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.62373185
     - Position: 53
       Unused: 57301
@@ -823,13 +823,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.045561377
     - Position: 153
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.37080726
     - Position: 154
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.2030706
     - Position: 155
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.07839924
     - Position: 156
       Unused: 53453
@@ -862,7 +862,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.42724338
     - Position: 177
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.46209925
     - Position: 178
       Unused: 38813
@@ -898,7 +898,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.35396987
     - Position: 204
-      Unused: 34464
+      Unused: 41139
       Opacity: 1
     - Position: 205
       Unused: 41128
@@ -937,7 +937,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.60529834
     - Position: 217
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.011048073
     - Position: 221
       Unused: 57301
@@ -1116,13 +1116,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.15412365
     - Position: 27
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.08628247
     - Position: 28
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.010264813
     - Position: 29
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.009347339
     - Position: 40
       Unused: 53453
@@ -1155,7 +1155,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.13625188
     - Position: 59
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.00726743
     - Position: 62
       Unused: 38813
@@ -1191,7 +1191,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.11487873
     - Position: 94
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.012004976
     - Position: 95
       Unused: 41128
@@ -1230,7 +1230,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.0061279633
     - Position: 118
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.0952739
     - Position: 125
       Unused: 57301
@@ -1394,585 +1394,600 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: BottomRight
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
       Texture: 038A28:FalloutNV.esm
       Quadrant: BottomRight
     AlphaLayerData:
-    - Position: 8
+    - Position: 1
       Unused: 50907
+      Opacity: 0.1421243
+    - Position: 2
+      Unused: 54493
+      Opacity: 0.1982174
+    - Position: 3
+      Unused: 53717
+      Opacity: 1
+    - Position: 8
+      Unused: 61655
       Opacity: 0.7965428
     - Position: 9
-      Unused: 54493
+      Unused: 38572
       Opacity: 0.8440472
     - Position: 10
-      Unused: 53717
+      Unused: 57578
       Opacity: 0.9209817
     - Position: 11
-      Unused: 61655
+      Unused: 35461
       Opacity: 0.8002414
     - Position: 12
-      Unused: 38572
+      Unused: 45763
       Opacity: 0.8257391
     - Position: 13
-      Unused: 57578
+      Unused: 47809
       Opacity: 0.89523697
     - Position: 14
-      Unused: 29061
+      Unused: 53453
       Opacity: 0.88572425
     - Position: 15
-      Unused: 31611
+      Unused: 52172
       Opacity: 0.010908663
+    - Position: 19
+      Unused: 42155
+      Opacity: 0.10460693
+    - Position: 20
+      Unused: 59279
+      Opacity: 0.06089944
     - Position: 25
-      Unused: 32897
+      Unused: 39085
       Opacity: 0.940105
     - Position: 26
-      Unused: 53453
+      Unused: 41128
       Opacity: 0.9212347
     - Position: 27
-      Unused: 52172
+      Unused: 60111
       Opacity: 0.8313998
     - Position: 28
-      Unused: 42155
+      Unused: 56806
       Opacity: 0.70969164
     - Position: 29
-      Unused: 59279
+      Unused: 41899
       Opacity: 0.798664
     - Position: 30
-      Unused: 39085
+      Unused: 41606
       Opacity: 0.8442521
     - Position: 31
-      Unused: 41128
+      Unused: 43960
       Opacity: 0.83287287
     - Position: 32
-      Unused: 60111
+      Unused: 38813
       Opacity: 0.52173233
     - Position: 39
-      Unused: 56806
+      Unused: 51334
       Opacity: 0.17599076
     - Position: 40
-      Unused: 41899
+      Unused: 52687
       Opacity: 0.6184091
     - Position: 42
-      Unused: 41606
+      Unused: 47292
       Opacity: 0.082157195
     - Position: 43
-      Unused: 33686
+      Unused: 44235
       Opacity: 0.8633835
     - Position: 44
-      Unused: 38813
+      Unused: 50897
       Opacity: 0.707721
     - Position: 45
-      Unused: 51334
+      Unused: 51406
       Opacity: 0.6288989
     - Position: 46
-      Unused: 52687
+      Unused: 58832
       Opacity: 0.72582597
     - Position: 47
-      Unused: 47292
+      Unused: 47294
       Opacity: 0.8628636
     - Position: 50
-      Unused: 44235
+      Unused: 59120
       Opacity: 0.009436905
     - Position: 51
-      Unused: 50897
+      Unused: 55517
       Opacity: 0.87513685
     - Position: 52
-      Unused: 51406
+      Unused: 41139
       Opacity: 0.7544819
     - Position: 54
-      Unused: 58832
+      Unused: 41128
       Opacity: 0.6532266
     - Position: 55
-      Unused: 47294
+      Unused: 49053
       Opacity: 0.92451173
     - Position: 56
-      Unused: 59120
+      Unused: 53202
       Opacity: 0.98188776
     - Position: 57
-      Unused: 55517
+      Unused: 53202
       Opacity: 0.38405037
     - Position: 58
-      Unused: 34464
+      Unused: 53644
       Opacity: 0.46990305
     - Position: 60
-      Unused: 41128
+      Unused: 53210
       Opacity: 0.84301645
     - Position: 61
-      Unused: 49053
+      Unused: 51403
       Opacity: 0.5017601
     - Position: 62
-      Unused: 53202
+      Unused: 57738
       Opacity: 0.5751679
     - Position: 63
-      Unused: 53202
+      Unused: 50636
       Opacity: 0.6752281
     - Position: 64
-      Unused: 53644
+      Unused: 45235
       Opacity: 0.7745499
     - Position: 66
-      Unused: 53210
+      Unused: 61654
       Opacity: 0.45671064
     - Position: 67
-      Unused: 51403
+      Unused: 56806
       Opacity: 0.45456266
     - Position: 68
-      Unused: 57738
+      Unused: 56547
       Opacity: 0.692735
     - Position: 69
-      Unused: 50636
+      Unused: 57301
       Opacity: 0.6818396
     - Position: 70
-      Unused: 45235
-      Opacity: 0.06371313
+      Unused: 34464
+      Opacity: 0.033373658
     - Position: 71
-      Unused: 61654
+      Unused: 54230
       Opacity: 0.902411
     - Position: 72
-      Unused: 56806
+      Unused: 54410
       Opacity: 0.9877441
     - Position: 73
-      Unused: 57576
+      Unused: 38570
       Opacity: 0.76412797
     - Position: 74
-      Unused: 57301
+      Unused: 49605
       Opacity: 0.14776075
     - Position: 77
-      Unused: 34464
+      Unused: 45779
       Opacity: 0.78541124
     - Position: 78
-      Unused: 54230
+      Unused: 52442
       Opacity: 0.59605265
     - Position: 79
-      Unused: 54410
+      Unused: 37780
       Opacity: 0.651713
     - Position: 80
-      Unused: 38570
+      Unused: 60111
       Opacity: 0.68883985
     - Position: 81
-      Unused: 49605
+      Unused: 56806
       Opacity: 0.45458084
     - Position: 82
-      Unused: 45779
+      Unused: 41385
       Opacity: 0.1253559
     - Position: 84
-      Unused: 52442
+      Unused: 58841
       Opacity: 0.058544457
     - Position: 86
-      Unused: 37780
+      Unused: 34464
       Opacity: 0.14904416
     - Position: 87
-      Unused: 60111
+      Unused: 55003
       Opacity: 0.13979864
     - Position: 88
-      Unused: 56806
+      Unused: 55761
       Opacity: 0.5562708
     - Position: 89
-      Unused: 41385
+      Unused: 41907
       Opacity: 0.6742184
     - Position: 90
-      Unused: 58841
+      Unused: 43697
       Opacity: 0.08713758
     - Position: 92
-      Unused: 34464
+      Unused: 61661
       Opacity: 0.2033664
     - Position: 93
-      Unused: 55003
+      Unused: 35748
       Opacity: 0.80095184
     - Position: 94
-      Unused: 55761
+      Unused: 53202
       Opacity: 0.5741998
     - Position: 95
-      Unused: 41907
+      Unused: 59845
       Opacity: 0.7303072
     - Position: 96
-      Unused: 43697
+      Unused: 53725
       Opacity: 0.7363846
     - Position: 97
-      Unused: 61661
+      Unused: 41128
       Opacity: 0.68231285
     - Position: 98
-      Unused: 35748
+      Unused: 60637
       Opacity: 0.36799854
     - Position: 105
-      Unused: 53202
+      Unused: 34464
       Opacity: 0.1815399
     - Position: 106
-      Unused: 59845
+      Unused: 56031
       Opacity: 0.12520564
     - Position: 107
-      Unused: 53725
+      Unused: 56787
       Opacity: 0.06550771
     - Position: 109
-      Unused: 41128
+      Unused: 42935
       Opacity: 0.75759363
     - Position: 110
-      Unused: 60637
+      Unused: 59120
       Opacity: 0.7124924
     - Position: 111
-      Unused: 34464
+      Unused: 61578
       Opacity: 0.66760206
     - Position: 112
-      Unused: 56031
+      Unused: 57063
       Opacity: 0.7281332
     - Position: 113
-      Unused: 56787
+      Unused: 56553
       Opacity: 0.7762888
     - Position: 114
-      Unused: 42935
+      Unused: 60112
       Opacity: 0.60629594
     - Position: 115
-      Unused: 59120
+      Unused: 53212
       Opacity: 0.24808997
     - Position: 119
-      Unused: 61578
+      Unused: 41128
       Opacity: 0.20062125
     - Position: 120
-      Unused: 57063
+      Unused: 61594
       Opacity: 0.11968827
     - Position: 121
-      Unused: 56553
+      Unused: 37031
       Opacity: 0.0347327
     - Position: 124
-      Unused: 60112
+      Unused: 57062
       Opacity: 0.47116655
     - Position: 125
-      Unused: 53212
+      Unused: 58069
       Opacity: 0.68687665
     - Position: 126
-      Unused: 41128
+      Unused: 51923
       Opacity: 0.6352059
     - Position: 127
-      Unused: 61594
+      Unused: 43184
       Opacity: 0.64610124
     - Position: 128
-      Unused: 37031
+      Unused: 61661
       Opacity: 0.7726178
     - Position: 129
-      Unused: 57062
+      Unused: 57063
       Opacity: 0.13449115
     - Position: 136
-      Unused: 58069
+      Unused: 56553
       Opacity: 0.97756565
     - Position: 137
-      Unused: 51923
+      Unused: 60112
       Opacity: 1
     - Position: 138
-      Unused: 43184
+      Unused: 53212
       Opacity: 1
     - Position: 139
-      Unused: 61661
+      Unused: 59120
       Opacity: 0.5312656
     - Position: 140
-      Unused: 57063
+      Unused: 43485
       Opacity: 0.012350857
     - Position: 141
-      Unused: 56553
+      Unused: 35234
       Opacity: 0.56812847
     - Position: 142
-      Unused: 60112
+      Unused: 58092
       Opacity: 0.5932374
     - Position: 143
-      Unused: 53212
+      Unused: 59352
       Opacity: 0.5112318
     - Position: 144
-      Unused: 59120
+      Unused: 41139
       Opacity: 0.6474149
     - Position: 145
-      Unused: 43485
+      Unused: 41898
       Opacity: 0.82100976
     - Position: 146
-      Unused: 35234
+      Unused: 61661
       Opacity: 0.88724875
     - Position: 147
-      Unused: 58092
+      Unused: 57063
       Opacity: 0.76106936
     - Position: 148
-      Unused: 59352
+      Unused: 59377
       Opacity: 0.44806612
     - Position: 149
-      Unused: 41139
+      Unused: 59855
       Opacity: 0.04792869
     - Position: 153
-      Unused: 41898
+      Unused: 48846
       Opacity: 0.9750707
     - Position: 154
-      Unused: 61661
+      Unused: 43699
       Opacity: 0.9318826
     - Position: 155
-      Unused: 57063
+      Unused: 61661
       Opacity: 0.8902422
     - Position: 156
-      Unused: 59377
+      Unused: 34464
       Opacity: 0.6092683
     - Position: 158
-      Unused: 59855
+      Unused: 59120
       Opacity: 0.5529922
     - Position: 159
-      Unused: 48846
+      Unused: 60892
       Opacity: 0.54177797
     - Position: 160
-      Unused: 43699
+      Unused: 56034
       Opacity: 0.4426251
     - Position: 161
-      Unused: 61661
+      Unused: 41898
       Opacity: 0.62938356
     - Position: 162
-      Unused: 34464
+      Unused: 61628
       Opacity: 0.8734499
     - Position: 163
-      Unused: 59120
+      Unused: 56806
       Opacity: 0.8773785
     - Position: 164
-      Unused: 60892
+      Unused: 59377
       Opacity: 0.72533566
     - Position: 165
-      Unused: 56034
+      Unused: 60126
       Opacity: 0.4562887
     - Position: 166
-      Unused: 41898
+      Unused: 53212
       Opacity: 0.084462345
     - Position: 170
-      Unused: 61628
+      Unused: 41642
       Opacity: 0.6907067
     - Position: 171
-      Unused: 56806
+      Unused: 61661
       Opacity: 0.5134117
     - Position: 172
-      Unused: 59377
+      Unused: 56806
       Opacity: 0.42120832
     - Position: 173
-      Unused: 60126
+      Unused: 59120
       Opacity: 0.451455
     - Position: 175
-      Unused: 53212
+      Unused: 61661
       Opacity: 0.6206547
     - Position: 176
-      Unused: 41642
+      Unused: 56806
       Opacity: 0.50218284
     - Position: 177
-      Unused: 61661
+      Unused: 41898
       Opacity: 0.41696018
     - Position: 178
-      Unused: 56806
+      Unused: 51678
       Opacity: 0.606038
     - Position: 179
-      Unused: 59120
+      Unused: 56806
       Opacity: 0.91687834
     - Position: 180
-      Unused: 61661
+      Unused: 59377
       Opacity: 0.8682624
     - Position: 181
-      Unused: 56806
+      Unused: 61917
       Opacity: 0.67385286
     - Position: 182
-      Unused: 41898
+      Unused: 55779
       Opacity: 0.46278596
     - Position: 183
-      Unused: 51678
+      Unused: 57067
       Opacity: 0.20355737
     - Position: 187
-      Unused: 56806
+      Unused: 61657
       Opacity: 0.49032068
     - Position: 189
-      Unused: 59377
+      Unused: 48589
       Opacity: 0.49186838
     - Position: 190
-      Unused: 61917
+      Unused: 41128
       Opacity: 0.582435
     - Position: 191
-      Unused: 55779
+      Unused: 61661
       Opacity: 0.61287034
     - Position: 192
-      Unused: 57067
+      Unused: 56807
       Opacity: 0.65009737
     - Position: 193
-      Unused: 61657
+      Unused: 59120
       Opacity: 0.3345837
     - Position: 194
-      Unused: 48589
+      Unused: 61849
       Opacity: 0.42011434
     - Position: 195
-      Unused: 41128
+      Unused: 56549
       Opacity: 0.53540635
     - Position: 196
-      Unused: 61661
+      Unused: 59377
       Opacity: 0.71647954
     - Position: 199
-      Unused: 56807
+      Unused: 61661
       Opacity: 0.2241565
     - Position: 200
-      Unused: 59120
+      Unused: 56807
       Opacity: 0.41109264
     - Position: 204
-      Unused: 61849
+      Unused: 57066
       Opacity: 0.6905544
     - Position: 205
-      Unused: 56549
+      Unused: 60369
       Opacity: 0.791487
     - Position: 206
-      Unused: 59377
+      Unused: 56293
       Opacity: 0.7445341
     - Position: 207
-      Unused: 61661
+      Unused: 56550
       Opacity: 0.666982
     - Position: 208
-      Unused: 56807
+      Unused: 60889
       Opacity: 0.6330297
     - Position: 209
-      Unused: 57066
+      Unused: 56549
       Opacity: 0.65924525
     - Position: 210
-      Unused: 60369
+      Unused: 52431
       Opacity: 0.3520128
     - Position: 211
-      Unused: 56293
+      Unused: 43997
       Opacity: 0.49773413
     - Position: 212
-      Unused: 56550
+      Unused: 49094
       Opacity: 0.3044002
     - Position: 214
-      Unused: 60889
+      Unused: 59120
       Opacity: 0.15405941
     - Position: 215
-      Unused: 56549
+      Unused: 61918
       Opacity: 0.2715261
     - Position: 217
-      Unused: 52431
+      Unused: 57063
       Opacity: 0.2815109
     - Position: 221
-      Unused: 43997
+      Unused: 58093
       Opacity: 0.6089998
     - Position: 222
-      Unused: 49094
+      Unused: 60112
       Opacity: 0.48910832
     - Position: 224
-      Unused: 59120
+      Unused: 56805
       Opacity: 0.681109
     - Position: 225
-      Unused: 61918
+      Unused: 58347
       Opacity: 0.4203909
     - Position: 226
-      Unused: 57063
+      Unused: 60298
       Opacity: 0.35181713
     - Position: 227
-      Unused: 58093
+      Unused: 56034
       Opacity: 0.51940846
     - Position: 228
-      Unused: 60112
+      Unused: 55519
       Opacity: 0.58800817
     - Position: 238
-      Unused: 56805
+      Unused: 43202
       Opacity: 0.15471506
     - Position: 240
-      Unused: 58347
+      Unused: 33945
       Opacity: 0.22669756
     - Position: 241
-      Unused: 60298
+      Unused: 59120
       Opacity: 0.687255
     - Position: 242
-      Unused: 56034
+      Unused: 61917
       Opacity: 0.6259693
     - Position: 244
-      Unused: 55519
+      Unused: 57063
       Opacity: 0.6236442
     - Position: 245
-      Unused: 43202
+      Unused: 59376
       Opacity: 0.62431633
     - Position: 246
-      Unused: 33945
+      Unused: 60114
       Opacity: 0.8189275
     - Position: 247
-      Unused: 59120
+      Unused: 53982
       Opacity: 0.9560254
     - Position: 250
-      Unused: 61917
+      Unused: 58603
       Opacity: 0.2085867
     - Position: 251
-      Unused: 57063
+      Unused: 59822
       Opacity: 0.6046518
     - Position: 252
-      Unused: 59376
+      Unused: 56290
       Opacity: 0.30528307
     - Position: 253
-      Unused: 60114
+      Unused: 41642
       Opacity: 0.07878888
     - Position: 254
-      Unused: 53982
+      Unused: 43216
       Opacity: 0.104121506
     - Position: 257
-      Unused: 58603
+      Unused: 57062
       Opacity: 0.17432672
     - Position: 258
-      Unused: 59822
+      Unused: 59120
       Opacity: 0.12788302
     - Position: 259
-      Unused: 56290
+      Unused: 61661
       Opacity: 0.46809143
     - Position: 260
-      Unused: 41642
+      Unused: 56807
       Opacity: 0.6031081
     - Position: 261
-      Unused: 43216
+      Unused: 59377
       Opacity: 0.27298695
     - Position: 262
-      Unused: 57062
+      Unused: 60638
       Opacity: 0.40870917
     - Position: 263
-      Unused: 59120
+      Unused: 54239
       Opacity: 0.5770752
     - Position: 264
-      Unused: 61661
+      Unused: 58346
       Opacity: 0.9242256
     - Position: 265
-      Unused: 56807
+      Unused: 59607
       Opacity: 0.3761509
     - Position: 266
-      Unused: 59377
+      Unused: 56034
       Opacity: 0.72717017
     - Position: 267
-      Unused: 60638
+      Unused: 58346
       Opacity: 0.8715364
     - Position: 268
-      Unused: 54239
+      Unused: 60556
       Opacity: 0.70610934
     - Position: 269
-      Unused: 58346
+      Unused: 57063
       Opacity: 0.510794
     - Position: 270
-      Unused: 59607
+      Unused: 41642
       Opacity: 0.33779973
     - Position: 271
-      Unused: 56034
+      Unused: 61661
       Opacity: 0.2543118
     - Position: 278
-      Unused: 58346
+      Unused: 56807
       Opacity: 0.15600818
     - Position: 280
-      Unused: 60556
+      Unused: 59377
       Opacity: 0.06623429
     - Position: 281
-      Unused: 57063
+      Unused: 61664
       Opacity: 0.95422304
     - Position: 282
-      Unused: 41642
+      Unused: 57318
       Opacity: 0.9902305
     - Position: 283
-      Unused: 61661
+      Unused: 58601
       Opacity: 0.9706386
     - Position: 284
-      Unused: 56807
+      Unused: 59355
       Opacity: 0.9187984
     - Position: 285
-      Unused: 59377
+      Unused: 55778
       Opacity: 0.79504824
     - Position: 286
-      Unused: 61664
+      Unused: 58087
       Opacity: 0.64531547
     - Position: 288
-      Unused: 57318
+      Unused: 59870
       Opacity: 0.17403615
   - MutagenObjectType: AlphaLayer
     Header:
@@ -1999,13 +2014,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.0013663608
     - Position: 27
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.10168666
     - Position: 28
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.2639309
     - Position: 29
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.20133604
     - Position: 30
       Unused: 53453
@@ -2038,7 +2053,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.4248321
     - Position: 63
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.262477
     - Position: 64
       Unused: 38813
@@ -2074,7 +2089,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.1772884
     - Position: 96
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.13241372
     - Position: 97
       Unused: 41128
@@ -2113,7 +2128,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.09592494
     - Position: 143
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.38648754
     - Position: 144
       Unused: 57301
@@ -2224,13 +2239,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.8256733
     - Position: 258
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.8660412
     - Position: 259
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.22618152
     - Position: 260
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.0076252073
     - Position: 272
       Unused: 53453
@@ -2268,215 +2283,233 @@ Landscape:
       Quadrant: BottomRight
       LayerNumber: 3
     AlphaLayerData:
-    - Position: 23
+    - Position: 1
       Unused: 50907
+      Opacity: 0.035288017
+    - Position: 2
+      Unused: 54493
+      Opacity: 1
+    - Position: 19
+      Unused: 53717
+      Opacity: 1
+    - Position: 23
+      Unused: 61655
       Opacity: 0.013633945
     - Position: 24
-      Unused: 54493
+      Unused: 38572
       Opacity: 0.16196853
+    - Position: 36
+      Unused: 57578
+      Opacity: 0.5734417
     - Position: 40
-      Unused: 53717
+      Unused: 35461
       Opacity: 0.22442527
     - Position: 41
-      Unused: 61655
+      Unused: 45763
       Opacity: 0.45826513
     - Position: 48
-      Unused: 38572
+      Unused: 47809
       Opacity: 0.18871826
     - Position: 49
-      Unused: 57578
+      Unused: 53453
       Opacity: 0.19158776
+    - Position: 53
+      Unused: 52172
+      Opacity: 0.4422738
     - Position: 57
-      Unused: 29061
+      Unused: 42155
       Opacity: 0.58841157
     - Position: 58
-      Unused: 31611
+      Unused: 59279
       Opacity: 0.48645595
     - Position: 64
-      Unused: 32897
+      Unused: 39085
       Opacity: 0.0395844
     - Position: 65
-      Unused: 53453
+      Unused: 41128
       Opacity: 1
     - Position: 66
-      Unused: 52172
+      Unused: 60111
       Opacity: 0.11435001
+    - Position: 70
+      Unused: 56806
+      Opacity: 0.6108289
     - Position: 73
-      Unused: 42155
+      Unused: 41899
       Opacity: 0.19222264
     - Position: 74
-      Unused: 59279
+      Unused: 41606
       Opacity: 0.8180244
     - Position: 81
-      Unused: 39085
+      Unused: 43960
       Opacity: 0.2378805
     - Position: 82
-      Unused: 41128
+      Unused: 38813
       Opacity: 0.22012626
     - Position: 88
-      Unused: 60111
+      Unused: 51334
       Opacity: 0.1686513
     - Position: 89
-      Unused: 56806
+      Unused: 52687
       Opacity: 0.15192066
     - Position: 90
-      Unused: 41899
+      Unused: 47292
       Opacity: 0.8444966
     - Position: 91
-      Unused: 41606
+      Unused: 44235
       Opacity: 0.06972009
     - Position: 102
-      Unused: 33686
+      Unused: 50897
       Opacity: 0.0952739
     - Position: 103
-      Unused: 38813
+      Unused: 51406
       Opacity: 0.045387346
     - Position: 104
-      Unused: 51334
+      Unused: 58832
       Opacity: 0.5888892
     - Position: 105
-      Unused: 52687
+      Unused: 47294
       Opacity: 0.50786006
     - Position: 106
-      Unused: 47292
+      Unused: 59120
       Opacity: 0.67437
     - Position: 107
-      Unused: 44235
+      Unused: 55517
       Opacity: 0.11312913
     - Position: 119
-      Unused: 50897
+      Unused: 41139
       Opacity: 0.5351028
     - Position: 120
-      Unused: 51406
+      Unused: 41128
       Opacity: 0.7046572
     - Position: 121
-      Unused: 58832
+      Unused: 49053
       Opacity: 0.42325237
     - Position: 187
-      Unused: 47294
+      Unused: 53202
       Opacity: 0.23753737
     - Position: 188
-      Unused: 59120
+      Unused: 53202
       Opacity: 0.8699774
     - Position: 189
-      Unused: 55517
+      Unused: 53644
       Opacity: 0.16005147
     - Position: 204
-      Unused: 34464
+      Unused: 53210
       Opacity: 0.07763133
     - Position: 206
-      Unused: 41128
+      Unused: 51403
       Opacity: 0.018867891
     - Position: 215
-      Unused: 49053
+      Unused: 57738
       Opacity: 0.16288176
     - Position: 216
-      Unused: 53202
+      Unused: 50636
       Opacity: 0.016673222
     - Position: 222
-      Unused: 53202
+      Unused: 45235
       Opacity: 0.17676067
     - Position: 223
-      Unused: 53644
+      Unused: 61654
       Opacity: 1
     - Position: 225
-      Unused: 53210
+      Unused: 56806
       Opacity: 0.32756457
     - Position: 226
-      Unused: 51403
+      Unused: 56547
       Opacity: 0.44111833
     - Position: 227
-      Unused: 57738
+      Unused: 57301
       Opacity: 0.025596686
     - Position: 231
-      Unused: 50636
+      Unused: 34464
       Opacity: 0.035238795
     - Position: 232
-      Unused: 45235
+      Unused: 54230
       Opacity: 0.33911607
     - Position: 233
-      Unused: 61654
+      Unused: 54410
       Opacity: 0.07471269
     - Position: 239
-      Unused: 56806
+      Unused: 38570
       Opacity: 0.9295232
     - Position: 240
-      Unused: 57576
+      Unused: 49605
       Opacity: 0.5580734
     - Position: 242
-      Unused: 57301
+      Unused: 45779
       Opacity: 0.02234897
     - Position: 243
-      Unused: 34464
+      Unused: 52442
       Opacity: 0.8876373
     - Position: 244
-      Unused: 54230
+      Unused: 37780
       Opacity: 0.15716319
     - Position: 248
-      Unused: 54410
+      Unused: 60111
       Opacity: 0.004382572
     - Position: 249
-      Unused: 38570
+      Unused: 56806
       Opacity: 0.013469596
     - Position: 255
-      Unused: 49605
+      Unused: 41385
       Opacity: 0.17360802
     - Position: 256
-      Unused: 45779
+      Unused: 58841
       Opacity: 0.6069433
     - Position: 260
-      Unused: 52442
+      Unused: 34464
       Opacity: 0.03236431
     - Position: 261
-      Unused: 37780
+      Unused: 55003
       Opacity: 0.6086599
     - Position: 262
-      Unused: 60111
+      Unused: 55761
       Opacity: 0.3356071
     - Position: 263
-      Unused: 56806
+      Unused: 41907
       Opacity: 0.19693804
     - Position: 264
-      Unused: 41385
+      Unused: 43697
       Opacity: 0.060714405
     - Position: 265
-      Unused: 58841
+      Unused: 61661
       Opacity: 0.62225235
     - Position: 266
-      Unused: 34464
+      Unused: 35748
       Opacity: 0.24679255
     - Position: 270
-      Unused: 55003
+      Unused: 53202
       Opacity: 0.0077901273
     - Position: 271
-      Unused: 55761
+      Unused: 59845
       Opacity: 0.0013933182
     - Position: 272
-      Unused: 41907
+      Unused: 53725
       Opacity: 0.308197
     - Position: 278
-      Unused: 43697
+      Unused: 41128
       Opacity: 0.059066262
     - Position: 279
-      Unused: 61661
+      Unused: 60637
       Opacity: 0.7998396
     - Position: 280
-      Unused: 35748
+      Unused: 34464
       Opacity: 0.651124
     - Position: 286
-      Unused: 53202
+      Unused: 56031
       Opacity: 0.03264615
     - Position: 287
-      Unused: 59845
+      Unused: 56787
       Opacity: 0.96044385
     - Position: 288
-      Unused: 53725
+      Unused: 42935
       Opacity: 0.57839596
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopLeft
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -2501,13 +2534,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.09096447
     - Position: 6
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.2783355
     - Position: 7
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.92130256
     - Position: 8
-      Unused: 32897
+      Unused: 47809
       Opacity: 1
     - Position: 9
       Unused: 53453
@@ -2540,7 +2573,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.37462765
     - Position: 19
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.5837416
     - Position: 20
       Unused: 38813
@@ -2576,7 +2609,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.66893566
     - Position: 31
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.64353085
     - Position: 32
       Unused: 41128
@@ -2615,7 +2648,7 @@ Landscape:
       Unused: 56806
       Opacity: 1
     - Position: 44
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.893917
     - Position: 45
       Unused: 57301
@@ -3062,13 +3095,13 @@ Landscape:
       Unused: 57578
       Opacity: 1
     - Position: 16
-      Unused: 29061
+      Unused: 35461
       Opacity: 1
     - Position: 30
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.053762443
     - Position: 31
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.16231784
     - Position: 32
       Unused: 53453
@@ -3104,13 +3137,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.82782245
     - Position: 52
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.039324597
     - Position: 53
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.015745237
     - Position: 62
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.039823346
     - Position: 63
       Unused: 53453
@@ -3143,7 +3176,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.07290331
     - Position: 73
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.03969662
     - Position: 77
       Unused: 38813
@@ -3179,7 +3212,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.051723856
     - Position: 88
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.043091286
     - Position: 89
       Unused: 41128
@@ -3218,7 +3251,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.0058595333
     - Position: 103
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.07528787
     - Position: 104
       Unused: 57301
@@ -3535,13 +3568,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.0812251
     - Position: 34
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.11414226
     - Position: 35
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.27477735
     - Position: 36
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.45681402
     - Position: 37
       Unused: 53453
@@ -3574,7 +3607,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.008054287
     - Position: 119
-      Unused: 33686
+      Unused: 43960
       Opacity: 1
     - Position: 120
       Unused: 38813
@@ -3610,7 +3643,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.005469129
     - Position: 171
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.22591332
     - Position: 172
       Unused: 41128
@@ -3649,7 +3682,7 @@ Landscape:
       Unused: 56806
       Opacity: 1
     - Position: 208
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.7731514
     - Position: 209
       Unused: 57301
@@ -3757,13 +3790,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.36794668
     - Position: 72
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.068557695
     - Position: 73
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.1131223
     - Position: 74
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.3452255
     - Position: 75
       Unused: 53453
@@ -3796,7 +3829,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.57822734
     - Position: 187
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.027419668
     - Position: 188
       Unused: 38813
@@ -3823,7 +3856,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopRight
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -3848,13 +3881,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.008818685
     - Position: 6
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.33341223
     - Position: 7
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.20915422
     - Position: 8
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.38169682
     - Position: 9
       Unused: 53453
@@ -3887,7 +3920,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.17279327
     - Position: 19
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.10478865
     - Position: 20
       Unused: 38813
@@ -3923,7 +3956,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.7699226
     - Position: 32
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.7998488
     - Position: 33
       Unused: 41128
@@ -3962,7 +3995,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.07393652
     - Position: 46
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.16243064
     - Position: 47
       Unused: 57301
@@ -4152,10 +4185,10 @@ Landscape:
       Opacity: 0.7193195
     - Position: 149
       Unused: 59120
-      Opacity: 0.7272217
+      Opacity: 0.6372967
     - Position: 150
       Unused: 60892
-      Opacity: 0.771546
+      Opacity: 0.4615354
     - Position: 151
       Unused: 56034
       Opacity: 0.131203
@@ -4173,10 +4206,10 @@ Landscape:
       Opacity: 0.4466672
     - Position: 167
       Unused: 60126
-      Opacity: 0.42401606
+      Opacity: 0.21772328
     - Position: 168
       Unused: 53212
-      Opacity: 0.37244803
+      Opacity: 0.3570643
     - Position: 169
       Unused: 41642
       Opacity: 0.044779003
@@ -4197,7 +4230,7 @@ Landscape:
       Opacity: 1
     - Position: 185
       Unused: 41898
-      Opacity: 0.942507
+      Opacity: 0.3275338
     - Position: 186
       Unused: 51678
       Opacity: 0.823701
@@ -4218,7 +4251,7 @@ Landscape:
       Opacity: 1
     - Position: 200
       Unused: 61657
-      Opacity: 0.44916642
+      Opacity: 0.34128255
     - Position: 201
       Unused: 48589
       Opacity: 0.993271
@@ -4242,7 +4275,7 @@ Landscape:
       Opacity: 0.9834439
     - Position: 217
       Unused: 59377
-      Opacity: 0.91747993
+      Opacity: 0.34966338
     - Position: 218
       Unused: 61661
       Opacity: 0.7960778
@@ -4299,7 +4332,7 @@ Landscape:
       Opacity: 0.09547758
     - Position: 271
       Unused: 60298
-      Opacity: 0.38885283
+      Opacity: 0.38108435
     - Position: 276
       Unused: 56034
       Opacity: 0.18539822
@@ -4314,7 +4347,7 @@ Landscape:
       Opacity: 0.4833048
     - Position: 288
       Unused: 59120
-      Opacity: 0.65170205
+      Opacity: 0.61085093
   - MutagenObjectType: AlphaLayer
     Header:
       Texture: 01F958:FalloutNV.esm
@@ -4339,13 +4372,13 @@ Landscape:
       Unused: 57578
       Opacity: 1
     - Position: 6
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.695534
     - Position: 7
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.21598645
     - Position: 8
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.15044695
     - Position: 9
       Unused: 53453
@@ -4378,7 +4411,7 @@ Landscape:
       Unused: 41606
       Opacity: 1
     - Position: 26
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.73225594
     - Position: 27
       Unused: 38813
@@ -4414,7 +4447,7 @@ Landscape:
       Unused: 55517
       Opacity: 1
     - Position: 42
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.9057249
     - Position: 43
       Unused: 41128
@@ -4453,7 +4486,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.82497376
     - Position: 58
-      Unused: 57576
+      Unused: 56547
       Opacity: 1
     - Position: 59
       Unused: 57301
@@ -4594,13 +4627,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.03607528
     - Position: 266
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.044884212
     - Position: 271
-      Unused: 31611
-      Opacity: 0.0036277955
+      Unused: 45763
+      Opacity: 0.0035553197
     - Position: 278
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.018742738
     - Position: 279
       Unused: 53453
@@ -4619,7 +4652,7 @@ Landscape:
       Opacity: 0.005966725
     - Position: 288
       Unused: 41128
-      Opacity: 0.05146847
+      Opacity: 0.048242234
   - MutagenObjectType: AlphaLayer
     Header:
       Texture: 018808:FalloutNV.esm
@@ -4644,13 +4677,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.96044385
     - Position: 16
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.57839596
     - Position: 17
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.13151617
     - Position: 34
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.82782245
     - Position: 35
       Unused: 53453
@@ -4683,7 +4716,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.07669693
     - Position: 88
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.061319474
     - Position: 89
       Unused: 38813
@@ -4719,7 +4752,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.10329452
     - Position: 110
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.163444
     - Position: 119
       Unused: 41128
@@ -4758,7 +4791,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.010203535
     - Position: 139
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.009821896
     - Position: 140
       Unused: 57301
@@ -4866,13 +4899,13 @@ Landscape:
       Unused: 57578
       Opacity: 0.0038569341
     - Position: 226
-      Unused: 29061
+      Unused: 35461
       Opacity: 0.0026846135
     - Position: 227
-      Unused: 31611
+      Unused: 45763
       Opacity: 0.010285138
     - Position: 228
-      Unused: 32897
+      Unused: 47809
       Opacity: 0.012273338
     - Position: 229
       Unused: 53453
@@ -4905,7 +4938,7 @@ Landscape:
       Unused: 41606
       Opacity: 0.04572044
     - Position: 247
-      Unused: 33686
+      Unused: 43960
       Opacity: 0.06738885
     - Position: 248
       Unused: 38813
@@ -4941,7 +4974,7 @@ Landscape:
       Unused: 55517
       Opacity: 0.21734416
     - Position: 264
-      Unused: 34464
+      Unused: 41139
       Opacity: 0.34768775
     - Position: 265
       Unused: 41128
@@ -4963,7 +4996,7 @@ Landscape:
       Opacity: 0.051669348
     - Position: 271
       Unused: 51403
-      Opacity: 0.048648335
+      Opacity: 0.04767644
     - Position: 276
       Unused: 57738
       Opacity: 0.007745525
@@ -4980,7 +5013,7 @@ Landscape:
       Unused: 56806
       Opacity: 0.24360737
     - Position: 281
-      Unused: 57576
+      Unused: 56547
       Opacity: 0.30317837
     - Position: 282
       Unused: 57301
@@ -5002,7 +5035,46 @@ Landscape:
       Opacity: 0.17926843
     - Position: 288
       Unused: 45779
-      Opacity: 0.1999792
+      Opacity: 0.18744375
+  - MutagenObjectType: AlphaLayer
+    Header:
+      Texture: 0A795A:FalloutNV.esm
+      Quadrant: TopRight
+      LayerNumber: 5
+    AlphaLayerData:
+    - Position: 149
+      Unused: 50907
+      Opacity: 0.13025814
+    - Position: 150
+      Unused: 54493
+      Opacity: 0.49940574
+    - Position: 166
+      Unused: 53717
+      Opacity: 0.19310081
+    - Position: 167
+      Unused: 61655
+      Opacity: 0.64169896
+    - Position: 168
+      Unused: 38572
+      Opacity: 0.041857462
+    - Position: 184
+      Unused: 57578
+      Opacity: 0.007063437
+    - Position: 185
+      Unused: 35461
+      Opacity: 0.9889027
+    - Position: 200
+      Unused: 45763
+      Opacity: 0.27021986
+    - Position: 217
+      Unused: 47809
+      Opacity: 0.9162775
+    - Position: 271
+      Unused: 53453
+      Opacity: 0.019977925
+    - Position: 288
+      Unused: 52172
+      Opacity: 0.06376761
 Temporary:
 - MutagenObjectType: PlacedObject
   FormKey: 0058F0:NovaArizona.esm

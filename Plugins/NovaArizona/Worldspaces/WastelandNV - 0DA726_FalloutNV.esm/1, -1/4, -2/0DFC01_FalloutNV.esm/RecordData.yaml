@@ -16,11 +16,11 @@ LightInheritFlags:
 WaterHeight: 3.4028235E+38
 WaterNoiseTexture: ''
 Regions:
-- 006F45:NovaArizona.esm
-- 008DAC:NovaArizona.esm
-- 014465:NovaArizona.esm
-- 037272:NovaArizona.esm
 - 03726C:NovaArizona.esm
+- 037272:NovaArizona.esm
+- 014465:NovaArizona.esm
+- 008DAC:NovaArizona.esm
+- 006F45:NovaArizona.esm
 AcousticSpace: 113D62:FalloutNV.esm
 Landscape:
   FormKey: 0E045E:FalloutNV.esm
@@ -140,7 +140,7 @@ Landscape:
   - MutagenObjectType: BaseLayer
     Header:
       Texture: 038A26:FalloutNV.esm
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -424,19 +424,19 @@ Landscape:
       Opacity: 0.5553354
     - Position: 228
       Unused: 59120
-      Opacity: 0.24333519
+      Opacity: 0.11887957
     - Position: 229
       Unused: 61661
-      Opacity: 0.5699453
+      Opacity: 0.23852222
     - Position: 244
       Unused: 56806
       Opacity: 0.017199712
     - Position: 245
       Unused: 59120
-      Opacity: 0.36277246
+      Opacity: 0.15856206
     - Position: 246
       Unused: 61144
-      Opacity: 0.25206494
+      Opacity: 0.12674813
     - Position: 247
       Unused: 53990
       Opacity: 0.03812469
@@ -770,7 +770,7 @@ Landscape:
       Opacity: 0.46585318
     - Position: 106
       Unused: 56806
-      Opacity: 0.13586092
+      Opacity: 0.1283695
     - Position: 107
       Unused: 59120
       Opacity: 0.06396214
@@ -782,19 +782,19 @@ Landscape:
       Opacity: 0.020820787
     - Position: 119
       Unused: 59120
-      Opacity: 0.20771173
+      Opacity: 0.031597067
     - Position: 120
       Unused: 59354
-      Opacity: 0.40454525
+      Opacity: 0.20770758
     - Position: 121
       Unused: 49081
-      Opacity: 0.37746277
+      Opacity: 0.30916962
     - Position: 122
       Unused: 55258
-      Opacity: 0.26997882
+      Opacity: 0.055169165
     - Position: 123
       Unused: 61658
-      Opacity: 0.276659
+      Opacity: 0.043406527
     - Position: 124
       Unused: 56806
       Opacity: 0.26920775
@@ -809,16 +809,16 @@ Landscape:
       Opacity: 0.05559534
     - Position: 136
       Unused: 59120
-      Opacity: 0.10158007
+      Opacity: 0.09949059
     - Position: 137
       Unused: 61661
-      Opacity: 0.08408255
+      Opacity: 0.040124793
     - Position: 138
       Unused: 55783
-      Opacity: 0.040411755
+      Opacity: 0.014974247
     - Position: 139
       Unused: 59377
-      Opacity: 0.08196886
+      Opacity: 0.027677346
     - Position: 140
       Unused: 61144
       Opacity: 0.35393193
@@ -1057,7 +1057,7 @@ Landscape:
       Opacity: 0.50185156
     - Position: 106
       Unused: 56806
-      Opacity: 0.38029325
+      Opacity: 0.3593237
     - Position: 107
       Unused: 59120
       Opacity: 0.09379727
@@ -1090,19 +1090,19 @@ Landscape:
       Opacity: 0.027608156
     - Position: 119
       Unused: 61917
-      Opacity: 0.12535846
+      Opacity: 0.019069508
     - Position: 120
       Unused: 57063
-      Opacity: 0.3766917
+      Opacity: 0.19340664
     - Position: 121
       Unused: 59120
-      Opacity: 0.37417686
+      Opacity: 0.30647823
     - Position: 122
       Unused: 61661
-      Opacity: 0.5695946
+      Opacity: 0.11639453
     - Position: 123
       Unused: 56806
-      Opacity: 0.48247123
+      Opacity: 0.075697504
     - Position: 124
       Unused: 57578
       Opacity: 0.19836354
@@ -1138,16 +1138,16 @@ Landscape:
       Opacity: 0.0050449967
     - Position: 136
       Unused: 56806
-      Opacity: 0.119971156
+      Opacity: 0.117503375
     - Position: 137
       Unused: 59120
-      Opacity: 0.32777
+      Opacity: 0.15641417
     - Position: 138
       Unused: 44978
-      Opacity: 0.33002186
+      Opacity: 0.1222869
     - Position: 139
       Unused: 55270
-      Opacity: 0.48368096
+      Opacity: 0.1633182
     - Position: 140
       Unused: 59120
       Opacity: 0.46330696
@@ -1354,10 +1354,10 @@ Landscape:
       Opacity: 0.373635
     - Position: 228
       Unused: 39313
-      Opacity: 0.27592385
+      Opacity: 0.13480052
     - Position: 229
       Unused: 49338
-      Opacity: 0.2580111
+      Opacity: 0.107977696
     - Position: 230
       Unused: 59356
       Opacity: 0.35504597
@@ -1396,10 +1396,10 @@ Landscape:
       Opacity: 0.5488481
     - Position: 245
       Unused: 53701
-      Opacity: 0.28749686
+      Opacity: 0.12566029
     - Position: 246
       Unused: 47546
-      Opacity: 0.0068663955
+      Opacity: 0.0034526922
     - Position: 247
       Unused: 52685
       Opacity: 0.5541834
@@ -1498,15 +1498,51 @@ Landscape:
       Texture: 0A795A:FalloutNV.esm
       LayerNumber: 4
     AlphaLayerData:
-    - Position: 229
+    - Position: 106
       Unused: 49298
-      Opacity: 0.16683282
-    - Position: 230
+      Opacity: 0.056345228
+    - Position: 119
       Unused: 56036
+      Opacity: 1
+    - Position: 120
+      Unused: 59120
+      Opacity: 0.6465853
+    - Position: 121
+      Unused: 61661
+      Opacity: 0.19707668
+    - Position: 122
+      Unused: 56806
+      Opacity: 1
+    - Position: 123
+      Unused: 59120
+      Opacity: 1
+    - Position: 136
+      Unused: 61661
+      Opacity: 0.020654172
+    - Position: 137
+      Unused: 56806
+      Opacity: 0.7130771
+    - Position: 138
+      Unused: 59120
+      Opacity: 0.94776297
+    - Position: 139
+      Unused: 53188
+      Opacity: 1
+    - Position: 228
+      Unused: 47811
+      Opacity: 0.6992797
+    - Position: 229
+      Unused: 59120
+      Opacity: 1
+    - Position: 230
+      Unused: 27867
       Opacity: 0.25745094
+    - Position: 245
+      Unused: 53717
+      Opacity: 0.80225307
     - Position: 246
       Unused: 59120
-      Opacity: 0.6136331
+      Opacity: 1
     - Position: 247
       Unused: 61661
       Opacity: 0.23089346
@@ -1580,7 +1616,7 @@ Landscape:
       Opacity: 0.024966557
     - Position: 106
       Unused: 56806
-      Opacity: 0.4711495
+      Opacity: 0.44517013
     - Position: 107
       Unused: 59120
       Opacity: 0.8422406
@@ -1592,19 +1628,19 @@ Landscape:
       Opacity: 0.17233334
     - Position: 119
       Unused: 59120
-      Opacity: 0.66156566
+      Opacity: 0.10063725
     - Position: 120
       Unused: 61660
-      Opacity: 0.21876302
+      Opacity: 0.11232056
     - Position: 121
       Unused: 49868
-      Opacity: 0.24836035
+      Opacity: 0.2034253
     - Position: 122
       Unused: 59120
-      Opacity: 0.16042659
+      Opacity: 0.032782573
     - Position: 123
       Unused: 59354
-      Opacity: 0.24086978
+      Opacity: 0.037791353
     - Position: 124
       Unused: 49081
       Opacity: 0.53242874
@@ -1619,16 +1655,16 @@ Landscape:
       Opacity: 0.23844053
     - Position: 136
       Unused: 59377
-      Opacity: 0.6232244
+      Opacity: 0.6104048
     - Position: 137
       Unused: 61661
-      Opacity: 0.3947491
+      Opacity: 0.18837708
     - Position: 138
       Unused: 56806
-      Opacity: 0.52498394
+      Opacity: 0.1945285
     - Position: 139
       Unused: 59120
-      Opacity: 0.40478885
+      Opacity: 0.13667972
     - Position: 140
       Unused: 61661
       Opacity: 0.18276109
@@ -1745,7 +1781,7 @@ Landscape:
       Opacity: 0.5553913
     - Position: 229
       Unused: 57578
-      Opacity: 0.005210844
+      Opacity: 0.0021807393
     - Position: 230
       Unused: 45678
       Opacity: 0.3875031
@@ -1766,10 +1802,10 @@ Landscape:
       Opacity: 0.0494967
     - Position: 245
       Unused: 59063
-      Opacity: 0.16608752
+      Opacity: 0.0725942
     - Position: 246
       Unused: 57063
-      Opacity: 0.12743558
+      Opacity: 0.0640796
     - Position: 247
       Unused: 59120
       Opacity: 0.17679843
@@ -1825,7 +1861,7 @@ Landscape:
     Header:
       Texture: 01F958:FalloutNV.esm
       Quadrant: BottomRight
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -3784,7 +3820,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopLeft
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
@@ -4980,7 +5016,7 @@ Landscape:
     Header:
       Texture: 038A26:FalloutNV.esm
       Quadrant: TopRight
-      Unused: 196
+      Unused: 144
       LayerNumber: 65535
   - MutagenObjectType: AlphaLayer
     Header:
