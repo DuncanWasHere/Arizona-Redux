@@ -4248,6 +4248,18 @@ TopCell:
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
+    FormKey: 005988:NovaArizona.esm
+    MajorRecordFlagsRaw: 1024
+    FormVersion: 15
+    Fallout3MajorRecordFlags:
+    - QuestItemPersistentReference
+    Base: 000034:FalloutNV.esm
+    Placement:
+      Position: 138243.75, -67962.88, 6114.081
+      Rotation: 0, 0, 1.6750014
+    MajorFlags:
+    - Persistent
+  - MutagenObjectType: PlacedObject
     FormKey: 0059DB:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
     FormVersion: 15
@@ -6876,12 +6888,12 @@ TopCell:
     Base: 000010:FalloutNV.esm
     MapMarker:
       Name: Dolan Springs
-      Type: City
+      Type: Settlement
       Reputation: 004366:NovaArizona.esm
     Radius: 5000
     LinkedReference: 01C8DF:NovaArizona.esm
     Placement:
-      Position: 137477.9, -77996.71, 6278.338
+      Position: 138312.44, -77896.33, 6278.338
     MajorFlags:
     - Persistent
   - MutagenObjectType: PlacedObject
@@ -9764,7 +9776,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 008FF2:NovaArizona.esm
-    Position: 145001.66, -74463.71, 6500.5854
+    Position: 145001.66, -74460.93, 6510.1216
     Rotation: 0, 0, 5.283188
   - MutagenObjectType: PlacedCreature
     FormKey: 008FF4:NovaArizona.esm
@@ -20363,7 +20375,7 @@ TopCell:
     Fallout3MajorRecordFlags:
     - QuestItemPersistentReference
     Base: 140DB0:FalloutNV.esm
-    Position: 137956.19, -67370.64, 6080
+    Position: 137923.56, -67330.93, 6062.029
   - MutagenObjectType: PlacedObject
     FormKey: 011C3E:NovaArizona.esm
     MajorRecordFlagsRaw: 1024
@@ -53793,8 +53805,10 @@ TopCell:
     MapMarker:
       Name: Dolan Fields
       Type: Encampment
+    Radius: 2000
+    LinkedReference: 005988:NovaArizona.esm
     Placement:
-      Position: 138190.08, -67978.91, 6324.5293
+      Position: 140427.11, -67754.695, 6206.19
       Rotation: 0, 0, 1.9000016
     MajorFlags:
     - Persistent
@@ -56950,4 +56964,4 @@ TopCell:
     - Persistent
   MajorFlags:
   - Persistent
-SubCellsUnknownGroupData: -2141293188
+SubCellsUnknownGroupData: 274397936
