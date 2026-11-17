@@ -1,3 +1,3 @@
 @echo off
-title Merge a plugin into NovaArizona.esm
+title Merge a plugin into {{MASTER}}
 "%~dp0fo-git.exe" merge-plugin --window
