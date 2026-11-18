@@ -17,35 +17,21 @@ Configuration:
   SpeedMultiplier: 130
   DispositionBase: 35
 Factions:
-- Faction: 1425A8:FalloutNV.esm
-  Unused: 0x4F444C
-- Faction: 137BB7:FalloutNV.esm
+- Faction: 0EE68A:FalloutNV.esm
   Unused: 0x4F444C
 - Faction: 134B6E:FalloutNV.esm
   Unused: 0x4F444C
-- Faction: 0EE68A:FalloutNV.esm
+- Faction: 137BB7:FalloutNV.esm
+  Unused: 0x4F444C
+- Faction: 1425A8:FalloutNV.esm
   Unused: 0x4F444C
 Voice: 00002D:FalloutNV.esm
 Race: 0038E5:FalloutNV.esm
 UnarmedAttackAnimation: Any
 Items:
 - Item:
-    Item: 15430B:FalloutNV.esm
-    Count: 1
-  Data:
-    Owner:
-      MutagenObjectType: UntypedOwner
-    ItemCondition: 0.95
-- Item:
-    Item: 0EE483:FalloutNV.esm
-    Count: 1
-  Data:
-    Owner:
-      MutagenObjectType: UntypedOwner
-    ItemCondition: 0.8
-- Item:
-    Item: 0EE481:FalloutNV.esm
-    Count: 1
+    Item: 08ECF5:FalloutNV.esm
+    Count: 15
 - Item:
     Item: 08ED0B:FalloutNV.esm
     Count: 1
@@ -54,8 +40,22 @@ Items:
       MutagenObjectType: UntypedOwner
     ItemCondition: 0.7
 - Item:
-    Item: 08ECF5:FalloutNV.esm
-    Count: 15
+    Item: 0EE481:FalloutNV.esm
+    Count: 1
+- Item:
+    Item: 0EE483:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.8
+- Item:
+    Item: 15430B:FalloutNV.esm
+    Count: 1
+  Data:
+    Owner:
+      MutagenObjectType: UntypedOwner
+    ItemCondition: 0.95
 AIData:
   Confidence: Average
   EnergyLevel: 50

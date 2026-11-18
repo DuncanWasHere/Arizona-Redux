@@ -3,24 +3,15 @@ EditorID: AZHDSteffieScript
 FormVersion: 15
 Fields:
   MetadataSummary:
-    Unknown: 4294967292
-  CompiledScript: 0x1D000000761611000209005304006E76736507004C80000406100008000A008A000000000080161D0002150058000022120B000100FFFF050052010042000407004C5900000039100F000200FFFF0500520100FFFF0400420F781010000200FFFF0500520200FFFF050052030080162300021B005800003B1011000200FFFF0500520400FFFF0400420A42010507004CA700000039100F000200FFFF0500520400FFFF040042351E00000011000000
-  SourceCode: >+
-    name AZHDSteffieScript;
-
-
-    OnDeath {
-
-        if (GetQuestCompleted(AZBigStopClariceQuest) == 0) {
-            SetStage(AZBigStopClariceQuest, 15);
-        }
-
-        SetEnemy(AZHHRCFaction, PlayerFaction);
-
-        if (GetStageDone(AZHooverDamRefugeeQuest, 10) != 1) {
-            SetStage(AZHooverDamRefugeeQuest, 53);
-        }
-
-        return;
-
-    }
+    RefCount: 4
+    Enabled: 1
+  CompiledScript: 0x1D000000100008000A00690000000000160014000100100020582212050001007201002030203D3D39100A0002007201006E0F00000019000000781008000200720200720300160019000100150020583B100A0002007204006E0A000000203120213D39100A0002007204006E350000001900000011000000
+  References:
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 00DC3D:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 0102CE:NovaArizona.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01B2A4:FalloutNV.esm
+  - MutagenObjectType: ScriptObjectReference
+    Reference: 01018E:NovaArizona.esm
